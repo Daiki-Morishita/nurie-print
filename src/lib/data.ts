@@ -19314,6 +19314,24 @@ export const materials: Material[] = [
     createdAt: '2026-05-18T15:15',
     popular: false,
   },
+  {
+    id: 'masterpiece-degas-dance-rich-1',
+    title: '舞台の踊り子（ドガ）',
+    description: 'ドガ「舞台の踊り子」の構図を再解釈した塗り絵線画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'adult-coloring', theme: 'masterpiece',
+    tags: ['masterpiece-degas-dance', '有名絵画', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-degas-dance-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-degas-dance-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-18T15:20',
+    popular: false,
+  },
 ]
 
 export type SortKey = 'newest' | 'popular' | 'favorites'
