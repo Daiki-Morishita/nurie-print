@@ -1,0 +1,7 @@
+# テーマキュー（上から順に処理・処理済みは自動削除）
+# 1行1テーマ。実行中でも末尾に追記すれば自動で拾う。
+# 使い方: python3 scripts/generate_chatgpt.py --queue --daily 150 --cdp http://localhost:9222
+#
+# 例:
+# sports
+# yokai

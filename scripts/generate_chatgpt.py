@@ -71,6 +71,7 @@ TMP_DIR      = REPO_DIR / "tmp_materials"
 DATA_TS      = REPO_DIR / "src" / "lib" / "data.ts"
 LOG_FILE     = Path(__file__).parent / "generate_chatgpt.log"
 FAILED_LOG   = Path(__file__).parent / "failed_ids.txt"
+QUEUE_FILE   = Path(__file__).parent / "theme_queue.txt"
 
 CHROME_PROFILE_DIR = str(Path.home() / ".chatgpt-chrome-profile")
 
@@ -3622,6 +3623,43 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     return len(supabase_urls)
 
 
+# =============================================
+# テーマキュー管理（theme_queue.txt）
+# =============================================
+def queue_read() -> list:
+    """theme_queue.txt からテーマ名リストを返す（#コメント・空行除外）"""
+    if not QUEUE_FILE.exists():
+        return []
+    return [l.strip() for l in QUEUE_FILE.read_text(encoding="utf-8").splitlines()
+            if l.strip() and not l.strip().startswith("#")]
+
+
+def queue_pop():
+    """キューの先頭テーマを取得し、ファイルから削除して返す"""
+    themes = queue_read()
+    if not themes:
+        return None
+    theme = themes[0]
+    rest = themes[1:]
+    QUEUE_FILE.write_text("\n".join(rest) + ("\n" if rest else ""), encoding="utf-8")
+    return theme
+
+
+def queue_count_remaining_images() -> int:
+    """キュー内の全テーマの未生成画像数（4 levels × items）を返す"""
+    existing = DATA_TS.read_text(encoding="utf-8")
+    total = 0
+    for theme in queue_read():
+        if theme not in THEMES:
+            continue
+        for iid, item in THEMES[theme].items():
+            for v in sorted(item["variants"])[:1]:
+                for lv in ["simple", "easy", "normal", "rich"]:
+                    if f"id: '{iid}-{lv}-{v}'" not in existing:
+                        total += 1
+    return total
+
+
 def make_daily_schedule(n_items: int, total_hours: float = 24.0) -> list:
     """
     n_items 個の生成を total_hours 時間内にランダム分散したインターバルリストを返す。
@@ -3665,6 +3703,8 @@ def main():
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")
     parser.add_argument("--all",     action="store_true", help="全アイテムを生成")
     parser.add_argument("--all-adult", action="store_true", help="全大人テーマを1セッションで生成（push は最後1回）")
+    parser.add_argument("--queue",   action="store_true",
+        help="theme_queue.txt のテーマを順番に連続実行（push は最後1回）")
     parser.add_argument("--daily",       type=int,   default=0,    help="24h分散実験: 生成ユニット数（例: 100）")
     parser.add_argument("--daily-hours", type=float, default=24.0, help="--daily の対象時間（デフォルト24h）")
     args = parser.parse_args()
@@ -3672,13 +3712,13 @@ def main():
     # 起動時に古いtmpファイルを自動削除（90日以上前）
     cleanup_tmp_materials(days=90)
 
-    if not args.all_adult and not args.type:
-        log("ERROR: --type が必要です（--all-adult を使う場合は不要）")
+    if not args.all_adult and not args.queue and not args.type:
+        log("ERROR: --type が必要です（--all-adult / --queue を使う場合は不要）")
         sys.exit(1)
 
-    items = THEMES.get(args.type, {})
+    items = THEMES.get(args.type, {}) if args.type else {}
 
-    if not args.all_adult and not args.all and args.item not in items:
+    if not args.all_adult and not args.all and not args.queue and args.item not in items:
         log(f"ERROR: '{args.item}' の定義がありません。利用可能: {list(items.keys())}")
         sys.exit(1)
 
@@ -3716,20 +3756,51 @@ def main():
         # --daily モード: スケジュールを事前生成してログ出力
         if args.daily > 0:
             global _DAILY_SCHEDULE
-            _DAILY_SCHEDULE = make_daily_schedule(args.daily, args.daily_hours)
-            now = time.time()
-            log(f"\n📅 Daily schedule: {args.daily}ユニット / {args.daily_hours}h")
-            log(f"   ギャップ範囲: {min(_DAILY_SCHEDULE):.0f}s〜{max(_DAILY_SCHEDULE):.0f}s")
-            log(f"   平均間隔: {sum(_DAILY_SCHEDULE)/len(_DAILY_SCHEDULE):.0f}s ({sum(_DAILY_SCHEDULE)/len(_DAILY_SCHEDULE)/60:.1f}分)")
-            t = now
-            for i, g in enumerate(_DAILY_SCHEDULE[:10]):
-                t += g
-                log(f"   [{i+1:3d}] +{g/60:4.0f}分  ({time.strftime('%H:%M', time.localtime(t))}ごろ)")
-            if len(_DAILY_SCHEDULE) > 10:
-                log(f"   ... 以下{len(_DAILY_SCHEDULE)-10}件省略")
-            log("")
+            if args.queue:
+                n_sched = queue_count_remaining_images()
+            else:
+                n_sched = args.daily
+            _DAILY_SCHEDULE = make_daily_schedule(n_sched, args.daily_hours)
+            if _DAILY_SCHEDULE:
+                now = time.time()
+                log(f"\n📅 Daily schedule: {n_sched}枚 / {args.daily_hours}h")
+                log(f"   ギャップ範囲: {min(_DAILY_SCHEDULE):.0f}s〜{max(_DAILY_SCHEDULE):.0f}s")
+                log(f"   平均間隔: {sum(_DAILY_SCHEDULE)/len(_DAILY_SCHEDULE):.0f}s ({sum(_DAILY_SCHEDULE)/len(_DAILY_SCHEDULE)/60:.1f}分)")
+                t = now
+                for i, g in enumerate(_DAILY_SCHEDULE[:10]):
+                    t += g
+                    log(f"   [{i+1:3d}] +{g/60:4.0f}分  ({time.strftime('%H:%M', time.localtime(t))}ごろ)")
+                if len(_DAILY_SCHEDULE) > 10:
+                    log(f"   ... 以下{len(_DAILY_SCHEDULE)-10}件省略")
+                log("")
 
-        if args.all_adult:
+        if args.queue:
+            # =============================================
+            # キューモード: theme_queue.txt を順番に処理
+            # =============================================
+            themes_in_queue = queue_read()
+            if not themes_in_queue:
+                log(f"ERROR: {QUEUE_FILE} が空です。テーマを追加してください。")
+                sys.exit(1)
+            log(f"\n🎯 キューモード開始: {themes_in_queue}")
+            while True:
+                theme = queue_pop()
+                if theme is None:
+                    log("\n✅ キュー完了 → push開始")
+                    break
+                if theme not in THEMES:
+                    log(f"⚠️ 未知のテーマをスキップ: '{theme}'（THEMES に未登録）")
+                    continue
+                log(f"\n{'='*50}\n▶️  テーマ開始: {theme}  ({len(THEMES[theme])}種)\n{'='*50}")
+                for iid, item in THEMES[theme].items():
+                    for v in sorted(item["variants"])[:1]:
+                        run_item(pw, state, iid, theme, v, client)
+                        time.sleep(10)
+                log(f"✅ テーマ完了: {theme}")
+                # 実行中に追記されたテーマも次のループで自動処理される
+            git_push()
+
+        elif args.all_adult:
             adult_types = list(ADULT_THEME_KEYS)
             log(f"\n=== 大人テーマ一括生成: {adult_types} ===\n")
             for theme_type in adult_types:
