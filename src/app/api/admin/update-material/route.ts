@@ -66,15 +66,19 @@ export async function PATCH(request: Request) {
 
     // ── data.ts への書き込みは dev のみ（Vercel は read-only） ──────────────
     if (!FS_WRITE_ALLOWED) {
-      // imageStatus / illustNotes だけなら DB 反映で完了。
-      // それ以外のフィールドが含まれていれば、本番では受け付けない。
-      const hasOnlyDbFields = Object.keys(fields).every(k => k === 'imageStatus' || k === 'illustNotes')
-      if (!hasOnlyDbFields) {
-        return NextResponse.json({
-          error: '本番環境では imageStatus / illustNotes 以外の変更はできません。ローカルで data.ts を編集してコミットしてください。',
-        }, { status: 503 })
-      }
-      return NextResponse.json({ ok: true, viaDb: true })
+      // 本番: imageStatus / illustNotes は DB に保存済み。
+      // それ以外のフィールド（title 等）は data.ts に書けないため保存されない。
+      const nonDbFields = Object.keys(fields).filter(k => k !== 'imageStatus' && k !== 'illustNotes')
+      const dbFieldsSaved = fields.imageStatus !== undefined || fields.illustNotes !== undefined
+      return NextResponse.json({
+        ok: true,
+        viaDb: true,
+        savedFields: dbFieldsSaved ? ['imageStatus', 'illustNotes'].filter(k => fields[k as 'imageStatus' | 'illustNotes'] !== undefined) : [],
+        skippedFields: nonDbFields,
+        ...(nonDbFields.length > 0 && {
+          notice: `ステータス・メモは保存しました。${nonDbFields.length}件の他フィールド（タイトル等）は本番では保存されません（ローカルで data.ts 編集が必要）。`,
+        }),
+      })
     }
 
     // ローカル開発時のみ data.ts も同期更新

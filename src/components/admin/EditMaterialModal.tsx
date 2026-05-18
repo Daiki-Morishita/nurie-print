@@ -25,10 +25,12 @@ export function EditMaterialModal({ material, onClose, onSaved }: Props) {
   const [theme, setTheme] = useState<Theme | ''>(material.theme ?? '')
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
+  const [notice, setNotice] = useState('')
 
   async function handleSave() {
     setSaving(true)
     setError('')
+    setNotice('')
     try {
       const res = await fetch('/api/admin/update-material', {
         method: 'PATCH',
@@ -47,6 +49,13 @@ export function EditMaterialModal({ material, onClose, onSaved }: Props) {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error ?? 'エラーが発生しました')
+      // 本番で一部フィールドがスキップされた場合は通知して閉じる
+      if (data.notice) {
+        setNotice(data.notice)
+        setSaving(false)
+        setTimeout(() => { onSaved(); onClose() }, 1800)
+        return
+      }
       onSaved()
       onClose()
     } catch (e) {
@@ -183,6 +192,7 @@ export function EditMaterialModal({ material, onClose, onSaved }: Props) {
           </div>
 
           {error && <p className="text-xs text-red-500">{error}</p>}
+          {notice && <p className="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">{notice}</p>}
         </div>
 
         <div className="px-5 py-4 border-t flex justify-end gap-2">

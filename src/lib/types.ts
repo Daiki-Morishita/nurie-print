@@ -43,6 +43,7 @@ export type Theme =
   | 'flowers'          // 花
   | 'characters'       // キャラクター風
   | 'park'             // 公園・遊具
+  | 'sports'           // スポーツ
   | 'seasonal-events'  // 季節の行事
   | 'spring'           // 春
   | 'summer'           // 夏
@@ -142,6 +143,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   flowers: '花',
   characters: 'キャラクター風',
   park: '公園・遊具',
+  sports: 'スポーツ',
   'seasonal-events': '季節の行事',
   spring: '春',
   summer: '夏',

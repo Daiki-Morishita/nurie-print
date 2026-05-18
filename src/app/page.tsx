@@ -56,6 +56,7 @@ const THEMES = [
   { key: 'sea',       label: '海',       emoji: '🐟', color: '#4FA7B8', sample: 'dolphin-easy',         href: '/category/theme/sea' },
   { key: 'insects',   label: '虫',       emoji: '🐛', color: '#7AA875', sample: 'butterfly-easy-1',     href: '/category/theme/insects' },
   { key: 'fruits',    label: '食べ物',   emoji: '🍎', color: '#E8B838', sample: 'apple-easy-1',         href: '/category/theme/fruits' },
+  { key: 'sports',    label: 'スポーツ', emoji: '⚽', color: '#4FA7B8', sample: 'soccer-easy-1',        href: '/category/theme/sports' },
 ] as const
 
 function getThemeSample(themeKey: string, sampleId: string) {

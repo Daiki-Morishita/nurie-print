@@ -6,7 +6,7 @@ import { columns } from '@/lib/columns'
 const BASE_URL = 'https://nurie-print.com'
 
 const AGES = [2, 3, 4, 5, 6]
-const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'sea', 'park', 'insects', 'fruits']
+const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Kids materials
