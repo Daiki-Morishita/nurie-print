@@ -42,6 +42,13 @@ import os, sys, time, re, random, subprocess, argparse, base64
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from supabase import create_client
+from themes_railway import RAILWAY
+from themes_architecture import ARCHITECTURE
+from themes_seasonal_masterpiece import SEASONAL_ADULT, MASTERPIECE
+from themes_expansions import (
+    MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
+    ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
+)
 
 # =============================================
 # 設定
@@ -3115,6 +3122,15 @@ CITYSCAPE = {
     },
 }
 
+# 既存7テーマを拡張（追加アイテムをマージ）
+MANDALA.update(MANDALA_EXTRA)
+BOTANICAL.update(BOTANICAL_EXTRA)
+LANDSCAPE.update(LANDSCAPE_EXTRA)
+PATTERN.update(PATTERN_EXTRA)
+ANIMALS_DETAIL.update(ANIMALS_DETAIL_EXTRA)
+FLOWERS_DETAIL.update(FLOWERS_DETAIL_EXTRA)
+CITYSCAPE.update(CITYSCAPE_EXTRA)
+
 # 大人向けテーマを THEMES に追加
 THEMES.update({
     "mandala":             MANDALA,
@@ -3124,11 +3140,16 @@ THEMES.update({
     "animals-detail":      ANIMALS_DETAIL,
     "flowers-detail":      FLOWERS_DETAIL,
     "cityscape":           CITYSCAPE,
+    "railway":             RAILWAY,
+    "architecture":        ARCHITECTURE,
+    "seasonal-adult":      SEASONAL_ADULT,
+    "masterpiece":         MASTERPIECE,
 })
 
 # 大人向けテーマの判定セット
 ADULT_THEME_KEYS = {"mandala", "botanical", "landscape", "pattern",
-                    "animals-detail", "flowers-detail", "cityscape"}
+                    "animals-detail", "flowers-detail", "cityscape",
+                    "railway", "architecture", "seasonal-adult", "masterpiece"}
 
 LEVEL_PARAMS = {
     "simple": (3, 5, 1, 10, "クレヨン"),
@@ -3200,7 +3221,8 @@ def upload_to_supabase(client, local_path, remote_name):
 
 
 def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
-    levels = ["simple", "easy", "normal", "rich"]
+    # masterpiece など scenes に定義されたキーが4未満なら定義分のみ処理
+    levels = list(vdata["scenes"].keys()) if len(vdata["scenes"]) < 4 else ["simple", "easy", "normal", "rich"]
     content = DATA_TS.read_text()
 
     # 全levelが既存かチェック（全部あればスキップ）
@@ -3216,6 +3238,8 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "mandala": "曼荼羅", "botanical": "植物画", "landscape": "風景",
         "pattern": "幾何模様", "animals-detail": "動物・細密",
         "flowers-detail": "花・細密", "cityscape": "街並み",
+        "railway": "鉄道", "architecture": "建築",
+        "seasonal-adult": "季節の行事", "masterpiece": "有名絵画",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4003,7 +4027,7 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     log(f"\n{'='*50}\n[{theme_type}] {item_id}-{variant} ({item['jp']})")
     cleanup_old_chats(state['page'], threshold=20)
 
-    levels = ["simple", "easy", "normal", "rich"]
+    levels = list(vdata["scenes"].keys()) if len(vdata["scenes"]) < 4 else ["simple", "easy", "normal", "rich"]
     supabase_urls = {}
     existing_content = DATA_TS.read_text()
 
@@ -4040,7 +4064,7 @@ def run_item(pw, state, item_id, theme_type, variant, client):
         else:
             cond_items = COMMON_COND_ITEMS
 
-        # 野菜・果物: 検索クエリを生成（描画前に実物を確認させる）
+        # テーマ別: 検索クエリを生成（描画前に実物を確認させる）
         search_query = ""
         if theme_type in ("vegetables", "fruits"):
             jp = item['jp']
@@ -4050,8 +4074,14 @@ def run_item(pw, state, item_id, theme_type, variant, client):
                 search_query = f"{jp} 形 断面 写真"
             elif lv == "normal":
                 search_query = f"{jp} {scene[:15]} 写真"
-            else:  # rich
+            else:
                 search_query = f"{jp} {scene[:20]} 写真"
+        elif theme_type == "masterpiece":
+            search_query = f"{item['jp']} 名画 絵画"
+        elif theme_type == "railway":
+            search_query = f"{item['jp']} 写真 風景"
+        elif theme_type == "architecture":
+            search_query = f"{item['jp']} 建築 写真"
 
         prompt = {'scene': scene, 'note': item['note'], 'cond_items': cond_items, 'search_query': search_query}
         local_path = TMP_DIR / f"{file_id}-illust.png"
@@ -4149,7 +4179,8 @@ def main():
         choices=["park", "dinosaurs", "fruits", "vegetables", "insects", "sports", "yokai",
                  "spring", "flowers", "summer", "autumn",
                  "mandala", "botanical", "landscape", "pattern",
-                 "animals-detail", "flowers-detail", "cityscape"],
+                 "animals-detail", "flowers-detail", "cityscape",
+                 "railway", "architecture", "seasonal-adult", "masterpiece"],
         help="テーマ種別（--all-adult 使用時は不要）")
     parser.add_argument("--item",    default=None,  help="アイテムID（例: swing, tyrannosaurus）")
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")

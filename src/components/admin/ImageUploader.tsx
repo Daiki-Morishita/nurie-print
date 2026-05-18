@@ -19,8 +19,9 @@ type UploadItem = {
 }
 
 const CATEGORIES = [
-  { value: 'coloring',    label: 'ぬりえ' },
-  { value: 'hiragana',   label: 'ひらがな' },
+  { value: 'coloring',        label: 'ぬりえ' },
+  { value: 'adult-coloring',  label: '大人ぬりえ' },
+  { value: 'hiragana',        label: 'ひらがな' },
   { value: 'numbers',    label: '数字・数え方' },
   { value: 'drawing',    label: '運筆' },
   { value: 'maze',       label: '迷路' },

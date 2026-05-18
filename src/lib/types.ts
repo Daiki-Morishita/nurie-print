@@ -55,6 +55,10 @@ export type Theme =
   | 'animals-detail'    // 動物（細密）
   | 'flowers-detail'    // 花（細密）
   | 'cityscape'         // 街並み
+  | 'railway'           // 鉄道・風景
+  | 'architecture'      // 世界の建築
+  | 'seasonal-adult'    // 季節の行事（大人版）
+  | 'masterpiece'       // 有名絵画（PD）
 
 export type Audience = 'kids' | 'adult'
 
@@ -72,6 +76,10 @@ export const ADULT_THEMES: Theme[] = [
   'animals-detail',
   'flowers-detail',
   'cityscape',
+  'railway',
+  'architecture',
+  'seasonal-adult',
+  'masterpiece',
 ]
 
 export const CATEGORY_LABELS: Record<Category, string> = {
@@ -144,6 +152,10 @@ export const THEME_LABELS: Record<Theme, string> = {
   'animals-detail': '動物（細密）',
   'flowers-detail': '花（細密）',
   cityscape: '街並み',
+  railway: '鉄道・風景',
+  architecture: '世界の建築',
+  'seasonal-adult': '季節の行事（大人）',
+  masterpiece: '有名絵画',
 }
 
 export const SEASON_LABELS: Record<Season, string> = {
