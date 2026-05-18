@@ -8,8 +8,21 @@ import { normalizeQuery, normalizeText } from '@/lib/utils'
 import { DeleteButton } from './DeleteButton'
 import { EditMaterialModal } from './EditMaterialModal'
 
-type SortKey = 'id' | 'status' | 'version' | 'created'
+type SortKey = 'id' | 'status' | 'version' | 'created' | 'title'
 type SortDir = 'asc' | 'desc'
+
+// ソートプルダウンの選択肢（key + dir をまとめて1値で扱う）
+const SORT_OPTIONS: { value: string; label: string; key: SortKey; dir: SortDir }[] = [
+  { value: 'created-desc', label: '登録日が新しい順', key: 'created', dir: 'desc' },
+  { value: 'created-asc',  label: '登録日が古い順',   key: 'created', dir: 'asc' },
+  { value: 'id-asc',       label: 'ID（テーマ）順',   key: 'id',      dir: 'asc' },
+  { value: 'title-asc',    label: 'タイトル順（あ→ん）', key: 'title', dir: 'asc' },
+  { value: 'title-desc',   label: 'タイトル順（ん→あ）', key: 'title', dir: 'desc' },
+  { value: 'status-asc',   label: 'ステータス順（要修正→承認済）', key: 'status', dir: 'asc' },
+  { value: 'status-desc',  label: 'ステータス順（承認済→要修正）', key: 'status', dir: 'desc' },
+  { value: 'version-desc', label: 'バージョンが新しい順', key: 'version', dir: 'desc' },
+  { value: 'version-asc',  label: 'バージョンが古い順',   key: 'version', dir: 'asc' },
+]
 type ViewMode = 'list' | 'tile'
 type TileSize = 'sm' | 'md' | 'lg' | 'xl'
 
@@ -227,6 +240,8 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
       cmp = (a.illustVersion ?? 0) - (b.illustVersion ?? 0)
     } else if (sortKey === 'created') {
       cmp = a.createdAt.localeCompare(b.createdAt)
+    } else if (sortKey === 'title') {
+      cmp = a.title.localeCompare(b.title, 'ja')
     }
     return sortDir === 'asc' ? cmp : -cmp
   })
@@ -304,6 +319,23 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
             className="text-gray-500 hover:text-gray-700 underline"
           >フィルタクリア</button>
         )}
+
+        {/* 並び替え */}
+        <div className="ml-auto flex items-center gap-1.5">
+          <span className="text-gray-500">並び替え:</span>
+          <select
+            value={`${sortKey}-${sortDir}`}
+            onChange={e => {
+              const opt = SORT_OPTIONS.find(o => o.value === e.target.value)
+              if (opt) { setSortKey(opt.key); setSortDir(opt.dir) }
+            }}
+            className="border border-gray-200 rounded px-2 py-1.5"
+          >
+            {SORT_OPTIONS.map(o => (
+              <option key={o.value} value={o.value}>{o.label}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* ツールバー */}
