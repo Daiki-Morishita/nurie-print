@@ -21484,6 +21484,24 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:19',
     popular: false,
   },
+  {
+    id: 'animals-detail-swan-simple-1',
+    title: '白鳥の細密画',
+    description: '白鳥1羽の細密画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
+    category: 'adult-coloring', theme: 'animals-detail',
+    tags: ['animals-detail-swan', '動物・細密', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/animals-detail-swan-simple-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/animals-detail-swan-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-19T02:25',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
