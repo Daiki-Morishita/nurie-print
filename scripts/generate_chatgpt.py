@@ -46,9 +46,15 @@ from supabase import create_client
 # =============================================
 # 設定
 # =============================================
-INTER_REQUEST_SLEEP_MIN = 45   # 生成後インターバル下限（秒）
-INTER_REQUEST_SLEEP_MAX = 90   # 生成後インターバル上限（秒）
+INTER_REQUEST_SLEEP_MIN = 180  # 生成後インターバル下限（秒）= 設計値通り
+INTER_REQUEST_SLEEP_MAX = 220  # 生成後インターバル上限（秒）→ 1サイクル270〜310s = 3h/40req
 INTER_REQUEST_SLEEP_MAX_CAP = 720  # バックオフ上限（秒）
+
+# レート制限ガード: 3h/40req = 270s/req。生成待ち≒90sなのでインターバル下限は180s以上必須
+assert INTER_REQUEST_SLEEP_MIN >= 180, (
+    f"INTER_REQUEST_SLEEP_MIN={INTER_REQUEST_SLEEP_MIN}s が短すぎます。"
+    "ChatGPT 3h/40req 制限を超過します。最低180s必要。"
+)
 
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://hdhogsjmdowevijxooiq.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
