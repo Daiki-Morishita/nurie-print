@@ -46,6 +46,7 @@ export type Theme =
   | 'seasonal-events'  // 季節の行事
   | 'spring'           // 春
   | 'summer'           // 夏
+  | 'autumn'           // 秋
   // ── おとな向けテーマ ──
   | 'mandala'           // 曼荼羅
   | 'botanical'         // 植物画
@@ -135,6 +136,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   'seasonal-events': '季節の行事',
   spring: '春',
   summer: '夏',
+  autumn: '秋',
   mandala: '曼荼羅',
   botanical: '植物画',
   landscape: '風景',

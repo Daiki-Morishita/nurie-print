@@ -11,3 +11,12 @@
 2026-05-14T06:51:55 kiwi-easy-1
 2026-05-14T07:19:35 kiwi-normal-1
 2026-05-14T07:45:13 kiwi-rich-1
+2026-05-15T23:49:50 tomato-easy-1
+2026-05-16T00:25:41 tomato-normal-1
+2026-05-16T01:03:06 tomato-rich-1
+2026-05-16T01:53:23 tomato-simple-2
+2026-05-16T02:31:27 tomato-easy-2
+2026-05-16T03:05:00 tomato-normal-2
+2026-05-16T03:32:54 tomato-rich-2
+2026-05-16T13:39:08 cabbage-normal-1
+2026-05-16T19:26:04 sweet-potato-normal-1
