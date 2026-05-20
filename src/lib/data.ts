@@ -20622,7 +20622,11 @@ const _materials3: Material[] = [
     illustVersion: 1,
     imageStatus: 'pending_review',
     pdfUrl: '',
-    createdAt: '2026-05-19T08:46',    id: 'landscape-swiss-mountains-simple-1',
+    createdAt: '2026-05-19T08:46',
+    popular: false,
+  },
+  {
+    id: 'landscape-swiss-mountains-simple-1',
     title: 'スイスアルプス',
     description: '雪山とシャレーの風景。',
     audience: 'adult',
