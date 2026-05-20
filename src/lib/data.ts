@@ -27490,6 +27490,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:11',
     popular: false,
   },
+  {
+    id: 'hokkaido-lavender-normal-1',
+    title: 'ラベンダー畑（北海道）',
+    description: '富良野のラベンダー畑の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['hokkaido-lavender', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hokkaido-lavender-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hokkaido-lavender-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-20T11:24',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
