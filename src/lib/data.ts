@@ -29377,6 +29377,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-21T06:44',
     popular: false,
   },
+  {
+    id: 'saitama-kinchaku-normal-1',
+    title: '曼珠沙華（埼玉・巾着田）',
+    description: '巾着田の彼岸花の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['saitama-kinchaku', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/saitama-kinchaku-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/saitama-kinchaku-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-21T06:59',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
