@@ -18619,6 +18619,9 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T20:02',
+    popular: false,
+  },
+  {
     id: 'moon-viewing-simple-1',
     title: 'まんまるおつきさま',
     description: 'シンプルなお月様とうさぎの線画。',
