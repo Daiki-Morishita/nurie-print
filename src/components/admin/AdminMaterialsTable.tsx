@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import type { Material, ImageStatus, Category, Theme } from '@/lib/types'
 import { IMAGE_STATUS_LABELS, IMAGE_STATUS_COLOR, CATEGORY_LABELS, THEME_LABELS } from '@/lib/types'
@@ -133,6 +133,32 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
   const [filterStatus, setFilterStatus] = useState<ImageStatus | 'all'>('all')
   const [search, setSearch] = useState('')
   const [prefsLoaded, setPrefsLoaded] = useState(false)
+
+  // Sticky toolbar via sentinel + IntersectionObserver (more robust than CSS position:sticky
+  // which can be defeated by flex containing blocks)
+  const sentinelRef = useRef<HTMLDivElement>(null)
+  const toolbarRef = useRef<HTMLDivElement>(null)
+  const [stuck, setStuck] = useState(false)
+  const [toolbarHeight, setToolbarHeight] = useState(0)
+
+  useEffect(() => {
+    if (!sentinelRef.current) return
+    const obs = new IntersectionObserver(
+      entries => setStuck(!entries[0].isIntersecting),
+      { rootMargin: '-176px 0px 0px 0px', threshold: 0 }
+    )
+    obs.observe(sentinelRef.current)
+    return () => obs.disconnect()
+  }, [])
+
+  useEffect(() => {
+    function updateHeight() {
+      if (toolbarRef.current) setToolbarHeight(toolbarRef.current.offsetHeight)
+    }
+    updateHeight()
+    window.addEventListener('resize', updateHeight)
+    return () => window.removeEventListener('resize', updateHeight)
+  }, [viewMode, selectedIds.size])
 
   // Restore prefs on mount
   useEffect(() => {
@@ -325,8 +351,18 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
         />
       )}
 
-      {/* スティッキー操作エリア（検索 + フィルタ + ツールバー） */}
-      <div className="sticky top-[112px] sm:top-[136px] md:top-[176px] z-30 bg-white border-b border-gray-200 shadow-sm rounded-t-xl">
+      {/* Sentinel: detect when toolbar's natural position scrolls out */}
+      <div ref={sentinelRef} aria-hidden style={{ height: 1 }} />
+
+      {/* Placeholder reserves space when toolbar becomes fixed */}
+      {stuck && <div aria-hidden style={{ height: toolbarHeight }} />}
+
+      {/* 操作エリア（fixed when stuck） */}
+      <div
+        ref={toolbarRef}
+        className={`${stuck ? 'fixed top-[112px] sm:top-[136px] md:top-[176px] left-0 right-0 z-40 shadow-md' : 'relative'} bg-white border-b border-gray-200 ${stuck ? '' : 'rounded-t-xl'}`}
+      >
+      <div className={stuck ? 'max-w-7xl mx-auto px-6' : ''}>
       {/* 検索バー */}
       <div className="px-4 py-2 border-b border-gray-100 bg-gray-50/30 flex items-center gap-2 text-xs">
         <input
@@ -462,6 +498,7 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
             >クリア</button>
           )}
         </div>
+      </div>
       </div>
       </div>
       {/* ← end sticky 操作エリア */}
