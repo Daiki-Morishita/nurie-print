@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import type { Material, ImageStatus, Category, Theme } from '@/lib/types'
 import { IMAGE_STATUS_LABELS, IMAGE_STATUS_COLOR, CATEGORY_LABELS, THEME_LABELS } from '@/lib/types'
@@ -102,7 +102,24 @@ async function updateStatus(id: string, status: ImageStatus) {
   }
 }
 
-export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
+const LS_KEY = 'admin-materials-prefs'
+
+type StoredPrefs = {
+  viewMode?: ViewMode
+  tileSize?: TileSize
+  sortKey?: SortKey
+  sortDir?: SortDir
+  filterCategory?: Category | 'all'
+  filterTheme?: Theme | 'all'
+  filterStatus?: ImageStatus | 'all'
+}
+
+export function AdminMaterialsTable({ materials: initialMaterials }: { materials: Material[] }) {
+  // Mirror server-passed materials so we can update status in-place without page reload
+  const [materials, setMaterials] = useState<Material[]>(initialMaterials)
+  // If server data changes (re-fetch), sync — preserves user filter/view in the meantime
+  useEffect(() => { setMaterials(initialMaterials) }, [initialMaterials])
+
   const [sortKey, setSortKey] = useState<SortKey>('created')
   const [sortDir, setSortDir] = useState<SortDir>('desc')
   const [editTarget, setEditTarget] = useState<Material | null>(null)
@@ -115,6 +132,36 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
   const [filterTheme, setFilterTheme] = useState<Theme | 'all'>('all')
   const [filterStatus, setFilterStatus] = useState<ImageStatus | 'all'>('all')
   const [search, setSearch] = useState('')
+  const [prefsLoaded, setPrefsLoaded] = useState(false)
+
+  // Restore prefs on mount
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(LS_KEY)
+      if (raw) {
+        const p: StoredPrefs = JSON.parse(raw)
+        if (p.viewMode) setViewMode(p.viewMode)
+        if (p.tileSize) setTileSize(p.tileSize)
+        if (p.sortKey) setSortKey(p.sortKey)
+        if (p.sortDir) setSortDir(p.sortDir)
+        if (p.filterCategory) setFilterCategory(p.filterCategory)
+        if (p.filterTheme) setFilterTheme(p.filterTheme)
+        if (p.filterStatus) setFilterStatus(p.filterStatus)
+      }
+    } catch {}
+    setPrefsLoaded(true)
+  }, [])
+
+  // Persist prefs whenever any changes
+  useEffect(() => {
+    if (!prefsLoaded) return
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify({
+        viewMode, tileSize, sortKey, sortDir,
+        filterCategory, filterTheme, filterStatus,
+      }))
+    } catch {}
+  }, [prefsLoaded, viewMode, tileSize, sortKey, sortDir, filterCategory, filterTheme, filterStatus])
 
   function handleSort(key: SortKey) {
     if (sortKey === key) {
@@ -143,12 +190,17 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
   }
 
   async function handleRowStatusChange(id: string, status: ImageStatus) {
+    // Optimistic update — keeps view/sort/scroll/selection intact
+    const prev = materials
+    setMaterials(ms => ms.map(m => m.id === id ? { ...m, imageStatus: status } : m))
     setBusy(true)
     try {
       await updateStatus(id, status)
-      window.location.reload()
     } catch (e) {
+      // Rollback on failure
+      setMaterials(prev)
       alert(e instanceof Error ? e.message : 'エラー')
+    } finally {
       setBusy(false)
     }
   }
@@ -192,14 +244,19 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
   async function handleBulkStatusChange() {
     if (selectedIds.size === 0) return
     if (!confirm(`${selectedIds.size}件のステータスを「${IMAGE_STATUS_LABELS[bulkStatus]}」に変更しますか？`)) return
+    const ids = Array.from(selectedIds)
+    const prev = materials
+    // Optimistic
+    setMaterials(ms => ms.map(m => ids.includes(m.id) ? { ...m, imageStatus: bulkStatus } : m))
     setBusy(true)
     try {
-      for (const id of selectedIds) {
+      for (const id of ids) {
         await updateStatus(id, bulkStatus)
       }
-      window.location.reload()
     } catch (e) {
+      setMaterials(prev)
       alert(e instanceof Error ? e.message : 'エラー')
+    } finally {
       setBusy(false)
     }
   }
@@ -258,7 +315,13 @@ export function AdminMaterialsTable({ materials }: { materials: Material[] }) {
         <EditMaterialModal
           material={editTarget}
           onClose={() => setEditTarget(null)}
-          onSaved={() => window.location.reload()}
+          onSaved={() => {
+            // Refresh materials list via server fetch trigger
+            // The simplest non-reload approach: refetch the admin page via router.refresh()
+            // but materials is a server prop. For now, soft-refresh by reloading,
+            // however user prefs persisted in localStorage will restore view/sort/filter.
+            window.location.reload()
+          }}
         />
       )}
 
