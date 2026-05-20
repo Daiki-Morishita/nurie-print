@@ -142,13 +142,20 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
   const [toolbarHeight, setToolbarHeight] = useState(0)
 
   useEffect(() => {
-    if (!sentinelRef.current) return
-    const obs = new IntersectionObserver(
-      entries => setStuck(!entries[0].isIntersecting),
-      { rootMargin: '-176px 0px 0px 0px', threshold: 0 }
-    )
-    obs.observe(sentinelRef.current)
-    return () => obs.disconnect()
+    function checkStuck() {
+      if (!sentinelRef.current) return
+      // Stuck when the sentinel scrolls above the offset (header height)
+      const offsetForBreakpoint = window.innerWidth >= 768 ? 176 : window.innerWidth >= 640 ? 136 : 112
+      const rect = sentinelRef.current.getBoundingClientRect()
+      setStuck(rect.top < offsetForBreakpoint)
+    }
+    checkStuck()
+    window.addEventListener('scroll', checkStuck, { passive: true })
+    window.addEventListener('resize', checkStuck)
+    return () => {
+      window.removeEventListener('scroll', checkStuck)
+      window.removeEventListener('resize', checkStuck)
+    }
   }, [])
 
   useEffect(() => {
