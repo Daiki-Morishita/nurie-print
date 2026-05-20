@@ -49,6 +49,7 @@ from themes_expansions import (
     MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
     ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
 )
+from themes_gotochi import GOTOCHI_ITEMS
 
 # =============================================
 # 設定
@@ -3189,6 +3190,7 @@ THEMES = {
     "summer":     SUMMER_ITEMS,
     "autumn":     AUTUMN_ITEMS,
     "winter":     WINTER_ITEMS,
+    "gotochi":    GOTOCHI_ITEMS,
 }
 
 # =============================================
@@ -4380,7 +4382,7 @@ def main():
         help="Chrome CDP URL（例: http://localhost:9222）。指定時は launch_persistent_context の代わりに使用")
     parser.add_argument("--type",    default=None,
         choices=["park", "dinosaurs", "fruits", "vegetables", "insects", "sports", "yokai",
-                 "spring", "flowers", "summer", "autumn", "winter",
+                 "spring", "flowers", "summer", "autumn", "winter", "gotochi",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece"],
