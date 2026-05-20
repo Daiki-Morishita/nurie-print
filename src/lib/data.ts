@@ -28170,6 +28170,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T16:42',
     popular: false,
   },
+  {
+    id: 'miyagi-castle-normal-1',
+    title: '青葉城址（宮城）',
+    description: '青葉城址と政宗像の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['miyagi-castle', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/miyagi-castle-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/miyagi-castle-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-20T16:58',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
