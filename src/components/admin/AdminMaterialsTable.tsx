@@ -144,12 +144,13 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
   useEffect(() => {
     function checkStuck() {
       if (!sentinelRef.current) return
-      // Sticky offset = the BOTTOM of the global Header (measure dynamically)
+      // Sticky offset = the BOTTOM of the global Header if any (measure dynamically)
+      // On /admin we hide the global Header → offset = 0
       const header = document.querySelector('header.sticky') as HTMLElement | null
-      const headerBottom = header ? header.getBoundingClientRect().bottom : 176
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 0
       setStickyOffset(headerBottom)
       const rect = sentinelRef.current.getBoundingClientRect()
-      setStuck(rect.top < headerBottom)
+      setStuck(rect.top < headerBottom + 1)
     }
     checkStuck()
     window.addEventListener('scroll', checkStuck, { passive: true })

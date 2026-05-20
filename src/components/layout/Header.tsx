@@ -39,8 +39,12 @@ export function Header({ materialCount = 555 }: { materialCount?: number }) {
   const { count: favCount, limit: favLimit } = useFavorites()
   const pathname = usePathname() ?? ''
   const isAdult = pathname.startsWith('/adult')
+  const isAdmin = pathname.startsWith('/admin')
   const nav = isAdult ? ADULT_NAV : KIDS_NAV
   const searchAction = isAdult ? '/adult/materials' : '/materials'
+
+  // 管理画面ではグローバルヘッダーを表示しない（操作エリアの固定を妨げるため）
+  if (isAdmin) return null
 
   return (
     <div className={`print:hidden ${isAdult ? 'adult-section' : ''}`}>
