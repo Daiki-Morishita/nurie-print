@@ -325,6 +325,8 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
         />
       )}
 
+      {/* スティッキー操作エリア（検索 + フィルタ + ツールバー） */}
+      <div className="sticky top-[112px] sm:top-[136px] md:top-[176px] z-30 bg-white border-b border-gray-200 shadow-sm rounded-t-xl">
       {/* 検索バー */}
       <div className="px-4 py-2 border-b border-gray-100 bg-gray-50/30 flex items-center gap-2 text-xs">
         <input
@@ -461,6 +463,8 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
           )}
         </div>
       </div>
+      </div>
+      {/* ← end sticky 操作エリア */}
 
       {viewMode === 'list' ? (
         <div className="overflow-x-auto">

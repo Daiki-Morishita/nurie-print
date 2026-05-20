@@ -128,7 +128,7 @@ export default async function AdminPage() {
         </details>
 
         {/* 教材一覧テーブル */}
-        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <div className="bg-white border border-gray-200 rounded-xl">
           <div className="px-5 py-3.5 border-b border-gray-100 flex items-center justify-between">
             <h2 className="font-semibold text-sm text-gray-900">教材一覧（{effective.length}件）</h2>
             <p className="text-xs text-gray-400">ヘッダーをクリックでソート / data.ts を編集してステータスを更新</p>
