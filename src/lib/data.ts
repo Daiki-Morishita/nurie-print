@@ -28425,6 +28425,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:01',
     popular: false,
   },
+  {
+    id: 'yamagata-shogi-normal-1',
+    title: '天童の将棋駒（山形）',
+    description: '王将の駒の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['yamagata-shogi', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamagata-shogi-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamagata-shogi-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-20T20:08',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
