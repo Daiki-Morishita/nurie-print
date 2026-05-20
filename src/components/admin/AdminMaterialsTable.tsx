@@ -134,20 +134,22 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
   const [search, setSearch] = useState('')
   const [prefsLoaded, setPrefsLoaded] = useState(false)
 
-  // Sticky toolbar via sentinel + IntersectionObserver (more robust than CSS position:sticky
-  // which can be defeated by flex containing blocks)
+  // Sticky toolbar via sentinel + scroll listener
   const sentinelRef = useRef<HTMLDivElement>(null)
   const toolbarRef = useRef<HTMLDivElement>(null)
   const [stuck, setStuck] = useState(false)
+  const [stickyOffset, setStickyOffset] = useState(176)
   const [toolbarHeight, setToolbarHeight] = useState(0)
 
   useEffect(() => {
     function checkStuck() {
       if (!sentinelRef.current) return
-      // Stuck when the sentinel scrolls above the offset (header height)
-      const offsetForBreakpoint = window.innerWidth >= 768 ? 176 : window.innerWidth >= 640 ? 136 : 112
+      // Sticky offset = the BOTTOM of the global Header (measure dynamically)
+      const header = document.querySelector('header.sticky') as HTMLElement | null
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 176
+      setStickyOffset(headerBottom)
       const rect = sentinelRef.current.getBoundingClientRect()
-      setStuck(rect.top < offsetForBreakpoint)
+      setStuck(rect.top < headerBottom)
     }
     checkStuck()
     window.addEventListener('scroll', checkStuck, { passive: true })
@@ -367,7 +369,14 @@ export function AdminMaterialsTable({ materials: initialMaterials }: { materials
       {/* 操作エリア（fixed when stuck） */}
       <div
         ref={toolbarRef}
-        className={`${stuck ? 'fixed top-[112px] sm:top-[136px] md:top-[176px] left-0 right-0 z-40 shadow-md' : 'relative'} bg-white border-b border-gray-200 ${stuck ? '' : 'rounded-t-xl'}`}
+        className={`bg-white border-b border-gray-200 ${stuck ? 'shadow-md' : 'rounded-t-xl'}`}
+        style={stuck ? {
+          position: 'fixed',
+          top: stickyOffset,
+          left: 0,
+          right: 0,
+          zIndex: 40,
+        } : undefined}
       >
       <div className={stuck ? 'max-w-7xl mx-auto px-6' : ''}>
       {/* 検索バー */}
