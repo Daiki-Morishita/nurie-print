@@ -29148,6 +29148,24 @@ const _materials3: Material[] = [
     createdAt: '2026-05-22T01:45',
     popular: false,
   },
+  {
+    id: 'masterpiece-rossetti-beata-rich-1',
+    title: 'ベアタ・ベアトリクス（ロセッティ）',
+    description: 'ロセッティ「ベアタ・ベアトリクス」の写実的な線画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'adult-coloring', theme: 'masterpiece',
+    tags: ['masterpiece-rossetti-beata', '有名絵画', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-rossetti-beata-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-rossetti-beata-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-22T01:50',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
