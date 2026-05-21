@@ -29853,6 +29853,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-21T13:50',
     popular: false,
   },
+  {
+    id: 'kanagawa-shumai-normal-1',
+    title: '崎陽軒シウマイ（神奈川・横浜）',
+    description: '崎陽軒シウマイの線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['kanagawa-shumai', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kanagawa-shumai-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kanagawa-shumai-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-21T14:01',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
