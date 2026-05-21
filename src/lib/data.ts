@@ -34672,6 +34672,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-22T06:15',
     popular: false,
   },
+  {
+    id: 'shizuoka-izu-onsen-normal-1',
+    title: '伊豆の温泉（静岡）',
+    description: '伊豆の露天風呂の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['shizuoka-izu-onsen', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/shizuoka-izu-onsen-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/shizuoka-izu-onsen-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-22T06:24',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
