@@ -29445,6 +29445,23 @@ const _materials3: Material[] = [
     createdAt: '2026-05-21T09:27',
     popular: false,
   },
+  {
+    id: 'chiba-naritasan-normal-1',
+    title: '成田山新勝寺（千葉）',
+    description: '成田山三重塔の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'gotochi',
+    tags: ['chiba-naritasan', 'gotochi', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-naritasan-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-naritasan-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-21T09:34',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
