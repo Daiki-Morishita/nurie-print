@@ -28878,6 +28878,24 @@ const _materials3: Material[] = [
     createdAt: '2026-05-21T07:55',
     popular: false,
   },
+  {
+    id: 'masterpiece-gaugin-tahiti-rich-1',
+    title: 'タヒチの女たち（ゴーギャン）',
+    description: 'ゴーギャン「タヒチの女たち」の写実的な線画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'adult-coloring', theme: 'masterpiece',
+    tags: ['masterpiece-gaugin-tahiti', '有名絵画', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-gaugin-tahiti-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/masterpiece-gaugin-tahiti-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-22T00:06',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3]
