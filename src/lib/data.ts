@@ -28674,6 +28674,13 @@ const _materials3: Material[] = [
     activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-sanin-coast-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-sanin-coast-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-22T00:00',
+    popular: false,
+  },
+  {
     id: 'hokkaido-bear-normal-1',
     title: 'ヒグマ（北海道）',
     description: '川で鮭をくわえるヒグマの線画。',
@@ -32769,6 +32776,9 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-22T10:08',
+    popular: false,
+  },
+  {
     id: 'saitama-canoe-normal-1',
     title: '荒川のカヌー（埼玉）',
     description: 'カヌーの線画。',

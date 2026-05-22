@@ -7,7 +7,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Providers } from '@/components/Providers'
 import { materials } from '@/lib/data'
 
-const GA_ID = 'G-TFK69QCK70'
+const GA_ID = 'G-DZ7JFS2RS3'
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
