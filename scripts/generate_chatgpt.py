@@ -54,15 +54,28 @@ from themes_gotochi import GOTOCHI_ITEMS
 # =============================================
 # 設定
 # =============================================
-INTER_REQUEST_SLEEP_MIN = 576  # 生成後インターバル下限 = 24h/150req = 576秒（絶対ルール）
-INTER_REQUEST_SLEEP_MAX = 640  # 生成後インターバル上限（ジッター +64秒）
-INTER_REQUEST_SLEEP_MAX_CAP = 1200  # バックオフ上限（秒）
+SEND_INTERVAL = 270   # 送信間隔下限（秒）: 3h/270 = 40回。リトライ含む全送信に適用
+SEND_INTERVAL_EXTRA = 70  # 上方ジッター上限（秒）: 270〜340秒でランダム
+INTER_REQUEST_SLEEP_MAX_CAP = 1200  # バックオフ上限（秒、rate_limited時のみ使用）
 
-# レート制限ガード: 150req/24h = 576s/req。リトライ・CF含む全リクエストに適用
-assert INTER_REQUEST_SLEEP_MIN >= 576, (
-    f"INTER_REQUEST_SLEEP_MIN={INTER_REQUEST_SLEEP_MIN}s が短すぎます。"
-    "150req/24h ルール違反。最低576s必要。"
+# レート制限ガード: 3h/40req = 270s/req。リトライ含む全送信に適用（絶対ルール）
+assert SEND_INTERVAL >= 270, (
+    f"SEND_INTERVAL={SEND_INTERVAL}s が短すぎます。3h/40req = 270s 必要。"
 )
+
+_last_send_time: float = 0.0  # 直前のプロンプト送信時刻（全体共有）
+
+
+def wait_for_next_slot():
+    """前回送信からSEND_INTERVAL秒経過するまで待機してから送信枠を確保する。"""
+    global _last_send_time
+    if _last_send_time > 0:
+        target = _last_send_time + SEND_INTERVAL + random.uniform(0, SEND_INTERVAL_EXTRA)
+        wait = max(0.0, target - time.time())
+        if wait > 0:
+            log(f"  インターバル待機: {wait:.1f}秒（送信間隔 {SEND_INTERVAL}s 保証）")
+            time.sleep(wait)
+    _last_send_time = time.time()
 
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://hdhogsjmdowevijxooiq.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
@@ -4101,9 +4114,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
     policy_error_count = 0  # コンテンツポリシー拒否の累計回数
 
     for attempt in range(1, max_retries + 1):
-        if attempt > 1:
-            log(f"  リトライ前インターバル（試行{attempt}）")
-            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
+        wait_for_next_slot()  # 全送信前に270s間隔を保証（attempt=1含む）
         log(f"  生成開始 (試行 {attempt}/{max_retries}): {file_id}")
         # JS navigation instead of CDP Page.navigate to avoid Cloudflare detection
         try:
@@ -4142,7 +4153,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
                 break
         if cf_notified:
             log("  Cloudflareチャレンジ通過 → インターバル待機（リクエストとしてカウント）")
-            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
+            wait_for_next_slot()
         try:
             box = page.wait_for_selector("#prompt-textarea", timeout=30000)
         except Exception as e:
@@ -4185,29 +4196,23 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
             if ok:
                 log(f"  ローカル保存: {out_path}")
                 delete_current_chat(page)
-                interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
-                return True, interval_max
-            log("  DL失敗、インターバル後リトライ")
-            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
+                return True, None
+            log("  DL失敗、次スロットでリトライ")
         elif status == 'policy':
             policy_error_count += 1
-            log(f"  ⚠️ ポリシー拒否 ({policy_error_count}回目)、インターバル後リトライ")
+            log(f"  ⚠️ ポリシー拒否 ({policy_error_count}回目)、次スロットでリトライ")
             delete_current_chat(page)
-            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
         elif status == 'rate_limit_ui':
-            # UI上の再開時刻メッセージ → Fail-Fast（HTTP 429と同様の扱い）
-            resume_time = img_src  # 'img_src' に再開時刻文字列が入っている
+            resume_time = img_src
             log(f"  🔴 UI rate-limit Fail-Fast: {resume_time}以降まで生成不可 → 終了")
             delete_current_chat(page)
             notify_mac("hoiku-print", f"UIレート制限 → {resume_time}以降に再起動してください")
             os._exit(1)
         elif status == 'error':
-            log("  ChatGPTエラー検知、インターバル後リトライ")
+            log("  ChatGPTエラー検知、次スロットでリトライ")
             delete_current_chat(page)
-            interval_max = jitter_sleep(interval_max, rate_limited=True, success_count=success_count)
         else:
-            log("  タイムアウト、インターバル後リトライ")
-            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
+            log("  タイムアウト、次スロットでリトライ")
 
     log(f"  最大リトライ到達、失敗: {file_id}")
     return False, interval_max
