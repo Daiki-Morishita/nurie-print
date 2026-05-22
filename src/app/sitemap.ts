@@ -8,6 +8,21 @@ const BASE_URL = 'https://nurie-print.com'
 const AGES = [2, 3, 4, 5, 6]
 const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports']
 
+// Material.createdAt は "2026-05-22T14:30" のような不完全な ISO 形式（秒・TZ欠落）。
+// Google Search Console は ISO 8601 全要素を要求するため、Date オブジェクトに変換して渡す。
+function toSitemapDate(s: string): Date {
+  // パターン1: "YYYY-MM-DDThh:mm" → 秒とJSTタイムゾーンを補完
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(s)) {
+    return new Date(s + ':00+09:00')
+  }
+  // パターン2: "YYYY-MM-DD" → 00:00 JST
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+    return new Date(s + 'T00:00:00+09:00')
+  }
+  const d = new Date(s)
+  return isNaN(d.getTime()) ? new Date() : d
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   // Kids materials
   const kidsMaterials = materials.filter(m => getAudience(m) === 'kids')
@@ -15,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const kidsMaterialPages = kidsMaterials.map(m => ({
     url: `${BASE_URL}/materials/${m.id}`,
-    lastModified: m.createdAt,
+    lastModified: toSitemapDate(m.createdAt),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
     ...(m.imageUrl ? { images: [m.imageUrl] } : {}),
@@ -23,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const adultMaterialPages = adultMaterials.map(m => ({
     url: `${BASE_URL}/adult/materials/${m.id}`,
-    lastModified: m.createdAt,
+    lastModified: toSitemapDate(m.createdAt),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
     ...(m.imageUrl ? { images: [m.imageUrl] } : {}),
