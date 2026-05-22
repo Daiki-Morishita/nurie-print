@@ -4116,7 +4116,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
     policy_error_count = 0  # コンテンツポリシー拒否の累計回数
 
     for attempt in range(1, max_retries + 1):
-        wait_for_next_slot()  # 全送信前に270s間隔を保証（attempt=1含む）
+        wait_for_next_slot()  # 全送信前に SEND_INTERVAL 間隔を保証（リトライ含む全attempt）
         log(f"  生成開始 (試行 {attempt}/{max_retries}): {file_id}")
         # JS navigation instead of CDP Page.navigate to avoid Cloudflare detection
         try:
