@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Noto_Sans_JP, Zen_Old_Mincho, M_PLUS_Rounded_1c } from 'next/font/google'
-import Script from 'next/script'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -60,17 +59,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja" className={`${notoSansJP.variable} ${zenOldMincho.variable} ${mPlusRounded.variable} h-full antialiased`}>
       <head>
+        {/* Google Analytics 4 — direct <head> placement so Google's tag verifier can detect it */}
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451" crossOrigin="anonymous" />
-      </head>
-      <body suppressHydrationWarning className="min-h-full flex flex-col bg-background font-[var(--font-noto-sans-jp),sans-serif]">
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-        <Script id="ga-init" strategy="afterInteractive">{`
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GA_ID}');
-        `}</Script>
+        ` }} />
+        {/* Google AdSense */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451" crossOrigin="anonymous" />
+      </head>
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-background font-[var(--font-noto-sans-jp),sans-serif]">
         <Providers>
           <Header materialCount={materials.length} />
           <main className="flex-1">{children}</main>
