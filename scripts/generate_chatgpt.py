@@ -4160,18 +4160,42 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
     for attempt in range(1, max_retries + 1):
         wait_for_next_slot()  # 全送信前に SEND_INTERVAL 間隔を保証（リトライ含む全attempt・エラー後も含む）
         log(f"  生成開始 (試行 {attempt}/{max_retries}): {file_id}")
-        # JS navigation instead of CDP Page.navigate to avoid Cloudflare detection
+        # New-chat ナビゲーション: フルリロードを避けてCloudflare検知を減らす
         try:
             cur = page.url
-            if "chatgpt.com" in cur and "challenges" not in cur:
-                # Already on chatgpt.com: use JS location change (SPA-like, less detectable)
-                page.evaluate("window.location.href='https://chatgpt.com/'")
-                page.wait_for_load_state("domcontentloaded", timeout=15000)
-            else:
+            if "chatgpt.com" not in cur or "challenges" in cur:
+                # ChatGPT外 or CF画面: フルロード不可避
                 page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
-        except Exception:
+                human_pause(1.8, 4.0)
+            elif re.search(r"chatgpt\.com/?$", cur):
+                # すでにホーム（新規チャット状態）: 何もしない
+                human_pause(0.5, 1.5)
+            else:
+                # 会話ページにいる → New chatボタンをSPAクリック（フルリロード不要）
+                new_chat_sel = (
+                    'a[href="/"][aria-label],'
+                    'button[aria-label="New chat"],'
+                    'button[aria-label="新しいチャット"],'
+                    '[data-testid="create-new-chat-button"],'
+                    'nav a[href="/"]'
+                )
+                btn = page.query_selector(new_chat_sel)
+                if btn:
+                    human_move_and_click(page, btn)
+                    page.wait_for_load_state("domcontentloaded", timeout=10000)
+                    log("  New chatボタンでSPA遷移")
+                else:
+                    # ボタン見つからず: history.pushState で軽量遷移
+                    page.evaluate(
+                        "history.pushState({}, '', '/'); "
+                        "window.dispatchEvent(new PopStateEvent('popstate'))"
+                    )
+                    log("  pushStateで軽量遷移")
+                human_pause(1.0, 2.5)
+        except Exception as e:
+            log(f"  ナビゲーション例外({e})→ goto fallback")
             page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
-        human_pause(1.8, 4.0)
+            human_pause(1.8, 4.0)
         # Cloudflareチャレンジを検知したらユーザーに通知して通過待機（最大120秒）
         def _has_cf_challenge():
             try:
