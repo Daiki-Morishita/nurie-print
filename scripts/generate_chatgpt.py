@@ -54,14 +54,14 @@ from themes_gotochi import GOTOCHI_ITEMS
 # =============================================
 # 設定
 # =============================================
-INTER_REQUEST_SLEEP_MIN = 180  # 生成後インターバル下限（秒）= 設計値通り
-INTER_REQUEST_SLEEP_MAX = 220  # 生成後インターバル上限（秒）→ 1サイクル270〜310s = 3h/40req
-INTER_REQUEST_SLEEP_MAX_CAP = 720  # バックオフ上限（秒）
+INTER_REQUEST_SLEEP_MIN = 576  # 生成後インターバル下限 = 24h/150req = 576秒（絶対ルール）
+INTER_REQUEST_SLEEP_MAX = 640  # 生成後インターバル上限（ジッター +64秒）
+INTER_REQUEST_SLEEP_MAX_CAP = 1200  # バックオフ上限（秒）
 
-# レート制限ガード: 3h/40req = 270s/req。生成待ち≒90sなのでインターバル下限は180s以上必須
-assert INTER_REQUEST_SLEEP_MIN >= 180, (
+# レート制限ガード: 150req/24h = 576s/req。リトライ・CF含む全リクエストに適用
+assert INTER_REQUEST_SLEEP_MIN >= 576, (
     f"INTER_REQUEST_SLEEP_MIN={INTER_REQUEST_SLEEP_MIN}s が短すぎます。"
-    "ChatGPT 3h/40req 制限を超過します。最低180s必要。"
+    "150req/24h ルール違反。最低576s必要。"
 )
 
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://hdhogsjmdowevijxooiq.supabase.co")
@@ -3522,7 +3522,33 @@ def git_push():
 # =============================================
 def wait_for_image(page, timeout=240):
     deadline = time.time() + timeout
+    _start = time.time()
+    _regen_attempted = False
     while time.time() < deadline:
+        elapsed = time.time() - _start
+        # タイムアウトの67%経過（200秒）かつ未試行 → 再生成ボタンを試みる
+        if not _regen_attempted and elapsed > timeout * 0.67:
+            try:
+                is_generating = page.query_selector(
+                    'button[aria-label="Stop generating"], '
+                    'button[aria-label*="停止"], '
+                    '[data-testid="stop-button"]'
+                )
+                if not is_generating:
+                    regen_btn = page.query_selector(
+                        'button[aria-label="Regenerate"], '
+                        'button[aria-label*="再生成"], '
+                        '[data-testid="regenerate-button"], '
+                        'button[aria-label*="regenerate" i]'
+                    )
+                    if regen_btn and regen_btn.is_visible():
+                        log(f"  ♻️ 再生成ボタン自動クリック（{elapsed:.0f}秒経過・生成停止検知）")
+                        regen_btn.click()
+                    else:
+                        log(f"  ⚠️ 再生成ボタン見つからず（{elapsed:.0f}秒経過）")
+            except Exception as e:
+                log(f"  再生成ボタン操作失敗: {e}")
+            _regen_attempted = True
         imgs = page.query_selector_all("img")
         for img in imgs:
             src = img.get_attribute("src") or ""
@@ -4075,14 +4101,38 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
     policy_error_count = 0  # コンテンツポリシー拒否の累計回数
 
     for attempt in range(1, max_retries + 1):
+        if attempt > 1:
+            log(f"  リトライ前インターバル（試行{attempt}）")
+            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
         log(f"  生成開始 (試行 {attempt}/{max_retries}): {file_id}")
-        page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
+        # JS navigation instead of CDP Page.navigate to avoid Cloudflare detection
+        try:
+            cur = page.url
+            if "chatgpt.com" in cur and "challenges" not in cur:
+                # Already on chatgpt.com: use JS location change (SPA-like, less detectable)
+                page.evaluate("window.location.href='https://chatgpt.com/'")
+                page.wait_for_load_state("domcontentloaded", timeout=15000)
+            else:
+                page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
+        except Exception:
+            page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
         human_pause(1.8, 4.0)
         # Cloudflareチャレンジを検知したらユーザーに通知して通過待機（最大120秒）
+        def _has_cf_challenge():
+            try:
+                if "__cf_chl" in page.url or "challenges.cloudflare.com" in page.url:
+                    return True
+                if "しばらくお待ちください" in page.title():
+                    return True
+                if any("challenges.cloudflare.com" in f.url for f in page.frames):
+                    return True
+            except Exception:
+                pass
+            return False
         cf_notified = False
         cf_deadline = time.time() + 120
         while time.time() < cf_deadline:
-            if "__cf_chl" in page.url or "しばらくお待ちください" in page.title():
+            if _has_cf_challenge():
                 if not cf_notified:
                     log("  ⚠️ Cloudflareチャレンジ検知 → ブラウザで手動クリックしてください")
                     notify_mac("hoiku-print", "Cloudflareチャレンジが出ています。ブラウザで「私はロボットではありません」をクリックしてください")
@@ -4090,6 +4140,9 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
                 time.sleep(3)
             else:
                 break
+        if cf_notified:
+            log("  Cloudflareチャレンジ通過 → インターバル待機（リクエストとしてカウント）")
+            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
         try:
             box = page.wait_for_selector("#prompt-textarea", timeout=30000)
         except Exception as e:
@@ -4134,12 +4187,13 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
                 delete_current_chat(page)
                 interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
                 return True, interval_max
-            log("  DL失敗、リトライ")
+            log("  DL失敗、インターバル後リトライ")
+            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
         elif status == 'policy':
             policy_error_count += 1
-            log(f"  ⚠️ ポリシー拒否 ({policy_error_count}回目)、スタイル変更してリトライ")
+            log(f"  ⚠️ ポリシー拒否 ({policy_error_count}回目)、インターバル後リトライ")
             delete_current_chat(page)
-            time.sleep(5)
+            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
         elif status == 'rate_limit_ui':
             # UI上の再開時刻メッセージ → Fail-Fast（HTTP 429と同様の扱い）
             resume_time = img_src  # 'img_src' に再開時刻文字列が入っている
@@ -4148,12 +4202,12 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
             notify_mac("hoiku-print", f"UIレート制限 → {resume_time}以降に再起動してください")
             os._exit(1)
         elif status == 'error':
-            log("  ChatGPTエラー検知、リトライ")
+            log("  ChatGPTエラー検知、インターバル後リトライ")
             delete_current_chat(page)
             interval_max = jitter_sleep(interval_max, rate_limited=True, success_count=success_count)
         else:
-            log("  タイムアウト、リトライ")
-        time.sleep(5)
+            log("  タイムアウト、インターバル後リトライ")
+            interval_max = jitter_sleep(interval_max, rate_limited=False, success_count=success_count)
 
     log(f"  最大リトライ到達、失敗: {file_id}")
     return False, interval_max
@@ -4191,8 +4245,8 @@ def generate_with_recovery(pw, state, file_id, prompt, out_path):
     if ok:
         return True
 
-    log(f"  [復旧①] 60秒クールダウン後に再試行: {file_id}")
-    time.sleep(60)
+    log(f"  [復旧①] インターバル待機後に再試行: {file_id}")
+    state['interval_max'] = jitter_sleep(state['interval_max'], rate_limited=False, success_count=sc)
     ok, state['interval_max'] = generate_one(state['page'], file_id, prompt, out_path, max_retries=1, interval_max=state['interval_max'], success_count=sc)
     if ok:
         return True
@@ -4306,7 +4360,7 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     if supabase_urls:
         if add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
             git_commit(item_id, theme_type, variant)
-    log(f"完了: {item_id}-{variant} ({len(supabase_urls)}/4枚)")
+    log(f"完了: {item_id}-{variant} ({len(supabase_urls)}/{len(levels)}枚)")
     return len(supabase_urls)
 
 
@@ -4419,8 +4473,15 @@ def main():
             if args.cdp:
                 browser = pw.chromium.connect_over_cdp(args.cdp)
                 context = browser.contexts[0]
-                page = context.new_page()
-                page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
+                context.add_init_script(_STEALTH_SCRIPT)
+                # Reuse existing chatgpt.com page to avoid CF challenge on new navigation
+                chatgpt_pages = [p for p in context.pages
+                                 if "chatgpt.com" in p.url and "challenges" not in p.url]
+                if chatgpt_pages:
+                    page = chatgpt_pages[0]
+                else:
+                    page = context.new_page()
+                    page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
             else:
                 context = pw.chromium.launch_persistent_context(
                     profile_dir, headless=False, channel="chrome",
