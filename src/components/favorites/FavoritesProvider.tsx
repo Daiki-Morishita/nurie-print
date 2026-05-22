@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import { useSession } from 'next-auth/react'
+import { trackEvent } from '@/lib/analytics'
 
 export interface FavoriteEntry {
   materialId: string
@@ -74,6 +75,9 @@ export function FavoritesProvider({ children }: { children: React.ReactNode }) {
 
     try {
       const res = await fetch(`/api/favorites/${id}`, { method: wasFavorited ? 'DELETE' : 'POST' })
+      if (res.ok) {
+        trackEvent(wasFavorited ? 'favorite_remove' : 'favorite_add', { material_id: id })
+      }
       if (!res.ok) {
         setEntries(prev => {
           const next = new Map(prev)

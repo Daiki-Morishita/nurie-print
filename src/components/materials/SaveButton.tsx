@@ -2,16 +2,22 @@
 
 import { Download, Check } from 'lucide-react'
 import { useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 interface Props {
   materialTitle: string
   imageUrl: string
+  materialId?: string
 }
 
-export function SaveButton({ materialTitle, imageUrl }: Props) {
+export function SaveButton({ materialTitle, imageUrl, materialId }: Props) {
   const [done, setDone] = useState(false)
 
   async function handleSave() {
+    trackEvent('save_click', {
+      material_id: materialId ?? '',
+      material_title: materialTitle,
+    })
     try {
       const res = await fetch(imageUrl)
       const blob = await res.blob()

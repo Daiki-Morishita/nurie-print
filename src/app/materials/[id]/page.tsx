@@ -231,8 +231,8 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
 
             {/* モバイル専用: 画像直下に印刷・保存ボタン */}
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
-              <PrintButton materialTitle={material.title} />
-              <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} />
+              <PrintButton materialTitle={material.title} materialId={material.id} />
+              <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               <p className="text-[11px] text-muted-foreground text-center pt-1">
                 A4横長・白黒印刷に最適化されています
               </p>
@@ -315,8 +315,8 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                 印刷・保存
               </h2>
               <div className="space-y-2.5">
-                <PrintButton materialTitle={material.title} />
-                <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} />
+                <PrintButton materialTitle={material.title} materialId={material.id} />
+                <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               </div>
               <p className="text-xs text-muted-foreground mt-3 text-center">
                 A4横長・白黒印刷に最適化されています
