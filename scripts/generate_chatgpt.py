@@ -3243,6 +3243,8 @@ THEMES = {
     "autumn":     AUTUMN_ITEMS,
     "winter":     WINTER_ITEMS,
     "gotochi":    GOTOCHI_ITEMS,
+    "densha":     DENSHA,
+    "shinkansen": SHINKANSEN,
 }
 
 # =============================================
@@ -3497,6 +3499,7 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "flowers-detail": "花・細密", "cityscape": "街並み",
         "railway": "鉄道", "architecture": "建築",
         "seasonal-adult": "季節の行事", "masterpiece": "有名絵画",
+        "densha": "でんしゃ", "shinkansen": "しんかんせん",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4366,6 +4369,10 @@ def run_item(pw, state, item_id, theme_type, variant, client):
             cond_items = FOOD_COND_ITEMS
         elif theme_type == "flowers":
             cond_items = FLOWER_COND_ITEMS
+        elif theme_type == "densha":
+            cond_items = DENSHA_COND_ITEMS
+        elif theme_type == "shinkansen":
+            cond_items = SHINKANSEN_COND_ITEMS
         elif theme_type in ADULT_THEME_KEYS:
             cond_items = ADULT_COND_ITEMS
         else:
