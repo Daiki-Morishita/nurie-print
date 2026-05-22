@@ -3961,6 +3961,8 @@ def whiten_background(in_path, out_path=None, threshold=235):
         import numpy as np
         out_path = out_path or in_path
         img = Image.open(in_path).convert("RGB")
+        # グレースケール変換でカラー成分を除去（塗り絵に色が残る問題の対策）
+        img = img.convert("L").convert("RGB")
         arr = np.array(img)
         mask = (arr[:,:,0] >= threshold) & (arr[:,:,1] >= threshold) & (arr[:,:,2] >= threshold)
         arr[mask] = [255, 255, 255]
@@ -4481,14 +4483,19 @@ def main():
                 browser = pw.chromium.connect_over_cdp(args.cdp)
                 context = browser.contexts[0]
                 context.add_init_script(_STEALTH_SCRIPT)
-                # Reuse existing chatgpt.com page to avoid CF challenge on new navigation
+                # 既存の chatgpt.com タブを再利用し、余分なタブを閉じる（CF challenge除外）
                 chatgpt_pages = [p for p in context.pages
-                                 if "chatgpt.com" in p.url and "challenges" not in p.url]
+                                 if 'chatgpt.com' in p.url and 'challenges' not in p.url]
+                other_pages   = [p for p in context.pages if 'chatgpt.com' not in p.url]
                 if chatgpt_pages:
                     page = chatgpt_pages[0]
+                    for p in chatgpt_pages[1:]:
+                        try: p.close()
+                        except Exception: pass
+                    log(f"  [タブ整理] chatgpt.comタブ {len(chatgpt_pages)}枚→1枚 (他タブ {len(other_pages)}枚は維持)")
                 else:
                     page = context.new_page()
-                    page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
+                page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
             else:
                 context = pw.chromium.launch_persistent_context(
                     profile_dir, headless=False, channel="chrome",
