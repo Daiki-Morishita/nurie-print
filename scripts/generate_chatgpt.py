@@ -4095,6 +4095,27 @@ def delete_current_chat(page):
         return False
 
 
+def cleanup_browser_tabs(context, max_tabs=9):
+    """タブ総数が max_tabs を超えたら chatgpt.com 以外のタブを古い順に閉じる。"""
+    all_pages = context.pages
+    if len(all_pages) <= max_tabs:
+        return
+    cf_pages      = [p for p in all_pages if 'challenges' in p.url]
+    chatgpt_pages = [p for p in all_pages if 'chatgpt.com' in p.url and 'challenges' not in p.url]
+    other_pages   = [p for p in all_pages if 'chatgpt.com' not in p.url and 'challenges' not in p.url]
+    closed = 0
+    # まず chatgpt.com 以外のタブを古い順に閉じる
+    for p in other_pages:
+        if len(context.pages) <= max_tabs:
+            break
+        try:
+            p.close()
+            closed += 1
+        except Exception:
+            pass
+    log(f"  [タブ整理] {len(all_pages)}枚→{len(context.pages)}枚 ({closed}枚削除, CF:{len(cf_pages)}枚保護)")
+
+
 def cleanup_old_chats(page, threshold=20):
     """セッション数がthresholdを超えたら古いものから削除する"""
     try:
@@ -4380,6 +4401,7 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     item  = items[item_id]
     vdata = item["variants"][variant]
     log(f"\n{'='*50}\n[{theme_type}] {item_id}-{variant} ({item['jp']})")
+    cleanup_browser_tabs(state['context'])
     cleanup_old_chats(state['page'], threshold=20)
 
     levels = list(vdata["scenes"].keys()) if len(vdata["scenes"]) < 4 else ["simple", "easy", "normal", "rich"]
@@ -4582,10 +4604,7 @@ def main():
                 chatgpt_pages = [p for p in context.pages
                                  if 'chatgpt.com' in p.url and 'challenges' not in p.url]
                 other_pages   = [p for p in context.pages if 'chatgpt.com' not in p.url]
-                total_tabs = len(context.pages)
-                if total_tabs >= 10:
-                    log(f"  ⚠️ [タブ警告] Chromeのタブが{total_tabs}枚あります（推奨10枚未満）。不要なタブを閉じてください。")
-                    notify_mac("hoiku-print タブ警告", f"Chromeのタブが{total_tabs}枚あります。不要なタブを閉じてください。")
+                cleanup_browser_tabs(context)
                 if chatgpt_pages:
                     page = chatgpt_pages[0]
                     for p in chatgpt_pages[1:]:
