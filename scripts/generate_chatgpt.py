@@ -4155,7 +4155,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
     policy_error_count = 0  # コンテンツポリシー拒否の累計回数
 
     for attempt in range(1, max_retries + 1):
-        wait_for_next_slot()  # 全送信前に SEND_INTERVAL 間隔を保証（リトライ含む全attempt）
+        wait_for_next_slot()  # 全送信前に SEND_INTERVAL 間隔を保証（リトライ含む全attempt・エラー後も含む）
         log(f"  生成開始 (試行 {attempt}/{max_retries}): {file_id}")
         # JS navigation instead of CDP Page.navigate to avoid Cloudflare detection
         try:
@@ -4454,15 +4454,15 @@ def queue_count_remaining_images() -> int:
 def make_daily_schedule(n_items: int, total_hours: float = 24.0) -> list:
     """
     n_items 個の生成を total_hours 時間内にランダム分散したインターバルリストを返す。
-    - 最低間隔: 5分 (300s)
+    - 最低間隔: SEND_INTERVAL（絶対ルールに合わせて統一）
     - 平均間隔: total_hours*3600 / n_items
-    - 各ギャップは平均±65%のランダム変動、5〜40分にクランプ
+    - 各ギャップは平均±65%のランダム変動、SEND_INTERVAL〜40分にクランプ
     """
     if n_items <= 1:
         return []
     total_sec = total_hours * 3600
     base = total_sec / n_items
-    min_gap, max_gap = 300, 2400  # 5分〜40分
+    min_gap, max_gap = SEND_INTERVAL, 2400  # SEND_INTERVAL〜40分
     gaps = []
     for _ in range(n_items - 1):
         g = base * random.uniform(0.35, 1.65)
