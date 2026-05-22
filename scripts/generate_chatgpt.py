@@ -4265,6 +4265,8 @@ def generate_with_recovery(pw, state, file_id, prompt, out_path):
         state['context'] = new_context
         state['page'] = new_context.new_page()
         attach_rate_limit_guard(state['page'])  # 新ページにもリスナーを再設定
+        log(f"  [復旧②] ブラウザ再起動完了 → インターバル待機後に再試行")
+        state['interval_max'] = jitter_sleep(state['interval_max'], rate_limited=False, success_count=sc)
         ok, state['interval_max'] = generate_one(state['page'], file_id, prompt, out_path, max_retries=1, interval_max=state['interval_max'], success_count=sc)
         if ok:
             return True
