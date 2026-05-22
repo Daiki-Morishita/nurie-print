@@ -42,14 +42,31 @@ import os, sys, time, re, random, subprocess, argparse, base64
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from supabase import create_client
-from themes_railway import RAILWAY
-from themes_architecture import ARCHITECTURE
-from themes_seasonal_masterpiece import SEASONAL_ADULT, MASTERPIECE
-from themes_expansions import (
-    MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
-    ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
-)
-from themes_gotochi import GOTOCHI_ITEMS
+from themes_trains import DENSHA, SHINKANSEN
+try:
+    from themes_railway import RAILWAY
+except ImportError:
+    RAILWAY = {}
+try:
+    from themes_architecture import ARCHITECTURE
+except ImportError:
+    ARCHITECTURE = {}
+try:
+    from themes_seasonal_masterpiece import SEASONAL_ADULT, MASTERPIECE
+except ImportError:
+    SEASONAL_ADULT = {}; MASTERPIECE = {}
+try:
+    from themes_expansions import (
+        MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
+        ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
+    )
+except ImportError:
+    MANDALA_EXTRA = BOTANICAL_EXTRA = LANDSCAPE_EXTRA = PATTERN_EXTRA = {}
+    ANIMALS_DETAIL_EXTRA = FLOWERS_DETAIL_EXTRA = CITYSCAPE_EXTRA = {}
+try:
+    from themes_gotochi import GOTOCHI_ITEMS
+except ImportError:
+    GOTOCHI_ITEMS = {}
 
 # =============================================
 # 設定
@@ -211,6 +228,28 @@ YOKAI_COND_ITEMS = COMMON_COND_ITEMS + [
     "怖い・グロテスク・ホラー的な描写は一切しない",
     "登場する子どもには必ず顔（目・鼻・口・笑顔）を描く",
     "登場人物は1〜2人まで（richは3人まで可）",
+]
+
+DENSHA_COND_ITEMS = COMMON_COND_ITEMS + [
+    "電車・列車のボディはシンプルで丸みのあるフォルムでかわいくデフォルメして描く",
+    "車体（電車の前面・側面）に顔・目・口・鼻などの表情は一切描かない（アンパンマン列車・トーマス号を除く）",
+    "窓は丸みのある四角で均等に並べる。ドア・パンタグラフ・台車・連結器などを車両の特徴として描く",
+    "ブランドロゴ・路線番号・文字・記号は一切描かない",
+    "帯・ストライプ・カラーラインを含め車体のどの部分も塗りつぶさない。帯は輪郭線のみで表現し、内側は白のまま（子どもが自分で塗る）",
+    "人物（子ども・大人・乗客・駅員など）は一切描かない。電車・線路・駅舎・風景のみで構成する",
+    "線路・ホーム・駅舎・踏切はシンプルな線でかわいく描く",
+    "電車は画面内に大きく描き、車体の前後が自然に画面外へ続くように構成する。列車が走り抜けている途中のシーンのように、先頭または後部が画面外に出ていてよい。車体の端が画面の枠内でスパッと終わる描き方はしない",
+]
+
+SHINKANSEN_COND_ITEMS = COMMON_COND_ITEMS + [
+    "新幹線のボディラインは流線型でかっこよくかわいくデフォルメして描く。先頭部の尖った形状を特徴的に描く",
+    "車体（新幹線の前面・側面）に顔・目・口・鼻などの表情は一切描かない",
+    "窓は細長い横長の形で均等に並べる。パンタグラフ・台車・連結部などを車両の特徴として描く",
+    "ブランドロゴ・車両番号・文字・記号は一切描かない",
+    "帯・ストライプ・カラーラインを含め車体のどの部分も塗りつぶさない。帯は輪郭線のみで表現し、内側は白のまま（子どもが自分で塗る）",
+    "人物（子ども・大人・乗客・駅員など）は一切描かない。新幹線・線路・駅・風景のみで構成する",
+    "線路・駅・架線柱・鉄橋・山・田んぼはシンプルな線でかわいく描く",
+    "新幹線は画面内に大きく描き、車体の前後が自然に画面外へ続くように構成する。列車が走り抜けている途中のシーンのように、先頭または後部が画面外に出ていてよい。車体の端が画面の枠内でスパッと終わる描き方はしない",
 ]
 
 # 大人向け: 写実・細密線画用の共通条件（子ども向けとは正反対）
@@ -4350,6 +4389,8 @@ def run_item(pw, state, item_id, theme_type, variant, client):
             search_query = f"{item['jp']} 写真 風景"
         elif theme_type == "architecture":
             search_query = f"{item['jp']} 建築 写真"
+        elif theme_type in ("densha", "shinkansen"):
+            search_query = f"{item['jp']} 走行風景 写真"
 
         prompt = {'scene': scene, 'note': item['note'], 'cond_items': cond_items, 'search_query': search_query}
         local_path = TMP_DIR / f"{file_id}-illust.png"
