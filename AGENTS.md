@@ -7,3 +7,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 ## 生成マニュアル
 
 @docs/manual.md
+
+## 絶対ルール：インターバル
+
+**あらゆるプロンプト送信の前後には必ず 150/24h ペース（576〜640秒）のインターバルを挟む。**
+
+- リトライ・Cloudflareチャレンジ・タイムアウト・エラー・DL失敗・復旧処理、いかなる場合も例外なし
+- インターバルをスキップして連続送信することは絶対禁止
+- スクリプト定数 `INTER_REQUEST_SLEEP_MIN = 576`（24h÷150req）で強制される
