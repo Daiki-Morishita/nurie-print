@@ -54,11 +54,11 @@ from themes_gotochi import GOTOCHI_ITEMS
 # =============================================
 # 設定
 # =============================================
-SEND_INTERVAL = 270   # 送信間隔下限（秒）: 3h/270 = 40回。リトライ含む全送信に適用
-SEND_INTERVAL_EXTRA = 70  # 上方ジッター上限（秒）: 270〜340秒でランダム
+SEND_INTERVAL = 380   # 送信間隔下限（秒）: ~206枚/日・26/40 3h窓（安全圏）
+SEND_INTERVAL_EXTRA = 80  # 上方ジッター上限（秒）: 380〜460秒でランダム
 INTER_REQUEST_SLEEP_MAX_CAP = 1200  # バックオフ上限（秒、rate_limited時のみ使用）
 
-# レート制限ガード: 3h/40req = 270s/req。リトライ含む全送信に適用（絶対ルール）
+# レート制限ガード: 380s/req = 約26req/3h。リトライ含む全送信に適用（絶対ルール）
 assert SEND_INTERVAL >= 270, (
     f"SEND_INTERVAL={SEND_INTERVAL}s が短すぎます。3h/40req = 270s 必要。"
 )

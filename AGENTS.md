@@ -10,8 +10,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## 絶対ルール：インターバル
 
-**あらゆるプロンプト送信の前後には必ず 150/24h ペース（576〜640秒）のインターバルを挟む。**
+**あらゆるプロンプト送信の前後には必ず 380〜460秒のインターバルを挟む。**
 
 - リトライ・Cloudflareチャレンジ・タイムアウト・エラー・DL失敗・復旧処理、いかなる場合も例外なし
 - インターバルをスキップして連続送信することは絶対禁止
-- スクリプト定数 `INTER_REQUEST_SLEEP_MIN = 576`（24h÷150req）で強制される
+- スクリプト定数 `SEND_INTERVAL = 380`（~206枚/日・26req/3h）で強制される
