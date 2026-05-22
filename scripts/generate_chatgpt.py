@@ -4565,9 +4565,27 @@ def main():
                         try: p.close()
                         except Exception: pass
                     log(f"  [タブ整理] chatgpt.comタブ {len(chatgpt_pages)}枚→1枚 (他タブ {len(other_pages)}枚は維持)")
+                    log(f"  [起動] 既存ChatGPTタブを再利用（goto不要）: {page.url[:60]}")
                 else:
+                    # chatgpt.comタブなし → ユーザーに手動ナビゲーションを促す
                     page = context.new_page()
-                page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
+                    log("  [起動] ChatGPTタブが見つかりません。")
+                    log("  ブラウザで https://chatgpt.com を開いてログインしてください。")
+                    log("  スクリプトは ChatGPT が開くまで待機します（最大5分）...")
+                    notify_mac("hoiku-print 起動待機",
+                               "ブラウザで chatgpt.com を開いてください。スクリプトが待機中です。")
+                    deadline = time.time() + 300
+                    while time.time() < deadline:
+                        chatgpt_pages = [p for p in context.pages
+                                         if 'chatgpt.com' in p.url and 'challenges' not in p.url]
+                        if chatgpt_pages:
+                            page = chatgpt_pages[0]
+                            log(f"  [起動] ChatGPT検出: {page.url[:60]}")
+                            break
+                        time.sleep(3)
+                    else:
+                        log("  [起動] 5分待機タイムアウト。page.gotoで強制ナビゲーションします。")
+                        page.goto("https://chatgpt.com/", wait_until="domcontentloaded")
             else:
                 context = pw.chromium.launch_persistent_context(
                     profile_dir, headless=False, channel="chrome",
