@@ -4582,6 +4582,10 @@ def main():
                 chatgpt_pages = [p for p in context.pages
                                  if 'chatgpt.com' in p.url and 'challenges' not in p.url]
                 other_pages   = [p for p in context.pages if 'chatgpt.com' not in p.url]
+                total_tabs = len(context.pages)
+                if total_tabs >= 10:
+                    log(f"  ⚠️ [タブ警告] Chromeのタブが{total_tabs}枚あります（推奨10枚未満）。不要なタブを閉じてください。")
+                    notify_mac("hoiku-print タブ警告", f"Chromeのタブが{total_tabs}枚あります。不要なタブを閉じてください。")
                 if chatgpt_pages:
                     page = chatgpt_pages[0]
                     for p in chatgpt_pages[1:]:
