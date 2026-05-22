@@ -4077,7 +4077,7 @@ def jitter_sleep(current_max, rate_limited=False, success_count=0):
     success_count: これまでの連続成功数
       0〜1回目 : 慣らし P1 — 5〜10分（リクエスト直後に制限が来ないかを様子見）
       2〜4回目 : 慣らし P2 — 2〜3分（徐々に短縮）
-      5回目以降: 通常運転 — INTER_REQUEST_SLEEP_MIN 〜 current_max
+      5回目以降: 通常運転 — SEND_INTERVAL 〜 current_max
     rate_limited=True の場合は current_max を2倍に拡大して待機（既存ロジック）
     """
     # --daily モード: スケジュール済みギャップを優先使用
@@ -4090,7 +4090,7 @@ def jitter_sleep(current_max, rate_limited=False, success_count=0):
     if rate_limited:
         current_max = min(current_max * 2, INTER_REQUEST_SLEEP_MAX_CAP)
         log(f"  レート制限検知→バックオフ拡大: 上限 {current_max}秒")
-        wait = random.uniform(INTER_REQUEST_SLEEP_MIN, current_max)
+        wait = random.uniform(SEND_INTERVAL, current_max)
         log(f"  インターバル待機: {wait:.1f}秒 (上限{current_max}s)")
     elif success_count < 2:
         wait = random.uniform(300, 600)   # P1: 5〜10分
@@ -4099,7 +4099,7 @@ def jitter_sleep(current_max, rate_limited=False, success_count=0):
         wait = random.uniform(120, 180)   # P2: 2〜3分
         log(f"  🐢 慣らし運転 P2 ({success_count + 1}回目成功): {wait:.0f}秒待機")
     else:
-        wait = random.uniform(INTER_REQUEST_SLEEP_MIN, current_max)
+        wait = random.uniform(SEND_INTERVAL, current_max)
         log(f"  インターバル待機: {wait:.1f}秒 (上限{current_max}s)")
     time.sleep(wait)
     return current_max
@@ -4108,10 +4108,10 @@ def jitter_sleep(current_max, rate_limited=False, success_count=0):
 def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=None, success_count=0):
     if out_path.exists():
         log(f"  スキップ（既存）: {file_id}")
-        return True, interval_max or INTER_REQUEST_SLEEP_MAX
+        return True, interval_max or SEND_INTERVAL + SEND_INTERVAL_EXTRA
 
     if interval_max is None:
-        interval_max = INTER_REQUEST_SLEEP_MAX
+        interval_max = SEND_INTERVAL + SEND_INTERVAL_EXTRA
 
     policy_error_count = 0  # コンテンツポリシー拒否の累計回数
 
@@ -4510,7 +4510,7 @@ def main():
         state = {
             'context':       context,
             'page':          page,
-            'interval_max':  INTER_REQUEST_SLEEP_MAX,
+            'interval_max':  SEND_INTERVAL + SEND_INTERVAL_EXTRA,
             'success_count': 0,
             'profile_dir':   profile_dir,
         }
