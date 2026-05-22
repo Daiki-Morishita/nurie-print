@@ -81,10 +81,27 @@ assert SEND_INTERVAL >= 270, (
 )
 
 _last_send_time: float = 0.0  # 直前のプロンプト送信時刻（全体共有）
+_LAST_SEND_FILE = Path(__file__).parent / ".last_send_time"  # 再起動後も引き継ぐための永続化ファイル
+
+
+def _load_last_send_time():
+    """起動時に前回送信時刻をファイルから読み込む。"""
+    global _last_send_time
+    try:
+        if _LAST_SEND_FILE.exists():
+            val = float(_LAST_SEND_FILE.read_text().strip())
+            # 24時間以内の値のみ有効（古すぎる場合は無視）
+            if time.time() - val < 86400:
+                _last_send_time = val
+                log(f"  [起動] 前回送信時刻を復元: {time.strftime('%H:%M:%S', time.localtime(val))} "
+                    f"({(time.time()-val)/60:.1f}分前)")
+    except Exception:
+        pass
 
 
 def wait_for_next_slot():
-    """前回送信からSEND_INTERVAL秒経過するまで待機してから送信枠を確保する。"""
+    """前回送信からSEND_INTERVAL秒経過するまで待機してから送信枠を確保する。
+    再起動をまたいでもインターバルが守られるよう送信時刻をファイルに永続化する。"""
     global _last_send_time
     if _last_send_time > 0:
         target = _last_send_time + SEND_INTERVAL + random.uniform(0, SEND_INTERVAL_EXTRA)
@@ -93,6 +110,10 @@ def wait_for_next_slot():
             log(f"  インターバル待機: {wait:.1f}秒（送信間隔 {SEND_INTERVAL}s 保証）")
             time.sleep(wait)
     _last_send_time = time.time()
+    try:
+        _LAST_SEND_FILE.write_text(str(_last_send_time))
+    except Exception:
+        pass
 
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://hdhogsjmdowevijxooiq.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
@@ -4544,6 +4565,8 @@ def main():
     if not args.all_adult and not args.all and not args.queue and args.item not in items:
         log(f"ERROR: '{args.item}' の定義がありません。利用可能: {list(items.keys())}")
         sys.exit(1)
+
+    _load_last_send_time()  # 再起動後もインターバルを引き継ぐ
 
     client = supabase_client()
 
