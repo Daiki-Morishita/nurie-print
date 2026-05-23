@@ -28,6 +28,12 @@ export function SortSelector({ basePath, showFavorites = true }: Props = {}) {
   function select(key: SortKey) {
     const params = new URLSearchParams(searchParams.toString())
     params.set('sort', key)
+    // ランダム時は nonce を付与 → 毎回違う URL に → サーバー側で新規シャッフル
+    if (key === 'random') {
+      params.set('_r', Math.random().toString(36).slice(2, 8))
+    } else {
+      params.delete('_r')
+    }
     const target = basePath ?? pathname
     router.push(`${target}?${params.toString()}`)
   }
