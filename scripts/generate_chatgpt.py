@@ -56,6 +56,10 @@ try:
 except ImportError:
     SEASONAL_ADULT = {}; MASTERPIECE = {}
 try:
+    from themes_fairytale import FAIRYTALE
+except ImportError:
+    FAIRYTALE = {}
+try:
     from themes_expansions import (
         MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
         ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
@@ -3270,6 +3274,7 @@ THEMES = {
     "gotochi":    GOTOCHI_ITEMS,
     "densha":     DENSHA,
     "shinkansen": SHINKANSEN,
+    "fairytale":  FAIRYTALE,
 }
 
 # =============================================
@@ -3525,6 +3530,7 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "railway": "鉄道", "architecture": "建築",
         "seasonal-adult": "季節の行事", "masterpiece": "有名絵画",
         "densha": "でんしゃ", "shinkansen": "しんかんせん",
+        "fairytale": "どうわ",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4567,7 +4573,8 @@ def main():
                  "spring", "flowers", "summer", "autumn", "winter", "gotochi",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
-                 "railway", "architecture", "seasonal-adult", "masterpiece"],
+                 "railway", "architecture", "seasonal-adult", "masterpiece",
+                 "fairytale"],
         help="テーマ種別（--all-adult 使用時は不要）")
     parser.add_argument("--item",    default=None,  help="アイテムID（例: swing, tyrannosaurus）")
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")
