@@ -218,7 +218,7 @@ export default async function HomePage() {
       </section>
 
       {/* ===== FEATURED PICK (random fade) ===== */}
-      <FeaturedPick items={featuredPool} intervalMs={5000} />
+      <FeaturedPick items={featuredPool} intervalMs={7000} />
 
       {/* ===== DIFFICULTY (moved up — quick filter) ===== */}
       <section className="py-12 border-t border-border bg-background">

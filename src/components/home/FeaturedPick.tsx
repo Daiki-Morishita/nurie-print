@@ -81,25 +81,23 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
 
   return (
     <section
-      className="relative pb-12 overflow-hidden"
+      className="relative pb-12 pt-6"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      {/* Ribbon */}
-      <div className="max-w-[1280px] mx-auto px-6">
-        <div className="relative">
-          <div className="absolute -top-2 left-0 inline-flex items-center gap-1.5 bg-[#E66A2C] text-white px-4 py-1.5 rounded-full font-rounded font-black text-[12px] shadow-md border-2 border-white z-20">
-            <span>🌟</span>おすすめの１枚
-          </div>
+      {/* Ribbon — 横幅枠の中、スライド枠の上に重ねる */}
+      <div className="relative max-w-[1280px] mx-auto px-6 z-20 pointer-events-none">
+        <div className="inline-flex items-center gap-1.5 bg-[#E66A2C] text-white px-4 py-1.5 rounded-full font-rounded font-black text-[12px] shadow-md border-2 border-white pointer-events-auto">
+          <span>🌟</span>おすすめの１枚
         </div>
       </div>
 
-      {/* Full-width slide */}
+      {/* Full-width slide — ribbon に半分かぶる位置 */}
       <div
         key={current.id}
-        className={`mt-2 relative w-full bg-gradient-to-br from-[#FFF3E0] via-white to-[#FFF8EC] border-y-2 border-[#E8B838]/40 ${
+        className={`-mt-4 relative w-full bg-gradient-to-br from-[#FFF3E0] via-white to-[#FFF8EC] border-y-2 border-[#E8B838]/40 overflow-hidden ${
           direction === 'next' ? 'animate-slide-in-right' : 'animate-slide-in-left'
         }`}
       >
