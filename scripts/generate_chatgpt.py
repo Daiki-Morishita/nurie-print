@@ -304,6 +304,10 @@ POLICY_PHRASES = [
     "may violate our content",
     "content policy",
     "violate our",
+    "コンテンツポリシーに違反",
+    "ポリシーに違反している可能性",
+    "安全ポリシーに基づき",
+    "お断りしています",
 ]
 
 # =============================================
@@ -4300,7 +4304,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
         page.keyboard.press("Enter")
         log("  プロンプト送信。生成待ち...")
 
-        status, img_src = wait_for_image(page, timeout=240)
+        status, img_src = wait_for_image(page, timeout=420)
         if status == 'ok':
             ok = download_image(page, img_src, out_path)
             if ok:
