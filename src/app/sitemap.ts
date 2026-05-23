@@ -6,7 +6,7 @@ import { columns } from '@/lib/columns'
 const BASE_URL = 'https://nurie-print.com'
 
 const AGES = [2, 3, 4, 5, 6]
-const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports']
+const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'trains', 'densha', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports', 'yokai', 'flowers', 'gotochi']
 
 // Material.createdAt は "2026-05-22T14:30" のような不完全な ISO 形式（秒・TZ欠落）。
 // Google Search Console は ISO 8601 全要素を要求するため、Date オブジェクトに変換して渡す。

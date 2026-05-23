@@ -35,6 +35,7 @@ export type Theme =
   | 'dinosaurs'     // 恐竜
   | 'vehicles'      // のりもの
   | 'trains'        // 電車
+  | 'densha'        // でんしゃ（旧キー / 在来線）
   | 'food'          // 食べ物
   | 'fruits'        // くだもの
   | 'vegetables'    // やさい
@@ -137,6 +138,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   dinosaurs: '恐竜',
   vehicles: 'のりもの',
   trains: '電車',
+  densha: 'でんしゃ',
   food: '食べ物',
   fruits: 'くだもの',
   vegetables: 'やさい',
