@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import Link from 'next/link'
 import { MaterialCard } from '@/components/materials/MaterialCard'
+import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
 import { SearchFilters } from '@/components/search/SearchFilters'
 import { SearchBar } from '@/components/search/SearchBar'
 import { SortSelector } from '@/components/search/SortSelector'
@@ -117,6 +118,8 @@ export default async function MaterialsPage({
                 </Link>
               </div>
             )
+          ) : sort === 'random' ? (
+            <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4" />
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
               {filtered.map(material => (

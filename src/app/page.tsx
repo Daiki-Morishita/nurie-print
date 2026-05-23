@@ -39,14 +39,36 @@ const organizationJsonLd = {
   description: '保育士・幼稚園教諭向けの無料ぬりえプリント配布サービス',
 }
 
-// Featured pool — eligible materials shown as today's pick (random rotation client-side)
+// Featured pool — テーマ分散させて多様化、サーバーシャッフル。クライアント側で更にローテート
 function getFeaturedPool(overrides: Awaited<ReturnType<typeof loadOverrides>>): FeaturedItem[] {
   const eligible = kidsMaterials.filter(m => (m.difficulty ?? 0) >= 2 && m.imageUrl)
   const visible = eligible.filter(m => {
     const status = overrides.get(m.id)?.imageStatus ?? m.imageStatus
     return status !== 'needs_revision'
   })
-  return visible.slice(0, 30).map(m => ({
+  // テーマごとにグループ化 → 各テーマから最大5件 → 全部結合してシャッフル
+  const byTheme = new Map<string, typeof visible>()
+  for (const m of visible) {
+    const key = m.theme ?? 'other'
+    if (!byTheme.has(key)) byTheme.set(key, [])
+    byTheme.get(key)!.push(m)
+  }
+  const pool: typeof visible = []
+  for (const items of byTheme.values()) {
+    // テーマ内でランダムに 5 件
+    const arr = [...items]
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    }
+    pool.push(...arr.slice(0, 5))
+  }
+  // 全体シャッフル
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  return pool.slice(0, 60).map(m => ({
     id: m.id,
     index: materials.indexOf(m),
     title: m.title,
@@ -244,7 +266,7 @@ export default async function HomePage() {
             kicker="No. 02"
             title="人気のぬりえ"
             count={`トップ ${popular.length}`}
-            href="/materials"
+            href="/materials?sort=popular"
             subtitle="過去30日でよく印刷されている教材"
             emoji="🌟"
           />

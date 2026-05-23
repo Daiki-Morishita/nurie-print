@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { MaterialCard } from '@/components/materials/MaterialCard'
+import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
 import { SortSelector } from '@/components/search/SortSelector'
 import { filterMaterials, type SortKey } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
@@ -154,6 +155,8 @@ export default async function CategoryPage({
             すべての教材を見る
           </Link>
         </div>
+      ) : sort === 'random' ? (
+        <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" />
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {filtered.map(material => (

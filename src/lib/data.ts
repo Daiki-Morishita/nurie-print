@@ -37479,11 +37479,7 @@ export function filterMaterials(params: {
 }
 
 export function getPopularMaterials(limit = 6, audience: Audience = 'kids', overrides?: Map<string, { imageStatus: string | null }>): Material[] {
-  const pool = materials.filter(m => isPublic(m, overrides) && getAudience(m) === audience)
-  const popular = pool.filter(m => m.popular)
-  if (popular.length >= limit) return popular.slice(0, limit)
-  const extra = pool.filter(m => !m.popular).slice(0, limit - popular.length)
-  return [...popular, ...extra]
+  return filterMaterials({ sort: 'popular', audience, overrides }).slice(0, limit)
 }
 
 export function getMaterialById(id: string, overrides?: Map<string, { imageStatus: string | null }>): Material | undefined {
