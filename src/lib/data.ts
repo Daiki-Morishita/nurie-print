@@ -25615,6 +25615,9 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T09:20',
     popular: false,
   },
+]
+
+const _materials4: Material[] = [
   {
     id: 'tengu-easy-1',
     title: 'かわいいてんぐ',
@@ -37029,4 +37032,184 @@ const _materials3: Material[] = [
     createdAt: '2026-05-23T09:29',
     popular: false,
   },
+  {
+    id: 'landscape-greek-island-simple-1',
+    title: 'ギリシャの島',
+    description: '白い家と青いドームの線画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
+    category: 'adult-coloring', theme: 'landscape',
+    tags: ['landscape-greek-island', '風景', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-simple-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-23T13:52',
+    popular: false,
+  },
+  {
+    id: 'landscape-greek-island-easy-1',
+    title: 'ギリシャの島',
+    description: 'エーゲ海のあるギリシャの島。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
+    category: 'adult-coloring', theme: 'landscape',
+    tags: ['landscape-greek-island', '風景', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-easy-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-easy-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-23T13:52',
+    popular: false,
+  },
+  {
+    id: 'landscape-greek-island-normal-1',
+    title: 'ギリシャの島',
+    description: '石段のあるギリシャの島の線画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'adult-coloring', theme: 'landscape',
+    tags: ['landscape-greek-island', '風景', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-23T13:52',
+    popular: false,
+  },
+  {
+    id: 'landscape-greek-island-rich-1',
+    title: 'ギリシャの島',
+    description: 'ギリシャの島の細密画。',
+    audience: 'adult',
+    ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'adult-coloring', theme: 'landscape',
+    tags: ['landscape-greek-island', '風景', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['色鉛筆・水彩でゆっくり仕上げる', '心を整える時間として'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/landscape-greek-island-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-23T13:52',
+    popular: false,
+  },
 ]
+
+export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
+
+export type SortKey = 'newest' | 'popular' | 'favorites' | 'random'
+
+export function getAudience(m: Material): Audience {
+  if (m.audience) return m.audience
+  if (m.theme && ADULT_THEMES.includes(m.theme)) return 'adult'
+  return 'kids'
+}
+
+export function isPublic(m: Material, overrides?: Map<string, { imageStatus: string | null }>): boolean {
+  const status = overrides?.get(m.id)?.imageStatus ?? m.imageStatus
+  return status !== 'needs_revision'
+}
+
+export function getMaterialsForAudience(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
+  return materials.filter(m => isPublic(m, overrides) && getAudience(m) === audience)
+}
+
+export function filterMaterials(params: {
+  age?: number
+  category?: string
+  season?: string
+  event?: string
+  theme?: string
+  difficulty?: number
+  search?: string
+  sort?: SortKey
+  favoriteIds?: string[]
+  audience?: 'kids' | 'adult'
+  overrides?: Map<string, { imageStatus: string | null }>
+}): Material[] {
+  const audience = params.audience ?? 'kids'
+  const filtered = materials.filter(m => {
+    if (!isPublic(m, params.overrides)) return false
+    if (getAudience(m) !== audience) return false
+    if (params.age && (m.ageMin > params.age || m.ageMax < params.age)) return false
+    if (params.category && m.category !== params.category) return false
+    if (params.season && m.season !== params.season) return false
+    if (params.event && m.event !== params.event) return false
+    if (params.theme && m.theme !== params.theme) return false
+    if (params.difficulty && m.difficulty !== params.difficulty) return false
+    if (params.search) {
+      const q = normalizeQuery(params.search)
+      const haystack = normalizeText([m.title, m.description, ...m.tags].join(' '))
+      if (!haystack.includes(q)) return false
+    }
+    return true
+  })
+
+  const sort = params.sort ?? 'newest'
+
+  if (sort === 'popular') {
+    return [...filtered].sort((a, b) => {
+      if (a.popular !== b.popular) return a.popular ? -1 : 1
+      const da = b.downloadCount ?? 0
+      const db = a.downloadCount ?? 0
+      if (da !== db) return da - db
+      return b.createdAt.localeCompare(a.createdAt)
+    })
+  }
+
+  if (sort === 'favorites' && params.favoriteIds) {
+    const favSet = new Set(params.favoriteIds)
+    return [...filtered].sort((a, b) => {
+      const af = favSet.has(a.id) ? 1 : 0
+      const bf = favSet.has(b.id) ? 1 : 0
+      if (af !== bf) return bf - af
+      return b.createdAt.localeCompare(a.createdAt)
+    })
+  }
+
+  if (sort === 'random') {
+    const arr = [...filtered]
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    }
+    return arr
+  }
+
+  return [...filtered].sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+}
+
+export function getPopularMaterials(limit = 6, audience: Audience = 'kids', overrides?: Map<string, { imageStatus: string | null }>): Material[] {
+  const pool = materials.filter(m => isPublic(m, overrides) && getAudience(m) === audience)
+  const popular = pool.filter(m => m.popular)
+  if (popular.length >= limit) return popular.slice(0, limit)
+  const extra = pool.filter(m => !m.popular).slice(0, limit - popular.length)
+  return [...popular, ...extra]
+}
+
+export function getMaterialById(id: string, overrides?: Map<string, { imageStatus: string | null }>): Material | undefined {
+  const m = materials.find(m => m.id === id)
+  if (!m || !isPublic(m, overrides)) return undefined
+  return m
+}
+
+export function getRelatedMaterials(material: Material, limit = 4, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
+  return materials
+    .filter(m => isPublic(m, overrides) && m.id !== material.id && (
+      m.category === material.category ||
+      m.theme === material.theme ||
+      m.event === material.event
+    ))
+    .slice(0, limit)
+}
