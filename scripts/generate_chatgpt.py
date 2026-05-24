@@ -68,6 +68,10 @@ try:
     from themes_gotochi import GOTOCHI_ITEMS
 except ImportError:
     GOTOCHI_ITEMS = {}
+try:
+    from themes_sweets import SWEETS_ITEMS
+except ImportError:
+    SWEETS_ITEMS = {}
 
 # =============================================
 # 設定
@@ -3267,6 +3271,7 @@ THEMES = {
     "gotochi":    GOTOCHI_ITEMS,
     "densha":     DENSHA,
     "shinkansen": SHINKANSEN,
+    "sweets":     SWEETS_ITEMS,
 }
 
 # =============================================
@@ -3522,6 +3527,7 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "railway": "鉄道", "architecture": "建築",
         "seasonal-adult": "季節の行事", "masterpiece": "有名絵画",
         "densha": "でんしゃ", "shinkansen": "しんかんせん",
+        "sweets": "おかし",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4428,7 +4434,7 @@ def run_item(pw, state, item_id, theme_type, variant, client):
         AUTUMN_FOOD_ITEMS = {"saury", "chestnut", "baked-sweet-potato"}
         if theme_type == "vegetables":
             cond_items = VEGETABLE_COND_ITEMS
-        elif theme_type == "fruits":
+        elif theme_type in ("fruits", "sweets"):
             cond_items = FOOD_COND_ITEMS
         elif theme_type == "insects":
             cond_items = INSECTS_COND_ITEMS
@@ -4568,7 +4574,7 @@ def main():
         help="Chrome CDP URL（例: http://localhost:9222）。指定時は launch_persistent_context の代わりに使用")
     parser.add_argument("--type",    default=None,
         choices=["park", "dinosaurs", "fruits", "vegetables", "insects", "sports", "yokai",
-                 "spring", "flowers", "summer", "autumn", "winter", "gotochi",
+                 "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece"],
