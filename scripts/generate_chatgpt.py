@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 ChatGPT画像生成 統合スクリプト（公園・恐竜 共通エンジン）
 
@@ -75,7 +76,7 @@ except ImportError:
 # =============================================
 # 設定
 # =============================================
-SEND_INTERVAL = 418   # 送信間隔下限（秒）: 380から10%増・~187枚/日・24/40 3h窓
+SEND_INTERVAL = 418   # 送信間隔下限（秒）: 380*1.1 (+10%) ~187枚/日・26/40 3h窓（安全圏）
 SEND_INTERVAL_EXTRA = 88  # 上方ジッター上限（秒）: 418〜506秒でランダム
 INTER_REQUEST_SLEEP_MAX_CAP = 1200  # バックオフ上限（秒、rate_limited時のみ使用）
 
@@ -4411,12 +4412,19 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     item  = items[item_id]
     vdata = item["variants"][variant]
     log(f"\n{'='*50}\n[{theme_type}] {item_id}-{variant} ({item['jp']})")
-    cleanup_browser_tabs(state['context'])
-    cleanup_old_chats(state['page'], threshold=20)
 
     levels = list(vdata["scenes"].keys()) if len(vdata["scenes"]) < 4 else ["simple", "easy", "normal", "rich"]
     supabase_urls = {}
     existing_content = DATA_TS.read_text()
+
+    # 全levelが既存の場合はAPI呼び出しをスキップ（レート節約）
+    if all(f"id: '{item_id}-{lv}-{variant}'" in existing_content for lv in levels):
+        for lv in levels:
+            log(f"  既存スキップ: {item_id}-{lv}-{variant}")
+        log(f"完了: {item_id}-{variant} (0/{len(levels)}枚)")
+        return False  # 生成なし（スキップ）: 呼び出し元でsleepしない
+
+    cleanup_old_chats(state['page'], threshold=20)
 
     for lv in levels:
         file_id   = f"{item_id}-{lv}-{variant}"
@@ -4704,8 +4712,9 @@ def main():
                 log(f"\n{'='*50}\n▶️  テーマ開始: {theme}  ({len(THEMES[theme])}種)\n{'='*50}")
                 for iid, item in THEMES[theme].items():
                     for v in sorted(item["variants"])[:1]:
-                        run_item(pw, state, iid, theme, v, client)
-                        time.sleep(10)
+                        generated = run_item(pw, state, iid, theme, v, client)
+                        if generated:
+                            time.sleep(10)
                 log(f"✅ テーマ完了: {theme}")
                 # 実行中に追記されたテーマも次のループで自動処理される
             git_push()
@@ -4717,15 +4726,17 @@ def main():
                 log(f"\n--- テーマ: {theme_type} ---")
                 for iid, item in THEMES[theme_type].items():
                     for v in sorted(item["variants"])[:1]:
-                        run_item(pw, state, iid, theme_type, v, client)
-                        time.sleep(10)
+                        generated = run_item(pw, state, iid, theme_type, v, client)
+                        if generated:
+                            time.sleep(10)
             log("\n全大人テーマ完了 → push開始")
             git_push()
         elif args.all:
             for iid, item in items.items():
                 for v in sorted(item["variants"])[:1]:  # 1バリアントのみ生成
-                    run_item(pw, state, iid, args.type, v, client)
-                    time.sleep(10)
+                    generated = run_item(pw, state, iid, args.type, v, client)
+                    if generated:
+                        time.sleep(10)
             # --all 時はここで1回だけpush（Vercelデプロイ節約）
             log("\n全テーマ完了 → push開始")
             git_push()
