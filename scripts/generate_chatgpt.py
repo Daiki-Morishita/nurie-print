@@ -57,6 +57,10 @@ try:
 except ImportError:
     SEASONAL_ADULT = {}; MASTERPIECE = {}
 try:
+    from themes_fairytale import FAIRYTALE
+except ImportError:
+    FAIRYTALE = {}
+try:
     from themes_expansions import (
         MANDALA_EXTRA, BOTANICAL_EXTRA, LANDSCAPE_EXTRA, PATTERN_EXTRA,
         ANIMALS_DETAIL_EXTRA, FLOWERS_DETAIL_EXTRA, CITYSCAPE_EXTRA,
@@ -309,6 +313,10 @@ POLICY_PHRASES = [
     "may violate our content",
     "content policy",
     "violate our",
+    "コンテンツポリシーに違反",
+    "ポリシーに違反している可能性",
+    "安全ポリシーに基づき",
+    "お断りしています",
 ]
 
 # =============================================
@@ -4307,7 +4315,7 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
         page.keyboard.press("Enter")
         log("  プロンプト送信。生成待ち...")
 
-        status, img_src = wait_for_image(page, timeout=240)
+        status, img_src = wait_for_image(page, timeout=420)
         if status == 'ok':
             ok = download_image(page, img_src, out_path)
             if ok:
@@ -4577,7 +4585,8 @@ def main():
                  "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
-                 "railway", "architecture", "seasonal-adult", "masterpiece"],
+                 "railway", "architecture", "seasonal-adult", "masterpiece",
+                 "fairytale"],
         help="テーマ種別（--all-adult 使用時は不要）")
     parser.add_argument("--item",    default=None,  help="アイテムID（例: swing, tyrannosaurus）")
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")
