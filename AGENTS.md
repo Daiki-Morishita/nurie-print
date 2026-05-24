@@ -8,6 +8,13 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 @docs/manual.md
 
+## 絶対ルール：Chromeタブ数
+
+**スクリプト起動前にChromeのタブを10枚未満にする。**
+
+- タブが多いとChromeが重くなりタイムアウト・リトライが増え、生成枚数が減る
+- スクリプト起動時に10枚以上だとmacOS通知+ログ警告が出る
+
 ## 絶対ルール：インターバル
 
 **あらゆるプロンプト送信の前後には必ず 380〜460秒のインターバルを挟む。**

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight, ChevronRight, Clock } from 'lucide-react'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
+import { FeaturedPick, type FeaturedItem } from '@/components/home/FeaturedPick'
 import type { Difficulty } from '@/lib/types'
 import { materials, getPopularMaterials, getMaterialById, filterMaterials, getMaterialsForAudience } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
@@ -38,25 +39,61 @@ const organizationJsonLd = {
   description: '保育士・幼稚園教諭向けの無料ぬりえプリント配布サービス',
 }
 
-// Today's pick — deterministic rotation by day of year
-function getTodaysPick() {
-  const now = new Date()
-  const start = new Date(now.getFullYear(), 0, 0)
-  const diff = now.getTime() - start.getTime()
-  const dayOfYear = Math.floor(diff / 86400000)
+// Featured pool — テーマ分散させて多様化、サーバーシャッフル。クライアント側で更にローテート
+function getFeaturedPool(overrides: Awaited<ReturnType<typeof loadOverrides>>): FeaturedItem[] {
   const eligible = kidsMaterials.filter(m => (m.difficulty ?? 0) >= 2 && m.imageUrl)
-  return eligible[dayOfYear % eligible.length] || kidsMaterials.find(m => m.imageUrl)!
+  const visible = eligible.filter(m => {
+    const status = overrides.get(m.id)?.imageStatus ?? m.imageStatus
+    return status !== 'needs_revision'
+  })
+  // テーマごとにグループ化 → 各テーマから最大5件 → 全部結合してシャッフル
+  const byTheme = new Map<string, typeof visible>()
+  for (const m of visible) {
+    const key = m.theme ?? 'other'
+    if (!byTheme.has(key)) byTheme.set(key, [])
+    byTheme.get(key)!.push(m)
+  }
+  const pool: typeof visible = []
+  for (const items of byTheme.values()) {
+    // テーマ内でランダムに 5 件
+    const arr = [...items]
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    }
+    pool.push(...arr.slice(0, 5))
+  }
+  // 全体シャッフル
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  return pool.slice(0, 60).map(m => ({
+    id: m.id,
+    index: materials.indexOf(m),
+    title: m.title,
+    description: m.description,
+    imageUrl: m.imageUrl,
+    ageMin: m.ageMin,
+    ageMax: m.ageMax,
+    difficulty: m.difficulty,
+    duration: m.duration,
+  }))
 }
 
 // Theme summary with representative material
 const THEMES = [
-  { key: 'animals',   label: '動物',     emoji: '🐾', color: '#E66A2C', sample: 'giraffe-easy-1',       href: '/category/theme/animals' },
-  { key: 'dinosaurs', label: '恐竜',     emoji: '🦕', color: '#7AA875', sample: 'tyrannosaurus-easy-1', href: '/category/theme/dinosaurs' },
-  { key: 'vehicles',  label: '乗り物',   emoji: '🚒', color: '#C25A6E', sample: 'fire-truck-easy',      href: '/category/theme/vehicles' },
-  { key: 'sea',       label: '海',       emoji: '🐟', color: '#4FA7B8', sample: 'dolphin-easy',         href: '/category/theme/sea' },
-  { key: 'insects',   label: '虫',       emoji: '🐛', color: '#7AA875', sample: 'butterfly-easy-1',     href: '/category/theme/insects' },
-  { key: 'fruits',    label: '食べ物',   emoji: '🍎', color: '#E8B838', sample: 'apple-easy-1',         href: '/category/theme/fruits' },
-  { key: 'sports',    label: 'スポーツ', emoji: '⚽', color: '#4FA7B8', sample: 'soccer-easy-1',        href: '/category/theme/sports' },
+  { key: 'animals',    label: '動物',     emoji: '🐾', color: '#E66A2C', sample: 'giraffe-easy-1',         href: '/category/theme/animals' },
+  { key: 'dinosaurs',  label: '恐竜',     emoji: '🦕', color: '#7AA875', sample: 'tyrannosaurus-easy-1',   href: '/category/theme/dinosaurs' },
+  { key: 'vehicles',   label: '乗り物',   emoji: '🚒', color: '#C25A6E', sample: 'fire-truck-easy',        href: '/category/theme/vehicles' },
+  { key: 'sea',        label: '海',       emoji: '🐟', color: '#4FA7B8', sample: 'dolphin-easy',           href: '/category/theme/sea' },
+  { key: 'insects',    label: '虫',       emoji: '🐛', color: '#7AA875', sample: 'butterfly-easy-1',       href: '/category/theme/insects' },
+  { key: 'fruits',     label: 'くだもの', emoji: '🍎', color: '#E8B838', sample: 'apple-easy-1',           href: '/category/theme/fruits' },
+  { key: 'vegetables', label: 'やさい',   emoji: '🥕', color: '#E8B838', sample: 'carrot-normal-1',        href: '/category/theme/vegetables' },
+  { key: 'sports',     label: 'スポーツ', emoji: '⚽', color: '#4FA7B8', sample: 'soccer-easy-1',          href: '/category/theme/sports' },
+  { key: 'yokai',      label: '妖怪',     emoji: '👹', color: '#C25A6E', sample: 'oni-normal-1',           href: '/category/theme/yokai' },
+  { key: 'flowers',    label: '花',       emoji: '🌸', color: '#C25A6E', sample: 'sakura-normal-1',        href: '/category/theme/flowers' },
+  { key: 'gotochi',    label: 'ご当地',   emoji: '🗾', color: '#E66A2C', sample: 'hokkaido-bear-normal-1', href: '/category/theme/gotochi' },
 ] as const
 
 function getThemeSample(themeKey: string, sampleId: string) {
@@ -102,7 +139,7 @@ const faqJsonLd = {
 export default async function HomePage() {
   const overrides = await loadOverrides()
   const popular = getPopularMaterials(12, 'kids', overrides)
-  const todaysPick = getTodaysPick()
+  const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
 
   return (
@@ -180,56 +217,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ===== TODAY'S PICK ===== */}
-      <section className="pb-12">
-        <div className="max-w-[1080px] mx-auto px-6">
-          <div className="bg-white border-2 border-[#E8B838]/40 rounded-2xl p-7 md:p-10 grid md:grid-cols-2 gap-8 md:gap-10 items-center shadow-sm relative">
-            {/* Cute ribbon */}
-            <div className="absolute -top-3 left-6 md:left-10 inline-flex items-center gap-1.5 bg-[#E66A2C] text-white px-4 py-1.5 rounded-full font-rounded font-black text-[12px] shadow-md border-2 border-white">
-              <span>🌟</span>きょうのいちおし
-            </div>
-            <div>
-              <div className="font-rounded text-[11px] text-muted-foreground tracking-[0.2em] mb-3 mt-2">
-                No. {String(materials.indexOf(todaysPick) + 1).padStart(3, '0')}
-              </div>
-              <h2 className="font-rounded text-[26px] md:text-[34px] font-black leading-[1.3] mb-4">
-                {todaysPick.title}
-              </h2>
-              <p className="text-[14px] text-foreground/80 leading-relaxed mb-5 pl-4 border-l-[3px] border-primary">
-                {todaysPick.description}
-              </p>
-              <div className="flex flex-wrap items-center gap-3 mb-6 text-[11px] text-muted-foreground">
-                {todaysPick.ageMin && todaysPick.ageMax && (
-                  <span className="bg-background px-2.5 py-1 rounded border border-border">
-                    {todaysPick.ageMin}〜{todaysPick.ageMax}歳
-                  </span>
-                )}
-                {todaysPick.difficulty && (
-                  <span className="bg-background px-2.5 py-1 rounded border border-border">
-                    難易度 {todaysPick.difficulty}
-                  </span>
-                )}
-                {todaysPick.duration && (
-                  <span className="bg-background px-2.5 py-1 rounded border border-border flex items-center gap-1">
-                    <Clock className="w-3 h-3" />約{todaysPick.duration}分
-                  </span>
-                )}
-              </div>
-              <Link
-                href={`/materials/${todaysPick.id}`}
-                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-[14px] font-rounded font-black hover:-translate-y-0.5 transition-all shadow-md"
-              >
-                <span>🖍️</span>つかってみる
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-            <div className="aspect-[1.414/1] bg-background border border-border rounded-md overflow-hidden flex items-center justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={todaysPick.imageUrl} alt={todaysPick.title} className="w-full h-full object-contain" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ===== FEATURED PICK (random fade) ===== */}
+      <FeaturedPick items={featuredPool} intervalMs={7000} />
 
       {/* ===== DIFFICULTY (moved up — quick filter) ===== */}
       <section className="py-12 border-t border-border bg-background">
@@ -277,7 +266,7 @@ export default async function HomePage() {
             kicker="No. 02"
             title="人気のぬりえ"
             count={`トップ ${popular.length}`}
-            href="/materials"
+            href="/materials?sort=popular"
             subtitle="過去30日でよく印刷されている教材"
             emoji="🌟"
           />
