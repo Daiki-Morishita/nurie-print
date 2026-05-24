@@ -41706,6 +41706,23 @@ const _materials4: Material[] = [
     createdAt: '2026-05-24T21:56',
     popular: false,
   },
+  {
+    id: 'fairytale-snow-white-normal-1',
+    title: 'ガラスのひつぎ',
+    description: 'ガラスの棺の線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-snow-white', 'どうわ', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-25T00:06',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
