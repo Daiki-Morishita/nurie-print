@@ -188,13 +188,13 @@ export default async function HomePage() {
               {[
                 { label: 'きりん', emoji: '🦒', q: 'きりん', color: '#E8B838' },
                 { label: 'しんかんせん', emoji: '🚄', q: '新幹線', color: '#4FA7B8' },
+                { label: '迷路', emoji: '🧭', href: '/maze', color: '#7AA875' },
                 { label: '2歳児向け', emoji: '👶', q: '?age=2', isFilter: true, color: '#E66A2C' },
-                { label: '親子の動物', emoji: '🐻', q: '親子', color: '#C25A6E' },
                 { label: 'ティラノ', emoji: '🦖', q: 'ティラノ', color: '#7AA875' },
               ].map((t, i) => (
                 <Link
                   key={i}
-                  href={t.isFilter ? `/materials${t.q}` : `/materials?search=${encodeURIComponent(t.q)}`}
+                  href={t.href ?? (t.isFilter ? `/materials${t.q}` : `/materials?search=${encodeURIComponent(t.q ?? '')}`)}
                   className="inline-flex items-center gap-1.5 bg-white border-2 px-3 py-1.5 rounded-full text-[12px] font-bold hover:-translate-y-0.5 transition-all shadow-sm"
                   style={{ borderColor: t.color, color: t.color }}
                 >

@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Noto_Sans_JP, Zen_Old_Mincho, M_PLUS_Rounded_1c } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Providers } from '@/components/Providers'
-import { materials } from '@/lib/data'
+import { getMaterialsForAudience } from '@/lib/data'
 
 const GA_ID = 'G-DZ7JFS2RS3'
 
@@ -59,33 +60,38 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" className={`${notoSansJP.variable} ${zenOldMincho.variable} ${mPlusRounded.variable} h-full antialiased`}>
-      <head>
-        {/* Google Analytics 4 — direct <head> placement so Google's tag verifier can detect it */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_ID}');
-        ` }} />
-        {/* Google AdSense */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451" crossOrigin="anonymous" />
-        {/* Microsoft Clarity — ヒートマップ・セッション録画 */}
-        <script dangerouslySetInnerHTML={{ __html: `
-          (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "wuyjgxh5hx");
-        ` }} />
-      </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col bg-background font-[var(--font-noto-sans-jp),sans-serif]">
+        {/* Google Analytics 4 */}
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+        {/* Google AdSense */}
+        <Script
+          id="adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+        {/* Microsoft Clarity */}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "wuyjgxh5hx");
+          `}
+        </Script>
         <Providers>
-          <Header materialCount={materials.length} />
+          <Header kidsCount={getMaterialsForAudience('kids').length} adultCount={getMaterialsForAudience('adult').length} />
           <main className="flex-1">{children}</main>
-          <Footer materialCount={materials.length} />
+          <Footer materialCount={getMaterialsForAudience('kids').length} />
         </Providers>
         <SpeedInsights />
       </body>

@@ -580,7 +580,7 @@ const _materials1: Material[] = [
   {
     id: 'panda-easy-1',
     title: '笹のそばにすわるかわいいパンダ',
-    description: '笹と一緒に座る可愛いパンダの線画。シンプルな線で小さなお子様も塗りやすいぬりえです。',
+    description: '笹と一緒に座る可愛いパンダのぬりえ。シンプルな線で小さなお子様も塗りやすいぬりえです。',
     ageMin: 2,
     ageMax: 5,
     difficulty: 1,
@@ -1241,7 +1241,7 @@ const _materials1: Material[] = [
   {
     id: 'chick-simple-1',
     title: 'あんよをあげておどるひよこ',
-    description: '片足をあげて元気におどるひよこの線画。シンプルで塗りやすい構図です。',
+    description: '片足をあげて元気におどるひよこのぬりえ。シンプルで塗りやすい構図です。',
     ageMin: 2,
     ageMax: 4,
     difficulty: 1,
@@ -1321,7 +1321,7 @@ const _materials1: Material[] = [
   {
     id: 'fox-easy-1',
     title: 'きのこをみつけたこぎつね',
-    description: 'ふさふさのしっぽが可愛いこぎつねと小さなきのこの線画。秋の森を感じる優しい雰囲気のぬりえです。',
+    description: 'ふさふさのしっぽが可愛いこぎつねと小さなきのこのぬりえ。秋の森を感じる優しい雰囲気のぬりえです。',
     ageMin: 3,
     ageMax: 5,
     difficulty: 1,
@@ -3272,7 +3272,7 @@ const _materials1: Material[] = [
   {
     id: 'duck-simple-1',
     title: 'にこにこあひるのこ',
-    description: '正面を向いてにっこりほほえむひなあひるの線画。丸くてシンプルな形で小さな子でも塗りやすい。',
+    description: '正面を向いてにっこりほほえむひなあひるのぬりえ。丸くてシンプルな形で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['あひる', 'ひな', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3352,7 +3352,7 @@ const _materials1: Material[] = [
   {
     id: 'gorilla-simple-1',
     title: 'にこにこゴリラ',
-    description: '正面を向いてにっこりほほえむかわいいゴリラの線画。丸くてシンプルな形で小さな子でも塗りやすい。',
+    description: '正面を向いてにっこりほほえむかわいいゴリラのぬりえ。丸くてシンプルな形で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ゴリラ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3372,7 +3372,7 @@ const _materials1: Material[] = [
   {
     id: 'gorilla-easy-1',
     title: 'えだにすわるこゴリラ',
-    description: '木の枝にちょこんとすわるこゴリラの線画。葉っぱの背景がシンプルで塗りやすい。',
+    description: '木の枝にちょこんとすわるこゴリラのぬりえ。葉っぱの背景がシンプルで塗りやすい。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'animals',
     tags: ['ゴリラ', 'こども', 'き', 'どうぶつ', 'ぬりえ'],
@@ -3432,7 +3432,7 @@ const _materials1: Material[] = [
   {
     id: 'kangaroo-simple-1',
     title: 'かわいいカンガルー',
-    description: '正面を向いてすわるかわいいカンガルーの線画。丸みのあるシンプルな形で小さな子でも塗りやすい。',
+    description: '正面を向いてすわるかわいいカンガルーのぬりえ。丸みのあるシンプルな形で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['カンガルー', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3512,7 +3512,7 @@ const _materials1: Material[] = [
   {
     id: 'hedgehog-simple-1',
     title: 'かわいいハリネズミ',
-    description: 'シンプルなハリネズミの線画。丸いフォルムで背中のとげが特徴的。小さな子でも塗りやすい。',
+    description: 'シンプルなハリネズミのぬりえ。丸いフォルムで背中のとげが特徴的。小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ハリネズミ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3532,7 +3532,7 @@ const _materials1: Material[] = [
   {
     id: 'hedgehog-easy-1',
     title: 'おちばのなかのハリネズミ',
-    description: '落ち葉の上を歩くかわいいハリネズミの線画。秋の雰囲気が楽しめるシンプルな構図。',
+    description: '落ち葉の上を歩くかわいいハリネズミのぬりえ。秋の雰囲気が楽しめるシンプルな構図。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'animals',
     tags: ['ハリネズミ', 'おちば', 'あき', 'どうぶつ', 'ぬりえ'],
@@ -3615,7 +3615,7 @@ const _materials1: Material[] = [
   {
     id: 'owl-easy-1',
     title: 'えだにとまるフクロウ',
-    description: '木の枝にとまって翼を広げてあいさつするかわいいフクロウの線画。葉っぱつきの枝が背景に。',
+    description: '木の枝にとまって翼を広げてあいさつするかわいいフクロウのぬりえ。葉っぱつきの枝が背景に。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'animals',
     tags: ['フクロウ', 'えだ', 'とり', 'どうぶつ', 'ぬりえ'],
@@ -3675,7 +3675,7 @@ const _materials1: Material[] = [
   {
     id: 'zebra-simple-1',
     title: 'かわいいシマウマ',
-    description: '正面を向いてたつかわいいシマウマの線画。シンプルな縞模様で小さな子でも塗りやすい。',
+    description: '正面を向いてたつかわいいシマウマのぬりえ。シンプルな縞模様で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['シマウマ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3695,7 +3695,7 @@ const _materials1: Material[] = [
   {
     id: 'zebra-easy-1',
     title: 'くさをたべるシマウマ',
-    description: '草を1本くわえてにっこりするシマウマの子どもの線画。かわいい表情で楽しく塗れる。',
+    description: '草を1本くわえてにっこりするシマウマの子どものぬりえ。かわいい表情で楽しく塗れる。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'animals',
     tags: ['シマウマ', 'こども', 'くさ', 'どうぶつ', 'ぬりえ'],
@@ -3755,7 +3755,7 @@ const _materials1: Material[] = [
   {
     id: 'camel-simple-1',
     title: 'かわいいラクダ',
-    description: '正面を向いてたつかわいいラクダの線画。丸みのあるこぶがシンプルで小さな子でも塗りやすい。',
+    description: '正面を向いてたつかわいいラクダのぬりえ。丸みのあるこぶがシンプルで小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ラクダ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3795,7 +3795,7 @@ const _materials1: Material[] = [
   {
     id: 'camel-normal-1',
     title: 'おかあさんとこラクダ',
-    description: '母ラクダと子ラクダが砂漠をならんで歩く親子の線画。ヤシの木と砂漠の背景つき。',
+    description: '母ラクダと子ラクダが砂漠をならんで歩く親子のぬりえ。ヤシの木と砂漠の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'animals',
     tags: ['ラクダ', 'かぞく', 'さばく', 'どうぶつ', 'ぬりえ'],
@@ -3835,7 +3835,7 @@ const _materials1: Material[] = [
   {
     id: 'crocodile-simple-1',
     title: 'かわいいワニ',
-    description: '正面を向いてすわるかわいいワニの線画。格子状のうろこ模様がシンプルで小さな子でも塗りやすい。',
+    description: '正面を向いてすわるかわいいワニのぬりえ。格子状のうろこ模様がシンプルで小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ワニ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3875,7 +3875,7 @@ const _materials1: Material[] = [
   {
     id: 'crocodile-normal-1',
     title: 'おかあさんとこワニ',
-    description: '母ワニと子ワニが川のほとりで仲良く並ぶ親子の線画。水辺の草の背景つき。',
+    description: '母ワニと子ワニが川のほとりで仲良く並ぶ親子のぬりえ。水辺の草の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'animals',
     tags: ['ワニ', 'かぞく', 'かわ', 'どうぶつ', 'ぬりえ'],
@@ -3915,7 +3915,7 @@ const _materials1: Material[] = [
   {
     id: 'goat-simple-1',
     title: 'かわいいヤギ',
-    description: '正面を向いてたつかわいいヤギの線画。シンプルな角とひげで小さな子でも塗りやすい。',
+    description: '正面を向いてたつかわいいヤギのぬりえ。シンプルな角とひげで小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ヤギ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -3955,7 +3955,7 @@ const _materials1: Material[] = [
   {
     id: 'goat-normal-1',
     title: 'おかあさんとこヤギ',
-    description: '母ヤギと子ヤギが牧場でのんびり過ごす親子の線画。草と柵の背景つき。',
+    description: '母ヤギと子ヤギが牧場でのんびり過ごす親子のぬりえ。草と柵の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'animals',
     tags: ['ヤギ', 'かぞく', 'ぼくじょう', 'どうぶつ', 'ぬりえ'],
@@ -3995,7 +3995,7 @@ const _materials1: Material[] = [
   {
     id: 'cow-simple-1',
     title: 'かわいいウシ',
-    description: '正面を向いてたつかわいいウシの線画。丸みのある体とシンプルな模様で小さな子でも塗りやすい。',
+    description: '正面を向いてたつかわいいウシのぬりえ。丸みのある体とシンプルな模様で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['ウシ', 'どうぶつ', 'かわいい', 'ぬりえ'],
@@ -4035,7 +4035,7 @@ const _materials1: Material[] = [
   {
     id: 'cow-normal-1',
     title: 'おかあさんとこウシ',
-    description: '母ウシと子ウシが牧草地でのんびりしている親子の線画。草原と空の背景つき。',
+    description: '母ウシと子ウシが牧草地でのんびりしている親子のぬりえ。草原と空の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'animals',
     tags: ['ウシ', 'かぞく', 'ぼくじょう', 'どうぶつ', 'ぬりえ'],
@@ -4075,7 +4075,7 @@ const _materials1: Material[] = [
   {
     id: 'car-simple-1',
     title: 'かわいいじどうしゃ',
-    description: '正面を向いたかわいいじどうしゃの線画。シンプルな形で小さな子でも塗りやすい。',
+    description: '正面を向いたかわいいじどうしゃのぬりえ。シンプルな形で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['じどうしゃ', 'のりもの', 'かわいい', 'ぬりえ'],
@@ -4095,7 +4095,7 @@ const _materials1: Material[] = [
   {
     id: 'car-easy-1',
     title: 'はしるじどうしゃ',
-    description: '青空の下をにっこり顔で走るじどうしゃの線画。太陽と雲の背景つき。',
+    description: '青空の下をにっこり顔で走るじどうしゃのぬりえ。太陽と雲の背景つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['じどうしゃ', 'のりもの', 'そら', 'ぬりえ'],
@@ -4155,7 +4155,7 @@ const _materials1: Material[] = [
   {
     id: 'train-simple-1',
     title: 'かわいいでんしゃ',
-    description: 'シンプルなでんしゃの線画。窓や扉がわかりやすく小さな子でも塗りやすい。',
+    description: 'シンプルなでんしゃのぬりえ。窓や扉がわかりやすく小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['でんしゃ', 'のりもの', 'かわいい', 'ぬりえ'],
@@ -4175,7 +4175,7 @@ const _materials1: Material[] = [
   {
     id: 'train-easy-1',
     title: 'はしるでんしゃ',
-    description: '青空の下を線路の上で走るでんしゃの線画。山や木の背景つき。',
+    description: '青空の下を線路の上で走るでんしゃのぬりえ。山や木の背景つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['でんしゃ', 'のりもの', 'やま', 'ぬりえ'],
@@ -4195,7 +4195,7 @@ const _materials1: Material[] = [
   {
     id: 'train-normal-1',
     title: 'えきにとうちゃく',
-    description: 'でんしゃが駅に到着している構図の線画。ホーム・駅の建物・時計の背景つき。',
+    description: 'でんしゃが駅に到着している構図のぬりえ。ホーム・駅の建物・時計の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['でんしゃ', 'のりもの', 'えき', 'ぬりえ'],
@@ -4235,7 +4235,7 @@ const _materials1: Material[] = [
   {
     id: 'bus-simple-1',
     title: 'かわいいバス',
-    description: '横向きのバスの線画。シンプルな形で小さな子でも塗りやすい。',
+    description: '横向きのバスのぬりえ。シンプルな形で小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['バス', 'のりもの', 'ぬりえ'],
@@ -4315,7 +4315,7 @@ const _materials1: Material[] = [
   {
     id: 'shinkansen-simple-1',
     title: 'かわいいしんかんせん',
-    description: '流線型のしんかんせんの線画。シンプルで小さな子でも塗りやすい。',
+    description: '流線型のしんかんせんのぬりえ。シンプルで小さな子でも塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['新幹線', 'のりもの', 'ぬりえ'],
@@ -4355,7 +4355,7 @@ const _materials1: Material[] = [
   {
     id: 'shinkansen-normal-1',
     title: 'えきにとまるしんかんせん',
-    description: '新幹線駅ホームに停車するしんかんせんの線画。',
+    description: '新幹線駅ホームに停車するしんかんせんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['新幹線', 'のりもの', 'ぬりえ'],
@@ -4375,7 +4375,7 @@ const _materials1: Material[] = [
   {
     id: 'shinkansen-rich-1',
     title: 'にほんのふうけいとしんかんせん',
-    description: '富士山・田んぼ・橋の風景の中を走るしんかんせんの線画。',
+    description: '富士山・田んぼ・橋の風景の中を走るしんかんせんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vehicles',
     tags: ['新幹線', 'のりもの', 'ぬりえ'],
@@ -4395,7 +4395,7 @@ const _materials1: Material[] = [
   {
     id: 'bicycle-simple-1',
     title: 'かわいいじてんしゃ',
-    description: 'シンプルなじてんしゃの線画。タイヤや車輪がわかりやすく塗りやすい。',
+    description: 'シンプルなじてんしゃのぬりえ。タイヤや車輪がわかりやすく塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['じてんしゃ', 'のりもの', 'ぬりえ'],
@@ -4475,7 +4475,7 @@ const _materials1: Material[] = [
   {
     id: 'truck-simple-1',
     title: 'かわいいトラック',
-    description: 'シンプルなトラックの線画。大きなタイヤと荷台がわかりやすい。',
+    description: 'シンプルなトラックのぬりえ。大きなタイヤと荷台がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['トラック', 'のりもの', 'ぬりえ'],
@@ -4495,7 +4495,7 @@ const _materials1: Material[] = [
   {
     id: 'truck-easy-1',
     title: 'にもつをはこぶトラック',
-    description: '荷物を積んで道を走るトラックの線画。',
+    description: '荷物を積んで道を走るトラックのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['トラック', 'のりもの', 'ぬりえ'],
@@ -4555,7 +4555,7 @@ const _materials1: Material[] = [
   {
     id: 'fire-truck-simple-1',
     title: 'かわいいしょうぼうしゃ',
-    description: 'シンプルなしょうぼうしゃの線画。はしごと大きなタイヤがわかりやすい。',
+    description: 'シンプルなしょうぼうしゃのぬりえ。はしごと大きなタイヤがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['しょうぼう車', 'のりもの', 'ぬりえ'],
@@ -4575,7 +4575,7 @@ const _materials1: Material[] = [
   {
     id: 'fire-truck-easy-1',
     title: 'はしるしょうぼうしゃ',
-    description: 'サイレンを鳴らして走るしょうぼうしゃの線画。',
+    description: 'サイレンを鳴らして走るしょうぼうしゃのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['しょうぼう車', 'のりもの', 'ぬりえ'],
@@ -4595,7 +4595,7 @@ const _materials1: Material[] = [
   {
     id: 'fire-truck-normal-1',
     title: 'かつやくするしょうぼうしゃ',
-    description: 'はしごを伸ばして水をかけるしょうぼうしゃの線画。',
+    description: 'はしごを伸ばして水をかけるしょうぼうしゃのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['しょうぼう車', 'のりもの', 'ぬりえ'],
@@ -4635,7 +4635,7 @@ const _materials1: Material[] = [
   {
     id: 'ambulance-simple-1',
     title: 'かわいいきゅうきゅうしゃ',
-    description: 'シンプルなきゅうきゅうしゃの線画。サイレンランプがわかりやすい。',
+    description: 'シンプルなきゅうきゅうしゃのぬりえ。サイレンランプがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['きゅうきゅう車', 'のりもの', 'ぬりえ'],
@@ -4655,7 +4655,7 @@ const _materials1: Material[] = [
   {
     id: 'ambulance-easy-1',
     title: 'はしるきゅうきゅうしゃ',
-    description: 'サイレンを鳴らして走るきゅうきゅうしゃの線画。',
+    description: 'サイレンを鳴らして走るきゅうきゅうしゃのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['きゅうきゅう車', 'のりもの', 'ぬりえ'],
@@ -4675,7 +4675,7 @@ const _materials1: Material[] = [
   {
     id: 'ambulance-normal-1',
     title: 'びょういんのきゅうきゅうしゃ',
-    description: '病院前に止まるきゅうきゅうしゃの線画。病院の建物つき。',
+    description: '病院前に止まるきゅうきゅうしゃのぬりえ。病院の建物つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['きゅうきゅう車', 'のりもの', 'ぬりえ'],
@@ -4715,7 +4715,7 @@ const _materials1: Material[] = [
   {
     id: 'police-car-simple-1',
     title: 'かわいいパトカー',
-    description: 'シンプルなパトカーの線画。パトランプと白黒のボディがわかりやすい。',
+    description: 'シンプルなパトカーのぬりえ。パトランプと白黒のボディがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['パトカー', 'のりもの', 'ぬりえ'],
@@ -4735,7 +4735,7 @@ const _materials1: Material[] = [
   {
     id: 'police-car-easy-1',
     title: 'はしるパトカー',
-    description: 'サイレンを鳴らして町を走るパトカーの線画。',
+    description: 'サイレンを鳴らして町を走るパトカーのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['パトカー', 'のりもの', 'ぬりえ'],
@@ -4755,7 +4755,7 @@ const _materials1: Material[] = [
   {
     id: 'police-car-normal-1',
     title: 'こうつうせいりするパトカー',
-    description: '交差点で交通整理をするパトカーの線画。信号・横断歩道つき。',
+    description: '交差点で交通整理をするパトカーのぬりえ。信号・横断歩道つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['パトカー', 'のりもの', 'ぬりえ'],
@@ -4795,7 +4795,7 @@ const _materials1: Material[] = [
   {
     id: 'taxi-simple-1',
     title: 'かわいいタクシー',
-    description: 'シンプルなタクシーの線画。屋根のランプがわかりやすい。',
+    description: 'シンプルなタクシーのぬりえ。屋根のランプがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['タクシー', 'のりもの', 'ぬりえ'],
@@ -4815,7 +4815,7 @@ const _materials1: Material[] = [
   {
     id: 'taxi-easy-1',
     title: 'はしるタクシー',
-    description: '町の道を走るタクシーの線画。',
+    description: '町の道を走るタクシーのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['タクシー', 'のりもの', 'ぬりえ'],
@@ -4835,7 +4835,7 @@ const _materials1: Material[] = [
   {
     id: 'taxi-normal-1',
     title: 'おきゃくさんをのせたタクシー',
-    description: 'お客さんを乗せて町を走るタクシーの線画。建物・木つき。',
+    description: 'お客さんを乗せて町を走るタクシーのぬりえ。建物・木つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['タクシー', 'のりもの', 'ぬりえ'],
@@ -4875,7 +4875,7 @@ const _materials1: Material[] = [
   {
     id: 'tractor-simple-1',
     title: 'かわいいトラクター',
-    description: 'シンプルなトラクターの線画。大きなタイヤがわかりやすい。',
+    description: 'シンプルなトラクターのぬりえ。大きなタイヤがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['トラクター', 'のりもの', 'ぬりえ'],
@@ -4895,7 +4895,7 @@ const _materials1: Material[] = [
   {
     id: 'tractor-easy-1',
     title: 'はたけをたがやすトラクター',
-    description: '畑を耕すトラクターの線画。',
+    description: '畑を耕すトラクターのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['トラクター', 'のりもの', 'ぬりえ'],
@@ -4915,7 +4915,7 @@ const _materials1: Material[] = [
   {
     id: 'tractor-normal-1',
     title: 'のうじょうではたらくトラクター',
-    description: '農場で農作業をするトラクターの線画。畑・農場の建物つき。',
+    description: '農場で農作業をするトラクターのぬりえ。畑・農場の建物つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['トラクター', 'のりもの', 'ぬりえ'],
@@ -4955,7 +4955,7 @@ const _materials1: Material[] = [
   {
     id: 'bulldozer-simple-1',
     title: 'かわいいブルドーザー',
-    description: 'シンプルなブルドーザーの線画。キャタピラとブレードがわかりやすい。',
+    description: 'シンプルなブルドーザーのぬりえ。キャタピラとブレードがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ブルドーザー', 'のりもの', 'ぬりえ'],
@@ -4975,7 +4975,7 @@ const _materials1: Material[] = [
   {
     id: 'bulldozer-easy-1',
     title: 'つちをおすブルドーザー',
-    description: '土を押すブルドーザーの線画。工事現場の背景つき。',
+    description: '土を押すブルドーザーのぬりえ。工事現場の背景つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ブルドーザー', 'のりもの', 'ぬりえ'],
@@ -5035,7 +5035,7 @@ const _materials1: Material[] = [
   {
     id: 'excavator-simple-1',
     title: 'かわいいショベルカー',
-    description: 'シンプルなショベルカーの線画。アームとバケットがわかりやすい。',
+    description: 'シンプルなショベルカーのぬりえ。アームとバケットがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ショベルカー', 'のりもの', 'ぬりえ'],
@@ -5055,7 +5055,7 @@ const _materials1: Material[] = [
   {
     id: 'excavator-easy-1',
     title: 'つちをほるショベルカー',
-    description: '土を掘るショベルカーの線画。工事現場の背景つき。',
+    description: '土を掘るショベルカーのぬりえ。工事現場の背景つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ショベルカー', 'のりもの', 'ぬりえ'],
@@ -5075,7 +5075,7 @@ const _materials1: Material[] = [
   {
     id: 'excavator-normal-1',
     title: 'おおきなあなをほるショベルカー',
-    description: '大きな穴を掘るショベルカーとダンプカーの線画。',
+    description: '大きな穴を掘るショベルカーとダンプカーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['ショベルカー', 'のりもの', 'ぬりえ'],
@@ -5115,7 +5115,7 @@ const _materials1: Material[] = [
   {
     id: 'steam-roller-simple-1',
     title: 'かわいいロードローラー',
-    description: 'シンプルなロードローラーの線画。大きなローラーがわかりやすい。',
+    description: 'シンプルなロードローラーのぬりえ。大きなローラーがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ロードローラー', 'のりもの', 'ぬりえ'],
@@ -5135,7 +5135,7 @@ const _materials1: Material[] = [
   {
     id: 'steam-roller-easy-1',
     title: 'どうろをならすロードローラー',
-    description: '道路を平らにするロードローラーの線画。',
+    description: '道路を平らにするロードローラーのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ロードローラー', 'のりもの', 'ぬりえ'],
@@ -5195,7 +5195,7 @@ const _materials1: Material[] = [
   {
     id: 'airplane-simple-1',
     title: 'かわいいひこうき',
-    description: 'シンプルなひこうきの線画。翼と胴体がわかりやすい。',
+    description: 'シンプルなひこうきのぬりえ。翼と胴体がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ひこうき', 'のりもの', 'ぬりえ'],
@@ -5215,7 +5215,7 @@ const _materials1: Material[] = [
   {
     id: 'airplane-easy-1',
     title: 'そらをとぶひこうき',
-    description: '青空と雲の中を飛ぶひこうきの線画。',
+    description: '青空と雲の中を飛ぶひこうきのぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ひこうき', 'のりもの', 'ぬりえ'],
@@ -5235,7 +5235,7 @@ const _materials1: Material[] = [
   {
     id: 'airplane-normal-1',
     title: 'くうこうのひこうき',
-    description: '空港の滑走路に着陸するひこうきの線画。管制塔つき。',
+    description: '空港の滑走路に着陸するひこうきのぬりえ。管制塔つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['ひこうき', 'のりもの', 'ぬりえ'],
@@ -5275,7 +5275,7 @@ const _materials1: Material[] = [
   {
     id: 'helicopter-simple-1',
     title: 'かわいいヘリコプター',
-    description: 'シンプルなヘリコプターの線画。ローターと機体がわかりやすい。',
+    description: 'シンプルなヘリコプターのぬりえ。ローターと機体がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ヘリコプター', 'のりもの', 'ぬりえ'],
@@ -5295,7 +5295,7 @@ const _materials1: Material[] = [
   {
     id: 'helicopter-easy-1',
     title: 'そらをとぶヘリコプター',
-    description: '青空でホバリングするヘリコプターの線画。雲つき。',
+    description: '青空でホバリングするヘリコプターのぬりえ。雲つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ヘリコプター', 'のりもの', 'ぬりえ'],
@@ -5315,7 +5315,7 @@ const _materials1: Material[] = [
   {
     id: 'helicopter-normal-1',
     title: 'やまのうえのヘリコプター',
-    description: '山や川の上空を飛ぶヘリコプターの線画。',
+    description: '山や川の上空を飛ぶヘリコプターのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['ヘリコプター', 'のりもの', 'ぬりえ'],
@@ -5355,7 +5355,7 @@ const _materials1: Material[] = [
   {
     id: 'hot-air-balloon-simple-1',
     title: 'かわいいねつききゅう',
-    description: 'シンプルなねつききゅうの線画。大きな風船部分が塗りやすい。',
+    description: 'シンプルなねつききゅうのぬりえ。大きな風船部分が塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['気球', 'のりもの', 'ぬりえ'],
@@ -5375,7 +5375,7 @@ const _materials1: Material[] = [
   {
     id: 'hot-air-balloon-easy-1',
     title: 'そらをとぶねつききゅう',
-    description: '青空をゆったり飛ぶねつききゅうの線画。雲と太陽つき。',
+    description: '青空をゆったり飛ぶねつききゅうのぬりえ。雲と太陽つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['気球', 'のりもの', 'ぬりえ'],
@@ -5435,7 +5435,7 @@ const _materials1: Material[] = [
   {
     id: 'rocket-simple-1',
     title: 'かわいいロケット',
-    description: 'シンプルなロケットの線画。流線型の形がわかりやすい。',
+    description: 'シンプルなロケットのぬりえ。流線型の形がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ロケット', 'のりもの', 'ぬりえ'],
@@ -5455,7 +5455,7 @@ const _materials1: Material[] = [
   {
     id: 'rocket-easy-1',
     title: 'うちゅうをとぶロケット',
-    description: '星空の宇宙を飛ぶロケットの線画。星と月つき。',
+    description: '星空の宇宙を飛ぶロケットのぬりえ。星と月つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ロケット', 'のりもの', 'ぬりえ'],
@@ -5475,7 +5475,7 @@ const _materials1: Material[] = [
   {
     id: 'rocket-normal-1',
     title: 'ちきゅうのまわりをとぶロケット',
-    description: '地球の周りを飛ぶロケットの線画。地球・月・星つき。',
+    description: '地球の周りを飛ぶロケットのぬりえ。地球・月・星つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['ロケット', 'のりもの', 'ぬりえ'],
@@ -5515,7 +5515,7 @@ const _materials1: Material[] = [
   {
     id: 'boat-simple-1',
     title: 'かわいいボート',
-    description: 'シンプルなボートの線画。丸みのある形が塗りやすい。',
+    description: 'シンプルなボートのぬりえ。丸みのある形が塗りやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['ボート', 'のりもの', 'ぬりえ'],
@@ -5535,7 +5535,7 @@ const _materials1: Material[] = [
   {
     id: 'boat-easy-1',
     title: 'かわをすすむボート',
-    description: '川の上をゆったり進むボートの線画。川岸の木と花つき。',
+    description: '川の上をゆったり進むボートのぬりえ。川岸の木と花つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['ボート', 'のりもの', 'ぬりえ'],
@@ -5555,7 +5555,7 @@ const _materials1: Material[] = [
   {
     id: 'boat-normal-1',
     title: 'つりをするボート',
-    description: 'ボートで釣りをする構図の線画。川・山・木の背景つき。',
+    description: 'ボートで釣りをする構図のぬりえ。川・山・木の背景つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['ボート', 'のりもの', 'ぬりえ'],
@@ -5595,7 +5595,7 @@ const _materials1: Material[] = [
   {
     id: 'ship-simple-1',
     title: 'かわいいふね',
-    description: 'シンプルなふねの線画。船体と煙突がわかりやすい。',
+    description: 'シンプルなふねのぬりえ。船体と煙突がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['船', 'のりもの', 'ぬりえ'],
@@ -5615,7 +5615,7 @@ const _materials1: Material[] = [
   {
     id: 'ship-easy-1',
     title: 'うみをすすむふね',
-    description: '海をゆったり進むふねの線画。波と空つき。',
+    description: '海をゆったり進むふねのぬりえ。波と空つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['船', 'のりもの', 'ぬりえ'],
@@ -5635,7 +5635,7 @@ const _materials1: Material[] = [
   {
     id: 'ship-normal-1',
     title: 'みなとをでるふね',
-    description: '港を出発するふねの線画。港・クレーン・建物つき。',
+    description: '港を出発するふねのぬりえ。港・クレーン・建物つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['船', 'のりもの', 'ぬりえ'],
@@ -5675,7 +5675,7 @@ const _materials1: Material[] = [
   {
     id: 'ferry-simple-1',
     title: 'かわいいフェリー',
-    description: 'シンプルなフェリーの線画。大きな船体とデッキがわかりやすい。',
+    description: 'シンプルなフェリーのぬりえ。大きな船体とデッキがわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['フェリー', 'のりもの', 'ぬりえ'],
@@ -5695,7 +5695,7 @@ const _materials1: Material[] = [
   {
     id: 'ferry-easy-1',
     title: 'うみをすすむフェリー',
-    description: '青い海をゆったり進むフェリーの線画。波・空・雲つき。',
+    description: '青い海をゆったり進むフェリーのぬりえ。波・空・雲つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['フェリー', 'のりもの', 'ぬりえ'],
@@ -5715,7 +5715,7 @@ const _materials1: Material[] = [
   {
     id: 'ferry-normal-1',
     title: 'しまとしまのあいだのフェリー',
-    description: '島と島の間を進むフェリーの線画。島・山・太陽つき。',
+    description: '島と島の間を進むフェリーのぬりえ。島・山・太陽つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['フェリー', 'のりもの', 'ぬりえ'],
@@ -5755,7 +5755,7 @@ const _materials1: Material[] = [
   {
     id: 'submarine-simple-1',
     title: 'かわいいせんすいかん',
-    description: 'シンプルなせんすいかんの線画。流線型の形がわかりやすい。',
+    description: 'シンプルなせんすいかんのぬりえ。流線型の形がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vehicles',
     tags: ['せんすいかん', 'のりもの', 'ぬりえ'],
@@ -5775,7 +5775,7 @@ const _materials1: Material[] = [
   {
     id: 'submarine-easy-1',
     title: 'うみのなかのせんすいかん',
-    description: '海の中を進むせんすいかんの線画。魚や海草つき。',
+    description: '海の中を進むせんすいかんのぬりえ。魚や海草つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vehicles',
     tags: ['せんすいかん', 'のりもの', 'ぬりえ'],
@@ -5795,7 +5795,7 @@ const _materials1: Material[] = [
   {
     id: 'submarine-normal-1',
     title: 'しんかいたんけんのせんすいかん',
-    description: '深海を探検するせんすいかんの線画。タコ・クラゲ・珊瑚つき。',
+    description: '深海を探検するせんすいかんのぬりえ。タコ・クラゲ・珊瑚つき。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vehicles',
     tags: ['せんすいかん', 'のりもの', 'ぬりえ'],
@@ -5815,7 +5815,7 @@ const _materials1: Material[] = [
   {
     id: 'submarine-rich-1',
     title: 'にぎやかなしんかい',
-    description: 'せんすいかんと海の生き物がにぎやかに共存する深海の線画。',
+    description: 'せんすいかんと海の生き物がにぎやかに共存する深海のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vehicles',
     tags: ['せんすいかん', 'のりもの', 'ぬりえ'],
@@ -5835,7 +5835,7 @@ const _materials1: Material[] = [
   {
     id: 'crane-simple-1',
     title: 'かわいいツル',
-    description: 'シンプルなツルの線画。長い首と足がわかりやすい。',
+    description: 'シンプルなツルのぬりえ。長い首と足がわかりやすい。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'animals',
     tags: ['クレーン車', 'どうぶつ', 'ぬりえ'],
@@ -5855,7 +5855,7 @@ const _materials1: Material[] = [
   {
     id: 'crane-easy-1',
     title: 'たんぼのツル',
-    description: '田んぼを歩くツルの線画。草の背景つき。',
+    description: '田んぼを歩くツルのぬりえ。草の背景つき。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'animals',
     tags: ['クレーン車', 'どうぶつ', 'ぬりえ'],
@@ -5915,7 +5915,7 @@ const _materials1: Material[] = [
   {
     id: 'tyrannosaurus-simple-1',
     title: 'かわいいティラノサウルス',
-    description: 'シンプルなティラノサウルスの線画。大きな頭と小さな前足がわかりやすい。',
+    description: 'シンプルなティラノサウルスのぬりえ。大きな頭と小さな前足がわかりやすい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ティラノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -5935,7 +5935,7 @@ const _materials1: Material[] = [
   {
     id: 'tyrannosaurus-easy-1',
     title: 'もりのティラノサウルス',
-    description: '原始の森を歩くティラノサウルスの線画。シダ植物つき。',
+    description: '原始の森を歩くティラノサウルスのぬりえ。シダ植物つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ティラノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -5955,7 +5955,7 @@ const _materials1: Material[] = [
   {
     id: 'tyrannosaurus-normal-1',
     title: 'ティラノサウルスのおやこ',
-    description: '森でくつろぐ親子ティラノサウルスの線画。',
+    description: '森でくつろぐ親子ティラノサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ティラノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -5995,7 +5995,7 @@ const _materials1: Material[] = [
   {
     id: 'spinosaurus-simple-1',
     title: 'かわいいスピノサウルス',
-    description: 'シンプルなスピノサウルスの線画。背中の大きな帆が特徴。',
+    description: 'シンプルなスピノサウルスのぬりえ。背中の大きな帆が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['スピノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6015,7 +6015,7 @@ const _materials1: Material[] = [
   {
     id: 'spinosaurus-easy-1',
     title: 'かわのスピノサウルス',
-    description: '川辺で魚を探すスピノサウルスの線画。水と岸辺つき。',
+    description: '川辺で魚を探すスピノサウルスのぬりえ。水と岸辺つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['スピノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6035,7 +6035,7 @@ const _materials1: Material[] = [
   {
     id: 'spinosaurus-normal-1',
     title: 'スピノサウルスのおやこ',
-    description: '水辺でくつろぐ親子スピノサウルスの線画。',
+    description: '水辺でくつろぐ親子スピノサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['スピノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6075,7 +6075,7 @@ const _materials1: Material[] = [
   {
     id: 'velociraptor-simple-1',
     title: 'かわいいヴェロキラプトル',
-    description: 'シンプルなヴェロキラプトルの線画。素早い体つきと長い尻尾がかわいい。',
+    description: 'シンプルなヴェロキラプトルのぬりえ。素早い体つきと長い尻尾がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ヴェロキラプトル', 'きょうりゅう', 'ぬりえ'],
@@ -6095,7 +6095,7 @@ const _materials1: Material[] = [
   {
     id: 'velociraptor-easy-1',
     title: 'もりのヴェロキラプトル',
-    description: '森を走るヴェロキラプトルの線画。シダ植物つき。',
+    description: '森を走るヴェロキラプトルのぬりえ。シダ植物つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ヴェロキラプトル', 'きょうりゅう', 'ぬりえ'],
@@ -6115,7 +6115,7 @@ const _materials1: Material[] = [
   {
     id: 'velociraptor-normal-1',
     title: 'むれのヴェロキラプトル',
-    description: '2匹で駆けるヴェロキラプトルの線画。木とシダつき。',
+    description: '2匹で駆けるヴェロキラプトルのぬりえ。木とシダつき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ヴェロキラプトル', 'きょうりゅう', 'ぬりえ'],
@@ -6155,7 +6155,7 @@ const _materials1: Material[] = [
   {
     id: 'allosaurus-simple-1',
     title: 'かわいいアロサウルス',
-    description: 'シンプルなアロサウルスの線画。大きな頭と力強い体がわかりやすい。',
+    description: 'シンプルなアロサウルスのぬりえ。大きな頭と力強い体がわかりやすい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6175,7 +6175,7 @@ const _materials1: Material[] = [
   {
     id: 'allosaurus-easy-1',
     title: 'もりのアロサウルス',
-    description: 'ジュラ紀の森を歩くアロサウルスの線画。シダ植物つき。',
+    description: 'ジュラ紀の森を歩くアロサウルスのぬりえ。シダ植物つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6195,7 +6195,7 @@ const _materials1: Material[] = [
   {
     id: 'allosaurus-normal-1',
     title: 'アロサウルスのおやこ',
-    description: '森でくつろぐ親子アロサウルスの線画。',
+    description: '森でくつろぐ親子アロサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6235,7 +6235,7 @@ const _materials1: Material[] = [
   {
     id: 'giganotosaurus-simple-1',
     title: 'かわいいギガノトサウルス',
-    description: 'シンプルなギガノトサウルスの線画。大きな体と平たい頭が特徴。',
+    description: 'シンプルなギガノトサウルスのぬりえ。大きな体と平たい頭が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ギガノトサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6255,7 +6255,7 @@ const _materials1: Material[] = [
   {
     id: 'giganotosaurus-easy-1',
     title: 'そうげんのギガノトサウルス',
-    description: '草原を歩くギガノトサウルスの線画。岩と植物つき。',
+    description: '草原を歩くギガノトサウルスのぬりえ。岩と植物つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ギガノトサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6275,7 +6275,7 @@ const _materials1: Material[] = [
   {
     id: 'giganotosaurus-normal-1',
     title: 'ギガノトサウルスのおやこ',
-    description: '草原でくつろぐ親子ギガノトサウルスの線画。',
+    description: '草原でくつろぐ親子ギガノトサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ギガノトサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6315,7 +6315,7 @@ const _materials1: Material[] = [
   {
     id: 'therizinosaurus-simple-1',
     title: 'かわいいテリジノサウルス',
-    description: 'シンプルなテリジノサウルスの線画。長い爪と丸みのある体が特徴。',
+    description: 'シンプルなテリジノサウルスのぬりえ。長い爪と丸みのある体が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['テリジノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6335,7 +6335,7 @@ const _materials1: Material[] = [
   {
     id: 'therizinosaurus-easy-1',
     title: 'はっぱをたべるテリジノサウルス',
-    description: '木の葉を食べるテリジノサウルスの線画。木つき。',
+    description: '木の葉を食べるテリジノサウルスのぬりえ。木つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['テリジノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6355,7 +6355,7 @@ const _materials1: Material[] = [
   {
     id: 'therizinosaurus-normal-1',
     title: 'テリジノサウルスのおやこ',
-    description: '森で葉を食べる親子テリジノサウルスの線画。',
+    description: '森で葉を食べる親子テリジノサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['テリジノサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6395,7 +6395,7 @@ const _materials1: Material[] = [
   {
     id: 'triceratops-simple-1',
     title: 'かわいいトリケラトプス',
-    description: 'シンプルなトリケラトプスの線画。3本の角と大きなフリルが特徴。',
+    description: 'シンプルなトリケラトプスのぬりえ。3本の角と大きなフリルが特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['トリケラトプス', 'きょうりゅう', 'ぬりえ'],
@@ -6415,7 +6415,7 @@ const _materials1: Material[] = [
   {
     id: 'triceratops-easy-1',
     title: 'そうげんのトリケラトプス',
-    description: '草原を歩くトリケラトプスの線画。草と花つき。',
+    description: '草原を歩くトリケラトプスのぬりえ。草と花つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['トリケラトプス', 'きょうりゅう', 'ぬりえ'],
@@ -6435,7 +6435,7 @@ const _materials1: Material[] = [
   {
     id: 'triceratops-normal-1',
     title: 'トリケラトプスのおやこ',
-    description: '草原でくつろぐ親子トリケラトプスの線画。',
+    description: '草原でくつろぐ親子トリケラトプスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['トリケラトプス', 'きょうりゅう', 'ぬりえ'],
@@ -6475,7 +6475,7 @@ const _materials1: Material[] = [
   {
     id: 'stegosaurus-simple-1',
     title: 'かわいいステゴサウルス',
-    description: 'シンプルなステゴサウルスの線画。背中の骨板と尻尾のトゲが特徴。',
+    description: 'シンプルなステゴサウルスのぬりえ。背中の骨板と尻尾のトゲが特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ステゴサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6495,7 +6495,7 @@ const _materials1: Material[] = [
   {
     id: 'stegosaurus-easy-1',
     title: 'そうげんのステゴサウルス',
-    description: '草原を歩くステゴサウルスの線画。草と木つき。',
+    description: '草原を歩くステゴサウルスのぬりえ。草と木つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ステゴサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6515,7 +6515,7 @@ const _materials1: Material[] = [
   {
     id: 'stegosaurus-normal-1',
     title: 'ステゴサウルスのおやこ',
-    description: '草原でくつろぐ親子ステゴサウルスの線画。',
+    description: '草原でくつろぐ親子ステゴサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ステゴサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6555,7 +6555,7 @@ const _materials1: Material[] = [
   {
     id: 'brachiosaurus-simple-1',
     title: 'かわいいブラキオサウルス',
-    description: 'シンプルなブラキオサウルスの線画。長い首と大きな体が特徴。',
+    description: 'シンプルなブラキオサウルスのぬりえ。長い首と大きな体が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ブラキオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6575,7 +6575,7 @@ const _materials1: Material[] = [
   {
     id: 'brachiosaurus-easy-1',
     title: 'はをたべるブラキオサウルス',
-    description: '木の葉を食べるブラキオサウルスの線画。木つき。',
+    description: '木の葉を食べるブラキオサウルスのぬりえ。木つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ブラキオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6595,7 +6595,7 @@ const _materials1: Material[] = [
   {
     id: 'brachiosaurus-normal-1',
     title: 'ブラキオサウルスのおやこ',
-    description: '森で葉を食べる親子ブラキオサウルスの線画。',
+    description: '森で葉を食べる親子ブラキオサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['ブラキオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6635,7 +6635,7 @@ const _materials1: Material[] = [
   {
     id: 'ankylosaurus-simple-1',
     title: 'かわいいアンキロサウルス',
-    description: 'シンプルなアンキロサウルスの線画。背中の鎧と尻尾のこん棒が特徴。',
+    description: 'シンプルなアンキロサウルスのぬりえ。背中の鎧と尻尾のこん棒が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アンキロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6655,7 +6655,7 @@ const _materials1: Material[] = [
   {
     id: 'ankylosaurus-easy-1',
     title: 'そうげんのアンキロサウルス',
-    description: '草原を歩くアンキロサウルスの線画。草と花つき。',
+    description: '草原を歩くアンキロサウルスのぬりえ。草と花つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アンキロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6675,7 +6675,7 @@ const _materials1: Material[] = [
   {
     id: 'ankylosaurus-normal-1',
     title: 'アンキロサウルスのおやこ',
-    description: '草原でくつろぐ親子アンキロサウルスの線画。',
+    description: '草原でくつろぐ親子アンキロサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['アンキロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6715,7 +6715,7 @@ const _materials1: Material[] = [
   {
     id: 'parasaurolophus-simple-1',
     title: 'かわいいパラサウロロフス',
-    description: 'シンプルなパラサウロロフスの線画。頭の長いトサカが特徴。',
+    description: 'シンプルなパラサウロロフスのぬりえ。頭の長いトサカが特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パラサウロロフス', 'きょうりゅう', 'ぬりえ'],
@@ -6735,7 +6735,7 @@ const _materials1: Material[] = [
   {
     id: 'parasaurolophus-easy-1',
     title: 'かわべのパラサウロロフス',
-    description: '川辺を歩くパラサウロロフスの線画。川と草つき。',
+    description: '川辺を歩くパラサウロロフスのぬりえ。川と草つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パラサウロロフス', 'きょうりゅう', 'ぬりえ'],
@@ -6755,7 +6755,7 @@ const _materials1: Material[] = [
   {
     id: 'parasaurolophus-normal-1',
     title: 'パラサウロロフスのおやこ',
-    description: '川辺でくつろぐ親子パラサウロロフスの線画。',
+    description: '川辺でくつろぐ親子パラサウロロフスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パラサウロロフス', 'きょうりゅう', 'ぬりえ'],
@@ -6795,7 +6795,7 @@ const _materials1: Material[] = [
   {
     id: 'pachycephalosaurus-simple-1',
     title: 'かわいいパキケファロサウルス',
-    description: 'シンプルなパキケファロサウルスの線画。丸く盛り上がった頭が特徴。',
+    description: 'シンプルなパキケファロサウルスのぬりえ。丸く盛り上がった頭が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パキケファロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6815,7 +6815,7 @@ const _materials1: Material[] = [
   {
     id: 'pachycephalosaurus-easy-1',
     title: 'もりのパキケファロサウルス',
-    description: '森を歩くパキケファロサウルスの線画。木と草つき。',
+    description: '森を歩くパキケファロサウルスのぬりえ。木と草つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パキケファロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6835,7 +6835,7 @@ const _materials1: Material[] = [
   {
     id: 'pachycephalosaurus-normal-1',
     title: 'パキケファロサウルスのおやこ',
-    description: '森でくつろぐ親子パキケファロサウルスの線画。',
+    description: '森でくつろぐ親子パキケファロサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['パキケファロサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6875,7 +6875,7 @@ const _materials1: Material[] = [
   {
     id: 'pteranodon-simple-1',
     title: 'かわいいプテラノドン',
-    description: 'シンプルなプテラノドンの線画。大きな翼と頭のトサカが特徴。',
+    description: 'シンプルなプテラノドンのぬりえ。大きな翼と頭のトサカが特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プテラノドン', 'きょうりゅう', 'ぬりえ'],
@@ -6895,7 +6895,7 @@ const _materials1: Material[] = [
   {
     id: 'pteranodon-easy-1',
     title: 'そらとぶプテラノドン',
-    description: '空を飛ぶプテラノドンの線画。雲つき。',
+    description: '空を飛ぶプテラノドンのぬりえ。雲つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プテラノドン', 'きょうりゅう', 'ぬりえ'],
@@ -6915,7 +6915,7 @@ const _materials1: Material[] = [
   {
     id: 'pteranodon-normal-1',
     title: 'プテラノドンのおやこ',
-    description: '空を飛ぶ親子プテラノドンの線画。',
+    description: '空を飛ぶ親子プテラノドンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プテラノドン', 'きょうりゅう', 'ぬりえ'],
@@ -6955,7 +6955,7 @@ const _materials1: Material[] = [
   {
     id: 'mosasaurus-simple-1',
     title: 'かわいいモササウルス',
-    description: 'シンプルなモササウルスの線画。大きな体と口が特徴。',
+    description: 'シンプルなモササウルスのぬりえ。大きな体と口が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['モササウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6975,7 +6975,7 @@ const _materials1: Material[] = [
   {
     id: 'mosasaurus-easy-1',
     title: 'うみのモササウルス',
-    description: '海を泳ぐモササウルスの線画。波と魚つき。',
+    description: '海を泳ぐモササウルスのぬりえ。波と魚つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['モササウルス', 'きょうりゅう', 'ぬりえ'],
@@ -6995,7 +6995,7 @@ const _materials1: Material[] = [
   {
     id: 'mosasaurus-normal-1',
     title: 'モササウルスのおやこ',
-    description: '海を泳ぐ親子モササウルスの線画。',
+    description: '海を泳ぐ親子モササウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['モササウルス', 'きょうりゅう', 'ぬりえ'],
@@ -7035,7 +7035,7 @@ const _materials1: Material[] = [
   {
     id: 'plesiosaurus-simple-1',
     title: 'かわいいプレシオサウルス',
-    description: 'シンプルなプレシオサウルスの線画。長い首と丸い体が特徴。',
+    description: 'シンプルなプレシオサウルスのぬりえ。長い首と丸い体が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プレシオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -7055,7 +7055,7 @@ const _materials1: Material[] = [
   {
     id: 'plesiosaurus-easy-1',
     title: 'うみのプレシオサウルス',
-    description: '海を泳ぐプレシオサウルスの線画。波と魚つき。',
+    description: '海を泳ぐプレシオサウルスのぬりえ。波と魚つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プレシオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -7075,7 +7075,7 @@ const _materials1: Material[] = [
   {
     id: 'plesiosaurus-normal-1',
     title: 'プレシオサウルスのおやこ',
-    description: '海を泳ぐ親子プレシオサウルスの線画。',
+    description: '海を泳ぐ親子プレシオサウルスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['プレシオサウルス', 'きょうりゅう', 'ぬりえ'],
@@ -9330,7 +9330,7 @@ const _materials2: Material[] = [
   {
     id: 'mammoth-simple-1',
     title: 'かわいいマンモス',
-    description: 'シンプルなマンモスの線画。長い牙と毛が特徴。',
+    description: 'シンプルなマンモスのぬりえ。長い牙と毛が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['マンモス', 'きょうりゅう', 'ぬりえ'],
@@ -9350,7 +9350,7 @@ const _materials2: Material[] = [
   {
     id: 'mammoth-easy-1',
     title: 'ゆきげんのマンモス',
-    description: '雪原を歩くマンモスの線画。雪と木つき。',
+    description: '雪原を歩くマンモスのぬりえ。雪と木つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['マンモス', 'きょうりゅう', 'ぬりえ'],
@@ -9370,7 +9370,7 @@ const _materials2: Material[] = [
   {
     id: 'mammoth-normal-1',
     title: 'マンモスのおやこ',
-    description: '雪原でくつろぐ親子マンモスの線画。',
+    description: '雪原でくつろぐ親子マンモスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['マンモス', 'きょうりゅう', 'ぬりえ'],
@@ -9410,7 +9410,7 @@ const _materials2: Material[] = [
   {
     id: 'smilodon-simple-1',
     title: 'かわいいサーベルタイガー',
-    description: 'シンプルなサーベルタイガーの線画。長いサーベル状の牙が特徴。',
+    description: 'シンプルなサーベルタイガーのぬりえ。長いサーベル状の牙が特徴。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['サーベルタイガー', 'きょうりゅう', 'ぬりえ'],
@@ -9430,7 +9430,7 @@ const _materials2: Material[] = [
   {
     id: 'smilodon-easy-1',
     title: 'そうげんのサーベルタイガー',
-    description: '草原を歩くサーベルタイガーの線画。草と木つき。',
+    description: '草原を歩くサーベルタイガーのぬりえ。草と木つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['サーベルタイガー', 'きょうりゅう', 'ぬりえ'],
@@ -9450,7 +9450,7 @@ const _materials2: Material[] = [
   {
     id: 'smilodon-normal-1',
     title: 'サーベルタイガーのおやこ',
-    description: '草原でくつろぐ親子サーベルタイガーの線画。',
+    description: '草原でくつろぐ親子サーベルタイガーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'dinosaurs',
     tags: ['サーベルタイガー', 'きょうりゅう', 'ぬりえ'],
@@ -9490,7 +9490,7 @@ const _materials2: Material[] = [
   {
     id: 'apple-simple-1',
     title: 'かわいいりんご',
-    description: 'シンプルなりんごの線画。丸い形がかわいい。',
+    description: 'シンプルなりんごのぬりえ。丸い形がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['りんご', 'くだもの', 'ぬりえ'],
@@ -9507,7 +9507,7 @@ const _materials2: Material[] = [
   {
     id: 'apple-easy-1',
     title: 'りんごのき',
-    description: 'りんごの木に実るりんごの線画。',
+    description: 'りんごの木に実るりんごのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['りんご', 'くだもの', 'ぬりえ'],
@@ -9524,7 +9524,7 @@ const _materials2: Material[] = [
   {
     id: 'apple-normal-1',
     title: 'りんごのかご',
-    description: 'かごに入ったりんごの線画。葉っぱや枝つき。',
+    description: 'かごに入ったりんごのぬりえ。葉っぱや枝つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['りんご', 'くだもの', 'ぬりえ'],
@@ -9558,7 +9558,7 @@ const _materials2: Material[] = [
   {
     id: 'banana-easy-1',
     title: 'バナナのき',
-    description: '木からぶら下がるバナナの線画。',
+    description: '木からぶら下がるバナナのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['バナナ', 'くだもの', 'ぬりえ'],
@@ -9575,7 +9575,7 @@ const _materials2: Material[] = [
   {
     id: 'banana-normal-1',
     title: 'くだもののかご',
-    description: 'かごに入った果物の線画。バナナ中心。',
+    description: 'かごに入った果物のぬりえ。バナナ中心。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['バナナ', 'くだもの', 'ぬりえ'],
@@ -9592,7 +9592,7 @@ const _materials2: Material[] = [
   {
     id: 'strawberry-simple-1',
     title: 'かわいいいちご',
-    description: 'シンプルないちごの線画。つぶつぶがかわいい。',
+    description: 'シンプルないちごのぬりえ。つぶつぶがかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['いちご', 'くだもの', 'ぬりえ'],
@@ -9609,7 +9609,7 @@ const _materials2: Material[] = [
   {
     id: 'strawberry-normal-1',
     title: 'いちごばたけ',
-    description: 'いちご畑の線画。花と葉っぱつき。',
+    description: 'いちご畑のぬりえ。花と葉っぱつき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['いちご', 'くだもの', 'ぬりえ'],
@@ -9643,7 +9643,7 @@ const _materials2: Material[] = [
   {
     id: 'banana-simple-1',
     title: 'かわいいバナナ',
-    description: 'シンプルなバナナの線画。',
+    description: 'シンプルなバナナのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['バナナ', 'くだもの', 'ぬりえ'],
@@ -9677,7 +9677,7 @@ const _materials2: Material[] = [
   {
     id: 'orange-simple-1',
     title: 'かわいいみかん',
-    description: 'シンプルなみかんの線画。',
+    description: 'シンプルなみかんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['オレンジ', 'くだもの', 'ぬりえ'],
@@ -9694,7 +9694,7 @@ const _materials2: Material[] = [
   {
     id: 'orange-easy-1',
     title: 'みかんのき',
-    description: 'みかんの木に実るみかんの線画。',
+    description: 'みかんの木に実るみかんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['オレンジ', 'くだもの', 'ぬりえ'],
@@ -9711,7 +9711,7 @@ const _materials2: Material[] = [
   {
     id: 'orange-normal-1',
     title: 'みかんをきろう',
-    description: '丸ごとと断面のみかんの線画。',
+    description: '丸ごとと断面のみかんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['オレンジ', 'くだもの', 'ぬりえ'],
@@ -9745,7 +9745,7 @@ const _materials2: Material[] = [
   {
     id: 'grape-simple-1',
     title: 'かわいいぶどう',
-    description: 'シンプルなぶどうの線画。粒がかわいい。',
+    description: 'シンプルなぶどうのぬりえ。粒がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ぶどう', 'くだもの', 'ぬりえ'],
@@ -9762,7 +9762,7 @@ const _materials2: Material[] = [
   {
     id: 'grape-easy-1',
     title: 'ぶどうだな',
-    description: 'ぶどう棚からぶら下がるぶどうの線画。',
+    description: 'ぶどう棚からぶら下がるぶどうのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ぶどう', 'くだもの', 'ぬりえ'],
@@ -9813,7 +9813,7 @@ const _materials2: Material[] = [
   {
     id: 'watermelon-simple-1',
     title: 'かわいいすいか',
-    description: 'シンプルなすいかの線画。縞模様がかわいい。',
+    description: 'シンプルなすいかのぬりえ。縞模様がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['すいか', 'くだもの', 'ぬりえ'],
@@ -9830,7 +9830,7 @@ const _materials2: Material[] = [
   {
     id: 'watermelon-easy-1',
     title: 'すいかをきろう',
-    description: '半分に切ったすいかの線画。断面つき。',
+    description: '半分に切ったすいかのぬりえ。断面つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['すいか', 'くだもの', 'ぬりえ'],
@@ -9847,7 +9847,7 @@ const _materials2: Material[] = [
   {
     id: 'watermelon-normal-1',
     title: 'すいかわり',
-    description: 'スイカ割りをする子どもの線画。',
+    description: 'スイカ割りをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['すいか', 'くだもの', 'ぬりえ'],
@@ -9881,7 +9881,7 @@ const _materials2: Material[] = [
   {
     id: 'peach-simple-1',
     title: 'かわいいもも',
-    description: 'シンプルなももの線画。丸みがかわいい。',
+    description: 'シンプルなもものぬりえ。丸みがかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['もも', 'くだもの', 'ぬりえ'],
@@ -9898,7 +9898,7 @@ const _materials2: Material[] = [
   {
     id: 'peach-easy-1',
     title: 'えだのもも',
-    description: '枝についたももの線画。葉っぱつき。',
+    description: '枝についたもものぬりえ。葉っぱつき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['もも', 'くだもの', 'ぬりえ'],
@@ -9915,7 +9915,7 @@ const _materials2: Material[] = [
   {
     id: 'peach-normal-1',
     title: 'もものはたけ',
-    description: 'もも畑の線画。木と葉つき。',
+    description: 'もも畑のぬりえ。木と葉つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['もも', 'くだもの', 'ぬりえ'],
@@ -9949,7 +9949,7 @@ const _materials2: Material[] = [
   {
     id: 'pineapple-simple-1',
     title: 'かわいいパイナップル',
-    description: 'シンプルなパイナップルの線画。',
+    description: 'シンプルなパイナップルのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['パイナップル', 'くだもの', 'ぬりえ'],
@@ -9966,7 +9966,7 @@ const _materials2: Material[] = [
   {
     id: 'pineapple-easy-1',
     title: 'パイナップルのはたけ',
-    description: '畑に実るパイナップルの線画。',
+    description: '畑に実るパイナップルのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['パイナップル', 'くだもの', 'ぬりえ'],
@@ -10017,7 +10017,7 @@ const _materials2: Material[] = [
   {
     id: 'cherry-simple-1',
     title: 'かわいいさくらんぼ',
-    description: 'シンプルなさくらんぼの線画。2粒がかわいい。',
+    description: 'シンプルなさくらんぼのぬりえ。2粒がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['さくらんぼ', 'くだもの', 'ぬりえ'],
@@ -10034,7 +10034,7 @@ const _materials2: Material[] = [
   {
     id: 'cherry-easy-1',
     title: 'さくらんぼのき',
-    description: 'さくらんぼの木の線画。実がいっぱい。',
+    description: 'さくらんぼの木のぬりえ。実がいっぱい。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['さくらんぼ', 'くだもの', 'ぬりえ'],
@@ -10051,7 +10051,7 @@ const _materials2: Material[] = [
   {
     id: 'cherry-normal-1',
     title: 'さくらんぼつみ',
-    description: 'さくらんぼを摘む子どもの線画。',
+    description: 'さくらんぼを摘む子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['さくらんぼ', 'くだもの', 'ぬりえ'],
@@ -10085,7 +10085,7 @@ const _materials2: Material[] = [
   {
     id: 'lemon-simple-1',
     title: 'かわいいレモン',
-    description: 'シンプルなレモンの線画。楕円形がかわいい。',
+    description: 'シンプルなレモンのぬりえ。楕円形がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['レモン', 'くだもの', 'ぬりえ'],
@@ -10102,7 +10102,7 @@ const _materials2: Material[] = [
   {
     id: 'lemon-easy-1',
     title: 'レモンをきろう',
-    description: '丸ごとと断面のレモンの線画。',
+    description: '丸ごとと断面のレモンのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['レモン', 'くだもの', 'ぬりえ'],
@@ -10119,7 +10119,7 @@ const _materials2: Material[] = [
   {
     id: 'lemon-normal-1',
     title: 'レモンのき',
-    description: 'レモンの木に実るレモンの線画。',
+    description: 'レモンの木に実るレモンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['レモン', 'くだもの', 'ぬりえ'],
@@ -10136,7 +10136,7 @@ const _materials2: Material[] = [
   {
     id: 'strawberry-easy-1',
     title: 'いちごのはちうえ',
-    description: '植木鉢で育ついちごの線画。',
+    description: '植木鉢で育ついちごのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['いちご', 'くだもの', 'ぬりえ'],
@@ -10170,7 +10170,7 @@ const _materials2: Material[] = [
   {
     id: 'melon-simple-1',
     title: 'かわいいメロン',
-    description: 'シンプルなメロンの線画。網目模様がかわいい。',
+    description: 'シンプルなメロンのぬりえ。網目模様がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['メロン', 'くだもの', 'ぬりえ'],
@@ -10187,7 +10187,7 @@ const _materials2: Material[] = [
   {
     id: 'melon-easy-1',
     title: 'メロンをきろう',
-    description: '断面のメロンの線画。',
+    description: '断面のメロンのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['メロン', 'くだもの', 'ぬりえ'],
@@ -10204,7 +10204,7 @@ const _materials2: Material[] = [
   {
     id: 'melon-normal-1',
     title: 'メロンばたけ',
-    description: 'メロン畑の線画。つると葉つき。',
+    description: 'メロン畑のぬりえ。つると葉つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['メロン', 'くだもの', 'ぬりえ'],
@@ -10238,7 +10238,7 @@ const _materials2: Material[] = [
   {
     id: 'pear-simple-1',
     title: 'かわいいなし',
-    description: 'シンプルななしの線画。',
+    description: 'シンプルななしのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['なし', 'くだもの', 'ぬりえ'],
@@ -10255,7 +10255,7 @@ const _materials2: Material[] = [
   {
     id: 'pear-easy-1',
     title: 'なしのき',
-    description: 'なしの木に実るなしの線画。',
+    description: 'なしの木に実るなしのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['なし', 'くだもの', 'ぬりえ'],
@@ -10272,7 +10272,7 @@ const _materials2: Material[] = [
   {
     id: 'pear-normal-1',
     title: 'あきのくだもの',
-    description: '秋の果物かごの線画。なし中心。',
+    description: '秋の果物かごのぬりえ。なし中心。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['なし', 'くだもの', 'ぬりえ'],
@@ -10306,7 +10306,7 @@ const _materials2: Material[] = [
   {
     id: 'kiwi-simple-1',
     title: 'かわいいキウイ',
-    description: 'シンプルなキウイの線画。',
+    description: 'シンプルなキウイのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['キウイ', 'くだもの', 'ぬりえ'],
@@ -10323,7 +10323,7 @@ const _materials2: Material[] = [
   {
     id: 'kiwi-easy-1',
     title: 'キウイをきろう',
-    description: '断面のキウイの線画。種と果肉つき。',
+    description: '断面のキウイのぬりえ。種と果肉つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['キウイ', 'くだもの', 'ぬりえ'],
@@ -10340,7 +10340,7 @@ const _materials2: Material[] = [
   {
     id: 'kiwi-normal-1',
     title: 'キウイのたな',
-    description: 'キウイ棚の線画。つると葉つき。',
+    description: 'キウイ棚のぬりえ。つると葉つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['キウイ', 'くだもの', 'ぬりえ'],
@@ -10374,7 +10374,7 @@ const _materials2: Material[] = [
   {
     id: 'mango-simple-1',
     title: 'かわいいマンゴー',
-    description: 'シンプルなマンゴーの線画。',
+    description: 'シンプルなマンゴーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['マンゴー', 'くだもの', 'ぬりえ'],
@@ -10391,7 +10391,7 @@ const _materials2: Material[] = [
   {
     id: 'mango-easy-1',
     title: 'マンゴーのき',
-    description: 'マンゴーの木に実るマンゴーの線画。',
+    description: 'マンゴーの木に実るマンゴーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['マンゴー', 'くだもの', 'ぬりえ'],
@@ -10408,7 +10408,7 @@ const _materials2: Material[] = [
   {
     id: 'mango-normal-1',
     title: 'マンゴーをきろう',
-    description: 'ウニ切りのマンゴーの線画。',
+    description: 'ウニ切りのマンゴーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['マンゴー', 'くだもの', 'ぬりえ'],
@@ -10442,7 +10442,7 @@ const _materials2: Material[] = [
   {
     id: 'blueberry-simple-1',
     title: 'かわいいブルーベリー',
-    description: 'シンプルなブルーベリーの線画。小さな実がかわいい。',
+    description: 'シンプルなブルーベリーのぬりえ。小さな実がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ブルーベリー', 'くだもの', 'ぬりえ'],
@@ -10459,7 +10459,7 @@ const _materials2: Material[] = [
   {
     id: 'blueberry-easy-1',
     title: 'ブルーベリーのき',
-    description: 'ブルーベリーの木の線画。',
+    description: 'ブルーベリーの木のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ブルーベリー', 'くだもの', 'ぬりえ'],
@@ -10476,7 +10476,7 @@ const _materials2: Material[] = [
   {
     id: 'blueberry-normal-1',
     title: 'ブルーベリーつみ',
-    description: 'ブルーベリー摘みの線画。',
+    description: 'ブルーベリー摘みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['ブルーベリー', 'くだもの', 'ぬりえ'],
@@ -10510,7 +10510,7 @@ const _materials2: Material[] = [
   {
     id: 'grapefruit-simple-1',
     title: 'かわいいグレープフルーツ',
-    description: 'シンプルなグレープフルーツの線画。',
+    description: 'シンプルなグレープフルーツのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['グレープフルーツ', 'くだもの', 'ぬりえ'],
@@ -10527,7 +10527,7 @@ const _materials2: Material[] = [
   {
     id: 'grapefruit-easy-1',
     title: 'グレープフルーツをきろう',
-    description: '断面のグレープフルーツの線画。',
+    description: '断面のグレープフルーツのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['グレープフルーツ', 'くだもの', 'ぬりえ'],
@@ -10578,7 +10578,7 @@ const _materials2: Material[] = [
   {
     id: 'persimmon-simple-1',
     title: 'かわいいかき',
-    description: 'シンプルなかきの線画。',
+    description: 'シンプルなかきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['かき', 'くだもの', 'ぬりえ'],
@@ -10595,7 +10595,7 @@ const _materials2: Material[] = [
   {
     id: 'persimmon-easy-1',
     title: 'かきのき',
-    description: 'かきの木に実るかきの線画。',
+    description: 'かきの木に実るかきのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['かき', 'くだもの', 'ぬりえ'],
@@ -10646,7 +10646,7 @@ const _materials2: Material[] = [
   {
     id: 'plum-simple-1',
     title: 'かわいいうめ',
-    description: 'シンプルなうめの実の線画。',
+    description: 'シンプルなうめの実のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['うめ', 'くだもの', 'ぬりえ'],
@@ -10663,7 +10663,7 @@ const _materials2: Material[] = [
   {
     id: 'plum-easy-1',
     title: 'うめのはな',
-    description: '梅の花が咲く梅の木の線画。',
+    description: '梅の花が咲く梅の木のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['うめ', 'くだもの', 'ぬりえ'],
@@ -10680,7 +10680,7 @@ const _materials2: Material[] = [
   {
     id: 'plum-normal-1',
     title: 'うめのみのき',
-    description: 'うめの実が実る木の線画。うめぼしつき。',
+    description: 'うめの実が実る木のぬりえ。うめぼしつき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['うめ', 'くだもの', 'ぬりえ'],
@@ -10714,7 +10714,7 @@ const _materials2: Material[] = [
   {
     id: 'fig-simple-1',
     title: 'かわいいいちじく',
-    description: 'シンプルないちじくの線画。',
+    description: 'シンプルないちじくのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['いちじく', 'くだもの', 'ぬりえ'],
@@ -10731,7 +10731,7 @@ const _materials2: Material[] = [
   {
     id: 'fig-easy-1',
     title: 'いちじくをきろう',
-    description: '断面のいちじくの線画。',
+    description: '断面のいちじくのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['いちじく', 'くだもの', 'ぬりえ'],
@@ -10748,7 +10748,7 @@ const _materials2: Material[] = [
   {
     id: 'fig-normal-1',
     title: 'いちじくのき',
-    description: 'いちじくの木の線画。大きな葉つき。',
+    description: 'いちじくの木のぬりえ。大きな葉つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['いちじく', 'くだもの', 'ぬりえ'],
@@ -10782,7 +10782,7 @@ const _materials2: Material[] = [
   {
     id: 'raspberry-simple-1',
     title: 'かわいいラズベリー',
-    description: 'シンプルなラズベリーの線画。粒粒がかわいい。',
+    description: 'シンプルなラズベリーのぬりえ。粒粒がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ラズベリー', 'くだもの', 'ぬりえ'],
@@ -10799,7 +10799,7 @@ const _materials2: Material[] = [
   {
     id: 'raspberry-easy-1',
     title: 'ラズベリーのえだ',
-    description: 'ラズベリーの枝の線画。',
+    description: 'ラズベリーの枝のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ラズベリー', 'くだもの', 'ぬりえ'],
@@ -10816,7 +10816,7 @@ const _materials2: Material[] = [
   {
     id: 'raspberry-normal-1',
     title: 'ラズベリーつみ',
-    description: 'ラズベリー摘みの線画。',
+    description: 'ラズベリー摘みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['ラズベリー', 'くだもの', 'ぬりえ'],
@@ -10850,7 +10850,7 @@ const _materials2: Material[] = [
   {
     id: 'coconut-simple-1',
     title: 'かわいいヤシの実',
-    description: 'シンプルなヤシの実の線画。',
+    description: 'シンプルなヤシの実のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ココナッツ', 'くだもの', 'ぬりえ'],
@@ -10867,7 +10867,7 @@ const _materials2: Material[] = [
   {
     id: 'coconut-easy-1',
     title: 'ヤシのきのみ',
-    description: 'ヤシの木に実るヤシの実の線画。',
+    description: 'ヤシの木に実るヤシの実のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ココナッツ', 'くだもの', 'ぬりえ'],
@@ -10884,7 +10884,7 @@ const _materials2: Material[] = [
   {
     id: 'coconut-normal-1',
     title: 'ヤシのジュース',
-    description: 'ヤシの実のジュースを飲む子どもの線画。',
+    description: 'ヤシの実のジュースを飲む子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['ココナッツ', 'くだもの', 'ぬりえ'],
@@ -10918,7 +10918,7 @@ const _materials2: Material[] = [
   {
     id: 'yuzu-simple-1',
     title: 'かわいいゆず',
-    description: 'シンプルなゆずの線画。',
+    description: 'シンプルなゆずのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ゆず', 'くだもの', 'ぬりえ'],
@@ -10935,7 +10935,7 @@ const _materials2: Material[] = [
   {
     id: 'yuzu-easy-1',
     title: 'ゆずのき',
-    description: 'ゆずの木に実るゆずの線画。',
+    description: 'ゆずの木に実るゆずのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ゆず', 'くだもの', 'ぬりえ'],
@@ -10952,7 +10952,7 @@ const _materials2: Material[] = [
   {
     id: 'yuzu-normal-1',
     title: 'ゆずゆ',
-    description: 'ゆず湯のお風呂の線画。',
+    description: 'ゆず湯のお風呂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['ゆず', 'くだもの', 'ぬりえ'],
@@ -10986,7 +10986,7 @@ const _materials2: Material[] = [
   {
     id: 'papaya-simple-1',
     title: 'かわいいパパイヤ',
-    description: 'シンプルなパパイヤの線画。',
+    description: 'シンプルなパパイヤのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['パパイヤ', 'くだもの', 'ぬりえ'],
@@ -11003,7 +11003,7 @@ const _materials2: Material[] = [
   {
     id: 'papaya-easy-1',
     title: 'パパイヤをきろう',
-    description: '断面のパパイヤの線画。種つき。',
+    description: '断面のパパイヤのぬりえ。種つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['パパイヤ', 'くだもの', 'ぬりえ'],
@@ -11020,7 +11020,7 @@ const _materials2: Material[] = [
   {
     id: 'papaya-normal-1',
     title: 'パパイヤのき',
-    description: 'パパイヤの木の線画。',
+    description: 'パパイヤの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['パパイヤ', 'くだもの', 'ぬりえ'],
@@ -11054,7 +11054,7 @@ const _materials2: Material[] = [
   {
     id: 'dragon-fruit-simple-1',
     title: 'かわいいドラゴンフルーツ',
-    description: 'シンプルなドラゴンフルーツの線画。',
+    description: 'シンプルなドラゴンフルーツのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['ドラゴンフルーツ', 'くだもの', 'ぬりえ'],
@@ -11071,7 +11071,7 @@ const _materials2: Material[] = [
   {
     id: 'dragon-fruit-easy-1',
     title: 'ドラゴンフルーツをきろう',
-    description: '断面のドラゴンフルーツの線画。',
+    description: '断面のドラゴンフルーツのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['ドラゴンフルーツ', 'くだもの', 'ぬりえ'],
@@ -11088,7 +11088,7 @@ const _materials2: Material[] = [
   {
     id: 'dragon-fruit-normal-1',
     title: 'サボテンのみ',
-    description: 'サボテンに実るドラゴンフルーツの線画。',
+    description: 'サボテンに実るドラゴンフルーツのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['ドラゴンフルーツ', 'くだもの', 'ぬりえ'],
@@ -11122,7 +11122,7 @@ const _materials2: Material[] = [
   {
     id: 'avocado-simple-1',
     title: 'かわいいアボカド',
-    description: 'シンプルなアボカドの線画。',
+    description: 'シンプルなアボカドのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fruits',
     tags: ['アボカド', 'くだもの', 'ぬりえ'],
@@ -11139,7 +11139,7 @@ const _materials2: Material[] = [
   {
     id: 'avocado-easy-1',
     title: 'アボカドをきろう',
-    description: '断面のアボカドの線画。大きな種つき。',
+    description: '断面のアボカドのぬりえ。大きな種つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fruits',
     tags: ['アボカド', 'くだもの', 'ぬりえ'],
@@ -11156,7 +11156,7 @@ const _materials2: Material[] = [
   {
     id: 'avocado-normal-1',
     title: 'アボカドトースト',
-    description: 'アボカドトーストの線画。',
+    description: 'アボカドトーストのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fruits',
     tags: ['アボカド', 'くだもの', 'ぬりえ'],
@@ -11190,7 +11190,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-simple-1',
     title: 'かわいいにんじん',
-    description: 'シンプルなにんじんの線画。',
+    description: 'シンプルなにんじんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11207,7 +11207,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-easy-1',
     title: 'はたけのにんじん',
-    description: '畑から顔を出すにんじんの線画。',
+    description: '畑から顔を出すにんじんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11224,7 +11224,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-normal-1',
     title: 'ねっこやさい',
-    description: '根菜が並ぶ畑の線画。',
+    description: '根菜が並ぶ畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11241,7 +11241,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-simple-2',
     title: 'かわいいにんじん',
-    description: 'シンプルなにんじんの線画。',
+    description: 'シンプルなにんじんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11275,7 +11275,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-normal-2',
     title: 'にんじんをきろう',
-    description: 'まるごと・カットにんじんの線画。',
+    description: 'まるごと・カットにんじんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11292,7 +11292,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-rich-2',
     title: 'にんじんをしゅうかく',
-    description: 'にんじん収穫シーンの線画。女の子が主役。',
+    description: 'にんじん収穫シーンのぬりえ。女の子が主役。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11309,7 +11309,7 @@ const _materials2: Material[] = [
   {
     id: 'onion-simple-1',
     title: 'かわいいたまねぎ',
-    description: 'シンプルなたまねぎの線画。',
+    description: 'シンプルなたまねぎのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['たまねぎ', 'やさい', 'ぬりえ'],
@@ -11326,7 +11326,7 @@ const _materials2: Material[] = [
   {
     id: 'onion-easy-1',
     title: 'たまねぎをきろう',
-    description: '断面のたまねぎの線画。層つき。',
+    description: '断面のたまねぎのぬりえ。層つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['たまねぎ', 'やさい', 'ぬりえ'],
@@ -11377,7 +11377,7 @@ const _materials2: Material[] = [
   {
     id: 'onion-simple-2',
     title: 'かわいいたまねぎ',
-    description: 'シンプルなたまねぎの線画。',
+    description: 'シンプルなたまねぎのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['たまねぎ', 'やさい', 'ぬりえ'],
@@ -11411,7 +11411,7 @@ const _materials2: Material[] = [
   {
     id: 'onion-normal-2',
     title: 'たまねぎをきろう',
-    description: 'まるごと・カットたまねぎの線画。',
+    description: 'まるごと・カットたまねぎのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['たまねぎ', 'やさい', 'ぬりえ'],
@@ -11445,7 +11445,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-simple-1',
     title: 'かわいいトマト',
-    description: 'シンプルなトマトの線画。',
+    description: 'シンプルなトマトのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11462,7 +11462,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-simple-3',
     title: 'かわいいにんじん',
-    description: 'シンプルなにんじんの線画。',
+    description: 'シンプルなにんじんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11496,7 +11496,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-normal-3',
     title: 'にんじんをきろう',
-    description: 'まるごと・カットにんじんの線画。',
+    description: 'まるごと・カットにんじんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11513,7 +11513,7 @@ const _materials2: Material[] = [
   {
     id: 'carrot-rich-3',
     title: 'にんじんをしゅうかく',
-    description: 'にんじん収穫シーンの線画。',
+    description: 'にんじん収穫シーンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['にんじん', 'やさい', 'ぬりえ'],
@@ -11530,7 +11530,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-easy-1',
     title: 'はたけのトマト',
-    description: '畑に実るトマトの線画。つるつき。',
+    description: '畑に実るトマトのぬりえ。つるつき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11564,7 +11564,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-simple-2',
     title: 'かわいいトマト',
-    description: 'シンプルなトマトの線画。',
+    description: 'シンプルなトマトのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11598,7 +11598,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-normal-2',
     title: 'トマトをきろう',
-    description: 'まるごと・カットトマトの線画。',
+    description: 'まるごと・カットトマトのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11615,7 +11615,7 @@ const _materials2: Material[] = [
   {
     id: 'potato-easy-1',
     title: 'じゃがいもほり',
-    description: 'じゃがいも掘りの線画。',
+    description: 'じゃがいも掘りのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['じゃがいも', 'やさい', 'ぬりえ'],
@@ -11649,7 +11649,7 @@ const _materials2: Material[] = [
   {
     id: 'potato-simple-2',
     title: 'かわいいじゃがいも',
-    description: 'シンプルなじゃがいもの線画。',
+    description: 'シンプルなじゃがいものぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['じゃがいも', 'やさい', 'ぬりえ'],
@@ -11683,7 +11683,7 @@ const _materials2: Material[] = [
   {
     id: 'potato-rich-2',
     title: 'じゃがいもをしゅうかく',
-    description: 'じゃがいも収穫シーンの線画。女の子が主役。',
+    description: 'じゃがいも収穫シーンのぬりえ。女の子が主役。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['じゃがいも', 'やさい', 'ぬりえ'],
@@ -11700,7 +11700,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-rich-1',
     title: 'トマトしゅうかく',
-    description: 'トマト収穫シーンの線画。女の子が1人。',
+    description: 'トマト収穫シーンのぬりえ。女の子が1人。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11717,7 +11717,7 @@ const _materials2: Material[] = [
   {
     id: 'tomato-rich-2',
     title: 'トマトをしゅうかく',
-    description: 'トマト収穫シーンの線画。男の子が主役。',
+    description: 'トマト収穫シーンのぬりえ。男の子が主役。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['トマト', 'やさい', 'ぬりえ'],
@@ -11751,7 +11751,7 @@ const _materials2: Material[] = [
   {
     id: 'potato-simple-1',
     title: 'かわいいじゃがいも',
-    description: 'シンプルなじゃがいもの線画。',
+    description: 'シンプルなじゃがいものぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['じゃがいも', 'やさい', 'ぬりえ'],
@@ -11768,7 +11768,7 @@ const _materials2: Material[] = [
   {
     id: 'potato-normal-2',
     title: 'じゃがいもをきろう',
-    description: 'まるごと・カットじゃがいもの線画。',
+    description: 'まるごと・カットじゃがいものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['じゃがいも', 'やさい', 'ぬりえ'],
@@ -11802,7 +11802,7 @@ const _materials2: Material[] = [
   {
     id: 'broccoli-simple-1',
     title: 'かわいいブロッコリー',
-    description: 'シンプルなブロッコリーの線画。',
+    description: 'シンプルなブロッコリーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['ブロッコリー', 'やさい', 'ぬりえ'],
@@ -11819,7 +11819,7 @@ const _materials2: Material[] = [
   {
     id: 'broccoli-easy-1',
     title: 'はたけのブロッコリー',
-    description: '畑に育つブロッコリーの線画。',
+    description: '畑に育つブロッコリーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['ブロッコリー', 'やさい', 'ぬりえ'],
@@ -11870,7 +11870,7 @@ const _materials2: Material[] = [
   {
     id: 'broccoli-simple-2',
     title: 'かわいいブロッコリー',
-    description: 'シンプルなブロッコリーの線画。',
+    description: 'シンプルなブロッコリーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['ブロッコリー', 'やさい', 'ぬりえ'],
@@ -11904,7 +11904,7 @@ const _materials2: Material[] = [
   {
     id: 'broccoli-normal-2',
     title: 'ブロッコリーをきろう',
-    description: 'まるごと・小房ブロッコリーの線画。',
+    description: 'まるごと・小房ブロッコリーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['ブロッコリー', 'やさい', 'ぬりえ'],
@@ -11938,7 +11938,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-simple-1',
     title: 'かわいいとうもろこし',
-    description: 'シンプルなとうもろこしの線画。粒がかわいい。',
+    description: 'シンプルなとうもろこしのぬりえ。粒がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -11955,7 +11955,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-easy-1',
     title: 'はたけのとうもろこし',
-    description: '畑に育つとうもろこしの線画。',
+    description: '畑に育つとうもろこしのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -11972,7 +11972,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-normal-1',
     title: 'やきとうもろこし',
-    description: '焼きとうもろこしを食べる子どもの線画。',
+    description: '焼きとうもろこしを食べる子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -12006,7 +12006,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-simple-2',
     title: 'かわいいとうもろこし',
-    description: 'シンプルなとうもろこしの線画。粒がかわいい。',
+    description: 'シンプルなとうもろこしのぬりえ。粒がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -12040,7 +12040,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-normal-2',
     title: 'とうもろこしをきろう',
-    description: 'まるごと・カットとうもろこしの線画。',
+    description: 'まるごと・カットとうもろこしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -12057,7 +12057,7 @@ const _materials2: Material[] = [
   {
     id: 'corn-rich-2',
     title: 'やきとうもろこしたべよう',
-    description: 'やきとうもろこしを食べる男の子の線画。',
+    description: 'やきとうもろこしを食べる男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['とうもろこし', 'やさい', 'ぬりえ'],
@@ -12074,7 +12074,7 @@ const _materials2: Material[] = [
   {
     id: 'cabbage-simple-1',
     title: 'かわいいキャベツ',
-    description: 'シンプルなキャベツの線画。',
+    description: 'シンプルなキャベツのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['キャベツ', 'やさい', 'ぬりえ'],
@@ -12091,7 +12091,7 @@ const _materials2: Material[] = [
   {
     id: 'cabbage-easy-1',
     title: 'はたけのキャベツ',
-    description: '畑に育つキャベツの線画。',
+    description: '畑に育つキャベツのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['キャベツ', 'やさい', 'ぬりえ'],
@@ -12125,7 +12125,7 @@ const _materials2: Material[] = [
   {
     id: 'cabbage-simple-2',
     title: 'かわいいキャベツ',
-    description: 'シンプルなキャベツの線画。',
+    description: 'シンプルなキャベツのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['キャベツ', 'やさい', 'ぬりえ'],
@@ -12159,7 +12159,7 @@ const _materials2: Material[] = [
   {
     id: 'cabbage-normal-2',
     title: 'キャベツをきろう',
-    description: 'まるごと・カットキャベツの線画。',
+    description: 'まるごと・カットキャベツのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['キャベツ', 'やさい', 'ぬりえ'],
@@ -12176,7 +12176,7 @@ const _materials2: Material[] = [
   {
     id: 'cabbage-rich-2',
     title: 'キャベツをしゅうかく',
-    description: 'キャベツ収穫シーンの線画。女の子が主役。',
+    description: 'キャベツ収穫シーンのぬりえ。女の子が主役。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['キャベツ', 'やさい', 'ぬりえ'],
@@ -12193,7 +12193,7 @@ const _materials2: Material[] = [
   {
     id: 'eggplant-simple-1',
     title: 'かわいいなす',
-    description: 'シンプルななすの線画。',
+    description: 'シンプルななすのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['なす', 'やさい', 'ぬりえ'],
@@ -12210,7 +12210,7 @@ const _materials2: Material[] = [
   {
     id: 'eggplant-easy-1',
     title: 'はたけのなす',
-    description: '畑に育つなすの線画。',
+    description: '畑に育つなすのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['なす', 'やさい', 'ぬりえ'],
@@ -12261,7 +12261,7 @@ const _materials2: Material[] = [
   {
     id: 'eggplant-simple-2',
     title: 'かわいいなす',
-    description: 'シンプルななすの線画。',
+    description: 'シンプルななすのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['なす', 'やさい', 'ぬりえ'],
@@ -12295,7 +12295,7 @@ const _materials2: Material[] = [
   {
     id: 'eggplant-normal-2',
     title: 'なすをきろう',
-    description: 'まるごと・カットなすの線画。',
+    description: 'まるごと・カットなすのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['なす', 'やさい', 'ぬりえ'],
@@ -12312,7 +12312,7 @@ const _materials2: Material[] = [
   {
     id: 'eggplant-rich-2',
     title: 'なすをしゅうかく',
-    description: 'なす収穫シーンの線画。男の子が主役。',
+    description: 'なす収穫シーンのぬりえ。男の子が主役。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'vegetables',
     tags: ['なす', 'やさい', 'ぬりえ'],
@@ -12329,7 +12329,7 @@ const _materials2: Material[] = [
   {
     id: 'pumpkin-simple-1',
     title: 'かわいいかぼちゃ',
-    description: 'シンプルなかぼちゃの線画。',
+    description: 'シンプルなかぼちゃのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['かぼちゃ', 'やさい', 'ぬりえ'],
@@ -12346,7 +12346,7 @@ const _materials2: Material[] = [
   {
     id: 'pumpkin-easy-1',
     title: 'はたけのかぼちゃ',
-    description: '畑のつるに実るかぼちゃの線画。',
+    description: '畑のつるに実るかぼちゃのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['かぼちゃ', 'やさい', 'ぬりえ'],
@@ -12363,7 +12363,7 @@ const _materials2: Material[] = [
   {
     id: 'pumpkin-normal-1',
     title: 'ハロウィンかぼちゃ',
-    description: 'ハロウィンのかぼちゃランタンの線画。',
+    description: 'ハロウィンのかぼちゃランタンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['かぼちゃ', 'やさい', 'ぬりえ'],
@@ -12397,7 +12397,7 @@ const _materials2: Material[] = [
   {
     id: 'pumpkin-simple-2',
     title: 'かわいいかぼちゃ',
-    description: 'シンプルなかぼちゃの線画。',
+    description: 'シンプルなかぼちゃのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['かぼちゃ', 'やさい', 'ぬりえ'],
@@ -12431,7 +12431,7 @@ const _materials2: Material[] = [
   {
     id: 'pumpkin-normal-2',
     title: 'かぼちゃをきろう',
-    description: 'まるごと・カットかぼちゃの線画。',
+    description: 'まるごと・カットかぼちゃのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['かぼちゃ', 'やさい', 'ぬりえ'],
@@ -12465,7 +12465,7 @@ const _materials2: Material[] = [
   {
     id: 'sweet-potato-simple-1',
     title: 'かわいいさつまいも',
-    description: 'シンプルなさつまいもの線画。',
+    description: 'シンプルなさつまいものぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['sweet-potato', 'やさい', 'ぬりえ'],
@@ -12482,7 +12482,7 @@ const _materials2: Material[] = [
   {
     id: 'sweet-potato-easy-1',
     title: 'いもほり',
-    description: 'いも掘りをする子どもの線画。',
+    description: 'いも掘りをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['sweet-potato', 'やさい', 'ぬりえ'],
@@ -12499,7 +12499,7 @@ const _materials2: Material[] = [
   {
     id: 'sweet-potato-normal-1',
     title: 'やきいもやさん',
-    description: '焼きいも屋さんの線画。',
+    description: '焼きいも屋さんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['sweet-potato', 'やさい', 'ぬりえ'],
@@ -12533,7 +12533,7 @@ const _materials2: Material[] = [
   {
     id: 'cucumber-simple-1',
     title: 'かわいいきゅうり',
-    description: 'シンプルなきゅうりの線画。',
+    description: 'シンプルなきゅうりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['cucumber', 'やさい', 'ぬりえ'],
@@ -12550,7 +12550,7 @@ const _materials2: Material[] = [
   {
     id: 'cucumber-easy-1',
     title: 'はたけのきゅうり',
-    description: '畑のつるに実るきゅうりの線画。',
+    description: '畑のつるに実るきゅうりのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['cucumber', 'やさい', 'ぬりえ'],
@@ -12601,7 +12601,7 @@ const _materials2: Material[] = [
   {
     id: 'spinach-simple-1',
     title: 'かわいいほうれんそう',
-    description: 'シンプルなほうれんそうの線画。',
+    description: 'シンプルなほうれんそうのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['spinach', 'やさい', 'ぬりえ'],
@@ -12618,7 +12618,7 @@ const _materials2: Material[] = [
   {
     id: 'spinach-easy-1',
     title: 'はたけのほうれんそう',
-    description: '畑に育つほうれんそうの線画。',
+    description: '畑に育つほうれんそうのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['spinach', 'やさい', 'ぬりえ'],
@@ -12669,7 +12669,7 @@ const _materials2: Material[] = [
   {
     id: 'radish-simple-1',
     title: 'かわいいだいこん',
-    description: 'シンプルなだいこんの線画。',
+    description: 'シンプルなだいこんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['radish', 'やさい', 'ぬりえ'],
@@ -12686,7 +12686,7 @@ const _materials2: Material[] = [
   {
     id: 'radish-easy-1',
     title: 'はたけのだいこん',
-    description: '畑から顔を出すだいこんの線画。',
+    description: '畑から顔を出すだいこんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['radish', 'やさい', 'ぬりえ'],
@@ -12737,7 +12737,7 @@ const _materials2: Material[] = [
   {
     id: 'bell-pepper-simple-1',
     title: 'かわいいピーマン',
-    description: 'シンプルなピーマンの線画。',
+    description: 'シンプルなピーマンのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['bell-pepper', 'やさい', 'ぬりえ'],
@@ -12754,7 +12754,7 @@ const _materials2: Material[] = [
   {
     id: 'bell-pepper-easy-1',
     title: 'はたけのピーマン',
-    description: '畑に育つピーマンの線画。',
+    description: '畑に育つピーマンのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['bell-pepper', 'やさい', 'ぬりえ'],
@@ -12805,7 +12805,7 @@ const _materials2: Material[] = [
   {
     id: 'mushroom-simple-1',
     title: 'かわいいきのこ',
-    description: 'シンプルなきのこの線画。傘がかわいい。',
+    description: 'シンプルなきのこのぬりえ。傘がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['mushroom', 'やさい', 'ぬりえ'],
@@ -12822,7 +12822,7 @@ const _materials2: Material[] = [
   {
     id: 'mushroom-easy-1',
     title: 'もりのきのこ',
-    description: '森に生えるきのこの線画。落ち葉つき。',
+    description: '森に生えるきのこのぬりえ。落ち葉つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['mushroom', 'やさい', 'ぬりえ'],
@@ -12873,7 +12873,7 @@ const _materials2: Material[] = [
   {
     id: 'green-onion-simple-1',
     title: 'かわいいねぎ',
-    description: 'シンプルなねぎの線画。',
+    description: 'シンプルなねぎのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['green-onion', 'やさい', 'ぬりえ'],
@@ -12890,7 +12890,7 @@ const _materials2: Material[] = [
   {
     id: 'green-onion-easy-1',
     title: 'はたけのねぎ',
-    description: '畑に育つねぎの線画。',
+    description: '畑に育つねぎのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['green-onion', 'やさい', 'ぬりえ'],
@@ -12941,7 +12941,7 @@ const _materials2: Material[] = [
   {
     id: 'garlic-simple-1',
     title: 'かわいいにんにく',
-    description: 'シンプルなにんにくの線画。',
+    description: 'シンプルなにんにくのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['garlic', 'やさい', 'ぬりえ'],
@@ -12958,7 +12958,7 @@ const _materials2: Material[] = [
   {
     id: 'garlic-easy-1',
     title: 'にんにくをわろう',
-    description: '割ったにんにくの線画。粒つき。',
+    description: '割ったにんにくのぬりえ。粒つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['garlic', 'やさい', 'ぬりえ'],
@@ -13009,7 +13009,7 @@ const _materials2: Material[] = [
   {
     id: 'hinamatsuri-simple-1',
     title: 'おひなさま',
-    description: 'シンプルなお内裏様とお雛様の線画。',
+    description: 'シンプルなお内裏様とお雛様のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['ひな祭り', 'spring', 'ぬりえ'],
@@ -13026,7 +13026,7 @@ const _materials2: Material[] = [
   {
     id: 'hinamatsuri-easy-1',
     title: 'ひな祭りのかざり',
-    description: 'ひな壇とぼんぼりつきのひな祭りの線画。',
+    description: 'ひな壇とぼんぼりつきのひな祭りのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['ひな祭り', 'spring', 'ぬりえ'],
@@ -13043,7 +13043,7 @@ const _materials2: Material[] = [
   {
     id: 'hinamatsuri-normal-1',
     title: 'ひなだんかざり',
-    description: '三人官女が並ぶひな壇の線画。',
+    description: '三人官女が並ぶひな壇のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['ひな祭り', 'spring', 'ぬりえ'],
@@ -13060,7 +13060,7 @@ const _materials2: Material[] = [
   {
     id: 'hinamatsuri-rich-1',
     title: 'にぎやかなひなだん',
-    description: '五段飾りのにぎやかなひな壇の線画。桃の花つき。',
+    description: '五段飾りのにぎやかなひな壇のぬりえ。桃の花つき。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['ひな祭り', 'spring', 'ぬりえ'],
@@ -13077,7 +13077,7 @@ const _materials2: Material[] = [
   {
     id: 'enrollment-simple-1',
     title: 'つうえんバッグ',
-    description: 'シンプルな通園バッグの線画。',
+    description: 'シンプルな通園バッグのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['入園式', 'spring', 'ぬりえ'],
@@ -13094,7 +13094,7 @@ const _materials2: Material[] = [
   {
     id: 'enrollment-easy-1',
     title: 'さくらとつうえんバッグ',
-    description: '桜と通園バッグの線画。',
+    description: '桜と通園バッグのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['入園式', 'spring', 'ぬりえ'],
@@ -13111,7 +13111,7 @@ const _materials2: Material[] = [
   {
     id: 'enrollment-normal-1',
     title: 'にゅうえんしきのあさ',
-    description: '桜並木を歩く子どもの入園式の線画。',
+    description: '桜並木を歩く子どもの入園式のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['入園式', 'spring', 'ぬりえ'],
@@ -13145,7 +13145,7 @@ const _materials2: Material[] = [
   {
     id: 'hanami-simple-1',
     title: 'さくらのき',
-    description: 'シンプルな満開の桜の木の線画。',
+    description: 'シンプルな満開の桜の木のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['お花見', 'spring', 'ぬりえ'],
@@ -13162,7 +13162,7 @@ const _materials2: Material[] = [
   {
     id: 'hanami-easy-1',
     title: 'おはなみのじゅんび',
-    description: '桜の下のお弁当とレジャーシートの線画。',
+    description: '桜の下のお弁当とレジャーシートのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['お花見', 'spring', 'ぬりえ'],
@@ -13179,7 +13179,7 @@ const _materials2: Material[] = [
   {
     id: 'hanami-normal-1',
     title: 'さくらのしたでおべんとう',
-    description: '桜の下でお弁当を広げる子どもたちの線画。',
+    description: '桜の下でお弁当を広げる子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['お花見', 'spring', 'ぬりえ'],
@@ -13213,7 +13213,7 @@ const _materials2: Material[] = [
   {
     id: 'excursion-simple-1',
     title: 'えんそくリュック',
-    description: 'シンプルなリュックサックの線画。',
+    description: 'シンプルなリュックサックのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['遠足', 'spring', 'ぬりえ'],
@@ -13230,7 +13230,7 @@ const _materials2: Material[] = [
   {
     id: 'excursion-easy-1',
     title: 'えんそくのじゅんび',
-    description: '遠足の持ち物（リュック・お弁当・水筒）の線画。',
+    description: '遠足の持ち物（リュック・お弁当・水筒）のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['遠足', 'spring', 'ぬりえ'],
@@ -13247,7 +13247,7 @@ const _materials2: Material[] = [
   {
     id: 'excursion-normal-1',
     title: 'えんそくしゅっぱつ',
-    description: '列を作って歩く子どもたちの遠足の線画。',
+    description: '列を作って歩く子どもたちの遠足のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['遠足', 'spring', 'ぬりえ'],
@@ -13281,7 +13281,7 @@ const _materials2: Material[] = [
   {
     id: 'childrensday-simple-1',
     title: 'こいのぼり',
-    description: 'シンプルなこいのぼりの線画。',
+    description: 'シンプルなこいのぼりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['こどもの日', 'spring', 'ぬりえ'],
@@ -13315,7 +13315,7 @@ const _materials2: Material[] = [
   {
     id: 'childrensday-normal-1',
     title: 'こどもの日のそら',
-    description: 'こいのぼりとかぶとをかぶった子どもの線画。',
+    description: 'こいのぼりとかぶとをかぶった子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['こどもの日', 'spring', 'ぬりえ'],
@@ -13349,7 +13349,7 @@ const _materials2: Material[] = [
   {
     id: 'mothersday-simple-1',
     title: 'カーネーション',
-    description: 'シンプルなカーネーション1輪の線画。',
+    description: 'シンプルなカーネーション1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['母の日', 'spring', 'ぬりえ'],
@@ -13366,7 +13366,7 @@ const _materials2: Material[] = [
   {
     id: 'mothersday-easy-1',
     title: '母の日のプレゼント',
-    description: 'カーネーションの花束とプレゼントボックスの線画。',
+    description: 'カーネーションの花束とプレゼントボックスのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['母の日', 'spring', 'ぬりえ'],
@@ -13383,7 +13383,7 @@ const _materials2: Material[] = [
   {
     id: 'mothersday-normal-1',
     title: 'ははのひのかざり',
-    description: '花束・カード・プレゼントが並ぶ母の日の線画。',
+    description: '花束・カード・プレゼントが並ぶ母の日のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['母の日', 'spring', 'ぬりえ'],
@@ -13417,7 +13417,7 @@ const _materials2: Material[] = [
   {
     id: 'bamboo-shoot-simple-1',
     title: 'かわいいたけのこ',
-    description: 'シンプルなたけのこの線画。',
+    description: 'シンプルなたけのこのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['たけのこ', 'やさい', 'ぬりえ'],
@@ -13434,7 +13434,7 @@ const _materials2: Material[] = [
   {
     id: 'bamboo-shoot-easy-1',
     title: 'はるのたけのこ',
-    description: '竹林から顔を出すたけのこの線画。',
+    description: '竹林から顔を出すたけのこのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['たけのこ', 'やさい', 'ぬりえ'],
@@ -13451,7 +13451,7 @@ const _materials2: Material[] = [
   {
     id: 'bamboo-shoot-normal-1',
     title: 'たけのこほり',
-    description: 'たけのこ掘りの線画。竹林つき。',
+    description: 'たけのこ掘りのぬりえ。竹林つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['たけのこ', 'やさい', 'ぬりえ'],
@@ -13485,7 +13485,7 @@ const _materials2: Material[] = [
   {
     id: 'lotus-root-simple-1',
     title: 'かわいいれんこん',
-    description: 'シンプルなれんこんの線画。穴がかわいい。',
+    description: 'シンプルなれんこんのぬりえ。穴がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['lotus-root', 'やさい', 'ぬりえ'],
@@ -13502,7 +13502,7 @@ const _materials2: Material[] = [
   {
     id: 'lotus-root-easy-1',
     title: 'れんこんをきろう',
-    description: '輪切りれんこんの線画。穴つき。',
+    description: '輪切りれんこんのぬりえ。穴つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['lotus-root', 'やさい', 'ぬりえ'],
@@ -13553,7 +13553,7 @@ const _materials2: Material[] = [
   {
     id: 'asparagus-simple-1',
     title: 'かわいいアスパラガス',
-    description: 'シンプルなアスパラガスの線画。',
+    description: 'シンプルなアスパラガスのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['asparagus', 'やさい', 'ぬりえ'],
@@ -13570,7 +13570,7 @@ const _materials2: Material[] = [
   {
     id: 'asparagus-easy-1',
     title: 'アスパラガスのたば',
-    description: '3本束のアスパラガスの線画。',
+    description: '3本束のアスパラガスのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['asparagus', 'やさい', 'ぬりえ'],
@@ -13587,7 +13587,7 @@ const _materials2: Material[] = [
   {
     id: 'asparagus-normal-1',
     title: 'はるのアスパラガス',
-    description: '畑に育つアスパラガスの線画。',
+    description: '畑に育つアスパラガスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['asparagus', 'やさい', 'ぬりえ'],
@@ -13621,7 +13621,7 @@ const _materials2: Material[] = [
   {
     id: 'cauliflower-simple-1',
     title: 'かわいいカリフラワー',
-    description: 'シンプルなカリフラワーの線画。',
+    description: 'シンプルなカリフラワーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['cauliflower', 'やさい', 'ぬりえ'],
@@ -13638,7 +13638,7 @@ const _materials2: Material[] = [
   {
     id: 'cauliflower-easy-1',
     title: 'はたけのカリフラワー',
-    description: '畑に育つカリフラワーの線画。',
+    description: '畑に育つカリフラワーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['cauliflower', 'やさい', 'ぬりえ'],
@@ -13689,7 +13689,7 @@ const _materials2: Material[] = [
   {
     id: 'bitter-gourd-simple-1',
     title: 'かわいいゴーヤ',
-    description: 'シンプルなゴーヤの線画。',
+    description: 'シンプルなゴーヤのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['bitter-gourd', 'やさい', 'ぬりえ'],
@@ -13706,7 +13706,7 @@ const _materials2: Material[] = [
   {
     id: 'bitter-gourd-easy-1',
     title: 'ゴーヤのつる',
-    description: 'つるに実るゴーヤの線画。',
+    description: 'つるに実るゴーヤのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['bitter-gourd', 'やさい', 'ぬりえ'],
@@ -13723,7 +13723,7 @@ const _materials2: Material[] = [
   {
     id: 'bitter-gourd-normal-1',
     title: 'ゴーヤのカーテン',
-    description: 'ゴーヤのグリーンカーテンの線画。',
+    description: 'ゴーヤのグリーンカーテンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['bitter-gourd', 'やさい', 'ぬりえ'],
@@ -13757,7 +13757,7 @@ const _materials2: Material[] = [
   {
     id: 'edamame-simple-1',
     title: 'かわいいえだまめ',
-    description: 'シンプルなえだまめの線画。さやがかわいい。',
+    description: 'シンプルなえだまめのぬりえ。さやがかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['edamame', 'やさい', 'ぬりえ'],
@@ -13774,7 +13774,7 @@ const _materials2: Material[] = [
   {
     id: 'edamame-easy-1',
     title: 'えだのえだまめ',
-    description: '枝についたえだまめの線画。',
+    description: '枝についたえだまめのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['edamame', 'やさい', 'ぬりえ'],
@@ -13825,7 +13825,7 @@ const _materials2: Material[] = [
   {
     id: 'chinese-cabbage-simple-1',
     title: 'かわいいはくさい',
-    description: 'シンプルなはくさいの線画。',
+    description: 'シンプルなはくさいのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['chinese-cabbage', 'やさい', 'ぬりえ'],
@@ -13842,7 +13842,7 @@ const _materials2: Material[] = [
   {
     id: 'chinese-cabbage-easy-1',
     title: 'はくさいをきろう',
-    description: '断面のはくさいの線画。',
+    description: '断面のはくさいのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['chinese-cabbage', 'やさい', 'ぬりえ'],
@@ -13893,7 +13893,7 @@ const _materials2: Material[] = [
   {
     id: 'okra-simple-1',
     title: 'かわいいオクラ',
-    description: 'シンプルなオクラの線画。五角形がかわいい。',
+    description: 'シンプルなオクラのぬりえ。五角形がかわいい。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'vegetables',
     tags: ['okra', 'やさい', 'ぬりえ'],
@@ -13910,7 +13910,7 @@ const _materials2: Material[] = [
   {
     id: 'okra-easy-1',
     title: 'オクラをきろう',
-    description: '輪切りオクラの線画。星形つき。',
+    description: '輪切りオクラのぬりえ。星形つき。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'vegetables',
     tags: ['okra', 'やさい', 'ぬりえ'],
@@ -13927,7 +13927,7 @@ const _materials2: Material[] = [
   {
     id: 'okra-normal-1',
     title: 'はたけのオクラ',
-    description: '畑に育つオクラの線画。',
+    description: '畑に育つオクラのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'vegetables',
     tags: ['okra', 'やさい', 'ぬりえ'],
@@ -13961,7 +13961,7 @@ const _materials2: Material[] = [
   {
     id: 'sakuramochi-simple-1',
     title: 'さくらもち',
-    description: 'シンプルな桜餅の線画。',
+    description: 'シンプルな桜餅のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'spring',
     tags: ['桜餅', 'spring', 'ぬりえ'],
@@ -15112,7 +15112,7 @@ const _materials3: Material[] = [
   {
     id: 'sakura-simple-1',
     title: 'さくらのはな',
-    description: 'シンプルな桜の花1輪の線画。',
+    description: 'シンプルな桜の花1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['sakura', 'flowers', 'ぬりえ'],
@@ -15180,7 +15180,7 @@ const _materials3: Material[] = [
   {
     id: 'tulip-simple-1',
     title: 'かわいいチューリップ',
-    description: 'シンプルなチューリップ1本の線画。',
+    description: 'シンプルなチューリップ1本のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['tulip', 'flowers', 'ぬりえ'],
@@ -15197,7 +15197,7 @@ const _materials3: Material[] = [
   {
     id: 'tulip-easy-1',
     title: 'チューリップがならんだ',
-    description: '3本並んだチューリップの線画。',
+    description: '3本並んだチューリップのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['tulip', 'flowers', 'ぬりえ'],
@@ -15214,7 +15214,7 @@ const _materials3: Material[] = [
   {
     id: 'tulip-normal-1',
     title: 'チューリップのはなだん',
-    description: 'チューリップが咲く花壇の線画。',
+    description: 'チューリップが咲く花壇のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['tulip', 'flowers', 'ぬりえ'],
@@ -15248,7 +15248,7 @@ const _materials3: Material[] = [
   {
     id: 'dandelion-simple-1',
     title: 'かわいいたんぽぽ',
-    description: 'シンプルなたんぽぽ1本の線画。',
+    description: 'シンプルなたんぽぽ1本のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['dandelion', 'flowers', 'ぬりえ'],
@@ -15282,7 +15282,7 @@ const _materials3: Material[] = [
   {
     id: 'dandelion-normal-1',
     title: 'くさはらのたんぽぽ',
-    description: '草原に咲くたんぽぽの線画。',
+    description: '草原に咲くたんぽぽのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['dandelion', 'flowers', 'ぬりえ'],
@@ -15299,7 +15299,7 @@ const _materials3: Material[] = [
   {
     id: 'dandelion-rich-1',
     title: 'わたげをふこう',
-    description: '綿毛を吹く子どもの線画。',
+    description: '綿毛を吹く子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'flowers',
     tags: ['dandelion', 'flowers', 'ぬりえ'],
@@ -15316,7 +15316,7 @@ const _materials3: Material[] = [
   {
     id: 'sunflower-simple-1',
     title: 'かわいいひまわり',
-    description: 'シンプルなひまわり1本の線画。',
+    description: 'シンプルなひまわり1本のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['sunflower', 'flowers', 'ぬりえ'],
@@ -15333,7 +15333,7 @@ const _materials3: Material[] = [
   {
     id: 'sunflower-easy-1',
     title: 'ひまわりがならんだ',
-    description: '2〜3本並んだひまわりの線画。',
+    description: '2〜3本並んだひまわりのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['sunflower', 'flowers', 'ぬりえ'],
@@ -15350,7 +15350,7 @@ const _materials3: Material[] = [
   {
     id: 'sunflower-normal-1',
     title: 'ひまわりばたけ',
-    description: 'ひまわり畑の夏の線画。青空つき。',
+    description: 'ひまわり畑の夏のぬりえ。青空つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['sunflower', 'flowers', 'ぬりえ'],
@@ -15384,7 +15384,7 @@ const _materials3: Material[] = [
   {
     id: 'morning-glory-simple-1',
     title: 'かわいいあさがお',
-    description: 'シンプルなあさがおの花1輪の線画。',
+    description: 'シンプルなあさがおの花1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['morning-glory', 'flowers', 'ぬりえ'],
@@ -15401,7 +15401,7 @@ const _materials3: Material[] = [
   {
     id: 'morning-glory-easy-1',
     title: 'あさがおのつる',
-    description: 'つるに咲くあさがおの線画。',
+    description: 'つるに咲くあさがおのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['morning-glory', 'flowers', 'ぬりえ'],
@@ -15418,7 +15418,7 @@ const _materials3: Material[] = [
   {
     id: 'morning-glory-normal-1',
     title: 'あさがおのしちゅう',
-    description: '支柱に咲くあさがおの線画。',
+    description: '支柱に咲くあさがおのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['morning-glory', 'flowers', 'ぬりえ'],
@@ -15452,7 +15452,7 @@ const _materials3: Material[] = [
   {
     id: 'hydrangea-simple-1',
     title: 'かわいいあじさい',
-    description: 'シンプルなあじさいの花1輪の線画。',
+    description: 'シンプルなあじさいの花1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['hydrangea', 'flowers', 'ぬりえ'],
@@ -15469,7 +15469,7 @@ const _materials3: Material[] = [
   {
     id: 'hydrangea-easy-1',
     title: 'あじさいとはっぱ',
-    description: 'あじさいと葉っぱの線画。',
+    description: 'あじさいと葉っぱのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['hydrangea', 'flowers', 'ぬりえ'],
@@ -15486,7 +15486,7 @@ const _materials3: Material[] = [
   {
     id: 'hydrangea-normal-1',
     title: 'あめのひのあじさい',
-    description: '雨の日のあじさいとカエルの線画。',
+    description: '雨の日のあじさいとカエルのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['hydrangea', 'flowers', 'ぬりえ'],
@@ -15503,7 +15503,7 @@ const _materials3: Material[] = [
   {
     id: 'hydrangea-rich-1',
     title: 'にぎやかなつゆのひ',
-    description: '梅雨のにぎやかなあじさいの線画。カエル・かたつむりつき。',
+    description: '梅雨のにぎやかなあじさいのぬりえ。カエル・かたつむりつき。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'flowers',
     tags: ['hydrangea', 'flowers', 'ぬりえ'],
@@ -15520,7 +15520,7 @@ const _materials3: Material[] = [
   {
     id: 'rose-simple-1',
     title: 'かわいいバラ',
-    description: 'シンプルなバラ1輪の線画。',
+    description: 'シンプルなバラ1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['rose', 'flowers', 'ぬりえ'],
@@ -15537,7 +15537,7 @@ const _materials3: Material[] = [
   {
     id: 'rose-easy-1',
     title: 'バラのはなたば',
-    description: 'バラの花束の線画。',
+    description: 'バラの花束のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['rose', 'flowers', 'ぬりえ'],
@@ -15554,7 +15554,7 @@ const _materials3: Material[] = [
   {
     id: 'rose-normal-1',
     title: 'バラのアーチ',
-    description: 'バラのアーチの線画。',
+    description: 'バラのアーチのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['rose', 'flowers', 'ぬりえ'],
@@ -15588,7 +15588,7 @@ const _materials3: Material[] = [
   {
     id: 'carnation-simple-1',
     title: 'かわいいカーネーション',
-    description: 'シンプルなカーネーション1輪の線画。',
+    description: 'シンプルなカーネーション1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['carnation', 'flowers', 'ぬりえ'],
@@ -15605,7 +15605,7 @@ const _materials3: Material[] = [
   {
     id: 'carnation-easy-1',
     title: 'カーネーションのはなたば',
-    description: 'カーネーションの花束とリボンの線画。',
+    description: 'カーネーションの花束とリボンのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['carnation', 'flowers', 'ぬりえ'],
@@ -15622,7 +15622,7 @@ const _materials3: Material[] = [
   {
     id: 'carnation-normal-1',
     title: 'カーネーションのかびん',
-    description: '花瓶に飾られたカーネーションの線画。',
+    description: '花瓶に飾られたカーネーションのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['carnation', 'flowers', 'ぬりえ'],
@@ -15656,7 +15656,7 @@ const _materials3: Material[] = [
   {
     id: 'cosmos-simple-1',
     title: 'かわいいコスモス',
-    description: 'シンプルなコスモス1輪の線画。',
+    description: 'シンプルなコスモス1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['cosmos', 'flowers', 'ぬりえ'],
@@ -15690,7 +15690,7 @@ const _materials3: Material[] = [
   {
     id: 'cosmos-normal-1',
     title: 'コスモスのはら',
-    description: 'コスモスが咲く秋の野原の線画。',
+    description: 'コスモスが咲く秋の野原のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['cosmos', 'flowers', 'ぬりえ'],
@@ -15724,7 +15724,7 @@ const _materials3: Material[] = [
   {
     id: 'rapeseed-simple-1',
     title: 'かわいいなのはな',
-    description: 'シンプルな菜の花1本の線画。',
+    description: 'シンプルな菜の花1本のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['rapeseed', 'flowers', 'ぬりえ'],
@@ -15758,7 +15758,7 @@ const _materials3: Material[] = [
   {
     id: 'rapeseed-normal-1',
     title: 'なのはなばたけ',
-    description: '菜の花畑の春の線画。',
+    description: '菜の花畑の春のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['rapeseed', 'flowers', 'ぬりえ'],
@@ -15792,7 +15792,7 @@ const _materials3: Material[] = [
   {
     id: 'violet-simple-1',
     title: 'かわいいすみれ',
-    description: 'シンプルなすみれ1輪の線画。',
+    description: 'シンプルなすみれ1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['violet', 'flowers', 'ぬりえ'],
@@ -15826,7 +15826,7 @@ const _materials3: Material[] = [
   {
     id: 'violet-normal-1',
     title: 'くさはらのすみれ',
-    description: '草原のすみれの線画。',
+    description: '草原のすみれのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['violet', 'flowers', 'ぬりえ'],
@@ -15843,7 +15843,7 @@ const _materials3: Material[] = [
   {
     id: 'violet-rich-1',
     title: 'はるのはなばたけ',
-    description: 'すみれ・たんぽぽ・クローバーの春の野原の線画。',
+    description: 'すみれ・たんぽぽ・クローバーの春の野原のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'flowers',
     tags: ['violet', 'flowers', 'ぬりえ'],
@@ -15860,7 +15860,7 @@ const _materials3: Material[] = [
   {
     id: 'horsetail-simple-1',
     title: 'かわいいつくし',
-    description: 'シンプルなつくし1本の線画。',
+    description: 'シンプルなつくし1本のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['horsetail', 'flowers', 'ぬりえ'],
@@ -15877,7 +15877,7 @@ const _materials3: Material[] = [
   {
     id: 'horsetail-easy-1',
     title: 'つくしがならんだ',
-    description: '3〜4本並んだつくしの線画。',
+    description: '3〜4本並んだつくしのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['horsetail', 'flowers', 'ぬりえ'],
@@ -15894,7 +15894,7 @@ const _materials3: Material[] = [
   {
     id: 'horsetail-normal-1',
     title: 'くさのなかのつくし',
-    description: '草の間から顔を出すつくしの線画。',
+    description: '草の間から顔を出すつくしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['horsetail', 'flowers', 'ぬりえ'],
@@ -15928,7 +15928,7 @@ const _materials3: Material[] = [
   {
     id: 'pansy-simple-1',
     title: 'かわいいパンジー',
-    description: 'シンプルなパンジー1輪の線画。',
+    description: 'シンプルなパンジー1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['pansy', 'flowers', 'ぬりえ'],
@@ -15945,7 +15945,7 @@ const _materials3: Material[] = [
   {
     id: 'pansy-easy-1',
     title: 'パンジーがならんだ',
-    description: '3輪並んだパンジーの線画。',
+    description: '3輪並んだパンジーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['pansy', 'flowers', 'ぬりえ'],
@@ -15962,7 +15962,7 @@ const _materials3: Material[] = [
   {
     id: 'pansy-normal-1',
     title: 'パンジーのうえきばち',
-    description: '植木鉢のパンジーの線画。',
+    description: '植木鉢のパンジーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['pansy', 'flowers', 'ぬりえ'],
@@ -15996,7 +15996,7 @@ const _materials3: Material[] = [
   {
     id: 'lily-simple-1',
     title: 'かわいいゆり',
-    description: 'シンプルなゆり1輪の線画。',
+    description: 'シンプルなゆり1輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['lily', 'flowers', 'ぬりえ'],
@@ -16013,7 +16013,7 @@ const _materials3: Material[] = [
   {
     id: 'lily-easy-1',
     title: 'ゆりがさいた',
-    description: '2〜3輪咲くゆりの線画。',
+    description: '2〜3輪咲くゆりのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'flowers',
     tags: ['lily', 'flowers', 'ぬりえ'],
@@ -16030,7 +16030,7 @@ const _materials3: Material[] = [
   {
     id: 'lily-normal-1',
     title: 'にわのゆり',
-    description: '庭に咲くゆりの線画。',
+    description: '庭に咲くゆりのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['lily', 'flowers', 'ぬりえ'],
@@ -16064,7 +16064,7 @@ const _materials3: Material[] = [
   {
     id: 'clover-simple-1',
     title: 'かわいいクローバー',
-    description: 'シンプルなクローバーの三つ葉の線画。',
+    description: 'シンプルなクローバーの三つ葉のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'flowers',
     tags: ['clover', 'flowers', 'ぬりえ'],
@@ -16098,7 +16098,7 @@ const _materials3: Material[] = [
   {
     id: 'clover-normal-1',
     title: 'くさはらのクローバー',
-    description: '草原に広がるクローバーの線画。てんとう虫つき。',
+    description: '草原に広がるクローバーのぬりえ。てんとう虫つき。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'flowers',
     tags: ['clover', 'flowers', 'ぬりえ'],
@@ -16204,7 +16204,7 @@ const _materials3: Material[] = [
   {
     id: 'ant-simple-1',
     title: 'かわいいアリ',
-    description: 'シンプルなアリの線画。',
+    description: 'シンプルなアリのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['ant', 'むし', 'ぬりえ'],
@@ -16221,7 +16221,7 @@ const _materials3: Material[] = [
   {
     id: 'ant-easy-1',
     title: 'アリのおしごと',
-    description: 'えさを運ぶアリの線画。',
+    description: 'えさを運ぶアリのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['ant', 'むし', 'ぬりえ'],
@@ -16238,7 +16238,7 @@ const _materials3: Material[] = [
   {
     id: 'ant-normal-1',
     title: 'アリのぎょうれつ',
-    description: 'アリの行列の線画。',
+    description: 'アリの行列のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['ant', 'むし', 'ぬりえ'],
@@ -16255,7 +16255,7 @@ const _materials3: Material[] = [
   {
     id: 'ant-rich-1',
     title: 'アリをかんさつ',
-    description: 'アリを観察する男の子の線画。',
+    description: 'アリを観察する男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['ant', 'むし', 'ぬりえ'],
@@ -16272,7 +16272,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-simple-1',
     title: 'かわいいセミ',
-    description: 'シンプルなセミの線画。',
+    description: 'シンプルなセミのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['cicada', 'むし', 'ぬりえ'],
@@ -16289,7 +16289,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-easy-1',
     title: 'きのセミ',
-    description: '木の幹にとまるセミの線画。',
+    description: '木の幹にとまるセミのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['cicada', 'むし', 'ぬりえ'],
@@ -16306,7 +16306,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-normal-1',
     title: 'なつのセミ',
-    description: '夏の木で鳴くセミの線画。',
+    description: '夏の木で鳴くセミのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['cicada', 'むし', 'ぬりえ'],
@@ -16323,7 +16323,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-rich-1',
     title: 'セミをつかまえよう',
-    description: 'セミを捕まえる男の子の線画。',
+    description: 'セミを捕まえる男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['cicada', 'むし', 'ぬりえ'],
@@ -16340,7 +16340,7 @@ const _materials3: Material[] = [
   {
     id: 'mantis-simple-1',
     title: 'かわいいカマキリ',
-    description: 'シンプルなカマキリの線画。',
+    description: 'シンプルなカマキリのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['mantis', 'むし', 'ぬりえ'],
@@ -16357,7 +16357,7 @@ const _materials3: Material[] = [
   {
     id: 'mantis-easy-1',
     title: 'はっぱのカマキリ',
-    description: '葉の上のカマキリの線画。',
+    description: '葉の上のカマキリのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['mantis', 'むし', 'ぬりえ'],
@@ -16374,7 +16374,7 @@ const _materials3: Material[] = [
   {
     id: 'mantis-normal-1',
     title: 'くさむらのカマキリ',
-    description: '草むらのカマキリの線画。',
+    description: '草むらのカマキリのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['mantis', 'むし', 'ぬりえ'],
@@ -16391,7 +16391,7 @@ const _materials3: Material[] = [
   {
     id: 'mantis-rich-1',
     title: 'カマキリをかんさつ',
-    description: 'カマキリを観察する女の子の線画。',
+    description: 'カマキリを観察する女の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['mantis', 'むし', 'ぬりえ'],
@@ -16408,7 +16408,7 @@ const _materials3: Material[] = [
   {
     id: 'caterpillar-simple-1',
     title: 'かわいいあおむし',
-    description: 'シンプルなあおむしの線画。',
+    description: 'シンプルなあおむしのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['caterpillar', 'むし', 'ぬりえ'],
@@ -16425,7 +16425,7 @@ const _materials3: Material[] = [
   {
     id: 'caterpillar-easy-1',
     title: 'はっぱのあおむし',
-    description: '葉の上を歩くあおむしの線画。',
+    description: '葉の上を歩くあおむしのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['caterpillar', 'むし', 'ぬりえ'],
@@ -16442,7 +16442,7 @@ const _materials3: Material[] = [
   {
     id: 'caterpillar-normal-1',
     title: 'えだのあおむし',
-    description: '葉を食べるあおむしの線画。',
+    description: '葉を食べるあおむしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['caterpillar', 'むし', 'ぬりえ'],
@@ -16459,7 +16459,7 @@ const _materials3: Material[] = [
   {
     id: 'caterpillar-rich-1',
     title: 'あおむしをさわろう',
-    description: 'あおむしに触れようとする女の子の線画。',
+    description: 'あおむしに触れようとする女の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['caterpillar', 'むし', 'ぬりえ'],
@@ -16476,7 +16476,7 @@ const _materials3: Material[] = [
   {
     id: 'cricket-simple-1',
     title: 'かわいいコオロギ',
-    description: 'シンプルなコオロギの線画。',
+    description: 'シンプルなコオロギのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['cricket', 'むし', 'ぬりえ'],
@@ -16493,7 +16493,7 @@ const _materials3: Material[] = [
   {
     id: 'cricket-easy-1',
     title: 'いしのコオロギ',
-    description: '石の上のコオロギの線画。',
+    description: '石の上のコオロギのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['cricket', 'むし', 'ぬりえ'],
@@ -16510,7 +16510,7 @@ const _materials3: Material[] = [
   {
     id: 'cricket-normal-1',
     title: 'くさむらのコオロギ',
-    description: '秋の草むらのコオロギの線画。',
+    description: '秋の草むらのコオロギのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['cricket', 'むし', 'ぬりえ'],
@@ -16527,7 +16527,7 @@ const _materials3: Material[] = [
   {
     id: 'cricket-rich-1',
     title: 'コオロギをさがせ',
-    description: 'コオロギを探す男の子の線画。',
+    description: 'コオロギを探す男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['cricket', 'むし', 'ぬりえ'],
@@ -16544,7 +16544,7 @@ const _materials3: Material[] = [
   {
     id: 'pill-bug-simple-1',
     title: 'かわいいダンゴムシ',
-    description: 'シンプルなダンゴムシの線画。',
+    description: 'シンプルなダンゴムシのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['pill-bug', 'むし', 'ぬりえ'],
@@ -16561,7 +16561,7 @@ const _materials3: Material[] = [
   {
     id: 'pill-bug-easy-1',
     title: 'まるまるダンゴムシ',
-    description: '丸まったダンゴムシと歩くダンゴムシの線画。',
+    description: '丸まったダンゴムシと歩くダンゴムシのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['pill-bug', 'むし', 'ぬりえ'],
@@ -16578,7 +16578,7 @@ const _materials3: Material[] = [
   {
     id: 'pill-bug-normal-1',
     title: 'おちばのダンゴムシ',
-    description: '落ち葉の下のダンゴムシの線画。',
+    description: '落ち葉の下のダンゴムシのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['pill-bug', 'むし', 'ぬりえ'],
@@ -16595,7 +16595,7 @@ const _materials3: Material[] = [
   {
     id: 'pill-bug-rich-1',
     title: 'ダンゴムシをみつけた',
-    description: 'ダンゴムシを見つける男の子の線画。',
+    description: 'ダンゴムシを見つける男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['pill-bug', 'むし', 'ぬりえ'],
@@ -16612,7 +16612,7 @@ const _materials3: Material[] = [
   {
     id: 'spider-simple-1',
     title: 'かわいいクモ',
-    description: 'シンプルなクモの線画。',
+    description: 'シンプルなクモのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'insects',
     tags: ['spider', 'むし', 'ぬりえ'],
@@ -16629,7 +16629,7 @@ const _materials3: Material[] = [
   {
     id: 'spider-easy-1',
     title: 'クモのす',
-    description: 'クモの巣の中央にいるクモの線画。',
+    description: 'クモの巣の中央にいるクモのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'insects',
     tags: ['spider', 'むし', 'ぬりえ'],
@@ -16646,7 +16646,7 @@ const _materials3: Material[] = [
   {
     id: 'spider-normal-1',
     title: 'くさのクモのす',
-    description: '草の間のクモの巣の線画。',
+    description: '草の間のクモの巣のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'insects',
     tags: ['spider', 'むし', 'ぬりえ'],
@@ -16663,7 +16663,7 @@ const _materials3: Material[] = [
   {
     id: 'spider-rich-1',
     title: 'クモのすをはっけん',
-    description: 'クモの巣を眺める男の子の線画。',
+    description: 'クモの巣を眺める男の子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'insects',
     tags: ['spider', 'むし', 'ぬりえ'],
@@ -16680,7 +16680,7 @@ const _materials3: Material[] = [
   {
     id: 'tanabata-simple-1',
     title: 'たなばたのかざり',
-    description: 'シンプルな七夕の笹と短冊の線画。',
+    description: 'シンプルな七夕の笹と短冊のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['tanabata', 'summer', 'ぬりえ'],
@@ -16697,7 +16697,7 @@ const _materials3: Material[] = [
   {
     id: 'tanabata-easy-1',
     title: 'ささかざり',
-    description: '笹に飾りがついた七夕の線画。',
+    description: '笹に飾りがついた七夕のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['tanabata', 'summer', 'ぬりえ'],
@@ -16748,7 +16748,7 @@ const _materials3: Material[] = [
   {
     id: 'pool-simple-1',
     title: 'うきわ',
-    description: 'シンプルな浮き輪の線画。',
+    description: 'シンプルな浮き輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['pool', 'summer', 'ぬりえ'],
@@ -16765,7 +16765,7 @@ const _materials3: Material[] = [
   {
     id: 'pool-easy-1',
     title: 'プールにはいろう',
-    description: '浮き輪をつけてプールに入る子どもの線画。',
+    description: '浮き輪をつけてプールに入る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['pool', 'summer', 'ぬりえ'],
@@ -16782,7 +16782,7 @@ const _materials3: Material[] = [
   {
     id: 'pool-normal-1',
     title: 'みずてっぽうあそび',
-    description: '水鉄砲で遊ぶ子どもたちの線画。',
+    description: '水鉄砲で遊ぶ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['pool', 'summer', 'ぬりえ'],
@@ -16816,7 +16816,7 @@ const _materials3: Material[] = [
   {
     id: 'summer-festival-simple-1',
     title: 'ちょうちん',
-    description: 'シンプルなちょうちんの線画。',
+    description: 'シンプルなちょうちんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['summer-festival', 'summer', 'ぬりえ'],
@@ -16833,7 +16833,7 @@ const _materials3: Material[] = [
   {
     id: 'summer-festival-easy-1',
     title: 'ゆかたでおまつり',
-    description: '浴衣姿でちょうちんを持つ子どもの線画。',
+    description: '浴衣姿でちょうちんを持つ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['summer-festival', 'summer', 'ぬりえ'],
@@ -16850,7 +16850,7 @@ const _materials3: Material[] = [
   {
     id: 'summer-festival-normal-1',
     title: 'なつまつりのやたい',
-    description: '屋台が並ぶお祭りの線画。',
+    description: '屋台が並ぶお祭りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['summer-festival', 'summer', 'ぬりえ'],
@@ -16884,7 +16884,7 @@ const _materials3: Material[] = [
   {
     id: 'bon-dance-simple-1',
     title: 'やぐら',
-    description: 'シンプルなやぐらの線画。',
+    description: 'シンプルなやぐらのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['bon-dance', 'summer', 'ぬりえ'],
@@ -16901,7 +16901,7 @@ const _materials3: Material[] = [
   {
     id: 'bon-dance-easy-1',
     title: 'ゆかたでおどろう',
-    description: '浴衣で踊る子どもの線画。',
+    description: '浴衣で踊る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['bon-dance', 'summer', 'ぬりえ'],
@@ -16918,7 +16918,7 @@ const _materials3: Material[] = [
   {
     id: 'bon-dance-normal-1',
     title: 'ぼんおどり',
-    description: 'やぐらのまわりで盆踊りをする子どもたちの線画。',
+    description: 'やぐらのまわりで盆踊りをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['bon-dance', 'summer', 'ぬりえ'],
@@ -16935,7 +16935,7 @@ const _materials3: Material[] = [
   {
     id: 'bon-dance-rich-1',
     title: 'にぎやかなぼんおどり',
-    description: 'にぎやかな盆踊りの夜の線画。',
+    description: 'にぎやかな盆踊りの夜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['bon-dance', 'summer', 'ぬりえ'],
@@ -16952,7 +16952,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-festival-simple-1',
     title: 'はなび',
-    description: 'シンプルな打ち上げ花火の線画。',
+    description: 'シンプルな打ち上げ花火のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks-festival', 'summer', 'ぬりえ'],
@@ -16969,7 +16969,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-festival-easy-1',
     title: 'はなびがひらく',
-    description: '夜空に広がる花火の線画。',
+    description: '夜空に広がる花火のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks-festival', 'summer', 'ぬりえ'],
@@ -16986,7 +16986,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-festival-normal-1',
     title: 'かわのはなびたいかい',
-    description: '川沿いで花火を見る子どもたちの線画。',
+    description: '川沿いで花火を見る子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks-festival', 'summer', 'ぬりえ'],
@@ -17020,7 +17020,7 @@ const _materials3: Material[] = [
   {
     id: 'camping-simple-1',
     title: 'キャンプのテント',
-    description: 'シンプルなキャンプのテントの線画。',
+    description: 'シンプルなキャンプのテントのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['camping', 'summer', 'ぬりえ'],
@@ -17037,7 +17037,7 @@ const _materials3: Material[] = [
   {
     id: 'camping-easy-1',
     title: 'テントとたきび',
-    description: 'テントと焚き火の線画。',
+    description: 'テントと焚き火のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['camping', 'summer', 'ぬりえ'],
@@ -17054,7 +17054,7 @@ const _materials3: Material[] = [
   {
     id: 'camping-normal-1',
     title: 'もりのキャンプ',
-    description: '森のキャンプ場の線画。',
+    description: '森のキャンプ場のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['camping', 'summer', 'ぬりえ'],
@@ -17088,7 +17088,7 @@ const _materials3: Material[] = [
   {
     id: 'bbq-simple-1',
     title: 'バーベキューコンロ',
-    description: 'シンプルなバーベキューコンロの線画。',
+    description: 'シンプルなバーベキューコンロのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['bbq', 'summer', 'ぬりえ'],
@@ -17156,7 +17156,7 @@ const _materials3: Material[] = [
   {
     id: 'sea-bathing-simple-1',
     title: 'なつのうみ',
-    description: 'シンプルなビーチの線画。',
+    description: 'シンプルなビーチのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['sea-bathing', 'summer', 'ぬりえ'],
@@ -17173,7 +17173,7 @@ const _materials3: Material[] = [
   {
     id: 'sea-bathing-easy-1',
     title: 'なみとあそぼう',
-    description: '波打ち際で遊ぶ子どもの線画。',
+    description: '波打ち際で遊ぶ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['sea-bathing', 'summer', 'ぬりえ'],
@@ -17190,7 +17190,7 @@ const _materials3: Material[] = [
   {
     id: 'sea-bathing-normal-1',
     title: 'うみであそぼう',
-    description: '砂浜と海で遊ぶ子どもたちの線画。',
+    description: '砂浜と海で遊ぶ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['sea-bathing', 'summer', 'ぬりえ'],
@@ -17224,7 +17224,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-simple-1',
     title: 'かわいいセミ',
-    description: 'シンプルなセミの線画。',
+    description: 'シンプルなセミのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['cicada', 'summer', 'ぬりえ'],
@@ -17241,7 +17241,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-easy-1',
     title: 'きのきにとまるセミ',
-    description: '木の幹にとまるセミの線画。',
+    description: '木の幹にとまるセミのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['cicada', 'summer', 'ぬりえ'],
@@ -17258,7 +17258,7 @@ const _materials3: Material[] = [
   {
     id: 'cicada-normal-1',
     title: 'なつのセミ',
-    description: '木にとまる複数のセミの線画。',
+    description: '木にとまる複数のセミのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['cicada', 'summer', 'ぬりえ'],
@@ -17292,7 +17292,7 @@ const _materials3: Material[] = [
   {
     id: 'goldfish-simple-1',
     title: 'かわいいきんぎょ',
-    description: 'シンプルな金魚の線画。',
+    description: 'シンプルな金魚のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['goldfish', 'summer', 'ぬりえ'],
@@ -17309,7 +17309,7 @@ const _materials3: Material[] = [
   {
     id: 'goldfish-easy-1',
     title: 'きんぎょばち',
-    description: '金魚鉢で泳ぐ金魚の線画。',
+    description: '金魚鉢で泳ぐ金魚のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['goldfish', 'summer', 'ぬりえ'],
@@ -17326,7 +17326,7 @@ const _materials3: Material[] = [
   {
     id: 'goldfish-normal-1',
     title: 'きんぎょすくい',
-    description: '金魚すくいの屋台の線画。',
+    description: '金魚すくいの屋台のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['goldfish', 'summer', 'ぬりえ'],
@@ -17360,7 +17360,7 @@ const _materials3: Material[] = [
   {
     id: 'watermelon-splitting-simple-1',
     title: 'スイカわりのぼう',
-    description: 'シンプルな棒とすいかの線画。',
+    description: 'シンプルな棒とすいかのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['watermelon-splitting', 'summer', 'ぬりえ'],
@@ -17377,7 +17377,7 @@ const _materials3: Material[] = [
   {
     id: 'watermelon-splitting-easy-1',
     title: 'スイカわりにちょうせん',
-    description: '目隠しして棒を持つ子どもの線画。',
+    description: '目隠しして棒を持つ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['watermelon-splitting', 'summer', 'ぬりえ'],
@@ -17394,7 +17394,7 @@ const _materials3: Material[] = [
   {
     id: 'watermelon-splitting-normal-1',
     title: 'がんばれ！スイカわり',
-    description: 'スイカ割りに挑戦する子どもと応援する子の線画。',
+    description: 'スイカ割りに挑戦する子どもと応援する子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['watermelon-splitting', 'summer', 'ぬりえ'],
@@ -17428,7 +17428,7 @@ const _materials3: Material[] = [
   {
     id: 'shaved-ice-simple-1',
     title: 'かわいいかきごおり',
-    description: 'シンプルなかき氷の線画。',
+    description: 'シンプルなかき氷のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['shaved-ice', 'summer', 'ぬりえ'],
@@ -17462,7 +17462,7 @@ const _materials3: Material[] = [
   {
     id: 'shaved-ice-normal-1',
     title: 'かきごおりやたい',
-    description: 'かき氷屋台の線画。',
+    description: 'かき氷屋台のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['shaved-ice', 'summer', 'ぬりえ'],
@@ -17496,7 +17496,7 @@ const _materials3: Material[] = [
   {
     id: 'ice-cream-simple-1',
     title: 'アイスクリーム',
-    description: 'シンプルなアイスクリームコーンの線画。',
+    description: 'シンプルなアイスクリームコーンのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['ice-cream', 'summer', 'ぬりえ'],
@@ -17513,7 +17513,7 @@ const _materials3: Material[] = [
   {
     id: 'ice-cream-easy-1',
     title: 'たかくつんだアイス',
-    description: '高く積んだアイスクリームの線画。',
+    description: '高く積んだアイスクリームのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['ice-cream', 'summer', 'ぬりえ'],
@@ -17530,7 +17530,7 @@ const _materials3: Material[] = [
   {
     id: 'ice-cream-normal-1',
     title: 'アイスクリームやさん',
-    description: 'アイスクリーム屋さんの線画。',
+    description: 'アイスクリーム屋さんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['ice-cream', 'summer', 'ぬりえ'],
@@ -17564,7 +17564,7 @@ const _materials3: Material[] = [
   {
     id: 'somen-simple-1',
     title: 'かわいいそうめん',
-    description: 'シンプルなそうめんの線画。',
+    description: 'シンプルなそうめんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['somen', 'summer', 'ぬりえ'],
@@ -17581,7 +17581,7 @@ const _materials3: Material[] = [
   {
     id: 'somen-easy-1',
     title: 'そうめんのじゅんび',
-    description: 'そうめんとめんつゆ・薬味の線画。',
+    description: 'そうめんとめんつゆ・薬味のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['somen', 'summer', 'ぬりえ'],
@@ -17598,7 +17598,7 @@ const _materials3: Material[] = [
   {
     id: 'somen-normal-1',
     title: 'ながしそうめん',
-    description: '流しそうめんのシーンの線画。',
+    description: '流しそうめんのシーンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['somen', 'summer', 'ぬりえ'],
@@ -17632,7 +17632,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-simple-1',
     title: 'てもちはなび',
-    description: 'シンプルな手持ち花火の線画。',
+    description: 'シンプルな手持ち花火のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks', 'summer', 'ぬりえ'],
@@ -17649,7 +17649,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-easy-1',
     title: 'はなびをもとう',
-    description: '手持ち花火を持つ子どもの線画。',
+    description: '手持ち花火を持つ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks', 'summer', 'ぬりえ'],
@@ -17666,7 +17666,7 @@ const _materials3: Material[] = [
   {
     id: 'fireworks-normal-1',
     title: 'なつのよるのはなび',
-    description: '手持ち花火をする子どもたちの夏の夜の線画。',
+    description: '手持ち花火をする子どもたちの夏の夜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['fireworks', 'summer', 'ぬりえ'],
@@ -17700,7 +17700,7 @@ const _materials3: Material[] = [
   {
     id: 'uchiwa-simple-1',
     title: 'かわいいうちわ',
-    description: 'シンプルなうちわの線画。',
+    description: 'シンプルなうちわのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['uchiwa', 'summer', 'ぬりえ'],
@@ -17734,7 +17734,7 @@ const _materials3: Material[] = [
   {
     id: 'uchiwa-normal-1',
     title: 'えんがわでひとやすみ',
-    description: '縁側でうちわをあおぐ子どもの線画。',
+    description: '縁側でうちわをあおぐ子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['uchiwa', 'summer', 'ぬりえ'],
@@ -17768,7 +17768,7 @@ const _materials3: Material[] = [
   {
     id: 'float-simple-1',
     title: 'うきわ',
-    description: 'シンプルな浮き輪の線画。',
+    description: 'シンプルな浮き輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['float', 'summer', 'ぬりえ'],
@@ -17836,7 +17836,7 @@ const _materials3: Material[] = [
   {
     id: 'summer-sky-simple-1',
     title: 'にゅうどうぐも',
-    description: 'シンプルな入道雲の線画。',
+    description: 'シンプルな入道雲のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['summer-sky', 'summer', 'ぬりえ'],
@@ -17870,7 +17870,7 @@ const _materials3: Material[] = [
   {
     id: 'summer-sky-normal-1',
     title: 'もくもくぐも',
-    description: 'もくもく入道雲の夏の空の線画。',
+    description: 'もくもく入道雲の夏の空のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['summer-sky', 'summer', 'ぬりえ'],
@@ -17904,7 +17904,7 @@ const _materials3: Material[] = [
   {
     id: 'mosquito-coil-simple-1',
     title: 'かとりせんこう',
-    description: 'シンプルな蚊取り線香の線画。',
+    description: 'シンプルな蚊取り線香のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['mosquito-coil', 'summer', 'ぬりえ'],
@@ -17921,7 +17921,7 @@ const _materials3: Material[] = [
   {
     id: 'mosquito-coil-easy-1',
     title: 'かとりせんこうのけむり',
-    description: '煙が上がる蚊取り線香の線画。',
+    description: '煙が上がる蚊取り線香のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['mosquito-coil', 'summer', 'ぬりえ'],
@@ -17972,7 +17972,7 @@ const _materials3: Material[] = [
   {
     id: 'wind-chime-simple-1',
     title: 'かわいいふうりん',
-    description: 'シンプルな風鈴の線画。',
+    description: 'シンプルな風鈴のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['wind-chime', 'summer', 'ぬりえ'],
@@ -17989,7 +17989,7 @@ const _materials3: Material[] = [
   {
     id: 'wind-chime-easy-1',
     title: 'のきばのふうりん',
-    description: '軒下に並ぶ風鈴の線画。',
+    description: '軒下に並ぶ風鈴のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['wind-chime', 'summer', 'ぬりえ'],
@@ -18006,7 +18006,7 @@ const _materials3: Material[] = [
   {
     id: 'wind-chime-normal-1',
     title: 'なつのふうりん',
-    description: '縁側の風鈴がある和の夏の線画。',
+    description: '縁側の風鈴がある和の夏のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['wind-chime', 'summer', 'ぬりえ'],
@@ -18040,7 +18040,7 @@ const _materials3: Material[] = [
   {
     id: 'yukata-simple-1',
     title: 'かわいいゆかた',
-    description: 'シンプルな浴衣の線画。',
+    description: 'シンプルな浴衣のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['yukata', 'summer', 'ぬりえ'],
@@ -18057,7 +18057,7 @@ const _materials3: Material[] = [
   {
     id: 'yukata-easy-1',
     title: 'ゆかたのこども',
-    description: '浴衣姿でうちわを持つ子どもの線画。',
+    description: '浴衣姿でうちわを持つ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['yukata', 'summer', 'ぬりえ'],
@@ -18108,7 +18108,7 @@ const _materials3: Material[] = [
   {
     id: 'straw-hat-simple-1',
     title: 'むぎわらぼうし',
-    description: 'シンプルな麦わら帽子の線画。',
+    description: 'シンプルな麦わら帽子のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'summer',
     tags: ['straw-hat', 'summer', 'ぬりえ'],
@@ -18176,7 +18176,7 @@ const _materials3: Material[] = [
   {
     id: 'soccer-simple-1',
     title: 'サッカーボール',
-    description: 'シンプルなサッカーボールの線画。',
+    description: 'シンプルなサッカーボールのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['soccer', 'スポーツ', 'ぬりえ'],
@@ -18193,7 +18193,7 @@ const _materials3: Material[] = [
   {
     id: 'soccer-easy-1',
     title: 'サッカーをしよう',
-    description: 'ボールを蹴る子どもの線画。',
+    description: 'ボールを蹴る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['soccer', 'スポーツ', 'ぬりえ'],
@@ -18210,7 +18210,7 @@ const _materials3: Material[] = [
   {
     id: 'soccer-normal-1',
     title: 'ゴールをねらえ',
-    description: 'ゴール前でシュートする子どもの線画。',
+    description: 'ゴール前でシュートする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['soccer', 'スポーツ', 'ぬりえ'],
@@ -18227,7 +18227,7 @@ const _materials3: Material[] = [
   {
     id: 'soccer-rich-1',
     title: 'みんなでサッカー',
-    description: 'みんなでサッカーをする子どもたちの線画。',
+    description: 'みんなでサッカーをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['soccer', 'スポーツ', 'ぬりえ'],
@@ -18244,7 +18244,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-red-fuji-rich-1',
     title: '凱風快晴・赤富士（北斎）',
-    description: '北斎「凱風快晴」の構図を再解釈した塗り絵線画。',
+    description: '北斎「凱風快晴」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18262,7 +18262,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-hiroshige-tokaido-rich-1',
     title: '東海道五十三次・蒲原（広重）',
-    description: '広重「蒲原夜之雪」の構図を再解釈した塗り絵線画。',
+    description: '広重「蒲原夜之雪」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18280,7 +18280,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-hiroshige-rain-rich-1',
     title: '大はしあたけの夕立（広重）',
-    description: '広重「大はしあたけの夕立」の構図を再解釈した塗り絵線画。',
+    description: '広重「大はしあたけの夕立」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18298,7 +18298,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-monet-waterlilies-rich-1',
     title: '睡蓮（モネ）',
-    description: 'モネ「睡蓮」の構図を再解釈した塗り絵線画。',
+    description: 'モネ「睡蓮」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18316,7 +18316,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-monet-impression-rich-1',
     title: '印象・日の出（モネ）',
-    description: 'モネ「印象・日の出」の構図を再解釈した塗り絵線画。',
+    description: 'モネ「印象・日の出」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18334,7 +18334,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-monet-poppy-rich-1',
     title: 'ポピー畑（モネ）',
-    description: 'モネ「ポピー畑」の構図を再解釈した塗り絵線画。',
+    description: 'モネ「ポピー畑」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -18352,7 +18352,7 @@ const _materials3: Material[] = [
   {
     id: 'baseball-simple-1',
     title: 'やきゅうボール',
-    description: 'シンプルな野球ボールの線画。',
+    description: 'シンプルな野球ボールのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['baseball', 'スポーツ', 'ぬりえ'],
@@ -18369,7 +18369,7 @@ const _materials3: Material[] = [
   {
     id: 'baseball-easy-1',
     title: 'バッターアップ',
-    description: 'バットを振る子どもの線画。',
+    description: 'バットを振る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['baseball', 'スポーツ', 'ぬりえ'],
@@ -18386,7 +18386,7 @@ const _materials3: Material[] = [
   {
     id: 'baseball-normal-1',
     title: 'ボールをキャッチ',
-    description: 'グローブでキャッチする子どもの線画。',
+    description: 'グローブでキャッチする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['baseball', 'スポーツ', 'ぬりえ'],
@@ -18403,7 +18403,7 @@ const _materials3: Material[] = [
   {
     id: 'baseball-rich-1',
     title: 'みんなで野球',
-    description: 'みんなで野球をする子どもたちの線画。',
+    description: 'みんなで野球をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['baseball', 'スポーツ', 'ぬりえ'],
@@ -18420,7 +18420,7 @@ const _materials3: Material[] = [
   {
     id: 'swimming-simple-1',
     title: 'うきわ',
-    description: 'シンプルな浮き輪の線画。',
+    description: 'シンプルな浮き輪のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['swimming', 'スポーツ', 'ぬりえ'],
@@ -18437,7 +18437,7 @@ const _materials3: Material[] = [
   {
     id: 'swimming-easy-1',
     title: 'プールでおよごう',
-    description: 'プールで泳ぐ子どもの線画。',
+    description: 'プールで泳ぐ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['swimming', 'スポーツ', 'ぬりえ'],
@@ -18454,7 +18454,7 @@ const _materials3: Material[] = [
   {
     id: 'swimming-normal-1',
     title: 'ビート板でおよぐ',
-    description: 'ビート板で泳ぐ子どもの線画。',
+    description: 'ビート板で泳ぐ子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['swimming', 'スポーツ', 'ぬりえ'],
@@ -18471,7 +18471,7 @@ const _materials3: Material[] = [
   {
     id: 'swimming-rich-1',
     title: 'みんなでプール',
-    description: 'みんなでプールを楽しむ子どもたちの線画。',
+    description: 'みんなでプールを楽しむ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['swimming', 'スポーツ', 'ぬりえ'],
@@ -18488,7 +18488,7 @@ const _materials3: Material[] = [
   {
     id: 'running-simple-1',
     title: 'うんどうぐつ',
-    description: 'シンプルな運動靴の線画。',
+    description: 'シンプルな運動靴のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['running', 'スポーツ', 'ぬりえ'],
@@ -18505,7 +18505,7 @@ const _materials3: Material[] = [
   {
     id: 'running-easy-1',
     title: 'かけっこしよう',
-    description: '元気よく走る子どもの線画。',
+    description: '元気よく走る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['running', 'スポーツ', 'ぬりえ'],
@@ -18522,7 +18522,7 @@ const _materials3: Material[] = [
   {
     id: 'running-normal-1',
     title: 'ゴールはもうすぐ',
-    description: 'ゴールテープを切る子どもの線画。',
+    description: 'ゴールテープを切る子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['running', 'スポーツ', 'ぬりえ'],
@@ -18539,7 +18539,7 @@ const _materials3: Material[] = [
   {
     id: 'running-rich-1',
     title: 'うんどうかいのかけっこ',
-    description: '運動会のかけっこをする子どもたちの線画。',
+    description: '運動会のかけっこをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['running', 'スポーツ', 'ぬりえ'],
@@ -18556,7 +18556,7 @@ const _materials3: Material[] = [
   {
     id: 'gymnastics-simple-1',
     title: 'たいそうマット',
-    description: 'シンプルな体操マットの線画。',
+    description: 'シンプルな体操マットのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['gymnastics', 'スポーツ', 'ぬりえ'],
@@ -18573,7 +18573,7 @@ const _materials3: Material[] = [
   {
     id: 'gymnastics-easy-1',
     title: 'ぜんてんしよう',
-    description: '前転をする子どもの線画。',
+    description: '前転をする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['gymnastics', 'スポーツ', 'ぬりえ'],
@@ -18590,7 +18590,7 @@ const _materials3: Material[] = [
   {
     id: 'gymnastics-normal-1',
     title: 'とびばこをとぼう',
-    description: '跳び箱を跳ぶ子どもの線画。',
+    description: '跳び箱を跳ぶ子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['gymnastics', 'スポーツ', 'ぬりえ'],
@@ -18607,7 +18607,7 @@ const _materials3: Material[] = [
   {
     id: 'gymnastics-rich-1',
     title: 'たいいくかんで体操',
-    description: '体育館で体操をする子どもたちの線画。',
+    description: '体育館で体操をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['gymnastics', 'スポーツ', 'ぬりえ'],
@@ -18624,7 +18624,7 @@ const _materials3: Material[] = [
   {
     id: 'moon-viewing-simple-1',
     title: 'まんまるおつきさま',
-    description: 'シンプルなお月様とうさぎの線画。',
+    description: 'シンプルなお月様とうさぎのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['moon-viewing', 'autumn', 'ぬりえ'],
@@ -18658,7 +18658,7 @@ const _materials3: Material[] = [
   {
     id: 'moon-viewing-normal-1',
     title: 'おだんごとおつきさま',
-    description: '縁側でお月見だんごを食べるうさぎの線画。',
+    description: '縁側でお月見だんごを食べるうさぎのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['moon-viewing', 'autumn', 'ぬりえ'],
@@ -18692,7 +18692,7 @@ const _materials3: Material[] = [
   {
     id: 'halloween-simple-1',
     title: 'かぼちゃランタン',
-    description: 'シンプルなジャック・オー・ランタンの線画。',
+    description: 'シンプルなジャック・オー・ランタンのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['halloween', 'autumn', 'ぬりえ'],
@@ -18726,7 +18726,7 @@ const _materials3: Material[] = [
   {
     id: 'halloween-normal-1',
     title: 'ハロウィンのなかまたち',
-    description: '魔女・おばけ・かぼちゃが並ぶハロウィンの線画。',
+    description: '魔女・おばけ・かぼちゃが並ぶハロウィンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['halloween', 'autumn', 'ぬりえ'],
@@ -18743,7 +18743,7 @@ const _materials3: Material[] = [
   {
     id: 'halloween-rich-1',
     title: 'トリックオアトリート',
-    description: '仮装した子どもたちのトリックオアトリートの線画。',
+    description: '仮装した子どもたちのトリックオアトリートのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['halloween', 'autumn', 'ぬりえ'],
@@ -18760,7 +18760,7 @@ const _materials3: Material[] = [
   {
     id: 'sports-day-simple-1',
     title: 'かけっこ',
-    description: 'かけっこをする子どもの線画。',
+    description: 'かけっこをする子どものぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['sports-day', 'autumn', 'ぬりえ'],
@@ -18777,7 +18777,7 @@ const _materials3: Material[] = [
   {
     id: 'sports-day-easy-1',
     title: 'ゴールテープをきろう',
-    description: 'ゴールテープを切る子どもの線画。',
+    description: 'ゴールテープを切る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['sports-day', 'autumn', 'ぬりえ'],
@@ -18794,7 +18794,7 @@ const _materials3: Material[] = [
   {
     id: 'sports-day-normal-1',
     title: 'たまいれ',
-    description: '玉入れをする子どもたちの線画。',
+    description: '玉入れをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['sports-day', 'autumn', 'ぬりえ'],
@@ -18811,7 +18811,7 @@ const _materials3: Material[] = [
   {
     id: 'sports-day-rich-1',
     title: 'にぎやかうんどうかい',
-    description: 'にぎやかな運動会の線画。',
+    description: 'にぎやかな運動会のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['sports-day', 'autumn', 'ぬりえ'],
@@ -18828,7 +18828,7 @@ const _materials3: Material[] = [
   {
     id: 'potato-digging-simple-1',
     title: 'おおきなさつまいも',
-    description: 'シンプルなさつまいもの線画。',
+    description: 'シンプルなさつまいものぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['potato-digging', 'autumn', 'ぬりえ'],
@@ -18845,7 +18845,7 @@ const _materials3: Material[] = [
   {
     id: 'potato-digging-easy-1',
     title: 'いもほりだ',
-    description: 'さつまいもを引っ張る子どもの線画。',
+    description: 'さつまいもを引っ張る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['potato-digging', 'autumn', 'ぬりえ'],
@@ -18862,7 +18862,7 @@ const _materials3: Material[] = [
   {
     id: 'potato-digging-normal-1',
     title: 'はたけでいもほり',
-    description: '畑でいもほりをする子どもたちの線画。',
+    description: '畑でいもほりをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['potato-digging', 'autumn', 'ぬりえ'],
@@ -18879,7 +18879,7 @@ const _materials3: Material[] = [
   {
     id: 'potato-digging-rich-1',
     title: 'にぎやかいもほり',
-    description: 'にぎやかないもほりの収穫シーンの線画。',
+    description: 'にぎやかないもほりの収穫シーンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['potato-digging', 'autumn', 'ぬりえ'],
@@ -18896,7 +18896,7 @@ const _materials3: Material[] = [
   {
     id: 'shichi-go-san-simple-1',
     title: 'きもののおんなのこ',
-    description: '着物を着た女の子の線画。',
+    description: '着物を着た女の子のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['shichi-go-san', 'autumn', 'ぬりえ'],
@@ -18913,7 +18913,7 @@ const _materials3: Material[] = [
   {
     id: 'shichi-go-san-easy-1',
     title: 'ちとせあめ',
-    description: '着物の女の子と千歳飴の線画。',
+    description: '着物の女の子と千歳飴のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['shichi-go-san', 'autumn', 'ぬりえ'],
@@ -18930,7 +18930,7 @@ const _materials3: Material[] = [
   {
     id: 'shichi-go-san-normal-1',
     title: 'じんじゃのさんぽ',
-    description: '神社の参道を歩く着物の子どもたちの線画。',
+    description: '神社の参道を歩く着物の子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['shichi-go-san', 'autumn', 'ぬりえ'],
@@ -18964,7 +18964,7 @@ const _materials3: Material[] = [
   {
     id: 'saury-simple-1',
     title: 'かわいいさんま',
-    description: 'シンプルなさんまの線画。',
+    description: 'シンプルなさんまのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['saury', 'autumn', 'ぬりえ'],
@@ -18998,7 +18998,7 @@ const _materials3: Material[] = [
   {
     id: 'saury-normal-1',
     title: 'やきさんま',
-    description: '網で焼かれるさんまの線画。',
+    description: '網で焼かれるさんまのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['saury', 'autumn', 'ぬりえ'],
@@ -19015,7 +19015,7 @@ const _materials3: Material[] = [
   {
     id: 'saury-rich-1',
     title: 'あきのしょくたく',
-    description: '秋の食卓に並ぶさんま料理の線画。',
+    description: '秋の食卓に並ぶさんま料理のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['saury', 'autumn', 'ぬりえ'],
@@ -19032,7 +19032,7 @@ const _materials3: Material[] = [
   {
     id: 'chestnut-simple-1',
     title: 'かわいいくり',
-    description: 'シンプルな栗の線画。',
+    description: 'シンプルな栗のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['chestnut', 'autumn', 'ぬりえ'],
@@ -19066,7 +19066,7 @@ const _materials3: Material[] = [
   {
     id: 'chestnut-normal-1',
     title: 'きのしたのくり',
-    description: '木の下に栗が落ちている秋の線画。',
+    description: '木の下に栗が落ちている秋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['chestnut', 'autumn', 'ぬりえ'],
@@ -19100,7 +19100,7 @@ const _materials3: Material[] = [
   {
     id: 'autumn-leaves-simple-1',
     title: 'もみじのはっぱ',
-    description: 'シンプルなもみじの葉の線画。',
+    description: 'シンプルなもみじの葉のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['autumn-leaves', 'autumn', 'ぬりえ'],
@@ -19134,7 +19134,7 @@ const _materials3: Material[] = [
   {
     id: 'autumn-leaves-normal-1',
     title: 'もみじのき',
-    description: '紅葉したもみじの木の線画。',
+    description: '紅葉したもみじの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['autumn-leaves', 'autumn', 'ぬりえ'],
@@ -19168,7 +19168,7 @@ const _materials3: Material[] = [
   {
     id: 'acorn-simple-1',
     title: 'かわいいどんぐり',
-    description: 'シンプルなどんぐりの線画。',
+    description: 'シンプルなどんぐりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['acorn', 'autumn', 'ぬりえ'],
@@ -19202,7 +19202,7 @@ const _materials3: Material[] = [
   {
     id: 'acorn-normal-1',
     title: 'おちばのどんぐり',
-    description: '落ち葉の上に散らばるどんぐりの線画。',
+    description: '落ち葉の上に散らばるどんぐりのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['acorn', 'autumn', 'ぬりえ'],
@@ -19236,7 +19236,7 @@ const _materials3: Material[] = [
   {
     id: 'pine-cone-simple-1',
     title: 'まつぼっくり',
-    description: 'シンプルなまつぼっくりの線画。',
+    description: 'シンプルなまつぼっくりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['pine-cone', 'autumn', 'ぬりえ'],
@@ -19287,7 +19287,7 @@ const _materials3: Material[] = [
   {
     id: 'pine-cone-rich-1',
     title: 'あきのこうえん',
-    description: '秋の公園で自然物を集める子どもたちの線画。',
+    description: '秋の公園で自然物を集める子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'seasonal-events', season: 'autumn',
     tags: ['pine-cone', 'autumn', 'ぬりえ'],
@@ -19304,7 +19304,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-vangogh-starrynight-rich-1',
     title: '星月夜（ゴッホ）',
-    description: 'ゴッホ「星月夜」の構図を再解釈した塗り絵線画。',
+    description: 'ゴッホ「星月夜」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19322,7 +19322,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-vangogh-sunflowers-rich-1',
     title: 'ひまわり（ゴッホ）',
-    description: 'ゴッホ「ひまわり」の構図を再解釈した塗り絵線画。',
+    description: 'ゴッホ「ひまわり」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19340,7 +19340,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-vangogh-cafe-rich-1',
     title: '夜のカフェテラス（ゴッホ）',
-    description: 'ゴッホ「夜のカフェテラス」の構図を再解釈した塗り絵線画。',
+    description: 'ゴッホ「夜のカフェテラス」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19358,7 +19358,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-vangogh-irises-rich-1',
     title: 'アイリス（ゴッホ）',
-    description: 'ゴッホ「アイリス」の構図を再解釈した塗り絵線画。',
+    description: 'ゴッホ「アイリス」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19376,7 +19376,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-renoir-moulin-rich-1',
     title: 'ムーラン・ド・ラ・ギャレット（ルノワール）',
-    description: 'ルノワール「ムーラン・ド・ラ・ギャレット」の構図を再解釈した塗り絵線画。',
+    description: 'ルノワール「ムーラン・ド・ラ・ギャレット」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19394,7 +19394,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-degas-dance-rich-1',
     title: '舞台の踊り子（ドガ）',
-    description: 'ドガ「舞台の踊り子」の構図を再解釈した塗り絵線画。',
+    description: 'ドガ「舞台の踊り子」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19412,7 +19412,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-seurat-sunday-rich-1',
     title: 'グランド・ジャット島の日曜日（スーラ）',
-    description: 'スーラ「グランド・ジャット島の日曜日の午後」の構図を再解釈した塗り絵線画。',
+    description: 'スーラ「グランド・ジャット島の日曜日の午後」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19430,7 +19430,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-cezanne-mountain-rich-1',
     title: 'サント＝ヴィクトワール山（セザンヌ）',
-    description: 'セザンヌ「サント＝ヴィクトワール山」の構図を再解釈した塗り絵線画。',
+    description: 'セザンヌ「サント＝ヴィクトワール山」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19448,7 +19448,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-klimt-kiss-rich-1',
     title: '接吻（クリムト）',
-    description: 'クリムト「接吻」の構図を再解釈した塗り絵線画。',
+    description: 'クリムト「接吻」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19466,7 +19466,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-klimt-tree-rich-1',
     title: '生命の樹（クリムト）',
-    description: 'クリムト「生命の樹」の構図を再解釈した塗り絵線画。',
+    description: 'クリムト「生命の樹」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -19484,7 +19484,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-mucha-seasons-rich-1',
     title: '四季・春（ミュシャ）',
-    description: 'ミュシャ「四季・春」の構図を再解釈した塗り絵線画。',
+    description: 'ミュシャ「四季・春」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -20150,7 +20150,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-colosseum-simple-1',
     title: 'コロッセオ（やさしい）',
-    description: 'コロッセオの外観の線画。',
+    description: 'コロッセオの外観のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -20222,7 +20222,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-neuschwanstein-simple-1',
     title: 'ノイシュバンシュタイン城（やさしい）',
-    description: '城の外観の線画。',
+    description: '城の外観のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -20240,7 +20240,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-neuschwanstein-easy-1',
     title: 'ノイシュバンシュタイン城（ふつう）',
-    description: '岩山と城の線画。',
+    description: '岩山と城のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'architecture',
@@ -20294,7 +20294,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-eiffel-simple-1',
     title: 'エッフェル塔（やさしい）',
-    description: 'エッフェル塔の線画。',
+    description: 'エッフェル塔のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -20492,7 +20492,7 @@ const _materials3: Material[] = [
   {
     id: 'pampas-grass-simple-1',
     title: 'かわいいすすき',
-    description: 'シンプルなすすきの線画。',
+    description: 'シンプルなすすきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'autumn',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
@@ -20526,7 +20526,7 @@ const _materials3: Material[] = [
   {
     id: 'pampas-grass-normal-1',
     title: 'のはらのすすき',
-    description: '秋の野原に群生するすすきの線画。',
+    description: '秋の野原に群生するすすきのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'autumn',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
@@ -20543,7 +20543,7 @@ const _materials3: Material[] = [
   {
     id: 'pampas-grass-rich-1',
     title: 'すすきとおつきみ',
-    description: 'すすき野原でお月見をする子どもたちの線画。',
+    description: 'すすき野原でお月見をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'autumn',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
@@ -20560,7 +20560,7 @@ const _materials3: Material[] = [
   {
     id: 'fallen-leaves-simple-1',
     title: 'いちょうのはっぱ',
-    description: 'シンプルないちょうの葉の線画。',
+    description: 'シンプルないちょうの葉のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'autumn',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
@@ -20594,7 +20594,7 @@ const _materials3: Material[] = [
   {
     id: 'fallen-leaves-normal-1',
     title: 'おちばがいっぱい',
-    description: '落ち葉が散らばる秋の公園の線画。',
+    description: '落ち葉が散らばる秋の公園のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'autumn',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
@@ -20628,7 +20628,7 @@ const _materials3: Material[] = [
   {
     id: 'baked-sweet-potato-simple-1',
     title: 'やきいも',
-    description: 'シンプルな焼き芋の線画。',
+    description: 'シンプルな焼き芋のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'autumn',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
@@ -20662,7 +20662,7 @@ const _materials3: Material[] = [
   {
     id: 'baked-sweet-potato-normal-1',
     title: 'たきびのやきいも',
-    description: '焚き火で焼かれる芋の線画。',
+    description: '焚き火で焼かれる芋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'autumn',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
@@ -21883,7 +21883,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-sydney-opera-simple-1',
     title: 'シドニー・オペラハウス（やさしい）',
-    description: 'オペラハウスの線画。',
+    description: 'オペラハウスのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -21955,7 +21955,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-himeji-simple-1',
     title: '姫路城（やさしい）',
-    description: '姫路城の天守の線画。',
+    description: '姫路城の天守のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23107,7 +23107,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-shirakawa-simple-1',
     title: '合掌造り（やさしい）',
-    description: '合掌造りの線画。',
+    description: '合掌造りのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23179,7 +23179,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-kinkakuji-simple-1',
     title: '金閣寺（やさしい）',
-    description: '金閣寺の線画。',
+    description: '金閣寺のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23251,7 +23251,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-asakusa-simple-1',
     title: '浅草・雷門（やさしい）',
-    description: '雷門の線画。',
+    description: '雷門のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23323,7 +23323,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-dubrovnik-simple-1',
     title: 'ドブロヴニク（やさしい）',
-    description: '城壁と旧市街の線画。',
+    description: '城壁と旧市街のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23395,7 +23395,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-santorini-simple-1',
     title: 'サントリーニ島（やさしい）',
-    description: '白い家と青いドームの線画。',
+    description: '白い家と青いドームのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23467,7 +23467,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-machu-picchu-simple-1',
     title: 'マチュピチュ（やさしい）',
-    description: '石造りの遺跡の線画。',
+    description: '石造りの遺跡のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23539,7 +23539,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-angkor-simple-1',
     title: 'アンコール・ワット（やさしい）',
-    description: '中央祠堂の線画。',
+    description: '中央祠堂のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23755,7 +23755,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-prague-oldtown-simple-1',
     title: 'プラハの天文時計（やさしい）',
-    description: '天文時計の線画。',
+    description: '天文時計のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23827,7 +23827,7 @@ const _materials3: Material[] = [
   {
     id: 'arch-big-ben-simple-1',
     title: 'ビッグ・ベン（やさしい）',
-    description: 'ビッグ・ベンの線画。',
+    description: 'ビッグ・ベンのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'architecture',
@@ -23971,7 +23971,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-d51-simple-1',
     title: 'D51蒸気機関車（やさしい）',
-    description: 'D51の横姿の線画。',
+    description: 'D51の横姿のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -23989,7 +23989,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-d51-easy-1',
     title: 'D51蒸気機関車（ふつう）',
-    description: '煙を上げるD51の線画。',
+    description: '煙を上げるD51のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -24007,7 +24007,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-d51-normal-1',
     title: 'D51蒸気機関車（こまかい）',
-    description: '山間を走るD51の線画。',
+    description: '山間を走るD51のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -24043,7 +24043,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-c62-simple-1',
     title: 'C62蒸気機関車（やさしい）',
-    description: 'C62の横姿の線画。',
+    description: 'C62の横姿のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -24061,7 +24061,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-c62-easy-1',
     title: 'C62蒸気機関車（ふつう）',
-    description: '雪の中を走るC62の線画。',
+    description: '雪の中を走るC62のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -24079,7 +24079,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-steam-c62-normal-1',
     title: 'C62蒸気機関車（こまかい）',
-    description: '北海道の雪原を走るC62の線画。',
+    description: '北海道の雪原を走るC62のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -24115,7 +24115,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-sakura-tunnel-simple-1',
     title: '桜と電車（やさしい）',
-    description: '桜の中を走る電車の線画。',
+    description: '桜の中を走る電車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -24187,7 +24187,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-autumn-valley-simple-1',
     title: '紅葉の山と列車（やさしい）',
-    description: '紅葉バックの列車の線画。',
+    description: '紅葉バックの列車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -24223,7 +24223,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-autumn-valley-normal-1',
     title: '紅葉の渓谷と列車（こまかい）',
-    description: '渓谷・川・橋・列車の線画。',
+    description: '渓谷・川・橋・列車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -24259,7 +24259,7 @@ const _materials3: Material[] = [
   {
     id: 'railway-hokkaido-winter-simple-1',
     title: '雪原の列車（やさしい）',
-    description: '雪原を走る列車の線画。',
+    description: '雪原を走る列車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -24349,7 +24349,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-hinamatsuri-easy-1',
     title: 'お雛様と三人官女（ふつう）',
-    description: 'お雛様と三人官女の線画。',
+    description: 'お雛様と三人官女のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24475,7 +24475,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-tanabata-simple-1',
     title: '笹飾りと短冊（やさしい）',
-    description: '笹飾りと短冊の線画。',
+    description: '笹飾りと短冊のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24547,7 +24547,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-obon-simple-1',
     title: '灯籠流し（やさしい）',
-    description: '川面の灯籠の線画。',
+    description: '川面の灯籠のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24619,7 +24619,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-tsukimi-simple-1',
     title: '月とすすき（やさしい）',
-    description: '満月とすすきの線画。',
+    description: '満月とすすきのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24691,7 +24691,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-koyo-simple-1',
     title: '紅葉と鳥居（やさしい）',
-    description: '紅葉と鳥居の線画。',
+    description: '紅葉と鳥居のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24763,7 +24763,7 @@ const _materials3: Material[] = [
   {
     id: 'seasonal-adult-halloween-simple-1',
     title: 'ハロウィンのかぼちゃ（やさしい）',
-    description: 'かぼちゃランタンと月の線画。',
+    description: 'かぼちゃランタンと月のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -24817,7 +24817,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-great-wave-rich-1',
     title: '神奈川沖浪裏（北斎）',
-    description: '北斎「神奈川沖浪裏」の構図を再解釈した塗り絵線画。',
+    description: '北斎「神奈川沖浪裏」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -24835,7 +24835,7 @@ const _materials3: Material[] = [
   {
     id: 'masterpiece-mucha-job-rich-1',
     title: 'JOBポスター（ミュシャ）',
-    description: 'ミュシャ「JOB」の構図を再解釈した塗り絵線画。',
+    description: 'ミュシャ「JOB」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -24853,7 +24853,7 @@ const _materials3: Material[] = [
   {
     id: 'dodgeball-simple-1',
     title: 'ドッジボール',
-    description: 'シンプルなドッジボールの線画。',
+    description: 'シンプルなドッジボールのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['dodgeball', 'スポーツ', 'ぬりえ'],
@@ -24870,7 +24870,7 @@ const _materials3: Material[] = [
   {
     id: 'dodgeball-easy-1',
     title: 'ボールをなげよう',
-    description: 'ボールを投げる子どもの線画。',
+    description: 'ボールを投げる子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['dodgeball', 'スポーツ', 'ぬりえ'],
@@ -24887,7 +24887,7 @@ const _materials3: Material[] = [
   {
     id: 'dodgeball-normal-1',
     title: 'よけろ！ドッジボール',
-    description: 'ドッジボールで投げる・よける子どもたちの線画。',
+    description: 'ドッジボールで投げる・よける子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['dodgeball', 'スポーツ', 'ぬりえ'],
@@ -24904,7 +24904,7 @@ const _materials3: Material[] = [
   {
     id: 'dodgeball-rich-1',
     title: 'みんなでドッジボール',
-    description: 'みんなでドッジボールをする子どもたちの線画。',
+    description: 'みんなでドッジボールをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['dodgeball', 'スポーツ', 'ぬりえ'],
@@ -24921,7 +24921,7 @@ const _materials3: Material[] = [
   {
     id: 'basketball-simple-1',
     title: 'バスケットボール',
-    description: 'シンプルなバスケットボールの線画。',
+    description: 'シンプルなバスケットボールのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['basketball', 'スポーツ', 'ぬりえ'],
@@ -24938,7 +24938,7 @@ const _materials3: Material[] = [
   {
     id: 'basketball-easy-1',
     title: 'ドリブルしよう',
-    description: 'ドリブルをする子どもの線画。',
+    description: 'ドリブルをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['basketball', 'スポーツ', 'ぬりえ'],
@@ -24955,7 +24955,7 @@ const _materials3: Material[] = [
   {
     id: 'basketball-normal-1',
     title: 'シュートをねらえ',
-    description: 'シュートをする子どもの線画。',
+    description: 'シュートをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['basketball', 'スポーツ', 'ぬりえ'],
@@ -24972,7 +24972,7 @@ const _materials3: Material[] = [
   {
     id: 'basketball-rich-1',
     title: 'みんなでバスケ',
-    description: 'みんなでバスケをする子どもたちの線画。',
+    description: 'みんなでバスケをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['basketball', 'スポーツ', 'ぬりえ'],
@@ -24989,7 +24989,7 @@ const _materials3: Material[] = [
   {
     id: 'tennis-simple-1',
     title: 'テニスラケット',
-    description: 'シンプルなテニスラケットの線画。',
+    description: 'シンプルなテニスラケットのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['tennis', 'スポーツ', 'ぬりえ'],
@@ -25006,7 +25006,7 @@ const _materials3: Material[] = [
   {
     id: 'tennis-easy-1',
     title: 'テニスをしよう',
-    description: 'ラケットを振る子どもの線画。',
+    description: 'ラケットを振る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['tennis', 'スポーツ', 'ぬりえ'],
@@ -25023,7 +25023,7 @@ const _materials3: Material[] = [
   {
     id: 'tennis-normal-1',
     title: 'コートでテニス',
-    description: 'コートでテニスをする子どもの線画。',
+    description: 'コートでテニスをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['tennis', 'スポーツ', 'ぬりえ'],
@@ -25040,7 +25040,7 @@ const _materials3: Material[] = [
   {
     id: 'tennis-rich-1',
     title: 'テニスたいけつ',
-    description: 'ネット越しにテニスをする子どもたちの線画。',
+    description: 'ネット越しにテニスをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['tennis', 'スポーツ', 'ぬりえ'],
@@ -25057,7 +25057,7 @@ const _materials3: Material[] = [
   {
     id: 'sumo-simple-1',
     title: 'どすこい！',
-    description: 'シンプルなどすこいポーズの線画。',
+    description: 'シンプルなどすこいポーズのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['sumo', 'スポーツ', 'ぬりえ'],
@@ -25074,7 +25074,7 @@ const _materials3: Material[] = [
   {
     id: 'sumo-easy-1',
     title: 'すもうポーズ',
-    description: 'まわし姿でどすこいする子どもの線画。',
+    description: 'まわし姿でどすこいする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['sumo', 'スポーツ', 'ぬりえ'],
@@ -25091,7 +25091,7 @@ const _materials3: Material[] = [
   {
     id: 'sumo-normal-1',
     title: 'どひょうのうえで',
-    description: '土俵でにらみ合う子どもたちの線画。',
+    description: '土俵でにらみ合う子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['sumo', 'スポーツ', 'ぬりえ'],
@@ -25108,7 +25108,7 @@ const _materials3: Material[] = [
   {
     id: 'sumo-rich-1',
     title: 'うんどうかいのすもう',
-    description: '運動会のすもうをする子どもたちの線画。',
+    description: '運動会のすもうをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['sumo', 'スポーツ', 'ぬりえ'],
@@ -25125,7 +25125,7 @@ const _materials3: Material[] = [
   {
     id: 'cycling-simple-1',
     title: 'じてんしゃ',
-    description: 'シンプルな自転車の線画。',
+    description: 'シンプルな自転車のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['cycling', 'スポーツ', 'ぬりえ'],
@@ -25142,7 +25142,7 @@ const _materials3: Material[] = [
   {
     id: 'cycling-easy-1',
     title: 'じてんしゃにのろう',
-    description: '自転車に乗る子どもの線画。',
+    description: '自転車に乗る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['cycling', 'スポーツ', 'ぬりえ'],
@@ -25159,7 +25159,7 @@ const _materials3: Material[] = [
   {
     id: 'cycling-normal-1',
     title: 'こうえんをサイクリング',
-    description: '公園をサイクリングする子どもの線画。',
+    description: '公園をサイクリングする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['cycling', 'スポーツ', 'ぬりえ'],
@@ -25193,7 +25193,7 @@ const _materials3: Material[] = [
   {
     id: 'skiing-simple-1',
     title: 'スキーのどうぐ',
-    description: 'シンプルなスキー板とストックの線画。',
+    description: 'シンプルなスキー板とストックのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['skiing', 'スポーツ', 'ぬりえ'],
@@ -25210,7 +25210,7 @@ const _materials3: Material[] = [
   {
     id: 'skiing-easy-1',
     title: 'スキーをしよう',
-    description: 'スキーをする子どもの線画。',
+    description: 'スキーをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['skiing', 'スポーツ', 'ぬりえ'],
@@ -25227,7 +25227,7 @@ const _materials3: Material[] = [
   {
     id: 'skiing-normal-1',
     title: 'ゲレンデをすべろう',
-    description: '雪山をスキーで滑る子どもの線画。',
+    description: '雪山をスキーで滑る子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['skiing', 'スポーツ', 'ぬりえ'],
@@ -25244,7 +25244,7 @@ const _materials3: Material[] = [
   {
     id: 'skiing-rich-1',
     title: 'みんなでスキー',
-    description: 'みんなでスキーを楽しむ子どもたちの線画。',
+    description: 'みんなでスキーを楽しむ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['skiing', 'スポーツ', 'ぬりえ'],
@@ -25261,7 +25261,7 @@ const _materials3: Material[] = [
   {
     id: 'skating-simple-1',
     title: 'スケートぐつ',
-    description: 'シンプルなスケート靴の線画。',
+    description: 'シンプルなスケート靴のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['skating', 'スポーツ', 'ぬりえ'],
@@ -25278,7 +25278,7 @@ const _materials3: Material[] = [
   {
     id: 'skating-easy-1',
     title: 'スケートをしよう',
-    description: 'スケートをする子どもの線画。',
+    description: 'スケートをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['skating', 'スポーツ', 'ぬりえ'],
@@ -25295,7 +25295,7 @@ const _materials3: Material[] = [
   {
     id: 'skating-normal-1',
     title: 'リンクをすべろう',
-    description: 'リンクでスケートをする子どもの線画。',
+    description: 'リンクでスケートをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['skating', 'スポーツ', 'ぬりえ'],
@@ -25312,7 +25312,7 @@ const _materials3: Material[] = [
   {
     id: 'skating-rich-1',
     title: 'みんなでスケート',
-    description: 'みんなでスケートを楽しむ子どもたちの線画。',
+    description: 'みんなでスケートを楽しむ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['skating', 'スポーツ', 'ぬりえ'],
@@ -25329,7 +25329,7 @@ const _materials3: Material[] = [
   {
     id: 'volleyball-simple-1',
     title: 'バレーボール',
-    description: 'シンプルなバレーボールの線画。',
+    description: 'シンプルなバレーボールのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['volleyball', 'スポーツ', 'ぬりえ'],
@@ -25346,7 +25346,7 @@ const _materials3: Material[] = [
   {
     id: 'volleyball-easy-1',
     title: 'アタックしよう',
-    description: 'アタックをする子どもの線画。',
+    description: 'アタックをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['volleyball', 'スポーツ', 'ぬりえ'],
@@ -25363,7 +25363,7 @@ const _materials3: Material[] = [
   {
     id: 'volleyball-normal-1',
     title: 'ネットをこえて',
-    description: 'ネット越しにボールをつなぐ子どもたちの線画。',
+    description: 'ネット越しにボールをつなぐ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['volleyball', 'スポーツ', 'ぬりえ'],
@@ -25380,7 +25380,7 @@ const _materials3: Material[] = [
   {
     id: 'volleyball-rich-1',
     title: 'みんなでバレーボール',
-    description: 'みんなでバレーボールをする子どもたちの線画。',
+    description: 'みんなでバレーボールをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['volleyball', 'スポーツ', 'ぬりえ'],
@@ -25397,7 +25397,7 @@ const _materials3: Material[] = [
   {
     id: 'karate-simple-1',
     title: 'からての道着',
-    description: 'シンプルな空手の道着の線画。',
+    description: 'シンプルな空手の道着のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'sports',
     tags: ['karate', 'スポーツ', 'ぬりえ'],
@@ -25414,7 +25414,7 @@ const _materials3: Material[] = [
   {
     id: 'karate-easy-1',
     title: 'からてのかまえ',
-    description: '空手の構えをする子どもの線画。',
+    description: '空手の構えをする子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'sports',
     tags: ['karate', 'スポーツ', 'ぬりえ'],
@@ -25431,7 +25431,7 @@ const _materials3: Material[] = [
   {
     id: 'karate-normal-1',
     title: 'どうじょうでからて',
-    description: '道場で型をする子どもの線画。',
+    description: '道場で型をする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'sports',
     tags: ['karate', 'スポーツ', 'ぬりえ'],
@@ -25448,7 +25448,7 @@ const _materials3: Material[] = [
   {
     id: 'karate-rich-1',
     title: 'みんなでからての稽古',
-    description: '道場で稽古をする子どもたちの線画。',
+    description: '道場で稽古をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'sports',
     tags: ['karate', 'スポーツ', 'ぬりえ'],
@@ -25465,7 +25465,7 @@ const _materials3: Material[] = [
   {
     id: 'oni-simple-1',
     title: 'おにだぞ〜！',
-    description: 'シンプルな鬼の線画。',
+    description: 'シンプルな鬼のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['oni', 'ようかい', 'ぬりえ'],
@@ -25482,7 +25482,7 @@ const _materials3: Material[] = [
   {
     id: 'oni-easy-1',
     title: 'かわいいおに',
-    description: '金棒を持つかわいい鬼の線画。',
+    description: '金棒を持つかわいい鬼のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['oni', 'ようかい', 'ぬりえ'],
@@ -25499,7 +25499,7 @@ const _materials3: Material[] = [
   {
     id: 'oni-normal-1',
     title: 'まめまき！おにはそと',
-    description: '豆まきで豆をよける鬼の線画。',
+    description: '豆まきで豆をよける鬼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['oni', 'ようかい', 'ぬりえ'],
@@ -25516,7 +25516,7 @@ const _materials3: Material[] = [
   {
     id: 'oni-rich-1',
     title: 'せつぶんのまめまき',
-    description: '節分の豆まきシーンの線画。',
+    description: '節分の豆まきシーンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['oni', 'ようかい', 'ぬりえ'],
@@ -25533,7 +25533,7 @@ const _materials3: Material[] = [
   {
     id: 'obake-simple-1',
     title: 'かわいいおばけ',
-    description: 'シンプルなおばけの線画。',
+    description: 'シンプルなおばけのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['obake', 'ようかい', 'ぬりえ'],
@@ -25550,7 +25550,7 @@ const _materials3: Material[] = [
   {
     id: 'obake-easy-1',
     title: 'そらをとぶおばけ',
-    description: '夜空を浮かぶかわいいおばけの線画。',
+    description: '夜空を浮かぶかわいいおばけのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['obake', 'ようかい', 'ぬりえ'],
@@ -25567,7 +25567,7 @@ const _materials3: Material[] = [
   {
     id: 'obake-normal-1',
     title: 'おばけのいえ',
-    description: '和室に現れるおばけの線画。',
+    description: '和室に現れるおばけのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['obake', 'ようかい', 'ぬりえ'],
@@ -25584,7 +25584,7 @@ const _materials3: Material[] = [
   {
     id: 'obake-rich-1',
     title: 'おばけのパーティー',
-    description: 'おばけたちが集まるパーティーの線画。',
+    description: 'おばけたちが集まるパーティーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['obake', 'ようかい', 'ぬりえ'],
@@ -25601,7 +25601,7 @@ const _materials3: Material[] = [
   {
     id: 'tengu-simple-1',
     title: 'てんぐのおめん',
-    description: 'シンプルな天狗のお面の線画。',
+    description: 'シンプルな天狗のお面のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['tengu', 'ようかい', 'ぬりえ'],
@@ -25621,7 +25621,7 @@ const _materials4: Material[] = [
   {
     id: 'tengu-easy-1',
     title: 'かわいいてんぐ',
-    description: '山に立つかわいい天狗の線画。',
+    description: '山に立つかわいい天狗のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['tengu', 'ようかい', 'ぬりえ'],
@@ -25638,7 +25638,7 @@ const _materials4: Material[] = [
   {
     id: 'tengu-normal-1',
     title: 'そらをとぶてんぐ',
-    description: '空を飛ぶ天狗の線画。',
+    description: '空を飛ぶ天狗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['tengu', 'ようかい', 'ぬりえ'],
@@ -25655,7 +25655,7 @@ const _materials4: Material[] = [
   {
     id: 'tengu-rich-1',
     title: 'てんぐのやまのがっこう',
-    description: '天狗が子どもたちに修行を教える山の線画。',
+    description: '天狗が子どもたちに修行を教える山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['tengu', 'ようかい', 'ぬりえ'],
@@ -25672,7 +25672,7 @@ const _materials4: Material[] = [
   {
     id: 'kappa-simple-1',
     title: 'かわのかっぱ',
-    description: '川から顔を出すかわいい河童の線画。',
+    description: '川から顔を出すかわいい河童のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['kappa', 'ようかい', 'ぬりえ'],
@@ -25689,7 +25689,7 @@ const _materials4: Material[] = [
   {
     id: 'kappa-easy-1',
     title: 'きゅうりがすきなかっぱ',
-    description: 'きゅうりを持つ河童の線画。',
+    description: 'きゅうりを持つ河童のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['kappa', 'ようかい', 'ぬりえ'],
@@ -25706,7 +25706,7 @@ const _materials4: Material[] = [
   {
     id: 'kappa-normal-1',
     title: 'かわでおよぐかっぱ',
-    description: '川を泳ぐ河童の線画。',
+    description: '川を泳ぐ河童のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['kappa', 'ようかい', 'ぬりえ'],
@@ -25740,7 +25740,7 @@ const _materials4: Material[] = [
   {
     id: 'tanuki-simple-1',
     title: 'ばけたぬき',
-    description: '葉っぱをのせたかわいいタヌキの線画。',
+    description: '葉っぱをのせたかわいいタヌキのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['tanuki', 'ようかい', 'ぬりえ'],
@@ -25757,7 +25757,7 @@ const _materials4: Material[] = [
   {
     id: 'tanuki-easy-1',
     title: 'ぽんぽこたぬき',
-    description: '月夜にポンポコするタヌキの線画。',
+    description: '月夜にポンポコするタヌキのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['tanuki', 'ようかい', 'ぬりえ'],
@@ -25774,7 +25774,7 @@ const _materials4: Material[] = [
   {
     id: 'tanuki-normal-1',
     title: 'へんしんたぬき',
-    description: '変身しようとするタヌキの線画。',
+    description: '変身しようとするタヌキのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['tanuki', 'ようかい', 'ぬりえ'],
@@ -25791,7 +25791,7 @@ const _materials4: Material[] = [
   {
     id: 'tanuki-rich-1',
     title: 'たぬきのぽんぽこパーティー',
-    description: 'タヌキたちのポンポコパーティーの線画。',
+    description: 'タヌキたちのポンポコパーティーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['tanuki', 'ようかい', 'ぬりえ'],
@@ -25808,7 +25808,7 @@ const _materials4: Material[] = [
   {
     id: 'kitsune-simple-1',
     title: 'きつねのおめん',
-    description: 'シンプルなキツネのお面の線画。',
+    description: 'シンプルなキツネのお面のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['kitsune', 'ようかい', 'ぬりえ'],
@@ -25825,7 +25825,7 @@ const _materials4: Material[] = [
   {
     id: 'kitsune-easy-1',
     title: 'おいなりさんのきつね',
-    description: '鳥居の前に座る白いキツネの線画。',
+    description: '鳥居の前に座る白いキツネのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['kitsune', 'ようかい', 'ぬりえ'],
@@ -25842,7 +25842,7 @@ const _materials4: Material[] = [
   {
     id: 'kitsune-normal-1',
     title: 'つきよのきつね',
-    description: '月夜に9本尾を広げるキツネの線画。',
+    description: '月夜に9本尾を広げるキツネのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['kitsune', 'ようかい', 'ぬりえ'],
@@ -25876,7 +25876,7 @@ const _materials4: Material[] = [
   {
     id: 'zashiki-warashi-simple-1',
     title: 'ざしきわらし',
-    description: 'シンプルな座敷童の線画。',
+    description: 'シンプルな座敷童のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['zashiki-warashi', 'ようかい', 'ぬりえ'],
@@ -25893,7 +25893,7 @@ const _materials4: Material[] = [
   {
     id: 'zashiki-warashi-easy-1',
     title: 'わしつのざしきわらし',
-    description: '和室で笑う座敷童の線画。',
+    description: '和室で笑う座敷童のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['zashiki-warashi', 'ようかい', 'ぬりえ'],
@@ -25910,7 +25910,7 @@ const _materials4: Material[] = [
   {
     id: 'zashiki-warashi-normal-1',
     title: 'いたずらざしきわらし',
-    description: 'いたずらをする座敷童の線画。',
+    description: 'いたずらをする座敷童のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['zashiki-warashi', 'ようかい', 'ぬりえ'],
@@ -25944,7 +25944,7 @@ const _materials4: Material[] = [
   {
     id: 'nurikabe-simple-1',
     title: 'ぬりかべ',
-    description: 'シンプルなぬりかべの線画。',
+    description: 'シンプルなぬりかべのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['nurikabe', 'ようかい', 'ぬりえ'],
@@ -25961,7 +25961,7 @@ const _materials4: Material[] = [
   {
     id: 'nurikabe-easy-1',
     title: 'とおれないよぬりかべ',
-    description: '道を塞ぐぬりかべの線画。',
+    description: '道を塞ぐぬりかべのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['nurikabe', 'ようかい', 'ぬりえ'],
@@ -25978,7 +25978,7 @@ const _materials4: Material[] = [
   {
     id: 'nurikabe-normal-1',
     title: 'みちをふさぐぬりかべ',
-    description: '旅人を塞ぐぬりかべの線画。',
+    description: '旅人を塞ぐぬりかべのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['nurikabe', 'ようかい', 'ぬりえ'],
@@ -26012,7 +26012,7 @@ const _materials4: Material[] = [
   {
     id: 'ittanmomen-simple-1',
     title: 'いったんもめん',
-    description: 'シンプルな一反木綿の線画。',
+    description: 'シンプルな一反木綿のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['ittanmomen', 'ようかい', 'ぬりえ'],
@@ -26029,7 +26029,7 @@ const _materials4: Material[] = [
   {
     id: 'ittanmomen-easy-1',
     title: 'そらをとぶいったんもめん',
-    description: '夜空を飛ぶ一反木綿の線画。',
+    description: '夜空を飛ぶ一反木綿のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['ittanmomen', 'ようかい', 'ぬりえ'],
@@ -26046,7 +26046,7 @@ const _materials4: Material[] = [
   {
     id: 'ittanmomen-normal-1',
     title: 'もりのいったんもめん',
-    description: '森をくぐる一反木綿の線画。',
+    description: '森をくぐる一反木綿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['ittanmomen', 'ようかい', 'ぬりえ'],
@@ -26063,7 +26063,7 @@ const _materials4: Material[] = [
   {
     id: 'ittanmomen-rich-1',
     title: 'いったんもめんとおいかけっこ',
-    description: '子どもたちと追いかけっこする一反木綿の線画。',
+    description: '子どもたちと追いかけっこする一反木綿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['ittanmomen', 'ようかい', 'ぬりえ'],
@@ -26080,7 +26080,7 @@ const _materials4: Material[] = [
   {
     id: 'kodama-simple-1',
     title: 'こだま',
-    description: 'シンプルな木霊の線画。',
+    description: 'シンプルな木霊のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['kodama', 'ようかい', 'ぬりえ'],
@@ -26097,7 +26097,7 @@ const _materials4: Material[] = [
   {
     id: 'kodama-easy-1',
     title: 'きのうえのこだま',
-    description: '木の枝に座る木霊の線画。',
+    description: '木の枝に座る木霊のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['kodama', 'ようかい', 'ぬりえ'],
@@ -26114,7 +26114,7 @@ const _materials4: Material[] = [
   {
     id: 'kodama-normal-1',
     title: 'もりのこだまたち',
-    description: '森に並ぶ木霊たちの線画。',
+    description: '森に並ぶ木霊たちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['kodama', 'ようかい', 'ぬりえ'],
@@ -26131,7 +26131,7 @@ const _materials4: Material[] = [
   {
     id: 'kodama-rich-1',
     title: 'こだまとあそぼう',
-    description: '木霊たちと遊ぶ子どもの線画。',
+    description: '木霊たちと遊ぶ子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['kodama', 'ようかい', 'ぬりえ'],
@@ -26148,7 +26148,7 @@ const _materials4: Material[] = [
   {
     id: 'hitotsume-kozou-simple-1',
     title: 'ひとつめこぞう',
-    description: 'シンプルな一つ目小僧の線画。',
+    description: 'シンプルな一つ目小僧のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['hitotsume-kozou', 'ようかい', 'ぬりえ'],
@@ -26165,7 +26165,7 @@ const _materials4: Material[] = [
   {
     id: 'hitotsume-kozou-easy-1',
     title: 'にこにこひとつめこぞう',
-    description: 'ニコニコ笑う一つ目小僧の線画。',
+    description: 'ニコニコ笑う一つ目小僧のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['hitotsume-kozou', 'ようかい', 'ぬりえ'],
@@ -26182,7 +26182,7 @@ const _materials4: Material[] = [
   {
     id: 'hitotsume-kozou-normal-1',
     title: 'まちをあるくひとつめこぞう',
-    description: '夜の街を歩く一つ目小僧の線画。',
+    description: '夜の街を歩く一つ目小僧のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['hitotsume-kozou', 'ようかい', 'ぬりえ'],
@@ -26216,7 +26216,7 @@ const _materials4: Material[] = [
   {
     id: 'nekomata-simple-1',
     title: 'ねこまた',
-    description: 'シンプルな猫又の線画。',
+    description: 'シンプルな猫又のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['nekomata', 'ようかい', 'ぬりえ'],
@@ -26233,7 +26233,7 @@ const _materials4: Material[] = [
   {
     id: 'nekomata-easy-1',
     title: 'おどるねこまた',
-    description: '踊るかわいい猫又の線画。',
+    description: '踊るかわいい猫又のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['nekomata', 'ようかい', 'ぬりえ'],
@@ -26250,7 +26250,7 @@ const _materials4: Material[] = [
   {
     id: 'nekomata-normal-1',
     title: 'つきよにおどるねこまた',
-    description: '月夜の屋根で踊る猫又の線画。',
+    description: '月夜の屋根で踊る猫又のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['nekomata', 'ようかい', 'ぬりえ'],
@@ -26267,7 +26267,7 @@ const _materials4: Material[] = [
   {
     id: 'nekomata-rich-1',
     title: 'ねこまたのダンスパーティー',
-    description: '猫又たちのダンスパーティーの線画。',
+    description: '猫又たちのダンスパーティーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['nekomata', 'ようかい', 'ぬりえ'],
@@ -26284,7 +26284,7 @@ const _materials4: Material[] = [
   {
     id: 'amabie-simple-1',
     title: 'アマビエ',
-    description: 'シンプルなアマビエの線画。',
+    description: 'シンプルなアマビエのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['amabie', 'ようかい', 'ぬりえ'],
@@ -26301,7 +26301,7 @@ const _materials4: Material[] = [
   {
     id: 'amabie-easy-1',
     title: 'うみからきたアマビエ',
-    description: '海から顔を出すアマビエの線画。',
+    description: '海から顔を出すアマビエのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['amabie', 'ようかい', 'ぬりえ'],
@@ -26352,7 +26352,7 @@ const _materials4: Material[] = [
   {
     id: 'betobeto-san-simple-1',
     title: 'べとべとさん',
-    description: '草履が浮かぶべとべとさんの線画。',
+    description: '草履が浮かぶべとべとさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['betobeto-san', 'ようかい', 'ぬりえ'],
@@ -26369,7 +26369,7 @@ const _materials4: Material[] = [
   {
     id: 'betobeto-san-easy-1',
     title: 'あしおとのべとべとさん',
-    description: '夜道に足跡が続くべとべとさんの線画。',
+    description: '夜道に足跡が続くべとべとさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['betobeto-san', 'ようかい', 'ぬりえ'],
@@ -26386,7 +26386,7 @@ const _materials4: Material[] = [
   {
     id: 'betobeto-san-normal-1',
     title: 'よみちのべとべとさん',
-    description: '旅人の後ろをついてくるべとべとさんの線画。',
+    description: '旅人の後ろをついてくるべとべとさんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['betobeto-san', 'ようかい', 'ぬりえ'],
@@ -26403,7 +26403,7 @@ const _materials4: Material[] = [
   {
     id: 'betobeto-san-rich-1',
     title: 'べとべとさんがきた！',
-    description: '子どもたちがびっくりする夜道の線画。',
+    description: '子どもたちがびっくりする夜道のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'yokai',
     tags: ['betobeto-san', 'ようかい', 'ぬりえ'],
@@ -26420,7 +26420,7 @@ const _materials4: Material[] = [
   {
     id: 'yukionna-simple-1',
     title: 'ゆきおんな',
-    description: 'シンプルな雪女の線画。',
+    description: 'シンプルな雪女のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'yokai',
     tags: ['yukionna', 'ようかい', 'ぬりえ'],
@@ -26437,7 +26437,7 @@ const _materials4: Material[] = [
   {
     id: 'yukionna-easy-1',
     title: 'かわいいゆきおんな',
-    description: '雪の中で笑う雪女の線画。',
+    description: '雪の中で笑う雪女のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'yokai',
     tags: ['yukionna', 'ようかい', 'ぬりえ'],
@@ -26454,7 +26454,7 @@ const _materials4: Material[] = [
   {
     id: 'yukionna-normal-1',
     title: 'ゆきのゆきおんな',
-    description: '雪の結晶を手に持つ雪女の線画。',
+    description: '雪の結晶を手に持つ雪女のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'yokai',
     tags: ['yukionna', 'ようかい', 'ぬりえ'],
@@ -26488,7 +26488,7 @@ const _materials4: Material[] = [
   {
     id: 'snowman-simple-1',
     title: 'ゆきだるま',
-    description: 'シンプルなゆきだるまの線画。',
+    description: 'シンプルなゆきだるまのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['snowman', 'winter', 'ぬりえ'],
@@ -26522,7 +26522,7 @@ const _materials4: Material[] = [
   {
     id: 'snowman-normal-1',
     title: 'ゆきのなかのゆきだるま',
-    description: '雪の野原に立つゆきだるまの線画。',
+    description: '雪の野原に立つゆきだるまのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['snowman', 'winter', 'ぬりえ'],
@@ -26556,7 +26556,7 @@ const _materials4: Material[] = [
   {
     id: 'sled-simple-1',
     title: 'そり',
-    description: 'シンプルなそりの線画。',
+    description: 'シンプルなそりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['sled', 'winter', 'ぬりえ'],
@@ -26573,7 +26573,7 @@ const _materials4: Material[] = [
   {
     id: 'sled-easy-1',
     title: 'そりにのろう',
-    description: 'そりに乗る子どもの線画。',
+    description: 'そりに乗る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['sled', 'winter', 'ぬりえ'],
@@ -26590,7 +26590,7 @@ const _materials4: Material[] = [
   {
     id: 'sled-normal-1',
     title: 'ゆきのさかをすべろう',
-    description: '雪の坂を滑るそり遊びの線画。',
+    description: '雪の坂を滑るそり遊びのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['sled', 'winter', 'ぬりえ'],
@@ -26607,7 +26607,7 @@ const _materials4: Material[] = [
   {
     id: 'sled-rich-1',
     title: 'みんなでそりあそび',
-    description: 'みんなでそり遊びをする子どもたちの線画。',
+    description: 'みんなでそり遊びをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'winter',
     tags: ['sled', 'winter', 'ぬりえ'],
@@ -26624,7 +26624,7 @@ const _materials4: Material[] = [
   {
     id: 'ice-skating-simple-1',
     title: 'スケートぐつ',
-    description: 'シンプルなスケート靴の線画。',
+    description: 'シンプルなスケート靴のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
@@ -26641,7 +26641,7 @@ const _materials4: Material[] = [
   {
     id: 'ice-skating-easy-1',
     title: 'スケートにのろう',
-    description: 'スケートを楽しむ子どもの線画。',
+    description: 'スケートを楽しむ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
@@ -26658,7 +26658,7 @@ const _materials4: Material[] = [
   {
     id: 'ice-skating-normal-1',
     title: 'すべれたよ！',
-    description: 'スケートで滑る子どもの線画。',
+    description: 'スケートで滑る子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
@@ -26675,7 +26675,7 @@ const _materials4: Material[] = [
   {
     id: 'ice-skating-rich-1',
     title: 'みんなでスケート',
-    description: 'みんなでスケートを楽しむ子どもたちの線画。',
+    description: 'みんなでスケートを楽しむ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'winter',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
@@ -26692,7 +26692,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-tree-simple-1',
     title: 'クリスマスツリー',
-    description: 'シンプルなクリスマスツリーの線画。',
+    description: 'シンプルなクリスマスツリーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
@@ -26709,7 +26709,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-tree-easy-1',
     title: 'かざりのツリー',
-    description: '星とボールで飾ったクリスマスツリーの線画。',
+    description: '星とボールで飾ったクリスマスツリーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
@@ -26726,7 +26726,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-tree-normal-1',
     title: 'ツリーとプレゼント',
-    description: 'プレゼントが並ぶクリスマスツリーの線画。',
+    description: 'プレゼントが並ぶクリスマスツリーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
@@ -26760,7 +26760,7 @@ const _materials4: Material[] = [
   {
     id: 'santa-simple-1',
     title: 'サンタクロース',
-    description: 'シンプルなサンタクロースの線画。',
+    description: 'シンプルなサンタクロースのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['santa', 'winter', 'ぬりえ'],
@@ -26777,7 +26777,7 @@ const _materials4: Material[] = [
   {
     id: 'santa-easy-1',
     title: 'プレゼントをもってきたよ',
-    description: 'プレゼントを持つサンタクロースの線画。',
+    description: 'プレゼントを持つサンタクロースのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['santa', 'winter', 'ぬりえ'],
@@ -26794,7 +26794,7 @@ const _materials4: Material[] = [
   {
     id: 'santa-normal-1',
     title: 'えんとつからサンタさん',
-    description: '煙突からプレゼントを届けるサンタの線画。',
+    description: '煙突からプレゼントを届けるサンタのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['santa', 'winter', 'ぬりえ'],
@@ -26811,7 +26811,7 @@ const _materials4: Material[] = [
   {
     id: 'santa-rich-1',
     title: 'サンタさんがきた！',
-    description: 'そりで夜空を飛ぶサンタとトナカイの線画。',
+    description: 'そりで夜空を飛ぶサンタとトナカイのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'winter',
     tags: ['santa', 'winter', 'ぬりえ'],
@@ -26828,7 +26828,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-wreath-simple-1',
     title: 'クリスマスリース',
-    description: 'シンプルなクリスマスリースの線画。',
+    description: 'シンプルなクリスマスリースのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
@@ -26845,7 +26845,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-wreath-easy-1',
     title: 'リースとかざり',
-    description: 'ヒイラギとベルが飾られたリースの線画。',
+    description: 'ヒイラギとベルが飾られたリースのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
@@ -26862,7 +26862,7 @@ const _materials4: Material[] = [
   {
     id: 'christmas-wreath-normal-1',
     title: 'ドアのリース',
-    description: 'ドアに飾られたクリスマスリースの線画。',
+    description: 'ドアに飾られたクリスマスリースのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
@@ -26896,7 +26896,7 @@ const _materials4: Material[] = [
   {
     id: 'kotatsu-simple-1',
     title: 'こたつ',
-    description: 'シンプルなこたつの線画。',
+    description: 'シンプルなこたつのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
@@ -26930,7 +26930,7 @@ const _materials4: Material[] = [
   {
     id: 'kotatsu-normal-1',
     title: 'こたつであったか',
-    description: 'こたつでみかんを食べる子どもの線画。',
+    description: 'こたつでみかんを食べる子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
@@ -26964,7 +26964,7 @@ const _materials4: Material[] = [
   {
     id: 'mittens-simple-1',
     title: 'てぶくろ',
-    description: 'シンプルなてぶくろの線画。',
+    description: 'シンプルなてぶくろのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['mittens', 'winter', 'ぬりえ'],
@@ -26998,7 +26998,7 @@ const _materials4: Material[] = [
   {
     id: 'mittens-normal-1',
     title: 'てぶくろをはめよう',
-    description: 'てぶくろをはめて外出する子どもの線画。',
+    description: 'てぶくろをはめて外出する子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['mittens', 'winter', 'ぬりえ'],
@@ -27015,7 +27015,7 @@ const _materials4: Material[] = [
   {
     id: 'mittens-rich-1',
     title: 'ふゆのおでかけじゅんび',
-    description: '冬のお出かけ準備をする子どもたちの線画。',
+    description: '冬のお出かけ準備をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'winter',
     tags: ['mittens', 'winter', 'ぬりえ'],
@@ -27032,7 +27032,7 @@ const _materials4: Material[] = [
   {
     id: 'scarf-simple-1',
     title: 'マフラー',
-    description: 'シンプルなマフラーの線画。',
+    description: 'シンプルなマフラーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['scarf', 'winter', 'ぬりえ'],
@@ -27066,7 +27066,7 @@ const _materials4: Material[] = [
   {
     id: 'scarf-normal-1',
     title: 'マフラーをまいて',
-    description: 'マフラーを巻いて歩く子どもの線画。',
+    description: 'マフラーを巻いて歩く子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['scarf', 'winter', 'ぬりえ'],
@@ -27100,7 +27100,7 @@ const _materials4: Material[] = [
   {
     id: 'new-year-simple-1',
     title: 'かどまつ',
-    description: 'シンプルな門松の線画。',
+    description: 'シンプルな門松のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['new-year', 'winter', 'ぬりえ'],
@@ -27117,7 +27117,7 @@ const _materials4: Material[] = [
   {
     id: 'new-year-easy-1',
     title: 'おしょうがつのかざり',
-    description: '門松・しめ縄・凧が並ぶお正月の線画。',
+    description: '門松・しめ縄・凧が並ぶお正月のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'winter',
     tags: ['new-year', 'winter', 'ぬりえ'],
@@ -27134,7 +27134,7 @@ const _materials4: Material[] = [
   {
     id: 'new-year-normal-1',
     title: 'たこあげしよう',
-    description: '凧揚げをする子どもの線画。',
+    description: '凧揚げをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['new-year', 'winter', 'ぬりえ'],
@@ -27168,7 +27168,7 @@ const _materials4: Material[] = [
   {
     id: 'setsubun-simple-1',
     title: 'おにのおめん',
-    description: 'シンプルな鬼の面の線画。',
+    description: 'シンプルな鬼の面のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['setsubun', 'winter', 'ぬりえ'],
@@ -27202,7 +27202,7 @@ const _materials4: Material[] = [
   {
     id: 'setsubun-normal-1',
     title: 'おにはそと！ふくはうち！',
-    description: '豆まきをする子どもの線画。',
+    description: '豆まきをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['setsubun', 'winter', 'ぬりえ'],
@@ -27236,7 +27236,7 @@ const _materials4: Material[] = [
   {
     id: 'mochi-pounding-simple-1',
     title: 'おもち',
-    description: 'シンプルなおもちの線画。',
+    description: 'シンプルなおもちのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
@@ -27270,7 +27270,7 @@ const _materials4: Material[] = [
   {
     id: 'mochi-pounding-normal-1',
     title: 'よいしょっともちつき',
-    description: 'もちつきをする子どもの線画。',
+    description: 'もちつきをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
@@ -27304,7 +27304,7 @@ const _materials4: Material[] = [
   {
     id: 'snow-play-simple-1',
     title: 'かまくら',
-    description: 'シンプルなかまくらの線画。',
+    description: 'シンプルなかまくらのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'winter',
     tags: ['snow-play', 'winter', 'ぬりえ'],
@@ -27338,7 +27338,7 @@ const _materials4: Material[] = [
   {
     id: 'snow-play-normal-1',
     title: 'かまくらのなか',
-    description: 'かまくらの中にいる子どもの線画。',
+    description: 'かまくらの中にいる子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'winter',
     tags: ['snow-play', 'winter', 'ぬりえ'],
@@ -27372,7 +27372,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-matisse-dance-rich-1',
     title: 'ダンス（マティス）',
-    description: 'マティス「ダンス」の構図を再解釈した塗り絵線画。',
+    description: 'マティス「ダンス」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27390,7 +27390,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-botticelli-venus-rich-1',
     title: 'ヴィーナスの誕生（ボッティチェッリ）',
-    description: 'ボッティチェッリ「ヴィーナスの誕生」の構図を再解釈した塗り絵線画。',
+    description: 'ボッティチェッリ「ヴィーナスの誕生」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27408,7 +27408,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-vermeer-girl-rich-1',
     title: '真珠の耳飾りの少女（フェルメール）',
-    description: 'フェルメール「真珠の耳飾りの少女」の構図を再解釈した塗り絵線画。',
+    description: 'フェルメール「真珠の耳飾りの少女」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27426,7 +27426,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-vermeer-milkmaid-rich-1',
     title: '牛乳を注ぐ女（フェルメール）',
-    description: 'フェルメール「牛乳を注ぐ女」の構図を再解釈した塗り絵線画。',
+    description: 'フェルメール「牛乳を注ぐ女」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27444,7 +27444,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-rembrandt-nightwatch-rich-1',
     title: '夜警（レンブラント）',
-    description: 'レンブラント「夜警」の構図を再解釈した塗り絵線画。',
+    description: 'レンブラント「夜警」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27462,7 +27462,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-raphael-athens-rich-1',
     title: 'アテネの学堂（ラファエロ）',
-    description: 'ラファエロ「アテネの学堂」の構図を再解釈した塗り絵線画。',
+    description: 'ラファエロ「アテネの学堂」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27480,7 +27480,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-davinci-lastsupper-rich-1',
     title: '最後の晩餐（ダ・ヴィンチ）',
-    description: 'ダ・ヴィンチ「最後の晩餐」の構図を再解釈した塗り絵線画。',
+    description: 'ダ・ヴィンチ「最後の晩餐」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27498,7 +27498,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-velazquez-meninas-rich-1',
     title: 'ラス・メニーナス（ベラスケス）',
-    description: 'ベラスケス「ラス・メニーナス」の構図を再解釈した塗り絵線画。',
+    description: 'ベラスケス「ラス・メニーナス」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27516,7 +27516,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-turner-temeraire-rich-1',
     title: '戦艦テメレーア（ターナー）',
-    description: 'ターナー「戦艦テメレーア」の構図を再解釈した塗り絵線画。',
+    description: 'ターナー「戦艦テメレーア」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27534,7 +27534,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-constable-haywain-rich-1',
     title: '干し草車（コンスタブル）',
-    description: 'コンスタブル「干し草車」の構図を再解釈した塗り絵線画。',
+    description: 'コンスタブル「干し草車」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27552,7 +27552,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-waterhouse-shalott-rich-1',
     title: 'シャロットの女（ウォーターハウス）',
-    description: 'ウォーターハウス「シャロットの女」の構図を再解釈した塗り絵線画。',
+    description: 'ウォーターハウス「シャロットの女」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27570,7 +27570,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-toulouse-moulin-rich-1',
     title: 'ムーラン・ルージュ（ロートレック）',
-    description: 'ロートレック「ムーラン・ルージュ」の構図を再解釈した塗り絵線画。',
+    description: 'ロートレック「ムーラン・ルージュ」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27588,7 +27588,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-kandinsky-composition-rich-1',
     title: 'コンポジション VIII（カンディンスキー）',
-    description: 'カンディンスキー「コンポジション VIII」の構図を再解釈した塗り絵線画。',
+    description: 'カンディンスキー「コンポジション VIII」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27606,7 +27606,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-mondrian-composition-rich-1',
     title: '赤・青・黄のコンポジション（モンドリアン）',
-    description: 'モンドリアン「赤・青・黄のコンポジション」の構図を再解釈した塗り絵線画。',
+    description: 'モンドリアン「赤・青・黄のコンポジション」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27624,7 +27624,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-whistler-mother-rich-1',
     title: 'ホイッスラーの母（ホイッスラー）',
-    description: 'ホイッスラー「ホイッスラーの母」の構図を再解釈した塗り絵線画。',
+    description: 'ホイッスラー「ホイッスラーの母」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -27642,7 +27642,7 @@ const _materials4: Material[] = [
   {
     id: 'masterpiece-sargent-carnation-rich-1',
     title: 'カーネーション・ユリ・バラ（サージェント）',
-    description: 'サージェント「カーネーション、ユリ、ユリ、バラ」の構図を再解釈した塗り絵線画。',
+    description: 'サージェント「カーネーション、ユリ、ユリ、バラ」の構図を再解釈した塗り絵。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'masterpiece',
@@ -28668,7 +28668,7 @@ const _materials4: Material[] = [
   {
     id: 'railway-sanin-coast-simple-1',
     title: '海岸の列車（やさしい）',
-    description: '海岸を走る列車の線画。',
+    description: '海岸を走る列車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -28686,7 +28686,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-bear-normal-1',
     title: 'ヒグマ（北海道）',
-    description: '川で鮭をくわえるヒグマの線画。',
+    description: '川で鮭をくわえるヒグマのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-bear', 'gotochi', 'ぬりえ'],
@@ -28703,7 +28703,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-crane-normal-1',
     title: 'タンチョウヅル（北海道）',
-    description: '雪原で羽を広げる丹頂鶴の線画。',
+    description: '雪原で羽を広げる丹頂鶴のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-crane', 'gotochi', 'ぬりえ'],
@@ -28720,7 +28720,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-lavender-normal-1',
     title: 'ラベンダー畑（北海道）',
-    description: '富良野のラベンダー畑の線画。',
+    description: '富良野のラベンダー畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-lavender', 'gotochi', 'ぬりえ'],
@@ -28737,7 +28737,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-potato-normal-1',
     title: 'じゃがいも（北海道）',
-    description: '畑のじゃがいもの線画。',
+    description: '畑のじゃがいものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-potato', 'gotochi', 'ぬりえ'],
@@ -28754,7 +28754,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-corn-normal-1',
     title: 'とうきび（北海道）',
-    description: '茹でとうきびの線画。',
+    description: '茹でとうきびのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-corn', 'gotochi', 'ぬりえ'],
@@ -28771,7 +28771,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-clocktower-normal-1',
     title: '札幌時計台（北海道）',
-    description: '札幌時計台の線画。',
+    description: '札幌時計台のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-clocktower', 'gotochi', 'ぬりえ'],
@@ -28788,7 +28788,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-crab-normal-1',
     title: '毛ガニ（北海道）',
-    description: '氷の上の毛ガニの線画。',
+    description: '氷の上の毛ガニのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-crab', 'gotochi', 'ぬりえ'],
@@ -28805,7 +28805,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-drift-ice-normal-1',
     title: '流氷（北海道）',
-    description: '流氷とアザラシの線画。',
+    description: '流氷とアザラシのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-drift-ice', 'gotochi', 'ぬりえ'],
@@ -28822,7 +28822,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-goryokaku-normal-1',
     title: '五稜郭（北海道）',
-    description: '星形の五稜郭の線画。',
+    description: '星形の五稜郭のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-goryokaku', 'gotochi', 'ぬりえ'],
@@ -28839,7 +28839,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-jingisukan-normal-1',
     title: 'ジンギスカン（北海道）',
-    description: 'ジンギスカン鍋の線画。',
+    description: 'ジンギスカン鍋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-jingisukan', 'gotochi', 'ぬりえ'],
@@ -28856,7 +28856,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-zoo-normal-1',
     title: 'ペンギン行進（北海道・旭山動物園）',
-    description: '雪原を行進するペンギンの線画。',
+    description: '雪原を行進するペンギンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-zoo', 'gotochi', 'ぬりえ'],
@@ -28873,7 +28873,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-uni-normal-1',
     title: 'ウニ丼（北海道）',
-    description: 'ウニ丼の線画。',
+    description: 'ウニ丼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-uni', 'gotochi', 'ぬりえ'],
@@ -28890,7 +28890,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-ikura-normal-1',
     title: 'イクラ丼（北海道）',
-    description: 'イクラ丼の線画。',
+    description: 'イクラ丼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-ikura', 'gotochi', 'ぬりえ'],
@@ -28907,7 +28907,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-cow-normal-1',
     title: '乳牛（北海道）',
-    description: '牧場でくつろぐ乳牛の線画。',
+    description: '牧場でくつろぐ乳牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-cow', 'gotochi', 'ぬりえ'],
@@ -28924,7 +28924,7 @@ const _materials4: Material[] = [
   {
     id: 'hokkaido-saury-normal-1',
     title: 'サンマ（北海道）',
-    description: '焼きサンマの線画。',
+    description: '焼きサンマのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hokkaido-saury', 'gotochi', 'ぬりえ'],
@@ -28941,7 +28941,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-nebuta-normal-1',
     title: 'ねぶた祭（青森）',
-    description: 'ねぶた祭りの灯籠の線画。',
+    description: 'ねぶた祭りの灯籠のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-nebuta', 'gotochi', 'ぬりえ'],
@@ -28958,7 +28958,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-apple-normal-1',
     title: 'りんご（青森）',
-    description: 'りんごの木と実の線画。',
+    description: 'りんごの木と実のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-apple', 'gotochi', 'ぬりえ'],
@@ -28975,7 +28975,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-shamisen-normal-1',
     title: '津軽三味線（青森）',
-    description: '津軽三味線を弾く演奏者の線画。',
+    description: '津軽三味線を弾く演奏者のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-shamisen', 'gotochi', 'ぬりえ'],
@@ -28992,7 +28992,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-garlic-normal-1',
     title: 'にんにく（青森）',
-    description: 'にんにくの線画。',
+    description: 'にんにくのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-garlic', 'gotochi', 'ぬりえ'],
@@ -29009,7 +29009,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-scallop-normal-1',
     title: 'ホタテ貝（青森）',
-    description: 'ホタテ貝の線画。',
+    description: 'ホタテ貝のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-scallop', 'gotochi', 'ぬりえ'],
@@ -29026,7 +29026,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-sannai-normal-1',
     title: '三内丸山遺跡（青森）',
-    description: '縄文時代の遺跡の線画。',
+    description: '縄文時代の遺跡のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-sannai', 'gotochi', 'ぬりえ'],
@@ -29043,7 +29043,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-senbei-normal-1',
     title: '南部煎餅（青森）',
-    description: '南部煎餅の線画。',
+    description: '南部煎餅のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-senbei', 'gotochi', 'ぬりえ'],
@@ -29060,7 +29060,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-hakkoda-normal-1',
     title: '八甲田山（青森）',
-    description: '雪の八甲田山の線画。',
+    description: '雪の八甲田山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-hakkoda', 'gotochi', 'ぬりえ'],
@@ -29077,7 +29077,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-towada-normal-1',
     title: '十和田湖（青森）',
-    description: '十和田湖と乙女の像の線画。',
+    description: '十和田湖と乙女の像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-towada', 'gotochi', 'ぬりえ'],
@@ -29094,7 +29094,7 @@ const _materials4: Material[] = [
   {
     id: 'aomori-shirakami-normal-1',
     title: '白神山地のブナ（青森）',
-    description: '白神山地のブナ林の線画。',
+    description: '白神山地のブナ林のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aomori-shirakami', 'gotochi', 'ぬりえ'],
@@ -29128,7 +29128,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-kappa-normal-1',
     title: '河童（岩手・遠野）',
-    description: '遠野の河童の線画。',
+    description: '遠野の河童のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-kappa', 'gotochi', 'ぬりえ'],
@@ -29145,7 +29145,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-nambu-ironware-normal-1',
     title: '南部鉄器（岩手）',
-    description: '南部鉄器の鉄瓶の線画。',
+    description: '南部鉄器の鉄瓶のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-nambu-ironware', 'gotochi', 'ぬりえ'],
@@ -29162,7 +29162,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-konjikido-normal-1',
     title: '金色堂（岩手・平泉）',
-    description: '中尊寺金色堂の線画。',
+    description: '中尊寺金色堂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-konjikido', 'gotochi', 'ぬりえ'],
@@ -29179,7 +29179,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-zashiki-warashi-normal-1',
     title: 'ざしきわらし（岩手・遠野）',
-    description: '座敷童子の線画。',
+    description: '座敷童子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-zashiki-warashi', 'gotochi', 'ぬりえ'],
@@ -29196,7 +29196,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-reimen-normal-1',
     title: '盛岡冷麺（岩手）',
-    description: '盛岡冷麺の線画。',
+    description: '盛岡冷麺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-reimen', 'gotochi', 'ぬりえ'],
@@ -29213,7 +29213,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-miyazawa-normal-1',
     title: '銀河鉄道（岩手・宮沢賢治）',
-    description: '銀河を走る蒸気機関車の線画。',
+    description: '銀河を走る蒸気機関車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-miyazawa', 'gotochi', 'ぬりえ'],
@@ -29230,7 +29230,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-salmon-normal-1',
     title: '鮭の遡上（岩手）',
-    description: '川を遡上する鮭の線画。',
+    description: '川を遡上する鮭のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-salmon', 'gotochi', 'ぬりえ'],
@@ -29247,7 +29247,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-shorthorn-normal-1',
     title: 'いわて短角牛（岩手）',
-    description: '高原の短角牛の線画。',
+    description: '高原の短角牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-shorthorn', 'gotochi', 'ぬりえ'],
@@ -29264,7 +29264,7 @@ const _materials4: Material[] = [
   {
     id: 'iwate-rikuchu-normal-1',
     title: '陸中海岸（岩手）',
-    description: '三陸の断崖海岸の線画。',
+    description: '三陸の断崖海岸のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['iwate-rikuchu', 'gotochi', 'ぬりえ'],
@@ -29281,7 +29281,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-tanabata-normal-1',
     title: '仙台七夕（宮城）',
-    description: '七夕の吹流しの線画。',
+    description: '七夕の吹流しのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-tanabata', 'gotochi', 'ぬりえ'],
@@ -29298,7 +29298,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-gyutan-normal-1',
     title: '牛タン（宮城）',
-    description: '牛タン定食の線画。',
+    description: '牛タン定食のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-gyutan', 'gotochi', 'ぬりえ'],
@@ -29315,7 +29315,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-matsushima-normal-1',
     title: '松島（宮城）',
-    description: '松島湾の島々の線画。',
+    description: '松島湾の島々のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-matsushima', 'gotochi', 'ぬりえ'],
@@ -29332,7 +29332,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-zunda-normal-1',
     title: 'ずんだもち（宮城）',
-    description: 'ずんだもちの線画。',
+    description: 'ずんだもちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-zunda', 'gotochi', 'ぬりえ'],
@@ -29349,7 +29349,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-kamaboko-normal-1',
     title: '笹かまぼこ（宮城）',
-    description: '笹かまぼこの線画。',
+    description: '笹かまぼこのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-kamaboko', 'gotochi', 'ぬりえ'],
@@ -29366,7 +29366,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-masamune-normal-1',
     title: '伊達政宗（宮城）',
-    description: '伊達政宗騎馬像の線画。',
+    description: '伊達政宗騎馬像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-masamune', 'gotochi', 'ぬりえ'],
@@ -29383,7 +29383,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-hagi-normal-1',
     title: '萩の月（宮城）',
-    description: '萩の月の線画。',
+    description: '萩の月のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-hagi', 'gotochi', 'ぬりえ'],
@@ -29400,7 +29400,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-castle-normal-1',
     title: '青葉城址（宮城）',
-    description: '青葉城址と政宗像の線画。',
+    description: '青葉城址と政宗像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-castle', 'gotochi', 'ぬりえ'],
@@ -29417,7 +29417,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-oyster-normal-1',
     title: '三陸の牡蠣（宮城）',
-    description: '殻付き牡蠣の線画。',
+    description: '殻付き牡蠣のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-oyster', 'gotochi', 'ぬりえ'],
@@ -29434,7 +29434,7 @@ const _materials4: Material[] = [
   {
     id: 'miyagi-kokeshi-normal-1',
     title: '鳴子こけし（宮城）',
-    description: '鳴子こけしの線画。',
+    description: '鳴子こけしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyagi-kokeshi', 'gotochi', 'ぬりえ'],
@@ -29451,7 +29451,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-namahage-normal-1',
     title: 'なまはげ（秋田・男鹿）',
-    description: 'なまはげの線画。',
+    description: 'なまはげのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-namahage', 'gotochi', 'ぬりえ'],
@@ -29468,7 +29468,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-kiritanpo-normal-1',
     title: 'きりたんぽ（秋田）',
-    description: '焼ききりたんぽの線画。',
+    description: '焼ききりたんぽのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-kiritanpo', 'gotochi', 'ぬりえ'],
@@ -29485,7 +29485,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-kanto-normal-1',
     title: '竿燈まつり（秋田）',
-    description: '竿燈祭りの線画。',
+    description: '竿燈祭りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-kanto', 'gotochi', 'ぬりえ'],
@@ -29502,7 +29502,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-dog-normal-1',
     title: '秋田犬（秋田）',
-    description: '秋田犬の線画。',
+    description: '秋田犬のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-dog', 'gotochi', 'ぬりえ'],
@@ -29519,7 +29519,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-fireworks-normal-1',
     title: '大曲の花火（秋田）',
-    description: '夜空の花火の線画。',
+    description: '夜空の花火のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-fireworks', 'gotochi', 'ぬりえ'],
@@ -29536,7 +29536,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-inaniwa-normal-1',
     title: '稲庭うどん（秋田）',
-    description: '稲庭うどんの線画。',
+    description: '稲庭うどんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-inaniwa', 'gotochi', 'ぬりえ'],
@@ -29553,7 +29553,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-kamakura-normal-1',
     title: '横手のかまくら（秋田）',
-    description: 'かまくらと子どもの線画。',
+    description: 'かまくらと子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-kamakura', 'gotochi', 'ぬりえ'],
@@ -29570,7 +29570,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-hinai-normal-1',
     title: '比内地鶏（秋田）',
-    description: '比内地鶏の線画。',
+    description: '比内地鶏のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-hinai', 'gotochi', 'ぬりえ'],
@@ -29587,7 +29587,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-tazawa-normal-1',
     title: '田沢湖（秋田）',
-    description: '田沢湖とたつこ像の線画。',
+    description: '田沢湖とたつこ像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-tazawa', 'gotochi', 'ぬりえ'],
@@ -29604,7 +29604,7 @@ const _materials4: Material[] = [
   {
     id: 'akita-oga-normal-1',
     title: '男鹿半島（秋田）',
-    description: '男鹿半島入道崎の線画。',
+    description: '男鹿半島入道崎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['akita-oga', 'gotochi', 'ぬりえ'],
@@ -29621,7 +29621,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-hanagasa-normal-1',
     title: '花笠まつり（山形）',
-    description: '花笠まつりの踊り子の線画。',
+    description: '花笠まつりの踊り子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-hanagasa', 'gotochi', 'ぬりえ'],
@@ -29638,7 +29638,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-cherry-normal-1',
     title: 'さくらんぼ（山形）',
-    description: 'さくらんぼの線画。',
+    description: 'さくらんぼのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-cherry', 'gotochi', 'ぬりえ'],
@@ -29655,7 +29655,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-shogi-normal-1',
     title: '天童の将棋駒（山形）',
-    description: '王将の駒の線画。',
+    description: '王将の駒のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-shogi', 'gotochi', 'ぬりえ'],
@@ -29672,7 +29672,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-soba-normal-1',
     title: '山形そば（山形）',
-    description: '板そばの線画。',
+    description: '板そばのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-soba', 'gotochi', 'ぬりえ'],
@@ -29689,7 +29689,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-imoni-normal-1',
     title: '芋煮（山形）',
-    description: '芋煮鍋の線画。',
+    description: '芋煮鍋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-imoni', 'gotochi', 'ぬりえ'],
@@ -29706,7 +29706,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-zao-normal-1',
     title: '蔵王のお釜（山形）',
-    description: '蔵王御釜の線画。',
+    description: '蔵王御釜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-zao', 'gotochi', 'ぬりえ'],
@@ -29723,7 +29723,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-dashi-normal-1',
     title: '山形のだし（山形）',
-    description: 'ご飯にかけるだしの線画。',
+    description: 'ご飯にかけるだしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-dashi', 'gotochi', 'ぬりえ'],
@@ -29740,7 +29740,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-yamadera-normal-1',
     title: '山寺（山形・立石寺）',
-    description: '山寺五大堂の線画。',
+    description: '山寺五大堂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-yamadera', 'gotochi', 'ぬりえ'],
@@ -29757,7 +29757,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-konnyaku-normal-1',
     title: '玉こんにゃく（山形）',
-    description: '玉こんにゃくの串の線画。',
+    description: '玉こんにゃくの串のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-konnyaku', 'gotochi', 'ぬりえ'],
@@ -29774,7 +29774,7 @@ const _materials4: Material[] = [
   {
     id: 'yamagata-pear-normal-1',
     title: 'ラ・フランス（山形）',
-    description: 'ラ・フランスの線画。',
+    description: 'ラ・フランスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamagata-pear', 'gotochi', 'ぬりえ'],
@@ -29791,7 +29791,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-akabeko-normal-1',
     title: '赤べこ（福島・会津）',
-    description: '赤べこの線画。',
+    description: '赤べこのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-akabeko', 'gotochi', 'ぬりえ'],
@@ -29808,7 +29808,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-okiagari-normal-1',
     title: '起き上がり小法師（福島・会津）',
-    description: '起き上がり小法師の線画。',
+    description: '起き上がり小法師のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-okiagari', 'gotochi', 'ぬりえ'],
@@ -29825,7 +29825,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-peach-normal-1',
     title: '福島の桃（福島）',
-    description: '桃の実の線画。',
+    description: '桃の実のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-peach', 'gotochi', 'ぬりえ'],
@@ -29842,7 +29842,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-castle-normal-1',
     title: '会津若松城（福島）',
-    description: '鶴ヶ城の線画。',
+    description: '鶴ヶ城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-castle', 'gotochi', 'ぬりえ'],
@@ -29859,7 +29859,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-kokeshi-normal-1',
     title: '土湯こけし（福島）',
-    description: '土湯系こけしの線画。',
+    description: '土湯系こけしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-kokeshi', 'gotochi', 'ぬりえ'],
@@ -29876,7 +29876,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-wappa-normal-1',
     title: 'わっぱ飯（福島）',
-    description: 'わっぱ飯の線画。',
+    description: 'わっぱ飯のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-wappa', 'gotochi', 'ぬりえ'],
@@ -29893,7 +29893,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-noguchi-normal-1',
     title: '野口英世（福島）',
-    description: '研究中の野口英世の線画。',
+    description: '研究中の野口英世のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-noguchi', 'gotochi', 'ぬりえ'],
@@ -29910,7 +29910,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-ramen-normal-1',
     title: '喜多方ラーメン（福島）',
-    description: '喜多方ラーメンの線画。',
+    description: '喜多方ラーメンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-ramen', 'gotochi', 'ぬりえ'],
@@ -29927,7 +29927,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-sakura-normal-1',
     title: '三春滝桜（福島）',
-    description: '三春滝桜の線画。',
+    description: '三春滝桜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-sakura', 'gotochi', 'ぬりえ'],
@@ -29944,7 +29944,7 @@ const _materials4: Material[] = [
   {
     id: 'fukushima-lacquer-normal-1',
     title: '会津漆器（福島）',
-    description: '会津漆器のお椀の線画。',
+    description: '会津漆器のお椀のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukushima-lacquer', 'gotochi', 'ぬりえ'],
@@ -29961,7 +29961,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-natto-normal-1',
     title: '納豆（茨城・水戸）',
-    description: '糸を引く納豆の線画。',
+    description: '糸を引く納豆のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-natto', 'gotochi', 'ぬりえ'],
@@ -29978,7 +29978,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-mitokomon-normal-1',
     title: '水戸黄門（茨城）',
-    description: '印籠をかざす黄門様の線画。',
+    description: '印籠をかざす黄門様のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-mitokomon', 'gotochi', 'ぬりえ'],
@@ -29995,7 +29995,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-ankou-normal-1',
     title: 'あんこう鍋（茨城）',
-    description: 'あんこう鍋の線画。',
+    description: 'あんこう鍋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-ankou', 'gotochi', 'ぬりえ'],
@@ -30012,7 +30012,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-tsukuba-normal-1',
     title: '筑波山（茨城）',
-    description: '筑波山の線画。',
+    description: '筑波山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-tsukuba', 'gotochi', 'ぬりえ'],
@@ -30029,7 +30029,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-melon-normal-1',
     title: '茨城メロン（茨城）',
-    description: '茨城メロンの線画。',
+    description: '茨城メロンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-melon', 'gotochi', 'ぬりえ'],
@@ -30046,7 +30046,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-beef-normal-1',
     title: '常陸牛（茨城）',
-    description: '牧場の常陸牛の線画。',
+    description: '牧場の常陸牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-beef', 'gotochi', 'ぬりえ'],
@@ -30063,7 +30063,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-lotus-normal-1',
     title: '霞ヶ浦の蓮（茨城）',
-    description: '蓮の花の線画。',
+    description: '蓮の花のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-lotus', 'gotochi', 'ぬりえ'],
@@ -30080,7 +30080,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-kairakuen-normal-1',
     title: '偕楽園の梅（茨城）',
-    description: '梅林の線画。',
+    description: '梅林のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-kairakuen', 'gotochi', 'ぬりえ'],
@@ -30097,7 +30097,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-kashima-normal-1',
     title: '鹿島神宮（茨城）',
-    description: '鹿島神宮の鳥居の線画。',
+    description: '鹿島神宮の鳥居のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-kashima', 'gotochi', 'ぬりえ'],
@@ -30114,7 +30114,7 @@ const _materials4: Material[] = [
   {
     id: 'ibaraki-kochia-normal-1',
     title: 'コキア（茨城・ひたち海浜公園）',
-    description: '丘のコキアの線画。',
+    description: '丘のコキアのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ibaraki-kochia', 'gotochi', 'ぬりえ'],
@@ -30131,7 +30131,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-nikko-normal-1',
     title: '日光東照宮（栃木）',
-    description: '陽明門の線画。',
+    description: '陽明門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-nikko', 'gotochi', 'ぬりえ'],
@@ -30148,7 +30148,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-strawberry-normal-1',
     title: 'とちおとめ（栃木）',
-    description: 'とちおとめいちごの線画。',
+    description: 'とちおとめいちごのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-strawberry', 'gotochi', 'ぬりえ'],
@@ -30165,7 +30165,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-gyoza-normal-1',
     title: '宇都宮餃子（栃木）',
-    description: '宇都宮餃子の線画。',
+    description: '宇都宮餃子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-gyoza', 'gotochi', 'ぬりえ'],
@@ -30182,7 +30182,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-sanzaru-normal-1',
     title: '三猿（栃木・日光）',
-    description: '三猿の線画。',
+    description: '三猿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-sanzaru', 'gotochi', 'ぬりえ'],
@@ -30199,7 +30199,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-nasu-normal-1',
     title: '那須高原の牛（栃木）',
-    description: '那須高原のジャージー牛の線画。',
+    description: '那須高原のジャージー牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-nasu', 'gotochi', 'ぬりえ'],
@@ -30216,7 +30216,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-kegon-normal-1',
     title: '華厳の滝（栃木・日光）',
-    description: '華厳の滝の線画。',
+    description: '華厳の滝のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-kegon', 'gotochi', 'ぬりえ'],
@@ -30233,7 +30233,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-sl-normal-1',
     title: 'SL大樹（栃木・鬼怒川）',
-    description: '蒸気機関車SL大樹の線画。',
+    description: '蒸気機関車SL大樹のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-sl', 'gotochi', 'ぬりえ'],
@@ -30250,7 +30250,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-nikko-carving-normal-1',
     title: '日光彫り（栃木）',
-    description: '日光彫りの線画。',
+    description: '日光彫りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-nikko-carving', 'gotochi', 'ぬりえ'],
@@ -30267,7 +30267,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-kinugawa-normal-1',
     title: '鬼怒川温泉（栃木）',
-    description: '鬼怒川温泉の線画。',
+    description: '鬼怒川温泉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-kinugawa', 'gotochi', 'ぬりえ'],
@@ -30284,7 +30284,7 @@ const _materials4: Material[] = [
   {
     id: 'tochigi-wisteria-normal-1',
     title: '藤の花（栃木・あしかがフラワーパーク）',
-    description: '大藤棚の線画。',
+    description: '大藤棚のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tochigi-wisteria', 'gotochi', 'ぬりえ'],
@@ -30301,7 +30301,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-daruma-normal-1',
     title: '高崎だるま（群馬）',
-    description: '高崎だるまの線画。',
+    description: '高崎だるまのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-daruma', 'gotochi', 'ぬりえ'],
@@ -30318,7 +30318,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-kusatsu-normal-1',
     title: '草津温泉（群馬）',
-    description: '草津湯畑の線画。',
+    description: '草津湯畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-kusatsu', 'gotochi', 'ぬりえ'],
@@ -30335,7 +30335,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-yaki-manju-normal-1',
     title: '焼きまんじゅう（群馬）',
-    description: '焼きまんじゅうの串の線画。',
+    description: '焼きまんじゅうの串のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-yaki-manju', 'gotochi', 'ぬりえ'],
@@ -30352,7 +30352,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-konnyaku-normal-1',
     title: 'こんにゃく（群馬）',
-    description: 'こんにゃくの線画。',
+    description: 'こんにゃくのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-konnyaku', 'gotochi', 'ぬりえ'],
@@ -30369,7 +30369,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-silk-normal-1',
     title: '富岡製糸場（群馬）',
-    description: '富岡製糸場の線画。',
+    description: '富岡製糸場のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-silk', 'gotochi', 'ぬりえ'],
@@ -30386,7 +30386,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-akagi-normal-1',
     title: '赤城山（群馬）',
-    description: '赤城山の線画。',
+    description: '赤城山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-akagi', 'gotochi', 'ぬりえ'],
@@ -30403,7 +30403,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-isobe-normal-1',
     title: '磯部せんべい（群馬）',
-    description: '磯部せんべいの線画。',
+    description: '磯部せんべいのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-isobe', 'gotochi', 'ぬりえ'],
@@ -30420,7 +30420,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-minakami-normal-1',
     title: '水上温泉（群馬）',
-    description: '水上温泉の線画。',
+    description: '水上温泉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-minakami', 'gotochi', 'ぬりえ'],
@@ -30437,7 +30437,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-chan-normal-1',
     title: 'ぐんまちゃん（群馬）',
-    description: 'ぐんまちゃんの線画。',
+    description: 'ぐんまちゃんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-chan', 'gotochi', 'ぬりえ'],
@@ -30454,7 +30454,7 @@ const _materials4: Material[] = [
   {
     id: 'gunma-karuta-normal-1',
     title: '上毛かるた（群馬）',
-    description: '上毛かるた取りの線画。',
+    description: '上毛かるた取りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gunma-karuta', 'gotochi', 'ぬりえ'],
@@ -30471,7 +30471,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-kawagoe-normal-1',
     title: '川越の蔵造り（埼玉）',
-    description: '川越の蔵造り通りの線画。',
+    description: '川越の蔵造り通りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-kawagoe', 'gotochi', 'ぬりえ'],
@@ -30488,7 +30488,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-bell-normal-1',
     title: '時の鐘（埼玉・川越）',
-    description: '時の鐘の線画。',
+    description: '時の鐘のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-bell', 'gotochi', 'ぬりえ'],
@@ -30505,7 +30505,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-satsumaimo-normal-1',
     title: 'さつまいも菓子（埼玉・川越）',
-    description: '川越芋菓子の線画。',
+    description: '川越芋菓子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-satsumaimo', 'gotochi', 'ぬりえ'],
@@ -30522,7 +30522,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-chichibu-normal-1',
     title: '秩父夜祭（埼玉）',
-    description: '秩父夜祭の山車の線画。',
+    description: '秩父夜祭の山車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-chichibu', 'gotochi', 'ぬりえ'],
@@ -30539,7 +30539,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-oshi-normal-1',
     title: '忍城（埼玉・行田）',
-    description: '忍城三階櫓の線画。',
+    description: '忍城三階櫓のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-oshi', 'gotochi', 'ぬりえ'],
@@ -30556,7 +30556,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-unagi-normal-1',
     title: 'うなぎ（埼玉・浦和）',
-    description: '浦和うな重の線画。',
+    description: '浦和うな重のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-unagi', 'gotochi', 'ぬりえ'],
@@ -30573,7 +30573,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-zerifurai-normal-1',
     title: 'ゼリーフライ（埼玉・行田）',
-    description: 'ゼリーフライの線画。',
+    description: 'ゼリーフライのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-zerifurai', 'gotochi', 'ぬりえ'],
@@ -30590,7 +30590,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-negi-normal-1',
     title: '深谷ねぎ（埼玉）',
-    description: '深谷ねぎの線画。',
+    description: '深谷ねぎのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-negi', 'gotochi', 'ぬりえ'],
@@ -30607,7 +30607,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-kinchaku-normal-1',
     title: '曼珠沙華（埼玉・巾着田）',
-    description: '巾着田の彼岸花の線画。',
+    description: '巾着田の彼岸花のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-kinchaku', 'gotochi', 'ぬりえ'],
@@ -30678,7 +30678,7 @@ const _materials4: Material[] = [
   {
     id: 'railway-hakone-hydrangea-simple-1',
     title: '紫陽花と登山電車（やさしい）',
-    description: '紫陽花と登山電車の線画。',
+    description: '紫陽花と登山電車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -30750,7 +30750,7 @@ const _materials4: Material[] = [
   {
     id: 'railway-tram-nagasaki-simple-1',
     title: '長崎の路面電車（やさしい）',
-    description: '長崎の路面電車の線画。',
+    description: '長崎の路面電車のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -31398,7 +31398,7 @@ const _materials4: Material[] = [
   {
     id: 'railway-swiss-alps-simple-1',
     title: 'スイスアルプスの山岳鉄道',
-    description: '高架橋を渡る赤い山岳鉄道の線画。',
+    description: '高架橋を渡る赤い山岳鉄道のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'railway',
@@ -31434,7 +31434,7 @@ const _materials4: Material[] = [
   {
     id: 'railway-swiss-alps-normal-1',
     title: 'スイスアルプスの山岳鉄道',
-    description: 'ランドヴァッサー高架橋と山岳鉄道の線画。',
+    description: 'ランドヴァッサー高架橋と山岳鉄道のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'railway',
@@ -32118,7 +32118,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-oshogatsu-simple-1',
     title: 'お正月（やさしい）',
-    description: '門松としめ縄の線画。',
+    description: '門松としめ縄のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32136,7 +32136,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-oshogatsu-easy-1',
     title: 'お正月（ふつう）',
-    description: '鏡餅のあるお正月の線画。',
+    description: '鏡餅のあるお正月のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32154,7 +32154,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-oshogatsu-normal-1',
     title: 'お正月（こまかい）',
-    description: '初日の出のあるお正月の線画。',
+    description: '初日の出のあるお正月のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32190,7 +32190,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-setsubun-simple-1',
     title: '節分（やさしい）',
-    description: '鬼の面と豆の線画。',
+    description: '鬼の面と豆のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32208,7 +32208,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-setsubun-easy-1',
     title: '節分（ふつう）',
-    description: '恵方巻のある節分の線画。',
+    description: '恵方巻のある節分のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32226,7 +32226,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-setsubun-normal-1',
     title: '節分（こまかい）',
-    description: '玄関飾りのある節分の線画。',
+    description: '玄関飾りのある節分のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32262,7 +32262,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-natsu-matsuri-simple-1',
     title: '夏祭り（やさしい）',
-    description: '屋台と提灯の線画。',
+    description: '屋台と提灯のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32280,7 +32280,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-natsu-matsuri-easy-1',
     title: '夏祭り（ふつう）',
-    description: '浴衣姿のある夏祭りの線画。',
+    description: '浴衣姿のある夏祭りのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32298,7 +32298,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-natsu-matsuri-normal-1',
     title: '夏祭り（こまかい）',
-    description: '御神輿のある夏祭りの線画。',
+    description: '御神輿のある夏祭りのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32334,7 +32334,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-christmas-simple-1',
     title: 'クリスマス（やさしい）',
-    description: 'クリスマスツリーの線画。',
+    description: 'クリスマスツリーのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32370,7 +32370,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-christmas-normal-1',
     title: 'クリスマス（こまかい）',
-    description: '暖炉のあるクリスマスの線画。',
+    description: '暖炉のあるクリスマスのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32406,7 +32406,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-yukimi-simple-1',
     title: '雪見（やさしい）',
-    description: '雪景色と縁側の線画。',
+    description: '雪景色と縁側のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32424,7 +32424,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-yukimi-easy-1',
     title: '雪見（ふつう）',
-    description: '雪の庭と茶室の線画。',
+    description: '雪の庭と茶室のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32442,7 +32442,7 @@ const _materials4: Material[] = [
   {
     id: 'seasonal-adult-yukimi-normal-1',
     title: '雪見（こまかい）',
-    description: '雪吊りのある庭の線画。',
+    description: '雪吊りのある庭のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'seasonal-adult',
@@ -32496,7 +32496,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-provence-simple-1',
     title: 'プロヴァンスのラベンダー畑',
-    description: 'ラベンダー畑と農家の線画。',
+    description: 'ラベンダー畑と農家のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'landscape',
@@ -32532,7 +32532,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-provence-normal-1',
     title: 'プロヴァンスのラベンダー畑',
-    description: 'プロヴァンスのラベンダー畑の線画。',
+    description: 'プロヴァンスのラベンダー畑のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32604,7 +32604,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-norwegian-fjord-normal-1',
     title: 'ノルウェーのフィヨルド',
-    description: '滝のあるフィヨルドの線画。',
+    description: '滝のあるフィヨルドのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32640,7 +32640,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-scottish-highlands-simple-1',
     title: 'スコットランドの高地',
-    description: 'スコットランドの荒野の線画。',
+    description: 'スコットランドの荒野のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'landscape',
@@ -32658,7 +32658,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-scottish-highlands-easy-1',
     title: 'スコットランドの高地',
-    description: '湖のあるハイランドの線画。',
+    description: '湖のあるハイランドのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32676,7 +32676,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-scottish-highlands-normal-1',
     title: 'スコットランドの高地',
-    description: '古城のあるハイランドの線画。',
+    description: '古城のあるハイランドのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32712,7 +32712,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-moroccan-desert-simple-1',
     title: 'モロッコの砂漠',
-    description: '砂丘とラクダの線画。',
+    description: '砂丘とラクダのぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 2, duration: 20,
     category: 'adult-coloring', theme: 'landscape',
@@ -32730,7 +32730,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-moroccan-desert-easy-1',
     title: 'モロッコの砂漠',
-    description: '夕日の砂漠の線画。',
+    description: '夕日の砂漠のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 3, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32748,7 +32748,7 @@ const _materials4: Material[] = [
   {
     id: 'landscape-moroccan-desert-normal-1',
     title: 'モロッコの砂漠',
-    description: 'オアシスのある砂漠の線画。',
+    description: 'オアシスのある砂漠のぬりえ。',
     audience: 'adult',
     ageMin: 6, ageMax: 6, difficulty: 4, duration: 30,
     category: 'adult-coloring', theme: 'landscape',
@@ -32784,7 +32784,7 @@ const _materials4: Material[] = [
   {
     id: 'saitama-canoe-normal-1',
     title: '荒川のカヌー（埼玉）',
-    description: 'カヌーの線画。',
+    description: 'カヌーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saitama-canoe', 'gotochi', 'ぬりえ'],
@@ -32801,7 +32801,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-peanut-normal-1',
     title: '落花生（千葉）',
-    description: '千葉の落花生の線画。',
+    description: '千葉の落花生のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-peanut', 'gotochi', 'ぬりえ'],
@@ -32818,7 +32818,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-lighthouse-normal-1',
     title: '犬吠埼灯台（千葉）',
-    description: '犬吠埼灯台の線画。',
+    description: '犬吠埼灯台のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-lighthouse', 'gotochi', 'ぬりえ'],
@@ -32835,7 +32835,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-naritasan-normal-1',
     title: '成田山新勝寺（千葉）',
-    description: '成田山三重塔の線画。',
+    description: '成田山三重塔のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-naritasan', 'gotochi', 'ぬりえ'],
@@ -32852,7 +32852,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-loquat-normal-1',
     title: '房総のびわ（千葉）',
-    description: 'びわの実の線画。',
+    description: 'びわの実のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-loquat', 'gotochi', 'ぬりえ'],
@@ -32869,7 +32869,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-soysauce-normal-1',
     title: '銚子の醤油樽（千葉）',
-    description: '醤油樽の線画。',
+    description: '醤油樽のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-soysauce', 'gotochi', 'ぬりえ'],
@@ -32886,7 +32886,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-bonito-normal-1',
     title: '勝浦のカツオ（千葉）',
-    description: '勝浦のカツオの線画。',
+    description: '勝浦のカツオのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-bonito', 'gotochi', 'ぬりえ'],
@@ -32903,7 +32903,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-kujukuri-normal-1',
     title: '九十九里の波（千葉）',
-    description: '九十九里の波の線画。',
+    description: '九十九里の波のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-kujukuri', 'gotochi', 'ぬりえ'],
@@ -32920,7 +32920,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-nanohana-normal-1',
     title: '房総の菜の花（千葉）',
-    description: '菜の花畑の線画。',
+    description: '菜の花畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-nanohana', 'gotochi', 'ぬりえ'],
@@ -32937,7 +32937,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-train-normal-1',
     title: '銚子電鉄（千葉）',
-    description: '銚子電鉄の線画。',
+    description: '銚子電鉄のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-train', 'gotochi', 'ぬりえ'],
@@ -32954,7 +32954,7 @@ const _materials4: Material[] = [
   {
     id: 'chiba-hamaguri-normal-1',
     title: 'はまぐり（千葉・九十九里）',
-    description: '九十九里のはまぐりの線画。',
+    description: '九十九里のはまぐりのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['chiba-hamaguri', 'gotochi', 'ぬりえ'],
@@ -32971,7 +32971,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-tower-normal-1',
     title: '東京タワー（東京）',
-    description: '東京タワーの線画。',
+    description: '東京タワーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-tower', 'gotochi', 'ぬりえ'],
@@ -32988,7 +32988,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-skytree-normal-1',
     title: '東京スカイツリー（東京）',
-    description: 'スカイツリーの線画。',
+    description: 'スカイツリーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-skytree', 'gotochi', 'ぬりえ'],
@@ -33005,7 +33005,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-sensoji-normal-1',
     title: '浅草寺（東京）',
-    description: '雷門と提灯の線画。',
+    description: '雷門と提灯のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-sensoji', 'gotochi', 'ぬりえ'],
@@ -33022,7 +33022,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-rickshaw-normal-1',
     title: '人力車（東京・浅草）',
-    description: '人力車の線画。',
+    description: '人力車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-rickshaw', 'gotochi', 'ぬりえ'],
@@ -33039,7 +33039,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-sumo-normal-1',
     title: '相撲力士（東京・両国）',
-    description: '土俵の力士の線画。',
+    description: '土俵の力士のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-sumo', 'gotochi', 'ぬりえ'],
@@ -33056,7 +33056,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-monja-normal-1',
     title: 'もんじゃ焼き（東京・月島）',
-    description: 'もんじゃ焼きの線画。',
+    description: 'もんじゃ焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-monja', 'gotochi', 'ぬりえ'],
@@ -33073,7 +33073,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-hanami-normal-1',
     title: '上野の花見（東京）',
-    description: '上野公園の桜の線画。',
+    description: '上野公園の桜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-hanami', 'gotochi', 'ぬりえ'],
@@ -33090,7 +33090,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-station-normal-1',
     title: '東京駅赤レンガ駅舎（東京）',
-    description: '東京駅赤レンガ駅舎の線画。',
+    description: '東京駅赤レンガ駅舎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-station', 'gotochi', 'ぬりえ'],
@@ -33107,7 +33107,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-edo-castle-normal-1',
     title: '皇居（東京）',
-    description: '二重橋の線画。',
+    description: '二重橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-edo-castle', 'gotochi', 'ぬりえ'],
@@ -33124,7 +33124,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-mikoshi-normal-1',
     title: 'お神輿（東京・下町）',
-    description: 'お神輿の線画。',
+    description: 'お神輿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-mikoshi', 'gotochi', 'ぬりえ'],
@@ -33141,7 +33141,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-toden-normal-1',
     title: '都電荒川線（東京）',
-    description: '都電荒川線の線画。',
+    description: '都電荒川線のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-toden', 'gotochi', 'ぬりえ'],
@@ -33158,7 +33158,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-fukagawa-normal-1',
     title: '深川めし（東京）',
-    description: '深川めしの線画。',
+    description: '深川めしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-fukagawa', 'gotochi', 'ぬりえ'],
@@ -33175,7 +33175,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyo-kabuki-normal-1',
     title: '歌舞伎（東京）',
-    description: '歌舞伎役者の見得の線画。',
+    description: '歌舞伎役者の見得のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokyo-kabuki', 'gotochi', 'ぬりえ'],
@@ -33192,7 +33192,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-daibutsu-normal-1',
     title: '鎌倉大仏（神奈川）',
-    description: '鎌倉大仏の線画。',
+    description: '鎌倉大仏のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-daibutsu', 'gotochi', 'ぬりえ'],
@@ -33209,7 +33209,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-chinatown-normal-1',
     title: '横浜中華街（神奈川）',
-    description: '中華街の門の線画。',
+    description: '中華街の門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-chinatown', 'gotochi', 'ぬりえ'],
@@ -33226,7 +33226,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-kintoki-normal-1',
     title: '金太郎（神奈川・足柄山）',
-    description: '金太郎と熊の相撲の線画。',
+    description: '金太郎と熊の相撲のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-kintoki', 'gotochi', 'ぬりえ'],
@@ -33243,7 +33243,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-shumai-normal-1',
     title: '崎陽軒シウマイ（神奈川・横浜）',
-    description: '崎陽軒シウマイの線画。',
+    description: '崎陽軒シウマイのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-shumai', 'gotochi', 'ぬりえ'],
@@ -33260,7 +33260,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-akarenga-normal-1',
     title: '横浜赤レンガ倉庫（神奈川）',
-    description: '赤レンガ倉庫の線画。',
+    description: '赤レンガ倉庫のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-akarenga', 'gotochi', 'ぬりえ'],
@@ -33277,7 +33277,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-shonan-normal-1',
     title: '湘南サーフィン（神奈川）',
-    description: 'サーファーの線画。',
+    description: 'サーファーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-shonan', 'gotochi', 'ぬりえ'],
@@ -33294,7 +33294,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-tuna-normal-1',
     title: '三浦マグロ（神奈川・三崎）',
-    description: '三崎のマグロの線画。',
+    description: '三崎のマグロのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-tuna', 'gotochi', 'ぬりえ'],
@@ -33311,7 +33311,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-baybridge-normal-1',
     title: '横浜ベイブリッジ（神奈川）',
-    description: '横浜ベイブリッジの線画。',
+    description: '横浜ベイブリッジのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-baybridge', 'gotochi', 'ぬりえ'],
@@ -33328,7 +33328,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-hakone-normal-1',
     title: '箱根の関所（神奈川）',
-    description: '箱根関所と芦ノ湖の線画。',
+    description: '箱根関所と芦ノ湖のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-hakone', 'gotochi', 'ぬりえ'],
@@ -33345,7 +33345,7 @@ const _materials4: Material[] = [
   {
     id: 'kanagawa-enoshima-normal-1',
     title: '江の島灯台（神奈川）',
-    description: '江の島シーキャンドルの線画。',
+    description: '江の島シーキャンドルのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kanagawa-enoshima', 'gotochi', 'ぬりえ'],
@@ -33362,7 +33362,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-koi-normal-1',
     title: '錦鯉（新潟）',
-    description: '錦鯉の線画。',
+    description: '錦鯉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-koi', 'gotochi', 'ぬりえ'],
@@ -33379,7 +33379,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-toki-normal-1',
     title: 'トキ（新潟・佐渡）',
-    description: '朱鷺の線画。',
+    description: '朱鷺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-toki', 'gotochi', 'ぬりえ'],
@@ -33396,7 +33396,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-tarai-normal-1',
     title: 'たらい舟（新潟・佐渡）',
-    description: '佐渡のたらい舟の線画。',
+    description: '佐渡のたらい舟のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-tarai', 'gotochi', 'ぬりえ'],
@@ -33413,7 +33413,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-sasa-dango-normal-1',
     title: '笹団子（新潟）',
-    description: '笹団子の線画。',
+    description: '笹団子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-sasa-dango', 'gotochi', 'ぬりえ'],
@@ -33430,7 +33430,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-hegi-soba-normal-1',
     title: 'へぎそば（新潟）',
-    description: 'へぎそばの線画。',
+    description: 'へぎそばのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-hegi-soba', 'gotochi', 'ぬりえ'],
@@ -33447,7 +33447,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-snow-normal-1',
     title: '新潟の豪雪（新潟）',
-    description: '雪深い家の線画。',
+    description: '雪深い家のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-snow', 'gotochi', 'ぬりえ'],
@@ -33464,7 +33464,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-rice-normal-1',
     title: 'コシヒカリ（新潟・魚沼）',
-    description: '稲穂の線画。',
+    description: '稲穂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-rice', 'gotochi', 'ぬりえ'],
@@ -33481,7 +33481,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-gold-mine-normal-1',
     title: '佐渡金山（新潟）',
-    description: '道遊の割戸の線画。',
+    description: '道遊の割戸のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-gold-mine', 'gotochi', 'ぬりえ'],
@@ -33498,7 +33498,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-shishi-normal-1',
     title: '越後獅子（新潟）',
-    description: '越後獅子の線画。',
+    description: '越後獅子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-shishi', 'gotochi', 'ぬりえ'],
@@ -33515,7 +33515,7 @@ const _materials4: Material[] = [
   {
     id: 'niigata-sake-normal-1',
     title: '新潟の日本酒（新潟）',
-    description: '酒樽と徳利の線画。',
+    description: '酒樽と徳利のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['niigata-sake', 'gotochi', 'ぬりえ'],
@@ -33532,7 +33532,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-tulip-normal-1',
     title: 'チューリップ（富山・砺波）',
-    description: 'チューリップ畑の線画。',
+    description: 'チューリップ畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-tulip', 'gotochi', 'ぬりえ'],
@@ -33549,7 +33549,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-masuzushi-normal-1',
     title: 'ますのすし（富山）',
-    description: 'ますのすしの線画。',
+    description: 'ますのすしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-masuzushi', 'gotochi', 'ぬりえ'],
@@ -33566,7 +33566,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-tateyama-normal-1',
     title: '立山連峰（富山）',
-    description: '立山連峰の線画。',
+    description: '立山連峰のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-tateyama', 'gotochi', 'ぬりえ'],
@@ -33583,7 +33583,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-raicho-normal-1',
     title: '雷鳥（富山・立山）',
-    description: '立山の雷鳥の線画。',
+    description: '立山の雷鳥のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-raicho', 'gotochi', 'ぬりえ'],
@@ -33600,7 +33600,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-hotaru-ika-normal-1',
     title: 'ホタルイカ（富山）',
-    description: 'ホタルイカの線画。',
+    description: 'ホタルイカのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-hotaru-ika', 'gotochi', 'ぬりえ'],
@@ -33617,7 +33617,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-gassho-normal-1',
     title: '合掌造り（富山・南砺）',
-    description: '南砺の合掌造りの線画。',
+    description: '南砺の合掌造りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-gassho', 'gotochi', 'ぬりえ'],
@@ -33634,7 +33634,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-kusuri-normal-1',
     title: '越中富山の薬売り（富山）',
-    description: '薬売りの線画。',
+    description: '薬売りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-kusuri', 'gotochi', 'ぬりえ'],
@@ -33651,7 +33651,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-black-normal-1',
     title: '富山ブラック（富山）',
-    description: '富山ブラックの線画。',
+    description: '富山ブラックのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-black', 'gotochi', 'ぬりえ'],
@@ -33668,7 +33668,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-himi-buri-normal-1',
     title: '氷見の寒ブリ（富山）',
-    description: '氷見のブリの線画。',
+    description: '氷見のブリのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-himi-buri', 'gotochi', 'ぬりえ'],
@@ -33685,7 +33685,7 @@ const _materials4: Material[] = [
   {
     id: 'toyama-kurobe-normal-1',
     title: '黒部ダム（富山）',
-    description: '黒部ダムの放水の線画。',
+    description: '黒部ダムの放水のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['toyama-kurobe', 'gotochi', 'ぬりえ'],
@@ -33702,7 +33702,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-kenrokuen-normal-1',
     title: '兼六園（石川）',
-    description: '兼六園の灯籠の線画。',
+    description: '兼六園の灯籠のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-kenrokuen', 'gotochi', 'ぬりえ'],
@@ -33719,7 +33719,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-kinpaku-normal-1',
     title: '金箔（石川・金沢）',
-    description: '金箔貼りの線画。',
+    description: '金箔貼りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-kinpaku', 'gotochi', 'ぬりえ'],
@@ -33736,7 +33736,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-wajima-normal-1',
     title: '輪島塗（石川）',
-    description: '輪島塗のお椀の線画。',
+    description: '輪島塗のお椀のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-wajima', 'gotochi', 'ぬりえ'],
@@ -33753,7 +33753,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-kaga-yuzen-normal-1',
     title: '加賀友禅（石川）',
-    description: '加賀友禅の着物の線画。',
+    description: '加賀友禅の着物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-kaga-yuzen', 'gotochi', 'ぬりえ'],
@@ -33770,7 +33770,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-noto-shio-normal-1',
     title: '能登の塩田（石川）',
-    description: '揚浜式塩田の線画。',
+    description: '揚浜式塩田のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-noto-shio', 'gotochi', 'ぬりえ'],
@@ -33787,7 +33787,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-zuwai-normal-1',
     title: '加能ガニ（石川）',
-    description: 'ズワイガニの線画。',
+    description: 'ズワイガニのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-zuwai', 'gotochi', 'ぬりえ'],
@@ -33804,7 +33804,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-kutani-normal-1',
     title: '九谷焼（石川）',
-    description: '九谷焼の皿の線画。',
+    description: '九谷焼の皿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-kutani', 'gotochi', 'ぬりえ'],
@@ -33821,7 +33821,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-tsuzumi-normal-1',
     title: '金沢駅鼓門（石川）',
-    description: '鼓門の線画。',
+    description: '鼓門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-tsuzumi', 'gotochi', 'ぬりえ'],
@@ -33838,7 +33838,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-castle-normal-1',
     title: '金沢城（石川）',
-    description: '金沢城五十間長屋の線画。',
+    description: '金沢城五十間長屋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-castle', 'gotochi', 'ぬりえ'],
@@ -33855,7 +33855,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-asaichi-normal-1',
     title: '輪島朝市（石川）',
-    description: '輪島朝市の線画。',
+    description: '輪島朝市のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-asaichi', 'gotochi', 'ぬりえ'],
@@ -33872,7 +33872,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-jibuni-normal-1',
     title: '治部煮（石川・金沢）',
-    description: '治部煮の線画。',
+    description: '治部煮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-jibuni', 'gotochi', 'ぬりえ'],
@@ -33889,7 +33889,7 @@ const _materials4: Material[] = [
   {
     id: 'ishikawa-kaga-onsen-normal-1',
     title: '加賀温泉郷（石川）',
-    description: '加賀温泉旅館の線画。',
+    description: '加賀温泉旅館のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ishikawa-kaga-onsen', 'gotochi', 'ぬりえ'],
@@ -33906,7 +33906,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-dinosaur-normal-1',
     title: '福井の恐竜（福井）',
-    description: 'フクイラプトル骨格の線画。',
+    description: 'フクイラプトル骨格のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-dinosaur', 'gotochi', 'ぬりえ'],
@@ -33923,7 +33923,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-echizen-gani-normal-1',
     title: '越前がに（福井）',
-    description: '越前ガニの線画。',
+    description: '越前ガニのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-echizen-gani', 'gotochi', 'ぬりえ'],
@@ -33940,7 +33940,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-eiheiji-normal-1',
     title: '永平寺（福井）',
-    description: '永平寺山門の線画。',
+    description: '永平寺山門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-eiheiji', 'gotochi', 'ぬりえ'],
@@ -33957,7 +33957,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-washi-normal-1',
     title: '越前和紙（福井）',
-    description: '和紙漉きの線画。',
+    description: '和紙漉きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-washi', 'gotochi', 'ぬりえ'],
@@ -33974,7 +33974,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-glasses-normal-1',
     title: '鯖江の眼鏡（福井）',
-    description: '眼鏡の線画。',
+    description: '眼鏡のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-glasses', 'gotochi', 'ぬりえ'],
@@ -33991,7 +33991,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-mizuyokan-normal-1',
     title: '水ようかん（福井）',
-    description: '水ようかんの線画。',
+    description: '水ようかんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-mizuyokan', 'gotochi', 'ぬりえ'],
@@ -34008,7 +34008,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-tojinbo-normal-1',
     title: '東尋坊（福井）',
-    description: '東尋坊の断崖の線画。',
+    description: '東尋坊の断崖のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-tojinbo', 'gotochi', 'ぬりえ'],
@@ -34025,7 +34025,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-shikki-normal-1',
     title: '越前漆器（福井）',
-    description: '越前漆器の線画。',
+    description: '越前漆器のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-shikki', 'gotochi', 'ぬりえ'],
@@ -34042,7 +34042,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-wakasa-nuribashi-normal-1',
     title: '若狭塗箸（福井）',
-    description: '若狭塗箸の線画。',
+    description: '若狭塗箸のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-wakasa-nuribashi', 'gotochi', 'ぬりえ'],
@@ -34059,7 +34059,7 @@ const _materials4: Material[] = [
   {
     id: 'fukui-saba-kaido-normal-1',
     title: '鯖街道（福井・若狭）',
-    description: '鯖街道の行商人の線画。',
+    description: '鯖街道の行商人のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukui-saba-kaido', 'gotochi', 'ぬりえ'],
@@ -34076,7 +34076,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-fuji-normal-1',
     title: '富士山（山梨）',
-    description: '逆さ富士の線画。',
+    description: '逆さ富士のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-fuji', 'gotochi', 'ぬりえ'],
@@ -34093,7 +34093,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-grape-normal-1',
     title: '甲州ぶどう（山梨）',
-    description: 'ぶどうの房の線画。',
+    description: 'ぶどうの房のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-grape', 'gotochi', 'ぬりえ'],
@@ -34110,7 +34110,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-hoto-normal-1',
     title: 'ほうとう（山梨）',
-    description: 'ほうとう鍋の線画。',
+    description: 'ほうとう鍋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-hoto', 'gotochi', 'ぬりえ'],
@@ -34127,7 +34127,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-peach-normal-1',
     title: '山梨の桃（山梨）',
-    description: '山梨の桃の線画。',
+    description: '山梨の桃のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-peach', 'gotochi', 'ぬりえ'],
@@ -34144,7 +34144,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-shingen-normal-1',
     title: '信玄餅（山梨）',
-    description: '信玄餅の線画。',
+    description: '信玄餅のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-shingen', 'gotochi', 'ぬりえ'],
@@ -34161,7 +34161,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-wine-normal-1',
     title: '山梨ワイン（山梨）',
-    description: 'ワイン樽の線画。',
+    description: 'ワイン樽のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-wine', 'gotochi', 'ぬりえ'],
@@ -34178,7 +34178,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-katchu-normal-1',
     title: '武田信玄（山梨）',
-    description: '武田信玄の線画。',
+    description: '武田信玄のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-katchu', 'gotochi', 'ぬりえ'],
@@ -34195,7 +34195,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-shojiko-normal-1',
     title: '精進湖（山梨）',
-    description: '精進湖の逆さ富士の線画。',
+    description: '精進湖の逆さ富士のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-shojiko', 'gotochi', 'ぬりえ'],
@@ -34212,7 +34212,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-suisho-normal-1',
     title: '甲府水晶（山梨）',
-    description: '水晶クラスターの線画。',
+    description: '水晶クラスターのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-suisho', 'gotochi', 'ぬりえ'],
@@ -34229,7 +34229,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanashi-yoshida-udon-normal-1',
     title: '吉田のうどん（山梨）',
-    description: '吉田のうどんの線画。',
+    description: '吉田のうどんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamanashi-yoshida-udon', 'gotochi', 'ぬりえ'],
@@ -34246,7 +34246,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-soba-normal-1',
     title: '信州そば（長野）',
-    description: '信州ざるそばの線画。',
+    description: '信州ざるそばのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-soba', 'gotochi', 'ぬりえ'],
@@ -34263,7 +34263,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-zenkoji-normal-1',
     title: '善光寺（長野）',
-    description: '善光寺本堂の線画。',
+    description: '善光寺本堂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-zenkoji', 'gotochi', 'ぬりえ'],
@@ -34280,7 +34280,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-apple-normal-1',
     title: '信州りんご（長野）',
-    description: '信州りんごの木の線画。',
+    description: '信州りんごの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-apple', 'gotochi', 'ぬりえ'],
@@ -34297,7 +34297,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-nozawana-normal-1',
     title: '野沢菜漬け（長野）',
-    description: '野沢菜漬けの線画。',
+    description: '野沢菜漬けのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-nozawana', 'gotochi', 'ぬりえ'],
@@ -34314,7 +34314,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-matsumoto-castle-normal-1',
     title: '松本城（長野）',
-    description: '松本城の線画。',
+    description: '松本城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-matsumoto-castle', 'gotochi', 'ぬりえ'],
@@ -34331,7 +34331,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-ski-jump-normal-1',
     title: 'スキージャンプ（長野・白馬）',
-    description: 'ジャンパーの線画。',
+    description: 'ジャンパーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-ski-jump', 'gotochi', 'ぬりえ'],
@@ -34348,7 +34348,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-raicho-normal-1',
     title: '雷鳥（長野・北アルプス）',
-    description: '雷鳥の線画。',
+    description: '雷鳥のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-raicho', 'gotochi', 'ぬりえ'],
@@ -34365,7 +34365,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-wasabi-normal-1',
     title: 'わさび農場（長野・安曇野）',
-    description: 'わさび田と水車の線画。',
+    description: 'わさび田と水車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-wasabi', 'gotochi', 'ぬりえ'],
@@ -34382,7 +34382,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-kamikochi-normal-1',
     title: '上高地（長野）',
-    description: '上高地河童橋の線画。',
+    description: '上高地河童橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-kamikochi', 'gotochi', 'ぬりえ'],
@@ -34399,7 +34399,7 @@ const _materials4: Material[] = [
   {
     id: 'nagano-oyaki-normal-1',
     title: 'おやき（長野）',
-    description: 'おやきの線画。',
+    description: 'おやきのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagano-oyaki', 'gotochi', 'ぬりえ'],
@@ -34416,7 +34416,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-shirakawa-normal-1',
     title: '白川郷（岐阜）',
-    description: '白川郷の合掌造りの線画。',
+    description: '白川郷の合掌造りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-shirakawa', 'gotochi', 'ぬりえ'],
@@ -34433,7 +34433,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-ukai-normal-1',
     title: '鵜飼い（岐阜・長良川）',
-    description: '長良川の鵜飼いの線画。',
+    description: '長良川の鵜飼いのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-ukai', 'gotochi', 'ぬりえ'],
@@ -34450,7 +34450,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-takayama-normal-1',
     title: '飛騨高山（岐阜）',
-    description: '高山の古い町並みの線画。',
+    description: '高山の古い町並みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-takayama', 'gotochi', 'ぬりえ'],
@@ -34467,7 +34467,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-castle-normal-1',
     title: '岐阜城（岐阜）',
-    description: '金華山岐阜城の線画。',
+    description: '金華山岐阜城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-castle', 'gotochi', 'ぬりえ'],
@@ -34484,7 +34484,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-sarubobo-normal-1',
     title: 'さるぼぼ（岐阜・飛騨）',
-    description: 'さるぼぼの線画。',
+    description: 'さるぼぼのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-sarubobo', 'gotochi', 'ぬりえ'],
@@ -34501,7 +34501,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-hooba-normal-1',
     title: '朴葉味噌（岐阜・飛騨）',
-    description: '朴葉味噌の線画。',
+    description: '朴葉味噌のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-hooba', 'gotochi', 'ぬりえ'],
@@ -34518,7 +34518,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-mino-washi-normal-1',
     title: '美濃和紙（岐阜）',
-    description: '美濃和紙漉きの線画。',
+    description: '美濃和紙漉きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-mino-washi', 'gotochi', 'ぬりえ'],
@@ -34535,7 +34535,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-chochin-normal-1',
     title: '岐阜提灯（岐阜）',
-    description: '岐阜提灯の線画。',
+    description: '岐阜提灯のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-chochin', 'gotochi', 'ぬりえ'],
@@ -34552,7 +34552,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-gero-onsen-normal-1',
     title: '下呂温泉（岐阜）',
-    description: '下呂温泉の線画。',
+    description: '下呂温泉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-gero-onsen', 'gotochi', 'ぬりえ'],
@@ -34569,7 +34569,7 @@ const _materials4: Material[] = [
   {
     id: 'gifu-hida-beef-normal-1',
     title: '飛騨牛（岐阜）',
-    description: '高原の飛騨牛の線画。',
+    description: '高原の飛騨牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['gifu-hida-beef', 'gotochi', 'ぬりえ'],
@@ -34586,7 +34586,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-fuji-normal-1',
     title: '富士山（静岡）',
-    description: '三保松原から見る富士山の線画。',
+    description: '三保松原から見る富士山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-fuji', 'gotochi', 'ぬりえ'],
@@ -34603,7 +34603,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-tea-normal-1',
     title: '静岡のお茶（静岡）',
-    description: '茶摘みの線画。',
+    description: '茶摘みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-tea', 'gotochi', 'ぬりえ'],
@@ -34620,7 +34620,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-mikan-normal-1',
     title: '静岡みかん（静岡）',
-    description: 'みかんの木の線画。',
+    description: 'みかんの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-mikan', 'gotochi', 'ぬりえ'],
@@ -34637,7 +34637,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-unagi-normal-1',
     title: '浜松うなぎ（静岡）',
-    description: 'うな重の線画。',
+    description: 'うな重のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-unagi', 'gotochi', 'ぬりえ'],
@@ -34654,7 +34654,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-sakuraebi-normal-1',
     title: '由比の桜えび（静岡）',
-    description: '桜えびの天日干しの線画。',
+    description: '桜えびの天日干しのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-sakuraebi', 'gotochi', 'ぬりえ'],
@@ -34671,7 +34671,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-wasabi-normal-1',
     title: 'わさび田（静岡・有東木）',
-    description: 'わさび田の線画。',
+    description: 'わさび田のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-wasabi', 'gotochi', 'ぬりえ'],
@@ -34688,7 +34688,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-izu-onsen-normal-1',
     title: '伊豆の温泉（静岡）',
-    description: '伊豆の露天風呂の線画。',
+    description: '伊豆の露天風呂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-izu-onsen', 'gotochi', 'ぬりえ'],
@@ -34705,7 +34705,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-shirasu-normal-1',
     title: 'しらす丼（静岡・駿河湾）',
-    description: 'しらす丼の線画。',
+    description: 'しらす丼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-shirasu', 'gotochi', 'ぬりえ'],
@@ -34722,7 +34722,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-kuno-normal-1',
     title: '久能山東照宮（静岡）',
-    description: '久能山東照宮の線画。',
+    description: '久能山東照宮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-kuno', 'gotochi', 'ぬりえ'],
@@ -34739,7 +34739,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-hamamatsu-gyoza-normal-1',
     title: '浜松餃子（静岡）',
-    description: '浜松餃子の線画。',
+    description: '浜松餃子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-hamamatsu-gyoza', 'gotochi', 'ぬりえ'],
@@ -34756,7 +34756,7 @@ const _materials4: Material[] = [
   {
     id: 'shizuoka-oden-normal-1',
     title: '静岡おでん（静岡）',
-    description: '静岡おでんの線画。',
+    description: '静岡おでんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shizuoka-oden', 'gotochi', 'ぬりえ'],
@@ -34773,7 +34773,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-nagoya-castle-normal-1',
     title: '名古屋城（愛知）',
-    description: '名古屋城の線画。',
+    description: '名古屋城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-nagoya-castle', 'gotochi', 'ぬりえ'],
@@ -34790,7 +34790,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-shachihoko-normal-1',
     title: '金のしゃちほこ（愛知・名古屋）',
-    description: '金鯱の線画。',
+    description: '金鯱のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-shachihoko', 'gotochi', 'ぬりえ'],
@@ -34807,7 +34807,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-tebasaki-normal-1',
     title: '手羽先（愛知・名古屋）',
-    description: '手羽先唐揚げの線画。',
+    description: '手羽先唐揚げのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-tebasaki', 'gotochi', 'ぬりえ'],
@@ -34824,7 +34824,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-misokatsu-normal-1',
     title: 'みそかつ（愛知）',
-    description: 'みそかつの線画。',
+    description: 'みそかつのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-misokatsu', 'gotochi', 'ぬりえ'],
@@ -34841,7 +34841,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-uiro-normal-1',
     title: 'ういろう（愛知・名古屋）',
-    description: 'ういろうの線画。',
+    description: 'ういろうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-uiro', 'gotochi', 'ぬりえ'],
@@ -34858,7 +34858,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-shippo-normal-1',
     title: '七宝焼（愛知）',
-    description: '七宝焼の線画。',
+    description: '七宝焼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-shippo', 'gotochi', 'ぬりえ'],
@@ -34875,7 +34875,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-shinkansen-normal-1',
     title: '新幹線（愛知・浜松工場）',
-    description: '新幹線の線画。',
+    description: '新幹線のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-shinkansen', 'gotochi', 'ぬりえ'],
@@ -34892,7 +34892,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-toyota-normal-1',
     title: 'トヨタ自動車（愛知）',
-    description: '自動車の線画。',
+    description: '自動車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-toyota', 'gotochi', 'ぬりえ'],
@@ -34909,7 +34909,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-okazaki-hanabi-normal-1',
     title: '三河花火（愛知・岡崎）',
-    description: '三河花火の線画。',
+    description: '三河花火のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-okazaki-hanabi', 'gotochi', 'ぬりえ'],
@@ -34926,7 +34926,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-inuyama-normal-1',
     title: '犬山城（愛知）',
-    description: '犬山城の線画。',
+    description: '犬山城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-inuyama', 'gotochi', 'ぬりえ'],
@@ -34943,7 +34943,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-ogura-normal-1',
     title: '小倉トースト（愛知・名古屋）',
-    description: '小倉トーストの線画。',
+    description: '小倉トーストのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-ogura', 'gotochi', 'ぬりえ'],
@@ -34960,7 +34960,7 @@ const _materials4: Material[] = [
   {
     id: 'aichi-nobunaga-normal-1',
     title: '織田信長（愛知）',
-    description: '織田信長の線画。',
+    description: '織田信長のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['aichi-nobunaga', 'gotochi', 'ぬりえ'],
@@ -34977,7 +34977,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-ise-jingu-normal-1',
     title: '伊勢神宮（三重）',
-    description: '伊勢神宮の鳥居の線画。',
+    description: '伊勢神宮の鳥居のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-ise-jingu', 'gotochi', 'ぬりえ'],
@@ -34994,7 +34994,7 @@ const _materials4: Material[] = [
   {
     id: 'yamanote-e235-rich-1',
     title: '山手線E235系のたび',
-    description: '山手線E235系が走るにぎやかな沿線風景の線画。',
+    description: '山手線E235系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['yamanote-e235', 'でんしゃ', 'ぬりえ'],
@@ -35011,7 +35011,7 @@ const _materials4: Material[] = [
   {
     id: 'chuo-orange-rich-1',
     title: '中央線快速E233系のたび',
-    description: '中央線快速E233系が走るにぎやかな沿線風景の線画。',
+    description: '中央線快速E233系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['chuo-orange', 'でんしゃ', 'ぬりえ'],
@@ -35028,7 +35028,7 @@ const _materials4: Material[] = [
   {
     id: 'keikyu-rich-1',
     title: '京急2100形のたび',
-    description: '京急2100形が走るにぎやかな沿線風景の線画。',
+    description: '京急2100形が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['keikyu', 'でんしゃ', 'ぬりえ'],
@@ -35045,7 +35045,7 @@ const _materials4: Material[] = [
   {
     id: 'hankyu-rich-1',
     title: '阪急電車1000系のたび',
-    description: '阪急電車1000系が走るにぎやかな沿線風景の線画。',
+    description: '阪急電車1000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['hankyu', 'でんしゃ', 'ぬりえ'],
@@ -35062,7 +35062,7 @@ const _materials4: Material[] = [
   {
     id: 'keihan-rich-1',
     title: '京阪電車3000系のたび',
-    description: '京阪電車3000系が走るにぎやかな沿線風景の線画。',
+    description: '京阪電車3000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['keihan', 'でんしゃ', 'ぬりえ'],
@@ -35079,7 +35079,7 @@ const _materials4: Material[] = [
   {
     id: 'kintetsu-futsuu-rich-1',
     title: '近鉄通勤車5820系のたび',
-    description: '近鉄通勤車5820系が走るにぎやかな沿線風景の線画。',
+    description: '近鉄通勤車5820系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['kintetsu-futsuu', 'でんしゃ', 'ぬりえ'],
@@ -35096,7 +35096,7 @@ const _materials4: Material[] = [
   {
     id: 'seibu-yellow-rich-1',
     title: '西武電車2000系のたび',
-    description: '西武電車2000系が走るにぎやかな沿線風景の線画。',
+    description: '西武電車2000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['seibu-yellow', 'でんしゃ', 'ぬりえ'],
@@ -35113,7 +35113,7 @@ const _materials4: Material[] = [
   {
     id: 'tokyu-rich-1',
     title: '東急電車2020系のたび',
-    description: '東急電車2020系が走るにぎやかな沿線風景の線画。',
+    description: '東急電車2020系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['tokyu', 'でんしゃ', 'ぬりえ'],
@@ -35130,7 +35130,7 @@ const _materials4: Material[] = [
   {
     id: 'odakyu-futsuu-rich-1',
     title: '小田急電車3000形のたび',
-    description: '小田急電車3000形が走るにぎやかな沿線風景の線画。',
+    description: '小田急電車3000形が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['odakyu-futsuu', 'でんしゃ', 'ぬりえ'],
@@ -35147,7 +35147,7 @@ const _materials4: Material[] = [
   {
     id: 'tobu-rich-1',
     title: '東武電車50050系のたび',
-    description: '東武電車50050系が走るにぎやかな沿線風景の線画。',
+    description: '東武電車50050系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['tobu', 'でんしゃ', 'ぬりえ'],
@@ -35164,7 +35164,7 @@ const _materials4: Material[] = [
   {
     id: 'romancecar-gse-rich-1',
     title: 'ロマンスカーGSE70000形のたび',
-    description: 'ロマンスカーGSE70000形が走るにぎやかな沿線風景の線画。',
+    description: 'ロマンスカーGSE70000形が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['romancecar-gse', 'でんしゃ', 'ぬりえ'],
@@ -35181,7 +35181,7 @@ const _materials4: Material[] = [
   {
     id: 'romancecar-mse-rich-1',
     title: 'ロマンスカーMSE60000形のたび',
-    description: 'ロマンスカーMSE60000形が走るにぎやかな沿線風景の線画。',
+    description: 'ロマンスカーMSE60000形が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['romancecar-mse', 'でんしゃ', 'ぬりえ'],
@@ -35198,7 +35198,7 @@ const _materials4: Material[] = [
   {
     id: 'narita-express-rich-1',
     title: '成田エクスプレスE259系のたび',
-    description: '成田エクスプレスE259系が走るにぎやかな沿線風景の線画。',
+    description: '成田エクスプレスE259系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['narita-express', 'でんしゃ', 'ぬりえ'],
@@ -35215,7 +35215,7 @@ const _materials4: Material[] = [
   {
     id: 'safir-odoriko-rich-1',
     title: 'サフィール踊り子E261系のたび',
-    description: 'サフィール踊り子E261系が走るにぎやかな沿線風景の線画。',
+    description: 'サフィール踊り子E261系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['safir-odoriko', 'でんしゃ', 'ぬりえ'],
@@ -35232,7 +35232,7 @@ const _materials4: Material[] = [
   {
     id: 'lapit-rich-1',
     title: 'ラピート50000系のたび',
-    description: 'ラピート50000系が走るにぎやかな沿線風景の線画。',
+    description: 'ラピート50000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['lapit', 'でんしゃ', 'ぬりえ'],
@@ -35249,7 +35249,7 @@ const _materials4: Material[] = [
   {
     id: 'kintetsu-hinotori-rich-1',
     title: 'ひのとり80000系のたび',
-    description: 'ひのとり80000系が走るにぎやかな沿線風景の線画。',
+    description: 'ひのとり80000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['kintetsu-hinotori', 'でんしゃ', 'ぬりえ'],
@@ -35266,7 +35266,7 @@ const _materials4: Material[] = [
   {
     id: 'kintetsu-urban-rich-1',
     title: 'アーバンライナーplus21020系のたび',
-    description: 'アーバンライナーplus21020系が走るにぎやかな沿線風景の線画。',
+    description: 'アーバンライナーplus21020系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['kintetsu-urban', 'でんしゃ', 'ぬりえ'],
@@ -35283,7 +35283,7 @@ const _materials4: Material[] = [
   {
     id: 'sonic-885-rich-1',
     title: 'ソニック885系のたび',
-    description: 'ソニック885系が走るにぎやかな沿線風景の線画。',
+    description: 'ソニック885系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['sonic-885', 'でんしゃ', 'ぬりえ'],
@@ -35300,7 +35300,7 @@ const _materials4: Material[] = [
   {
     id: 'thunderbird-rich-1',
     title: 'サンダーバード683系のたび',
-    description: 'サンダーバード683系が走るにぎやかな沿線風景の線画。',
+    description: 'サンダーバード683系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['thunderbird', 'でんしゃ', 'ぬりえ'],
@@ -35317,7 +35317,7 @@ const _materials4: Material[] = [
   {
     id: 'azusa-e353-rich-1',
     title: 'あずさE353系のたび',
-    description: 'あずさE353系が走るにぎやかな沿線風景の線画。',
+    description: 'あずさE353系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['azusa-e353', 'でんしゃ', 'ぬりえ'],
@@ -35334,7 +35334,7 @@ const _materials4: Material[] = [
   {
     id: 'kuroshio-rich-1',
     title: 'くろしおHC85系のたび',
-    description: 'くろしおHC85系が走るにぎやかな沿線風景の線画。',
+    description: 'くろしおHC85系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['kuroshio', 'でんしゃ', 'ぬりえ'],
@@ -35351,7 +35351,7 @@ const _materials4: Material[] = [
   {
     id: 'fuji-excursion-rich-1',
     title: '富士回遊E353系のたび',
-    description: '富士回遊E353系が走るにぎやかな沿線風景の線画。',
+    description: '富士回遊E353系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['fuji-excursion', 'でんしゃ', 'ぬりえ'],
@@ -35368,7 +35368,7 @@ const _materials4: Material[] = [
   {
     id: 'anpanman-train-rich-1',
     title: 'アンパンマン列車のたび',
-    description: 'アンパンマン列車が走るにぎやかな沿線風景の線画。',
+    description: 'アンパンマン列車が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['anpanman-train', 'でんしゃ', 'ぬりえ'],
@@ -35385,7 +35385,7 @@ const _materials4: Material[] = [
   {
     id: 'thomas-train-rich-1',
     title: 'きかんしゃトーマス号がきたよ',
-    description: '駅に入るきかんしゃトーマス号と子どもたちの線画。',
+    description: '駅に入るきかんしゃトーマス号と子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['thomas-train', 'でんしゃ', 'ぬりえ'],
@@ -35402,7 +35402,7 @@ const _materials4: Material[] = [
   {
     id: 'exe-alpha-rich-1',
     title: 'EXEα 30000形のたび',
-    description: 'EXEα 30000形が走るにぎやかな沿線風景の線画。',
+    description: 'EXEα 30000形が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['exe-alpha', 'でんしゃ', 'ぬりえ'],
@@ -35419,7 +35419,7 @@ const _materials4: Material[] = [
   {
     id: 'kintetsu-vista-rich-1',
     title: 'ビスタEX 30000系のたび',
-    description: 'ビスタEX 30000系が走るにぎやかな沿線風景の線画。',
+    description: 'ビスタEX 30000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['kintetsu-vista', 'でんしゃ', 'ぬりえ'],
@@ -35436,7 +35436,7 @@ const _materials4: Material[] = [
   {
     id: 'yakumo-273-rich-1',
     title: 'やくも273系のたび',
-    description: 'やくも273系が走るにぎやかな沿線風景の線画。',
+    description: 'やくも273系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['yakumo-273', 'でんしゃ', 'ぬりえ'],
@@ -35453,7 +35453,7 @@ const _materials4: Material[] = [
   {
     id: 'izukyu-resort21-rich-1',
     title: 'リゾート21のたび',
-    description: 'リゾート21が走るにぎやかな沿線風景の線画。',
+    description: 'リゾート21が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['izukyu-resort21', 'でんしゃ', 'ぬりえ'],
@@ -35470,7 +35470,7 @@ const _materials4: Material[] = [
   {
     id: 'keio-liner-rich-1',
     title: '京王ライナー5000系のたび',
-    description: '京王ライナー5000系が走るにぎやかな沿線風景の線画。',
+    description: '京王ライナー5000系が走るにぎやかな沿線風景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'densha',
     tags: ['keio-liner', 'でんしゃ', 'ぬりえ'],
@@ -35487,7 +35487,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-ise-ebi-normal-1',
     title: '伊勢えび（三重）',
-    description: '伊勢えびの線画。',
+    description: '伊勢えびのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-ise-ebi', 'gotochi', 'ぬりえ'],
@@ -35504,7 +35504,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-pearl-normal-1',
     title: '真珠貝（三重・英虞湾）',
-    description: '真珠貝の線画。',
+    description: '真珠貝のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-pearl', 'gotochi', 'ぬりえ'],
@@ -35521,7 +35521,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-akafuku-normal-1',
     title: '赤福餅（三重）',
-    description: '赤福餅の線画。',
+    description: '赤福餅のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-akafuku', 'gotochi', 'ぬりえ'],
@@ -35538,7 +35538,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-iga-ninja-normal-1',
     title: '伊賀忍者（三重）',
-    description: '伊賀忍者の線画。',
+    description: '伊賀忍者のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-iga-ninja', 'gotochi', 'ぬりえ'],
@@ -35555,7 +35555,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-matsusaka-normal-1',
     title: '松阪牛（三重）',
-    description: '松阪牛の線画。',
+    description: '松阪牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-matsusaka', 'gotochi', 'ぬりえ'],
@@ -35572,7 +35572,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-tekone-normal-1',
     title: 'てこね寿司（三重・志摩）',
-    description: 'てこね寿司の線画。',
+    description: 'てこね寿司のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-tekone', 'gotochi', 'ぬりえ'],
@@ -35589,7 +35589,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-meoto-iwa-normal-1',
     title: '夫婦岩（三重・二見浦）',
-    description: '夫婦岩の線画。',
+    description: '夫婦岩のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-meoto-iwa', 'gotochi', 'ぬりえ'],
@@ -35606,7 +35606,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-kumano-normal-1',
     title: '熊野古道（三重）',
-    description: '熊野古道の石畳の線画。',
+    description: '熊野古道の石畳のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-kumano', 'gotochi', 'ぬりえ'],
@@ -35623,7 +35623,7 @@ const _materials4: Material[] = [
   {
     id: 'mie-ise-udon-normal-1',
     title: '伊勢うどん（三重）',
-    description: '伊勢うどんの線画。',
+    description: '伊勢うどんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['mie-ise-udon', 'gotochi', 'ぬりえ'],
@@ -35640,7 +35640,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-biwako-normal-1',
     title: '琵琶湖（滋賀）',
-    description: '琵琶湖の線画。',
+    description: '琵琶湖のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-biwako', 'gotochi', 'ぬりえ'],
@@ -35657,7 +35657,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-hikone-normal-1',
     title: '彦根城（滋賀）',
-    description: '彦根城天守の線画。',
+    description: '彦根城天守のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-hikone', 'gotochi', 'ぬりえ'],
@@ -35674,7 +35674,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-hikonyan-normal-1',
     title: 'ひこにゃん（滋賀）',
-    description: 'ひこにゃんの線画。',
+    description: 'ひこにゃんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-hikonyan', 'gotochi', 'ぬりえ'],
@@ -35691,7 +35691,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-omi-beef-normal-1',
     title: '近江牛（滋賀）',
-    description: '近江牛の線画。',
+    description: '近江牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-omi-beef', 'gotochi', 'ぬりえ'],
@@ -35708,7 +35708,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-funa-zushi-normal-1',
     title: '鮒ずし（滋賀）',
-    description: '鮒ずしの線画。',
+    description: '鮒ずしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-funa-zushi', 'gotochi', 'ぬりえ'],
@@ -35725,7 +35725,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-shigaraki-tanuki-normal-1',
     title: '信楽たぬき（滋賀・信楽）',
-    description: '信楽たぬきの線画。',
+    description: '信楽たぬきのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-shigaraki-tanuki', 'gotochi', 'ぬりえ'],
@@ -35742,7 +35742,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-hiei-normal-1',
     title: '比叡山延暦寺（滋賀）',
-    description: '延暦寺根本中堂の線画。',
+    description: '延暦寺根本中堂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-hiei', 'gotochi', 'ぬりえ'],
@@ -35759,7 +35759,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-omi-shonin-normal-1',
     title: '近江商人（滋賀）',
-    description: '近江商人の線画。',
+    description: '近江商人のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-omi-shonin', 'gotochi', 'ぬりえ'],
@@ -35776,7 +35776,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-ukimi-do-normal-1',
     title: '浮御堂（滋賀・堅田）',
-    description: '浮御堂の線画。',
+    description: '浮御堂のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-ukimi-do', 'gotochi', 'ぬりえ'],
@@ -35793,7 +35793,7 @@ const _materials4: Material[] = [
   {
     id: 'shiga-omi-asa-normal-1',
     title: '近江麻（滋賀）',
-    description: '近江麻の反物の線画。',
+    description: '近江麻の反物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shiga-omi-asa', 'gotochi', 'ぬりえ'],
@@ -35810,7 +35810,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-maiko-normal-1',
     title: '舞妓（京都）',
-    description: '京都の舞妓の線画。',
+    description: '京都の舞妓のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-maiko', 'gotochi', 'ぬりえ'],
@@ -35827,7 +35827,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-kinkakuji-normal-1',
     title: '金閣寺（京都）',
-    description: '金閣寺の線画。',
+    description: '金閣寺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-kinkakuji', 'gotochi', 'ぬりえ'],
@@ -35844,7 +35844,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-toji-pagoda-normal-1',
     title: '東寺五重塔（京都）',
-    description: '東寺五重塔の線画。',
+    description: '東寺五重塔のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-toji-pagoda', 'gotochi', 'ぬりえ'],
@@ -35861,7 +35861,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-matcha-normal-1',
     title: '抹茶（京都・宇治）',
-    description: '抹茶と茶筅の線画。',
+    description: '抹茶と茶筅のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-matcha', 'gotochi', 'ぬりえ'],
@@ -35878,7 +35878,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-yatsuhashi-normal-1',
     title: '八つ橋（京都）',
-    description: '生八つ橋の線画。',
+    description: '生八つ橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-yatsuhashi', 'gotochi', 'ぬりえ'],
@@ -35895,7 +35895,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-gion-yamahoko-normal-1',
     title: '祇園祭の山鉾（京都）',
-    description: '山鉾巡行の線画。',
+    description: '山鉾巡行のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-gion-yamahoko', 'gotochi', 'ぬりえ'],
@@ -35912,7 +35912,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-arashiyama-bamboo-normal-1',
     title: '嵐山の竹林（京都）',
-    description: '嵐山竹林の線画。',
+    description: '嵐山竹林のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-arashiyama-bamboo', 'gotochi', 'ぬりえ'],
@@ -35929,7 +35929,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-fushimi-inari-normal-1',
     title: '伏見稲荷千本鳥居（京都）',
-    description: '千本鳥居の線画。',
+    description: '千本鳥居のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-fushimi-inari', 'gotochi', 'ぬりえ'],
@@ -35946,7 +35946,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-nishijin-normal-1',
     title: '西陣織（京都）',
-    description: '西陣織の帯の線画。',
+    description: '西陣織の帯のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-nishijin', 'gotochi', 'ぬりえ'],
@@ -35963,7 +35963,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-kyoyasai-normal-1',
     title: '京野菜（京都）',
-    description: '京野菜の線画。',
+    description: '京野菜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-kyoyasai', 'gotochi', 'ぬりえ'],
@@ -35980,7 +35980,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-daimonji-normal-1',
     title: '五山送り火（京都）',
-    description: '大文字焼の線画。',
+    description: '大文字焼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-daimonji', 'gotochi', 'ぬりえ'],
@@ -35997,7 +35997,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-tetsugaku-normal-1',
     title: '哲学の道の桜（京都）',
-    description: '哲学の道桜並木の線画。',
+    description: '哲学の道桜並木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-tetsugaku', 'gotochi', 'ぬりえ'],
@@ -36014,7 +36014,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-nijo-castle-normal-1',
     title: '二条城（京都）',
-    description: '二条城唐門の線画。',
+    description: '二条城唐門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-nijo-castle', 'gotochi', 'ぬりえ'],
@@ -36031,7 +36031,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-sado-normal-1',
     title: '茶道（京都）',
-    description: '茶道のお点前の線画。',
+    description: '茶道のお点前のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-sado', 'gotochi', 'ぬりえ'],
@@ -36048,7 +36048,7 @@ const _materials4: Material[] = [
   {
     id: 'kyoto-jizo-normal-1',
     title: '京都のお地蔵様（京都）',
-    description: '京都のお地蔵様の線画。',
+    description: '京都のお地蔵様のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kyoto-jizo', 'gotochi', 'ぬりえ'],
@@ -36065,7 +36065,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-takoyaki-normal-1',
     title: 'たこ焼き（大阪）',
-    description: 'たこ焼きの線画。',
+    description: 'たこ焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-takoyaki', 'gotochi', 'ぬりえ'],
@@ -36082,7 +36082,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-tsutenkaku-normal-1',
     title: '通天閣（大阪・新世界）',
-    description: '通天閣の線画。',
+    description: '通天閣のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-tsutenkaku', 'gotochi', 'ぬりえ'],
@@ -36099,7 +36099,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-kuidaore-normal-1',
     title: 'くいだおれ太郎（大阪・道頓堀）',
-    description: 'くいだおれ太郎の線画。',
+    description: 'くいだおれ太郎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-kuidaore', 'gotochi', 'ぬりえ'],
@@ -36116,7 +36116,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-okonomiyaki-normal-1',
     title: 'お好み焼き（大阪）',
-    description: '大阪お好み焼きの線画。',
+    description: '大阪お好み焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-okonomiyaki', 'gotochi', 'ぬりえ'],
@@ -36133,7 +36133,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-castle-normal-1',
     title: '大阪城（大阪）',
-    description: '大阪城天守閣の線画。',
+    description: '大阪城天守閣のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-castle', 'gotochi', 'ぬりえ'],
@@ -36150,7 +36150,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-551-normal-1',
     title: '豚まん（大阪・551）',
-    description: '豚まんの線画。',
+    description: '豚まんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-551', 'gotochi', 'ぬりえ'],
@@ -36167,7 +36167,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-glico-normal-1',
     title: 'グリコ看板（大阪・道頓堀）',
-    description: '道頓堀グリコ看板の線画。',
+    description: '道頓堀グリコ看板のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-glico', 'gotochi', 'ぬりえ'],
@@ -36184,7 +36184,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-kushikatsu-normal-1',
     title: '串カツ（大阪・新世界）',
-    description: '串カツの線画。',
+    description: '串カツのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-kushikatsu', 'gotochi', 'ぬりえ'],
@@ -36201,7 +36201,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-danjiri-normal-1',
     title: '岸和田だんじり祭（大阪）',
-    description: 'だんじりの線画。',
+    description: 'だんじりのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-danjiri', 'gotochi', 'ぬりえ'],
@@ -36218,7 +36218,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-sumiyoshi-normal-1',
     title: '住吉大社（大阪）',
-    description: '住吉大社太鼓橋の線画。',
+    description: '住吉大社太鼓橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-sumiyoshi', 'gotochi', 'ぬりえ'],
@@ -36235,7 +36235,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-tsuruhashi-normal-1',
     title: '鶴橋の焼肉（大阪）',
-    description: '鶴橋焼肉の線画。',
+    description: '鶴橋焼肉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-tsuruhashi', 'gotochi', 'ぬりえ'],
@@ -36252,7 +36252,7 @@ const _materials4: Material[] = [
   {
     id: 'osaka-mizunasu-normal-1',
     title: '水なす（大阪・泉州）',
-    description: '水なすの線画。',
+    description: '水なすのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['osaka-mizunasu', 'gotochi', 'ぬりえ'],
@@ -36269,7 +36269,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-himeji-castle-normal-1',
     title: '姫路城（兵庫）',
-    description: '姫路城白鷺城の線画。',
+    description: '姫路城白鷺城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-himeji-castle', 'gotochi', 'ぬりえ'],
@@ -36286,7 +36286,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-kobe-beef-normal-1',
     title: '神戸牛（兵庫）',
-    description: '神戸牛の線画。',
+    description: '神戸牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-kobe-beef', 'gotochi', 'ぬりえ'],
@@ -36303,7 +36303,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-akashiyaki-normal-1',
     title: '明石焼き（兵庫・明石）',
-    description: '明石焼きの線画。',
+    description: '明石焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-akashiyaki', 'gotochi', 'ぬりえ'],
@@ -36320,7 +36320,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-arima-normal-1',
     title: '有馬温泉（兵庫）',
-    description: '有馬温泉街の線画。',
+    description: '有馬温泉街のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-arima', 'gotochi', 'ぬりえ'],
@@ -36337,7 +36337,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-nada-sake-normal-1',
     title: '灘の日本酒（兵庫）',
-    description: '灘の酒蔵の線画。',
+    description: '灘の酒蔵のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-nada-sake', 'gotochi', 'ぬりえ'],
@@ -36354,7 +36354,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-port-tower-normal-1',
     title: '神戸ポートタワー（兵庫）',
-    description: '神戸ポートタワーの線画。',
+    description: '神戸ポートタワーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-port-tower', 'gotochi', 'ぬりえ'],
@@ -36371,7 +36371,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-awaji-onion-normal-1',
     title: '淡路島の玉ねぎ（兵庫）',
-    description: '淡路玉ねぎの線画。',
+    description: '淡路玉ねぎのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-awaji-onion', 'gotochi', 'ぬりえ'],
@@ -36388,7 +36388,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-kitano-normal-1',
     title: '神戸北野異人館（兵庫）',
-    description: '風見鶏の館の線画。',
+    description: '風見鶏の館のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-kitano', 'gotochi', 'ぬりえ'],
@@ -36405,7 +36405,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-tanba-mame-normal-1',
     title: '丹波黒豆（兵庫）',
-    description: '丹波黒豆の線画。',
+    description: '丹波黒豆のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-tanba-mame', 'gotochi', 'ぬりえ'],
@@ -36422,7 +36422,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-yakei-normal-1',
     title: '神戸の夜景（兵庫・摩耶山）',
-    description: '神戸の夜景の線画。',
+    description: '神戸の夜景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-yakei', 'gotochi', 'ぬりえ'],
@@ -36439,7 +36439,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-bokkake-normal-1',
     title: 'ぼっかけ（兵庫・神戸）',
-    description: 'ぼっかけの線画。',
+    description: 'ぼっかけのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-bokkake', 'gotochi', 'ぬりえ'],
@@ -36456,7 +36456,7 @@ const _materials4: Material[] = [
   {
     id: 'hyogo-ikuta-normal-1',
     title: '生田神社（兵庫・神戸）',
-    description: '生田神社の線画。',
+    description: '生田神社のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hyogo-ikuta', 'gotochi', 'ぬりえ'],
@@ -36473,7 +36473,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-deer-normal-1',
     title: '奈良の鹿（奈良）',
-    description: '奈良公園の鹿の線画。',
+    description: '奈良公園の鹿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-deer', 'gotochi', 'ぬりえ'],
@@ -36490,7 +36490,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-daibutsu-normal-1',
     title: '奈良の大仏（奈良・東大寺）',
-    description: '奈良の大仏様の線画。',
+    description: '奈良の大仏様のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-daibutsu', 'gotochi', 'ぬりえ'],
@@ -36507,7 +36507,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-kasuga-toro-normal-1',
     title: '春日大社の燈籠（奈良）',
-    description: '春日大社釣燈籠の線画。',
+    description: '春日大社釣燈籠のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-kasuga-toro', 'gotochi', 'ぬりえ'],
@@ -36524,7 +36524,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-kakinoha-sushi-normal-1',
     title: '柿の葉寿司（奈良）',
-    description: '柿の葉寿司の線画。',
+    description: '柿の葉寿司のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-kakinoha-sushi', 'gotochi', 'ぬりえ'],
@@ -36541,7 +36541,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-miwa-somen-normal-1',
     title: '三輪そうめん（奈良）',
-    description: '三輪そうめんの線画。',
+    description: '三輪そうめんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-miwa-somen', 'gotochi', 'ぬりえ'],
@@ -36558,7 +36558,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-yoshino-sakura-normal-1',
     title: '吉野の千本桜（奈良）',
-    description: '吉野山の桜の線画。',
+    description: '吉野山の桜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-yoshino-sakura', 'gotochi', 'ぬりえ'],
@@ -36575,7 +36575,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-shosoin-normal-1',
     title: '正倉院（奈良）',
-    description: '正倉院校倉造りの線画。',
+    description: '正倉院校倉造りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-shosoin', 'gotochi', 'ぬりえ'],
@@ -36592,7 +36592,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-yamayaki-normal-1',
     title: '若草山の山焼き（奈良）',
-    description: '若草山山焼きの線画。',
+    description: '若草山山焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-yamayaki', 'gotochi', 'ぬりえ'],
@@ -36609,7 +36609,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-horyuji-normal-1',
     title: '法隆寺（奈良）',
-    description: '法隆寺五重塔の線画。',
+    description: '法隆寺五重塔のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-horyuji', 'gotochi', 'ぬりえ'],
@@ -36626,7 +36626,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-asuka-ishi-normal-1',
     title: '石舞台古墳（奈良・飛鳥）',
-    description: '石舞台古墳の線画。',
+    description: '石舞台古墳のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-asuka-ishi', 'gotochi', 'ぬりえ'],
@@ -36643,7 +36643,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-yamato-cha-normal-1',
     title: '大和茶（奈良）',
-    description: '大和茶畑の線画。',
+    description: '大和茶畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-yamato-cha', 'gotochi', 'ぬりえ'],
@@ -36660,7 +36660,7 @@ const _materials4: Material[] = [
   {
     id: 'nara-mimuro-normal-1',
     title: 'みむろ最中（奈良）',
-    description: 'みむろ最中の線画。',
+    description: 'みむろ最中のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nara-mimuro', 'gotochi', 'ぬりえ'],
@@ -36677,7 +36677,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-mikan-normal-1',
     title: '有田みかん（和歌山）',
-    description: 'みかんの木の線画。',
+    description: 'みかんの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-mikan', 'gotochi', 'ぬりえ'],
@@ -36694,7 +36694,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-kumano-kodo-normal-1',
     title: '熊野古道（和歌山）',
-    description: '熊野古道の線画。',
+    description: '熊野古道のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-kumano-kodo', 'gotochi', 'ぬりえ'],
@@ -36711,7 +36711,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-nachi-falls-normal-1',
     title: '那智の滝（和歌山）',
-    description: '那智の滝の線画。',
+    description: '那智の滝のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-nachi-falls', 'gotochi', 'ぬりえ'],
@@ -36728,7 +36728,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-ume-normal-1',
     title: '南高梅（和歌山・みなべ）',
-    description: '梅の花の線画。',
+    description: '梅の花のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-ume', 'gotochi', 'ぬりえ'],
@@ -36745,7 +36745,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-maguro-normal-1',
     title: 'クロマグロ（和歌山・那智勝浦）',
-    description: 'クロマグロの線画。',
+    description: 'クロマグロのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-maguro', 'gotochi', 'ぬりえ'],
@@ -36762,7 +36762,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-jabara-normal-1',
     title: 'じゃばら（和歌山・北山村）',
-    description: 'じゃばらの実の線画。',
+    description: 'じゃばらの実のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-jabara', 'gotochi', 'ぬりえ'],
@@ -36779,7 +36779,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-koyasan-normal-1',
     title: '高野山（和歌山）',
-    description: '高野山金剛峯寺の線画。',
+    description: '高野山金剛峯寺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-koyasan', 'gotochi', 'ぬりえ'],
@@ -36796,7 +36796,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-ramen-normal-1',
     title: '和歌山ラーメン（和歌山）',
-    description: '和歌山ラーメンの線画。',
+    description: '和歌山ラーメンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-ramen', 'gotochi', 'ぬりえ'],
@@ -36813,7 +36813,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-shirahama-normal-1',
     title: '白浜（和歌山）',
-    description: '白浜の砂浜の線画。',
+    description: '白浜の砂浜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-shirahama', 'gotochi', 'ぬりえ'],
@@ -36830,7 +36830,7 @@ const _materials4: Material[] = [
   {
     id: 'wakayama-panda-normal-1',
     title: 'パンダ（和歌山・白浜）',
-    description: 'パンダの線画。',
+    description: 'パンダのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['wakayama-panda', 'gotochi', 'ぬりえ'],
@@ -36847,7 +36847,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-sand-dune-normal-1',
     title: '鳥取砂丘（鳥取）',
-    description: '鳥取砂丘の線画。',
+    description: '鳥取砂丘のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-sand-dune', 'gotochi', 'ぬりえ'],
@@ -36864,7 +36864,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-camel-normal-1',
     title: '砂丘のらくだ（鳥取）',
-    description: 'ラクダの線画。',
+    description: 'ラクダのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-camel', 'gotochi', 'ぬりえ'],
@@ -36881,7 +36881,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-zuwai-normal-1',
     title: '松葉ガニ（鳥取）',
-    description: '松葉ガニの線画。',
+    description: '松葉ガニのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-zuwai', 'gotochi', 'ぬりえ'],
@@ -36898,7 +36898,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-nashi-normal-1',
     title: '二十世紀梨（鳥取）',
-    description: '二十世紀梨の線画。',
+    description: '二十世紀梨のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-nashi', 'gotochi', 'ぬりえ'],
@@ -36915,7 +36915,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-daisen-normal-1',
     title: '大山（鳥取）',
-    description: '大山の線画。',
+    description: '大山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-daisen', 'gotochi', 'ぬりえ'],
@@ -36932,7 +36932,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-yokai-normal-1',
     title: '妖怪（鳥取・境港）',
-    description: '鬼太郎と妖怪の線画。',
+    description: '鬼太郎と妖怪のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-yokai', 'gotochi', 'ぬりえ'],
@@ -36949,7 +36949,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-sand-museum-normal-1',
     title: '砂の美術館（鳥取）',
-    description: '砂像の線画。',
+    description: '砂像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-sand-museum', 'gotochi', 'ぬりえ'],
@@ -36966,7 +36966,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-inaba-usagi-normal-1',
     title: '因幡の白兎（鳥取）',
-    description: '因幡の白兎の線画。',
+    description: '因幡の白兎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-inaba-usagi', 'gotochi', 'ぬりえ'],
@@ -36983,7 +36983,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-shirobara-normal-1',
     title: '白バラ牛乳（鳥取）',
-    description: '白バラ牛乳の瓶の線画。',
+    description: '白バラ牛乳の瓶のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-shirobara', 'gotochi', 'ぬりえ'],
@@ -37000,7 +37000,7 @@ const _materials4: Material[] = [
   {
     id: 'tottori-rakkyo-normal-1',
     title: 'らっきょう（鳥取）',
-    description: 'らっきょうの花の線画。',
+    description: 'らっきょうの花のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tottori-rakkyo', 'gotochi', 'ぬりえ'],
@@ -37017,7 +37017,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-izumo-taisha-normal-1',
     title: '出雲大社（島根）',
-    description: '出雲大社の大注連縄の線画。',
+    description: '出雲大社の大注連縄のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-izumo-taisha', 'gotochi', 'ぬりえ'],
@@ -37034,7 +37034,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-shijimi-normal-1',
     title: '宍道湖のしじみ（島根）',
-    description: 'しじみの線画。',
+    description: 'しじみのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-shijimi', 'gotochi', 'ぬりえ'],
@@ -37051,7 +37051,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-matsue-castle-normal-1',
     title: '松江城（島根）',
-    description: '松江城天守の線画。',
+    description: '松江城天守のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-matsue-castle', 'gotochi', 'ぬりえ'],
@@ -37068,7 +37068,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-ginzan-normal-1',
     title: '石見銀山（島根）',
-    description: '石見銀山坑道の線画。',
+    description: '石見銀山坑道のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-ginzan', 'gotochi', 'ぬりえ'],
@@ -37085,7 +37085,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-kagura-normal-1',
     title: '石見神楽（島根）',
-    description: '石見神楽の舞の線画。',
+    description: '石見神楽の舞のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-kagura', 'gotochi', 'ぬりえ'],
@@ -37102,7 +37102,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-izumo-soba-normal-1',
     title: '出雲そば（島根）',
-    description: '割子そばの線画。',
+    description: '割子そばのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-izumo-soba', 'gotochi', 'ぬりえ'],
@@ -37119,7 +37119,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-magatama-normal-1',
     title: '勾玉（島根・玉造）',
-    description: '勾玉の線画。',
+    description: '勾玉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-magatama', 'gotochi', 'ぬりえ'],
@@ -37136,7 +37136,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-sunset-normal-1',
     title: '宍道湖の夕日（島根）',
-    description: '宍道湖の夕日の線画。',
+    description: '宍道湖の夕日のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-sunset', 'gotochi', 'ぬりえ'],
@@ -37153,7 +37153,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-oki-normal-1',
     title: '隠岐の島（島根）',
-    description: '隠岐の島の線画。',
+    description: '隠岐の島のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-oki', 'gotochi', 'ぬりえ'],
@@ -37170,7 +37170,7 @@ const _materials4: Material[] = [
   {
     id: 'shimane-shimenawa-normal-1',
     title: '出雲大社大注連縄（島根）',
-    description: '大注連縄の線画。',
+    description: '大注連縄のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['shimane-shimenawa', 'gotochi', 'ぬりえ'],
@@ -37187,7 +37187,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-momotaro-normal-1',
     title: '桃太郎（岡山）',
-    description: '桃太郎と仲間の線画。',
+    description: '桃太郎と仲間のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-momotaro', 'gotochi', 'ぬりえ'],
@@ -37204,7 +37204,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-kibi-dango-normal-1',
     title: 'きびだんご（岡山）',
-    description: 'きびだんごの線画。',
+    description: 'きびだんごのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-kibi-dango', 'gotochi', 'ぬりえ'],
@@ -37221,7 +37221,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-muscat-normal-1',
     title: 'マスカット（岡山）',
-    description: 'マスカットの房の線画。',
+    description: 'マスカットの房のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-muscat', 'gotochi', 'ぬりえ'],
@@ -37238,7 +37238,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-castle-normal-1',
     title: '岡山城（岡山）',
-    description: '岡山城烏城の線画。',
+    description: '岡山城烏城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-castle', 'gotochi', 'ぬりえ'],
@@ -37255,7 +37255,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-korakuen-normal-1',
     title: '後楽園（岡山）',
-    description: '後楽園の線画。',
+    description: '後楽園のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-korakuen', 'gotochi', 'ぬりえ'],
@@ -37272,7 +37272,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-denim-normal-1',
     title: '倉敷デニム（岡山・児島）',
-    description: 'デニムジーンズの線画。',
+    description: 'デニムジーンズのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-denim', 'gotochi', 'ぬりえ'],
@@ -37289,7 +37289,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-mamakari-normal-1',
     title: 'ままかり（岡山）',
-    description: 'ままかりの酢漬けの線画。',
+    description: 'ままかりの酢漬けのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-mamakari', 'gotochi', 'ぬりえ'],
@@ -37306,7 +37306,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-kurashiki-normal-1',
     title: '倉敷美観地区（岡山）',
-    description: '倉敷美観地区の線画。',
+    description: '倉敷美観地区のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-kurashiki', 'gotochi', 'ぬりえ'],
@@ -37323,7 +37323,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-seto-bridge-normal-1',
     title: '瀬戸大橋（岡山）',
-    description: '瀬戸大橋の線画。',
+    description: '瀬戸大橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-seto-bridge', 'gotochi', 'ぬりえ'],
@@ -37340,7 +37340,7 @@ const _materials4: Material[] = [
   {
     id: 'okayama-jersey-normal-1',
     title: '蒜山のジャージー牛（岡山）',
-    description: '蒜山ジャージー牛の線画。',
+    description: '蒜山ジャージー牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okayama-jersey', 'gotochi', 'ぬりえ'],
@@ -37357,7 +37357,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-itsukushima-normal-1',
     title: '厳島の大鳥居（広島・宮島）',
-    description: '厳島神社大鳥居の線画。',
+    description: '厳島神社大鳥居のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-itsukushima', 'gotochi', 'ぬりえ'],
@@ -37374,7 +37374,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-momiji-manju-normal-1',
     title: 'もみじまんじゅう（広島）',
-    description: 'もみじまんじゅうの線画。',
+    description: 'もみじまんじゅうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-momiji-manju', 'gotochi', 'ぬりえ'],
@@ -37391,7 +37391,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-okonomi-normal-1',
     title: '広島お好み焼き（広島）',
-    description: '広島お好み焼きの線画。',
+    description: '広島お好み焼きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-okonomi', 'gotochi', 'ぬりえ'],
@@ -37408,7 +37408,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-kaki-normal-1',
     title: '広島の牡蠣（広島）',
-    description: '殻付き牡蠣の線画。',
+    description: '殻付き牡蠣のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-kaki', 'gotochi', 'ぬりえ'],
@@ -37425,7 +37425,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-peace-normal-1',
     title: '原爆ドーム（広島）',
-    description: '原爆ドームの線画。',
+    description: '原爆ドームのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-peace', 'gotochi', 'ぬりえ'],
@@ -37442,7 +37442,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-shamoji-normal-1',
     title: '宮島のしゃもじ（広島）',
-    description: '宮島しゃもじの線画。',
+    description: '宮島しゃもじのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-shamoji', 'gotochi', 'ぬりえ'],
@@ -37459,7 +37459,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-miyajima-deer-normal-1',
     title: '宮島の鹿（広島）',
-    description: '宮島の鹿の線画。',
+    description: '宮島の鹿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-miyajima-deer', 'gotochi', 'ぬりえ'],
@@ -37476,7 +37476,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-shimanami-normal-1',
     title: 'しまなみ海道（広島）',
-    description: 'しまなみ海道の橋の線画。',
+    description: 'しまなみ海道の橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-shimanami', 'gotochi', 'ぬりえ'],
@@ -37493,7 +37493,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-onomichi-cat-normal-1',
     title: '尾道の猫（広島）',
-    description: '尾道坂道の猫の線画。',
+    description: '尾道坂道の猫のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-onomichi-cat', 'gotochi', 'ぬりえ'],
@@ -37510,7 +37510,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-tomonoura-normal-1',
     title: '鞆の浦（広島）',
-    description: '鞆の浦常夜燈の線画。',
+    description: '鞆の浦常夜燈のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-tomonoura', 'gotochi', 'ぬりえ'],
@@ -37527,7 +37527,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-hiroshima-na-normal-1',
     title: '広島菜漬け（広島）',
-    description: '広島菜漬けの線画。',
+    description: '広島菜漬けのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-hiroshima-na', 'gotochi', 'ぬりえ'],
@@ -37544,7 +37544,7 @@ const _materials4: Material[] = [
   {
     id: 'hiroshima-bingo-kagura-normal-1',
     title: '備北神楽（広島）',
-    description: '備北神楽の線画。',
+    description: '備北神楽のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['hiroshima-bingo-kagura', 'gotochi', 'ぬりえ'],
@@ -37561,7 +37561,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-fugu-normal-1',
     title: '下関のふぐ（山口）',
-    description: '下関ふぐの線画。',
+    description: '下関ふぐのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-fugu', 'gotochi', 'ぬりえ'],
@@ -37578,7 +37578,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-kintaikyo-normal-1',
     title: '錦帯橋（山口・岩国）',
-    description: '錦帯橋の線画。',
+    description: '錦帯橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-kintaikyo', 'gotochi', 'ぬりえ'],
@@ -37595,7 +37595,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-hagi-yaki-normal-1',
     title: '萩焼（山口）',
-    description: '萩焼茶碗の線画。',
+    description: '萩焼茶碗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-hagi-yaki', 'gotochi', 'ぬりえ'],
@@ -37612,7 +37612,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-rurikoji-normal-1',
     title: '瑠璃光寺五重塔（山口）',
-    description: '瑠璃光寺五重塔の線画。',
+    description: '瑠璃光寺五重塔のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-rurikoji', 'gotochi', 'ぬりえ'],
@@ -37629,7 +37629,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-natsu-mikan-normal-1',
     title: '萩の夏みかん（山口）',
-    description: '萩の夏みかんの線画。',
+    description: '萩の夏みかんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-natsu-mikan', 'gotochi', 'ぬりえ'],
@@ -37646,7 +37646,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-kanmon-normal-1',
     title: '関門海峡（山口）',
-    description: '関門橋の線画。',
+    description: '関門橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-kanmon', 'gotochi', 'ぬりえ'],
@@ -37663,7 +37663,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-uiro-normal-1',
     title: '山口外郎（山口）',
-    description: '山口外郎の線画。',
+    description: '山口外郎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-uiro', 'gotochi', 'ぬりえ'],
@@ -37680,7 +37680,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-akiyoshidai-normal-1',
     title: '秋吉台（山口）',
-    description: '秋吉台カルストの線画。',
+    description: '秋吉台カルストのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-akiyoshidai', 'gotochi', 'ぬりえ'],
@@ -37697,7 +37697,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-aoumi-normal-1',
     title: '青海島（山口・長門）',
-    description: '青海島海蝕洞の線画。',
+    description: '青海島海蝕洞のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-aoumi', 'gotochi', 'ぬりえ'],
@@ -37714,7 +37714,7 @@ const _materials4: Material[] = [
   {
     id: 'yamaguchi-shoin-normal-1',
     title: '松下村塾（山口・萩）',
-    description: '松下村塾の線画。',
+    description: '松下村塾のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['yamaguchi-shoin', 'gotochi', 'ぬりえ'],
@@ -37731,7 +37731,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-awaodori-normal-1',
     title: '阿波踊り（徳島）',
-    description: '阿波踊りの踊り子の線画。',
+    description: '阿波踊りの踊り子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-awaodori', 'gotochi', 'ぬりえ'],
@@ -37748,7 +37748,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-tanuki-normal-1',
     title: '金長狸（徳島）',
-    description: '金長狸の線画。',
+    description: '金長狸のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-tanuki', 'gotochi', 'ぬりえ'],
@@ -37765,7 +37765,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-naruto-normal-1',
     title: '鳴門の渦潮（徳島）',
-    description: '鳴門の渦潮の線画。',
+    description: '鳴門の渦潮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-naruto', 'gotochi', 'ぬりえ'],
@@ -37782,7 +37782,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-sudachi-normal-1',
     title: 'すだち（徳島）',
-    description: 'すだちの線画。',
+    description: 'すだちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-sudachi', 'gotochi', 'ぬりえ'],
@@ -37799,7 +37799,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-ramen-normal-1',
     title: '徳島ラーメン（徳島）',
-    description: '徳島ラーメンの線画。',
+    description: '徳島ラーメンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-ramen', 'gotochi', 'ぬりえ'],
@@ -37816,7 +37816,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-washi-normal-1',
     title: '阿波和紙（徳島）',
-    description: '阿波和紙漉きの線画。',
+    description: '阿波和紙漉きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-washi', 'gotochi', 'ぬりえ'],
@@ -37833,7 +37833,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-kazura-normal-1',
     title: 'かずら橋（徳島・祖谷）',
-    description: 'かずら橋の線画。',
+    description: 'かずら橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-kazura', 'gotochi', 'ぬりえ'],
@@ -37850,7 +37850,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-ningyo-normal-1',
     title: '阿波人形浄瑠璃（徳島）',
-    description: '阿波人形浄瑠璃の線画。',
+    description: '阿波人形浄瑠璃のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-ningyo', 'gotochi', 'ぬりえ'],
@@ -37867,7 +37867,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-bizan-normal-1',
     title: '眉山（徳島）',
-    description: '眉山の線画。',
+    description: '眉山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-bizan', 'gotochi', 'ぬりえ'],
@@ -37884,7 +37884,7 @@ const _materials4: Material[] = [
   {
     id: 'tokushima-handa-somen-normal-1',
     title: '半田そうめん（徳島）',
-    description: '半田そうめんの線画。',
+    description: '半田そうめんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['tokushima-handa-somen', 'gotochi', 'ぬりえ'],
@@ -37901,7 +37901,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-sanuki-udon-normal-1',
     title: '讃岐うどん（香川）',
-    description: '讃岐うどんの線画。',
+    description: '讃岐うどんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-sanuki-udon', 'gotochi', 'ぬりえ'],
@@ -37918,7 +37918,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-kotohira-normal-1',
     title: '金刀比羅宮（香川）',
-    description: 'こんぴらさん石段の線画。',
+    description: 'こんぴらさん石段のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-kotohira', 'gotochi', 'ぬりえ'],
@@ -37935,7 +37935,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-olive-normal-1',
     title: '小豆島オリーブ（香川）',
-    description: 'オリーブの木の線画。',
+    description: 'オリーブの木のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-olive', 'gotochi', 'ぬりえ'],
@@ -37952,7 +37952,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-takamatsu-castle-normal-1',
     title: '高松城（香川）',
-    description: '高松城月見櫓の線画。',
+    description: '高松城月見櫓のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-takamatsu-castle', 'gotochi', 'ぬりえ'],
@@ -37969,7 +37969,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-shoyu-normal-1',
     title: '小豆島の醤油（香川）',
-    description: '醤油樽の線画。',
+    description: '醤油樽のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-shoyu', 'gotochi', 'ぬりえ'],
@@ -37986,7 +37986,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-honetsuki-dori-normal-1',
     title: '骨付鳥（香川・丸亀）',
-    description: '骨付鳥の線画。',
+    description: '骨付鳥のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-honetsuki-dori', 'gotochi', 'ぬりえ'],
@@ -38003,7 +38003,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-shodoshima-somen-normal-1',
     title: '小豆島そうめん（香川）',
-    description: '小豆島そうめんの線画。',
+    description: '小豆島そうめんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-shodoshima-somen', 'gotochi', 'ぬりえ'],
@@ -38020,7 +38020,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-yashima-normal-1',
     title: '屋島（香川）',
-    description: '屋島の線画。',
+    description: '屋島のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-yashima', 'gotochi', 'ぬりえ'],
@@ -38037,7 +38037,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-ritsurin-normal-1',
     title: '栗林公園（香川）',
-    description: '栗林公園の線画。',
+    description: '栗林公園のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-ritsurin', 'gotochi', 'ぬりえ'],
@@ -38054,7 +38054,7 @@ const _materials4: Material[] = [
   {
     id: 'kagawa-uchiwa-normal-1',
     title: '丸亀うちわ（香川）',
-    description: '丸亀うちわの線画。',
+    description: '丸亀うちわのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagawa-uchiwa', 'gotochi', 'ぬりえ'],
@@ -38071,7 +38071,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-mikan-normal-1',
     title: '愛媛みかん（愛媛）',
-    description: '愛媛みかんの線画。',
+    description: '愛媛みかんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-mikan', 'gotochi', 'ぬりえ'],
@@ -38088,7 +38088,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-dogo-normal-1',
     title: '道後温泉（愛媛）',
-    description: '道後温泉本館の線画。',
+    description: '道後温泉本館のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-dogo', 'gotochi', 'ぬりえ'],
@@ -38105,7 +38105,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-botchan-normal-1',
     title: '坊っちゃん列車（愛媛・松山）',
-    description: '坊っちゃん列車の線画。',
+    description: '坊っちゃん列車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-botchan', 'gotochi', 'ぬりえ'],
@@ -38122,7 +38122,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-imabari-towel-normal-1',
     title: '今治タオル（愛媛）',
-    description: '今治タオルの線画。',
+    description: '今治タオルのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-imabari-towel', 'gotochi', 'ぬりえ'],
@@ -38139,7 +38139,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-tai-meshi-normal-1',
     title: '宇和島鯛めし（愛媛）',
-    description: '宇和島鯛めしの線画。',
+    description: '宇和島鯛めしのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-tai-meshi', 'gotochi', 'ぬりえ'],
@@ -38156,7 +38156,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-matsuyama-castle-normal-1',
     title: '松山城（愛媛）',
-    description: '松山城の線画。',
+    description: '松山城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-matsuyama-castle', 'gotochi', 'ぬりえ'],
@@ -38173,7 +38173,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-pon-juice-normal-1',
     title: 'ポンジュース（愛媛）',
-    description: 'ポンジュースの線画。',
+    description: 'ポンジュースのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-pon-juice', 'gotochi', 'ぬりえ'],
@@ -38190,7 +38190,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-shimanami-cycle-normal-1',
     title: 'しまなみ海道サイクリング（愛媛）',
-    description: 'しまなみサイクリングの線画。',
+    description: 'しまなみサイクリングのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-shimanami-cycle', 'gotochi', 'ぬりえ'],
@@ -38207,7 +38207,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-ushioni-normal-1',
     title: '牛鬼（愛媛・宇和島）',
-    description: '牛鬼の山車の線画。',
+    description: '牛鬼の山車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-ushioni', 'gotochi', 'ぬりえ'],
@@ -38224,7 +38224,7 @@ const _materials4: Material[] = [
   {
     id: 'ehime-tobe-yaki-normal-1',
     title: '砥部焼（愛媛）',
-    description: '砥部焼の皿の線画。',
+    description: '砥部焼の皿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['ehime-tobe-yaki', 'gotochi', 'ぬりえ'],
@@ -38241,7 +38241,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-katsuo-tataki-normal-1',
     title: 'カツオのたたき（高知）',
-    description: 'カツオたたきの線画。',
+    description: 'カツオたたきのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-katsuo-tataki', 'gotochi', 'ぬりえ'],
@@ -38258,7 +38258,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-ryoma-normal-1',
     title: '坂本龍馬（高知）',
-    description: '坂本龍馬の線画。',
+    description: '坂本龍馬のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-ryoma', 'gotochi', 'ぬりえ'],
@@ -38275,7 +38275,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-yosakoi-normal-1',
     title: 'よさこい踊り（高知）',
-    description: 'よさこい踊りの線画。',
+    description: 'よさこい踊りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-yosakoi', 'gotochi', 'ぬりえ'],
@@ -38292,7 +38292,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-tosa-inu-normal-1',
     title: '土佐犬（高知）',
-    description: '土佐犬横綱の線画。',
+    description: '土佐犬横綱のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-tosa-inu', 'gotochi', 'ぬりえ'],
@@ -38309,7 +38309,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-yuzu-normal-1',
     title: '高知ゆず（高知）',
-    description: '高知ゆずの線画。',
+    description: '高知ゆずのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-yuzu', 'gotochi', 'ぬりえ'],
@@ -38326,7 +38326,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-shimanto-normal-1',
     title: '四万十川（高知）',
-    description: '四万十川沈下橋の線画。',
+    description: '四万十川沈下橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-shimanto', 'gotochi', 'ぬりえ'],
@@ -38343,7 +38343,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-washi-normal-1',
     title: '土佐和紙（高知）',
-    description: '土佐和紙漉きの線画。',
+    description: '土佐和紙漉きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-washi', 'gotochi', 'ぬりえ'],
@@ -38360,7 +38360,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-katsurahama-normal-1',
     title: '桂浜（高知）',
-    description: '桂浜と龍馬像の線画。',
+    description: '桂浜と龍馬像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-katsurahama', 'gotochi', 'ぬりえ'],
@@ -38377,7 +38377,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-harimaya-normal-1',
     title: 'はりまや橋（高知）',
-    description: 'はりまや橋の線画。',
+    description: 'はりまや橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-harimaya', 'gotochi', 'ぬりえ'],
@@ -38394,7 +38394,7 @@ const _materials4: Material[] = [
   {
     id: 'kochi-ipponzuri-normal-1',
     title: '土佐の一本釣り（高知）',
-    description: '一本釣りの線画。',
+    description: '一本釣りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kochi-ipponzuri', 'gotochi', 'ぬりえ'],
@@ -38411,7 +38411,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-hakata-ramen-normal-1',
     title: '博多ラーメン（福岡）',
-    description: '博多ラーメンの線画。',
+    description: '博多ラーメンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-hakata-ramen', 'gotochi', 'ぬりえ'],
@@ -38428,7 +38428,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-dazaifu-normal-1',
     title: '太宰府天満宮（福岡）',
-    description: '太宰府天満宮の線画。',
+    description: '太宰府天満宮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-dazaifu', 'gotochi', 'ぬりえ'],
@@ -38445,7 +38445,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-yamakasa-normal-1',
     title: '博多祇園山笠（福岡）',
-    description: '山笠と男衆の線画。',
+    description: '山笠と男衆のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-yamakasa', 'gotochi', 'ぬりえ'],
@@ -38462,7 +38462,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-motsunabe-normal-1',
     title: 'もつ鍋（福岡）',
-    description: 'もつ鍋の線画。',
+    description: 'もつ鍋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-motsunabe', 'gotochi', 'ぬりえ'],
@@ -38479,7 +38479,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-mentaiko-normal-1',
     title: '明太子（福岡）',
-    description: '明太子の線画。',
+    description: '明太子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-mentaiko', 'gotochi', 'ぬりえ'],
@@ -38496,7 +38496,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-hakata-doll-normal-1',
     title: '博多人形（福岡）',
-    description: '博多人形の線画。',
+    description: '博多人形のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-hakata-doll', 'gotochi', 'ぬりえ'],
@@ -38513,7 +38513,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-yanagawa-normal-1',
     title: '柳川川下り（福岡）',
-    description: 'どんこ舟の線画。',
+    description: 'どんこ舟のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-yanagawa', 'gotochi', 'ぬりえ'],
@@ -38530,7 +38530,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-hakata-ori-normal-1',
     title: '博多織（福岡）',
-    description: '博多織の帯の線画。',
+    description: '博多織の帯のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-hakata-ori', 'gotochi', 'ぬりえ'],
@@ -38547,7 +38547,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-yame-cha-normal-1',
     title: '八女茶（福岡）',
-    description: '八女茶畑の線画。',
+    description: '八女茶畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-yame-cha', 'gotochi', 'ぬりえ'],
@@ -38564,7 +38564,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-ohori-normal-1',
     title: '大濠公園の桜（福岡）',
-    description: '大濠公園桜の線画。',
+    description: '大濠公園桜のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-ohori', 'gotochi', 'ぬりえ'],
@@ -38581,7 +38581,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-chikugo-ukai-normal-1',
     title: '筑後川の鵜飼い（福岡）',
-    description: '筑後川鵜飼いの線画。',
+    description: '筑後川鵜飼いのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-chikugo-ukai', 'gotochi', 'ぬりえ'],
@@ -38598,7 +38598,7 @@ const _materials4: Material[] = [
   {
     id: 'fukuoka-dontaku-normal-1',
     title: '博多どんたく（福岡）',
-    description: 'どんたく踊りの線画。',
+    description: 'どんたく踊りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['fukuoka-dontaku', 'gotochi', 'ぬりえ'],
@@ -38615,7 +38615,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-arita-yaki-normal-1',
     title: '有田焼（佐賀）',
-    description: '有田焼の皿の線画。',
+    description: '有田焼の皿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-arita-yaki', 'gotochi', 'ぬりえ'],
@@ -38632,7 +38632,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-balloon-normal-1',
     title: 'バルーンフェスタ（佐賀）',
-    description: '熱気球の線画。',
+    description: '熱気球のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-balloon', 'gotochi', 'ぬりえ'],
@@ -38649,7 +38649,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-yobuko-ika-normal-1',
     title: '呼子のイカ（佐賀）',
-    description: '呼子の活きイカの線画。',
+    description: '呼子の活きイカのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-yobuko-ika', 'gotochi', 'ぬりえ'],
@@ -38666,7 +38666,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-beef-normal-1',
     title: '佐賀牛（佐賀）',
-    description: '佐賀牛の線画。',
+    description: '佐賀牛のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-beef', 'gotochi', 'ぬりえ'],
@@ -38683,7 +38683,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-karatsu-castle-normal-1',
     title: '唐津城（佐賀）',
-    description: '唐津城の線画。',
+    description: '唐津城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-karatsu-castle', 'gotochi', 'ぬりえ'],
@@ -38700,7 +38700,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-ureshino-normal-1',
     title: '嬉野湯豆腐（佐賀）',
-    description: '嬉野湯豆腐の線画。',
+    description: '嬉野湯豆腐のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-ureshino', 'gotochi', 'ぬりえ'],
@@ -38717,7 +38717,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-karatsu-yaki-normal-1',
     title: '唐津焼（佐賀）',
-    description: '唐津焼茶碗の線画。',
+    description: '唐津焼茶碗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-karatsu-yaki', 'gotochi', 'ぬりえ'],
@@ -38734,7 +38734,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-kunchi-normal-1',
     title: '唐津くんち（佐賀）',
-    description: '唐津くんち曳山の線画。',
+    description: '唐津くんち曳山のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-kunchi', 'gotochi', 'ぬりえ'],
@@ -38751,7 +38751,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-yoshinogari-normal-1',
     title: '吉野ヶ里遺跡（佐賀）',
-    description: '吉野ヶ里遺跡の線画。',
+    description: '吉野ヶ里遺跡のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-yoshinogari', 'gotochi', 'ぬりえ'],
@@ -38768,7 +38768,7 @@ const _materials4: Material[] = [
   {
     id: 'saga-nori-normal-1',
     title: '佐賀海苔（佐賀）',
-    description: '佐賀海苔の線画。',
+    description: '佐賀海苔のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['saga-nori', 'gotochi', 'ぬりえ'],
@@ -38785,7 +38785,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-chanpon-normal-1',
     title: '長崎ちゃんぽん（長崎）',
-    description: 'ちゃんぽんの線画。',
+    description: 'ちゃんぽんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-chanpon', 'gotochi', 'ぬりえ'],
@@ -38802,7 +38802,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-dejima-normal-1',
     title: '出島（長崎）',
-    description: '出島の線画。',
+    description: '出島のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-dejima', 'gotochi', 'ぬりえ'],
@@ -38819,7 +38819,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-meganebashi-normal-1',
     title: '眼鏡橋（長崎）',
-    description: '眼鏡橋の線画。',
+    description: '眼鏡橋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-meganebashi', 'gotochi', 'ぬりえ'],
@@ -38836,7 +38836,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-castella-normal-1',
     title: 'カステラ（長崎）',
-    description: '長崎カステラの線画。',
+    description: '長崎カステラのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-castella', 'gotochi', 'ぬりえ'],
@@ -38853,7 +38853,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-gunkanjima-normal-1',
     title: '軍艦島（長崎）',
-    description: '軍艦島の線画。',
+    description: '軍艦島のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-gunkanjima', 'gotochi', 'ぬりえ'],
@@ -38870,7 +38870,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-huistenbosch-normal-1',
     title: 'ハウステンボス（長崎）',
-    description: 'ハウステンボス風車の線画。',
+    description: 'ハウステンボス風車のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-huistenbosch', 'gotochi', 'ぬりえ'],
@@ -38887,7 +38887,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-peace-statue-normal-1',
     title: '平和祈念像（長崎）',
-    description: '平和祈念像の線画。',
+    description: '平和祈念像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-peace-statue', 'gotochi', 'ぬりえ'],
@@ -38904,7 +38904,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-kunchi-normal-1',
     title: '長崎くんち（長崎）',
-    description: '長崎くんち龍踊りの線画。',
+    description: '長崎くんち龍踊りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-kunchi', 'gotochi', 'ぬりえ'],
@@ -38921,7 +38921,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-shimabara-castle-normal-1',
     title: '島原城（長崎）',
-    description: '島原城の線画。',
+    description: '島原城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-shimabara-castle', 'gotochi', 'ぬりえ'],
@@ -38938,7 +38938,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-iki-uni-normal-1',
     title: '壱岐ウニ丼（長崎）',
-    description: '壱岐ウニ丼の線画。',
+    description: '壱岐ウニ丼のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-iki-uni', 'gotochi', 'ぬりえ'],
@@ -38955,7 +38955,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-goto-udon-normal-1',
     title: '五島うどん（長崎）',
-    description: '五島うどん地獄炊きの線画。',
+    description: '五島うどん地獄炊きのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-goto-udon', 'gotochi', 'ぬりえ'],
@@ -38972,7 +38972,7 @@ const _materials4: Material[] = [
   {
     id: 'nagasaki-inasayama-normal-1',
     title: '稲佐山の夜景（長崎）',
-    description: '稲佐山夜景の線画。',
+    description: '稲佐山夜景のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['nagasaki-inasayama', 'gotochi', 'ぬりえ'],
@@ -38989,7 +38989,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-kumamon-normal-1',
     title: 'くまモン（熊本）',
-    description: 'くまモンの線画。',
+    description: 'くまモンのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-kumamon', 'gotochi', 'ぬりえ'],
@@ -39006,7 +39006,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-castle-normal-1',
     title: '熊本城（熊本）',
-    description: '熊本城武者返しの線画。',
+    description: '熊本城武者返しのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-castle', 'gotochi', 'ぬりえ'],
@@ -39023,7 +39023,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-basashi-normal-1',
     title: '馬刺し（熊本）',
-    description: '馬刺しの線画。',
+    description: '馬刺しのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-basashi', 'gotochi', 'ぬりえ'],
@@ -39040,7 +39040,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-ikinari-dango-normal-1',
     title: 'いきなり団子（熊本）',
-    description: 'いきなり団子の線画。',
+    description: 'いきなり団子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-ikinari-dango', 'gotochi', 'ぬりえ'],
@@ -39057,7 +39057,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-aso-normal-1',
     title: '阿蘇山（熊本）',
-    description: '阿蘇山と草千里の線画。',
+    description: '阿蘇山と草千里のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-aso', 'gotochi', 'ぬりえ'],
@@ -39074,7 +39074,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-karashi-renkon-normal-1',
     title: '辛子蓮根（熊本）',
-    description: '辛子蓮根の線画。',
+    description: '辛子蓮根のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-karashi-renkon', 'gotochi', 'ぬりえ'],
@@ -39091,7 +39091,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-igusa-normal-1',
     title: 'い草（熊本・八代）',
-    description: 'い草畑の線画。',
+    description: 'い草畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-igusa', 'gotochi', 'ぬりえ'],
@@ -39108,7 +39108,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-amakusa-dolphin-normal-1',
     title: '天草のイルカ（熊本）',
-    description: '天草イルカの線画。',
+    description: '天草イルカのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-amakusa-dolphin', 'gotochi', 'ぬりえ'],
@@ -39125,7 +39125,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-suizenji-normal-1',
     title: '水前寺成趣園（熊本）',
-    description: '水前寺成趣園の線画。',
+    description: '水前寺成趣園のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-suizenji', 'gotochi', 'ぬりえ'],
@@ -39142,7 +39142,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-taipien-normal-1',
     title: '太平燕（熊本）',
-    description: '太平燕の線画。',
+    description: '太平燕のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-taipien', 'gotochi', 'ぬりえ'],
@@ -39159,7 +39159,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-banpeiyu-normal-1',
     title: '晩白柚（熊本）',
-    description: '晩白柚の線画。',
+    description: '晩白柚のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-banpeiyu', 'gotochi', 'ぬりえ'],
@@ -39176,7 +39176,7 @@ const _materials4: Material[] = [
   {
     id: 'kumamoto-spring-normal-1',
     title: '熊本の湧水（熊本）',
-    description: '熊本湧水の線画。',
+    description: '熊本湧水のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kumamoto-spring', 'gotochi', 'ぬりえ'],
@@ -39193,7 +39193,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-beppu-normal-1',
     title: '別府温泉（大分）',
-    description: '別府温泉湯けむりの線画。',
+    description: '別府温泉湯けむりのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-beppu', 'gotochi', 'ぬりえ'],
@@ -39210,7 +39210,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-kabosu-normal-1',
     title: 'かぼす（大分）',
-    description: 'かぼすの線画。',
+    description: 'かぼすのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-kabosu', 'gotochi', 'ぬりえ'],
@@ -39227,7 +39227,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-seki-aji-saba-normal-1',
     title: '関さば・関あじ（大分）',
-    description: '関さば・関あじの線画。',
+    description: '関さば・関あじのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-seki-aji-saba', 'gotochi', 'ぬりえ'],
@@ -39244,7 +39244,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-yufuin-normal-1',
     title: '湯布院（大分）',
-    description: '湯布院由布岳の線画。',
+    description: '湯布院由布岳のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-yufuin', 'gotochi', 'ぬりえ'],
@@ -39261,7 +39261,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-jigoku-normal-1',
     title: '地獄めぐり（大分・別府）',
-    description: '血の池地獄の線画。',
+    description: '血の池地獄のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-jigoku', 'gotochi', 'ぬりえ'],
@@ -39278,7 +39278,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-toriten-normal-1',
     title: 'とり天（大分）',
-    description: 'とり天の線画。',
+    description: 'とり天のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-toriten', 'gotochi', 'ぬりえ'],
@@ -39295,7 +39295,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-usuki-sekibutsu-normal-1',
     title: '臼杵石仏（大分）',
-    description: '臼杵石仏の線画。',
+    description: '臼杵石仏のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-usuki-sekibutsu', 'gotochi', 'ぬりえ'],
@@ -39312,7 +39312,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-karaage-normal-1',
     title: '大分からあげ（大分・中津）',
-    description: '大分からあげの線画。',
+    description: '大分からあげのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-karaage', 'gotochi', 'ぬりえ'],
@@ -39329,7 +39329,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-kitsuki-castle-normal-1',
     title: '杵築城（大分）',
-    description: '杵築城の線画。',
+    description: '杵築城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-kitsuki-castle', 'gotochi', 'ぬりえ'],
@@ -39346,7 +39346,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-shiitake-normal-1',
     title: '大分の干し椎茸（大分）',
-    description: '干し椎茸の線画。',
+    description: '干し椎茸のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-shiitake', 'gotochi', 'ぬりえ'],
@@ -39363,7 +39363,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-kuju-normal-1',
     title: '九重の紅葉（大分）',
-    description: '九重連山紅葉の線画。',
+    description: '九重連山紅葉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-kuju', 'gotochi', 'ぬりえ'],
@@ -39380,7 +39380,7 @@ const _materials4: Material[] = [
   {
     id: 'oita-usa-jingu-normal-1',
     title: '宇佐神宮（大分）',
-    description: '宇佐神宮の線画。',
+    description: '宇佐神宮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['oita-usa-jingu', 'gotochi', 'ぬりえ'],
@@ -39397,7 +39397,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-chicken-nanban-normal-1',
     title: 'チキン南蛮（宮崎）',
-    description: 'チキン南蛮の線画。',
+    description: 'チキン南蛮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-chicken-nanban', 'gotochi', 'ぬりえ'],
@@ -39414,7 +39414,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-mango-normal-1',
     title: '宮崎マンゴー（宮崎）',
-    description: '宮崎マンゴーの線画。',
+    description: '宮崎マンゴーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-mango', 'gotochi', 'ぬりえ'],
@@ -39431,7 +39431,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-takachiho-normal-1',
     title: '高千穂峡（宮崎）',
-    description: '高千穂峡真名井の滝の線画。',
+    description: '高千穂峡真名井の滝のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-takachiho', 'gotochi', 'ぬりえ'],
@@ -39448,7 +39448,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-hyottoko-normal-1',
     title: 'ひょっとこ（宮崎・日向）',
-    description: 'ひょっとこ踊りの線画。',
+    description: 'ひょっとこ踊りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-hyottoko', 'gotochi', 'ぬりえ'],
@@ -39465,7 +39465,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-hyuganatsu-normal-1',
     title: '日向夏（宮崎）',
-    description: '日向夏の線画。',
+    description: '日向夏のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-hyuganatsu', 'gotochi', 'ぬりえ'],
@@ -39482,7 +39482,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-udo-normal-1',
     title: '鵜戸神宮（宮崎）',
-    description: '鵜戸神宮の線画。',
+    description: '鵜戸神宮のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-udo', 'gotochi', 'ぬりえ'],
@@ -39499,7 +39499,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-shochu-normal-1',
     title: '宮崎焼酎（宮崎）',
-    description: '宮崎焼酎の線画。',
+    description: '宮崎焼酎のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-shochu', 'gotochi', 'ぬりえ'],
@@ -39516,7 +39516,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-aoshima-normal-1',
     title: '青島・鬼の洗濯板（宮崎）',
-    description: '青島鬼の洗濯板の線画。',
+    description: '青島鬼の洗濯板のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-aoshima', 'gotochi', 'ぬりえ'],
@@ -39533,7 +39533,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-obi-castle-normal-1',
     title: '飫肥城（宮崎）',
-    description: '飫肥城大手門の線画。',
+    description: '飫肥城大手門のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-obi-castle', 'gotochi', 'ぬりえ'],
@@ -39550,7 +39550,7 @@ const _materials4: Material[] = [
   {
     id: 'miyazaki-hiyajiru-normal-1',
     title: '冷汁（宮崎）',
-    description: '冷汁の線画。',
+    description: '冷汁のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['miyazaki-hiyajiru', 'gotochi', 'ぬりえ'],
@@ -39567,7 +39567,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-sakurajima-normal-1',
     title: '桜島（鹿児島）',
-    description: '桜島噴煙の線画。',
+    description: '桜島噴煙のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-sakurajima', 'gotochi', 'ぬりえ'],
@@ -39584,7 +39584,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-saigo-normal-1',
     title: '西郷隆盛（鹿児島）',
-    description: '西郷さん銅像の線画。',
+    description: '西郷さん銅像のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-saigo', 'gotochi', 'ぬりえ'],
@@ -39601,7 +39601,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-kurobuta-normal-1',
     title: '鹿児島黒豚（鹿児島）',
-    description: '鹿児島黒豚の線画。',
+    description: '鹿児島黒豚のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-kurobuta', 'gotochi', 'ぬりえ'],
@@ -39618,7 +39618,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-satsuma-kiriko-normal-1',
     title: '薩摩切子（鹿児島）',
-    description: '薩摩切子の線画。',
+    description: '薩摩切子のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-satsuma-kiriko', 'gotochi', 'ぬりえ'],
@@ -39635,7 +39635,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-sunamushi-normal-1',
     title: '砂蒸し温泉（鹿児島・指宿）',
-    description: '砂蒸し温泉の線画。',
+    description: '砂蒸し温泉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-sunamushi', 'gotochi', 'ぬりえ'],
@@ -39652,7 +39652,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-kokuto-normal-1',
     title: '奄美の黒糖（鹿児島）',
-    description: '奄美黒糖の線画。',
+    description: '奄美黒糖のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-kokuto', 'gotochi', 'ぬりえ'],
@@ -39669,7 +39669,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-chiran-normal-1',
     title: '知覧武家屋敷（鹿児島）',
-    description: '知覧武家屋敷通りの線画。',
+    description: '知覧武家屋敷通りのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-chiran', 'gotochi', 'ぬりえ'],
@@ -39686,7 +39686,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-karukan-normal-1',
     title: 'かるかん（鹿児島）',
-    description: 'かるかんの線画。',
+    description: 'かるかんのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-karukan', 'gotochi', 'ぬりえ'],
@@ -39703,7 +39703,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-satsumaage-normal-1',
     title: 'さつまあげ（鹿児島）',
-    description: 'さつまあげの線画。',
+    description: 'さつまあげのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-satsumaage', 'gotochi', 'ぬりえ'],
@@ -39720,7 +39720,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-yakusugi-normal-1',
     title: '屋久杉（鹿児島・屋久島）',
-    description: '縄文杉の線画。',
+    description: '縄文杉のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-yakusugi', 'gotochi', 'ぬりえ'],
@@ -39737,7 +39737,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-umigame-normal-1',
     title: '奄美のウミガメ（鹿児島）',
-    description: '奄美ウミガメの線画。',
+    description: '奄美ウミガメのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-umigame', 'gotochi', 'ぬりえ'],
@@ -39754,7 +39754,7 @@ const _materials4: Material[] = [
   {
     id: 'kagoshima-kaimon-normal-1',
     title: '開聞岳（鹿児島）',
-    description: '開聞岳薩摩富士の線画。',
+    description: '開聞岳薩摩富士のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['kagoshima-kaimon', 'gotochi', 'ぬりえ'],
@@ -39771,7 +39771,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-shisa-normal-1',
     title: 'シーサー（沖縄）',
-    description: 'シーサーの線画。',
+    description: 'シーサーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-shisa', 'gotochi', 'ぬりえ'],
@@ -39788,7 +39788,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-eisa-normal-1',
     title: 'エイサー（沖縄）',
-    description: 'エイサー太鼓の線画。',
+    description: 'エイサー太鼓のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-eisa', 'gotochi', 'ぬりえ'],
@@ -39805,7 +39805,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-chinsuko-normal-1',
     title: 'ちんすこう（沖縄）',
-    description: 'ちんすこうの線画。',
+    description: 'ちんすこうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-chinsuko', 'gotochi', 'ぬりえ'],
@@ -39822,7 +39822,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-yanbaru-kuina-normal-1',
     title: 'ヤンバルクイナ（沖縄）',
-    description: 'ヤンバルクイナの線画。',
+    description: 'ヤンバルクイナのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-yanbaru-kuina', 'gotochi', 'ぬりえ'],
@@ -39839,7 +39839,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-coral-normal-1',
     title: 'サンゴ礁（沖縄）',
-    description: 'サンゴ礁の線画。',
+    description: 'サンゴ礁のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-coral', 'gotochi', 'ぬりえ'],
@@ -39856,7 +39856,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-goya-normal-1',
     title: 'ゴーヤ（沖縄）',
-    description: 'ゴーヤの線画。',
+    description: 'ゴーヤのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-goya', 'gotochi', 'ぬりえ'],
@@ -39873,7 +39873,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-snorkel-normal-1',
     title: 'シュノーケリング（沖縄）',
-    description: 'シュノーケリングの線画。',
+    description: 'シュノーケリングのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-snorkel', 'gotochi', 'ぬりえ'],
@@ -39890,7 +39890,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-shuri-castle-normal-1',
     title: '首里城（沖縄）',
-    description: '首里城正殿の線画。',
+    description: '首里城正殿のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-shuri-castle', 'gotochi', 'ぬりえ'],
@@ -39907,7 +39907,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-sanshin-normal-1',
     title: '三線（沖縄）',
-    description: '三線奏者の線画。',
+    description: '三線奏者のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-sanshin', 'gotochi', 'ぬりえ'],
@@ -39924,7 +39924,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-bingata-normal-1',
     title: '紅型（沖縄）',
-    description: '紅型の着物の線画。',
+    description: '紅型の着物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-bingata', 'gotochi', 'ぬりえ'],
@@ -39941,7 +39941,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-mangrove-normal-1',
     title: 'マングローブ（沖縄）',
-    description: 'マングローブとカヌーの線画。',
+    description: 'マングローブとカヌーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-mangrove', 'gotochi', 'ぬりえ'],
@@ -39958,7 +39958,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-whaleshark-normal-1',
     title: 'ジンベエザメ（沖縄・美ら海）',
-    description: 'ジンベエザメの線画。',
+    description: 'ジンベエザメのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-whaleshark', 'gotochi', 'ぬりえ'],
@@ -39975,7 +39975,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-hibiscus-normal-1',
     title: 'ハイビスカス（沖縄）',
-    description: 'ハイビスカスの線画。',
+    description: 'ハイビスカスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-hibiscus', 'gotochi', 'ぬりえ'],
@@ -39992,7 +39992,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-hateruma-sugar-normal-1',
     title: '波照間サトウキビ（沖縄）',
-    description: 'サトウキビ畑の線画。',
+    description: 'サトウキビ畑のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-hateruma-sugar', 'gotochi', 'ぬりえ'],
@@ -40009,7 +40009,7 @@ const _materials4: Material[] = [
   {
     id: 'okinawa-ryukyu-dance-normal-1',
     title: '琉球舞踊（沖縄）',
-    description: '琉球舞踊の線画。',
+    description: '琉球舞踊のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'gotochi',
     tags: ['okinawa-ryukyu-dance', 'gotochi', 'ぬりえ'],
@@ -40026,7 +40026,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-momotaro-simple-1',
     title: 'おばあさんとおおきなもも',
-    description: '川で大きな桃を拾うおばあさんの線画。',
+    description: '川で大きな桃を拾うおばあさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-momotaro', 'どうわ', 'ぬりえ'],
@@ -40094,7 +40094,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-urashima-taro-simple-1',
     title: 'かめをたすける',
-    description: '亀を助ける浦島の線画。',
+    description: '亀を助ける浦島のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-urashima-taro', 'どうわ', 'ぬりえ'],
@@ -40128,7 +40128,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-urashima-taro-normal-1',
     title: 'おとひめのうたげ',
-    description: '乙姫の歓待の線画。',
+    description: '乙姫の歓待のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-urashima-taro', 'どうわ', 'ぬりえ'],
@@ -40162,7 +40162,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-kintaro-simple-1',
     title: 'やまのきんたろう',
-    description: 'まさかりを構えるきんたろうの線画。',
+    description: 'まさかりを構えるきんたろうのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-kintaro', 'どうわ', 'ぬりえ'],
@@ -40230,7 +40230,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-kaguya-hime-easy-1',
     title: 'ごにんのきぞくのきゅうこん',
-    description: '5人の求婚の線画。',
+    description: '5人の求婚のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-kaguya-hime', 'どうわ', 'ぬりえ'],
@@ -40264,7 +40264,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-kaguya-hime-rich-1',
     title: 'つきへかえる',
-    description: '月へ帰る別れの線画。',
+    description: '月へ帰る別れのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-kaguya-hime', 'どうわ', 'ぬりえ'],
@@ -40281,7 +40281,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-issun-boshi-simple-1',
     title: 'おわんのふねでたびだち',
-    description: 'お椀の舟の一寸法師の線画。',
+    description: 'お椀の舟の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-issun-boshi', 'どうわ', 'ぬりえ'],
@@ -40298,7 +40298,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-issun-boshi-easy-1',
     title: 'ひめさまとであう',
-    description: '姫の前の一寸法師の線画。',
+    description: '姫の前の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-issun-boshi', 'どうわ', 'ぬりえ'],
@@ -40349,7 +40349,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-hanasaka-jiisan-simple-1',
     title: 'シロとおじいさん',
-    description: 'シロを抱くおじいさんの線画。',
+    description: 'シロを抱くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-hanasaka-jiisan', 'どうわ', 'ぬりえ'],
@@ -40400,7 +40400,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-hanasaka-jiisan-rich-1',
     title: 'いじわるじいさんのしっぱい',
-    description: '意地悪じいさんの失敗の線画。',
+    description: '意地悪じいさんの失敗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-hanasaka-jiisan', 'どうわ', 'ぬりえ'],
@@ -40417,7 +40417,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tongue-cut-sparrow-simple-1',
     title: 'すずめをてあて',
-    description: 'すずめを手当するおじいさんの線画。',
+    description: 'すずめを手当するおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tongue-cut-sparrow', 'どうわ', 'ぬりえ'],
@@ -40434,7 +40434,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tongue-cut-sparrow-easy-1',
     title: 'いじわるおばあさん',
-    description: 'すずめをいじめるおばあさんの線画。',
+    description: 'すずめをいじめるおばあさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tongue-cut-sparrow', 'どうわ', 'ぬりえ'],
@@ -40451,7 +40451,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tongue-cut-sparrow-normal-1',
     title: 'ちいさなつづらのおおばんこばん',
-    description: '小さな葛籠から宝物の線画。',
+    description: '小さな葛籠から宝物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tongue-cut-sparrow', 'どうわ', 'ぬりえ'],
@@ -40587,7 +40587,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-grateful-crane-normal-1',
     title: 'はたをおるむすめ',
-    description: '機を織る娘の線画。',
+    description: '機を織る娘のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-grateful-crane', 'どうわ', 'ぬりえ'],
@@ -40638,7 +40638,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-onigiri-korori-easy-1',
     title: 'あなをのぞく',
-    description: '穴を覗くおじいさんの線画。',
+    description: '穴を覗くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-onigiri-korori', 'どうわ', 'ぬりえ'],
@@ -40655,7 +40655,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-onigiri-korori-normal-1',
     title: 'ねずみのうたとごちそう',
-    description: 'ねずみのごちそうの線画。',
+    description: 'ねずみのごちそうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-onigiri-korori', 'どうわ', 'ぬりえ'],
@@ -40689,7 +40689,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-kasa-jizo-simple-1',
     title: 'かさがうれないじいさん',
-    description: '市場で困るおじいさんの線画。',
+    description: '市場で困るおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-kasa-jizo', 'どうわ', 'ぬりえ'],
@@ -40757,7 +40757,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-monkey-crab-simple-1',
     title: 'かにとさるのこうかん',
-    description: 'おにぎりと種の交換の線画。',
+    description: 'おにぎりと種の交換のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-monkey-crab', 'どうわ', 'ぬりえ'],
@@ -40791,7 +40791,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-monkey-crab-normal-1',
     title: 'なかまのさくせんかいぎ',
-    description: '作戦会議の線画。',
+    description: '作戦会議のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-monkey-crab', 'どうわ', 'ぬりえ'],
@@ -40825,7 +40825,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-straw-millionaire-simple-1',
     title: 'ころんでわらをひろう',
-    description: 'わらを握る若者の線画。',
+    description: 'わらを握る若者のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-straw-millionaire', 'どうわ', 'ぬりえ'],
@@ -40876,7 +40876,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-straw-millionaire-rich-1',
     title: 'ちょうじゃのやかた',
-    description: '長者の屋敷の線画。',
+    description: '長者の屋敷のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-straw-millionaire', 'どうわ', 'ぬりえ'],
@@ -40910,7 +40910,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tanabata-easy-1',
     title: 'あまのがわでであう',
-    description: '天の川での出会いの線画。',
+    description: '天の川での出会いのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tanabata', 'どうわ', 'ぬりえ'],
@@ -41012,7 +41012,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-inaba-white-rabbit-rich-1',
     title: 'おおくにぬしのてあて',
-    description: '大国主の手当の線画。',
+    description: '大国主の手当のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-inaba-white-rabbit', 'どうわ', 'ぬりえ'],
@@ -41063,7 +41063,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tennyo-hagoromo-normal-1',
     title: 'うつくしいまい',
-    description: '天女の舞の線画。',
+    description: '天女の舞のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tennyo-hagoromo', 'どうわ', 'ぬりえ'],
@@ -41114,7 +41114,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-uriko-hime-easy-1',
     title: 'うりからひめ',
-    description: '瓜から姫の線画。',
+    description: '瓜から姫のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-uriko-hime', 'どうわ', 'ぬりえ'],
@@ -41165,7 +41165,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tanuki-itoguruma-simple-1',
     title: 'わなにかかったたぬき',
-    description: '罠のたぬきの線画。',
+    description: '罠のたぬきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tanuki-itoguruma', 'どうわ', 'ぬりえ'],
@@ -41233,7 +41233,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-yuki-onna-simple-1',
     title: 'ゆきのよるのこや',
-    description: '雪の夜の小屋の線画。',
+    description: '雪の夜の小屋のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-yuki-onna', 'どうわ', 'ぬりえ'],
@@ -41403,7 +41403,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-umisachi-yamasachi-normal-1',
     title: 'うみのかみのめぐみ',
-    description: '海の神の恵みの線画。',
+    description: '海の神の恵みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-umisachi-yamasachi', 'どうわ', 'ぬりえ'],
@@ -41437,7 +41437,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-tengu-kakuremino-simple-1',
     title: 'てんぐとかくれみの',
-    description: '天狗とかくれみのの線画。',
+    description: '天狗とかくれみののぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tengu-kakuremino', 'どうわ', 'ぬりえ'],
@@ -41539,7 +41539,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-kachi-kachi-yama-normal-1',
     title: 'せなかにかちかち',
-    description: '背中の火の線画。',
+    description: '背中の火のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-kachi-kachi-yama', 'どうわ', 'ぬりえ'],
@@ -41590,7 +41590,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-journey-west-easy-1',
     title: 'きんとうんでそらをとぶ',
-    description: 'きんと雲の線画。',
+    description: 'きんと雲のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-journey-west', 'どうわ', 'ぬりえ'],
@@ -41709,7 +41709,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-snow-white-simple-1',
     title: 'しらゆきひめと小人たち',
-    description: 'しらゆきひめと小人たちの出会いの線画。',
+    description: 'しらゆきひめと小人たちの出会いのぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-white', 'どうわ', 'ぬりえ'],
@@ -41722,7 +41722,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-snow-white-easy-1',
     title: 'りんごのまほう',
-    description: '魔女がリンゴを差し出す場面の線画。',
+    description: '魔女がリンゴを差し出す場面のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-white', 'どうわ', 'ぬりえ'],
@@ -41735,7 +41735,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-snow-white-rich-1',
     title: 'しらゆきひめのめざめ',
-    description: '王子のキスで目覚めるしらゆきひめの線画。',
+    description: '王子のキスで目覚めるしらゆきひめのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-white', 'どうわ', 'ぬりえ'],
@@ -41748,7 +41748,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-snow-white-normal-1',
     title: 'ガラスのひつぎ',
-    description: 'ガラスの棺の線画。',
+    description: 'ガラスの棺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-white', 'どうわ', 'ぬりえ'],
@@ -41765,7 +41765,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-sleeping-beauty-simple-1',
     title: 'まじょののろい',
-    description: '魔女の呪いの線画。',
+    description: '魔女の呪いのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-sleeping-beauty', 'どうわ', 'ぬりえ'],
@@ -41782,7 +41782,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-sleeping-beauty-easy-1',
     title: 'いとぐるまのはり',
-    description: '糸車の針の線画。',
+    description: '糸車の針のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-sleeping-beauty', 'どうわ', 'ぬりえ'],
@@ -41799,7 +41799,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-sleeping-beauty-normal-1',
     title: 'バラのとげのしろ',
-    description: 'バラに覆われた城の線画。',
+    description: 'バラに覆われた城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-sleeping-beauty', 'どうわ', 'ぬりえ'],
@@ -41816,7 +41816,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-sleeping-beauty-rich-1',
     title: 'おうじのキスでめざめる',
-    description: '王子のキスの線画。',
+    description: '王子のキスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-sleeping-beauty', 'どうわ', 'ぬりえ'],
@@ -41867,7 +41867,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-red-riding-hood-normal-1',
     title: 'おばあさんにばけたオオカミ',
-    description: 'ベッドのオオカミの線画。',
+    description: 'ベッドのオオカミのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-red-riding-hood', 'どうわ', 'ぬりえ'],
@@ -41935,7 +41935,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-hansel-gretel-easy-1',
     title: 'おかしのいえ',
-    description: 'お菓子の家の線画。',
+    description: 'お菓子の家のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-hansel-gretel', 'fairytale', 'ぬりえ'],
@@ -41952,7 +41952,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-hansel-gretel-normal-1',
     title: 'まじょのおり',
-    description: '魔女の檻の線画。',
+    description: '魔女の檻のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-hansel-gretel', 'fairytale', 'ぬりえ'],
@@ -41986,7 +41986,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-puss-in-boots-simple-1',
     title: 'ながぐつのねこ',
-    description: '長靴の猫の線画。',
+    description: '長靴の猫のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-puss-in-boots', 'fairytale', 'ぬりえ'],
@@ -42105,7 +42105,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-bremen-musicians-rich-1',
     title: 'おんがくかい',
-    description: '音楽会の線画。',
+    description: '音楽会のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-bremen-musicians', 'fairytale', 'ぬりえ'],
@@ -42122,7 +42122,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-wolf-seven-goats-simple-1',
     title: 'ははヤギのいいつけ',
-    description: '母ヤギの言いつけの線画。',
+    description: '母ヤギの言いつけのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-wolf-seven-goats', 'fairytale', 'ぬりえ'],
@@ -42139,7 +42139,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-wolf-seven-goats-easy-1',
     title: 'オオカミがやってくる',
-    description: 'オオカミの侵入の線画。',
+    description: 'オオカミの侵入のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-wolf-seven-goats', 'fairytale', 'ぬりえ'],
@@ -42207,7 +42207,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-rumpelstiltskin-normal-1',
     title: 'なまえあてのかけ',
-    description: '名前当ての賭けの線画。',
+    description: '名前当ての賭けのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rumpelstiltskin', 'fairytale', 'ぬりえ'],
@@ -42275,7 +42275,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-golden-goose-normal-1',
     title: 'ながいぎょうれつ',
-    description: '長い行列の線画。',
+    description: '長い行列のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-golden-goose', 'fairytale', 'ぬりえ'],
@@ -42394,7 +42394,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-frog-prince-easy-1',
     title: 'カエルとやくそく',
-    description: 'カエルとの取引の線画。',
+    description: 'カエルとの取引のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-frog-prince', 'fairytale', 'ぬりえ'],
@@ -42411,7 +42411,7 @@ const _materials4: Material[] = [
   {
     id: 'fairytale-frog-prince-normal-1',
     title: 'しょくたくのカエル',
-    description: '食卓のカエルの線画。',
+    description: '食卓のカエルのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-frog-prince', 'fairytale', 'ぬりえ'],
@@ -42444,7 +42444,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-rapunzel-simple-1',
-    title: 'とうのちょうのかみ', description: '塔の姫の線画。',
+    title: 'とうのちょうのかみ', description: '塔の姫のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
@@ -42455,7 +42455,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-rapunzel-easy-1',
-    title: 'おうじがかみをのぼる', description: '髪を登る王子の線画。',
+    title: 'おうじがかみをのぼる', description: '髪を登る王子のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
@@ -42466,7 +42466,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-rapunzel-normal-1',
-    title: 'まじょのいかり', description: '魔女の怒りの線画。',
+    title: 'まじょのいかり', description: '魔女の怒りのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
@@ -42488,7 +42488,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-little-mermaid-simple-1',
-    title: 'うみのいわのうえ', description: '海面を眺める人魚姫の線画。',
+    title: 'うみのいわのうえ', description: '海面を眺める人魚姫のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
@@ -42510,7 +42510,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-little-mermaid-normal-1',
-    title: 'うみのまじょとのとりひき', description: '魔女との取引の線画。',
+    title: 'うみのまじょとのとりひき', description: '魔女との取引のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
@@ -42532,7 +42532,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-thumbelina-simple-1',
-    title: 'チューリップからうまれる', description: 'チューリップから誕生の線画。',
+    title: 'チューリップからうまれる', description: 'チューリップから誕生のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-thumbelina', 'どうわ', 'ぬりえ'],
@@ -42576,7 +42576,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-ugly-duckling-simple-1',
-    title: 'ひとりだけちがう', description: '1羽違うひな鳥の線画。',
+    title: 'ひとりだけちがう', description: '1羽違うひな鳥のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
@@ -42587,7 +42587,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-ugly-duckling-easy-1',
-    title: 'いじめられてさまよう', description: 'さまよう雛の線画。',
+    title: 'いじめられてさまよう', description: 'さまよう雛のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
@@ -42598,7 +42598,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-ugly-duckling-normal-1',
-    title: 'ふゆをひとりで', description: '雪の池の線画。',
+    title: 'ふゆをひとりで', description: '雪の池のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
@@ -42609,7 +42609,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-ugly-duckling-rich-1',
-    title: 'うつくしいはくちょうに', description: '白鳥に変身の線画。',
+    title: 'うつくしいはくちょうに', description: '白鳥に変身のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
@@ -42642,7 +42642,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-snow-queen-normal-1',
-    title: 'こおりのきゅうでん', description: '氷の宮殿の線画。',
+    title: 'こおりのきゅうでん', description: '氷の宮殿のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-queen', 'どうわ', 'ぬりえ'],
@@ -42664,7 +42664,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-tin-soldier-simple-1',
-    title: 'かたあしのへいたい', description: '片足の兵隊の線画。',
+    title: 'かたあしのへいたい', description: '片足の兵隊のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tin-soldier', 'どうわ', 'ぬりえ'],
@@ -42730,7 +42730,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-pinocchio-normal-1',
-    title: 'クジラのおなかで', description: 'クジラの中の線画。',
+    title: 'クジラのおなかで', description: 'クジラの中のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-pinocchio', 'どうわ', 'ぬりえ'],
@@ -42796,7 +42796,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-peter-pan-simple-1',
-    title: 'こどもべやのピーターパン', description: '子ども部屋の線画。',
+    title: 'こどもべやのピーターパン', description: '子ども部屋のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-peter-pan', 'どうわ', 'ぬりえ'],
@@ -42862,7 +42862,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-alice-wonderland-normal-1',
-    title: 'おちゃかい', description: 'お茶会の線画。',
+    title: 'おちゃかい', description: 'お茶会のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],
@@ -42873,7 +42873,7 @@ const _materials4: Material[] = [
   },
   {
     id: 'fairytale-alice-wonderland-rich-1',
-    title: 'トランプのじょおうのさいばん', description: '女王の裁判の線画。',
+    title: 'トランプのじょおうのさいばん', description: '女王の裁判のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],

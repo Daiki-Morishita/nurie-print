@@ -16,6 +16,7 @@ const KIDS_NAV: NavItem[] = [
   { href: '/category/theme/sea', label: '海' },
   { href: '/category/theme/insects', label: '虫', isNew: true },
   { href: '/category/theme/fruits', label: '食べ物', isNew: true },
+  { href: '/maze', label: '迷路', isNew: true },
   { href: '/category/age/3', label: '年齢で探す' },
   { href: '/materials?difficulty=1', label: '難易度で探す' },
   { href: '/columns', label: '読みもの' },
@@ -32,7 +33,7 @@ const ADULT_NAV: NavItem[] = [
   { href: '/adult/materials', label: 'すべて見る' },
 ]
 
-export function Header({ materialCount = 555 }: { materialCount?: number }) {
+export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number; adultCount?: number }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchValue, setSearchValue] = useState('')
   const { data: session } = useSession()
@@ -42,6 +43,7 @@ export function Header({ materialCount = 555 }: { materialCount?: number }) {
   const isAdmin = pathname.startsWith('/admin')
   const nav = isAdult ? ADULT_NAV : KIDS_NAV
   const searchAction = isAdult ? '/adult/materials' : '/materials'
+  const materialCount = isAdult ? adultCount : kidsCount
 
   // 管理画面ではグローバルヘッダーを表示しない（操作エリアの固定を妨げるため）
   if (isAdmin) return null
@@ -191,9 +193,9 @@ export function Header({ materialCount = 555 }: { materialCount?: number }) {
               )}
               <div className="text-right">
                 <div className={`${isAdult ? 'font-mincho' : 'font-rounded'} text-[24px] font-black text-primary leading-none`}>
-                  {isAdult ? '近日' : materialCount}
+                  {materialCount}
                 </div>
-                <div className="text-[11px] text-muted-foreground mt-1">{isAdult ? '公開予定' : '点の教材'}</div>
+                <div className="text-[11px] text-muted-foreground mt-1">点の教材</div>
               </div>
             </div>
 
