@@ -42442,103 +42442,6 @@ const _materials4: Material[] = [
     createdAt: '2026-05-25T20:12',
     popular: false,
   },
-]
-
-export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
-
-export type SortKey = 'newest' | 'popular' | 'favorites' | 'random'
-
-export function getAudience(m: Material): Audience {
-  if (m.audience) return m.audience
-  if (m.theme && ADULT_THEMES.includes(m.theme)) return 'adult'
-  return 'kids'
-}
-
-export function isPublic(m: Material, overrides?: Map<string, { imageStatus: string | null }>): boolean {
-  const status = overrides?.get(m.id)?.imageStatus ?? m.imageStatus
-  return status !== 'needs_revision'
-}
-
-export function getMaterialsForAudience(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
-  return materials.filter(m => isPublic(m, overrides) && getAudience(m) === audience)
-}
-
-export function filterMaterials(params: {
-  age?: number
-  category?: string
-  season?: string
-  event?: string
-  theme?: string
-  difficulty?: number
-  search?: string
-  sort?: SortKey
-  favoriteIds?: string[]
-  audience?: 'kids' | 'adult'
-  overrides?: Map<string, { imageStatus: string | null }>
-}): Material[] {
-  const audience = params.audience ?? 'kids'
-  const filtered = materials.filter(m => {
-    if (!isPublic(m, params.overrides)) return false
-    if (getAudience(m) !== audience) return false
-    if (params.age && (m.ageMin > params.age || m.ageMax < params.age)) return false
-    if (params.category && m.category !== params.category) return false
-    if (params.season && m.season !== params.season) return false
-    if (params.event && m.event !== params.event) return false
-    if (params.theme && m.theme !== params.theme) return false
-    if (params.difficulty && m.difficulty !== params.difficulty) return false
-    if (params.search) {
-      const q = normalizeQuery(params.search)
-      const haystack = normalizeText([m.title, m.description, ...m.tags].join(' '))
-      if (!haystack.includes(q)) return false
-    }
-    return true
-  })
-
-  const sort = params.sort ?? 'newest'
-
-  if (sort === 'popular') {
-    return [...filtered].sort((a, b) => {
-      if (a.popular !== b.popular) return a.popular ? -1 : 1
-      const da = b.downloadCount ?? 0
-      const db = a.downloadCount ?? 0
-      if (da !== db) return da - db
-      return b.createdAt.localeCompare(a.createdAt)
-    })
-  }
-
-  if (sort === 'favorites' && params.favoriteIds) {
-    const favSet = new Set(params.favoriteIds)
-    return [...filtered].sort((a, b) => {
-      const af = favSet.has(a.id) ? 1 : 0
-      const bf = favSet.has(b.id) ? 1 : 0
-      if (af !== bf) return bf - af
-      return b.createdAt.localeCompare(a.createdAt)
-    })
-  }
-
-  if (sort === 'random') {
-    const arr = [...filtered]
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[arr[i], arr[j]] = [arr[j], arr[i]]
-    }
-    return arr
-  }
-
-  return [...filtered].sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-}
-
-export function getPopularMaterials(limit = 6, audience: Audience = 'kids', overrides?: Map<string, { imageStatus: string | null }>): Material[] {
-  return filterMaterials({ sort: 'popular', audience, overrides }).slice(0, limit)
-}
-
-export function getMaterialById(id: string, overrides?: Map<string, { imageStatus: string | null }>): Material | undefined {
-  const m = materials.find(m => m.id === id)
-  if (!m || !isPublic(m, overrides)) return undefined
-  return m
-}
-
-export function getRelatedMaterials(material: Material, limit = 4, overrides?: Map<string, { imageStatus: string | null }>): Material[
   {
     id: 'fairytale-rapunzel-simple-1',
     title: 'とうのちょうのかみ', description: '塔の姫の線画。',
@@ -42979,7 +42882,103 @@ export function getRelatedMaterials(material: Material, limit = 4, overrides?: M
     illustVersion: 1, imageStatus: 'needs_revision',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
-] {
+]
+
+export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
+
+export type SortKey = 'newest' | 'popular' | 'favorites' | 'random'
+
+export function getAudience(m: Material): Audience {
+  if (m.audience) return m.audience
+  if (m.theme && ADULT_THEMES.includes(m.theme)) return 'adult'
+  return 'kids'
+}
+
+export function isPublic(m: Material, overrides?: Map<string, { imageStatus: string | null }>): boolean {
+  const status = overrides?.get(m.id)?.imageStatus ?? m.imageStatus
+  return status !== 'needs_revision'
+}
+
+export function getMaterialsForAudience(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
+  return materials.filter(m => isPublic(m, overrides) && getAudience(m) === audience)
+}
+
+export function filterMaterials(params: {
+  age?: number
+  category?: string
+  season?: string
+  event?: string
+  theme?: string
+  difficulty?: number
+  search?: string
+  sort?: SortKey
+  favoriteIds?: string[]
+  audience?: 'kids' | 'adult'
+  overrides?: Map<string, { imageStatus: string | null }>
+}): Material[] {
+  const audience = params.audience ?? 'kids'
+  const filtered = materials.filter(m => {
+    if (!isPublic(m, params.overrides)) return false
+    if (getAudience(m) !== audience) return false
+    if (params.age && (m.ageMin > params.age || m.ageMax < params.age)) return false
+    if (params.category && m.category !== params.category) return false
+    if (params.season && m.season !== params.season) return false
+    if (params.event && m.event !== params.event) return false
+    if (params.theme && m.theme !== params.theme) return false
+    if (params.difficulty && m.difficulty !== params.difficulty) return false
+    if (params.search) {
+      const q = normalizeQuery(params.search)
+      const haystack = normalizeText([m.title, m.description, ...m.tags].join(' '))
+      if (!haystack.includes(q)) return false
+    }
+    return true
+  })
+
+  const sort = params.sort ?? 'newest'
+
+  if (sort === 'popular') {
+    return [...filtered].sort((a, b) => {
+      if (a.popular !== b.popular) return a.popular ? -1 : 1
+      const da = b.downloadCount ?? 0
+      const db = a.downloadCount ?? 0
+      if (da !== db) return da - db
+      return b.createdAt.localeCompare(a.createdAt)
+    })
+  }
+
+  if (sort === 'favorites' && params.favoriteIds) {
+    const favSet = new Set(params.favoriteIds)
+    return [...filtered].sort((a, b) => {
+      const af = favSet.has(a.id) ? 1 : 0
+      const bf = favSet.has(b.id) ? 1 : 0
+      if (af !== bf) return bf - af
+      return b.createdAt.localeCompare(a.createdAt)
+    })
+  }
+
+  if (sort === 'random') {
+    const arr = [...filtered]
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    }
+    return arr
+  }
+
+  return [...filtered].sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+}
+
+export function getPopularMaterials(limit = 6, audience: Audience = 'kids', overrides?: Map<string, { imageStatus: string | null }>): Material[] {
+  return filterMaterials({ sort: 'popular', audience, overrides }).slice(0, limit)
+}
+
+export function getMaterialById(id: string, overrides?: Map<string, { imageStatus: string | null }>): Material | undefined {
+  const m = materials.find(m => m.id === id)
+  if (!m || !isPublic(m, overrides)) return undefined
+  return m
+}
+
+export function getRelatedMaterials(material: Material, limit = 4, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
   return materials
     .filter(m => isPublic(m, overrides) && m.id !== material.id && (
       m.category === material.category ||

@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: '/category/type/maze', destination: '/maze', permanent: true },
+    ]
+  },
   serverExternalPackages: ['sharp'],
   // 画像最適化は全Imageでスキップ（Vercel無料枠の5,000変換/月を節約）
   // 素材画像はSupabase CDN、ローカル画像はSVG/最適済JPGなので最適化不要

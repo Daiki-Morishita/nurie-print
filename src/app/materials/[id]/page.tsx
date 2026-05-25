@@ -9,6 +9,7 @@ import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCa
 import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
+import { AdBanner } from '@/components/ads/AdBanner'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -346,6 +347,12 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
+
+        {/* 広告 */}
+        <AdBanner
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONTENT ?? ''}
+          className="mt-8 print:hidden"
+        />
 
         {/* 関連教材 */}
         {related.length > 0 && (
