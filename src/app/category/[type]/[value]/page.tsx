@@ -9,6 +9,7 @@ import { filterMaterials, type SortKey } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
 import type { Category, Season, Theme } from '@/lib/types'
+import { AdBanner } from '@/components/ads/AdBanner'
 
 type CategoryType = 'age' | 'type' | 'season' | 'event' | 'theme'
 
@@ -68,10 +69,20 @@ function getPageInfo(type: string, value: string): { title: string; description:
 export async function generateMetadata({ params }: { params: Promise<{ type: string; value: string }> }) {
   const { type, value } = await params
   const { title, description } = getPageInfo(type, value)
+
+  const fp: Parameters<typeof filterMaterials>[0] = {}
+  if (type === 'age') fp.age = Number(value)
+  else if (type === 'type') fp.category = value
+  else if (type === 'season') fp.season = value
+  else if (type === 'event') fp.event = value
+  else if (type === 'theme') fp.theme = value as Parameters<typeof filterMaterials>[0]['theme']
+  const isEmpty = filterMaterials(fp).length === 0
+
   return {
     title,
     description,
     alternates: { canonical: `https://nurie-print.com/category/${type}/${value}` },
+    ...(isEmpty ? { robots: { index: false, follow: false } } : {}),
   }
 }
 
@@ -146,6 +157,11 @@ export default async function CategoryPage({
           <SortSelector showFavorites={false} />
         </Suspense>
       </div>
+
+      <AdBanner
+        slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONTENT ?? ''}
+        className="mb-6"
+      />
 
       {filtered.length === 0 ? (
         <div className="text-center py-16 text-muted-foreground">

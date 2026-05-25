@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Printer, Trash2, Heart, ArrowRight, Plus, FolderPlus, X, Check, MoreVertical } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { useFavorites } from '@/components/favorites/FavoritesProvider'
+import { getMaterialById } from '@/lib/data'
 import type { Material } from '@/lib/types'
 
 export interface FavoriteItem {
@@ -19,21 +20,28 @@ interface Props {
 const UNGROUPED = '__ungrouped__'
 
 export function FavoritesView({ initialItems, limit }: Props) {
-  const { entries, isFavorite, move, bulkDelete } = useFavorites()
+  const { entries, isAnonymous, move, bulkDelete } = useFavorites()
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [newGroupOpen, setNewGroupOpen] = useState(false)
   const [newGroupName, setNewGroupName] = useState('')
   const [moveMenuOpen, setMoveMenuOpen] = useState(false)
 
-  // Use server-rendered items but apply client groupName changes from provider
+  // 認証済み: initialItems（サーバーレンダ）を entries で更新
+  // 匿名: localStorage の entries から getMaterialById でクライアント側ルックアップ
   const liveItems: FavoriteItem[] = useMemo(() => {
-    return initialItems
-      .filter(it => isFavorite(it.material.id))
-      .map(it => {
-        const entry = entries.get(it.material.id)
-        return { material: it.material, groupName: entry?.groupName ?? it.groupName }
-      })
-  }, [initialItems, entries, isFavorite])
+    const initialMap = new Map(initialItems.map(it => [it.material.id, it]))
+    const items: FavoriteItem[] = []
+    for (const entry of entries.values()) {
+      const seed = initialMap.get(entry.materialId)
+      if (seed) {
+        items.push({ material: seed.material, groupName: entry.groupName ?? seed.groupName })
+      } else {
+        const m = getMaterialById(entry.materialId)
+        if (m) items.push({ material: m, groupName: entry.groupName })
+      }
+    }
+    return items
+  }, [initialItems, entries])
 
   // Group items by groupName (null → ungrouped)
   const groups = useMemo(() => {
@@ -134,10 +142,15 @@ export function FavoritesView({ initialItems, limit }: Props) {
           <h1 className="font-rounded text-[26px] sm:text-[32px] font-black">お気に入りのぬりえ</h1>
           <p className="text-[13px] text-muted-foreground mt-2">
             <strong className="text-foreground">{count}</strong> / {limit} 件
-            {count >= limit && (
+            {count >= limit && !isAnonymous && (
               <Link href="/upgrade" className="ml-2 text-primary underline">プランをアップグレード</Link>
             )}
           </p>
+          {isAnonymous && count > 0 && (
+            <p className="text-[12px] text-muted-foreground mt-1.5 leading-relaxed">
+              <Link href="/login?callbackUrl=/favorites" className="text-primary underline">ログイン</Link>すると別端末でも同じお気に入りを使えます。
+            </p>
+          )}
         </div>
         {count > 0 && (
           <button
