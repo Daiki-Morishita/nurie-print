@@ -226,6 +226,10 @@ FOOD_COND_ITEMS = COMMON_COND_ITEMS + [
     "食器・料理・食べ物のサイズは人物に対して現実的なスケールで描く（子どもの体と同じかそれ以上に大きい皿・鍋はNG）",
 ]
 
+SWEETS_COND_ITEMS = FOOD_COND_ITEMS + [
+    "登場する人物（子ども・おかあさん等）には必ず顔（目・鼻・口・笑顔などの表情）を描く（顔なしはNG）",
+]
+
 VEGETABLE_COND_ITEMS = FOOD_COND_ITEMS + [
     "野菜の表面にはその野菜らしいスジや曲線を1〜3本程度シンプルに入れる（芽・点々・複雑な模様・過剰なディテールは描かない）",
     "人物と野菜の大きさの比率は現実的に描く（野菜が人物の頭や体と同じかそれ以上に巨大になるのはNG・野菜は人物の手に収まる〜腕程度のサイズ感）",
@@ -4442,8 +4446,10 @@ def run_item(pw, state, item_id, theme_type, variant, client):
         AUTUMN_FOOD_ITEMS = {"saury", "chestnut", "baked-sweet-potato"}
         if theme_type == "vegetables":
             cond_items = VEGETABLE_COND_ITEMS
-        elif theme_type in ("fruits", "sweets"):
+        elif theme_type == "fruits":
             cond_items = FOOD_COND_ITEMS
+        elif theme_type == "sweets":
+            cond_items = SWEETS_COND_ITEMS
         elif theme_type == "insects":
             cond_items = INSECTS_COND_ITEMS
         elif theme_type == "sports":
