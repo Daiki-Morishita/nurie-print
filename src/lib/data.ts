@@ -42913,6 +42913,23 @@ const _materials4: Material[] = [
     createdAt: '2026-05-25T19:19',
     popular: false,
   },
+  {
+    id: 'mitarashi-rich-1',
+    title: 'えんにちのだんご',
+    description: '縁日の出店のにぎやかな線画。',
+    ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'coloring', theme: 'sweets',
+    tags: ['mitarashi', 'おかし', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/mitarashi-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/mitarashi-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T00:04',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
