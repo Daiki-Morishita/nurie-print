@@ -3280,6 +3280,7 @@ THEMES = {
     "densha":     DENSHA,
     "shinkansen": SHINKANSEN,
     "sweets":     SWEETS_ITEMS,
+    "fairytale":  FAIRYTALE,
 }
 
 # =============================================

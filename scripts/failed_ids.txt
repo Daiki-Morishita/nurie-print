@@ -24,3 +24,8 @@
 2026-05-23T06:36:56 wakayama-nachi-falls-normal-1
 2026-05-23T07:13:01 wakayama-ume-normal-1
 2026-05-23T07:51:36 wakayama-maguro-normal-1
+2026-05-25T05:39:47 fairytale-snow-white-easy-1
+2026-05-25T05:39:47 fairytale-snow-white-rich-1
+fairytale-snow-white-easy-1
+fairytale-snow-white-normal-1
+fairytale-snow-white-rich-1
