@@ -2,11 +2,12 @@ import type { MetadataRoute } from 'next'
 import { materials, filterMaterials, getAudience } from '@/lib/data'
 import { ADULT_THEMES } from '@/lib/types'
 import { columns } from '@/lib/columns'
+import { getAllMazes } from '@/lib/maze/loader'
 
 const BASE_URL = 'https://nurie-print.com'
 
 const AGES = [2, 3, 4, 5, 6]
-const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'trains', 'densha', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports', 'yokai', 'flowers', 'gotochi']
+const KIDS_THEMES = ['animals', 'dinosaurs', 'vehicles', 'trains', 'densha', 'shinkansen', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sweets', 'sports', 'yokai', 'flowers', 'gotochi', 'fairytale', 'seasonal-events']
 
 // Material.createdAt は "2026-05-22T14:30" のような不完全な ISO 形式（秒・TZ欠落）。
 // Google Search Console は ISO 8601 全要素を要求するため、Date オブジェクトに変換して渡す。
@@ -90,6 +91,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/faq`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE_URL}/contact`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
+    // Maze (independent route)
+    { url: `${BASE_URL}/maze`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    ...getAllMazes().map(m => ({
+      url: `${BASE_URL}/maze/${m.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    })),
     // Categories
     ...kidsCategoryPages,
     ...adultThemePages,
