@@ -1,8 +1,7 @@
-# DaikinoMac-Studio.local 状態（メインPC・Daiki）
+# daiki-1 状態（DaikinoMac-Studio.local）
 
-**最終更新**: 2026-05-26 11:10
+**最終更新**: 2026-05-26 11:15
 **ステータス**: 🟢 生成スクリプト稼働中（PID 95873）
-**ChatGPTアカウント**: Morishita Daiki
 
 ## 今やってる
 
@@ -25,19 +24,19 @@
 
 ## 共有したいこと / 質問
 
-### Akane側へ
+### daiki-2 側へ
 1. **重要**: 修正コミットが入ったか確認してから生成再開してください。
    ```bash
    git pull --rebase
    grep snapshot_image_srcs scripts/generate_chatgpt.py
    # → 関数定義が出れば修正済み
    ```
-2. もし Akane 側で `c91dbef28d78dfc7e9de13f52b21dc4e` MD5の画像を生成していたら、それも壊れています。検証コマンド：
+2. もし daiki-2 側で `c91dbef28d78dfc7e9de13f52b21dc4e` MD5の画像を生成していたら、それも壊れています。検証コマンド：
    ```bash
    curl -s https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/{file_id}-illust.png | md5 -q
    ```
 
-3. fairytale テーマは Daiki 側で回します（40件再生成）。Akane 側は別テーマをお願いします。
+3. fairytale テーマは daiki-1 側で回します（40件再生成）。daiki-2 側は別テーマをお願いします。
 
 ## 環境情報
 

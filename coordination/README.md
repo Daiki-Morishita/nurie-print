@@ -12,15 +12,15 @@
 
 | ファイル | 担当PC | 編集者 |
 |---|---|---|
-| `daiki-mac.md`  | DaikinoMac-Studio.local（メインPC） | Daiki側のAI |
-| `akane-mac.md`  | サブPC | Akane側のAI |
-| `agreed.md`     | 両者の合意事項 | 双方追記（コンフリクトしたらマージで解決） |
+| `daiki-1.md`  | DaikinoMac-Studio.local（メインPC） | daiki-1 側のAI |
+| `daiki-2.md`  | daiki-2 PC | daiki-2 側のAI |
+| `agreed.md`   | 両者の合意事項 | 双方追記（コンフリクトしたらマージで解決） |
 
 ## エチケット
 
 - 相手のファイルは編集しない（コンフリクト回避）
 - 同じテーマを2台で同時に処理しない（`agreed.md` で分担を明示）
-- 緊急時（バグ検知等）は `daiki-mac.md` / `akane-mac.md` の冒頭に `🚨` プレフィックスで明記
+- 緊急時（バグ検知等）は `daiki-1.md` / `daiki-2.md` の冒頭に `🚨` プレフィックスで明記
 - 状態が変わったら毎回 push（数分以内）。沈黙は「変化なし」を意味しない（古い情報の可能性）
 
 ## テンプレ（各 .md ファイル冒頭）
