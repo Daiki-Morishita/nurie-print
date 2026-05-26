@@ -3622,10 +3622,29 @@ def git_push():
 # =============================================
 # ChatGPT ブラウザ操作エンジン
 # =============================================
-def wait_for_image(page, timeout=240):
+def snapshot_image_srcs(page):
+    """現在DOMに存在する生成画像URLのスナップショット。
+    プロンプト送信前に取得 → wait_for_image はこれに含まれないURLのみを「新規」とみなす。
+    SPA遷移で前のチャットの<img>がDOMに残ったまま wait_for_image が即返して
+    別アイテムに前回画像が紛れ込む不具合の防止。
+    """
+    try:
+        imgs = page.query_selector_all("img")
+        seen = set()
+        for img in imgs:
+            src = img.get_attribute("src") or ""
+            if "backend-api/estuary/content" in src or "oaiusercontent" in src:
+                seen.add(src)
+        return seen
+    except Exception:
+        return set()
+
+
+def wait_for_image(page, timeout=240, exclude_srcs=None):
     deadline = time.time() + timeout
     _start = time.time()
     _regen_attempted = False
+    exclude_srcs = exclude_srcs or set()
     while time.time() < deadline:
         elapsed = time.time() - _start
         # タイムアウトの67%経過（200秒）かつ未試行 → 再生成ボタンを試みる
@@ -3655,6 +3674,8 @@ def wait_for_image(page, timeout=240):
         for img in imgs:
             src = img.get_attribute("src") or ""
             if "backend-api/estuary/content" in src or "oaiusercontent" in src:
+                if src in exclude_srcs:
+                    continue  # プロンプト送信前から存在する古い画像はスキップ
                 return ('ok', src)
         try:
             body_text = page.evaluate("() => document.body.innerText")
@@ -4323,10 +4344,14 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
             varied = ref_note + varied
         human_type(page, varied)         # ランダム速度でタイピング
         human_pause(0.4, 1.5)            # Enterを押す前のひと呼吸
+        # プロンプト送信直前のDOM画像URLを記録 → 古い画像の誤取得を防ぐ
+        prev_srcs = snapshot_image_srcs(page)
+        if prev_srcs:
+            log(f"  📸 送信前画像URL記録: {len(prev_srcs)}件（これらは新規としてカウントしない）")
         page.keyboard.press("Enter")
         log("  プロンプト送信。生成待ち...")
 
-        status, img_src = wait_for_image(page, timeout=420)
+        status, img_src = wait_for_image(page, timeout=420, exclude_srcs=prev_srcs)
         if status == 'ok':
             ok = download_image(page, img_src, out_path)
             if ok:
