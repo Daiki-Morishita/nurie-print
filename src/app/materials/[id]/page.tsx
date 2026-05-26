@@ -4,11 +4,12 @@ import Image from 'next/image'
 import { ArrowLeft, Clock, Users, Lightbulb, Printer, ChevronRight, ChevronLeft } from 'lucide-react'
 import { getMaterialById, getRelatedMaterials, materials } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
-import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS } from '@/lib/types'
+import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
+import { AdBanner } from '@/components/ads/AdBanner'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -90,13 +91,17 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     ...(material.imageUrl ? { image: material.imageUrl.startsWith('http') ? material.imageUrl : `https://nurie-print.com${material.imageUrl}` } : {}),
   }
 
+  // パンくず: ホーム > 教材一覧 > [テーマ] > 素材名
+  const themeLabel = material.theme ? THEME_LABELS[material.theme] : null
+  const themeUrl = material.theme ? `https://nurie-print.com/category/theme/${material.theme}` : null
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://nurie-print.com' },
       { '@type': 'ListItem', position: 2, name: '教材一覧', item: 'https://nurie-print.com/materials' },
-      { '@type': 'ListItem', position: 3, name: material.title, item: `https://nurie-print.com/materials/${material.id}` },
+      ...(themeLabel && themeUrl ? [{ '@type': 'ListItem', position: 3, name: themeLabel, item: themeUrl }] : []),
+      { '@type': 'ListItem', position: themeLabel ? 4 : 3, name: material.title, item: `https://nurie-print.com/materials/${material.id}` },
     ],
   }
 
@@ -162,10 +167,16 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
       {/* ===== 通常表示エリア ===== */}
       <div className="print:hidden max-w-[1280px] mx-auto px-4 sm:px-6 py-8">
         {/* パンくず */}
-        <nav className="flex items-center gap-1.5 text-[11px] text-muted-foreground mb-6">
+        <nav className="flex items-center gap-1.5 text-[11px] text-muted-foreground mb-6 flex-wrap">
           <Link href="/" className="hover:text-primary transition-colors">ホーム</Link>
           <ChevronRight className="w-3 h-3" />
           <Link href="/materials" className="hover:text-primary transition-colors">教材一覧</Link>
+          {themeLabel && material.theme && (
+            <>
+              <ChevronRight className="w-3 h-3" />
+              <Link href={`/category/theme/${material.theme}`} className="hover:text-primary transition-colors">{themeLabel}</Link>
+            </>
+          )}
           <ChevronRight className="w-3 h-3" />
           <span className="text-foreground line-clamp-1">{material.title}</span>
         </nav>
@@ -219,13 +230,14 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               <div className="absolute bottom-3 right-3 text-[10px] text-muted-foreground bg-white/90 backdrop-blur px-2 py-0.5 rounded border border-border">
                 A4 横長
               </div>
+              {/* お気に入り（画像右上にオーバーレイ） */}
+              <FavoriteButton materialId={material.id} size="lg" variant="overlay" />
             </div>
 
             {/* タイトル */}
             <div className="font-rounded font-bold text-[12px] text-primary mb-1 tracking-[0.1em]">— Material —</div>
-            <div className="flex items-start justify-between gap-3 mb-3">
+            <div className="mb-3">
               <h1 className="font-rounded text-[26px] sm:text-[32px] font-black leading-[1.3]">{material.title}</h1>
-              <FavoriteButton materialId={material.id} size="lg" variant="inline" className="shrink-0 mt-1" />
             </div>
             <p className="text-[14px] text-foreground/85 mb-4 leading-relaxed pl-4 border-l-[3px] border-primary">{material.description}</p>
 
@@ -346,6 +358,12 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
+
+        {/* 広告 */}
+        <AdBanner
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONTENT ?? ''}
+          className="mt-8 print:hidden"
+        />
 
         {/* 関連教材 */}
         {related.length > 0 && (

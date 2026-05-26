@@ -1,10 +1,11 @@
 import { Suspense } from 'react'
 import Link from 'next/link'
 import { MaterialCard } from '@/components/materials/MaterialCard'
+import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
 import { SearchFilters } from '@/components/search/SearchFilters'
 import { SearchBar } from '@/components/search/SearchBar'
 import { SortSelector } from '@/components/search/SortSelector'
-import { filterMaterials, type SortKey } from '@/lib/data'
+import { filterMaterials, getMaterialsForAudience, type SortKey } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import type { Category, Season } from '@/lib/types'
 import { NoResultsBanner } from '@/components/search/NoResultsBanner'
@@ -20,10 +21,21 @@ interface SearchParams {
   sort?: string
 }
 
-export const metadata = {
-  title: '教材を探す｜無料ぬりえプリント一覧',
-  description: '保育園・幼稚園で使える無料ぬりえプリント一覧。動物・恐竜・乗り物など豊富なテーマを年齢・難易度・季節で絞り込んでA4印刷できます。',
-  alternates: { canonical: 'https://nurie-print.com/materials' },
+export async function generateMetadata({ searchParams }: { searchParams: Promise<SearchParams> }) {
+  const params = await searchParams
+  if (params.search) {
+    return {
+      title: `「${params.search}」の検索結果｜無料ぬりえプリント`,
+      description: `「${params.search}」に関する無料ぬりえプリントを検索。保育園・幼稚園で使えるA4印刷対応のぬりえを年齢・難易度別に探せます。`,
+      alternates: { canonical: 'https://nurie-print.com/materials' },
+      robots: { index: false, follow: true },
+    }
+  }
+  return {
+    title: '教材を探す｜無料ぬりえプリント一覧',
+    description: '保育園・幼稚園で使える無料ぬりえプリント一覧。動物・恐竜・乗り物など豊富なテーマを年齢・難易度・季節で絞り込んでA4印刷できます。',
+    alternates: { canonical: 'https://nurie-print.com/materials' },
+  }
 }
 
 const breadcrumbLd = {
@@ -57,6 +69,7 @@ export default async function MaterialsPage({
   })
 
   const activeCount = [params.age, params.category, params.season, params.event, params.theme, params.search, params.difficulty].filter(Boolean).length
+  const totalKidsCount = getMaterialsForAudience('kids').length
 
   return (
     <>
@@ -67,7 +80,7 @@ export default async function MaterialsPage({
         <h1 className="font-rounded text-[24px] md:text-[30px] font-black">教材を探す</h1>
         {activeCount === 0 && (
           <p className="text-[14px] text-muted-foreground mt-2 leading-relaxed">
-            動物・恐竜・乗り物など{filtered.length}点以上のぬりえ教材を無料配布。年齢・テーマ・難易度・季節で絞り込めます。
+            動物・恐竜・乗り物など{totalKidsCount}点以上のぬりえ教材を無料配布。年齢・テーマ・難易度・季節で絞り込めます。
           </p>
         )}
       </div>
@@ -117,6 +130,8 @@ export default async function MaterialsPage({
                 </Link>
               </div>
             )
+          ) : sort === 'random' ? (
+            <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4" />
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
               {filtered.map(material => (

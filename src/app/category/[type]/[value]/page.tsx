@@ -1,11 +1,15 @@
 import { notFound } from 'next/navigation'
+import { Suspense } from 'react'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { MaterialCard } from '@/components/materials/MaterialCard'
-import { filterMaterials } from '@/lib/data'
+import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
+import { SortSelector } from '@/components/search/SortSelector'
+import { filterMaterials, type SortKey } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
 import type { Category, Season, Theme } from '@/lib/types'
+import { AdBanner } from '@/components/ads/AdBanner'
 
 type CategoryType = 'age' | 'type' | 'season' | 'event' | 'theme'
 
@@ -16,7 +20,7 @@ export function generateStaticParams() {
   const params = [
     ...[2, 3, 4, 5, 6].map(age => ({ type: 'age', value: String(age) })),
     { type: 'type', value: 'coloring' },
-    ...['animals', 'dinosaurs', 'vehicles', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports'].map(t => ({ type: 'theme', value: t })),
+    ...['animals', 'dinosaurs', 'vehicles', 'trains', 'densha', 'sea', 'park', 'insects', 'fruits', 'vegetables', 'sports', 'yokai', 'flowers', 'gotochi'].map(t => ({ type: 'theme', value: t })),
     ...['spring', 'summer', 'autumn', 'winter'].map(s => ({ type: 'season', value: s })),
   ]
   return params
@@ -65,10 +69,20 @@ function getPageInfo(type: string, value: string): { title: string; description:
 export async function generateMetadata({ params }: { params: Promise<{ type: string; value: string }> }) {
   const { type, value } = await params
   const { title, description } = getPageInfo(type, value)
+
+  const fp: Parameters<typeof filterMaterials>[0] = {}
+  if (type === 'age') fp.age = Number(value)
+  else if (type === 'type') fp.category = value
+  else if (type === 'season') fp.season = value
+  else if (type === 'event') fp.event = value
+  else if (type === 'theme') fp.theme = value as Parameters<typeof filterMaterials>[0]['theme']
+  const isEmpty = filterMaterials(fp).length === 0
+
   return {
     title,
     description,
     alternates: { canonical: `https://nurie-print.com/category/${type}/${value}` },
+    ...(isEmpty ? { robots: { index: false, follow: false } } : {}),
   }
 }
 
@@ -76,10 +90,14 @@ const BASE_URL = 'https://nurie-print.com'
 
 export default async function CategoryPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ type: CategoryType; value: string }>
+  searchParams: Promise<{ sort?: string }>
 }) {
   const { type, value } = await params
+  const sp = await searchParams
+  const sort = (sp.sort as SortKey) ?? 'newest'
 
   const filterParams: Record<string, string | number> = {}
   if (type === 'age') filterParams.age = Number(value)
@@ -90,7 +108,7 @@ export default async function CategoryPage({
   else notFound()
 
   const overrides = await loadOverrides()
-  const filtered = filterMaterials({ ...filterParams, overrides } as Parameters<typeof filterMaterials>[0])
+  const filtered = filterMaterials({ ...filterParams, overrides, sort } as Parameters<typeof filterMaterials>[0])
   const { title, description } = getPageInfo(type, value)
   const pageUrl = `${BASE_URL}/category/${type}/${value}`
 
@@ -127,11 +145,23 @@ export default async function CategoryPage({
         <span className="text-foreground">{title}</span>
       </nav>
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl font-bold">{title}</h1>
         <p className="text-muted-foreground mt-1">{description}</p>
         <p className="text-sm text-muted-foreground mt-0.5">{filtered.length}件の教材</p>
       </div>
+
+      <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <p className="text-[12px] text-muted-foreground">並び替え</p>
+        <Suspense fallback={<div className="h-9 w-56 bg-muted rounded animate-pulse" />}>
+          <SortSelector showFavorites={false} />
+        </Suspense>
+      </div>
+
+      <AdBanner
+        slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONTENT ?? ''}
+        className="mb-6"
+      />
 
       {filtered.length === 0 ? (
         <div className="text-center py-16 text-muted-foreground">
@@ -141,6 +171,8 @@ export default async function CategoryPage({
             すべての教材を見る
           </Link>
         </div>
+      ) : sort === 'random' ? (
+        <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" />
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {filtered.map(material => (

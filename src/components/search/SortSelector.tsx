@@ -1,26 +1,41 @@
 'use client'
 
-import { useRouter, useSearchParams } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import type { SortKey } from '@/lib/data'
 
-export function SortSelector() {
+interface Props {
+  /** Override target path. Defaults to current pathname. */
+  basePath?: string
+  /** Whether to show favorites option (only if logged in). Default true. */
+  showFavorites?: boolean
+}
+
+export function SortSelector({ basePath, showFavorites = true }: Props = {}) {
   const router = useRouter()
+  const pathname = usePathname()
   const searchParams = useSearchParams()
   const { data: session } = useSession()
   const current = (searchParams.get('sort') as SortKey) ?? 'newest'
 
-  // Only show favorites sort to logged-in users (avoid surprise login redirects)
   const options: { key: SortKey; label: string }[] = [
     { key: 'newest',  label: '新着順' },
     { key: 'popular', label: '人気順' },
-    ...(session ? [{ key: 'favorites' as SortKey, label: 'お気に入り順' }] : []),
+    { key: 'random',  label: 'ランダム' },
+    ...(showFavorites && session ? [{ key: 'favorites' as SortKey, label: 'お気に入り順' }] : []),
   ]
 
   function select(key: SortKey) {
     const params = new URLSearchParams(searchParams.toString())
     params.set('sort', key)
-    router.push(`/materials?${params.toString()}`)
+    // ランダム時は nonce を付与 → 毎回違う URL に → サーバー側で新規シャッフル
+    if (key === 'random') {
+      params.set('_r', Math.random().toString(36).slice(2, 8))
+    } else {
+      params.delete('_r')
+    }
+    const target = basePath ?? pathname
+    router.push(`${target}?${params.toString()}`)
   }
 
   return (

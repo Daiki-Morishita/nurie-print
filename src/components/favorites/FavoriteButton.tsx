@@ -15,9 +15,8 @@ interface Props {
 
 export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', className = '' }: Props) {
   const router = useRouter()
-  const { isFavorite, toggle } = useFavorites()
+  const { isFavorite, toggle, isAnonymous } = useFavorites()
   const [showLimitModal, setShowLimitModal] = useState(false)
-  const [showLoginPrompt, setShowLoginPrompt] = useState(false)
   const favorited = isFavorite(materialId)
 
   const dim = size === 'sm' ? 'w-7 h-7' : size === 'lg' ? 'w-11 h-11' : 'w-9 h-9'
@@ -27,9 +26,8 @@ export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', c
     e.preventDefault()
     e.stopPropagation()
     const result = await toggle(materialId)
-    if (!result.ok) {
-      if (result.reason === 'unauthorized') setShowLoginPrompt(true)
-      else if (result.reason === 'limit_reached') setShowLimitModal(true)
+    if (!result.ok && result.reason === 'limit_reached') {
+      setShowLimitModal(true)
     }
   }
 
@@ -49,34 +47,6 @@ export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', c
         />
       </button>
 
-      {/* Login prompt modal */}
-      {showLoginPrompt && (
-        <div className="fixed inset-0 z-[120] bg-black/60 flex items-center justify-center p-4" onClick={() => setShowLoginPrompt(false)}>
-          <div className="bg-white max-w-sm w-full rounded-2xl p-6 text-center" onClick={(e) => e.stopPropagation()}>
-            <div className="text-4xl mb-3">💝</div>
-            <h3 className="font-rounded font-black text-[18px] mb-2">お気に入りはログインが必要です</h3>
-            <p className="text-[13px] text-muted-foreground leading-relaxed mb-5">
-              ログインすると、お気に入りの教材を保存できます。<br />
-              無料プランで最大 10 件まで。
-            </p>
-            <div className="flex gap-2">
-              <button
-                onClick={() => setShowLoginPrompt(false)}
-                className="flex-1 bg-muted text-foreground py-2.5 rounded-lg text-[13px] font-medium hover:bg-muted/80 transition-colors"
-              >
-                とじる
-              </button>
-              <button
-                onClick={() => router.push('/login')}
-                className="flex-1 bg-primary text-white py-2.5 rounded-lg text-[13px] font-rounded font-black hover:opacity-90 transition-colors"
-              >
-                ログイン
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Limit reached modal */}
       {showLimitModal && (
         <div className="fixed inset-0 z-[120] bg-black/60 flex items-center justify-center p-4" onClick={() => setShowLimitModal(false)}>
@@ -84,8 +54,11 @@ export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', c
             <div className="text-4xl mb-3">🎈</div>
             <h3 className="font-rounded font-black text-[18px] mb-2">お気に入りの上限です</h3>
             <p className="text-[13px] text-muted-foreground leading-relaxed mb-5">
-              無料プランでは <strong className="text-foreground">10 件まで</strong> 保存できます。<br />
-              既存のお気に入りを整理するか、有料プランへアップグレードしてください。
+              {isAnonymous ? (
+                <>このブラウザでは <strong className="text-foreground">10 件まで</strong> 保存できます。<br />既存のお気に入りを整理するか、ログインしてクラウドに保存しましょう。</>
+              ) : (
+                <>無料プランでは <strong className="text-foreground">10 件まで</strong> 保存できます。<br />既存のお気に入りを整理するか、有料プランへアップグレードしてください。</>
+              )}
             </p>
             <div className="flex gap-2">
               <button
@@ -95,10 +68,10 @@ export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', c
                 整理する
               </button>
               <button
-                onClick={() => router.push('/upgrade')}
+                onClick={() => router.push(isAnonymous ? '/login' : '/upgrade')}
                 className="flex-1 bg-primary text-white py-2.5 rounded-lg text-[13px] font-rounded font-black hover:opacity-90 transition-colors"
               >
-                プランを見る
+                {isAnonymous ? 'ログイン' : 'プランを見る'}
               </button>
             </div>
           </div>

@@ -8,10 +8,17 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 @docs/manual.md
 
+## 絶対ルール：Chromeタブ数
+
+**スクリプト起動前にChromeのタブを10枚未満にする。**
+
+- タブが多いとChromeが重くなりタイムアウト・リトライが増え、生成枚数が減る
+- スクリプト起動時に10枚以上だとmacOS通知+ログ警告が出る
+
 ## 絶対ルール：インターバル
 
 **あらゆるプロンプト送信の前後には必ず 380〜460秒のインターバルを挟む。**
 
 - リトライ・Cloudflareチャレンジ・タイムアウト・エラー・DL失敗・復旧処理、いかなる場合も例外なし
 - インターバルをスキップして連続送信することは絶対禁止
-- スクリプト定数 `SEND_INTERVAL = 430`（~80枚/日・24req/3h）で強制される
+- スクリプト定数 `SEND_INTERVAL = 460`（~170枚/日・24req/3h）で強制される

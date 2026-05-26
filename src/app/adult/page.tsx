@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import { getMaterialsForAudience, getPopularMaterials } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { THEME_LABELS, ADULT_THEMES } from '@/lib/types'
+import { AdultPopularGrid } from './AdultPopularGrid'
 
 export const metadata = {
   title: 'おとなのぬりえ｜本格・写実の塗り絵を無料配布',
@@ -46,7 +47,8 @@ function getTodaysAdultFeature() {
 
 export default async function AdultHomePage() {
   const overrides = await loadOverrides()
-  const popular = getPopularMaterials(8, 'adult', overrides)
+  // タイトル重複排除のため広めに取得（クライアント側でシャッフル+ユニーク化）
+  const popular = getPopularMaterials(60, 'adult', overrides).filter(m => m.imageUrl)
   const feature = getTodaysAdultFeature()
 
   return (
@@ -157,25 +159,7 @@ export default async function AdultHomePage() {
       {popular.length > 0 && (
         <section className="pb-12">
           <div className="max-w-[1280px] mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
-              {popular.slice(0, 8).map(m => (
-                <Link
-                  key={m.id}
-                  href={`/adult/materials/${m.id}`}
-                  className="group bg-white border border-border rounded-sm overflow-hidden hover:border-primary transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                >
-                  <div className="aspect-[1.414/1] bg-background overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={m.imageUrl} alt={m.title} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" />
-                  </div>
-                  <div className="px-3 py-2.5 border-t border-border/60">
-                    <h3 className="font-mincho text-[13px] font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
-                      {m.title}
-                    </h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <AdultPopularGrid items={popular} take={8} />
             <div className="text-center mt-8">
               <Link
                 href="/adult/materials"
