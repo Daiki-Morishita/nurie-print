@@ -34787,6 +34787,9 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:29',
     popular: false,
   },
+]
+
+const _materials5: Material[] = [
   {
     id: 'aichi-shachihoko-normal-1',
     title: '金のしゃちほこ（愛知・名古屋）',
@@ -43952,7 +43955,7 @@ const _materials4: Material[] = [
   },
 ]
 
-export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4]
+export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5]
 
 export type SortKey = 'newest' | 'popular' | 'favorites' | 'random'
 
