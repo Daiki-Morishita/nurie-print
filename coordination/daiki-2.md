@@ -1,7 +1,13 @@
 # daiki-2 状態（morishitadaikinoMacBook-Pro.local）
 
-**最終更新**: 2026-05-26 22:45
+**最終更新**: 2026-05-26 14:00
 **ステータス**: 🟡 待機中（レート制限、22:35以降に park 再開予定）
+
+## このPCのみのルール
+
+- **自動デプロイ**: 毎日 1:00 / 13:00 JST に `git push origin main` → Vercel 自動デプロイ
+  - macOS crontab 登録済み（`crontab -l` で確認）
+  - ログ: `/tmp/hoiku-deploy.log`
 
 ## 今やってる
 
