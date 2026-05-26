@@ -80,6 +80,10 @@ try:
     from themes_animals import ANIMALS_ITEMS
 except ImportError:
     ANIMALS_ITEMS = {}
+try:
+    from themes_nature import NATURE_ITEMS
+except ImportError:
+    NATURE_ITEMS = {}
 
 # =============================================
 # 設定
@@ -3289,6 +3293,7 @@ THEMES = {
     "shinkansen": SHINKANSEN,
     "sweets":     SWEETS_ITEMS,
     "animals":    ANIMALS_ITEMS,
+    "nature":     NATURE_ITEMS,
     "fairytale":  FAIRYTALE,
 }
 
@@ -3547,6 +3552,7 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "densha": "でんしゃ", "shinkansen": "しんかんせん",
         "sweets": "おかし",
         "animals": "どうぶつ",
+        "nature":  "しぜん",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4459,6 +4465,8 @@ def run_item(pw, state, item_id, theme_type, variant, client):
             cond_items = SWEETS_COND_ITEMS
         elif theme_type == "animals":
             cond_items = COMMON_COND_ITEMS
+        elif theme_type == "nature":
+            cond_items = COMMON_COND_ITEMS
         elif theme_type == "insects":
             cond_items = INSECTS_COND_ITEMS
         elif theme_type == "sports":
@@ -4597,7 +4605,7 @@ def main():
         help="Chrome CDP URL（例: http://localhost:9222）。指定時は launch_persistent_context の代わりに使用")
     parser.add_argument("--type",    default=None,
         choices=["park", "dinosaurs", "fruits", "vegetables", "insects", "sports", "yokai",
-                 "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets", "animals",
+                 "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets", "animals", "nature",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece",
