@@ -49,6 +49,32 @@ IMAGES = [
     # seasonal-crafts-for-nursery
     ("col6-hero",  "kindergarten seasonal craft decoration holiday children", "col6-hero.jpg", "季節の制作（ヒーロー）"),
     ("col6-sec1",  "nursery school seasonal decoration wall art children",    "col6-sec1.jpg", "保育園の季節飾り"),
+
+    # ─── col13 以降のヒーロー（SVGプレースホルダーを実写真に置換） ───
+    ("col13-hero", "children playing outdoors park playground happy",     "col13-hero.jpg", "外遊び（ヒーロー）"),
+    ("col14-hero", "preschool child learning numbers counting blocks",    "col14-hero.jpg", "数字学習（ヒーロー）"),
+    ("col15-hero", "child free drawing creativity art expression happy",  "col15-hero.jpg", "自由描画（ヒーロー）"),
+    ("col16-hero", "young child focused concentrating activity table",    "col16-hero.jpg", "集中する子ども（ヒーロー）"),
+    ("col17-hero", "shy child hesitant art activity teacher helping",     "col17-hero.jpg", "苦手な子サポート（ヒーロー）"),
+    ("col18-hero", "child writing hiragana japanese letter practice",     "col18-hero.jpg", "ひらがな練習（ヒーロー）"),
+    ("col19-hero", "four year old child coloring drawing focused",        "col19-hero.jpg", "4歳ぬりえ（ヒーロー）"),
+    ("col20-hero", "daily routine child morning learning table",          "col20-hero.jpg", "毎日の習慣（ヒーロー）"),
+    ("col21-hero", "child dot to dot worksheet activity preschool",       "col21-hero.jpg", "点つなぎ（ヒーロー）"),
+    ("col22-hero", "toddler 2 year old coloring crayon",                  "col22-hero.jpg", "2歳ぬりえ（ヒーロー）"),
+    ("col23-hero", "child learning colors painting art preschool",        "col23-hero.jpg", "色の学習（ヒーロー）"),
+    ("col24-hero", "child writing numbers worksheet practice",            "col24-hero.jpg", "数字書き方（ヒーロー）"),
+    ("col25-hero", "child sensory play sand water activities",            "col25-hero.jpg", "感覚遊び（ヒーロー）"),
+    ("col26-hero", "seasonal children art spring summer autumn winter",   "col26-hero.jpg", "季節のテーマ（ヒーロー）"),
+    ("col27-hero", "child drawing art development scribble stages",       "col27-hero.jpg", "絵の発達段階（ヒーロー）"),
+    ("col28-hero", "children animals zoo learning education kindergarten","col28-hero.jpg", "動物学習（ヒーロー）"),
+    ("col29-hero", "child school readiness pencil writing preparation",   "col29-hero.jpg", "就学準備（ヒーロー）"),
+    ("col30-hero", "children group craft activity nursery collaborative", "col30-hero.jpg", "集団工作（ヒーロー）"),
+    ("col31-hero", "child dinosaur coloring book learning education",     "col31-hero.jpg", "恐竜学習（ヒーロー）"),
+    ("col32-hero", "summer children coloring crafts beach activities",    "col32-hero.jpg", "夏の工作（ヒーロー）"),
+    ("col33-hero", "child fine motor skills hands art craft activity",    "col33-hero.jpg", "微細運動（ヒーロー）"),
+    ("col34-hero", "child vehicles coloring book trains cars trucks",     "col34-hero.jpg", "乗り物ぬりえ（ヒーロー）"),
+    ("col35-hero", "child tablet screen time drawing writing balance",    "col35-hero.jpg", "スクリーンタイム（ヒーロー）"),
+    ("col36-hero", "children playground equipment park swing slide",      "col36-hero.jpg", "公園遊具（ヒーロー）"),
 ]
 
 IMAGES_BY_ID = {img[0]: img for img in IMAGES}
