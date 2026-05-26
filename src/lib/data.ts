@@ -44024,7 +44024,7 @@ const _materials5: Material[] = [
 ]
 
 
-export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5, ..._materials6]
+export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5]
 
 export type SortKey = 'newest' | 'popular' | 'favorites' | 'random'
 
