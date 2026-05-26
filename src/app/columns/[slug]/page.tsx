@@ -210,7 +210,23 @@ export default async function ColumnPage({ params }: { params: Promise<{ slug: s
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-3">{col.title}</h1>
           <p className="text-sm text-muted-foreground leading-relaxed">{col.description}</p>
-          <p className="text-xs text-muted-foreground mt-3">公開: {col.publishedAt}　更新: {col.updatedAt}</p>
+
+          {/* 著者・日付情報（E-E-A-T 用に可視化） */}
+          <div className="mt-4 pt-4 border-t border-border flex items-center gap-3 flex-wrap text-xs text-muted-foreground">
+            <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <span className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px]">編</span>
+              <span>
+                <span className="block font-medium text-foreground">ぬりえプリント編集部</span>
+                <span className="text-[10px]">保育・幼児教育の専門資料を元に編集</span>
+              </span>
+            </Link>
+            <div className="ml-auto text-[11px]">
+              <span>公開 <time dateTime={col.publishedAt}>{col.publishedAt}</time></span>
+              {col.updatedAt && col.updatedAt !== col.publishedAt && (
+                <span className="ml-2">更新 <time dateTime={col.updatedAt}>{col.updatedAt}</time></span>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* ヒーロー画像 */}
