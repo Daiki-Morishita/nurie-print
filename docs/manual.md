@@ -155,6 +155,20 @@ sed -n '行番号,$p' scripts/generate_chatgpt.log | \
 
 > **注意**: ログファイルは日付なしで蓄積されるため、前日以前の同時間帯エントリが混入することがある。セッション開始行（`キューモード開始`）の行番号を起点にして `sed -n '行番号,$p'` で絞ること。
 
+### kill後の再起動手順
+
+スクリプトを kill しても、直前のリクエストは ChatGPT に届いている。即再起動すると2リクエストが短期集中するため、**必ずインターバル残りを確認してから再起動する**。
+
+```bash
+# 残り待機秒数を確認（0になってから再起動）
+python3 -c "
+import time
+last = float(open('scripts/.last_send_time').read())
+remaining = 380 - (time.time() - last)
+print(f'残り待機: {max(0, remaining):.0f}秒')
+"
+```
+
 ### 安全な再起動の目安
 
 | 3h窓のリクエスト数 | 判断 |

@@ -14,4 +14,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 - リトライ・Cloudflareチャレンジ・タイムアウト・エラー・DL失敗・復旧処理、いかなる場合も例外なし
 - インターバルをスキップして連続送信することは絶対禁止
-- スクリプト定数 `SEND_INTERVAL = 380`（~206枚/日・26req/3h）で強制される
+- スクリプト定数 `SEND_INTERVAL = 430`（~80枚/日・24req/3h）で強制される
