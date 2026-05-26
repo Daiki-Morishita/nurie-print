@@ -26,3 +26,16 @@
 3. `grep "_load_md5_db" scripts/generate_chatgpt.py` でMD5DB関数あり
 4. Chrome のタブ数を10未満に
 5. theme_queue.txt に処理するテーマを記載
+
+## 提案中（実装はマージ後）
+
+### theme_queue を PC ごとに分離
+
+現状 `scripts/theme_queue.txt` が共有されており push 競合の原因になっている。
+提案：
+
+- `scripts/theme_queue.daiki-1.txt`（daiki-1 専用）
+- `scripts/theme_queue.daiki-2.txt`（daiki-2 専用）
+- スクリプトに `--queue-file <path>` 引数追加（デフォルトはホスト名で自動選択）
+
+両PCのマージが落ち着いてから着手。
