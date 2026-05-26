@@ -39,7 +39,7 @@ ChatGPT画像生成 統合スクリプト（公園・恐竜 共通エンジン�
 #     --user-data-dir="$HOME/.chatgpt-chrome-profile"
 """
 
-import os, sys, time, re, random, subprocess, argparse, base64
+import os, sys, time, re, random, subprocess, argparse, base64, hashlib, json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from supabase import create_client
@@ -385,11 +385,6 @@ PARK_ITEMS = {
         "note": "公園の鉄棒をシンプルでかわいく描く。支柱と横棒がはっきりわかる構図。高さの違う棒が複数あってもよい。",
         "variants": {1: {"scenes": {"simple": "かわいい公園の鉄棒の塗り絵。鉄棒のみ・背景なし・余白たっぷり。","easy": "かわいい公園の鉄棒の塗り絵。子どもが鉄棒にぶら下がっているかわいい構図。","normal": "かわいい公園の鉄棒の塗り絵。子どもが前回りをしている構図。応援する子もいる。","rich": "かわいい公園の鉄棒の塗り絵。鉄棒で遊ぶ子どもたちのにぎやかな公園の構図。"},"titles": {"simple": "こうえんのてつぼう","easy": "てつぼうにぶらさがろう","normal": "てつぼうでまえまわり","rich": "にぎやかなてつぼうひろば"},"descs": {"simple": "シンプルな公園の鉄棒のぬりえ。","easy": "鉄棒にぶら下がる子どものぬりえ。","normal": "前回りをする子どもの鉄棒のぬりえ。","rich": "鉄棒がある公園のにぎやかな線画。"}}},
     },
-    "merry-go-round": {
-        "jp": "メリーゴーラウンド",
-        "note": "公園の回転する円形の遊具（回転ジャングルジムやターンテーブル型）をかわいく描く。円形の形状と手すりがわかるように。",
-        "variants": {1: {"scenes": {"simple": "かわいいメリーゴーラウンドの塗り絵。回転遊具のみ・背景なし・余白たっぷり。","easy": "かわいいメリーゴーラウンドの塗り絵。子どもがメリーゴーラウンドに乗っているかわいい構図。","normal": "かわいいメリーゴーラウンドの塗り絵。数人の子どもがメリーゴーラウンドを回している構図。","rich": "かわいいメリーゴーラウンドの塗り絵。メリーゴーラウンドで楽しむ子どもたちの公園のにぎやかな構図。"},"titles": {"simple": "メリーゴーラウンド","easy": "くるくるメリーゴーラウンド","normal": "みんなでメリーゴーラウンド","rich": "メリーゴーラウンドのこうえん"},"descs": {"simple": "シンプルなメリーゴーラウンドのぬりえ。","easy": "メリーゴーラウンドに乗る子どものぬりえ。","normal": "みんなで回すメリーゴーラウンドのぬりえ。","rich": "メリーゴーラウンドがある公園のにぎやかな線画。"}}},
-    },
     "spring-rider": {
         "jp": "スプリングライダー",
         "note": "ばね（スプリング）の上に動物や乗り物の形のシートがついた揺れる遊具をかわいく描く。動物（馬・クマ等）や乗り物の形がわかるように。",
@@ -409,6 +404,47 @@ PARK_ITEMS = {
         "jp": "じゃぶじゃぶ池",
         "note": "浅い池や噴水広場で水遊びができる「じゃぶじゃぶ池」をかわいく描く。水・噴水・子どもが水をはねかける様子がわかるように。",
         "variants": {1: {"scenes": {"simple": "かわいいじゃぶじゃぶ池の塗り絵。じゃぶじゃぶ池の池と噴水のみ・背景なし・余白たっぷり。","easy": "かわいいじゃぶじゃぶ池の塗り絵。子どもがじゃぶじゃぶ池で水遊びをしているかわいい構図。","normal": "かわいいじゃぶじゃぶ池の塗り絵。数人の子どもがじゃぶじゃぶ池で楽しんでいる構図。噴水が出ている。","rich": "かわいいじゃぶじゃぶ池の塗り絵。じゃぶじゃぶ池で水遊びする子どもたちの夏の公園のにぎやかな構図。"},"titles": {"simple": "じゃぶじゃぶ池","easy": "みずあそびだ！","normal": "みんなでじゃぶじゃぶ","rich": "なつのじゃぶじゃぶ池"},"descs": {"simple": "シンプルなじゃぶじゃぶ池のぬりえ。","easy": "じゃぶじゃぶ池で水遊びする子どものぬりえ。","normal": "噴水があるじゃぶじゃぶ池で遊ぶ子どもたちのぬりえ。","rich": "夏のじゃぶじゃぶ池で遊ぶ子どもたちのにぎやかな線画。"}}},
+    },
+    # ── 公園遊び ──
+    "tag-game": {
+        "jp": "鬼ごっこ",
+        "note": "公園で子どもたちが鬼ごっこをしているシーンをかわいく描く。追いかける鬼と逃げる子の動きのある構図。",
+        "variants": {1: {"scenes": {"simple": "かわいい鬼ごっこの塗り絵。鬼のタスキをつけた子ども1人・背景なし・余白たっぷり。","easy": "かわいい鬼ごっこの塗り絵。鬼が子どもを追いかけているかわいい構図。","normal": "かわいい鬼ごっこの塗り絵。鬼と逃げる子どもたち数人が公園を走っている構図。","rich": "かわいい鬼ごっこの塗り絵。公園でにぎやかに鬼ごっこをする子どもたちの全景。木・ベンチが点在。"},"titles": {"simple": "おにごっこのおに","easy": "おいかけろ！","normal": "おにごっこだ！","rich": "にぎやかなおにごっこ"},"descs": {"simple": "鬼役の子どもの線画。","easy": "追いかける鬼と逃げる子の線画。","normal": "公園で鬼ごっこをする子どもたちの線画。","rich": "公園で鬼ごっこをするにぎやかな線画。"}}},
+    },
+    "hide-and-seek": {
+        "jp": "かくれんぼ",
+        "note": "公園でかくれんぼをしているシーンをかわいく描く。木や遊具の陰に隠れる子・目を隠して数える鬼の構図。",
+        "variants": {1: {"scenes": {"simple": "かわいいかくれんぼの塗り絵。木の陰に隠れてのぞく子ども1人・背景なし・余白たっぷり。","easy": "かわいいかくれんぼの塗り絵。木の陰に隠れる子どもと目を覆って数える鬼のかわいい構図。","normal": "かわいいかくれんぼの塗り絵。遊具や木の陰にひそむ子どもたち数人と鬼の構図。","rich": "かわいいかくれんぼの塗り絵。公園のあちこちに隠れる子どもたちと鬼のにぎやかな全景。"},"titles": {"simple": "かくれんぼ","easy": "かくれているよ","normal": "みつけてみて！","rich": "にぎやかなかくれんぼ"},"descs": {"simple": "木の陰に隠れる子どもの線画。","easy": "隠れる子と数える鬼の線画。","normal": "あちこちに隠れる子どもたちの線画。","rich": "公園のかくれんぼのにぎやかな線画。"}}},
+    },
+    "daruma": {
+        "jp": "だるまさんがころんだ",
+        "note": "だるまさんがころんだで遊ぶ子どもたちをかわいく描く。振り返る鬼と静止ポーズの子どもたちの対比が見どころ。",
+        "variants": {1: {"scenes": {"simple": "かわいいだるまさんがころんだの塗り絵。静止ポーズで固まる子ども1人・背景なし・余白たっぷり。","easy": "かわいいだるまさんがころんだの塗り絵。鬼が振り返り子どもが静止しているかわいい構図。","normal": "かわいいだるまさんがころんだの塗り絵。振り返る鬼と様々なポーズで静止する子どもたち数人の構図。","rich": "かわいいだるまさんがころんだの塗り絵。公園でにぎやかにだるまさんがころんだを楽しむ子どもたちの全景。"},"titles": {"simple": "だるまさんがころんだ","easy": "ストップ！","normal": "うごいちゃダメ！","rich": "にぎやかなだるまさんがころんだ"},"descs": {"simple": "静止ポーズの子どもの線画。","easy": "鬼と静止する子どもの線画。","normal": "様々なポーズで静止する子どもたちの線画。","rich": "だるまさんがころんだで遊ぶにぎやかな線画。"}}},
+    },
+    "hopscotch": {
+        "jp": "けんけんぱ",
+        "note": "地面に描いたマス目をけんけんぱで跳んでいくシーンをかわいく描く。マス目の形と片足・両足の跳び方がわかるように。",
+        "variants": {1: {"scenes": {"simple": "かわいいけんけんぱの塗り絵。地面のマス目（1・1・2・1・1・2の形）のみ・背景なし・余白たっぷり。","easy": "かわいいけんけんぱの塗り絵。子どもがマス目を片足で跳んでいるかわいい構図。","normal": "かわいいけんけんぱの塗り絵。子どもたちが列を作ってけんけんぱを楽しんでいる構図。","rich": "かわいいけんけんぱの塗り絵。けんけんぱで遊ぶ子どもたちのにぎやかな公園の構図。"},"titles": {"simple": "けんけんぱのマス","easy": "けんけんぱ！","normal": "みんなでけんけんぱ","rich": "にぎやかなけんけんぱ"},"descs": {"simple": "けんけんぱのマス目の線画。","easy": "けんけんぱを跳ぶ子どもの線画。","normal": "列になってけんけんぱをする子どもたちの線画。","rich": "けんけんぱで遊ぶにぎやかな公園の線画。"}}},
+    },
+    "jump-rope": {
+        "jp": "なわとび",
+        "note": "なわとびで遊ぶ子どもたちをかわいく描く。1人なわとびや大縄跳びの躍動感ある構図。",
+        "variants": {1: {"scenes": {"simple": "かわいいなわとびの塗り絵。なわとびをする子ども1人・背景なし・余白たっぷり。","easy": "かわいいなわとびの塗り絵。元気になわとびをする子どものかわいい構図。","normal": "かわいいなわとびの塗り絵。2人が縄を回して1人が跳ぶ大縄跳びの構図。","rich": "かわいいなわとびの塗り絵。大縄跳びや1人なわとびで遊ぶ子どもたちの公園のにぎやかな構図。"},"titles": {"simple": "なわとび","easy": "なわとびをとぼう","normal": "おおなわとび","rich": "にぎやかななわとび"},"descs": {"simple": "なわとびをする子どもの線画。","easy": "元気になわとびをする子どもの線画。","normal": "大縄跳びをする子どもたちの線画。","rich": "なわとびで遊ぶにぎやかな公園の線画。"}}},
+    },
+    "ball-play": {
+        "jp": "ボール遊び",
+        "note": "公園でボール遊びをする子どもたちをかわいく描く。蹴る・投げる・キャッチする躍動感のある構図。",
+        "variants": {1: {"scenes": {"simple": "かわいいボール遊びの塗り絵。ボールを持つ子ども1人・背景なし・余白たっぷり。","easy": "かわいいボール遊びの塗り絵。子どもがボールを元気よく蹴っているかわいい構図。","normal": "かわいいボール遊びの塗り絵。子どもたちがキャッチボールや蹴り合いをしている構図。","rich": "かわいいボール遊びの塗り絵。ボール遊びをする子どもたちの公園のにぎやかな構図。"},"titles": {"simple": "ボールあそび","easy": "ボールをけろう！","normal": "なかよしボールあそび","rich": "にぎやかなボールあそび"},"descs": {"simple": "ボールを持つ子どもの線画。","easy": "ボールを蹴る子どもの線画。","normal": "キャッチボールや蹴り合いをする子どもたちの線画。","rich": "ボール遊びをするにぎやかな公園の線画。"}}},
+    },
+    "bubble-play": {
+        "jp": "シャボン玉",
+        "note": "シャボン玉で遊ぶ子どもたちをかわいく描く。ふわふわ浮かぶシャボン玉と吹く子・追いかける子の楽しい構図。",
+        "variants": {1: {"scenes": {"simple": "かわいいシャボン玉の塗り絵。シャボン玉を吹く子ども1人・背景なし・余白たっぷり。","easy": "かわいいシャボン玉の塗り絵。子どもがシャボン玉を吹いてふわふわ浮かぶかわいい構図。","normal": "かわいいシャボン玉の塗り絵。シャボン玉を吹く子どもと追いかける子どもたちの構図。","rich": "かわいいシャボン玉の塗り絵。公園でシャボン玉を楽しむ子どもたちのにぎやかな構図。たくさんのシャボン玉が空に漂う。"},"titles": {"simple": "シャボン玉","easy": "シャボン玉ふわふわ","normal": "シャボン玉おいかけろ！","rich": "にぎやかなシャボン玉"},"descs": {"simple": "シャボン玉を吹く子どもの線画。","easy": "シャボン玉が浮かぶかわいい線画。","normal": "シャボン玉を吹く子と追いかける子の線画。","rich": "公園でシャボン玉を楽しむにぎやかな線画。"}}},
+    },
+    "kite-flying": {
+        "jp": "たこあげ",
+        "note": "冬の公園で凧揚げをする子どもたちをかわいく描く。空高く舞う凧と走る子どもの躍動感ある構図。",
+        "variants": {1: {"scenes": {"simple": "かわいいたこあげの塗り絵。かわいい凧1枚のみ・背景なし・余白たっぷり。","easy": "かわいいたこあげの塗り絵。子どもが凧を空高く上げながら走っているかわいい構図。","normal": "かわいいたこあげの塗り絵。数人の子どもが凧揚げを楽しんでいる冬の公園の構図。青空に凧が舞う。","rich": "かわいいたこあげの塗り絵。冬の公園で凧揚げを楽しむ子どもたちのにぎやかな全景。青空・雲・凧が空いっぱいに。"},"titles": {"simple": "たこあげのたこ","easy": "たかくあがれ！","normal": "みんなでたこあげ","rich": "にぎやかなたこあげ"},"descs": {"simple": "かわいい凧の線画。","easy": "凧を上げて走る子どもの線画。","normal": "冬の公園で凧揚げをする子どもたちの線画。","rich": "冬の公園の凧揚げのにぎやかな線画。"}}},
     },
 }
 
@@ -3518,14 +3554,48 @@ def supabase_client():
     return create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
+UPLOAD_MD5_DB = REPO_DIR / "scripts" / ".upload_md5.json"
+
+
+def _load_md5_db():
+    """過去アップロードの md5 → filename マップを読み込む"""
+    if not UPLOAD_MD5_DB.exists():
+        return {}
+    try:
+        return json.loads(UPLOAD_MD5_DB.read_text())
+    except Exception:
+        return {}
+
+
+def _save_md5_db(db):
+    UPLOAD_MD5_DB.write_text(json.dumps(db, ensure_ascii=False, indent=2))
+
+
 def upload_to_supabase(client, local_path, remote_name):
     with open(local_path, "rb") as f:
         data = f.read()
+
+    # ── 重複検知ガード ─────────────────────────────────────────
+    # 同じ md5 = 同じ画像内容を別ファイル名でアップしようとしている。
+    # 過去にcrow-pitcher画像が複数アイテムに使い回された不具合（合計40件無駄）
+    # の再発防止。発火したら即終了してユーザーに通知する。
+    md5 = hashlib.md5(data).hexdigest()
+    db = _load_md5_db()
+    if md5 in db and db[md5] != remote_name:
+        prev = db[md5]
+        log(f"🚨 重複画像検知: {remote_name} の中身が {prev} と同一 (md5={md5[:12]})")
+        log(f"   → 生成スクリプトのバグ可能性 (画像URL誤取得など)。中断します")
+        notify_mac("hoiku-print", f"重複画像検知！停止: {remote_name} == {prev}")
+        os._exit(2)
+    # 通常アップロード
     client.storage.from_(BUCKET).upload(
         path=remote_name,
         file=data,
         file_options={"content-type": "image/png", "upsert": "true"},
     )
+    # 成功したら記録
+    db[md5] = remote_name
+    _save_md5_db(db)
     return f"{SUPABASE_BASE}/{remote_name}"
 
 
@@ -3628,10 +3698,29 @@ def git_push():
 # =============================================
 # ChatGPT ブラウザ操作エンジン
 # =============================================
-def wait_for_image(page, timeout=240):
+def snapshot_image_srcs(page):
+    """現在DOMに存在する生成画像URLのスナップショット。
+    プロンプト送信前に取得 → wait_for_image はこれに含まれないURLのみを「新規」とみなす。
+    SPA遷移で前のチャットの<img>がDOMに残ったまま wait_for_image が即返して
+    別アイテムに前回画像が紛れ込む不具合の防止。
+    """
+    try:
+        imgs = page.query_selector_all("img")
+        seen = set()
+        for img in imgs:
+            src = img.get_attribute("src") or ""
+            if "backend-api/estuary/content" in src or "oaiusercontent" in src:
+                seen.add(src)
+        return seen
+    except Exception:
+        return set()
+
+
+def wait_for_image(page, timeout=240, exclude_srcs=None):
     deadline = time.time() + timeout
     _start = time.time()
     _regen_attempted = False
+    exclude_srcs = exclude_srcs or set()
     while time.time() < deadline:
         elapsed = time.time() - _start
         # タイムアウトの67%経過（200秒）かつ未試行 → 再生成ボタンを試みる
@@ -3661,6 +3750,8 @@ def wait_for_image(page, timeout=240):
         for img in imgs:
             src = img.get_attribute("src") or ""
             if "backend-api/estuary/content" in src or "oaiusercontent" in src:
+                if src in exclude_srcs:
+                    continue  # プロンプト送信前から存在する古い画像はスキップ
                 return ('ok', src)
         try:
             body_text = page.evaluate("() => document.body.innerText")
@@ -4329,10 +4420,14 @@ def generate_one(page, file_id, prompt, out_path, max_retries=3, interval_max=No
             varied = ref_note + varied
         human_type(page, varied)         # ランダム速度でタイピング
         human_pause(0.4, 1.5)            # Enterを押す前のひと呼吸
+        # プロンプト送信直前のDOM画像URLを記録 → 古い画像の誤取得を防ぐ
+        prev_srcs = snapshot_image_srcs(page)
+        if prev_srcs:
+            log(f"  📸 送信前画像URL記録: {len(prev_srcs)}件（これらは新規としてカウントしない）")
         page.keyboard.press("Enter")
         log("  プロンプト送信。生成待ち...")
 
-        status, img_src = wait_for_image(page, timeout=420)
+        status, img_src = wait_for_image(page, timeout=420, exclude_srcs=prev_srcs)
         if status == 'ok':
             ok = download_image(page, img_src, out_path)
             if ok:
@@ -4434,7 +4529,12 @@ def run_item(pw, state, item_id, theme_type, variant, client):
     vdata = item["variants"][variant]
     log(f"\n{'='*50}\n[{theme_type}] {item_id}-{variant} ({item['jp']})")
 
-    levels = list(vdata["scenes"].keys()) if len(vdata["scenes"]) < 4 else ["simple", "easy", "normal", "rich"]
+    if theme_type in ("shinkansen",):
+        levels = ["rich"]
+    elif len(vdata["scenes"]) < 4:
+        levels = list(vdata["scenes"].keys())
+    else:
+        levels = ["simple", "easy", "normal", "rich"]
     supabase_urls = {}
     existing_content = DATA_TS.read_text()
 

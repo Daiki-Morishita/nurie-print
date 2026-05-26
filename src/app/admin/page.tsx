@@ -38,6 +38,10 @@ export default async function AdminPage() {
   const searchRequests = await prisma.searchRequest.findMany({
     orderBy: { count: 'desc' },
   })
+  const contactMessages = await prisma.contactMessage.findMany({
+    orderBy: { createdAt: 'desc' },
+    take: 50,
+  })
   const stats = {
     total: effective.length,
     placeholder: countByStatus('placeholder'),
@@ -149,6 +153,56 @@ export default async function AdminPage() {
             <span className="text-xs text-gray-400">{searchRequests.length}件</span>
           </div>
           <SearchRequestsTable requests={searchRequests} />
+        </div>
+
+        {/* お問い合わせメッセージ */}
+        <div className="mt-8 bg-white border border-gray-200 rounded-xl overflow-hidden">
+          <div className="px-5 py-3.5 border-b border-gray-100 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="text-lg">✉️</span>
+              <div>
+                <h2 className="font-semibold text-sm text-gray-900">お問い合わせ（直近50件）</h2>
+                <p className="text-xs text-gray-500 mt-0.5">未確認: {contactMessages.filter(m => m.status === 'new').length} 件</p>
+              </div>
+            </div>
+            <span className="text-xs text-gray-400">{contactMessages.length}件</span>
+          </div>
+          {contactMessages.length === 0 ? (
+            <div className="px-5 py-8 text-center text-xs text-gray-400">お問い合わせはまだありません</div>
+          ) : (
+            <div className="divide-y divide-gray-100">
+              {contactMessages.map(m => (
+                <details key={m.id} className="group">
+                  <summary className="px-5 py-3 flex items-center justify-between gap-3 cursor-pointer hover:bg-gray-50 list-none">
+                    <div className="flex items-center gap-3 min-w-0 flex-1">
+                      <span className={`shrink-0 text-[10px] px-1.5 py-0.5 rounded font-bold ${
+                        m.status === 'new' ? 'bg-orange-100 text-orange-700' :
+                        m.status === 'replied' ? 'bg-green-100 text-green-700' :
+                        m.status === 'spam' ? 'bg-gray-100 text-gray-500' :
+                        'bg-blue-100 text-blue-700'
+                      }`}>{m.status.toUpperCase()}</span>
+                      <span className="shrink-0 text-[11px] text-gray-500 font-mono">{m.category}</span>
+                      <span className="truncate text-[13px] font-medium text-gray-900">
+                        {m.subject || m.body.slice(0, 60) + (m.body.length > 60 ? '…' : '')}
+                      </span>
+                    </div>
+                    <span className="shrink-0 text-[11px] text-gray-400">
+                      {new Date(m.createdAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                    </span>
+                  </summary>
+                  <div className="px-5 py-4 bg-gray-50 text-[13px] space-y-2">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div><span className="text-gray-500">From:</span> {m.name || '(名前なし)'} &lt;{m.email}&gt;</div>
+                      <div><span className="text-gray-500">IP:</span> {m.ip || '-'}</div>
+                    </div>
+                    <div className="whitespace-pre-wrap bg-white border border-gray-200 rounded p-3 leading-relaxed">
+                      {m.body}
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* フッターガイド */}

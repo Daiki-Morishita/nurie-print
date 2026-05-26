@@ -984,6 +984,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '① 「やる」と決めるのは子ども側にする' },
       {
+        type: 'image',
+        query: '',
+        alt: '① 「やる」と決めるのは子ども側にする',
+        src: '/columns/inline-orange.svg',
+      },
+      {
         type: 'p',
         text: '「これやって」と言われると反射的に「やだ」となる時期があります。そんなときは選択肢を渡してみてください。「迷路とぬりえ、どっちにする？」と聞くだけで、子どもが「選んだ」という感覚を持てます。',
       },
@@ -1052,6 +1058,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '誤解1: 早く始めるほど差がつく' },
       {
+        type: 'image',
+        query: '',
+        alt: '誤解1: 早く始めるほど差がつく',
+        src: '/columns/inline-orange.svg',
+      },
+      {
         type: 'p',
         text: '2歳でひらがなが読めても、5歳で読めても、小学校に入ると数か月で差はほぼなくなります。早く読めることが将来の学力を保証するわけではない、という研究は実は結構あります。早く始めて続けば良いですが、早く始めて嫌いになるパターンの方がリスクが大きいです。',
       },
@@ -1098,7 +1110,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'children playing outdoors park playground happy active',
     heroAlt: '公園で元気に遊ぶ子どもたち',
-    heroSrc: '/columns/col13-hero.svg',
+    heroSrc: '/columns/col13-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -1112,6 +1124,12 @@ export const columns: Column[] = [
         text: '近年の研究では、外遊びが子どもの脳の発達・感情コントロール・社会性・創造性に与える影響が、具体的なデータと一緒に示されるようになってきました。今日はその中から現場でも実感しやすい5つをまとめます。',
       },
       { type: 'h2', text: '① 実行機能（自己調整力）が育つ' },
+      {
+        type: 'image',
+        query: '',
+        alt: '① 実行機能（自己調整力）が育つ',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'p',
         text: '「鬼ごっこで捕まえたい衝動を抑えてルールを守る」「砂場で崩れそうな塔を慎重に積む」。外遊びには、衝動を抑制しながら目標に向かって行動する機会が自然にたくさん含まれています。この力を「実行機能」と呼び、学習・対人関係・情動調整の土台になることが多くの研究で示されています。',
@@ -1164,7 +1182,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'preschool child learning numbers counting blocks math',
     heroAlt: '数字を学ぶ幼児',
-    heroSrc: '/columns/col14-hero.svg',
+    heroSrc: '/columns/col14-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1174,6 +1192,12 @@ export const columns: Column[] = [
         text: '「うちの子、1から10まで言えます」という声をよく聞きます。でも、「りんごが5個あります、3個食べたら何個残る？」と聞くと答えられない子は多い。これは頭が悪いのではなく、「数唱（数を口で言うこと）」と「数概念（数の量を理解すること）」が別のスキルだからです。',
       },
       { type: 'h2', text: '数の発達には段階がある' },
+      {
+        type: 'image',
+        query: '',
+        alt: '数の発達には段階がある',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'list',
         items: [
@@ -1225,7 +1249,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child free drawing creativity art expression happy',
     heroAlt: '自由に絵を描く子ども',
-    heroSrc: '/columns/col15-hero.svg',
+    heroSrc: '/columns/col15-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1239,6 +1263,12 @@ export const columns: Column[] = [
         text: 'ぬりえと自由描画は似て非なる活動です。どちらも大切ですが、育てる力が少し違います。今日はその違いと、自由描画を保育や家庭に取り入れるコツを紹介します。',
       },
       { type: 'h2', text: 'ぬりえと自由描画の違い' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'ぬりえと自由描画の違い',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'table',
         headers: ['', 'ぬりえ', '自由描画'],
@@ -1269,6 +1299,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '「描く力」と「塗る力」は両方育てる' },
       {
+        type: 'image',
+        query: '',
+        alt: '「描く力」と「塗る力」は両方育てる',
+        src: '/columns/inline-orange.svg',
+      },
+      {
         type: 'p',
         text: '自由描画とぬりえを交互に取り入れると、子どもの表現活動のバランスが良くなります。ぬりえで「丁寧に塗る練習」をして、自由描画で「自分のイメージを出す練習」をする。どちらも小さな達成感の積み重ねです。',
       },
@@ -1294,7 +1330,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'young child focused concentrating activity table',
     heroAlt: '集中して取り組む子ども',
-    heroSrc: '/columns/col16-hero.svg',
+    heroSrc: '/columns/col16-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1354,6 +1390,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '⑤ 小さな達成感を積む' },
       {
+        type: 'image',
+        query: '',
+        alt: '⑤ 小さな達成感を積む',
+        src: '/columns/inline-pink.svg',
+      },
+      {
         type: 'p',
         text: '「1枚できた」「このページ全部塗れた」という小さな完成体験を積み重ねることが、長期的に集中力を伸ばします。むずかしい課題を長くやらせるより、簡単な課題を「終わった」と言える形でやらせる機会を増やすほうが、継続力の土台になります。',
       },
@@ -1375,7 +1417,7 @@ export const columns: Column[] = [
     category: '工作・ハサミ',
     heroQuery: 'shy child hesitant art activity teacher helping',
     heroAlt: '工作を試みる子どもと保育士',
-    heroSrc: '/columns/col17-hero.svg',
+    heroSrc: '/columns/col17-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1415,6 +1457,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '③ 「手が汚れるのが嫌」な子への対応' },
       {
+        type: 'image',
+        query: '',
+        alt: '③ 「手が汚れるのが嫌」な子への対応',
+        src: '/columns/inline-teal.svg',
+      },
+      {
         type: 'p',
         text: '感覚過敏の特性がある子の中には、絵の具や糊が手につくことを極端に嫌がる子がいます。この場合、スタンプ・クレヨン・はさみなど「手が直接汚れない道具」から始めるのが有効です。無理に慣れさせようとすると苦手意識が強まるため、時間をかけてゆっくり慣れていく方針が大切です。',
       },
@@ -1445,7 +1493,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child writing hiragana japanese letter practice preschool',
     heroAlt: 'ひらがなを書く練習をする子ども',
-    heroSrc: '/columns/col18-hero.svg',
+    heroSrc: '/columns/col18-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -1485,6 +1533,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '自然な「文字への気づき」を促す方法' },
       {
+        type: 'image',
+        query: '',
+        alt: '自然な「文字への気づき」を促す方法',
+        src: '/columns/inline-orange.svg',
+      },
+      {
         type: 'list',
         items: [
           '絵本の読み聞かせで「この字は○○って読むんだよ」と自然に教える',
@@ -1517,7 +1571,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'four year old child coloring drawing focused activity',
     heroAlt: 'ぬりえをする4歳の子ども',
-    heroSrc: '/columns/col19-hero.svg',
+    heroSrc: '/columns/col19-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1554,6 +1608,12 @@ export const columns: Column[] = [
       },
       { type: 'h2', text: '「はみ出しが気になる」タイプへの対応' },
       {
+        type: 'image',
+        query: '',
+        alt: '「はみ出しが気になる」タイプへの対応',
+        src: '/columns/inline-teal.svg',
+      },
+      {
         type: 'p',
         text: '4歳ごろから「はみ出した！」と気にする子が増えます。「はみ出してもいいんだよ」と伝えるだけでなく、太めの輪郭線のぬりえを選ぶことで、自然とはみ出しにくい環境を作れます。成功体験を積むことで自信がつき、より細かいぬりえにも挑戦できるようになります。',
       },
@@ -1580,7 +1640,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'daily routine child morning breakfast learning table happy',
     heroAlt: '毎日のルーティンで学習する子ども',
-    heroSrc: '/columns/col20-hero.svg',
+    heroSrc: '/columns/col20-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1606,6 +1666,12 @@ export const columns: Column[] = [
         text: '「今日は1枚だけ」でOKにする。毎日続けることの価値は、枚数より「やったという事実の積み上げ」にあります。調子がいい日は自然と2〜3枚やりますが、「最低ライン」を低く設定しておくことで、やる気のない日でも続きやすくなります。',
       },
       { type: 'h2', text: 'ルール2: 時間を固定する' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'ルール2: 時間を固定する',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'p',
         text: '「朝ごはんの後」「お風呂の前」など、何かとセットにすると習慣になりやすい。脳は「○○の後は△△」というパターンを自動で覚えます。「気が向いたときにやる」は結局「やらない日が続く」につながります。',
@@ -1647,7 +1713,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child dot-to-dot worksheet activity',
     heroAlt: '点つなぎに取り組む幼児',
-    heroSrc: '/columns/col21-hero.svg',
+    heroSrc: '/columns/col21-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -1680,6 +1746,12 @@ export const columns: Column[] = [
         url: 'https://www.jaot.or.jp/',
       },
       { type: 'h2', text: '年齢別の取り組み方' },
+      {
+        type: 'image',
+        query: '',
+        alt: '年齢別の取り組み方',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'table',
         headers: ['年齢', 'おすすめの点数', 'ポイント'],
@@ -1727,7 +1799,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'toddler 2 year old coloring crayon',
     heroAlt: '2歳の子どもがクレヨンでぬりえ',
-    heroSrc: '/columns/col22-hero.svg',
+    heroSrc: '/columns/col22-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1757,6 +1829,12 @@ export const columns: Column[] = [
         url: 'https://www.mhlw.go.jp/file/06-Seisakujouhou-11900000-Koyoukintoujidoukateikyoku/0000160000.pdf',
       },
       { type: 'h2', text: '2歳向けぬりえ選びの3つのポイント' },
+      {
+        type: 'image',
+        query: '',
+        alt: '2歳向けぬりえ選びの3つのポイント',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'ordered',
         items: [
@@ -1811,7 +1889,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child learning colors painting art',
     heroAlt: '色を使って絵を描く幼児',
-    heroSrc: '/columns/col23-hero.svg',
+    heroSrc: '/columns/col23-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -1842,6 +1920,12 @@ export const columns: Column[] = [
         text: 'この表はあくまで目安です。早い子・遅い子の個人差が大きい領域なので、同じ年齢の子と比べて焦らなくて大丈夫です。',
       },
       { type: 'h2', text: '遊びながら色を覚えるアイデア' },
+      {
+        type: 'image',
+        query: '',
+        alt: '遊びながら色を覚えるアイデア',
+        src: '/columns/inline-yellow.svg',
+      },
       {
         type: 'list',
         items: [
@@ -1888,7 +1972,7 @@ export const columns: Column[] = [
     category: '運筆・書き方',
     heroQuery: 'child writing numbers worksheet practice',
     heroAlt: '数字を書く練習をする幼児',
-    heroSrc: '/columns/col24-hero.svg',
+    heroSrc: '/columns/col24-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -1916,6 +2000,12 @@ export const columns: Column[] = [
         text: 'これらが揃う4〜5歳頃が、数字練習を本格的に始める自然なタイミングです。3歳以前に強制するより、なぞり書き・点つなぎ・運筆練習で手先を育ててからの方が圧倒的に習得が早くなります。',
       },
       { type: 'h2', text: '数字ごとの書き方のポイント' },
+      {
+        type: 'image',
+        query: '',
+        alt: '数字ごとの書き方のポイント',
+        src: '/columns/inline-green.svg',
+      },
       {
         type: 'table',
         headers: ['数字', '書き順のコツ', 'よくある間違い'],
@@ -1974,7 +2064,7 @@ export const columns: Column[] = [
     category: '遊び・アイデア',
     heroQuery: 'child sensory play sand water activities',
     heroAlt: '感覚遊びを楽しむ子ども',
-    heroSrc: '/columns/col25-hero.svg',
+    heroSrc: '/columns/col25-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 7,
@@ -1993,6 +2083,12 @@ export const columns: Column[] = [
         source: 'Ayres, A. J. (1972). Sensory Integration and Learning Disorders. Western Psychological Services.',
       },
       { type: 'h2', text: '感覚遊びが育てる5つの力' },
+      {
+        type: 'image',
+        query: '',
+        alt: '感覚遊びが育てる5つの力',
+        src: '/columns/inline-mixed.svg',
+      },
       {
         type: 'list',
         items: [
@@ -2050,7 +2146,7 @@ export const columns: Column[] = [
     category: '季節・行事',
     heroQuery: 'seasonal children art spring summer autumn winter',
     heroAlt: '季節のぬりえを楽しむ子ども',
-    heroSrc: '/columns/col26-hero.svg',
+    heroSrc: '/columns/col26-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2079,6 +2175,12 @@ export const columns: Column[] = [
         text: '桜のぬりえをしながら「この花は何色？」「桜餅って食べたことある？」と会話を広げると、季節の体験が語彙化されていきます。',
       },
       { type: 'h2', text: '夏（6〜8月）のテーマ' },
+      {
+        type: 'image',
+        query: '',
+        alt: '夏（6〜8月）のテーマ',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'list',
         items: [
@@ -2148,7 +2250,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'child drawing art development stages',
     heroAlt: '子どもが絵を描いている場面',
-    heroSrc: '/columns/col27-hero.svg',
+    heroSrc: '/columns/col27-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2162,6 +2264,12 @@ export const columns: Column[] = [
         text: 'ぬりえも「上手に塗れているか」より「今この子はどの発達段階にいるか」を理解した上で選ぶと、子どもにとって最適な体験ができます。',
       },
       { type: 'h2', text: '子どもの絵の発達5段階' },
+      {
+        type: 'image',
+        query: '',
+        alt: '子どもの絵の発達5段階',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'table',
         headers: ['段階名', '年齢目安', '特徴'],
@@ -2221,7 +2329,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'children animals zoo learning education',
     heroAlt: '動物の絵本を読む子ども',
-    heroSrc: '/columns/col28-hero.svg',
+    heroSrc: '/columns/col28-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -2235,6 +2343,12 @@ export const columns: Column[] = [
         text: 'そこには単なる「かわいい」以上の発達的な意味があります。動物への関心を学習に結びつける4つの理由を解説します。',
       },
       { type: 'h2', text: '① 生き物への自然な好奇心（バイオフィリア）' },
+      {
+        type: 'image',
+        query: '',
+        alt: '① 生き物への自然な好奇心（バイオフィリア）',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'p',
         text: '心理学者のE・O・ウィルソンが提唱した「バイオフィリア（生命愛）」は、人間が生き物に本能的な親しみを感じる傾向のことです。幼児はとくにこの感覚が強く、動くもの・鳴くもの・毛のあるものに強く引きつけられます。この本能的な関心が、動物テーマの教材への集中力の高さにつながっています。',
@@ -2287,7 +2401,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child school readiness pencil writing preparation',
     heroAlt: '就学前の子どもが鉛筆で書く練習をしている',
-    heroSrc: '/columns/col29-hero.svg',
+    heroSrc: '/columns/col29-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2301,6 +2415,12 @@ export const columns: Column[] = [
         text: '保育現場で長年子どもたちを見てきた立場から言うと、入学後に「楽しく学べている子」に共通しているのは、意欲・集中力・基本的な姿勢です。高度な知識ではなく、日々の生活習慣と遊びの積み重ねが土台になっています。',
       },
       { type: 'h2', text: '就学準備に必要な5つの力' },
+      {
+        type: 'image',
+        query: '',
+        alt: '就学準備に必要な5つの力',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'ordered',
         items: [
@@ -2368,7 +2488,7 @@ export const columns: Column[] = [
     category: '遊び・アイデア',
     heroQuery: 'children group craft activity nursery school collaborative',
     heroAlt: 'グループで製作活動をする子どもたち',
-    heroSrc: '/columns/col30-hero.svg',
+    heroSrc: '/columns/col30-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 7,
@@ -2378,6 +2498,12 @@ export const columns: Column[] = [
         text: 'ぬりえや工作は1人で取り組む活動が多いですが、「みんなで作る」体験には個人製作では得られない社会的・情緒的な学びがあります。共同製作は、協力する喜び・他者の違いを認める経験・「自分も貢献した」という達成感を生みます。',
       },
       { type: 'h2', text: 'グループ製作の3つの形式' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'グループ製作の3つの形式',
+        src: '/columns/inline-green.svg',
+      },
       {
         type: 'table',
         headers: ['形式', '内容', 'おすすめ年齢'],
@@ -2434,7 +2560,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child dinosaur coloring book learning',
     heroAlt: '恐竜の塗り絵をする子ども',
-    heroSrc: '/columns/col31-hero.svg',
+    heroSrc: '/columns/col31-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -2448,6 +2574,12 @@ export const columns: Column[] = [
         text: '実は恐竜への関心は、幼児の認知発達にとって非常に意義深い体験です。この記事では、恐竜テーマが子どもの知育に効果的な理由と、ぬりえを通じた活用方法を解説します。',
       },
       { type: 'h2', text: 'なぜ子どもは恐竜に夢中になるのか' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'なぜ子どもは恐竜に夢中になるのか',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'p',
         text: '発達心理学者のLynn Liben氏らの研究によれば、子どもが特定のテーマに強い執着を持つ「インテンスインタレスト（強烈な関心）」は、4〜6歳頃に多く見られます。恐竜はその典型例で、「大きい」「強い」「今はいない不思議な存在」という要素が幼児の好奇心を刺激します。',
@@ -2511,7 +2643,7 @@ export const columns: Column[] = [
     category: '季節・行事',
     heroQuery: 'summer children coloring crafts beach activities',
     heroAlt: '夏テーマのぬりえをする子ども',
-    heroSrc: '/columns/col32-hero.svg',
+    heroSrc: '/columns/col32-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2525,6 +2657,12 @@ export const columns: Column[] = [
         text: 'この記事では、夏をテーマにしたぬりえ・工作活動10選を年齢別のポイントとともに紹介します。',
       },
       { type: 'h2', text: '7月のおすすめ活動' },
+      {
+        type: 'image',
+        query: '',
+        alt: '7月のおすすめ活動',
+        src: '/columns/inline-mixed.svg',
+      },
       {
         type: 'ordered',
         items: [
@@ -2578,7 +2716,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'child fine motor skills hands art craft',
     heroAlt: '手先を使う工作をする幼児',
-    heroSrc: '/columns/col33-hero.svg',
+    heroSrc: '/columns/col33-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2597,6 +2735,12 @@ export const columns: Column[] = [
         source: 'Case-Smith, J. (2002). Effectiveness of school-based occupational therapy. American Journal of Occupational Therapy.',
       },
       { type: 'h2', text: '微細運動を育てる活動10選' },
+      {
+        type: 'image',
+        query: '',
+        alt: '微細運動を育てる活動10選',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'ordered',
         items: [
@@ -2645,7 +2789,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child vehicles coloring book trains cars',
     heroAlt: '乗り物の塗り絵をする子ども',
-    heroSrc: '/columns/col34-hero.svg',
+    heroSrc: '/columns/col34-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 5,
@@ -2655,6 +2799,12 @@ export const columns: Column[] = [
         text: '電車・消防車・新幹線……乗り物テーマのぬりえは、とくに3〜6歳の男の子を中心に絶大な人気があります。しかしこれは単なる「好み」の問題ではなく、幼児の認知発達と深く結びついた現象です。',
       },
       { type: 'h2', text: 'なぜ子どもは乗り物に惹かれるのか' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'なぜ子どもは乗り物に惹かれるのか',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'p',
         text: '動くもの・速いものへの本能的な関心は、幼児が持つ「運動への感受性」から来ています。乗り物は動き・音・機能が明確で、「これはなに？どこに行く？」という問いを自然に生みます。この問いこそが語彙学習と概念理解の入口です。',
@@ -2707,7 +2857,7 @@ export const columns: Column[] = [
     category: '教育・学習',
     heroQuery: 'child tablet screen time drawing writing balance',
     heroAlt: '子どもがタブレットより紙の絵を選んでいる場面',
-    heroSrc: '/columns/col35-hero.svg',
+    heroSrc: '/columns/col35-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 6,
@@ -2721,6 +2871,12 @@ export const columns: Column[] = [
         text: 'この記事では、スクリーンタイムの問題点と、ぬりえ・プリント活動が脳発達の補完に役立つ理由を解説します。',
       },
       { type: 'h2', text: 'スクリーンタイムと脳の発達' },
+      {
+        type: 'image',
+        query: '',
+        alt: 'スクリーンタイムと脳の発達',
+        src: '/columns/inline-teal.svg',
+      },
       {
         type: 'p',
         text: 'WHO（世界保健機関）は2019年に、5歳未満の子どものスクリーンタイムについてのガイドラインを発表しています。2歳未満は視聴を避け、2〜5歳は1日1時間未満を推奨しています。その理由の一つが、スクリーン使用中は手指の運動・体の動き・対面コミュニケーションが制限されることによる発達への影響です。',
@@ -2775,7 +2931,7 @@ export const columns: Column[] = [
     category: '発達・知育',
     heroQuery: 'children playground equipment park swing slide sandbox',
     heroAlt: '公園の遊具で遊ぶ子どもたち',
-    heroSrc: '/columns/col36-hero.svg',
+    heroSrc: '/columns/col36-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     readingTime: 7,
@@ -2789,6 +2945,12 @@ export const columns: Column[] = [
         text: '遊具を「遊び場」として見るだけでなく、「発達のツール」として理解すると、公園での遊び方も変わってきます。',
       },
       { type: 'h2', text: '主な遊具と発達効果の対応表' },
+      {
+        type: 'image',
+        query: '',
+        alt: '主な遊具と発達効果の対応表',
+        src: '/columns/inline-orange.svg',
+      },
       {
         type: 'table',
         headers: ['遊具', '主な発達領域', '具体的な効果'],
