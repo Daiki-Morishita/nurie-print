@@ -55,6 +55,7 @@ export type Theme =
   | 'autumn'           // 秋
   | 'winter'           // 冬
   | 'gotochi'          // ご当地ぬりえ（47都道府県）
+  | 'nature'           // しぜん（虹・空・雲など）
   // ── おとな向けテーマ ──
   | 'mandala'           // 曼荼羅
   | 'botanical'         // 植物画
@@ -161,6 +162,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   autumn: '秋',
   winter: '冬',
   gotochi: 'ご当地',
+  nature: 'しぜん',
   mandala: '曼荼羅',
   botanical: '植物画',
   landscape: '風景',
