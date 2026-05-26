@@ -35,7 +35,8 @@ export function SortSelector({ basePath, showFavorites = true }: Props = {}) {
       params.delete('_r')
     }
     const target = basePath ?? pathname
-    router.push(`${target}?${params.toString()}`)
+    // scroll: false で押下時に画面トップへ戻されないようにする
+    router.push(`${target}?${params.toString()}`, { scroll: false })
   }
 
   return (

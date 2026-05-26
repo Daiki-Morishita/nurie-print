@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import Link from 'next/link'
 import { MaterialCard } from '@/components/materials/MaterialCard'
 import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
-import { SearchFilters } from '@/components/search/SearchFilters'
+import { CollapsibleFilters } from '@/components/search/CollapsibleFilters'
 import { SearchBar } from '@/components/search/SearchBar'
 import { SortSelector } from '@/components/search/SortSelector'
 import { filterMaterials, getMaterialsForAudience, type SortKey } from '@/lib/data'
@@ -91,21 +91,11 @@ export default async function MaterialsPage({
         </Suspense>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
         <aside className="lg:w-60 shrink-0">
-          <div className="bg-white border border-border rounded-lg p-4 lg:sticky lg:top-32">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="font-rounded font-bold text-[14px]">絞り込み</h2>
-              {activeCount > 0 && (
-                <Link href="/materials" className="text-[11px] text-primary hover:underline">
-                  クリア
-                </Link>
-              )}
-            </div>
-            <Suspense fallback={<div className="animate-pulse h-48 bg-muted rounded" />}>
-              <SearchFilters />
-            </Suspense>
-          </div>
+          <Suspense fallback={<div className="animate-pulse h-12 bg-muted rounded" />}>
+            <CollapsibleFilters />
+          </Suspense>
         </aside>
 
         <div className="flex-1">

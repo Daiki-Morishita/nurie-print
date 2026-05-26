@@ -55304,7 +55304,6 @@ const _materials6: Material[] = [
     popular: false,
   },
   {
-  {
     id: 'fairytale-tinderbox-simple-1',
     title: 'きのなかのいど',
     description: '井戸へ降りる線画。',
