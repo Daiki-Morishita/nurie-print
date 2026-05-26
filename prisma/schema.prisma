@@ -122,3 +122,22 @@ model SearchRequest {
 
   @@unique([query])
 }
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String
+  category  String   // 'request' | 'bug' | 'copyright' | 'other'
+  subject   String?
+  body      String   @db.Text
+  ip        String?
+  userAgent String?
+  /** 管理: 'new' | 'read' | 'replied' | 'spam' */
+  status    String   @default("new")
+  notes     String?  @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([createdAt])
+  @@index([status])
+}

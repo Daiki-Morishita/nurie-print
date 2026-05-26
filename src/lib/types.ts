@@ -36,6 +36,7 @@ export type Theme =
   | 'vehicles'      // のりもの
   | 'trains'        // 電車
   | 'densha'        // でんしゃ（旧キー / 在来線）
+  | 'shinkansen'    // 新幹線
   | 'fairytale'     // 昔話・童話
   | 'food'          // 食べ物
   | 'fruits'        // くだもの
@@ -141,6 +142,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   vehicles: 'のりもの',
   trains: '電車',
   densha: 'でんしゃ',
+  shinkansen: '新幹線',
   fairytale: '昔話・童話',
   food: '食べ物',
   fruits: 'くだもの',
