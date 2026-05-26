@@ -45190,6 +45190,23 @@ const _materialsRepair: Material[] = [
     createdAt: '2026-05-26T09:07',
     popular: false,
   },
+  {
+    id: 'fairytale-sinbad-simple-1',
+    title: 'ふねでしゅっぱつ',
+    description: '船の出発のぬりえ。',
+    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-sinbad', 'fairytale', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-sinbad-simple-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-sinbad-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T19:22',
+    popular: false,
+  },
 
 ]
 
