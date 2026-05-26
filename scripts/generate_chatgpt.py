@@ -39,7 +39,7 @@ ChatGPT画像生成 統合スクリプト（公園・恐竜 共通エンジン�
 #     --user-data-dir="$HOME/.chatgpt-chrome-profile"
 """
 
-import os, sys, time, re, random, subprocess, argparse, base64
+import os, sys, time, re, random, subprocess, argparse, base64, hashlib, json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from supabase import create_client
@@ -3513,14 +3513,48 @@ def supabase_client():
     return create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
+UPLOAD_MD5_DB = REPO_DIR / "scripts" / ".upload_md5.json"
+
+
+def _load_md5_db():
+    """過去アップロードの md5 → filename マップを読み込む"""
+    if not UPLOAD_MD5_DB.exists():
+        return {}
+    try:
+        return json.loads(UPLOAD_MD5_DB.read_text())
+    except Exception:
+        return {}
+
+
+def _save_md5_db(db):
+    UPLOAD_MD5_DB.write_text(json.dumps(db, ensure_ascii=False, indent=2))
+
+
 def upload_to_supabase(client, local_path, remote_name):
     with open(local_path, "rb") as f:
         data = f.read()
+
+    # ── 重複検知ガード ─────────────────────────────────────────
+    # 同じ md5 = 同じ画像内容を別ファイル名でアップしようとしている。
+    # 過去にcrow-pitcher画像が複数アイテムに使い回された不具合（合計40件無駄）
+    # の再発防止。発火したら即終了してユーザーに通知する。
+    md5 = hashlib.md5(data).hexdigest()
+    db = _load_md5_db()
+    if md5 in db and db[md5] != remote_name:
+        prev = db[md5]
+        log(f"🚨 重複画像検知: {remote_name} の中身が {prev} と同一 (md5={md5[:12]})")
+        log(f"   → 生成スクリプトのバグ可能性 (画像URL誤取得など)。中断します")
+        notify_mac("hoiku-print", f"重複画像検知！停止: {remote_name} == {prev}")
+        os._exit(2)
+    # 通常アップロード
     client.storage.from_(BUCKET).upload(
         path=remote_name,
         file=data,
         file_options={"content-type": "image/png", "upsert": "true"},
     )
+    # 成功したら記録
+    db[md5] = remote_name
+    _save_md5_db(db)
     return f"{SUPABASE_BASE}/{remote_name}"
 
 

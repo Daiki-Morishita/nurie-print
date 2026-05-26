@@ -43,3 +43,4 @@ public/materials/
 tmp_materials/
 scripts/*.log
 scripts/auth_state.json
+scripts/.upload_md5.json
