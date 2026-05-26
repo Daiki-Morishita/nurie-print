@@ -40028,7 +40028,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-momotaro-simple-1',
-    title: 'おばあさんとおおきなもも',
+    title: 'おばあさんとおおきなもも（ももたろう）',
     description: '川で大きな桃を拾うおばあさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40045,7 +40045,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-momotaro-easy-1',
-    title: 'ももからうまれたももたろう',
+    title: 'ももからうまれたももたろう（ももたろう）',
     description: '桃から桃太郎が生まれる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40062,7 +40062,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-momotaro-normal-1',
-    title: 'きびだんごでなかま',
+    title: 'きびだんごでなかま（ももたろう）',
     description: '犬さるきじを家来にする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40079,7 +40079,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-momotaro-rich-1',
-    title: 'おにがしまでおにたいじ',
+    title: 'おにがしまでおにたいじ（ももたろう）',
     description: '鬼ヶ島で鬼退治する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40096,7 +40096,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-urashima-taro-simple-1',
-    title: 'かめをたすける',
+    title: 'かめをたすける（浦島太郎）',
     description: '亀を助ける浦島のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40113,7 +40113,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-urashima-taro-easy-1',
-    title: 'りゅうぐうへ',
+    title: 'りゅうぐうへ（浦島太郎）',
     description: '海中の竜宮城へ向かう線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40130,7 +40130,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-urashima-taro-normal-1',
-    title: 'おとひめのうたげ',
+    title: 'おとひめのうたげ（浦島太郎）',
     description: '乙姫の歓待のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40147,7 +40147,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-urashima-taro-rich-1',
-    title: 'たまてばこ',
+    title: 'たまてばこ（浦島太郎）',
     description: '玉手箱を開けて老人になる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40164,7 +40164,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kintaro-simple-1',
-    title: 'やまのきんたろう',
+    title: 'やまのきんたろう（きんたろう）',
     description: 'まさかりを構えるきんたろうのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40181,7 +40181,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kintaro-easy-1',
-    title: 'くまとすもう',
+    title: 'くまとすもう（きんたろう）',
     description: 'くまと相撲する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40198,7 +40198,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kintaro-normal-1',
-    title: 'やまのなかまたち',
+    title: 'やまのなかまたち（きんたろう）',
     description: '山で動物と遊ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40215,7 +40215,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kaguya-hime-simple-1',
-    title: 'たけのかぐやひめ',
+    title: 'たけのかぐやひめ（かぐや姫）',
     description: '竹から姫を発見する線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40232,7 +40232,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kaguya-hime-easy-1',
-    title: 'ごにんのきぞくのきゅうこん',
+    title: 'ごにんのきぞくのきゅうこん（かぐや姫）',
     description: '5人の求婚のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40249,7 +40249,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kaguya-hime-normal-1',
-    title: 'つきをみあげるひめ',
+    title: 'つきをみあげるひめ（かぐや姫）',
     description: '月を見上げ涙ぐむ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40266,7 +40266,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kaguya-hime-rich-1',
-    title: 'つきへかえる',
+    title: 'つきへかえる（かぐや姫）',
     description: '月へ帰る別れのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40283,7 +40283,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-issun-boshi-simple-1',
-    title: 'おわんのふねでたびだち',
+    title: 'おわんのふねでたびだち（一寸法師）',
     description: 'お椀の舟の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40300,7 +40300,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-issun-boshi-easy-1',
-    title: 'ひめさまとであう',
+    title: 'ひめさまとであう（一寸法師）',
     description: '姫の前の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40317,7 +40317,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-issun-boshi-normal-1',
-    title: 'おにとたたかう',
+    title: 'おにとたたかう（一寸法師）',
     description: '鬼と戦う線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40334,7 +40334,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-issun-boshi-rich-1',
-    title: 'おおきくなってけっこん',
+    title: 'おおきくなってけっこん（一寸法師）',
     description: '大きくなって結婚する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40351,7 +40351,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-hanasaka-jiisan-simple-1',
-    title: 'シロとおじいさん',
+    title: 'シロとおじいさん（はなさかじいさん）',
     description: 'シロを抱くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40368,7 +40368,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-hanasaka-jiisan-easy-1',
-    title: 'ここほれわんわん',
+    title: 'ここほれわんわん（はなさかじいさん）',
     description: 'シロが宝を掘る線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40385,7 +40385,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-hanasaka-jiisan-normal-1',
-    title: 'はなをさかせる',
+    title: 'はなをさかせる（はなさかじいさん）',
     description: '枯れ木に桜を咲かせる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40402,7 +40402,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-hanasaka-jiisan-rich-1',
-    title: 'いじわるじいさんのしっぱい',
+    title: 'いじわるじいさんのしっぱい（はなさかじいさん）',
     description: '意地悪じいさんの失敗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40419,7 +40419,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tongue-cut-sparrow-simple-1',
-    title: 'すずめをてあて',
+    title: 'すずめをてあて（舌切りすずめ）',
     description: 'すずめを手当するおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40436,7 +40436,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tongue-cut-sparrow-easy-1',
-    title: 'いじわるおばあさん',
+    title: 'いじわるおばあさん（舌切りすずめ）',
     description: 'すずめをいじめるおばあさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40453,7 +40453,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tongue-cut-sparrow-normal-1',
-    title: 'ちいさなつづらのおおばんこばん',
+    title: 'ちいさなつづらのおおばんこばん（舌切りすずめ）',
     description: '小さな葛籠から宝物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40470,7 +40470,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tongue-cut-sparrow-rich-1',
-    title: 'ようかいだらけのおおきなつづら',
+    title: 'ようかいだらけのおおきなつづら（舌切りすずめ）',
     description: '大きな葛籠から妖怪が飛び出す線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40487,7 +40487,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kobutori-jiisan-simple-1',
-    title: 'あまやどりするじいさん',
+    title: 'あまやどりするじいさん（こぶとりじいさん）',
     description: 'こぶのおじいさんが雨宿りする線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40504,7 +40504,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kobutori-jiisan-easy-1',
-    title: 'おにのうたげでおどる',
+    title: 'おにのうたげでおどる（こぶとりじいさん）',
     description: '鬼たちと踊る線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40521,7 +40521,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kobutori-jiisan-normal-1',
-    title: 'こぶをとってもらう',
+    title: 'こぶをとってもらう（こぶとりじいさん）',
     description: 'こぶを取ってもらう線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40538,7 +40538,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kobutori-jiisan-rich-1',
-    title: 'いじわるじいさんのこぶがふえる',
+    title: 'いじわるじいさんのこぶがふえる（こぶとりじいさん）',
     description: '意地悪じいさんのこぶが増える線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40555,7 +40555,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-grateful-crane-simple-1',
-    title: 'つるをたすける',
+    title: 'つるをたすける（つるの恩返し）',
     description: '罠の鶴を助ける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40572,7 +40572,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-grateful-crane-easy-1',
-    title: 'むすめがたずねてくる',
+    title: 'むすめがたずねてくる（つるの恩返し）',
     description: '娘が訪ねる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40589,7 +40589,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-grateful-crane-normal-1',
-    title: 'はたをおるむすめ',
+    title: 'はたをおるむすめ（つるの恩返し）',
     description: '機を織る娘のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40606,7 +40606,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-grateful-crane-rich-1',
-    title: 'つるのすがたでとびさる',
+    title: 'つるのすがたでとびさる（つるの恩返し）',
     description: '鶴の正体で飛び去る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40623,7 +40623,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-onigiri-korori-simple-1',
-    title: 'おむすびがころころ',
+    title: 'おむすびがころころ（おむすびころりん）',
     description: 'おむすびが転がる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40640,7 +40640,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-onigiri-korori-easy-1',
-    title: 'あなをのぞく',
+    title: 'あなをのぞく（おむすびころりん）',
     description: '穴を覗くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40657,7 +40657,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-onigiri-korori-normal-1',
-    title: 'ねずみのうたとごちそう',
+    title: 'ねずみのうたとごちそう（おむすびころりん）',
     description: 'ねずみのごちそうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40674,7 +40674,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-onigiri-korori-rich-1',
-    title: 'たからものをもってかえる',
+    title: 'たからものをもってかえる（おむすびころりん）',
     description: '宝物を持ち帰る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40691,7 +40691,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kasa-jizo-simple-1',
-    title: 'かさがうれないじいさん',
+    title: 'かさがうれないじいさん（かさじぞう）',
     description: '市場で困るおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40708,7 +40708,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kasa-jizo-easy-1',
-    title: 'ゆきのおじぞうさま',
+    title: 'ゆきのおじぞうさま（かさじぞう）',
     description: '雪の地蔵を見つける線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40725,7 +40725,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kasa-jizo-normal-1',
-    title: 'かさをかぶせる',
+    title: 'かさをかぶせる（かさじぞう）',
     description: '地蔵に笠をかぶせる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40742,7 +40742,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-kasa-jizo-rich-1',
-    title: 'おじぞうさまのおれい',
+    title: 'おじぞうさまのおれい（かさじぞう）',
     description: '地蔵がお礼を運ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40759,7 +40759,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-monkey-crab-simple-1',
-    title: 'かにとさるのこうかん',
+    title: 'かにとさるのこうかん（さるかに合戦）',
     description: 'おにぎりと種の交換のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40776,7 +40776,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-monkey-crab-easy-1',
-    title: 'あおいかきがぶつかる',
+    title: 'あおいかきがぶつかる（さるかに合戦）',
     description: '柿の実を投げる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40793,7 +40793,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-monkey-crab-normal-1',
-    title: 'なかまのさくせんかいぎ',
+    title: 'なかまのさくせんかいぎ（さるかに合戦）',
     description: '作戦会議のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40810,7 +40810,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-monkey-crab-rich-1',
-    title: 'さるをこらしめる',
+    title: 'さるをこらしめる（さるかに合戦）',
     description: 'さるを懲らしめる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40827,7 +40827,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-straw-millionaire-simple-1',
-    title: 'ころんでわらをひろう',
+    title: 'ころんでわらをひろう（わらしべ長者）',
     description: 'わらを握る若者のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40844,7 +40844,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-straw-millionaire-easy-1',
-    title: 'わらとみかんのこうかん',
+    title: 'わらとみかんのこうかん（わらしべ長者）',
     description: 'みかんと交換する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40861,7 +40861,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-straw-millionaire-normal-1',
-    title: 'みかんがたんものに',
+    title: 'みかんがたんものに（わらしべ長者）',
     description: '次々と交換する線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40878,7 +40878,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-straw-millionaire-rich-1',
-    title: 'ちょうじゃのやかた',
+    title: 'ちょうじゃのやかた（わらしべ長者）',
     description: '長者の屋敷のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40895,7 +40895,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanabata-simple-1',
-    title: 'はたおりとうしひき',
+    title: 'はたおりとうしひき（七夕）',
     description: '織姫と彦星が働く線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40912,7 +40912,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanabata-easy-1',
-    title: 'あまのがわでであう',
+    title: 'あまのがわでであう（七夕）',
     description: '天の川での出会いのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40929,7 +40929,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanabata-normal-1',
-    title: 'ひきはなされる',
+    title: 'ひきはなされる（七夕）',
     description: '引き離される線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40946,7 +40946,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanabata-rich-1',
-    title: 'カササギのはしでさいかい',
+    title: 'カササギのはしでさいかい（七夕）',
     description: 'カササギの橋で再会する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40963,7 +40963,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-inaba-white-rabbit-simple-1',
-    title: 'わにのせをわたる',
+    title: 'わにのせをわたる（因幡の白うさぎ）',
     description: 'わにの背を渡る線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40980,7 +40980,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-inaba-white-rabbit-easy-1',
-    title: 'けがわをはがされる',
+    title: 'けがわをはがされる（因幡の白うさぎ）',
     description: '毛皮を剥がれて泣く線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40997,7 +40997,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-inaba-white-rabbit-normal-1',
-    title: 'しおみずでくるしむ',
+    title: 'しおみずでくるしむ（因幡の白うさぎ）',
     description: '塩水で苦しむ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41014,7 +41014,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-inaba-white-rabbit-rich-1',
-    title: 'おおくにぬしのてあて',
+    title: 'おおくにぬしのてあて（因幡の白うさぎ）',
     description: '大国主の手当のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41031,7 +41031,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tennyo-hagoromo-simple-1',
-    title: 'まつにかかったはごろも',
+    title: 'まつにかかったはごろも（天女の羽衣）',
     description: '羽衣を見つける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41048,7 +41048,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tennyo-hagoromo-easy-1',
-    title: 'てんにょのおねがい',
+    title: 'てんにょのおねがい（天女の羽衣）',
     description: '羽衣を返してと哀願する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41065,7 +41065,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tennyo-hagoromo-normal-1',
-    title: 'うつくしいまい',
+    title: 'うつくしいまい（天女の羽衣）',
     description: '天女の舞のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41082,7 +41082,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tennyo-hagoromo-rich-1',
-    title: 'そらへかえる',
+    title: 'そらへかえる（天女の羽衣）',
     description: '天女が空へ帰る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41099,7 +41099,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-uriko-hime-simple-1',
-    title: 'おおきなうりをひろう',
+    title: 'おおきなうりをひろう（瓜子姫）',
     description: '瓜を拾う線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41116,7 +41116,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-uriko-hime-easy-1',
-    title: 'うりからひめ',
+    title: 'うりからひめ（瓜子姫）',
     description: '瓜から姫のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41133,7 +41133,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-uriko-hime-normal-1',
-    title: 'アマノジャクのたくらみ',
+    title: 'アマノジャクのたくらみ（瓜子姫）',
     description: 'アマノジャクが騙そうとする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41150,7 +41150,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-uriko-hime-rich-1',
-    title: 'アマノジャクをこらしめる',
+    title: 'アマノジャクをこらしめる（瓜子姫）',
     description: 'アマノジャクを懲らしめる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41167,7 +41167,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanuki-itoguruma-simple-1',
-    title: 'わなにかかったたぬき',
+    title: 'わなにかかったたぬき（分福茶釜）',
     description: '罠のたぬきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41184,7 +41184,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanuki-itoguruma-easy-1',
-    title: 'おばあさんにばける',
+    title: 'おばあさんにばける（分福茶釜）',
     description: 'おばあさんに化ける線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41201,7 +41201,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanuki-itoguruma-normal-1',
-    title: 'いとぐるまをまわす',
+    title: 'いとぐるまをまわす（分福茶釜）',
     description: '糸車を回す線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41218,7 +41218,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tanuki-itoguruma-rich-1',
-    title: 'たぬきとおちゃ',
+    title: 'たぬきとおちゃ（分福茶釜）',
     description: 'たぬきとお茶を飲む線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41235,7 +41235,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-yuki-onna-simple-1',
-    title: 'ゆきのよるのこや',
+    title: 'ゆきのよるのこや（雪女）',
     description: '雪の夜の小屋のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41252,7 +41252,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-yuki-onna-easy-1',
-    title: 'ゆきおんなあらわる',
+    title: 'ゆきおんなあらわる（雪女）',
     description: '雪女が現れる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41269,7 +41269,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-yuki-onna-normal-1',
-    title: 'おゆきとしあわせなくらし',
+    title: 'おゆきとしあわせなくらし（雪女）',
     description: 'お雪と幸せに暮らす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41286,7 +41286,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-yuki-onna-rich-1',
-    title: 'ゆきおんなのしょうたい',
+    title: 'ゆきおんなのしょうたい（雪女）',
     description: '雪女が消える線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41303,7 +41303,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-sannen-netaro-simple-1',
-    title: 'さんねんねつづける',
+    title: 'さんねんねつづける（三年寝太郎）',
     description: '三年寝続ける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41320,7 +41320,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-sannen-netaro-easy-1',
-    title: 'とつぜんめざめる',
+    title: 'とつぜんめざめる（三年寝太郎）',
     description: '目覚めて立ち上がる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41337,7 +41337,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-sannen-netaro-normal-1',
-    title: 'おおいわをうごかす',
+    title: 'おおいわをうごかす（三年寝太郎）',
     description: '大岩を動かす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41354,7 +41354,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-sannen-netaro-rich-1',
-    title: 'むらびとにかんしゃされる',
+    title: 'むらびとにかんしゃされる（三年寝太郎）',
     description: '村人に讃えられる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41371,7 +41371,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-umisachi-yamasachi-simple-1',
-    title: 'つりばりをなくす',
+    title: 'つりばりをなくす（海幸彦と山幸彦）',
     description: '釣り針をなくす線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41388,7 +41388,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-umisachi-yamasachi-easy-1',
-    title: 'とよたまひめとであう',
+    title: 'とよたまひめとであう（海幸彦と山幸彦）',
     description: '豊玉姫と出会う線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41405,7 +41405,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-umisachi-yamasachi-normal-1',
-    title: 'うみのかみのめぐみ',
+    title: 'うみのかみのめぐみ（海幸彦と山幸彦）',
     description: '海の神の恵みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41422,7 +41422,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-umisachi-yamasachi-rich-1',
-    title: 'あにとわかい',
+    title: 'あにとわかい（海幸彦と山幸彦）',
     description: '兄と和解する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41439,7 +41439,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tengu-kakuremino-simple-1',
-    title: 'てんぐとかくれみの',
+    title: 'てんぐとかくれみの（天狗のかくれみの）',
     description: '天狗とかくれみののぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41456,7 +41456,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tengu-kakuremino-easy-1',
-    title: 'たけづつでだます',
+    title: 'たけづつでだます（天狗のかくれみの）',
     description: '竹筒で天狗を騙す線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41473,7 +41473,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tengu-kakuremino-normal-1',
-    title: 'とうめいでいたずら',
+    title: 'とうめいでいたずら（天狗のかくれみの）',
     description: '透明でいたずらする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41490,7 +41490,7 @@ const _materials5: Material[] = [
   },
   {
     id: 'fairytale-tengu-kakuremino-rich-1',
-    title: 'てんぐとなかなおり',
+    title: 'てんぐとなかなおり（天狗のかくれみの）',
     description: '天狗と仲直りする線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -43951,6 +43951,74 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T08:48',
+    popular: false,
+  },
+  {
+    id: 'fairytale-happy-prince-simple-1',
+    title: 'きんぱくのおうじぞう',
+    description: '王子の像の線画。',
+    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-happy-prince', 'fairytale', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-simple-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T10:14',
+    popular: false,
+  },
+  {
+    id: 'fairytale-happy-prince-easy-1',
+    title: 'おうじのなみだ',
+    description: '王子とつばめの線画。',
+    ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-happy-prince', 'fairytale', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-easy-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-easy-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T10:14',
+    popular: false,
+  },
+  {
+    id: 'fairytale-happy-prince-normal-1',
+    title: 'つばめがほうせきをとどける',
+    description: '宝石を届ける線画。',
+    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-happy-prince', 'fairytale', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-normal-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-normal-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T10:14',
+    popular: false,
+  },
+  {
+    id: 'fairytale-happy-prince-rich-1',
+    title: 'てんしがてんこくへ',
+    description: '天使が連れていく線画。',
+    ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-happy-prince', 'fairytale', 'ぬりえ'],
+    tools: ['色えんぴつ'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-rich-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-happy-prince-rich-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-26T10:14',
     popular: false,
   },
 ]
