@@ -58375,6 +58375,23 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T19:45',
     popular: false,
   },
+  {
+    id: 'ambulance-simple-2',
+    title: 'きゅうきゅうしゃのまえすがた',
+    description: '斜め前から見たきゅうきゅうしゃの線画。サイレンランプと正面がわかりやすい。',
+    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
+    category: 'coloring', theme: 'vehicles',
+    tags: ['ambulance', 'vehicles', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ambulance-simple-2-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ambulance-simple-2-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-27T19:54',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5, ..._materialsRepair, ..._materialsRecovered]
