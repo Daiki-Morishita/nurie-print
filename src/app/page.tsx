@@ -157,7 +157,7 @@ export default async function HomePage() {
           </h1>
           <p className="text-[15px] md:text-[16px] text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
             年齢に合う {totalMaterials} 点のぬりえを、登録なしですぐ印刷。<br className="md:hidden" />
-            雨の日のおうち遊び・帰省先のひととき・誕生日カードに。
+            動物・恐竜・乗り物・童話… テーマで簡単に探せます。
           </p>
 
           {/* Big search — pop pill */}

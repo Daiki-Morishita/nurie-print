@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     url: 'https://nurie-print.com',
     siteName: 'ぬりえプリント',
     title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別2,600点',
-    description: '年齢に合う2,600点のぬりえを、登録なしですぐ印刷。雨の日のおうち遊び・帰省先のひととき・誕生日カードに。',
+    description: '年齢に合う2,600点のぬりえを、登録なしですぐ印刷。動物・恐竜・乗り物・童話などテーマで簡単に探せます。',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'ぬりえプリント' }],
   },
   robots: { index: true, follow: true },
