@@ -5,8 +5,11 @@
 import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { requireAdmin } from '@/lib/admin-auth'
 
 export async function DELETE(request: Request) {
+  const denied = await requireAdmin()
+  if (denied) return denied
   try {
     const { illustUrl } = await request.json()
     if (!illustUrl) return NextResponse.json({ error: 'illustUrl is required' }, { status: 400 })
