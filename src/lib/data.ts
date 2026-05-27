@@ -58426,6 +58426,23 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T19:41',
     popular: false,
   },
+  {
+    id: 'shinkansen-easy-2',
+    title: 'はしのうえのしんかんせん',
+    description: '橋の上を走るしんかんせんの線画。川と青空と緑の丘つき。',
+    ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
+    category: 'coloring', theme: 'vehicles',
+    tags: ['shinkansen', 'vehicles', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/shinkansen-easy-2-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/shinkansen-easy-2-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-27T19:42',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5, ..._materialsRepair, ..._materialsRecovered]
