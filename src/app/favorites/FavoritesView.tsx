@@ -142,9 +142,6 @@ export function FavoritesView({ initialItems, limit }: Props) {
           <h1 className="font-rounded text-[26px] sm:text-[32px] font-black">お気に入りのぬりえ</h1>
           <p className="text-[13px] text-muted-foreground mt-2">
             <strong className="text-foreground">{count}</strong> / {limit} 件
-            {count >= limit && !isAnonymous && (
-              <Link href="/upgrade" className="ml-2 text-primary underline">プランをアップグレード</Link>
-            )}
           </p>
           {isAnonymous && count > 0 && (
             <p className="text-[12px] text-muted-foreground mt-1.5 leading-relaxed">
@@ -342,16 +339,10 @@ export function FavoritesView({ initialItems, limit }: Props) {
           {count >= limit && (
             <div className="bg-[#FFF3E0]/60 border border-primary/30 rounded-lg p-5 text-center">
               <div className="text-3xl mb-2">🎈</div>
-              <p className="font-rounded font-black text-[15px] mb-1">無料プランの上限に達しました</p>
-              <p className="text-[12px] text-muted-foreground mb-3">
-                さらに保存するには、有料プランへアップグレードしてください。
+              <p className="font-rounded font-black text-[15px] mb-1">保存上限（{limit}件）に達しました</p>
+              <p className="text-[12px] text-muted-foreground">
+                整理してから新しい教材を追加してください。
               </p>
-              <Link
-                href="/upgrade"
-                className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-full text-[12px] font-rounded font-black"
-              >
-                プランを見る<ArrowRight className="w-3.5 h-3.5" />
-              </Link>
             </div>
           )}
         </>
