@@ -57,7 +57,7 @@ export default function OperatorPage() {
           <dd>Special Move（スペシャルムーブ）</dd>
 
           <dt className="text-muted-foreground">代表者</dt>
-          <dd>森下 大喜（もりした だいき）</dd>
+          <dd>森下 大喜</dd>
 
           <dt className="text-muted-foreground">所在地</dt>
           <dd>大阪市西区3-6-2</dd>
@@ -66,7 +66,7 @@ export default function OperatorPage() {
           <dd>2020年</dd>
 
           <dt className="text-muted-foreground">事業内容</dt>
-          <dd>幼児向け教材プリントの企画・無料配布、ウェブメディア運営</dd>
+          <dd>幼児向け教材プリントの企画、ウェブメディア運営</dd>
 
           <dt className="text-muted-foreground">運営サイト</dt>
           <dd>
