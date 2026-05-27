@@ -10,6 +10,9 @@ import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
 import type { Category, Season, Theme } from '@/lib/types'
 import { AdBanner } from '@/components/ads/AdBanner'
+import { Pagination } from '@/components/search/Pagination'
+
+const PAGE_SIZE = 48
 
 type CategoryType = 'age' | 'type' | 'season' | 'event' | 'theme'
 
@@ -93,7 +96,7 @@ export default async function CategoryPage({
   searchParams,
 }: {
   params: Promise<{ type: CategoryType; value: string }>
-  searchParams: Promise<{ sort?: string }>
+  searchParams: Promise<{ sort?: string; page?: string }>
 }) {
   const { type, value } = await params
   const sp = await searchParams
@@ -111,6 +114,14 @@ export default async function CategoryPage({
   const filtered = filterMaterials({ ...filterParams, overrides, sort } as Parameters<typeof filterMaterials>[0])
   const { title, description } = getPageInfo(type, value)
   const pageUrl = `${BASE_URL}/category/${type}/${value}`
+
+  // ページネーション
+  const totalCount = filtered.length
+  const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE))
+  const currentPage = Math.min(Math.max(1, parseInt(sp.page ?? '1', 10) || 1), totalPages)
+  const paginatedItems = sort === 'random'
+    ? filtered
+    : filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
@@ -163,7 +174,7 @@ export default async function CategoryPage({
         className="mb-6"
       />
 
-      {filtered.length === 0 ? (
+      {totalCount === 0 ? (
         <div className="text-center py-16 text-muted-foreground">
           <div className="text-4xl mb-3">📭</div>
           <p className="font-medium">この条件の教材は準備中です</p>
@@ -172,13 +183,22 @@ export default async function CategoryPage({
           </Link>
         </div>
       ) : sort === 'random' ? (
-        <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" />
+        <ShuffledGrid items={paginatedItems} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" />
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          {filtered.map(material => (
-            <MaterialCard key={material.id} material={material} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {paginatedItems.map(material => (
+              <MaterialCard key={material.id} material={material} />
+            ))}
+          </div>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            basePath={`/category/${type}/${value}`}
+            searchParams={sp as Record<string, string | undefined>}
+            totalCount={totalCount}
+          />
+        </>
       )}
     </div>
     </>
