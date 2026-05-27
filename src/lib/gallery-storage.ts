@@ -23,15 +23,15 @@ function useSupabase(): boolean {
 async function optimize(file: Buffer): Promise<Buffer> {
   return sharp(file)
     .rotate() // EXIF 向きを反映
-    .resize(1600, 1600, { fit: 'inside', withoutEnlargement: true })
-    .jpeg({ quality: 85, mozjpeg: true })
+    .resize(1920, 1920, { fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: 82 })
     .toBuffer()
 }
 
 function makeFilename(): string {
   const stamp = Date.now()
   const rand = Math.random().toString(36).slice(2, 8)
-  return `work-${stamp}-${rand}.jpg`
+  return `work-${stamp}-${rand}.webp`
 }
 
 /** Supabase Storage バケットを idempotent に確保 */
@@ -65,13 +65,13 @@ export async function uploadGalleryPhoto(file: Buffer): Promise<string> {
   if (useSupabase()) {
     await ensureBucket()
     // fetch の BodyInit にするため Blob 化
-    const body = new Blob([new Uint8Array(optimized)], { type: 'image/jpeg' })
+    const body = new Blob([new Uint8Array(optimized)], { type: 'image/webp' })
     const uploadRes = await fetch(`${SUPABASE_URL}/storage/v1/object/${BUCKET}/${filename}`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${SUPABASE_KEY}`,
         apikey: SUPABASE_KEY!,
-        'Content-Type': 'image/jpeg',
+        'Content-Type': 'image/webp',
         'x-upsert': 'false',
       },
       body,
