@@ -13,7 +13,7 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でくまさんを塗ってオリジナルのぬいぐるみを作ろう', '塗ったあとに名前をつけて発表ごっこをしよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
   },
   {
     id: 'bear-easy-1',
@@ -25,7 +25,7 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['茶色や黄色を使ってくまさんとはちみつを塗ってみよう', '塗り終わったら「くまさんは何を食べているのかな?」とお話を広げよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
   },
   {
     id: 'bear-normal-1',
@@ -63,7 +63,7 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でねこちゃんを自由に塗ってみよう', 'リボンの色を考えて塗り、おしゃれなねこちゃんを作ろう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
   },
   {
     id: 'cat-easy',
@@ -75,7 +75,7 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['ねこの毛色を自由に塗って、自分だけのねこを作ろう', 'きんぎょばちの水を青く塗って、お魚さんの色も考えてみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
   },
   {
     id: 'cat-normal',
@@ -115,7 +115,7 @@ const _materials1: Material[] = [
       '首輪を好きな色にカラフルに塗って自分だけの子犬を作ろう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
   },
   {
     id: 'dog-normal',
@@ -161,7 +161,7 @@ const _materials1: Material[] = [
       'ピンクや白などお気に入りの色でうさぎさんを自由に塗ってみよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
   },
   {
     id: 'rabbit-easy-1',
@@ -177,7 +177,7 @@ const _materials1: Material[] = [
       'イースターエッグに好きな模様を描き足してデコレーションしよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
   },
   {
     id: 'rabbit-normal-1',
@@ -289,7 +289,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'elephant-simple-1',
@@ -315,7 +315,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
-    popular: true,
+    popular: true, featured: true,
   },
   {
     id: 'giraffe-rich-1',
@@ -393,7 +393,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'giraffe-simple-1',
@@ -419,7 +419,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lion-rich-1',
@@ -497,7 +497,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lion-simple-1',
@@ -523,7 +523,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: true,
+    popular: true, featured: true,
   },
   {
     id: 'panda-rich-1',
@@ -601,7 +601,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'panda-simple-1',
@@ -627,7 +627,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: true,
+    popular: true, featured: true,
   },
   {
     id: 'penguin-rich-1',
@@ -708,7 +708,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'penguin-simple-1',
@@ -735,7 +735,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sheep-rich-1',
@@ -816,7 +816,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sheep-simple-1',
@@ -841,7 +841,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pig-rich-1',
@@ -920,7 +920,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pig-simple-1',
@@ -946,7 +946,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'frog-rich-1',
@@ -1053,7 +1053,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'monkey-rich-1',
@@ -1156,7 +1156,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'chick-rich-1',
@@ -1263,7 +1263,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fox-rich-1',
@@ -1369,7 +1369,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'raccoon-simple-1',
@@ -1394,7 +1394,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'raccoon-easy-1',
@@ -1498,7 +1498,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'squirrel-easy-1',
@@ -1602,7 +1602,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'turtle-easy-1',
@@ -1704,7 +1704,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hamster-easy-1',
@@ -1806,7 +1806,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bird-easy-1',
@@ -4090,7 +4090,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: true,
+    popular: true, featured: true,
   },
   {
     id: 'car-easy-1',
@@ -4110,7 +4110,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'car-normal-1',
@@ -4170,7 +4170,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'train-easy-1',
@@ -4190,7 +4190,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'train-normal-1',
@@ -4250,7 +4250,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bus-easy-1',
@@ -4270,7 +4270,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bus-normal-1',
@@ -4330,7 +4330,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'shinkansen-easy-1',
@@ -4350,7 +4350,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'shinkansen-normal-1',
@@ -4410,7 +4410,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bicycle-easy-1',
@@ -4430,7 +4430,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bicycle-normal-1',
@@ -4490,7 +4490,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'truck-easy-1',
@@ -4510,7 +4510,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'truck-normal-1',
@@ -4570,7 +4570,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fire-truck-easy-1',
@@ -4590,7 +4590,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fire-truck-normal-1',
@@ -4650,7 +4650,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ambulance-easy-1',
@@ -4670,7 +4670,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ambulance-normal-1',
@@ -4730,7 +4730,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'police-car-easy-1',
@@ -4750,7 +4750,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'police-car-normal-1',
@@ -4810,7 +4810,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'taxi-easy-1',
@@ -4830,7 +4830,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'taxi-normal-1',
@@ -4890,7 +4890,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tractor-easy-1',
@@ -4970,7 +4970,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bulldozer-easy-1',
@@ -5050,7 +5050,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'excavator-easy-1',
@@ -5130,7 +5130,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'steam-roller-easy-1',
@@ -5210,7 +5210,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'airplane-easy-1',
@@ -5290,7 +5290,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'helicopter-easy-1',
@@ -5370,7 +5370,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hot-air-balloon-easy-1',
@@ -5450,7 +5450,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'rocket-easy-1',
@@ -5530,7 +5530,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'boat-easy-1',
@@ -5610,7 +5610,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ship-easy-1',
@@ -5930,7 +5930,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: true,
+    popular: true, featured: true,
   },
   {
     id: 'tyrannosaurus-easy-1',
@@ -5950,7 +5950,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tyrannosaurus-normal-1',
@@ -6010,7 +6010,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'spinosaurus-easy-1',
@@ -6030,7 +6030,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'spinosaurus-normal-1',
@@ -6090,7 +6090,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'velociraptor-easy-1',
@@ -6110,7 +6110,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'velociraptor-normal-1',
@@ -6170,7 +6170,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'allosaurus-easy-1',
@@ -6190,7 +6190,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'allosaurus-normal-1',
@@ -6250,7 +6250,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'giganotosaurus-easy-1',
@@ -6270,7 +6270,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'giganotosaurus-normal-1',
@@ -6330,7 +6330,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'therizinosaurus-easy-1',
@@ -6350,7 +6350,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'therizinosaurus-normal-1',
@@ -6410,7 +6410,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'triceratops-easy-1',
@@ -6430,7 +6430,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'triceratops-normal-1',
@@ -6490,7 +6490,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'stegosaurus-easy-1',
@@ -6510,7 +6510,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'stegosaurus-normal-1',
@@ -6570,7 +6570,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'brachiosaurus-easy-1',
@@ -6590,7 +6590,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'brachiosaurus-normal-1',
@@ -6650,7 +6650,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ankylosaurus-easy-1',
@@ -6670,7 +6670,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ankylosaurus-normal-1',
@@ -6730,7 +6730,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:20',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'parasaurolophus-easy-1',
@@ -6810,7 +6810,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:25',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pachycephalosaurus-easy-1',
@@ -6890,7 +6890,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:31',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pteranodon-easy-1',
@@ -6970,7 +6970,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:37',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mosasaurus-easy-1',
@@ -7050,7 +7050,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'plesiosaurus-easy-1',
@@ -9345,7 +9345,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:17',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mammoth-easy-1',
@@ -9425,7 +9425,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:23',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'smilodon-easy-1',
@@ -9502,7 +9502,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'apple-easy-1',
@@ -9519,7 +9519,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'apple-normal-1',
@@ -9570,7 +9570,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:51',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'banana-normal-1',
@@ -9604,7 +9604,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:00',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'strawberry-normal-1',
@@ -9655,7 +9655,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:16',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'banana-rich-1',
@@ -9689,7 +9689,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'orange-easy-1',
@@ -9706,7 +9706,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'orange-normal-1',
@@ -9757,7 +9757,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'grape-easy-1',
@@ -9774,7 +9774,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'grape-normal-1',
@@ -9825,7 +9825,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'watermelon-easy-1',
@@ -9842,7 +9842,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'watermelon-normal-1',
@@ -9893,7 +9893,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'peach-easy-1',
@@ -9910,7 +9910,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'peach-normal-1',
@@ -9961,7 +9961,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pineapple-easy-1',
@@ -9978,7 +9978,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pineapple-normal-1',
@@ -10029,7 +10029,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cherry-easy-1',
@@ -10046,7 +10046,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cherry-normal-1',
@@ -10097,7 +10097,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lemon-easy-1',
@@ -10114,7 +10114,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lemon-normal-1',
@@ -10148,7 +10148,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T04:00',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lemon-rich-1',
@@ -10182,7 +10182,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T05:14',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'melon-easy-1',
@@ -10250,7 +10250,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T06:07',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pear-easy-1',
@@ -10318,7 +10318,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T07:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'kiwi-easy-1',
@@ -10386,7 +10386,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T08:24',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mango-easy-1',
@@ -10454,7 +10454,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T09:40',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'blueberry-easy-1',
@@ -10522,7 +10522,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T10:33',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'grapefruit-easy-1',
@@ -10590,7 +10590,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T11:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'persimmon-easy-1',
@@ -10658,7 +10658,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T12:51',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'plum-easy-1',
@@ -10726,7 +10726,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T13:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fig-easy-1',
@@ -10794,7 +10794,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T15:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'raspberry-easy-1',
@@ -11202,7 +11202,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-easy-1',
@@ -11219,7 +11219,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-normal-1',
@@ -11253,7 +11253,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-easy-2',
@@ -11270,7 +11270,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-normal-2',
@@ -11321,7 +11321,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'onion-easy-1',
@@ -11338,7 +11338,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'onion-normal-1',
@@ -11389,7 +11389,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'onion-easy-2',
@@ -11406,7 +11406,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'onion-normal-2',
@@ -11457,7 +11457,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T01:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-simple-3',
@@ -11474,7 +11474,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-easy-3',
@@ -11491,7 +11491,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'carrot-normal-3',
@@ -11542,7 +11542,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tomato-normal-1',
@@ -11576,7 +11576,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tomato-easy-2',
@@ -11593,7 +11593,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tomato-normal-2',
@@ -11814,7 +11814,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'broccoli-easy-1',
@@ -11831,7 +11831,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'broccoli-normal-1',
@@ -11882,7 +11882,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'corn-easy-1',
@@ -11899,7 +11899,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'corn-normal-1',
@@ -11950,7 +11950,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'corn-easy-2',
@@ -11967,7 +11967,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'corn-normal-2',
@@ -12018,7 +12018,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T13:51',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cabbage-easy-1',
@@ -12069,7 +12069,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T14:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cabbage-easy-2',
@@ -12137,7 +12137,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T15:39',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'eggplant-easy-1',
@@ -12205,7 +12205,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T16:38',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'eggplant-easy-2',
@@ -12273,7 +12273,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T17:33',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pumpkin-easy-1',
@@ -12341,7 +12341,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T18:31',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pumpkin-easy-2',
@@ -12409,7 +12409,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:37',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sweet-potato-easy-1',
@@ -12477,7 +12477,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T05:21',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cucumber-easy-1',
@@ -12545,7 +12545,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:00',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'spinach-easy-1',
@@ -12613,7 +12613,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'radish-easy-1',
@@ -12953,7 +12953,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hinamatsuri-easy-1',
@@ -12970,7 +12970,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hinamatsuri-normal-1',
@@ -13021,7 +13021,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'enrollment-easy-1',
@@ -13038,7 +13038,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'enrollment-normal-1',
@@ -13089,7 +13089,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hanami-easy-1',
@@ -13106,7 +13106,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hanami-normal-1',
@@ -13157,7 +13157,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'excursion-easy-1',
@@ -13174,7 +13174,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'excursion-normal-1',
@@ -13225,7 +13225,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'childrensday-easy-1',
@@ -13242,7 +13242,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'childrensday-normal-1',
@@ -13293,7 +13293,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mothersday-easy-1',
@@ -13310,7 +13310,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mothersday-normal-1',
@@ -13905,7 +13905,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sakuramochi-easy-1',
@@ -13922,7 +13922,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sakuramochi-normal-1',
@@ -16216,7 +16216,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cicada-easy-1',
@@ -16624,7 +16624,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tanabata-easy-1',
@@ -16641,7 +16641,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tanabata-normal-1',
@@ -16692,7 +16692,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pool-easy-1',
@@ -16709,7 +16709,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pool-normal-1',
@@ -16760,7 +16760,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'summer-festival-easy-1',
@@ -16777,7 +16777,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'summer-festival-normal-1',
@@ -16828,7 +16828,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T22:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bon-dance-easy-1',
@@ -16896,7 +16896,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T23:46',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fireworks-festival-easy-1',
@@ -16964,7 +16964,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T00:25',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'camping-easy-1',
@@ -17032,7 +17032,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T01:10',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'bbq-easy-1',
@@ -17100,7 +17100,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T02:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sea-bathing-easy-1',
@@ -17236,7 +17236,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T03:39',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'goldfish-easy-1',
@@ -17304,7 +17304,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T04:11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'watermelon-splitting-easy-1',
@@ -17372,7 +17372,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:06',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'shaved-ice-easy-1',
@@ -17440,7 +17440,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:55',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'ice-cream-easy-1',
@@ -34734,7 +34734,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'rainbow-easy-1',
@@ -34751,7 +34751,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'rainbow-normal-1',
@@ -34802,7 +34802,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-ali-baba-easy-1',
@@ -34819,7 +34819,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-ali-baba-normal-1',
@@ -40109,7 +40109,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-momotaro-easy-1',
@@ -40126,7 +40126,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-momotaro-normal-1',
@@ -40177,7 +40177,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-urashima-taro-easy-1',
@@ -40194,7 +40194,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-urashima-taro-normal-1',
@@ -40245,7 +40245,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kintaro-easy-1',
@@ -40262,7 +40262,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kintaro-normal-1',
@@ -40296,7 +40296,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kaguya-hime-easy-1',
@@ -40313,7 +40313,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kaguya-hime-normal-1',
@@ -40364,7 +40364,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-issun-boshi-easy-1',
@@ -40381,7 +40381,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-issun-boshi-normal-1',
@@ -40432,7 +40432,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-hanasaka-jiisan-easy-1',
@@ -40449,7 +40449,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-hanasaka-jiisan-normal-1',
@@ -40500,7 +40500,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-tongue-cut-sparrow-easy-1',
@@ -40517,7 +40517,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-tongue-cut-sparrow-normal-1',
@@ -40568,7 +40568,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kobutori-jiisan-easy-1',
@@ -40585,7 +40585,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kobutori-jiisan-normal-1',
@@ -40636,7 +40636,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-grateful-crane-easy-1',
@@ -40653,7 +40653,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-grateful-crane-normal-1',
@@ -40704,7 +40704,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:42',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-onigiri-korori-easy-1',
@@ -40772,7 +40772,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-kasa-jizo-easy-1',
@@ -40840,7 +40840,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-monkey-crab-easy-1',
@@ -40908,7 +40908,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:15',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-straw-millionaire-easy-1',
@@ -40976,7 +40976,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:44',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-tanabata-easy-1',
@@ -41044,7 +41044,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T16:31',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-inaba-white-rabbit-easy-1',
@@ -41112,7 +41112,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-tennyo-hagoromo-easy-1',
@@ -41180,7 +41180,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:40',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-uriko-hime-easy-1',
@@ -41248,7 +41248,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:12',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-tanuki-itoguruma-easy-1',
@@ -41316,7 +41316,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:41',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fairytale-yuki-onna-easy-1',
@@ -41588,7 +41588,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cake-easy-1',
@@ -41605,7 +41605,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cake-normal-1',
@@ -41656,7 +41656,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'donut-easy-1',
@@ -41673,7 +41673,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'donut-normal-1',
@@ -41724,7 +41724,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pudding-easy-1',
@@ -41741,7 +41741,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'pudding-normal-1',
@@ -41792,7 +41792,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cookie-easy-1',
@@ -41809,7 +41809,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cookie-normal-1',
@@ -41860,7 +41860,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cupcake-easy-1',
@@ -41877,7 +41877,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cupcake-normal-1',
@@ -41928,7 +41928,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'macaron-easy-1',
@@ -41945,7 +41945,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'macaron-normal-1',
@@ -41996,7 +41996,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'waffle-easy-1',
@@ -42013,7 +42013,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'waffle-normal-1',
@@ -42064,7 +42064,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'crepe-easy-1',
@@ -42081,7 +42081,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'crepe-normal-1',
@@ -42132,7 +42132,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'parfait-easy-1',
@@ -42149,7 +42149,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'parfait-normal-1',
@@ -42200,7 +42200,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'soft-cream-easy-1',
@@ -42217,7 +42217,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'soft-cream-normal-1',
@@ -42268,7 +42268,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T03:40',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'chocolate-easy-1',
@@ -42319,7 +42319,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:13',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'dorayaki-easy-1',
@@ -42404,7 +42404,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'candy-easy-1',
@@ -42472,7 +42472,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:21',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'gummy-easy-1',
@@ -42540,7 +42540,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:50',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'taiyaki-easy-1',
@@ -42608,7 +42608,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T12:28',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'daifuku-easy-1',
@@ -42676,7 +42676,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T13:00',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'warabi-mochi-easy-1',
@@ -42744,7 +42744,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T14:17',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mitarashi-easy-1',
@@ -42795,7 +42795,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:21',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'candy-apple-easy-1',
@@ -42863,7 +42863,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cotton-candy-easy-1',
@@ -44070,7 +44070,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sun-easy-1',
@@ -44087,7 +44087,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sun-normal-1',
@@ -44138,7 +44138,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cloud-easy-1',
@@ -44155,7 +44155,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'cloud-normal-1',
@@ -44206,7 +44206,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'rain-easy-1',
@@ -44223,7 +44223,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'rain-normal-1',
@@ -44274,7 +44274,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'snow-easy-1',
@@ -44291,7 +44291,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'snow-normal-1',
@@ -44342,7 +44342,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lightning-easy-1',
@@ -44359,7 +44359,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lightning-normal-1',
@@ -44410,7 +44410,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mountain-easy-1',
@@ -44427,7 +44427,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'mountain-normal-1',
@@ -44478,7 +44478,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sea-easy-1',
@@ -44495,7 +44495,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sea-normal-1',
@@ -44546,7 +44546,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'river-easy-1',
@@ -44563,7 +44563,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'river-normal-1',
@@ -44614,7 +44614,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:52',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'waterfall-easy-1',
@@ -44682,7 +44682,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T00:27',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'forest-easy-1',
@@ -44750,7 +44750,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'volcano-easy-1',
@@ -44818,7 +44818,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:34',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'aurora-easy-1',
@@ -44886,7 +44886,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:07',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'shooting-star-easy-1',
@@ -44954,7 +44954,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:40',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sunset-easy-1',
@@ -45022,7 +45022,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:13',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'moon-easy-1',
@@ -45090,7 +45090,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:56',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'fog-easy-1',
@@ -45158,7 +45158,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T04:28',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'icicle-easy-1',
@@ -45226,7 +45226,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T05:01',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lake-easy-1',
@@ -46404,7 +46404,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'yamanote-e235-easy-1',
@@ -46421,7 +46421,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'yamanote-e235-normal-1',
@@ -46455,7 +46455,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'chuo-orange-easy-1',
@@ -46472,7 +46472,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'chuo-orange-normal-1',
@@ -46506,7 +46506,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'keikyu-easy-1',
@@ -46523,7 +46523,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'keikyu-normal-1',
@@ -46557,7 +46557,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hankyu-easy-1',
@@ -46574,7 +46574,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'hankyu-normal-1',
@@ -46608,7 +46608,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'keihan-easy-1',
@@ -46625,7 +46625,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'keihan-normal-1',
@@ -46659,7 +46659,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'kintetsu-futsuu-easy-1',
@@ -46676,7 +46676,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'kintetsu-futsuu-normal-1',
@@ -46710,7 +46710,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'seibu-yellow-easy-1',
@@ -46727,7 +46727,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'seibu-yellow-normal-1',
@@ -46761,7 +46761,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tokyu-easy-1',
@@ -46778,7 +46778,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tokyu-normal-1',
@@ -46812,7 +46812,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'odakyu-futsuu-easy-1',
@@ -46829,7 +46829,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'odakyu-futsuu-normal-1',
@@ -46863,7 +46863,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tobu-easy-1',
@@ -46880,7 +46880,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'tobu-normal-1',
@@ -46914,7 +46914,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T01:17',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'romancecar-gse-easy-1',
@@ -46965,7 +46965,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T01:49',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'romancecar-mse-easy-1',
@@ -47016,7 +47016,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T15:36',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'narita-express-easy-1',
@@ -47067,7 +47067,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T16:11',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'safir-odoriko-easy-1',
@@ -47118,7 +47118,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T16:45',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'lapit-easy-1',
@@ -47169,7 +47169,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T17:32',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'spacia-x-easy-1',
@@ -47220,7 +47220,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T18:22',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'kintetsu-hinotori-easy-1',
@@ -47271,7 +47271,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T19:00',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'kintetsu-urban-easy-1',
@@ -47322,7 +47322,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T19:33',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'sonic-885-easy-1',
@@ -47373,7 +47373,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T20:05',
-    popular: false,
+    popular: false, featured: true,
   },
   {
     id: 'thunderbird-easy-1',
