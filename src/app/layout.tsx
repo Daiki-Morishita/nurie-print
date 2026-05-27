@@ -38,26 +38,26 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 export const metadata: Metadata = {
   metadataBase: new URL('https://nurie-print.com'),
   title: {
-    default: 'ぬりえプリント | 保育士のための無料教材プリント',
+    default: 'ぬりえプリント | おやこの無料ぬりえ・年齢別2,600点',
     template: '%s | ぬりえプリント',
   },
-  description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など年齢別・テーマ別・季節別に検索でき、すぐに印刷して使えます。',
-  keywords: ['ぬりえ', '塗り絵', '保育園', '幼稚園', '無料プリント', '保育士', '教材', '幼児'],
+  description: 'おやこの時間に使える無料ぬりえプリント。動物・恐竜・乗り物・童話・季節など2,600点以上を、年齢・テーマ別に登録なしで印刷できます。保育園・幼稚園の現場でもどうぞ。',
+  keywords: ['ぬりえ', '塗り絵', '無料', '印刷', '幼児', '2歳', '3歳', '4歳', '5歳', '6歳', 'A4', '動物', '恐竜', '童話', 'おうち遊び', '保育園', '幼稚園'],
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
     url: 'https://nurie-print.com',
     siteName: 'ぬりえプリント',
-    title: 'ぬりえプリント | 保育士のための無料教材プリント',
-    description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など豊富なテーマをすぐ印刷できます。',
+    title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別2,600点',
+    description: '年齢に合う2,600点のぬりえを、登録なしですぐ印刷。雨の日のおうち遊び・帰省先のひととき・誕生日カードに。',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'ぬりえプリント' }],
   },
   robots: { index: true, follow: true },
   twitter: {
     card: 'summary_large_image',
     site: '@nurie_print',
-    title: 'ぬりえプリント | 保育士のための無料教材プリント',
-    description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など豊富なテーマをすぐ印刷できます。',
+    title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別2,600点',
+    description: '年齢に合うぬりえを、登録なしですぐ印刷。雨の日のおうち遊び・帰省先のひととき・誕生日カードに。',
   },
 }
 

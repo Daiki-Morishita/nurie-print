@@ -147,17 +147,17 @@ export default async function HomePage() {
 
         <div className="max-w-[1280px] mx-auto px-6 relative">
           <div className="font-rounded text-[12px] md:text-[13px] text-primary tracking-[0.25em] mb-4 font-bold inline-flex items-center gap-2">
-            <span className="text-base">🌸</span>
-            今日は何をぬる？
-            <span className="text-base">🌸</span>
+            <span className="text-base">🖍️</span>
+            今日のおうち時間に
+            <span className="text-base">🖍️</span>
           </div>
           <h1 className="font-rounded text-[34px] md:text-[58px] font-black leading-[1.35] tracking-[0.02em] mb-6">
-            先生たちと、<br className="md:hidden" />
-            <span className="text-primary">子どもたちへ</span>。
+            おやこの一枚を、<br className="md:hidden" />
+            <span className="text-primary">無料で</span>。
           </h1>
           <p className="text-[15px] md:text-[16px] text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-            {totalMaterials} 点の塗り絵が、ぜんぶ無料。<br className="md:hidden" />
-            年齢・季節・テーマで見つかります。
+            年齢に合う {totalMaterials} 点のぬりえを、登録なしですぐ印刷。<br className="md:hidden" />
+            雨の日のおうち遊び・帰省先のひととき・誕生日カードに。
           </p>
 
           {/* Big search — pop pill */}

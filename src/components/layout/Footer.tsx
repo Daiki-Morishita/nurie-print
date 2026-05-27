@@ -46,9 +46,9 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
               </div>
             )}
             <p className="text-[13px] text-muted-foreground leading-relaxed mb-4">
-              保育士・幼稚園教諭の先生方、そして子どもたちの<br className="hidden md:inline" />
-              ためのぬりえプリント配布サービス。{materialCount} 点の<br className="hidden md:inline" />
-              教材を、すべて無料・会員登録なしで提供しています。
+              おやこの時間にぴったりのぬりえを、<br className="hidden md:inline" />
+              年齢・テーマで簡単に見つけて印刷できる<br className="hidden md:inline" />
+              無料配布サービス。{materialCount} 点を会員登録なしで提供しています。
             </p>
             <div className="text-[11px] text-muted-foreground space-y-1">
               <p>運営：ぬりえプリント編集部</p>
