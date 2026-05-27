@@ -29,3 +29,12 @@ export async function listAllWorks(limit = 100) {
     take: limit,
   })
 }
+
+/** トップページ用: 最新の公開作品。素材タイトル解決はクライアントで data.ts を使う想定。 */
+export async function getLatestPublishedWorks(limit = 6): Promise<GalleryWork[]> {
+  return prisma.galleryWork.findMany({
+    where: { published: true },
+    orderBy: { createdAt: 'desc' },
+    take: limit,
+  })
+}
