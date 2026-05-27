@@ -126,15 +126,8 @@ const FAQS = [
   },
 ]
 
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: FAQS.map(f => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-}
+// FAQページ用JSON-LDは /faq 側にのみ出力する（重複排除）。
+// ホームではFAQセクションのHTMLは残すが、structured dataは出さない。
 
 export default async function HomePage() {
   const overrides = await loadOverrides()
@@ -146,7 +139,6 @@ export default async function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* ===== HERO ===== */}
       <section className="pt-12 md:pt-20 pb-10 text-center relative overflow-hidden">

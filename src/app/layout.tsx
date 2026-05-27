@@ -10,24 +10,28 @@ import { getMaterialsForAudience } from '@/lib/data'
 
 const GA_ID = 'G-DZ7JFS2RS3'
 
+// font preload は全部 false: 日本語グリフを使ってないのに 200+ファイル preload してた問題対策
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: ['400', '700'],
   display: 'swap',
+  preload: false,
   variable: '--font-noto-sans-jp',
 })
 
 const zenOldMincho = Zen_Old_Mincho({
   subsets: ['latin'],
-  weight: ['500', '700', '900'],
+  weight: ['700', '900'],
   display: 'swap',
+  preload: false,
   variable: '--font-zen-mincho',
 })
 
 const mPlusRounded = M_PLUS_Rounded_1c({
   subsets: ['latin'],
-  weight: ['500', '700', '800', '900'],
+  weight: ['700', '900'],
   display: 'swap',
+  preload: false,
   variable: '--font-mplus-rounded',
 })
 
@@ -71,15 +75,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GA_ID}');
           `}
         </Script>
-        {/* Google AdSense */}
-        <Script
-          id="adsense"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-        {/* Microsoft Clarity */}
-        <Script id="ms-clarity" strategy="afterInteractive">
+        {/* Google AdSense — 広告ユニットスロットが設定されているときだけロード（中間状態を避ける）。
+            審査通過 + ad unit作成 → NEXT_PUBLIC_ADSENSE_ENABLED=1 をVercel env varsに設定 */}
+        {process.env.NEXT_PUBLIC_ADSENSE_ENABLED === '1' && (
+          <Script
+            id="adsense"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451"
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        )}
+        {/* Microsoft Clarity — lazyOnload で INP負荷を抑える */}
+        <Script id="ms-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

@@ -1,8 +1,11 @@
 import { NextResponse } from 'next/server'
 import JSZip from 'jszip'
 import { getMaterialById } from '@/lib/data'
+import { requireAdmin } from '@/lib/admin-auth'
 
 export async function POST(request: Request) {
+  const denied = await requireAdmin()
+  if (denied) return denied
   try {
     const { ids } = await request.json() as { ids: string[] }
     if (!Array.isArray(ids) || ids.length === 0) {

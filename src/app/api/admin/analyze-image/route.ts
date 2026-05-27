@@ -13,6 +13,7 @@ import { NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 import fs from 'fs'
 import path from 'path'
+import { requireAdmin } from '@/lib/admin-auth'
 
 // Next.js 16 + Turbopack での env 読み込み不具合の回避策
 function getApiKey(): string | undefined {
@@ -81,6 +82,8 @@ data.ts ファイルに追加するための構造化メタデータを JSON で
 // ── ルートハンドラ ────────────────────────────────────────────────────────────
 
 export async function POST(request: Request) {
+  const denied = await requireAdmin()
+  if (denied) return denied
   try {
     const formData = await request.formData()
     const file = formData.get('image')

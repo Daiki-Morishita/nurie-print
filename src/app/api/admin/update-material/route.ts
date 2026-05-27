@@ -4,6 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import { prisma } from '@/lib/db'
 import { invalidateOverridesCache } from '@/lib/data-overrides'
+import { requireAdmin } from '@/lib/admin-auth'
 
 type UpdatePayload = {
   id: string
@@ -24,6 +25,8 @@ function escapeForTs(str: string): string {
 const FS_WRITE_ALLOWED = process.env.NODE_ENV !== 'production'
 
 export async function PATCH(request: Request) {
+  const denied = await requireAdmin()
+  if (denied) return denied
   try {
     const body: UpdatePayload = await request.json()
     const { id, ...fields } = body
