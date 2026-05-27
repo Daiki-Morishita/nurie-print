@@ -9,18 +9,15 @@ import { useFavorites } from '@/components/favorites/FavoritesProvider'
 
 type NavItem = { href: string; label: string; isNew?: boolean }
 
+// NAV は意思決定を散らさないため6項目に厳選。海・虫・食べ物・迷路・FAQ・難易度別は
+// フッターやカテゴリページ経由で到達可能。
 const KIDS_NAV: NavItem[] = [
   { href: '/category/theme/animals', label: '動物' },
   { href: '/category/theme/dinosaurs', label: '恐竜' },
   { href: '/category/theme/vehicles', label: '乗り物' },
-  { href: '/category/theme/sea', label: '海' },
-  { href: '/category/theme/insects', label: '虫', isNew: true },
-  { href: '/category/theme/fruits', label: '食べ物', isNew: true },
-  { href: '/maze', label: '迷路', isNew: true },
   { href: '/category/age/3', label: '年齢で探す' },
-  { href: '/materials?difficulty=1', label: '難易度で探す' },
+  { href: '/posts', label: '今日のいちまい', isNew: true },
   { href: '/columns', label: '読みもの' },
-  { href: '/faq', label: 'FAQ' },
 ]
 
 const ADULT_NAV: NavItem[] = [

@@ -47,18 +47,32 @@ export default async function PostDetailPage({ params }: { params: Promise<{ id:
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: title,
+    description: post.body.slice(0, 160).replace(/\n+/g, ' '),
     datePublished: post.publishedAt?.toISOString(),
     dateModified: post.updatedAt.toISOString(),
     inLanguage: 'ja',
+    author: {
+      '@type': 'Organization',
+      name: 'ぬりえプリント編集部',
+      url: 'https://nurie-print.com',
+    },
     publisher: {
       '@type': 'Organization',
       name: 'ぬりえプリント',
       url: 'https://nurie-print.com',
+      logo: { '@type': 'ImageObject', url: 'https://nurie-print.com/icon.svg' },
     },
     image: post.images.map(i => i.url),
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://nurie-print.com/posts/${id}` },
+    ...(linkedMaterials.length > 0 ? {
+      mentions: linkedMaterials.map(m => ({
+        '@type': 'CreativeWork',
+        name: m.title,
+        url: `https://nurie-print.com/materials/${m.id}`,
+      })),
+    } : {}),
   }
 
   return (

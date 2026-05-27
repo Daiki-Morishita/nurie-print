@@ -86,9 +86,10 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
           <div>
             <h3 className="font-rounded text-[13px] font-black mb-3 pb-2 border-b border-border">読みもの</h3>
             <ul className="space-y-2 text-[12px] text-muted-foreground">
+              <li><Link href="/posts" className="hover:text-primary transition-colors">今日のいちまい</Link></li>
               <li><Link href="/columns/benefits-of-coloring-for-kids" className="hover:text-primary transition-colors">ぬりえの発達効果</Link></li>
               <li><Link href="/columns/coloring-for-2-year-olds" className="hover:text-primary transition-colors">2歳からのぬりえ</Link></li>
-              <li><Link href="/columns" className="hover:text-primary transition-colors">すべての記事</Link></li>
+              <li><Link href="/columns" className="hover:text-primary transition-colors">コラム一覧</Link></li>
               <li className="pt-2"><Link href="/faq" className="hover:text-primary transition-colors">よくある質問</Link></li>
               <li><Link href="/contact" className="hover:text-primary transition-colors">お問い合わせ</Link></li>
             </ul>

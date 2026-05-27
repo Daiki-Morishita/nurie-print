@@ -52,6 +52,19 @@ export async function getAllPublishedPostIds(): Promise<string[]> {
   return rows.map(r => r.id)
 }
 
+/** 指定素材にリンクしている公開済み投稿（素材ページの逆リンク用） */
+export async function getPublishedPostsForMaterial(materialId: string, limit = 5): Promise<PostWithImages[]> {
+  return prisma.post.findMany({
+    where: {
+      publishedAt: { not: null, lte: new Date() },
+      materialIds: { has: materialId },
+    },
+    orderBy: { publishedAt: 'desc' },
+    take: limit,
+    include: { images: { orderBy: { order: 'asc' }, take: 1 } },
+  })
+}
+
 /** 管理画面用: 全投稿（下書き含む） */
 export async function listAllPostsForAdmin(limit = 200): Promise<PostWithImages[]> {
   return prisma.post.findMany({
@@ -59,6 +72,23 @@ export async function listAllPostsForAdmin(limit = 200): Promise<PostWithImages[
     take: limit,
     include: { images: { orderBy: { order: 'asc' } } },
   })
+}
+
+/** /posts 一覧用: 全公開済み投稿（ページネーション簡易対応） */
+export async function listPublishedPosts(opts: { limit?: number; offset?: number } = {}): Promise<{ posts: PostWithImages[]; total: number }> {
+  const { limit = 24, offset = 0 } = opts
+  const where = { publishedAt: { not: null, lte: new Date() } }
+  const [posts, total] = await Promise.all([
+    prisma.post.findMany({
+      where,
+      orderBy: { publishedAt: 'desc' },
+      take: limit,
+      skip: offset,
+      include: { images: { orderBy: { order: 'asc' }, take: 1 } },
+    }),
+    prisma.post.count({ where }),
+  ])
+  return { posts, total }
 }
 
 /** タイトル抽出（タイトル未指定なら本文先頭から） */

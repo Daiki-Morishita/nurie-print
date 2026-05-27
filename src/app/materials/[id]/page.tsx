@@ -11,6 +11,8 @@ import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
+import { RelatedPosts } from '@/components/materials/RelatedPosts'
+import { getPublishedPostsForMaterial } from '@/lib/posts'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -65,6 +67,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
   const nextMaterial = idx >= 0 && idx < materials.length - 1 ? materials[idx + 1] : null
 
   const related = getRelatedMaterials(material, 4, overrides)
+  const relatedPosts = await getPublishedPostsForMaterial(material.id, 5)
   const ageLabel = material.ageMin === material.ageMax
     ? `${material.ageMin}歳`
     : `${material.ageMin}〜${material.ageMax}歳`
@@ -375,6 +378,9 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
+
+        {/* この塗り絵を使った記事への逆リンク (0件なら自動非表示) */}
+        <RelatedPosts posts={relatedPosts} materialTitle={material.title} />
 
         {/* 広告 */}
         <AdBanner
