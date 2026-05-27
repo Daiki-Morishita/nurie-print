@@ -56,6 +56,7 @@ export type Theme =
   | 'winter'           // 冬
   | 'gotochi'          // ご当地ぬりえ（47都道府県）
   | 'nature'           // しぜん（虹・空・雲など）
+  | 'seikatsu'         // せいかつ（家庭・生活）
   // ── おとな向けテーマ ──
   | 'mandala'           // 曼荼羅
   | 'botanical'         // 植物画
