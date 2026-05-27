@@ -9,6 +9,7 @@ type Tab = 'login' | 'register'
 export function LoginForm() {
   const searchParams = useSearchParams()
   const initialTab: Tab = searchParams.get('tab') === 'register' ? 'register' : 'login'
+  const callbackUrl = searchParams.get('callbackUrl') ?? undefined
   const [tab, setTab]         = useState<Tab>(initialTab)
   const [email, setEmail]     = useState('')
   const [password, setPw]     = useState('')
@@ -25,7 +26,7 @@ export function LoginForm() {
     }
     setLoading(true)
     const fn = tab === 'login' ? loginWithCredentials : registerWithCredentials
-    const res = await fn(email, password)
+    const res = await fn(email, password, callbackUrl)
     if (res?.error) { setError(res.error); setLoading(false) }
   }
 
@@ -34,6 +35,7 @@ export function LoginForm() {
       {/* OAuth ボタン */}
       <div className="flex flex-col gap-3 mb-6">
         <form action={loginWithGoogle}>
+          {callbackUrl && <input type="hidden" name="callbackUrl" value={callbackUrl} />}
           <button
             type="submit"
             className="w-full flex items-center justify-center gap-3 border border-border rounded-xl py-2.5 text-sm font-medium hover:bg-muted transition-colors"
@@ -43,6 +45,7 @@ export function LoginForm() {
           </button>
         </form>
         <form action={loginWithLINE}>
+          {callbackUrl && <input type="hidden" name="callbackUrl" value={callbackUrl} />}
           <button
             type="submit"
             className="w-full flex items-center justify-center gap-3 rounded-xl py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
