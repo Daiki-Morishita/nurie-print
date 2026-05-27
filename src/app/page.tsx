@@ -22,7 +22,7 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   name: 'ぬりえプリント',
   url: 'https://nurie-print.com',
-  description: `保育士・幼稚園教諭のための無料ぬりえプリントサービス。${totalMaterials}点以上を無料配布。`,
+  description: `おやこで楽しむ無料ぬりえプリント。${totalMaterials}点以上を、登録なしですぐ印刷できます。`,
   potentialAction: {
     '@type': 'SearchAction',
     target: { '@type': 'EntryPoint', urlTemplate: 'https://nurie-print.com/materials?search={search_term_string}' },
@@ -36,7 +36,7 @@ const organizationJsonLd = {
   name: 'ぬりえプリント編集部',
   url: 'https://nurie-print.com',
   logo: { '@type': 'ImageObject', url: 'https://nurie-print.com/icon.svg', width: 512, height: 512 },
-  description: '保育士・幼稚園教諭向けの無料ぬりえプリント配布サービス',
+  description: 'おやこで楽しむ無料ぬりえプリント配布サービス',
 }
 
 // Featured pool — テーマ分散させて多様化、サーバーシャッフル。クライアント側で更にローテート
@@ -118,7 +118,7 @@ const FAQS = [
   },
   {
     q: '園や教室で使ってもいいですか？',
-    a: '保育園・幼稚園・教室での教材利用は自由です。販売・再配布のみご遠慮ください。',
+    a: 'ご家庭はもちろん、保育園・幼稚園・教室での利用も自由です。販売・再配布のみご遠慮ください。',
   },
   {
     q: 'どのくらいの頻度で更新していますか？',
@@ -126,15 +126,8 @@ const FAQS = [
   },
 ]
 
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: FAQS.map(f => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-}
+// FAQページ用JSON-LDは /faq 側にのみ出力する（重複排除）。
+// ホームではFAQセクションのHTMLは残すが、structured dataは出さない。
 
 export default async function HomePage() {
   const overrides = await loadOverrides()
@@ -146,7 +139,6 @@ export default async function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* ===== HERO ===== */}
       <section className="pt-12 md:pt-20 pb-10 text-center relative overflow-hidden">
@@ -155,17 +147,17 @@ export default async function HomePage() {
 
         <div className="max-w-[1280px] mx-auto px-6 relative">
           <div className="font-rounded text-[12px] md:text-[13px] text-primary tracking-[0.25em] mb-4 font-bold inline-flex items-center gap-2">
-            <span className="text-base">🌸</span>
-            今日は何をぬる？
-            <span className="text-base">🌸</span>
+            <span className="text-base">🖍️</span>
+            今日のおうち時間に
+            <span className="text-base">🖍️</span>
           </div>
           <h1 className="font-rounded text-[34px] md:text-[58px] font-black leading-[1.35] tracking-[0.02em] mb-6">
-            先生たちと、<br className="md:hidden" />
-            <span className="text-primary">子どもたちへ</span>。
+            おやこの一枚を、<br className="md:hidden" />
+            <span className="text-primary">無料で</span>。
           </h1>
           <p className="text-[15px] md:text-[16px] text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-            {totalMaterials} 点の塗り絵が、ぜんぶ無料。<br className="md:hidden" />
-            年齢・季節・テーマで見つかります。
+            年齢に合う {totalMaterials} 点のぬりえを、登録なしですぐ印刷。<br className="md:hidden" />
+            動物・恐竜・乗り物・童話… テーマで簡単に探せます。
           </p>
 
           {/* Big search — pop pill */}
@@ -349,7 +341,7 @@ export default async function HomePage() {
             title="読みもの"
             count="ぬりえ完全ガイド"
             href="/columns"
-            subtitle="保育士・幼児教育の現場で役立つ知識を編集部が解説"
+            subtitle="子どもの育ちを支える知識を編集部が整理"
             emoji="📖"
           />
           <div className="grid lg:grid-cols-[2fr_1fr] gap-6">
@@ -431,12 +423,12 @@ export default async function HomePage() {
             <span>💌</span>INVITATION<span>💌</span>
           </div>
           <h2 className="font-rounded text-[28px] md:text-[38px] font-black leading-[1.4] mb-4">
-            保育の現場を、<br />
-            すこし、らくに。
+            おやこの時間を、<br />
+            すこし、ゆたかに。
           </h2>
           <p className="text-[15px] text-muted-foreground mb-8 leading-relaxed">
-            雨の日も、自由時間も、行事前も。<br />
-            すぐ使える教材が、ここにあります。
+            雨の日も、休みの日も、ふと手持ちぶさたな夜も。<br />
+            すぐ使えるぬりえが、ここにあります。
           </p>
           <Link
             href="/materials"

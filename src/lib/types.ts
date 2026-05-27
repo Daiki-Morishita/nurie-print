@@ -56,6 +56,7 @@ export type Theme =
   | 'winter'           // 冬
   | 'gotochi'          // ご当地ぬりえ（47都道府県）
   | 'nature'           // しぜん（虹・空・雲など）
+  | 'seikatsu'         // せいかつ（家庭・生活）
   // ── おとな向けテーマ ──
   | 'mandala'           // 曼荼羅
   | 'botanical'         // 植物画
@@ -163,6 +164,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   winter: '冬',
   gotochi: 'ご当地',
   nature: 'しぜん',
+  seikatsu: 'せいかつ',
   mandala: '曼荼羅',
   botanical: '植物画',
   landscape: '風景',
@@ -273,6 +275,11 @@ export type Material = {
   imageStatus?: ImageStatus
   /** レビューメモ（修正指示や承認コメントなど） */
   illustNotes?: string
+
+  /** Featured 素材: noindex 戦略の whitelist。true の素材だけインデックス対象、sitemapにも掲載 */
+  featured?: boolean
+  /** Featured 素材専用の独自解説文（200字以上推奨）。素材ページに表示 */
+  seoDescription?: string
 }
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {

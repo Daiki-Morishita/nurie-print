@@ -57,22 +57,33 @@ export function FavoriteButton({ materialId, size = 'md', variant = 'overlay', c
               {isAnonymous ? (
                 <>このブラウザでは <strong className="text-foreground">10 件まで</strong> 保存できます。<br />既存のお気に入りを整理するか、ログインしてクラウドに保存しましょう。</>
               ) : (
-                <>無料プランでは <strong className="text-foreground">10 件まで</strong> 保存できます。<br />既存のお気に入りを整理するか、有料プランへアップグレードしてください。</>
+                <><strong className="text-foreground">10 件まで</strong> 保存できます。<br />既存のお気に入りを整理してから新しい教材を追加してください。</>
               )}
             </p>
             <div className="flex gap-2">
-              <button
-                onClick={() => setShowLimitModal(false)}
-                className="flex-1 bg-muted text-foreground py-2.5 rounded-lg text-[13px] font-medium hover:bg-muted/80 transition-colors"
-              >
-                整理する
-              </button>
-              <button
-                onClick={() => router.push(isAnonymous ? '/login' : '/upgrade')}
-                className="flex-1 bg-primary text-white py-2.5 rounded-lg text-[13px] font-rounded font-black hover:opacity-90 transition-colors"
-              >
-                {isAnonymous ? 'ログイン' : 'プランを見る'}
-              </button>
+              {isAnonymous ? (
+                <>
+                  <button
+                    onClick={() => setShowLimitModal(false)}
+                    className="flex-1 bg-muted text-foreground py-2.5 rounded-lg text-[13px] font-medium hover:bg-muted/80 transition-colors"
+                  >
+                    整理する
+                  </button>
+                  <button
+                    onClick={() => router.push('/login')}
+                    className="flex-1 bg-primary text-white py-2.5 rounded-lg text-[13px] font-rounded font-black hover:opacity-90 transition-colors"
+                  >
+                    ログイン
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => setShowLimitModal(false)}
+                  className="flex-1 bg-primary text-white py-2.5 rounded-lg text-[13px] font-rounded font-black hover:opacity-90 transition-colors"
+                >
+                  整理する
+                </button>
+              )}
             </div>
           </div>
         </div>

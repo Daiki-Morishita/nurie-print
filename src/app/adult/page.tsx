@@ -9,6 +9,8 @@ export const metadata = {
   title: 'おとなのぬりえ｜本格・写実の塗り絵を無料配布',
   description: '大人・シニアのための本格塗り絵プリント。曼荼羅・植物画・風景・幾何模様など、心を整える時間にぴったりの線画を無料でA4印刷できます。',
   alternates: { canonical: 'https://nurie-print.com/adult' },
+  // AdSense審査中: 大人セクションは素材数が少ないため一時noindex
+  robots: { index: false, follow: true },
 }
 
 export const revalidate = 30

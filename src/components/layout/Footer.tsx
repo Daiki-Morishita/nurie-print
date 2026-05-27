@@ -46,9 +46,9 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
               </div>
             )}
             <p className="text-[13px] text-muted-foreground leading-relaxed mb-4">
-              保育士・幼稚園教諭の先生方、そして子どもたちの<br className="hidden md:inline" />
-              ためのぬりえプリント配布サービス。{materialCount} 点の<br className="hidden md:inline" />
-              教材を、すべて無料・会員登録なしで提供しています。
+              おやこの時間にぴったりのぬりえを、<br className="hidden md:inline" />
+              年齢・テーマで簡単に見つけて印刷できる<br className="hidden md:inline" />
+              無料配布サービス。{materialCount} 点を会員登録なしで提供しています。
             </p>
             <div className="text-[11px] text-muted-foreground space-y-1">
               <p>運営：ぬりえプリント編集部</p>
@@ -99,6 +99,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
         <div className="mt-12 pt-6 border-t border-border">
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] text-muted-foreground mb-4">
             <Link href="/about" className="hover:text-primary transition-colors">このサイトについて</Link>
+            <Link href="/operator" className="hover:text-primary transition-colors">運営事業所</Link>
             <Link href="/editorial-policy" className="hover:text-primary transition-colors">編集方針</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">利用規約</Link>
             <Link href="/privacy" className="hover:text-primary transition-colors">プライバシーポリシー</Link>
@@ -106,7 +107,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-muted-foreground">
             <p>© {currentYear} ぬりえプリント編集部</p>
-            <p>教材は保育・教育目的での使用に限り無料です</p>
+            <p>教材はご家庭・教育目的での使用に限り無料です</p>
           </div>
         </div>
       </div>

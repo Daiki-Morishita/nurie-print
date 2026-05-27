@@ -5,8 +5,11 @@
 import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { requireAdmin } from '@/lib/admin-auth'
 
 export async function POST(request: Request) {
+  const denied = await requireAdmin()
+  if (denied) return denied
   try {
     const { snippet } = await request.json()
     if (!snippet) return NextResponse.json({ error: 'snippet is required' }, { status: 400 })

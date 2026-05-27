@@ -5,10 +5,13 @@ import { ShuffledGrid } from '@/components/materials/ShuffledGrid'
 import { CollapsibleFilters } from '@/components/search/CollapsibleFilters'
 import { SearchBar } from '@/components/search/SearchBar'
 import { SortSelector } from '@/components/search/SortSelector'
+import { Pagination } from '@/components/search/Pagination'
 import { filterMaterials, getMaterialsForAudience, type SortKey } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import type { Category, Season } from '@/lib/types'
 import { NoResultsBanner } from '@/components/search/NoResultsBanner'
+
+const PAGE_SIZE = 48
 
 interface SearchParams {
   age?: string
@@ -19,6 +22,7 @@ interface SearchParams {
   search?: string
   difficulty?: string
   sort?: string
+  page?: string
 }
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<SearchParams> }) {
@@ -35,6 +39,8 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     title: '教材を探す｜無料ぬりえプリント一覧',
     description: '保育園・幼稚園で使える無料ぬりえプリント一覧。動物・恐竜・乗り物など豊富なテーマを年齢・難易度・季節で絞り込んでA4印刷できます。',
     alternates: { canonical: 'https://nurie-print.com/materials' },
+    // AdSense審査中: 一覧ページは薄いコンテンツ判定回避のため一時noindex
+    robots: { index: false, follow: true },
   }
 }
 
@@ -71,6 +77,15 @@ export default async function MaterialsPage({
   const activeCount = [params.age, params.category, params.season, params.event, params.theme, params.search, params.difficulty].filter(Boolean).length
   const totalKidsCount = getMaterialsForAudience('kids').length
 
+  // ページネーション
+  const totalCount = filtered.length
+  const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE))
+  const currentPage = Math.min(Math.max(1, parseInt(params.page ?? '1', 10) || 1), totalPages)
+  // sort=random はクライアントシャッフルなのでサーバー側はスライスせず全件渡す
+  const paginatedItems = sort === 'random'
+    ? filtered
+    : filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -101,14 +116,16 @@ export default async function MaterialsPage({
         <div className="flex-1">
           <div className="flex items-center justify-between mb-4">
             <p className="text-[12px] text-muted-foreground">
-              {activeCount > 0 ? `${filtered.length} 件が該当` : `全 ${filtered.length} 件`}
+              {totalPages > 1 && sort !== 'random'
+                ? `${totalCount}件中 ${(currentPage - 1) * PAGE_SIZE + 1}〜${Math.min(currentPage * PAGE_SIZE, totalCount)}件目`
+                : (activeCount > 0 ? `${totalCount} 件が該当` : `全 ${totalCount} 件`)}
             </p>
             <Suspense fallback={<div className="h-9 w-56 bg-muted rounded animate-pulse" />}>
               <SortSelector />
             </Suspense>
           </div>
 
-          {filtered.length === 0 ? (
+          {totalCount === 0 ? (
             params.search ? (
               <NoResultsBanner query={params.search} />
             ) : (
@@ -121,13 +138,22 @@ export default async function MaterialsPage({
               </div>
             )
           ) : sort === 'random' ? (
-            <ShuffledGrid items={filtered} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4" />
+            <ShuffledGrid items={paginatedItems} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4" />
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-              {filtered.map(material => (
-                <MaterialCard key={material.id} material={material} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                {paginatedItems.map(material => (
+                  <MaterialCard key={material.id} material={material} />
+                ))}
+              </div>
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                basePath="/materials"
+                searchParams={params as Record<string, string | undefined>}
+                totalCount={totalCount}
+              />
+            </>
           )}
         </div>
       </div>

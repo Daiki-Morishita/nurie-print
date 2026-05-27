@@ -8,6 +8,7 @@ export const metadata = {
   title: '塗り絵を探す｜おとなのぬりえ',
   description: '大人・シニア向けの本格塗り絵プリント一覧。曼荼羅・植物画・風景・幾何模様などのテーマで絞り込めます。',
   alternates: { canonical: 'https://nurie-print.com/adult/materials' },
+  robots: { index: false, follow: true },
 }
 
 export default async function AdultMaterialsPage({

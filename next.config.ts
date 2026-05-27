@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/category/type/maze', destination: '/maze', permanent: true },
+      // /upgrade は有料プラン未実装のため非公開化。リンク残存に備え /materials へ恒久リダイレクト
+      { source: '/upgrade', destination: '/materials', permanent: true },
     ]
   },
   serverExternalPackages: ['sharp'],

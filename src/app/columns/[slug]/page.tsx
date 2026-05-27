@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronRight, Clock, BookOpen, ExternalLink } from 'lucide-react'
+import { ChevronRight, Clock, BookOpen, ExternalLink, ArrowRight } from 'lucide-react'
 import { getColumnBySlug, getRelatedColumns, columns, type ColumnSection } from '@/lib/columns'
 import { getMaterialById } from '@/lib/data'
 import { MaterialCard } from '@/components/materials/MaterialCard'
@@ -247,6 +247,34 @@ export default async function ColumnPage({ params }: { params: Promise<{ slug: s
             <Section key={i} section={section} />
           ))}
         </article>
+
+        {/* 素材ページへの強い回遊CTA（コラム末尾） */}
+        <div className="mt-12 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/30 rounded-2xl p-6 sm:p-8">
+          <div className="font-rounded text-[12px] text-primary mb-2 tracking-[0.1em] font-bold">— Try It —</div>
+          <h3 className="font-rounded text-[18px] sm:text-[22px] font-black leading-tight mb-3">
+            この記事の内容を、実際の教材で試してみませんか？
+          </h3>
+          <p className="text-[13px] text-muted-foreground leading-relaxed mb-5">
+            年齢・難易度別に2,400点以上のぬりえプリントを無料配布しています。<br />
+            会員登録不要・A4 1クリックで印刷できます。
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <Link
+              href="/materials"
+              className="flex items-center justify-between bg-primary text-white px-5 py-3.5 rounded-lg font-rounded font-black text-[14px] hover:opacity-90 transition-opacity"
+            >
+              <span>🎨 すべての教材を見る</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/category/age/3"
+              className="flex items-center justify-between bg-white border-2 border-primary text-primary px-5 py-3.5 rounded-lg font-rounded font-black text-[14px] hover:bg-primary/5 transition-colors"
+            >
+              <span>👶 年齢別に探す</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
 
         {/* 関連コラム */}
         {related.length > 0 && (
