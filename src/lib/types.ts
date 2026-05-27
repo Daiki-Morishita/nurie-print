@@ -164,6 +164,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   winter: '冬',
   gotochi: 'ご当地',
   nature: 'しぜん',
+  seikatsu: 'せいかつ',
   mandala: '曼荼羅',
   botanical: '植物画',
   landscape: '風景',
