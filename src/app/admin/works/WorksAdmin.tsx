@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useTransition, useMemo } from 'react'
+import { useState, useTransition, useMemo, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Upload, AlertCircle, Camera, X, EyeOff } from 'lucide-react'
+import { Upload, AlertCircle, Camera, X, EyeOff, Sparkles, Loader2 } from 'lucide-react'
 import { MaterialPicker, type MaterialOption } from './MaterialPicker'
 import { EditWorkModal } from './EditWorkModal'
 
@@ -18,6 +18,17 @@ type Work = {
   published: boolean
   createdAt: string | Date
 }
+
+type DetectStatus = 'idle' | 'detecting' | 'detected' | 'failed'
+type DraftData = {
+  materialId: string
+  childAge: string
+  comment: string
+  duration: string
+  tools: string
+  savedAt: number
+}
+const DRAFT_KEY = 'gallery-works-draft-v1'
 
 export function WorksAdmin({
   featuredOptions,
@@ -42,7 +53,54 @@ export function WorksAdmin({
   const [duration, setDuration] = useState('')
   const [tools, setTools] = useState('')
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
+  const [detectStatus, setDetectStatus] = useState<DetectStatus>('idle')
+  const [detectInfo, setDetectInfo] = useState<{ confidence?: string; reasoning?: string } | null>(null)
   const photoInputId = 'photo-input'
+
+  // 下書き復元プロンプト
+  const [draftPrompt, setDraftPrompt] = useState<DraftData | null>(null)
+  const draftSavedRef = useRef(false) // 一度復元プロンプトを出したら以後は出さない
+
+  // マウント時に下書き読み込み
+  useEffect(() => {
+    if (draftSavedRef.current) return
+    draftSavedRef.current = true
+    try {
+      const raw = localStorage.getItem(DRAFT_KEY)
+      if (!raw) return
+      const d: DraftData = JSON.parse(raw)
+      if (!d.materialId && !d.childAge && !d.comment) return
+      setDraftPrompt(d)
+    } catch {
+      // ignore
+    }
+  }, [])
+
+  // フォーム入力ごとに下書き自動保存
+  useEffect(() => {
+    if (!materialId && !childAge && !comment && !duration && !tools) return
+    const draft: DraftData = { materialId, childAge, comment, duration, tools, savedAt: Date.now() }
+    try {
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(draft))
+    } catch {
+      // ignore (容量超過など)
+    }
+  }, [materialId, childAge, comment, duration, tools])
+
+  function restoreDraft() {
+    if (!draftPrompt) return
+    setMaterialId(draftPrompt.materialId)
+    setChildAge(draftPrompt.childAge)
+    setComment(draftPrompt.comment)
+    setDuration(draftPrompt.duration)
+    setTools(draftPrompt.tools)
+    setDraftPrompt(null)
+  }
+
+  function discardDraft() {
+    try { localStorage.removeItem(DRAFT_KEY) } catch {}
+    setDraftPrompt(null)
+  }
 
   function resetForm() {
     setMaterialId('')
@@ -51,17 +109,42 @@ export function WorksAdmin({
     setDuration('')
     setTools('')
     setPhotoPreview(null)
+    setDetectStatus('idle')
+    setDetectInfo(null)
     const el = document.getElementById(photoInputId) as HTMLInputElement | null
     if (el) el.value = ''
+    try { localStorage.removeItem(DRAFT_KEY) } catch {}
   }
 
-  function handlePhotoChange(e: React.ChangeEvent<HTMLInputElement>) {
+  async function handlePhotoChange(e: React.ChangeEvent<HTMLInputElement>) {
     const f = e.target.files?.[0]
     if (!f) {
       setPhotoPreview(null)
+      setDetectStatus('idle')
+      setDetectInfo(null)
       return
     }
     setPhotoPreview(URL.createObjectURL(f))
+    // AI 自動判定をバックグラウンド実行
+    setDetectStatus('detecting')
+    setDetectInfo(null)
+    const fd = new FormData()
+    fd.append('photo', f)
+    try {
+      const res = await fetch('/api/admin/works/detect-material', { method: 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok && data.materialId) {
+        setMaterialId(data.materialId)
+        setDetectStatus('detected')
+        setDetectInfo({ confidence: data.confidence, reasoning: data.reasoning })
+      } else {
+        setDetectStatus('failed')
+        setDetectInfo({ reasoning: data.reasoning ?? data.error ?? '判定不能' })
+      }
+    } catch {
+      setDetectStatus('failed')
+      setDetectInfo({ reasoning: 'ネットワークエラー' })
+    }
   }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -86,7 +169,6 @@ export function WorksAdmin({
       setWorks(w => [work, ...w])
       setSuccess(`登録しました: ${data.work.materialId}`)
       resetForm()
-      // 5秒で成功表示を消す
       setTimeout(() => setSuccess(null), 5000)
     })
   }
@@ -126,6 +208,26 @@ export function WorksAdmin({
         </div>
       )}
 
+      {draftPrompt && (
+        <div className="mb-3 p-3 bg-blue-50 border border-blue-300 text-blue-900 rounded-lg text-sm flex items-center gap-2">
+          <span className="flex-1">
+            下書きが見つかりました ({new Date(draftPrompt.savedAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })})
+          </span>
+          <button
+            onClick={restoreDraft}
+            className="px-3 py-1.5 bg-blue-600 text-white rounded text-xs font-bold"
+          >
+            復元
+          </button>
+          <button
+            onClick={discardDraft}
+            className="px-3 py-1.5 border border-blue-300 text-blue-800 rounded text-xs font-bold"
+          >
+            破棄
+          </button>
+        </div>
+      )}
+
       <section className="mb-8 bg-white border border-border rounded-xl p-4 sm:p-5">
         <h2 className="font-bold text-base sm:text-lg mb-3 flex items-center gap-2">
           <Upload className="w-4 h-4" /> 新規アップロード
@@ -135,6 +237,7 @@ export function WorksAdmin({
           <div>
             <label className="block">
               <span className="text-xs font-bold text-muted-foreground">写真 <span className="text-red-500">*</span></span>
+              <span className="text-[11px] text-muted-foreground ml-2">（選ぶとAIが素材IDを自動判定）</span>
             </label>
             {photoPreview ? (
               <div className="mt-1 relative aspect-[4/3] max-h-72 rounded-lg overflow-hidden border border-border bg-muted">
@@ -143,6 +246,8 @@ export function WorksAdmin({
                   type="button"
                   onClick={() => {
                     setPhotoPreview(null)
+                    setDetectStatus('idle')
+                    setDetectInfo(null)
                     const el = document.getElementById(photoInputId) as HTMLInputElement | null
                     if (el) el.value = ''
                   }}
@@ -174,7 +279,7 @@ export function WorksAdmin({
             />
           </div>
 
-          {/* 素材ID */}
+          {/* 素材ID + AI判定状態 */}
           <div>
             <label className="block">
               <span className="text-xs font-bold text-muted-foreground">どの素材を塗ったか <span className="text-red-500">*</span></span>
@@ -182,6 +287,31 @@ export function WorksAdmin({
             <div className="mt-1">
               <MaterialPicker options={featuredOptions} value={materialId} onChange={setMaterialId} />
             </div>
+            {detectStatus === 'detecting' && (
+              <div className="mt-2 flex items-center gap-2 text-[12px] text-muted-foreground">
+                <Loader2 className="w-3.5 h-3.5 animate-spin" /> AIが素材を判定中…
+              </div>
+            )}
+            {detectStatus === 'detected' && (
+              <div className="mt-2 flex items-start gap-2 text-[12px] text-green-700 bg-green-50 border border-green-200 rounded p-2">
+                <Sparkles className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                <div className="flex-1">
+                  <div className="font-bold">AI判定: {detectInfo?.confidence ?? '?'} confidence</div>
+                  {detectInfo?.reasoning && <div className="text-green-800/80 mt-0.5">{detectInfo.reasoning}</div>}
+                  <div className="text-green-800/70 mt-0.5">合っていなければタップして手動で選択し直してください</div>
+                </div>
+              </div>
+            )}
+            {detectStatus === 'failed' && (
+              <div className="mt-2 flex items-start gap-2 text-[12px] text-amber-800 bg-amber-50 border border-amber-200 rounded p-2">
+                <AlertCircle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                <div className="flex-1">
+                  <div className="font-bold">AI判定に失敗</div>
+                  {detectInfo?.reasoning && <div className="text-amber-800/80 mt-0.5">{detectInfo.reasoning}</div>}
+                  <div className="text-amber-800/70 mt-0.5">手動で素材を選択してください</div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* 年齢 */}
@@ -241,13 +371,25 @@ export function WorksAdmin({
             </label>
           </div>
 
-          <button
-            type="submit"
-            disabled={!canSubmit}
-            className="w-full px-6 py-3.5 bg-primary text-white rounded-lg font-bold text-sm disabled:opacity-40 active:opacity-80 transition-opacity"
-          >
-            {isPending ? '保存中…' : '作品を登録'}
-          </button>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={resetForm}
+              className="px-4 py-3.5 border border-border rounded-lg text-sm font-bold text-muted-foreground hover:bg-muted"
+            >
+              クリア
+            </button>
+            <button
+              type="submit"
+              disabled={!canSubmit}
+              className="flex-1 px-6 py-3.5 bg-primary text-white rounded-lg font-bold text-sm disabled:opacity-40 active:opacity-80 transition-opacity"
+            >
+              {isPending ? '保存中…' : '作品を登録'}
+            </button>
+          </div>
+          <p className="text-[11px] text-muted-foreground text-center">
+            ※ テキスト入力は自動的に下書き保存されます（写真を除く）
+          </p>
         </form>
       </section>
 
