@@ -96,6 +96,9 @@ export default function AboutPage() {
           <Link href="/editorial-policy" className="text-primary underline mx-1">編集方針</Link>
           をご覧ください。
         </p>
+        <p className="bg-muted/50 border border-border rounded p-3 text-[13px]">
+          <strong>イラストの制作プロセスについて：</strong> 当サイトのぬりえ素材は、画像生成AIツールを活用して制作した線画を、編集部が品質・対象年齢適合性・安全性の観点から確認・選別したうえで掲載しています。問題のある画像（線が薄い・対象が不明瞭・年齢に合わない等）は非公開とし、必要に応じて再制作しています。AI生成にあたっては既存の特定作品・キャラクターの模倣は意図しておらず、万一類似の指摘があった場合はお問い合わせ窓口より対応いたします。
+        </p>
       </div>
 
       <h2 className="font-mincho text-[20px] font-bold mb-4 flex items-center gap-2 pb-2 border-b border-border">

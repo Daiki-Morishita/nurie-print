@@ -87,6 +87,36 @@ export default function EditorialPolicyPage() {
 
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
+          <BookOpen className="w-5 h-5 text-primary" />
+          イラスト素材の制作プロセス（AI活用の透明性）
+        </h2>
+        <div className="text-sm leading-relaxed space-y-3">
+          <p>
+            当サイトのぬりえ素材（線画）は、<strong>画像生成AIツールを活用して制作</strong>しています。具体的には、各素材に対して年齢・場面・構図を指定したプロンプトを設計し、生成された結果から品質基準を満たすものを編集部が選別して掲載しています。
+          </p>
+          <p>
+            <strong>品質チェック項目：</strong>
+          </p>
+          <ul className="space-y-1 list-disc pl-5">
+            <li>線の太さ・濃さがぬりえとして適切か</li>
+            <li>対象年齢の発達段階に合った難易度か</li>
+            <li>背景・小道具が「塗る部分」として適切に区切られているか</li>
+            <li>不適切な要素（怖い・不快・差別的表現）を含まないか</li>
+            <li>既存の特定キャラクター・有名作品の模倣になっていないか</li>
+          </ul>
+          <p>
+            問題のある素材は <code className="bg-muted px-1 rounded text-[12px]">imageStatus: &apos;needs_revision&apos;</code> に分類して非公開とし、必要に応じて再制作しています。
+          </p>
+          <p>
+            <strong>著作権・類似性に関するご指摘：</strong> 万一、既存作品・キャラクターと類似してしまった場合は、
+            <Link href="/contact" className="text-primary underline mx-1">お問い合わせフォーム</Link>
+            よりご一報ください。確認の上、速やかに該当素材を非公開化または差し替えします。
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
           <AlertCircle className="w-5 h-5 text-primary" />
           限界と免責
         </h2>
