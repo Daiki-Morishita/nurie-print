@@ -88,6 +88,10 @@ try:
     from themes_seikatsu import SEIKATSU_ITEMS
 except ImportError:
     SEIKATSU_ITEMS = {}
+try:
+    from themes_vehicles import VEHICLES_ITEMS
+except ImportError:
+    VEHICLES_ITEMS = {}
 
 # =============================================
 # 設定
@@ -3336,6 +3340,7 @@ THEMES = {
     "nature":     NATURE_ITEMS,
     "seikatsu":   SEIKATSU_ITEMS,
     "fairytale":  FAIRYTALE,
+    "vehicles":   VEHICLES_ITEMS,
 }
 
 # =============================================
@@ -4717,7 +4722,7 @@ def main():
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece",
-                 "fairytale"],
+                 "fairytale", "vehicles"],
         help="テーマ種別（--all-adult 使用時は不要）")
     parser.add_argument("--item",    default=None,  help="アイテムID（例: swing, tyrannosaurus）")
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")
