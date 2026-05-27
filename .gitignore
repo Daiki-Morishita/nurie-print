@@ -46,3 +46,4 @@ scripts/auth_state.json
 scripts/.upload_md5.json
 public/preview/
 scripts/.last_send_time
+public/uploads/

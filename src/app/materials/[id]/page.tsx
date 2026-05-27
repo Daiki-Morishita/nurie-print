@@ -11,6 +11,8 @@ import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
+import { WorksSection } from '@/components/materials/WorksSection'
+import { getWorksForMaterial } from '@/lib/gallery'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -65,6 +67,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
   const nextMaterial = idx >= 0 && idx < materials.length - 1 ? materials[idx + 1] : null
 
   const related = getRelatedMaterials(material, 4, overrides)
+  const works = await getWorksForMaterial(material.id)
   const ageLabel = material.ageMin === material.ageMax
     ? `${material.ageMin}歳`
     : `${material.ageMin}〜${material.ageMax}歳`
@@ -374,6 +377,9 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
+
+        {/* 実際に塗ってみた作品セクション（works が0件なら自動的に非表示） */}
+        <WorksSection works={works} materialTitle={material.title} />
 
         {/* 広告 */}
         <AdBanner
