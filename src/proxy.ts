@@ -13,6 +13,11 @@ export async function proxy(request: NextRequest) {
 
   // ログイン済みユーザーが /login にアクセス → リダイレクト
   if (session && pathname === '/login') {
+    // callbackUrl が同一オリジン内のパスなら最優先
+    const cb = request.nextUrl.searchParams.get('callbackUrl')
+    if (cb && cb.startsWith('/') && !cb.startsWith('//')) {
+      return NextResponse.redirect(new URL(cb, request.url))
+    }
     const dest = session.user.onboardingDone ? '/materials' : '/onboarding'
     return NextResponse.redirect(new URL(dest, request.url))
   }
