@@ -57405,6 +57405,23 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:44',
     popular: false,
   },
+  {
+    id: 'fairytale-jack-beanstalk-simple-1',
+    title: 'うしとまめのこうかん',
+    description: '牛と豆の交換のぬりえ。',
+    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
+    category: 'coloring', theme: 'fairytale',
+    tags: ['fairytale-jack-beanstalk', 'fairytale', 'ぬりえ'],
+    tools: ['クレヨン'],
+    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
+    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-jack-beanstalk-simple-1-illust.png',
+    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-jack-beanstalk-simple-1-illust.png',
+    illustVersion: 1,
+    imageStatus: 'pending_review',
+    pdfUrl: '',
+    createdAt: '2026-05-27T16:17',
+    popular: false,
+  },
 ]
 
 export const materials: Material[] = [..._materials1, ..._materials2, ..._materials3, ..._materials4, ..._materials5, ..._materialsRepair, ..._materialsRecovered]
