@@ -31,6 +31,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: `${material.title}｜${ageLabel}向け無料プリント`,
     description: seoDesc,
     alternates: { canonical: `https://nurie-print.com/materials/${id}` },
+    // AdSense審査中: 個別素材ページは薄いコンテンツ判定回避のため一時noindex
+    robots: { index: false, follow: true },
     openGraph: {
       title: material.title,
       description: seoDesc,

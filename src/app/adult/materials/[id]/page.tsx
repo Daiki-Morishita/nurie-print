@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: `${material.title}｜おとなのぬりえ無料プリント`,
     description: `${material.description} A4横長で印刷できる本格塗り絵。`,
     alternates: { canonical: `https://nurie-print.com/adult/materials/${id}` },
+    robots: { index: false, follow: true },
     openGraph: {
       title: material.title,
       description: material.description,

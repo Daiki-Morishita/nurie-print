@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description: desc,
     alternates: { canonical: `https://nurie-print.com/maze/${maze.slug}` },
+    robots: { index: false, follow: true },
     openGraph: { title, description: desc, url: `https://nurie-print.com/maze/${maze.slug}`, type: 'article' },
   }
 }

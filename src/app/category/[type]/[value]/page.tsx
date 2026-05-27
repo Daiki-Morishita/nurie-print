@@ -69,23 +69,15 @@ function getPageInfo(type: string, value: string): { title: string; description:
   }
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ type: string; value: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ type: string; value: string }> }): Promise<import('next').Metadata> {
   const { type, value } = await params
   const { title, description } = getPageInfo(type, value)
-
-  const fp: Parameters<typeof filterMaterials>[0] = {}
-  if (type === 'age') fp.age = Number(value)
-  else if (type === 'type') fp.category = value
-  else if (type === 'season') fp.season = value
-  else if (type === 'event') fp.event = value
-  else if (type === 'theme') fp.theme = value as Parameters<typeof filterMaterials>[0]['theme']
-  const isEmpty = filterMaterials(fp).length === 0
-
+  // AdSense審査中: カテゴリページは薄いコンテンツ判定回避のため一時noindex
   return {
     title,
     description,
     alternates: { canonical: `https://nurie-print.com/category/${type}/${value}` },
-    ...(isEmpty ? { robots: { index: false, follow: false } } : {}),
+    robots: { index: false, follow: true },
   }
 }
 

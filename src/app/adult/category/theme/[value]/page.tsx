@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ value: st
     title: `${label}の塗り絵｜おとなのぬりえ`,
     description: `大人・シニア向けの${label}の塗り絵プリント一覧。心を整えるための本格的な線画を無料配布しています。`,
     alternates: { canonical: `https://nurie-print.com/adult/category/theme/${value}` },
+    robots: { index: false, follow: true },
   }
 }
 
