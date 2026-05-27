@@ -107,7 +107,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-muted-foreground">
             <p>© {currentYear} ぬりえプリント編集部</p>
-            <p>教材は保育・教育目的での使用に限り無料です</p>
+            <p>教材はご家庭・教育目的での使用に限り無料です</p>
           </div>
         </div>
       </div>

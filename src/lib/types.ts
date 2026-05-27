@@ -275,6 +275,11 @@ export type Material = {
   imageStatus?: ImageStatus
   /** レビューメモ（修正指示や承認コメントなど） */
   illustNotes?: string
+
+  /** Featured 素材: noindex 戦略の whitelist。true の素材だけインデックス対象、sitemapにも掲載 */
+  featured?: boolean
+  /** Featured 素材専用の独自解説文（200字以上推奨）。素材ページに表示 */
+  seoDescription?: string
 }
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {

@@ -22,7 +22,7 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   name: 'ぬりえプリント',
   url: 'https://nurie-print.com',
-  description: `保育士・幼稚園教諭のための無料ぬりえプリントサービス。${totalMaterials}点以上を無料配布。`,
+  description: `おやこで楽しむ無料ぬりえプリント。${totalMaterials}点以上を、登録なしですぐ印刷できます。`,
   potentialAction: {
     '@type': 'SearchAction',
     target: { '@type': 'EntryPoint', urlTemplate: 'https://nurie-print.com/materials?search={search_term_string}' },
@@ -36,7 +36,7 @@ const organizationJsonLd = {
   name: 'ぬりえプリント編集部',
   url: 'https://nurie-print.com',
   logo: { '@type': 'ImageObject', url: 'https://nurie-print.com/icon.svg', width: 512, height: 512 },
-  description: '保育士・幼稚園教諭向けの無料ぬりえプリント配布サービス',
+  description: 'おやこで楽しむ無料ぬりえプリント配布サービス',
 }
 
 // Featured pool — テーマ分散させて多様化、サーバーシャッフル。クライアント側で更にローテート
@@ -118,7 +118,7 @@ const FAQS = [
   },
   {
     q: '園や教室で使ってもいいですか？',
-    a: '保育園・幼稚園・教室での教材利用は自由です。販売・再配布のみご遠慮ください。',
+    a: 'ご家庭はもちろん、保育園・幼稚園・教室での利用も自由です。販売・再配布のみご遠慮ください。',
   },
   {
     q: 'どのくらいの頻度で更新していますか？',
@@ -341,7 +341,7 @@ export default async function HomePage() {
             title="読みもの"
             count="ぬりえ完全ガイド"
             href="/columns"
-            subtitle="保育士・幼児教育の現場で役立つ知識を編集部が解説"
+            subtitle="子どもの育ちを支える知識を編集部が整理"
             emoji="📖"
           />
           <div className="grid lg:grid-cols-[2fr_1fr] gap-6">
@@ -423,12 +423,12 @@ export default async function HomePage() {
             <span>💌</span>INVITATION<span>💌</span>
           </div>
           <h2 className="font-rounded text-[28px] md:text-[38px] font-black leading-[1.4] mb-4">
-            保育の現場を、<br />
-            すこし、らくに。
+            おやこの時間を、<br />
+            すこし、ゆたかに。
           </h2>
           <p className="text-[15px] text-muted-foreground mb-8 leading-relaxed">
-            雨の日も、自由時間も、行事前も。<br />
-            すぐ使える教材が、ここにあります。
+            雨の日も、休みの日も、ふと手持ちぶさたな夜も。<br />
+            すぐ使えるぬりえが、ここにあります。
           </p>
           <Link
             href="/materials"
