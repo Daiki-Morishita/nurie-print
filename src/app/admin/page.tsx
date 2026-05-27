@@ -5,6 +5,7 @@
  *    例: ADMIN_SECRET を URL パラメータ or middleware で確認
  */
 export const dynamic = 'force-dynamic'
+import { redirect } from 'next/navigation'
 import { materials } from '@/lib/data'
 import type { ImageStatus } from '@/lib/types'
 import { ImageUploader } from '@/components/admin/ImageUploader'
@@ -12,6 +13,7 @@ import { AdminMaterialsTable } from '@/components/admin/AdminMaterialsTable'
 import { SearchRequestsTable } from '@/components/admin/SearchRequestsTable'
 import { prisma } from '@/lib/db'
 import { loadOverrides, invalidateOverridesCache } from '@/lib/data-overrides'
+import { isAdminSession } from '@/lib/admin-auth'
 
 export const metadata = {
   title: '素材管理 | ぬりえプリント Admin',
@@ -19,6 +21,11 @@ export const metadata = {
 }
 
 export default async function AdminPage() {
+  // 認証ガード: ADMIN_EMAILS allowlist のメンバーのみ閲覧可能
+  if (!await isAdminSession()) {
+    redirect('/login?callbackUrl=/admin')
+  }
+
   // DB override を即時取り込むため、毎回キャッシュをリセット
   invalidateOverridesCache()
   const overrides = await loadOverrides()

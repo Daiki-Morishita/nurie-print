@@ -30,7 +30,7 @@ export default function UpgradePage() {
           <div className="font-rounded text-[24px] font-black mb-1">無料プラン</div>
           <div className="text-[12px] text-muted-foreground mb-5">¥0 / 月</div>
           <ul className="space-y-2.5 text-[13px]">
-            <FeatureRow text="555 点すべての教材を閲覧・印刷" />
+            <FeatureRow text="すべての教材を閲覧・印刷" />
             <FeatureRow text="お気に入り 10 件まで保存" />
             <FeatureRow text="お気に入りまとめて印刷" />
             <FeatureRow text="コンビニ印刷ガイド" />
