@@ -99,6 +99,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
         <div className="mt-12 pt-6 border-t border-border">
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] text-muted-foreground mb-4">
             <Link href="/about" className="hover:text-primary transition-colors">このサイトについて</Link>
+            <Link href="/operator" className="hover:text-primary transition-colors">運営事業所</Link>
             <Link href="/editorial-policy" className="hover:text-primary transition-colors">編集方針</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">利用規約</Link>
             <Link href="/privacy" className="hover:text-primary transition-colors">プライバシーポリシー</Link>
