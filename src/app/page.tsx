@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { ArrowRight, ChevronRight, Clock } from 'lucide-react'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { FeaturedPick, type FeaturedItem } from '@/components/home/FeaturedPick'
-import { WorksStrip } from '@/components/home/WorksStrip'
+import { TodaysPost } from '@/components/home/TodaysPost'
 import type { Difficulty } from '@/lib/types'
 import { materials, getPopularMaterials, getMaterialById, filterMaterials, getMaterialsForAudience } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { columns } from '@/lib/columns'
-import { getLatestPublishedWorks } from '@/lib/gallery'
+import { getPublishedPosts } from '@/lib/posts'
 
 export const metadata = {
   alternates: { canonical: 'https://nurie-print.com' },
@@ -136,8 +136,9 @@ export default async function HomePage() {
   const popular = getPopularMaterials(12, 'kids', overrides)
   const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
-  const latestWorks = await getLatestPublishedWorks(6)
-  const worksTitleMap = new Map(materials.map(m => [m.id, m.title]))
+  const todaysPosts = await getPublishedPosts(1)
+  const todaysPost = todaysPosts[0] ?? null
+  const postsTitleMap = new Map(materials.map(m => [m.id, m.title]))
 
   return (
     <>
@@ -274,8 +275,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ===== REAL WORKS (おやこの一枚) — 作品0件なら自動非表示 ===== */}
-      <WorksStrip works={latestWorks} titleMap={worksTitleMap} />
+      {/* ===== TODAY'S PIECE (今日のいちまい) — 投稿0件なら自動非表示 ===== */}
+      <TodaysPost post={todaysPost} titleMap={postsTitleMap} />
 
       {/* ===== THEMES ===== */}
       <section className="py-12 border-t border-border bg-background">

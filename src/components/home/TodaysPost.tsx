@@ -1,0 +1,98 @@
+import Link from 'next/link'
+import { ArrowRight, BookOpen } from 'lucide-react'
+import { PostCarousel } from '@/components/posts/PostCarousel'
+import type { PostWithImages } from '@/lib/posts'
+import { deriveTitle } from '@/lib/posts'
+
+/** 本文を「半分くらいで途切れさせる」抜粋ロジック */
+function makeExcerpt(body: string, maxLen = 180): string {
+  const stripped = body.replace(/\n+/g, '\n').trim()
+  if (stripped.length <= maxLen) return stripped
+  return stripped.slice(0, maxLen)
+}
+
+export function TodaysPost({
+  post,
+  titleMap,
+}: {
+  post: PostWithImages | null
+  titleMap: Map<string, string>
+}) {
+  if (!post) return null
+
+  const title = deriveTitle({ title: post.title, body: post.body })
+  const excerpt = makeExcerpt(post.body)
+  const hasMoreText = post.body.length > excerpt.length
+
+  return (
+    <section className="py-12 md:py-16 bg-gradient-to-b from-[#FFF8EC]/80 to-background border-t border-border">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8">
+          <div className="font-rounded text-[11px] text-primary tracking-[0.2em] mb-2 font-black">
+            — Today&apos;s Piece —
+          </div>
+          <h2 className="font-mincho text-[24px] md:text-[34px] font-black mb-1">今日のいちまい</h2>
+          <p className="text-[12px] text-muted-foreground">
+            おやこの時間の、ちいさな記録。
+          </p>
+        </div>
+
+        <article className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm">
+          {post.images.length > 0 && (
+            <PostCarousel images={post.images} alt={title} aspectClass="aspect-[4/3] md:aspect-[16/9]" />
+          )}
+
+          <div className="p-5 md:p-8">
+            <h3 className="font-mincho text-[20px] md:text-[26px] font-black leading-snug mb-4">
+              {title}
+            </h3>
+
+            <div className="relative">
+              <p className="text-[14px] md:text-[15px] text-foreground/85 leading-relaxed whitespace-pre-wrap">
+                {excerpt}
+                {hasMoreText && <span className="text-muted-foreground">…</span>}
+              </p>
+              {hasMoreText && (
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+              )}
+            </div>
+
+            <div className="mt-5 text-center">
+              <Link
+                href={`/posts/${post.id}`}
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-white rounded-full text-[13px] font-rounded font-black hover:opacity-90 transition-opacity"
+              >
+                <BookOpen className="w-4 h-4" />
+                記事を読む
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {post.materialIds.length > 0 && (
+              <div className="mt-8 pt-6 border-t border-border">
+                <div className="font-rounded text-[11px] text-muted-foreground tracking-[0.1em] mb-3 font-bold">
+                  この記事の塗り絵
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {post.materialIds.slice(0, 6).map(id => {
+                    const t = titleMap.get(id)
+                    if (!t) return null
+                    return (
+                      <Link
+                        key={id}
+                        href={`/materials/${id}`}
+                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-muted hover:bg-primary hover:text-white rounded-full text-[12px] transition-colors"
+                      >
+                        {t}
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+        </article>
+      </div>
+    </section>
+  )
+}

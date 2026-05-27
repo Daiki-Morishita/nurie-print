@@ -142,30 +142,39 @@ model ContactMessage {
   @@index([status])
 }
 
-// ── 実体験ギャラリー（実際に塗ってみた作品） ────────────────────────────────
-// 個別素材ページの scaled content 脱却の主軸。1作品 = 1レコード。
-// アップロードは /admin/works から、表示は /materials/[id] の作品セクションで。
-model GalleryWork {
-  id         String   @id @default(cuid())
-  /** 塗った対象の material.id (data.ts) */
-  materialId String
-  /** Supabase Storage の完成写真URL */
-  photoUrl   String
-  /** タイムラプス動画URL（任意） */
-  videoUrl   String?
-  /** 自由記述の年齢ラベル。例: "2歳10ヶ月", "5歳", "編集部試し塗り" */
-  childAge   String
-  /** かかった時間（分・任意） */
-  duration   Int?
-  /** 使った画材（任意・カンマ区切り or 文字列） */
-  tools      String?
-  /** 体験コメント（必須） */
-  comment    String   @db.Text
-  /** 公開フラグ。一時非公開時に false */
-  published  Boolean  @default(true)
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+// ── 「今日のいちまい」投稿 ──────────────────────────────────────────────────
+// Twitter風の編集UIから入稿する記事。複数画像 + 本文 + 関連素材リンク。
+// publishedAt の値で状態を表す:
+//   NULL          → 下書き（非公開）
+//   未来日時      → 投稿予約
+//   過去 or 現在  → 公開中
+model Post {
+  id          String   @id @default(cuid())
+  /** 任意のタイトル。未指定なら本文先頭から自動抽出 */
+  title       String?
+  /** 本文（Markdownライト・改行保持） */
+  body        String   @db.Text
+  /** 公開・予約日時。null = 下書き */
+  publishedAt DateTime?
+  /** リンクする素材ID配列（data.ts の materials[].id） */
+  materialIds String[]
+  images      PostImage[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
-  @@index([materialId])
+  @@index([publishedAt])
   @@index([createdAt])
+}
+
+model PostImage {
+  id        String   @id @default(cuid())
+  postId    String
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  /** Supabase Storage の公開URL */
+  url       String
+  /** 表示順（小さい順） */
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([postId, order])
 }

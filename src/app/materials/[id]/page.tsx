@@ -11,8 +11,6 @@ import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
-import { WorksSection } from '@/components/materials/WorksSection'
-import { getWorksForMaterial } from '@/lib/gallery'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -67,7 +65,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
   const nextMaterial = idx >= 0 && idx < materials.length - 1 ? materials[idx + 1] : null
 
   const related = getRelatedMaterials(material, 4, overrides)
-  const works = await getWorksForMaterial(material.id)
   const ageLabel = material.ageMin === material.ageMax
     ? `${material.ageMin}歳`
     : `${material.ageMin}〜${material.ageMax}歳`
@@ -100,20 +97,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     ...(material.imageUrl ? { image: material.imageUrl.startsWith('http') ? material.imageUrl : `https://nurie-print.com${material.imageUrl}` } : {}),
   }
 
-  // 作品写真の JSON-LD（リッチリザルト用 ImageObject 配列）
-  const worksJsonLd = works.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@graph': works.map(w => ({
-      '@type': 'ImageObject',
-      contentUrl: w.photoUrl,
-      url: w.photoUrl,
-      name: `${material.title}を塗った作品`,
-      description: w.comment,
-      uploadDate: new Date(w.createdAt).toISOString(),
-      creditText: w.childAge,
-      acquireLicensePage: `https://nurie-print.com/materials/${material.id}`,
-    })),
-  } : null
 
   // パンくず: ホーム > 教材一覧 > [テーマ] > 素材名
   const themeLabel = material.theme ? THEME_LABELS[material.theme] : null
@@ -133,9 +116,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      {worksJsonLd && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(worksJsonLd) }} />
-      )}
       {/* ===== 印刷専用エリア（画面では非表示・横A4・画像のみ・モノクロ） ===== */}
       <style>{`
         @page { size: A4 landscape; margin: 0; }
@@ -395,9 +375,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
-
-        {/* 実際に塗ってみた作品セクション（works が0件なら自動的に非表示） */}
-        <WorksSection works={works} materialTitle={material.title} />
 
         {/* 広告 */}
         <AdBanner

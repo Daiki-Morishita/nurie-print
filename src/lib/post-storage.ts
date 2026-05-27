@@ -1,10 +1,10 @@
 /**
- * 作品写真のストレージヘルパー。
+ * 投稿画像ストレージヘルパー。
  *
- * 環境変数 SUPABASE_URL / SUPABASE_SECRET_KEY が揃っていれば Supabase Storage に保存、
- * 揃っていなければローカル public/uploads/works/ に保存（dev環境フォールバック）。
+ * SUPABASE_URL / SUPABASE_SECRET_KEY が揃っていれば Supabase Storage の
+ * "post-images" バケットに保存。揃っていなければ public/uploads/posts/ にローカル保存。
  *
- * Vercel本番では Supabase 必須（read-only FSのためローカル保存不可）。
+ * 出力フォーマット: WebP q=82, 長辺1920px に最適化。
  */
 import sharp from 'sharp'
 import fs from 'fs/promises'
@@ -12,9 +12,9 @@ import path from 'path'
 
 const SUPABASE_URL = process.env.SUPABASE_URL
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY
-const BUCKET = 'gallery-works'
-const LOCAL_DIR = path.join(process.cwd(), 'public', 'uploads', 'works')
-const LOCAL_PREFIX = '/uploads/works'
+const BUCKET = 'post-images'
+const LOCAL_DIR = path.join(process.cwd(), 'public', 'uploads', 'posts')
+const LOCAL_PREFIX = '/uploads/posts'
 
 function useSupabase(): boolean {
   return !!(SUPABASE_URL && SUPABASE_KEY)
@@ -22,7 +22,7 @@ function useSupabase(): boolean {
 
 async function optimize(file: Buffer): Promise<Buffer> {
   return sharp(file)
-    .rotate() // EXIF 向きを反映
+    .rotate()
     .resize(1920, 1920, { fit: 'inside', withoutEnlargement: true })
     .webp({ quality: 82 })
     .toBuffer()
@@ -31,10 +31,9 @@ async function optimize(file: Buffer): Promise<Buffer> {
 function makeFilename(): string {
   const stamp = Date.now()
   const rand = Math.random().toString(36).slice(2, 8)
-  return `work-${stamp}-${rand}.webp`
+  return `post-${stamp}-${rand}.webp`
 }
 
-/** Supabase Storage バケットを idempotent に確保 */
 async function ensureBucket(): Promise<void> {
   if (!useSupabase()) return
   const res = await fetch(`${SUPABASE_URL}/storage/v1/bucket`, {
@@ -46,7 +45,7 @@ async function ensureBucket(): Promise<void> {
     },
     body: JSON.stringify({ id: BUCKET, name: BUCKET, public: true }),
   })
-  if (res.status === 409) return // already exists
+  if (res.status === 409) return
   if (!res.ok) {
     const text = await res.text()
     if (text.includes('already exists') || text.includes('duplicate')) return
@@ -54,17 +53,12 @@ async function ensureBucket(): Promise<void> {
   }
 }
 
-/**
- * 写真をアップロード。1600px JPEG q=85 に最適化。
- * @returns 公開URL
- */
-export async function uploadGalleryPhoto(file: Buffer): Promise<string> {
+export async function uploadPostImage(file: Buffer): Promise<string> {
   const optimized = await optimize(file)
   const filename = makeFilename()
 
   if (useSupabase()) {
     await ensureBucket()
-    // fetch の BodyInit にするため Blob 化
     const body = new Blob([new Uint8Array(optimized)], { type: 'image/webp' })
     const uploadRes = await fetch(`${SUPABASE_URL}/storage/v1/object/${BUCKET}/${filename}`, {
       method: 'POST',
@@ -83,14 +77,13 @@ export async function uploadGalleryPhoto(file: Buffer): Promise<string> {
     return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${filename}`
   }
 
-  // ローカルフォールバック（dev環境のみ）
+  // ローカル
   await fs.mkdir(LOCAL_DIR, { recursive: true })
   await fs.writeFile(path.join(LOCAL_DIR, filename), optimized)
   return `${LOCAL_PREFIX}/${filename}`
 }
 
-/** 写真を削除 */
-export async function deleteGalleryPhoto(publicUrl: string): Promise<void> {
+export async function deletePostImage(publicUrl: string): Promise<void> {
   if (useSupabase()) {
     const prefix = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/`
     if (publicUrl.startsWith(prefix)) {
@@ -102,8 +95,6 @@ export async function deleteGalleryPhoto(publicUrl: string): Promise<void> {
     }
     return
   }
-
-  // ローカル
   if (!publicUrl.startsWith(LOCAL_PREFIX + '/')) return
   const filename = publicUrl.slice(LOCAL_PREFIX.length + 1)
   if (filename.includes('/') || filename.includes('..')) return
