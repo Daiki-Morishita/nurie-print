@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Clock, Palette } from 'lucide-react'
 import type { GalleryWork } from '@/lib/gallery'
+import { normalizeChildAge } from '@/lib/child-age'
 
 export function WorksSection({ works, materialTitle }: { works: GalleryWork[]; materialTitle: string }) {
   if (works.length === 0) return null
@@ -14,12 +15,14 @@ export function WorksSection({ works, materialTitle }: { works: GalleryWork[]; m
       </p>
 
       <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
-        {works.map(w => (
+        {works.map(w => {
+          const displayAge = normalizeChildAge(w.childAge)
+          return (
           <article key={w.id} className="bg-white border border-border rounded-xl overflow-hidden">
             <div className="relative aspect-[4/3] bg-muted">
               <Image
                 src={w.photoUrl}
-                alt={`${materialTitle}を塗った作品 — ${w.childAge}`}
+                alt={`${materialTitle}を塗った作品 — ${displayAge}`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 50vw"
@@ -28,7 +31,7 @@ export function WorksSection({ works, materialTitle }: { works: GalleryWork[]; m
             </div>
             <div className="p-4 space-y-2.5">
               <div className="flex items-center gap-2 text-[12px] font-bold">
-                <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full">{w.childAge}</span>
+                <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full">{displayAge}</span>
                 <span className="text-muted-foreground text-[11px]">
                   {new Date(w.createdAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'numeric', day: 'numeric' })}
                 </span>
@@ -50,7 +53,7 @@ export function WorksSection({ works, materialTitle }: { works: GalleryWork[]; m
               )}
             </div>
           </article>
-        ))}
+        )})}
       </div>
     </section>
   )

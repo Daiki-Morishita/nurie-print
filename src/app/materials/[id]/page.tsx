@@ -100,6 +100,21 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     ...(material.imageUrl ? { image: material.imageUrl.startsWith('http') ? material.imageUrl : `https://nurie-print.com${material.imageUrl}` } : {}),
   }
 
+  // 作品写真の JSON-LD（リッチリザルト用 ImageObject 配列）
+  const worksJsonLd = works.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@graph': works.map(w => ({
+      '@type': 'ImageObject',
+      contentUrl: w.photoUrl,
+      url: w.photoUrl,
+      name: `${material.title}を塗った作品`,
+      description: w.comment,
+      uploadDate: new Date(w.createdAt).toISOString(),
+      creditText: w.childAge,
+      acquireLicensePage: `https://nurie-print.com/materials/${material.id}`,
+    })),
+  } : null
+
   // パンくず: ホーム > 教材一覧 > [テーマ] > 素材名
   const themeLabel = material.theme ? THEME_LABELS[material.theme] : null
   const themeUrl = material.theme ? `https://nurie-print.com/category/theme/${material.theme}` : null
@@ -118,6 +133,9 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {worksJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(worksJsonLd) }} />
+      )}
       {/* ===== 印刷専用エリア（画面では非表示・横A4・画像のみ・モノクロ） ===== */}
       <style>{`
         @page { size: A4 landscape; margin: 0; }

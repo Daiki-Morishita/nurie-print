@@ -7,7 +7,10 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { requireAdmin } from '@/lib/admin-auth'
 import { uploadGalleryPhoto } from '@/lib/gallery-storage'
+import { getMaterialById } from '@/lib/data'
 import { revalidatePath } from 'next/cache'
+
+const MAX_PHOTO_BYTES = 15 * 1024 * 1024 // 15MB (スマホ写真の上限ライン)
 
 export async function GET() {
   const denied = await requireAdmin()
@@ -32,11 +35,32 @@ export async function POST(request: Request) {
     const comment = (form.get('comment') as string | null)?.trim()
     const durationRaw = form.get('duration') as string | null
     const tools = (form.get('tools') as string | null)?.trim() || null
-    const videoUrl = (form.get('videoUrl') as string | null)?.trim() || null
 
     if (!photo || !materialId || !childAge || !comment) {
       return NextResponse.json(
         { error: '必須項目が不足しています（photo, materialId, childAge, comment）' },
+        { status: 400 },
+      )
+    }
+
+    // material 実在チェック（typo検知）
+    if (!getMaterialById(materialId)) {
+      return NextResponse.json(
+        { error: `素材ID「${materialId}」は存在しません` },
+        { status: 400 },
+      )
+    }
+
+    // 画像MIMEチェック
+    if (!photo.type.startsWith('image/')) {
+      return NextResponse.json(
+        { error: `画像ファイルを選択してください (現在: ${photo.type || '不明'})` },
+        { status: 400 },
+      )
+    }
+    if (photo.size > MAX_PHOTO_BYTES) {
+      return NextResponse.json(
+        { error: `写真サイズが大きすぎます (上限 ${MAX_PHOTO_BYTES / 1024 / 1024}MB)` },
         { status: 400 },
       )
     }
@@ -57,7 +81,6 @@ export async function POST(request: Request) {
         comment,
         duration,
         tools,
-        videoUrl,
       },
     })
 
