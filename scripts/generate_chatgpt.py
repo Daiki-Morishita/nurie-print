@@ -92,6 +92,10 @@ try:
     from themes_sea import SEA_ITEMS
 except ImportError:
     SEA_ITEMS = {}
+try:
+    from themes_vehicles import VEHICLES_ITEMS
+except ImportError:
+    VEHICLES_ITEMS = {}
 
 # =============================================
 # 設定
@@ -4722,7 +4726,7 @@ def main():
         help="Chrome CDP URL（例: http://localhost:9222）。指定時は launch_persistent_context の代わりに使用")
     parser.add_argument("--type",    default=None,
         choices=["park", "dinosaurs", "fruits", "vegetables", "insects", "sports", "yokai",
-                 "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets", "animals", "nature", "seikatsu",
+                 "spring", "flowers", "summer", "autumn", "winter", "gotochi", "sweets", "animals", "nature", "seikatsu", "sea",
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece",
