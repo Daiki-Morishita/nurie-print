@@ -11,6 +11,8 @@ import { PrintButton } from '@/components/materials/PrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
+import { RelatedPosts } from '@/components/materials/RelatedPosts'
+import { getPublishedPostsForMaterial } from '@/lib/posts'
 
 export async function generateStaticParams() {
   return materials.map(m => ({ id: m.id }))
@@ -31,11 +33,24 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: `${material.title}｜${ageLabel}向け無料プリント`,
     description: seoDesc,
     alternates: { canonical: `https://nurie-print.com/materials/${id}` },
+    // featured 素材のみインデックス対象（200字以上の独自解説文を備えた人気上位50件）
+    // それ以外は AdSense審査・scaled content 対策で一時noindex
+    robots: material.featured
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title: material.title,
       description: seoDesc,
       type: 'article',
-      ...(material.imageUrl ? { images: [{ url: material.imageUrl, alt: material.title }] } : {}),
+      publishedTime: material.createdAt,
+      authors: ['ぬりえプリント編集部'],
+      ...(material.imageUrl ? { images: [{ url: material.imageUrl, width: 1200, height: 848, alt: material.title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: material.title,
+      description: seoDesc,
+      ...(material.imageUrl ? { images: [material.imageUrl] } : {}),
     },
   }
 }
@@ -60,6 +75,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
   const nextMaterial = idx >= 0 && idx < materials.length - 1 ? materials[idx + 1] : null
 
   const related = getRelatedMaterials(material, 4, overrides)
+  const relatedPosts = await getPublishedPostsForMaterial(material.id, 5)
   const ageLabel = material.ageMin === material.ageMax
     ? `${material.ageMin}歳`
     : `${material.ageMin}〜${material.ageMax}歳`
@@ -91,6 +107,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://nurie-print.com/materials/${material.id}` },
     ...(material.imageUrl ? { image: material.imageUrl.startsWith('http') ? material.imageUrl : `https://nurie-print.com${material.imageUrl}` } : {}),
   }
+
 
   // パンくず: ホーム > 教材一覧 > [テーマ] > 素材名
   const themeLabel = material.theme ? THEME_LABELS[material.theme] : null
@@ -238,7 +255,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             {/* タイトル */}
             <div className="font-rounded font-bold text-[12px] text-primary mb-1 tracking-[0.1em]">— Material —</div>
             <div className="mb-3">
-              <h1 className="font-rounded text-[26px] sm:text-[32px] font-black leading-[1.3]">{material.title}</h1>
+              <h1 className="text-material-title-lg leading-[1.3]">{material.title}</h1>
             </div>
             <p className="text-[14px] text-foreground/85 mb-4 leading-relaxed pl-4 border-l-[3px] border-primary">{material.description}</p>
 
@@ -246,9 +263,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
               <PrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
-              <p className="text-[11px] text-muted-foreground text-center pt-1">
-                A4横長・白黒印刷に最適化されています
-              </p>
+              <div className="text-center pt-1">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
             </div>
 
             {/* タグ — クリックで検索 */}
@@ -280,21 +299,36 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               )}
             </div>
 
-            {/* 解説テキスト */}
+            {/* 解説テキスト — 冒頭は素材固有の説明文（seoDescription 優先、無ければ description）でユニーク性を確保 */}
             <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
               <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
-              <p>
-                「{material.title}」は、{ageLabel}のお子様向けに作られた{CATEGORY_LABELS[material.category]}プリントです。
-                {DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分で、
-                ご家庭でのおうち時間や保育園・幼稚園での自由遊び、設定保育の教材としてお使いいただけます。
+              <p className="text-[15px] text-foreground font-medium leading-relaxed whitespace-pre-line">
+                {material.seoDescription || material.description}
               </p>
-              <p>
-                {material.description}
-                線画はA4横長・白黒印刷に最適化されており、家庭用プリンタでそのまま印刷してすぐご利用いただけます。
+              <p className="text-muted-foreground">
+                {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
                 {material.tools.length > 0 && (
                   <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
                 )}
               </p>
+              {material.about?.featureDescription && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">この絵の特徴</h3>
+                  <p>{material.about.featureDescription}</p>
+                </>
+              )}
+              {material.about?.colorIdeas && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">色のアイデア</h3>
+                  <p>{material.about.colorIdeas}</p>
+                </>
+              )}
+              {material.about?.coloringTips && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">塗り方のワンポイント</h3>
+                  <p>{material.about.coloringTips}</p>
+                </>
+              )}
               {material.theme && THEME_INSIGHT[material.theme] && (
                 <>
                   <h3 className="font-rounded text-[14px] font-bold pt-2">「{THEME_LABELS[material.theme]}」テーマで育てる力</h3>
@@ -303,12 +337,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               )}
               <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
               <p>{DIFFICULTY_TIPS[material.difficulty]}</p>
-              <h3 className="font-rounded text-[14px] font-bold pt-2">活用シーン</h3>
+              <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
               <p>
-                ぬりえは手先の発達・色彩感覚・集中力を育てる大切な遊びです。
-                完成した作品はお部屋に飾ったり、季節の制作物として活用したり、お子様の成長記録としてアルバムに残すのもおすすめです。
-                保育園・幼稚園では雨の日の自由遊び、設定保育の導入、誕生日カードの素材としても活用できます。
-                同じ題材でも年齢や難易度に応じて構図を変えて練習できるため、繰り返しの活動にもご活用ください。
+                完成したぬりえは、お部屋に飾ったり、季節のカード作りに活用したり、
+                お子さまの成長記録としてアルバムに残すのもおすすめです。
+                同じ題材でも年齢や難易度を変えて繰り返し楽しめるので、お気に入りの一枚を見つけてみてください。
               </p>
             </div>
 
@@ -341,9 +374,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                 <PrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               </div>
-              <p className="text-xs text-muted-foreground mt-3 text-center">
-                A4横長・白黒印刷に最適化されています
-              </p>
+              <div className="text-center mt-3">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
             </div>
 
             {/* 教材情報 */}
@@ -369,6 +404,9 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </Link>
           </div>
         </div>
+
+        {/* この塗り絵を使った記事への逆リンク (0件なら自動非表示) */}
+        <RelatedPosts posts={relatedPosts} materialTitle={material.title} />
 
         {/* 広告 */}
         <AdBanner

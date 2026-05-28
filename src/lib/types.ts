@@ -157,7 +157,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   park: '公園・遊具',
   sports: 'スポーツ',
   yokai: '妖怪',
-  'seasonal-events': '季節の行事',
+  'seasonal-events': '季節',
   spring: '春',
   summer: '夏',
   autumn: '秋',
@@ -223,13 +223,15 @@ export const EVENT_LABELS: Record<string, string> = {
  * approved       : レビュー済み・本番使用OK
  * needs_revision : 要修正（差し替え待ち）
  */
-export type ImageStatus = 'placeholder' | 'pending_review' | 'approved' | 'needs_revision'
+export type ImageStatus = 'placeholder' | 'pending_review' | 'approved' | 'needs_revision' | 'duplicate' | 'broken'
 
 export const IMAGE_STATUS_LABELS: Record<ImageStatus, string> = {
   placeholder:    'SVGのみ',
   pending_review: 'レビュー待ち',
   approved:       '承認済み',
   needs_revision: '要修正',
+  duplicate:      '重複（非表示）',
+  broken:         '画像なし',
 }
 
 export const IMAGE_STATUS_COLOR: Record<ImageStatus, string> = {
@@ -237,6 +239,8 @@ export const IMAGE_STATUS_COLOR: Record<ImageStatus, string> = {
   pending_review: 'bg-yellow-100 text-yellow-700',
   approved:       'bg-green-100 text-green-700',
   needs_revision: 'bg-red-100 text-red-700',
+  duplicate:      'bg-orange-100 text-orange-700',
+  broken:         'bg-red-200 text-red-900',
 }
 
 // ========== 教材 ==========
@@ -275,6 +279,24 @@ export type Material = {
   imageStatus?: ImageStatus
   /** レビューメモ（修正指示や承認コメントなど） */
   illustNotes?: string
+
+  /** Featured 素材: noindex 戦略の whitelist。true の素材だけインデックス対象、sitemapにも掲載 */
+  featured?: boolean
+  /** Featured 素材専用の独自解説文（200字以上推奨）。素材ページに表示 */
+  seoDescription?: string
+
+  /** 素材ページ「この教材について」セクション内の個別解説（AI生成で別途投入する想定） */
+  about?: MaterialAbout
+}
+
+/** 素材ごとに個別の解説3要素を持つための構造。値が無いブロックは UI で非表示。 */
+export type MaterialAbout = {
+  /** 「この絵の特徴」80字程度（絵柄を踏まえた個別解説） */
+  featureDescription?: string
+  /** 「色のアイデア」具体的な色名と部位 */
+  colorIdeas?: string
+  /** 「塗り方ワンポイント」実用Tips */
+  coloringTips?: string
 }
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {

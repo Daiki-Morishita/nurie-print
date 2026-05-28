@@ -8,7 +8,7 @@
 ## 環境セットアップ（初回のみ）
 
 ```bash
-git clone https://github.com/Daiki-Morishita/hoiku-print.git
+git clone https://github.com/Daiki-Morishita/nurie-print.git
 cd hoiku-print
 pip install playwright supabase pillow numpy
 playwright install chromium

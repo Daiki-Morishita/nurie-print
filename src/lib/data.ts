@@ -13,8 +13,10 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でくまさんを塗ってオリジナルのぬいぐるみを作ろう', '塗ったあとに名前をつけて発表ごっこをしよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'リボンを首に結んだくまさんが、ニッコリ笑顔で片手を挙げているようす。肉球がたっぷり描かれたふっくらした足で座っているくまさんの、バランスの取れた丸い体と立ったような耳の形も塗るときに目につきます。リボンはくまさんの体とは違う色で塗ると、より一層かわいらしく引き立つポイントになります。',
+    popular: true, featured: true,
   },
+
   {
     id: 'bear-easy-1',
     title: 'くまさんとはちみつ',
@@ -25,8 +27,10 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['茶色や黄色を使ってくまさんとはちみつを塗ってみよう', '塗り終わったら「くまさんは何を食べているのかな?」とお話を広げよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふわふわの丸い体をしたくまさんが、両足の肉球をしっかり見せて座っています。目の前には「HONEY」と書かれた蜜がいっぱい詰まった壺があり、上からはみつばちがくるくる飛びながら近づいてきています。くまさんのほほえみ顔と蜜の壺の茶色、そしてはちみつ色に染まるはちみつ色のグラデーション、みつばちの黄色と黒の縞模様など、色をいろいろ試してみたくなる場面です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bear-normal-1',
     title: 'くまさんのピクニック',
@@ -40,6 +44,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-normal-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-normal-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'bear-rich-1',
     title: 'くまさんたちの公園あそび',
@@ -53,6 +58,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-rich-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-rich-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'cat-simple',
     title: 'リボンをつけたねこちゃん',
@@ -63,8 +69,10 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でねこちゃんを自由に塗ってみよう', 'リボンの色を考えて塗り、おしゃれなねこちゃんを作ろう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: '両手をふわりと上げて、胸元の大きなリボンをさらに引き立てているねこちゃん。丸くて愛らしい顔には笑顔が満面で、ぱっちりした目と小さな鼻が優しい印象です。縞模様の尾がくるんと後ろに見えて、白い体全体にたっぷりと色を塗る喜びを感じられます。リボンの結び目や肉球、ひげの線まで丁寧に描かれているので、細かい部分を塗り分ける楽しさも広がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cat-easy',
     title: 'ねこときんぎょばち',
@@ -75,8 +83,10 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['ねこの毛色を自由に塗って、自分だけのねこを作ろう', 'きんぎょばちの水を青く塗って、お魚さんの色も考えてみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'リボンをつけたかわいい猫が、ニッコリ笑顔で金魚鉢をのぞいています。鉢の中には砂利や水草に囲まれて泳ぐ小さな金魚が一匹、ぷくぷくと泡を出しながら浮かんでいます。猫の丸い瞳と頬の可愛らしいしるしが印象的で、金魚鉢は丸みのある優しい曲線で描かれているため、オレンジと青、黄色などで塗り分けると二つの存在がより引き立つでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cat-normal',
     title: 'ねこちゃんとおさかなとミルク',
@@ -89,6 +99,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-normal-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-normal-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'cat-rich',
     title: 'ねこたちの公園あそび',
@@ -102,6 +113,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-rich-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-rich-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'dog-simple',
     title: 'おすわりかわいいこいぬ',
@@ -115,8 +127,10 @@ const _materials1: Material[] = [
       '首輪を好きな色にカラフルに塗って自分だけの子犬を作ろう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'おすわりして舌を出す笑顔の子犬。立てた両耳と、首輪についた小さな鈴が特徴です。前足の肉球や、ふさふさとした後ろ足の毛並みは、クレヨンで何度も塗ると温かみが出ます。シンプルな輪郭だからこそ、色選びが子犬の表情をぐんと引き出す一枚です。',
+    popular: true, featured: true,
   },
+
   {
     id: 'dog-normal',
     title: 'いぬとおうち',
@@ -133,6 +147,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-normal-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-normal-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'dog-rich',
     title: 'わんちゃんいっぱい！たのしいこうえん',
@@ -148,6 +163,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-rich-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-rich-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'rabbit-simple-1',
     title: 'かわいいうさぎさん',
@@ -161,8 +177,10 @@ const _materials1: Material[] = [
       'ピンクや白などお気に入りの色でうさぎさんを自由に塗ってみよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふんわりした耳をぴんと立てた、笑顔のうさぎさんです。両手を胸の前で合わせたポーズがかわいらしく、肉球がはっきり描かれた足の裏には塗り方の工夫を試したくなります。顔の両側の頬のまるみや、口元の優しい表情をどんな色で表現するかで、このうさぎさんの印象がぐっと変わる仕上がりになるでしょう。',
+    popular: true, featured: true,
   },
+
   {
     id: 'rabbit-easy-1',
     title: 'うさぎとにんじんとイースターバスケット',
@@ -177,8 +195,10 @@ const _materials1: Material[] = [
       'イースターエッグに好きな模様を描き足してデコレーションしよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふわふわの耳としっぽが特徴のうさぎが、両手でオレンジ色のにんじんをしっかり握りしめて、嬉しそうに笑っています。右側には編み目模様のかごが描かれていて、ふたの上には水玉模様のイースターエッグが見えます。うさぎの丸い足裏の肉球や、かごの編み目の細かい線をどの色で塗るか考えるのが楽しい一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rabbit-normal-1',
     title: 'にんじんを持つうさぎとイースター',
@@ -195,6 +215,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-normal-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-normal-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'rabbit-rich-1',
     title: 'うさぎたちの楽しい公園あそび',
@@ -211,6 +232,7 @@ const _materials1: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-rich-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-rich-illust.png',
     illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false,
   },
+
   {
     id: 'elephant-rich-1',
     title: 'ぞうさんたちのたのしいもりあそび',
@@ -238,6 +260,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-08',
     popular: false,
   },
+
   {
     id: 'elephant-normal-1',
     title: 'きのしたのぞうさんとちょうちょ',
@@ -265,6 +288,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-08',
     popular: false,
   },
+
   {
     id: 'elephant-easy-1',
     title: 'ぞうさんとおはなのぬりえ',
@@ -289,8 +313,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
-    popular: false,
+    seoDescription: 'にっこり笑顔のぞうさんが、長い鼻を高くあげて花をつかもうとしています。片方の前足は優しくあげ、もう片方は地面に、その隣には5枚の花びらが可愛らしく並んだお花が待っています。ぞうさんの耳の大きなカーブや、足の肉球の描き方など、細かいディテールを塗り分ける楽しさが詰まった一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'elephant-simple-1',
     title: 'てをふるかわいいこぞうさん',
@@ -315,8 +341,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
-    popular: true,
+    seoDescription: '手を上げてにっこり笑うかわいいこぞうさん。大きな耳と長い鼻、そして小さな尾っぽが、象らしさを引き出しています。ぽっちゃりした体や四本の足など、丸みのあるフォルムがいっぱいあるので、同じ色でも塗る場所によって象の形がどう見えるか楽しめます。',
+    popular: true, featured: true,
   },
+
   {
     id: 'giraffe-rich-1',
     title: 'きりんのおやこと小鳥とおひさま',
@@ -343,6 +371,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'giraffe-normal-1',
     title: 'きりんとおはなとしろいくも',
@@ -369,6 +398,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'giraffe-easy-1',
     title: 'あかちゃんキリンのぬりえ',
@@ -393,8 +423,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    seoDescription: '長いお首を立てたあかちゃんキリンが、横に置かれた葉っぱを見つめています。頭の上の三本のツノと、からだ全体に広がる水玉模様が塗りがいのあるポイント。四本の足がしっかりと地面に着いた安定した姿勢から、これからお母さんキリンについていく様子が伝わってきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'giraffe-simple-1',
     title: 'もようがたくさんきりんさん',
@@ -419,8 +451,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    seoDescription: '長い首をすっと伸ばして、元気よく歩むきりんさん。頭の上にはひょこひょこと立った2本の角と、耳の上には丸いもようがついています。体いっぱいに散らばった大きな円形のもようは、色ごとに塗り分けるのが楽しく、きりんさんの個性が引き立つポイントになります。太い足と短いしっぽ、にっこり笑った顔もはっきり描かれていて、塗り始めたらすぐにきりんさんの表情が生き生きと浮かび上がるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lion-rich-1',
     title: 'ライオンかぞくのぬりえ',
@@ -447,6 +481,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'lion-normal-1',
     title: 'ライオンとおはなとおひさまのひ',
@@ -473,6 +508,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'lion-easy-1',
     title: 'ライオンとおはなのぬりえ',
@@ -497,8 +533,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    seoDescription: 'ふわふわのたてがみに包まれた、にっこり笑顔のライオンが右前足を上げて、まるで「やあ」と挨拶しているようなポーズです。左奥には細い茎の小さなお花が寄り添い、ライオンの大きなからだとの大きさの違いが楽しく表現されています。顔の輪郭に沿ったたてがみの波線や、肉球が見える前足、ひげの曲線など、細かい部分が多くて、どこからどんな色を塗ろうか迷ってしまうほど塗りがいのある一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lion-simple-1',
     title: 'たてがみふさふさらいおんさん',
@@ -523,8 +561,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: true,
+    seoDescription: 'ふさふさのたてがみに包まれた、つぶらな瞳のライオンが正面を向いてこちらを見つめています。口元は優しい笑顔で、ひげもくっきり描かれているので、黒く塗るとより表情が生き生きします。立派なたてがみは花びらのような波線が何重にも重なっていて、茶色やオレンジ、黄色などで段階的に塗り分けると、ボリュームが一層引き立ちます。四本足はしっかりと地面に着いた安定した姿勢で、右側に立てた小さなしっぽまで、塗りどころが満載です。',
+    popular: true, featured: true,
   },
+
   {
     id: 'panda-rich-1',
     title: 'パンダのかぞくのぬりえ',
@@ -551,6 +591,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'panda-normal-1',
     title: 'てをふるパンダと笹とおはな',
@@ -577,6 +618,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-09',
     popular: false,
   },
+
   {
     id: 'panda-easy-1',
     title: '笹のそばにすわるかわいいパンダ',
@@ -601,8 +643,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: false,
+    seoDescription: '笹の前に座ってこちらに手を振るパンダは、丸くて大きな目とにっこり笑った口がとても愛らしく、左手を高く上げたポーズが元気いっぱいです。背後にはセグメント状に描かれた竹が立ち、葉っぱの細かな線は塗り分ける楽しさが詰まっています。丸みを帯びた体と足の円形は、濃い色でしっかり塗るとぐっと立体的になる部分で、パンダならではの白と黒のコントラストを思い出しながら色選びができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'panda-simple-1',
     title: 'てをふってえがおのパンダさん',
@@ -627,8 +671,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
-    popular: true,
+    seoDescription: '手を上げてにこにこ笑うパンダが、ころんとした体で立っています。丸い耳、くりくりの目、小さな鼻と口のやさしい顔立ちは、黒で縁取られた白い部分がたくさんあるので、クレヨンやマーカーで塗り分けるのが楽しい構図です。足の裏のぷっくりした肉球や、側面に描かれた丸みのあるお腹の線も、色を変えて塗ると動きのあるパンダに見えてきます。',
+    popular: true, featured: true,
   },
+
   {
     id: 'penguin-rich-1',
     title: '氷の上であそぶ3びきのペンギン',
@@ -656,6 +702,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'penguin-normal-1',
     title: 'ゆきとおさかなとごあいさつするペンギン',
@@ -683,6 +730,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'penguin-easy-1',
     title: 'ゆきのけっしょうにてをふるペンギン',
@@ -708,8 +756,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: 'つぶらな瞳と満面の笑顔のペンギンが、片足を上げてジャンプするように立っています。ふわふわの丸いおなかに色を塗ると、冬のぽっちゃりペンギンらしさが引き立ちます。右上に浮かぶ結晶模様の雪の結晶は、冷たい青や白で彩色すると、ペンギンがいる季節の世界がぐっと広がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'penguin-simple-1',
     title: 'てをふってあいさつするペンギン',
@@ -735,8 +785,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '手を大きく振ってにこにこ笑うペンギンが、元気よく歩いてきます。ぽてぽてとした足と、広げた翼のユーモラスなポーズが目を引き、どこかおどけた雰囲気。顔の中心に集まった目と口には濃い色を入れると表情がぐっと引き立ち、白く大きなお腹のエリアにはどんな色を選ぶか迷ってしまいそう。丸みのある全身の輪郭線は色からはみ出す心配も少なく、塗りやすい優しい設計になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sheep-rich-1',
     title: 'おはなばたけであそぶ5ひきのひつじ',
@@ -764,6 +816,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'sheep-normal-1',
     title: 'おはなばたけをジャンプするひつじさん',
@@ -791,6 +844,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'sheep-easy-1',
     title: 'おはなの横でジャンプするひつじさん',
@@ -816,8 +870,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: 'ふわふわの毛並みをもったひつじさんが、元気よくジャンプしている様子が描かれています。横には小ぶりなお花が咲いていて、ひつじさんの楽しそうな表情と一緒に春の雰囲気が伝わってきます。足元の蹄や耳の部分、そしてもこもことした体全体と、塗る場所がたくさんあるので、色選びを工夫するのが面白くなりそうです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sheep-simple-1',
     title: 'ぴょんとジャンプするひつじさん',
@@ -841,8 +897,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: 'ふわふわの毛並みが全身を包むひつじが、片足を高く上げてぴょんとジャンプしている瞬間です。丸い瞳と開いた口から、楽しさいっぱいの表情が伝わってきます。耳の形や足の先端、首元のリボンのような模様など、細かい部分を丁寧に塗り分けると、より一層ふんわりとした愛らしさが引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pig-rich-1',
     title: 'ぼくじょうであそぶこぶたたち',
@@ -869,6 +927,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'pig-normal-1',
     title: 'みずたまりでジャンプするこぶたとちょうちょ',
@@ -896,6 +955,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'pig-easy-1',
     title: 'おはなにむかってかけるこぶた',
@@ -920,8 +980,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '花に向かって元気よく走るピンク色のこぶた。くるんと巻いた尻尾と、前に出した足のポーズから、今にも花に飛び込みそうな勢いが伝わります。目を細めた笑顔と大きく開いた口で、花との再会を喜ぶ表情がはっきり見えます。右側に立つ花は丸くまあるい花びらが五つ、真ん中にぽっこりとした黄色い部分があり、緑の茎と葉を塗り分けると、こぶたの走る先がぐんと明るく輝きます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pig-simple-1',
     title: 'おててをふってあるくこぶたさん',
@@ -946,8 +1008,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '左手を高くあげて、元気よく歩いているこぶたさん。つぶらな瞳と、にっこり笑った口元からは喜びがいっぱい伝わってきます。ぽっちゃりした体と、くるんと巻いた尻尾、立派な鼻も塗るときによく目に入るポイント。シンプルで厚みのある線で描かれているから、はじめてのぬりえでも色が塗りやすく、ピンク一色でもいいし、お気に入りの色で自由に塗ってみたくなります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'frog-rich-1',
     title: 'にじのいけでジャンプするカエルたち',
@@ -975,6 +1039,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'frog-normal-1',
     title: 'はっぱのかさをさすカエルとちょうちょとはす',
@@ -1002,6 +1067,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'frog-easy-1',
     title: 'はすのはにのるにこにこかえるさん',
@@ -1029,6 +1095,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'frog-simple-1',
     title: 'てをふるにこにこかえるさん',
@@ -1053,8 +1120,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '手を元気よく振り上げ、大きく口を開けて笑顔を見せるかえるさん。丸くぽっこりしたお腹と、頬のくぼみを表す円形のパーツが愛らしく、色を塗るときに立体感が生まれる場所です。つぶらな瞳には光が入っており、黒と白のコントラストで目に表情が宿ります。四本足のかえるらしい足の形も個性的で、どんな色を選ぶかで印象が大きく変わるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'monkey-rich-1',
     title: 'ジャングルでバナナをたべるおさるさんたち',
@@ -1081,6 +1150,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'monkey-normal-1',
     title: 'バナナとボールであそぶこざるさん',
@@ -1107,6 +1177,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'monkey-easy-1',
     title: 'バナナにてをのばすおさるさん',
@@ -1133,6 +1204,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'monkey-simple-1',
     title: 'おててをふるこざるさん',
@@ -1156,8 +1228,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '手を元気よく挙げてウェーイと笑顔で挨拶するこざる。くるんとカールした長い尻尾と、ぴょんと立った耳の先まで、全身が喜びで満ちあふれています。大きなお目目と鼻のまんまるシンプルな顔は、どんな色を選んでも優しく仕上がりそう。茶色や黄色、オレンジなど、複数の色を試したくなる毛並みの流れが随所に待っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'chick-rich-1',
     title: 'おひさまの下であそぶひよこたち',
@@ -1185,6 +1259,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'chick-normal-1',
     title: 'たまごからうまれたひよことちょうちょ',
@@ -1212,6 +1287,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'chick-easy-1',
     title: 'たまごからうまれたひよこ',
@@ -1238,6 +1314,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'chick-simple-1',
     title: 'あんよをあげておどるひよこ',
@@ -1263,8 +1340,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '足を高くあげて、今にも踊りだしそうなひよこ。パッチリとした目と、開いた口からは楽しさがあふれでています。左右に広げた羽、細い足の指まで、ぜんぶ動きのある形をしているので、黄色や橙色を塗るときに、どこをどう塗ると元気さが引き立つか考えながら色を選びたくなる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fox-rich-1',
     title: 'もりであそぶこぎつねたち',
@@ -1291,6 +1370,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'fox-normal-1',
     title: 'きのこと落ち葉とこぎつね',
@@ -1318,6 +1398,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'fox-easy-1',
     title: 'きのこをみつけたこぎつね',
@@ -1345,6 +1426,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'fox-simple-1',
     title: 'ふわふわしっぽのこぎつね',
@@ -1369,8 +1451,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: 'ふわふわの大きなしっぽが特徴のこぎつね。目をすっと閉じた優しい表情と、くの字に曲がった口元から、とても機嫌のいい様子が伝わってきます。胸元のふんわりとした毛並みと、後ろに流れるボリュームのあるしっぽは、濃淡をつけるとより立体感が出ます。小ぶりな足をちょこんと揃えた姿勢が、全体のかわいらしさを引き立てます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'raccoon-simple-1',
     title: 'てをふるたぬき',
@@ -1394,8 +1478,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '手をふりふり笑顔で挨拶するタヌキ。ころんとした体と、ふわふわの大きなしっぽ、肉球がいっぱい描かれた足の裏など、かわいらしい細部がいっぱい。目や口の黒い部分と、耳や顔周りの白い部分のコントラストで、どんな色を選んでも表情がしっかり生きる設計になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'raccoon-easy-1',
     title: 'どんぐりをもつたぬき',
@@ -1421,6 +1507,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'raccoon-normal-1',
     title: 'きのこときのはとたぬき',
@@ -1448,6 +1535,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'raccoon-rich-1',
     title: 'もりのたぬきたちのしゅうかく',
@@ -1475,6 +1563,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'squirrel-simple-1',
     title: 'てをふるりす',
@@ -1498,8 +1587,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: '両手でどんぐりをしっかり握りしめて、にこにこ笑っているリス。ふわふわの大きな尾や立った耳、足もとに落ちているどんぐりとキノコなど、秋の森の様子が詰まっています。リスの毛並みと尾の部分では濃淡をつけると立体的に見えますし、どんぐりとキノコには茶色と赤など色を分けて塗る楽しみもあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'squirrel-easy-1',
     title: 'どんぐりをかかえるりす',
@@ -1525,6 +1616,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'squirrel-normal-1',
     title: 'どんぐりときのことはっぱのりす',
@@ -1552,6 +1644,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'squirrel-rich-1',
     title: 'もりのりすたちのどんぐりあつめ',
@@ -1579,6 +1672,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'turtle-simple-1',
     title: 'にっこりかめさん',
@@ -1602,8 +1696,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
-    popular: false,
+    seoDescription: 'にっこり笑顔でこちらを見つめるかめさんは、立派な甲羅を背負っていかにも幸せそう。丸くて大きな瞳と、元気よく開いたお口が、この子のご機嫌な様子を教えてくれます。甲羅の六角形のパターンはぬり分けるのが楽しいし、短い足の爪もていねいに塗ると、かめさんがもっともっと愛らしく見えるはずです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'turtle-easy-1',
     title: 'およぐかめとヒトデ',
@@ -1629,6 +1725,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'turtle-normal-1',
     title: 'かいそうとかいがらとヒトデのかめ',
@@ -1655,9 +1752,10 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'turtle-rich-1',
-    title: 'うみのなかのかめたちのせかい',
+    title: 'うみのなかのかめたち',
     description: '海の中で4匹のかめが泳ぎまわるにぎやかなぬりえ。島・サンゴ・ヒトデも登場。4〜6歳向け。',
     ageMin: 4,
     ageMax: 6,
@@ -1681,6 +1779,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-10',
     popular: false,
   },
+
   {
     id: 'hamster-simple-1',
     title: 'まんまるハムスター',
@@ -1704,8 +1803,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
-    popular: false,
+    seoDescription: 'まんまるな体がかわいいハムスター。大きな目をぱっちり開いて、小さな前足を胸の前でそろえています。頬のひげをピンと張った表情は、何かおいしいものを見つけたときのハムスターそのもの。ほっぺたから体にかけての丸みを活かした塗り分けが楽しく、前足の小さな肉球や足裏の細かい線も、色を入れるたびにハムスターが生き生きしていくのを感じられます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hamster-easy-1',
     title: 'ホイールをはしるハムスター',
@@ -1731,6 +1832,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hamster-normal-1',
     title: 'たねとどんぐりとおうちのハムスター',
@@ -1757,6 +1859,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hamster-rich-1',
     title: 'ハムスターたちのにぎやかなへや',
@@ -1783,6 +1886,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'bird-simple-1',
     title: 'にっこりことり',
@@ -1806,8 +1910,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
-    popular: false,
+    seoDescription: 'ふっくらとした体に小さなくちばしをもつ、笑顔のひよこ。つぶらな黒い瞳がキュートで、頭のてっぺんにはふわふわの毛束がぴょんと立っています。両脇に生えた翼と、足元に描かれた小さな爪をじっくり見ながら色を塗ると、全身がきいろに輝く小鳥の姿が浮かび上がってきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bird-easy-1',
     title: 'えだにとまることり',
@@ -1833,6 +1939,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'bird-normal-1',
     title: 'すとはなとことり',
@@ -1859,6 +1966,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'bird-rich-1',
     title: 'きのうえでうたうことりたち',
@@ -1885,6 +1993,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'boar-simple-1',
     title: 'にっこりいのしし',
@@ -1910,6 +2019,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'boar-easy-1',
     title: 'どんぐりをかじるいのしし',
@@ -1936,6 +2046,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'boar-normal-1',
     title: 'どんぐりときのことはっぱのいのしし',
@@ -1963,6 +2074,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'boar-rich-1',
     title: 'もりをはしるいのししおやこ',
@@ -1990,6 +2102,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'horse-simple-1',
     title: 'にっこりこうま',
@@ -2015,6 +2128,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'horse-easy-1',
     title: 'はなばたけのこうま',
@@ -2040,6 +2154,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'horse-normal-1',
     title: 'ちょうちょとはなとこうま',
@@ -2066,6 +2181,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'horse-rich-1',
     title: 'おやこのこうまがはなばたけをかける',
@@ -2092,6 +2208,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'koala-simple-1',
     title: 'てをふるこあら',
@@ -2117,6 +2234,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'koala-easy-1',
     title: 'えだでねむるこあら',
@@ -2142,6 +2260,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'koala-normal-1',
     title: 'ユーカリのはなとこあら',
@@ -2168,6 +2287,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'koala-rich-1',
     title: 'ユーカリのきでだっこするおやこあら',
@@ -2194,6 +2314,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'whale-simple-1',
     title: 'かわいいくじらさん',
@@ -2214,6 +2335,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'whale-easy-1',
     title: 'しおふきくじらさん',
@@ -2234,6 +2356,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'whale-normal-1',
     title: 'うみのなかのくじらさん',
@@ -2254,6 +2377,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'whale-rich-1',
     title: 'くじらのおやこと海の仲間たち',
@@ -2274,6 +2398,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'deer-simple-1',
     title: 'かわいいしかさん',
@@ -2294,6 +2419,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'deer-easy-1',
     title: 'くさをたべるしかさん',
@@ -2314,6 +2440,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'deer-normal-1',
     title: 'もりのしかさんとことり',
@@ -2334,6 +2461,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'deer-rich-1',
     title: 'しかのおやこと川の風景',
@@ -2354,6 +2482,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hippo-simple-1',
     title: 'かわいいかばさん',
@@ -2374,6 +2503,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hippo-easy-1',
     title: 'みずべのかばさん',
@@ -2394,6 +2524,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hippo-normal-1',
     title: 'かわのかばさんと魚たち',
@@ -2414,6 +2545,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hippo-rich-1',
     title: 'かばのおやこと川あそび',
@@ -2434,6 +2566,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'flamingo-simple-1',
     title: 'かわいいフラミンゴさん',
@@ -2454,6 +2587,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'flamingo-easy-1',
     title: 'みずべのフラミンゴさん',
@@ -2474,6 +2608,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'flamingo-normal-1',
     title: 'なかよしフラミンゴ',
@@ -2494,6 +2629,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'flamingo-rich-1',
     title: 'フラミンゴたちの湖',
@@ -2514,6 +2650,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'tiger-simple-1',
     title: 'かわいいとらさん',
@@ -2534,6 +2671,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'tiger-easy-1',
     title: 'お花畑のとらさん',
@@ -2554,6 +2692,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'tiger-normal-1',
     title: 'ジャングルのとらさん',
@@ -2574,6 +2713,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'tiger-rich-1',
     title: 'とらさんのいる風景',
@@ -2594,6 +2734,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'wolf-simple-1',
     title: 'かわいいおおかみさん',
@@ -2614,6 +2755,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'wolf-easy-1',
     title: 'とおぼえするおおかみさん',
@@ -2634,6 +2776,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'wolf-normal-1',
     title: 'もりをあるくおおかみさん',
@@ -2654,6 +2797,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'wolf-rich-1',
     title: 'おおかみのおやこと星空',
@@ -2674,6 +2818,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'dolphin-simple-1',
     title: 'かわいいイルカ',
@@ -2694,6 +2839,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: true,
   },
+
   {
     id: 'dolphin-easy-1',
     title: 'イルカのジャンプ',
@@ -2714,6 +2860,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'dolphin-normal-1',
     title: 'イルカと魚のなかまたち',
@@ -2734,6 +2881,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'dolphin-rich-1',
     title: 'イルカたちのにじいろサンセット',
@@ -2754,6 +2902,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'seal-simple-1',
     title: 'かわいいアザラシ',
@@ -2774,6 +2923,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'seal-easy-1',
     title: 'アザラシと氷のうえ',
@@ -2794,6 +2944,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'seal-normal-1',
     title: 'アザラシの親子',
@@ -2814,6 +2965,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'seal-rich-1',
     title: 'アザラシと海のなかまたち',
@@ -2834,6 +2986,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'otter-simple-1',
     title: 'かわいいラッコ',
@@ -2854,6 +3007,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'otter-easy-1',
     title: 'ラッコと貝がら',
@@ -2874,6 +3028,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'otter-normal-1',
     title: 'ラッコのてつなぎ',
@@ -2894,6 +3049,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'otter-rich-1',
     title: 'ラッコとうみのなかまたち',
@@ -2914,6 +3070,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'jellyfish-simple-1',
     title: 'かわいいクラゲ',
@@ -2934,6 +3091,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'jellyfish-easy-1',
     title: 'クラゲと海藻',
@@ -2954,6 +3112,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'jellyfish-normal-1',
     title: 'クラゲたちのダンス',
@@ -2974,6 +3133,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'jellyfish-rich-1',
     title: 'クラゲとうみのなかまたち',
@@ -2994,6 +3154,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'shark-simple-1',
     title: 'かわいいサメ',
@@ -3014,6 +3175,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'shark-easy-1',
     title: 'サメと海の中',
@@ -3034,6 +3196,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'shark-normal-1',
     title: 'サメの親子',
@@ -3054,6 +3217,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'shark-rich-1',
     title: 'サメたちの大海原',
@@ -3074,6 +3238,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hermit-crab-simple-1',
     title: 'かわいいヤドカリ',
@@ -3094,6 +3259,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hermit-crab-easy-1',
     title: 'ヤドカリのさんぽ',
@@ -3114,6 +3280,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hermit-crab-normal-1',
     title: 'ヤドカリとうみのたから',
@@ -3134,6 +3301,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hermit-crab-rich-1',
     title: 'ヤドカリたちの海の世界',
@@ -3154,6 +3322,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
 {
     id: 'ostrich-simple-1',
     title: 'かわいいダチョウ',
@@ -3182,6 +3351,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
   {
     id: 'ostrich-normal-1',
     title: 'ダチョウの親子',
@@ -3196,6 +3366,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
   {
     id: 'ostrich-rich-1',
     title: 'ダチョウの群れ',
@@ -3211,6 +3382,7 @@ const _materials1: Material[] = [
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
 
+
   {
     id: 'peacock-simple-1',
     title: 'かわいいクジャク',
@@ -3225,6 +3397,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
   {
     id: 'peacock-easy-1',
     title: 'クジャク',
@@ -3239,6 +3412,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
   {
     id: 'peacock-normal-1',
     title: 'クジャクの親子',
@@ -3253,6 +3427,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
   {
     id: 'peacock-rich-1',
     title: 'クジャクと花園',
@@ -3267,6 +3442,7 @@ const _materials1: Material[] = [
     illustVersion: 1, imageStatus: 'approved',
     pdfUrl: '', createdAt: '2026-05-11', popular: false,
   },
+
 
 
   {
@@ -3289,6 +3465,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'duck-easy-1',
     title: 'てくてくあるくひなあひる',
@@ -3309,6 +3486,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'duck-normal-1',
     title: 'おかあさんあひると4羽のひな',
@@ -3329,6 +3507,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'duck-rich-1',
     title: 'あひる親子のいけあそび',
@@ -3349,6 +3528,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'gorilla-simple-1',
     title: 'にこにこゴリラ',
@@ -3369,6 +3549,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'gorilla-easy-1',
     title: 'えだにすわるこゴリラ',
@@ -3389,6 +3570,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'gorilla-normal-1',
     title: 'おかあさんゴリラとあかちゃん',
@@ -3409,6 +3591,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'gorilla-rich-1',
     title: 'ゴリラたちのジャングルあそび',
@@ -3429,6 +3612,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'kangaroo-simple-1',
     title: 'かわいいカンガルー',
@@ -3449,6 +3633,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'kangaroo-easy-1',
     title: 'ポーチのなかにあかちゃん',
@@ -3469,6 +3654,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'kangaroo-normal-1',
     title: 'おかあさんとこカンガルー',
@@ -3489,6 +3675,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'kangaroo-rich-1',
     title: 'カンガルーかぞくのこうえん',
@@ -3509,6 +3696,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hedgehog-simple-1',
     title: 'かわいいハリネズミ',
@@ -3529,6 +3717,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hedgehog-easy-1',
     title: 'おちばのなかのハリネズミ',
@@ -3550,6 +3739,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hedgehog-normal-1',
     title: 'おかあさんとこハリネズミ',
@@ -3571,6 +3761,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'hedgehog-rich-1',
     title: 'ハリネズミたちの秋の森',
@@ -3592,6 +3783,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'owl-simple-1',
     title: 'まんまるフクロウ',
@@ -3612,6 +3804,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'owl-easy-1',
     title: 'えだにとまるフクロウ',
@@ -3632,6 +3825,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'owl-normal-1',
     title: 'きのうろのおかあさんフクロウ',
@@ -3652,6 +3846,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'owl-rich-1',
     title: 'よるのもりのフクロウ',
@@ -3672,6 +3867,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-11',
     popular: false,
   },
+
   {
     id: 'zebra-simple-1',
     title: 'かわいいシマウマ',
@@ -3692,6 +3888,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'zebra-easy-1',
     title: 'くさをたべるシマウマ',
@@ -3712,6 +3909,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'zebra-normal-1',
     title: 'おかあさんとこシマウマ',
@@ -3732,6 +3930,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'zebra-rich-1',
     title: 'シマウマかぞくのサバンナ',
@@ -3752,6 +3951,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'camel-simple-1',
     title: 'かわいいラクダ',
@@ -3772,6 +3972,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'camel-easy-1',
     title: 'のんびりすわるラクダ',
@@ -3792,6 +3993,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'camel-normal-1',
     title: 'おかあさんとこラクダ',
@@ -3812,6 +4014,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'camel-rich-1',
     title: 'ラクダかぞくのオアシス',
@@ -3832,6 +4035,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crocodile-simple-1',
     title: 'かわいいワニ',
@@ -3852,6 +4056,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crocodile-easy-1',
     title: 'ひなたぼっこするワニ',
@@ -3872,6 +4077,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crocodile-normal-1',
     title: 'おかあさんとこワニ',
@@ -3892,6 +4098,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crocodile-rich-1',
     title: 'ワニかぞくの川あそび',
@@ -3912,6 +4119,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'goat-simple-1',
     title: 'かわいいヤギ',
@@ -3932,6 +4140,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'goat-easy-1',
     title: 'くさをたべるヤギ',
@@ -3952,6 +4161,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'goat-normal-1',
     title: 'おかあさんとこヤギ',
@@ -3972,6 +4182,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'goat-rich-1',
     title: 'ヤギかぞくのおかあそび',
@@ -3992,6 +4203,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'cow-simple-1',
     title: 'かわいいウシ',
@@ -4012,6 +4224,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'cow-easy-1',
     title: 'おはなばたけのウシ',
@@ -4032,6 +4245,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'cow-normal-1',
     title: 'おかあさんとこウシ',
@@ -4052,6 +4266,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'cow-rich-1',
     title: 'ウシかぞくのぼくじょう',
@@ -4072,6 +4287,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'car-simple-1',
     title: 'かわいいじどうしゃ',
@@ -4090,8 +4306,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: true,
+    seoDescription: '大きな瞳と優しい笑顔が特徴の、まん丸いフォルムの車です。ウインカーのような小さな丸や、ほっぺたに見える円形など、細部にも表情が隠れていて、塗り進めるにつれて車らしさと愛らしさが同時に引き立ちます。シンプルな線で構成されているため、はじめてのぬりえでも色鉛筆やクレヨンが塗りやすく、黄色や赤、青など好きな色を自由に選んで個性的な一台に仕上げられます。',
+    popular: true, featured: true,
   },
+
   {
     id: 'car-easy-1',
     title: 'はしるじどうしゃ',
@@ -4110,8 +4328,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: 'まるまるとしたボディに大きな瞳と笑顔が特徴の、とても機嫌のいい車が道を走っています。青空のもとくねくねと続く道路の上で、ふわふわの雲たちに囲まれながら、まるで楽しくおしゃべりしているみたい。タイヤや窓、ドアなど細かい丸や四角がたくさんあるので、色を塗り分けるとこの車がもっと生き生きして見えます。太陽も元気に輝いているから、晴れた日のドライブ気分が味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'car-normal-1',
     title: 'まちをはしるじどうしゃ',
@@ -4132,6 +4352,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'car-rich-1',
     title: 'にぎやかなまちのどうろ',
@@ -4152,6 +4373,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'train-simple-1',
     title: 'かわいいでんしゃ',
@@ -4170,8 +4392,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: 'シンプルな形の電車が横向きで止まっています。キャビン部分の丸い窓、車体に並ぶ四角い窓、そして下部に4つ並んだ円い車輪が、子どもが色分けしたくなるポイントです。左右対称に近い構成なので、同じ色を繰り返し塗る楽しみもあります。窓と車輪をどんな色にするか決めるだけで、電車らしさが引き立つ一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'train-easy-1',
     title: 'はしるでんしゃ',
@@ -4190,8 +4414,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '山並みを背景に、レールの上を走る長い電車。窓がたくさんついた車両の側面と、ゴロゴロと回る車輪の存在感が印象的です。空には大小さまざまな雲が浮かび、手前の線路は奥へ向かって消えていく遠近感があります。電車の白い車体と空の広がりのコントラストが気持ちよく、どの部分をどんな色で塗るか迷ってしまいそうなほど、塗るべき場所がたくさん待っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'train-normal-1',
     title: 'えきにとうちゃく',
@@ -4212,6 +4438,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'train-rich-1',
     title: 'まちをはしるでんしゃ',
@@ -4232,6 +4459,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bus-simple-1',
     title: 'かわいいバス',
@@ -4250,8 +4478,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '横向きに停まったバスの側面には、5つの大きな窓がズラリと並んでいて、それぞれを違う色で塗り分けるのが楽しみです。丸くて大きなタイヤは濃いめの色を塗ると立体感が出ますし、右奥に見える開いたドアの二枚のパネルは細かく塗り分けられます。シンプルな線で描かれているため、バス本体は好きな色で大胆に塗れて、ちいさな子どもの手でも塗りやすい構成です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bus-easy-1',
     title: 'まちをはしるバス',
@@ -4270,8 +4500,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '街中を走るバスの側面には大きな窓がいくつも並び、乗客が乗り降りできるドアも見えます。バスの周りには信号や街路樹、そして背景にはさまざまな高さの建物が立ち並んでおり、本当の町並みのようです。路面には白い横断歩道の線が引かれ、小さな花も咲いているので、バスだけでなく周囲の環境全体を塗り分ける楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bus-normal-1',
     title: 'バスていのバス',
@@ -4292,6 +4524,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bus-rich-1',
     title: 'にぎやかなおおどおり',
@@ -4312,6 +4545,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'shinkansen-simple-1',
     title: 'かわいいしんかんせん',
@@ -4330,8 +4564,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: 'スピード感あふれる新幹線が横向きで描かれています。先頭の丸い窓から運転手さんが見えるようで、7つ並んだ四角い窓からは乗客たちがのぞいているイメージ。艶やかな曲線で描かれた車体と、太くはっきりした輪郭の車輪が特徴で、シンプルな線だからこそ、ピンクや黄色、赤など好きな色で塗ると新幹線の速さが引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'shinkansen-easy-1',
     title: 'ふじさんとしんかんせん',
@@ -4350,8 +4586,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '富士山の雪化粧を背景に、新幹線が勢いよく走り去ろうとしています。機体の流線形のボディと整列した小窓、線路を表す格子模様が細かく描かれていて、どの部分から塗ろうかワクワク考えたくなります。空には雲がふわふわと浮かび、斜めの線で風や速度感も表現されているので、赤や青、黄色をどう組み合わせて勢いを出すか、工夫のしがいがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'shinkansen-normal-1',
     title: 'えきにとまるしんかんせん',
@@ -4372,6 +4610,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'shinkansen-rich-1',
     title: 'にほんのふうけいとしんかんせん',
@@ -4392,6 +4631,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bicycle-simple-1',
     title: 'かわいいじてんしゃ',
@@ -4410,8 +4650,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '真っ白なベレー帽をかぶった女の子が、かごつきの自転車に乗ってニコニコ笑顔。両手でハンドルをしっかり握り、ふんわりした洋服のすそが揺れている姿が描かれています。大きな車輪とペダル、かごの格子模様など、塗る場所がたくさんあり、帽子のリボンや女の子の髪の毛のカール、靴などの細かいディテールにも色を入れると、とても素敵な一台ができあがります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bicycle-easy-1',
     title: 'こうえんをはしるじてんしゃ',
@@ -4430,8 +4672,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '公園の小道を颯爽と走る女の子。ヘルメットをかぶった顔は笑顔で、両手でしっかりハンドルを握っています。路脇には色とりどりの花が咲き、背景には大きな木が葉をゆらゆらと揺らしており、塗り始めると木の幹から葉の濃淡、花びらの色分けなど、細かな部分の塗り分けが必要になることに気づくでしょう。自転車のタイヤの放射状の線も塗ってみると、立体感が出てきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bicycle-normal-1',
     title: 'おやこでサイクリング',
@@ -4452,6 +4696,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bicycle-rich-1',
     title: 'かぞくでサイクリング',
@@ -4472,6 +4717,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'truck-simple-1',
     title: 'かわいいトラック',
@@ -4490,8 +4736,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '運搬用の大きな箱を積んだトラックが、真横から見たまっすぐな姿勢で停まっています。大きなタイヤ2つと、運転席の小さな窓、そして箱型の荷台という、トラックの特徴がシンプルに描かれているので、どの部分を何色にするか迷わず塗り進められます。荷台の広い面積は色塗りのしがいがあり、タイヤの円形や窓の小さな四角形など、異なる形の塗り分けも楽しめます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'truck-easy-1',
     title: 'にもつをはこぶトラック',
@@ -4510,8 +4758,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '荷物をいっぱい積んだトラックが、道路を走っています。運転席の窓や、積み荷の箱の凹凸した形、周りに生えている木々や空に浮かぶ雲など、色分けしたくなる要素がたくさんあります。タイヤの大きな円も塗り始めるのに丁度よく、荷台の段々になった箱たちはそれぞれ違う色で塗る楽しさが味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'truck-normal-1',
     title: 'おおきいトラックとちいさいトラック',
@@ -4532,6 +4782,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'truck-rich-1',
     title: 'はたらくトラックたち',
@@ -4552,6 +4803,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'fire-truck-simple-1',
     title: 'かわいいしょうぼうしゃ',
@@ -4570,8 +4822,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '消防車のボディ側面に描かれた大きな格子模様の扉と、ホースがしっかり巻き付けられた円形のリール、そして車体上部に積み重ねられた梯子が、この車の本当のお仕事ぶりを物語っています。赤や黄色で塗れば、まさに町で見かけるあの活躍する消防車そのものになります。窓や車体、ホースのパイプなど、塗り分ける場所がたくさんあって、色の組み合わせを考えるのが楽しくなる一台です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fire-truck-easy-1',
     title: 'はしるしょうぼうしゃ',
@@ -4590,8 +4844,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '急いで駆けつけるはしご車が、サイレンを鳴らしながら走ってきます。屋根の上には長く伸びるはしごが装備されていて、車体両側には通気口のような細い線がたくさん引かれています。道路を示す線も描かれているので、このはしご車がどんなスピードで動いているのか想像しながら、赤や黄色で迫力いっぱいに塗ることができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fire-truck-normal-1',
     title: 'かつやくするしょうぼうしゃ',
@@ -4612,6 +4868,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'fire-truck-rich-1',
     title: 'きゅうじょたいのしゅつどう',
@@ -4632,6 +4889,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ambulance-simple-1',
     title: 'かわいいきゅうきゅうしゃ',
@@ -4650,8 +4908,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '屋根に大きなサイレンを乗せた救急車が、ピカピカと光りながら走っています。側面には3つの大きな窓が並んでいて、赤や青などの色を塗り分けるのが楽しい場所。フロントガラスと運転席の小さな窓には、救急車らしい雰囲気を作る細かい線が引かれており、どの色を選ぶか考えながら塗る工夫が見られます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ambulance-easy-1',
     title: 'はしるきゅうきゅうしゃ',
@@ -4670,8 +4930,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '赤と白のサイレンをぐるぐるに回して、急いで走る救急車。屋根の上には担架や医療道具が積み込まれ、横には素早い動きを表す流線がいくつも引かれています。フロントガラスの大きさや、開いたドアの奥に見える車内のくぼみなど、細部まで丁寧に線で描かれているので、赤一色で塗りつぶすだけでなく、窓や輪っこ、グリルの部分を別の色で塗り分ける楽しさが広がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ambulance-normal-1',
     title: 'びょういんのきゅうきゅうしゃ',
@@ -4692,6 +4954,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ambulance-rich-1',
     title: 'はたらくくるまたち',
@@ -4712,6 +4975,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'police-car-simple-1',
     title: 'かわいいパトカー',
@@ -4730,8 +4994,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '屋根に付いた赤色灯とサイレンのような装置が目印のパトカーです。フロントガラスと側面の4つの窓には太い線で枠が引かれていて、色を分けて塗るのが楽しい設計になっています。前後の大きなタイヤと、ドアの取っ手もはっきり描かれているので、細かい部分まで色えんぴつを走らせる練習にぴったりです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'police-car-easy-1',
     title: 'はしるパトカー',
@@ -4750,8 +5016,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '街中を走るパトカーが、サイレンをピカッピカッと光らせながら緊急出動中。屋根の上の回転灯と、勢いよく描かれた斜線の効果音から、急いで現場へ向かう様子がビシビシ伝わります。背景には高層ビルと街路樹が建ち並び、車体の白と青のツートンカラーは塗り分けの練習にぴったり。ドアやタイヤのくぼみなど細かい部分も多く、色鉛筆やクレヨンの使い分けを自然と考える場面がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'police-car-normal-1',
     title: 'こうつうせいりするパトカー',
@@ -4772,6 +5040,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'police-car-rich-1',
     title: 'まちをまもるくるまたち',
@@ -4792,6 +5061,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'taxi-simple-1',
     title: 'かわいいタクシー',
@@ -4810,8 +5080,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '屋根の上に赤いランプを付けた、いかにもなタクシーの側面図。大きな丸い車輪が二つ、どっしりと地面を捉えていて、ドアのハンドルや窓枠などの細部も愛らしく描かれています。黄色で塗ればぐんと「タクシーらしく」なる車体と、銀色や黒で表現したくなるランプや窓、さらには車輪の立体感を出すための濃淡づけなど、限られた色数でも工夫のしがいがある一台です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'taxi-easy-1',
     title: 'はしるタクシー',
@@ -4830,8 +5102,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '街並みの道路を走るタクシー。フロントガラスの大きさが印象的で、側面には黒いチェック模様がしっかり描かれています。背景には高さの違う建物や丸い形の木が立ち並び、タクシーの黄色や建物のグレー、空の白など、色分けしたくなるレイアウト。タイヤや窓の細部までしっかり線で描かれているので、どこから塗り始めるか選ぶ楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'taxi-normal-1',
     title: 'おきゃくさんをのせたタクシー',
@@ -4852,6 +5126,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'taxi-rich-1',
     title: 'にぎやかなまちのタクシー',
@@ -4872,6 +5147,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'tractor-simple-1',
     title: 'かわいいトラクター',
@@ -4890,8 +5166,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '広大な畑を走るトラクターが、大きなタイヤと小ぶりなタイヤの対比が印象的です。運転席の後ろにそびえた煙突からは、働く機械らしい迫力が感じられます。ハンドルをしっかり握る運転手の姿勢から、これからどんどん進んでいく様子が想像できて、黄色や赤、緑など色鮮やかに仕上げたくなります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tractor-easy-1',
     title: 'はたけをたがやすトラクター',
@@ -4912,6 +5190,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'tractor-normal-1',
     title: 'のうじょうではたらくトラクター',
@@ -4932,6 +5211,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'tractor-rich-1',
     title: 'のうじょうのくるまたち',
@@ -4952,6 +5232,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bulldozer-simple-1',
     title: 'かわいいブルドーザー',
@@ -4970,8 +5251,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: 'キャビンの窓から顔をのぞかせるブルドーザー。前方に大きく張り出したブレード（押し出す部分）と、ゴツゴツとした迫力のあるキャタピラ（ベルト状の足）が特徴です。アームの関節部分や、細かく描き込まれたエンジン部分など、色を塗り分けたくなるディテールがたくさん隠れています。働く乗り物の形をしっかり観察しながら、自分の好きな色で塗ることができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bulldozer-easy-1',
     title: 'つちをおすブルドーザー',
@@ -4992,6 +5275,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bulldozer-normal-1',
     title: 'こうじではたらくくるまたち',
@@ -5012,6 +5296,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'bulldozer-rich-1',
     title: 'にぎやかなこうじげんば',
@@ -5032,6 +5317,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'excavator-simple-1',
     title: 'かわいいショベルカー',
@@ -5050,8 +5336,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '履帯の上にどっしりと構えたショベルカーが、大きく伸ばした腕で砂をすくい上げようとしています。キャビンの四角い窓、履帯の下に並ぶ丸い連結パーツ、そして曲線で描かれたバケットなど、重機らしい細部が子どもにも分かりやすく表現されています。黄色や赤で塗れば工事現場の主役らしく、または青や緑で塗れば別の世界観も生まれる、色選びの自由度が高い一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'excavator-easy-1',
     title: 'つちをほるショベルカー',
@@ -5072,6 +5360,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'excavator-normal-1',
     title: 'おおきなあなをほるショベルカー',
@@ -5092,6 +5381,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'excavator-rich-1',
     title: 'こうじげんばのくるまたち',
@@ -5112,6 +5402,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'steam-roller-simple-1',
     title: 'かわいいロードローラー',
@@ -5130,8 +5421,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '工事現場で活躍するロードローラーが、大きなローラーを回転させながら進んでいます。操縦席に座った運転手がハンドルをしっかり握っている様子と、ローラーの中心に描かれた放射状の模様がポイント。右側の大きなタイヤには穴がいくつも開いていて、それぞれに色を塗り分けると立体的に見えてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'steam-roller-easy-1',
     title: 'どうろをならすロードローラー',
@@ -5152,6 +5445,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'steam-roller-normal-1',
     title: 'どうろこうじするくるまたち',
@@ -5172,6 +5466,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'steam-roller-rich-1',
     title: 'にぎやかなどうろこうじ',
@@ -5192,6 +5487,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'airplane-simple-1',
     title: 'かわいいひこうき',
@@ -5210,8 +5506,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '大空を飛んでいく旅客機。胴体にはいくつもの窓が並んでいて、それぞれに色を塗るのが楽しみです。主翼と尾翼には大きな余白があるので、大胆な色使いも思いきって試せます。操縦席の窓もカーブしていて、クレヨンの先端を上手に使って塗り分ける工夫が生まれるかもしれません。',
+    popular: false, featured: true,
   },
+
   {
     id: 'airplane-easy-1',
     title: 'そらをとぶひこうき',
@@ -5232,6 +5530,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'airplane-normal-1',
     title: 'くうこうのひこうき',
@@ -5252,6 +5551,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'airplane-rich-1',
     title: 'にぎやかなそら',
@@ -5272,6 +5572,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'helicopter-simple-1',
     title: 'かわいいヘリコプター',
@@ -5290,8 +5591,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '大きな窓からパイロットを見守るヘリコプターが、スキーのような着陸脚でしっかり地面に立っています。回転するプロペラは上部に2つ、後ろにも1つあり、赤や黄色で色分けしたくなる楽しい配置です。丸みのあるボディと小さな窓のバランスが親しみやすく、背景のない白いスペースがクレヨンやマーカーの色を存分に引き立てます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'helicopter-easy-1',
     title: 'そらをとぶヘリコプター',
@@ -5312,6 +5615,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'helicopter-normal-1',
     title: 'やまのうえのヘリコプター',
@@ -5332,6 +5636,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'helicopter-rich-1',
     title: 'にぎやかなそら',
@@ -5352,6 +5657,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'hot-air-balloon-simple-1',
     title: 'かわいいねつききゅう',
@@ -5370,8 +5676,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: 'ふわふわの球体が空へ浮かぶ熱気球。縦にスッと伸びた筋模様がたくさんあるので、赤・青・黄色など好きな色を1本ずつ塗り分けるのが楽しい。下についた四角いかごの部分も、球体とは違う色で塗ると、ぐんぐん空へ上がっていく様子がより引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hot-air-balloon-easy-1',
     title: 'そらをとぶねつききゅう',
@@ -5392,6 +5700,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'hot-air-balloon-normal-1',
     title: 'やまのうえのねつききゅう',
@@ -5412,6 +5721,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'hot-air-balloon-rich-1',
     title: 'にぎやかなきゅうきまつり',
@@ -5432,6 +5742,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'rocket-simple-1',
     title: 'かわいいロケット',
@@ -5450,8 +5761,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '炎をぼうぼうと噴き出しながら宇宙へ向かって飛び立つロケット。先端の窓には丸い窓がついていて、誰が乗っているのかな？と想像が広がります。左右に広がった大きなフィンと、下から勢いよく吹き出す炎の部分は、赤やオレンジ、黄色で塗り分ける楽しさがあります。シンプルな形だからこそ、ロケット本体をどんな色にするか自由に選べます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rocket-easy-1',
     title: 'うちゅうをとぶロケット',
@@ -5472,6 +5785,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'rocket-normal-1',
     title: 'ちきゅうのまわりをとぶロケット',
@@ -5492,6 +5806,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'rocket-rich-1',
     title: 'にぎやかなうちゅう',
@@ -5512,6 +5827,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'boat-simple-1',
     title: 'かわいいボート',
@@ -5530,8 +5846,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '木製のボートが波に浮かんでいる様子を描いた一枚。オールが二本、ボートの中央に立てかけてあり、右側に備え付けられたオール一本とともに、水の上での移動の道具がしっかり表現されています。ボートの側面には何本もの線が入り、木の板で組み立てられた質感を感じさせます。シンプルな線だからこそ、子どもが色を塗るときにボートの丸みを感じたり、オールの茶色さを想像したりする余地が生まれる、素朴で味わい深い一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'boat-easy-1',
     title: 'かわをすすむボート',
@@ -5552,6 +5870,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'boat-normal-1',
     title: 'つりをするボート',
@@ -5572,6 +5891,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'boat-rich-1',
     title: 'かわであそぶふねたち',
@@ -5592,6 +5912,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ship-simple-1',
     title: 'かわいいふね',
@@ -5610,8 +5931,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '波立つ海の上にどっしりと浮かぶ大きなフネ。船体には4つの丸い窓がくっきりと並び、上の階には4つの四角い窓が見えます。一番てっぺんの煙突からは、もくもくと煙が出ているところを想像しながら塗ることになります。窓の丸さと四角さの違いを色分けしたり、波のうねりを何色にするか決めたり、塗る場所がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ship-easy-1',
     title: 'うみをすすむふね',
@@ -5632,6 +5955,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ship-normal-1',
     title: 'みなとをでるふね',
@@ -5652,6 +5976,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ship-rich-1',
     title: 'にぎやかなみなと',
@@ -5672,6 +5997,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ferry-simple-1',
     title: 'かわいいフェリー',
@@ -5692,6 +6018,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ferry-easy-1',
     title: 'うみをすすむフェリー',
@@ -5712,6 +6039,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ferry-normal-1',
     title: 'しまとしまのあいだのフェリー',
@@ -5732,6 +6060,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'ferry-rich-1',
     title: 'にぎやかなみなとのフェリー',
@@ -5752,6 +6081,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'submarine-simple-1',
     title: 'かわいいせんすいかん',
@@ -5772,6 +6102,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'submarine-easy-1',
     title: 'うみのなかのせんすいかん',
@@ -5792,6 +6123,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'submarine-normal-1',
     title: 'しんかいたんけんのせんすいかん',
@@ -5812,6 +6144,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'submarine-rich-1',
     title: 'にぎやかなしんかい',
@@ -5832,6 +6165,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crane-simple-1',
     title: 'かわいいツル',
@@ -5852,6 +6186,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crane-easy-1',
     title: 'たんぼのツル',
@@ -5872,6 +6207,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crane-normal-1',
     title: 'おどるツル',
@@ -5892,6 +6228,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'crane-rich-1',
     title: 'ツルのかぞく',
@@ -5912,6 +6249,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'tyrannosaurus-simple-1',
     title: 'かわいいティラノサウルス',
@@ -5930,8 +6268,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: true,
+    seoDescription: '大きく口を開けて笑顔のティラノサウルス。上下の歯がギザギザと並んだ迫力ある口元と、片目をつぶったようなユーモラスな表情が特徴です。がっしりした足のしわしわした質感や、長く伸びた尾の流れるような曲線も丁寧に描かれており、色を塗るたびに恐竜らしさが引き立ちます。',
+    popular: true, featured: true,
   },
+
   {
     id: 'tyrannosaurus-easy-1',
     title: 'もりのティラノサウルス',
@@ -5950,8 +6290,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
-    popular: false,
+    seoDescription: '恐竜の森での一場面。大きく口を開けたティラノサウルスが、背の高いヤシの木に囲まれた草原にいます。体全体に丸いうろこが並んでいて、色分けのしがいがあります。足元には小さな石ころや草が散らばっており、細かい部分まで丁寧に塗ると、まるで本当の恐竜がそこにいるような迫力が生まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tyrannosaurus-normal-1',
     title: 'ティラノサウルスのおやこ',
@@ -5972,6 +6314,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'tyrannosaurus-rich-1',
     title: 'ティラノサウルスのかぞく',
@@ -5992,6 +6335,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12',
     popular: false,
   },
+
   {
     id: 'spinosaurus-simple-1',
     title: 'かわいいスピノサウルス',
@@ -6010,8 +6354,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
-    popular: false,
+    seoDescription: '大きく口を開けた恐竜が、背中いっぱいに広がった帆のようなヒレを立てて堂々と立っています。ギザギザの歯と目の輝きから、ユーモラスな表情が伝わり、太く力強い4本の足と長くしなやかな尻尾のバランスが独特です。背中の帆の部分はたくさんの放射状の線が描かれているので、色を塗り分けたり濃淡をつけたりするのが楽しく、恐竜全体を何色で表現するかで印象がガラリと変わります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'spinosaurus-easy-1',
     title: 'かわのスピノサウルス',
@@ -6030,8 +6376,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
-    popular: false,
+    seoDescription: '川底を探検するスピノサウルスは、背中の大きなヒレを立てて、するどい歯をむき出しにした迫力ある表情で獲物を探しています。水中にはちいさな魚が泳いでいて、足元には石ころや水草が生えており、塗るときに水の世界がどんな色に変わるか考えながら筆を進めることになります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'spinosaurus-normal-1',
     title: 'スピノサウルスのおやこ',
@@ -6052,6 +6400,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T15:45',
     popular: false,
   },
+
   {
     id: 'spinosaurus-rich-1',
     title: 'スピノサウルスのかぞく',
@@ -6072,6 +6421,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T15:45',
     popular: false,
   },
+
   {
     id: 'velociraptor-simple-1',
     title: 'かわいいヴェロキラプトル',
@@ -6090,8 +6440,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
-    popular: false,
+    seoDescription: 'にこにこ笑顔のヴェロキラプトルが、長い尾をぴんと伸ばしてポーズをとっています。両腕に生えた立派な爪や、背中から翼のように広がるギザギザの羽毛をよく見ると、恐竜らしさと可愛らしさが同時に感じられます。塗るときは、爪の先端や足の指の細かい部分、羽毛のフサフサ感を色分けすると、より立体的で生き生きとした恐竜に生まれ変わります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'velociraptor-easy-1',
     title: 'もりのヴェロキラプトル',
@@ -6110,8 +6462,10 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
-    popular: false,
+    seoDescription: '森の中を颯爽と歩くヴェロキラプトル。長く伸びた尾がS字カーブを描き、両腕を自然に構えたダイナミックなポーズが特徴です。足元にはシダのような草が生い茂り、背景には太い幹の大きな木が左右対称に立っています。恐竜の体と背景の植物で、色の使い分けが映える構図になっており、塗るときに遠近感を出す楽しさが感じられます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'velociraptor-normal-1',
     title: 'むれのヴェロキラプトル',
@@ -6132,6 +6486,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T17:01',
     popular: false,
   },
+
   {
     id: 'velociraptor-rich-1',
     title: 'ヴェロキラプトルのかぞく',
@@ -6152,6 +6507,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T17:01',
     popular: false,
   },
+
   {
     id: 'allosaurus-simple-1',
     title: 'かわいいアロサウルス',
@@ -6170,8 +6526,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
-    popular: false,
+    seoDescription: '大きく口を開けて元気いっぱいのアロサウルスが、こちらを向いてポーズをとっています。背中から尾にかけて三角形のトゲがずっと並んでいて、色を塗り分けるのが楽しい部分です。太くしっかりした四本の足と、先端が細くなる長い尾は、動きのある恐竜らしさを感じさせます。顔の大きな目と、歯がたくさん見える開いた口の表情がかわいらしく、怖さは全くありません。',
+    popular: false, featured: true,
   },
+
   {
     id: 'allosaurus-easy-1',
     title: 'もりのアロサウルス',
@@ -6190,8 +6548,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
-    popular: false,
+    seoDescription: '森の中で堂々と立つアロサウルスが、左右に生える背の高いシダ植物に囲まれています。恐竜の体全体に描かれた丸いうろこと、口角が上がった親友のような優しい表情が印象的です。太い脚と長い尾のバランスが良く、オレンジやグリーン、ブラウンなど様々な色を試したくなる部分がたくさんあります。背景のシダは幾何学的な線で表現されているため、同じ色でも濃淡をつけたり、恐竜と背景を別の色で分けたりする工夫も発見できるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'allosaurus-normal-1',
     title: 'アロサウルスのおやこ',
@@ -6212,6 +6572,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:02',
     popular: false,
   },
+
   {
     id: 'allosaurus-rich-1',
     title: 'アロサウルスのかぞく',
@@ -6232,6 +6593,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:02',
     popular: false,
   },
+
   {
     id: 'giganotosaurus-simple-1',
     title: 'かわいいギガノトサウルス',
@@ -6250,8 +6612,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
-    popular: false,
+    seoDescription: '大きく口を開けて元気に歩くギガノトサウルス。背中のギザギザした突起から長い尾まで、恐竜らしいゴツゴツとした質感が全身に広がっています。太い後ろ足と鋭い爪をした前足のバランスを見ていると、どんな色で強そく見せようか考えたくなります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'giganotosaurus-easy-1',
     title: 'そうげんのギガノトサウルス',
@@ -6270,8 +6634,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
-    popular: false,
+    seoDescription: '草原に立つ大きなギガノトサウルスが、背中の棘をそびえ立たせながらこちらを向いています。足元には丸い石ころや草むらが散らばり、奥には素朴なヤシの木や岩が見えて、太古の世界が広がっています。恐竜のお腹の模様や体全体に色を塗り分けるとき、濃い色と薄い色のコントラストで迫力ある表現ができる構図です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'giganotosaurus-normal-1',
     title: 'ギガノトサウルスのおやこ',
@@ -6292,6 +6658,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:47',
     popular: false,
   },
+
   {
     id: 'giganotosaurus-rich-1',
     title: 'ギガノトサウルスのかぞく',
@@ -6312,6 +6679,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:47',
     popular: false,
   },
+
   {
     id: 'therizinosaurus-simple-1',
     title: 'かわいいテリジノサウルス',
@@ -6330,8 +6698,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
-    popular: false,
+    seoDescription: '長い首をすっと伸ばして立つ大きな恐竜が、にっこり笑っています。両手には鋭いかぎ爪がいくつも並んでいて、塗り分けるのが楽しい部分。太い後ろ足や長い尾の曲線は、ぐるぐるとクレヨンを走らせたくなる広いスペースになっており、自分で色の濃淡をつけてみたくなります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'therizinosaurus-easy-1',
     title: 'はっぱをたべるテリジノサウルス',
@@ -6350,8 +6720,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
-    popular: false,
+    seoDescription: '長い腕を伸ばして、背の高い木の葉をもぐもぐ食べているテリジノサウルス。頭上の花々に鼻を近づけるほほえみの表情と、足元に散らばった小石や地面の草たちが、恐竜がここにいる実感をくれます。スポット模様で覆われた体全体を塗るときも、樹幹の立体感や地面の段差を意識すると、この恐竜がどっしりと立っている様子がより生き生きして見えるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'therizinosaurus-normal-1',
     title: 'テリジノサウルスのおやこ',
@@ -6372,6 +6744,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:52',
     popular: false,
   },
+
   {
     id: 'therizinosaurus-rich-1',
     title: 'テリジノサウルスのかぞく',
@@ -6392,6 +6765,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:52',
     popular: false,
   },
+
   {
     id: 'triceratops-simple-1',
     title: 'かわいいトリケラトプス',
@@ -6410,8 +6784,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
-    popular: false,
+    seoDescription: 'にっこり笑顔のトリケラトプスが、堂々と立っている姿を色づけします。頭上のフリルの波々とした輪郭、そして口元の優しい表情をていねいに塗ると、この恐竜の愛らしさがぐんと引き立ちます。太い四本の足と爪をしっかり色分けすれば、地面に力強く立っているようすが伝わり、全身のバランスの良さにも気づくでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'triceratops-easy-1',
     title: 'そうげんのトリケラトプス',
@@ -6430,8 +6806,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
-    popular: false,
+    seoDescription: '草原に立つトリケラトプスが、満面の笑みで こちらを向いています。背中の大きなフリルと三本の角には、丸いプレートのような装甲が並び、色を塗り分ける楽しさがあります。足元には可愛らしい花がいくつも咲いていて、恐竜らしい迫力と優しい雰囲気が両立した一枚です。太い輪郭線なので、はじめてのぬりえでも色が枠からはみ出しにくくなっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'triceratops-normal-1',
     title: 'トリケラトプスのおやこ',
@@ -6452,6 +6830,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:58',
     popular: false,
   },
+
   {
     id: 'triceratops-rich-1',
     title: 'トリケラトプスのかぞく',
@@ -6472,6 +6851,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T18:58',
     popular: false,
   },
+
   {
     id: 'stegosaurus-simple-1',
     title: 'かわいいステゴサウルス',
@@ -6490,8 +6870,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
-    popular: false,
+    seoDescription: 'ステゴサウルスが背中をまっすぐ伸ばして立っているシーン。背中に並ぶ大きな板状のトゲは、色を変えたり模様を入れたりしたくなるほどの存在感があります。愛らしい丸い目とにっこり笑った口元が、迫力満点の恐竜を親しみやすくしていて、尾の先端のトゲもしっかり描き込まれているので、どの部分から塗り始めようか迷ってしまいそう。全体的にふっくらとしたボディラインは、優しい色合いで仕上げたい気持ちになります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'stegosaurus-easy-1',
     title: 'そうげんのステゴサウルス',
@@ -6510,8 +6892,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
-    popular: false,
+    seoDescription: '草原にたたずむステゴサウルスが、背中いっぱいに並んだ大きな板状のトゲをたくましく立てています。優しい目で前を向くその顔と、太い四本の足でどっしりと地面に立つ姿勢から、このクラシック恐竜の堂々とした魅力が伝わります。左右の木々や足元の草むらは、緑色で塗ると自然らしさがぐんと出る部分で、特に背中のトゲは明るい色から濃い色へのグラデーションを試すのに最適な広いスペースです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'stegosaurus-normal-1',
     title: 'ステゴサウルスのおやこ',
@@ -6532,6 +6916,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:03',
     popular: false,
   },
+
   {
     id: 'stegosaurus-rich-1',
     title: 'ステゴサウルスのかぞく',
@@ -6552,6 +6937,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:03',
     popular: false,
   },
+
   {
     id: 'brachiosaurus-simple-1',
     title: 'かわいいブラキオサウルス',
@@ -6570,8 +6956,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
-    popular: false,
+    seoDescription: '長い首をすっと伸ばして、微笑むブラキオサウルス。背中全体に描かれた丸いプレート模様は、大きさの異なる円をいろいろな色で塗り分けると立体的に見えてきます。太くしっかりした四本の足と、地面に向かって伸びた尾には筋肉の流れを表す線が入っているので、色の濃淡をつけるとこの大きな体がどう動いているのかが見えてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'brachiosaurus-easy-1',
     title: 'はをたべるブラキオサウルス',
@@ -6590,8 +6978,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
-    popular: false,
+    seoDescription: '首を長く伸ばして、大きな樹の葉っぱを食べようとするブラキオサウルス。背中には楕円形の模様が並んでいて、塗り分けると恐竜らしさがぐんと出てきます。足元の草や樹の根元、そして頭上の枝葉に広がった空間は色を選ぶのが楽しい部分です。優しい線で描かれた太い足と長い尾のバランスが、この巨大な恐竜の堂々とした存在感を引き出しています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'brachiosaurus-normal-1',
     title: 'ブラキオサウルスのおやこ',
@@ -6612,6 +7002,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:08',
     popular: false,
   },
+
   {
     id: 'brachiosaurus-rich-1',
     title: 'ブラキオサウルスのかぞく',
@@ -6632,6 +7023,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:08',
     popular: false,
   },
+
   {
     id: 'ankylosaurus-simple-1',
     title: 'かわいいアンキロサウルス',
@@ -6650,8 +7042,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
-    popular: false,
+    seoDescription: 'よろこびの表情で立つアンキロサウルスの背中いっぱいに並ぶ、ゴツゴツとした装甲プレート。短い脚の裏にはクローがくっきり刻まれ、尻尾の先端は球のような形をしています。恐竜らしい武装をしながらも、大きな瞳と優しい口角がこの生き物を親しみやすくしており、装甲のすきまや足裏の細かい模様など、タッチの違いを色で表現できる部分がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ankylosaurus-easy-1',
     title: 'そうげんのアンキロサウルス',
@@ -6670,8 +7064,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
-    popular: false,
+    seoDescription: '草原にのっそり立つアンキロサウルスの背中は、盾のような板状の骨で全身覆われています。先の丸い球体の尾と、にっこりした優しい表情が特徴的で、足元には色とりどりの小さな花が咲いています。重厚な体つきなのに、どこか親しみやすい雰囲気が漂う恐竜で、背中のゴツゴツとした骨板や足の爪、首周りの装甲など、細かく描き分けられた部分を色分けするのが見どころです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ankylosaurus-normal-1',
     title: 'アンキロサウルスのおやこ',
@@ -6692,6 +7088,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:14',
     popular: false,
   },
+
   {
     id: 'ankylosaurus-rich-1',
     title: 'アンキロサウルスのかぞく',
@@ -6712,6 +7109,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:14',
     popular: false,
   },
+
   {
     id: 'parasaurolophus-simple-1',
     title: 'かわいいパラサウロロフス',
@@ -6730,8 +7128,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:20',
-    popular: false,
+    seoDescription: 'くりんとした瞳でこちらを見つめるパラサウロロフス。頭の上に立派に伸びた湾曲した冠と、身体から伸びる長い尾が特徴的です。四本の脚でしっかり立つ姿勢は安定していて、塗るときに前足と後ろ足の色を変えてみたり、お腹と背中で濃淡をつけたりすることで、恐竜らしい立体感が出てきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'parasaurolophus-easy-1',
     title: 'かわべのパラサウロロフス',
@@ -6752,6 +7152,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:20',
     popular: false,
   },
+
   {
     id: 'parasaurolophus-normal-1',
     title: 'パラサウロロフスのおやこ',
@@ -6772,6 +7173,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:20',
     popular: false,
   },
+
   {
     id: 'parasaurolophus-rich-1',
     title: 'パラサウロロフスのかぞく',
@@ -6792,6 +7194,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:20',
     popular: false,
   },
+
   {
     id: 'pachycephalosaurus-simple-1',
     title: 'かわいいパキケファロサウルス',
@@ -6810,8 +7213,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:25',
-    popular: false,
+    seoDescription: '首から背中にかけてゴツゴツした装甲に覆われたトリケラトプスが、少し得意げな顔で立ち止まっています。背中いっぱいに描かれた丸いウロコはどんな色にしようか迷うほど、塗りがいのある配置になっていて、尾の先端までするりと伸びた体のラインは大きなクレヨンで優しくなぞりやすい形です。4本の足はしっかりとした着地感があり、手足の爪まで細かく描き込まれているので、色分けでより立体的に見えてくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pachycephalosaurus-easy-1',
     title: 'もりのパキケファロサウルス',
@@ -6832,6 +7237,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:25',
     popular: false,
   },
+
   {
     id: 'pachycephalosaurus-normal-1',
     title: 'パキケファロサウルスのおやこ',
@@ -6852,6 +7258,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:25',
     popular: false,
   },
+
   {
     id: 'pachycephalosaurus-rich-1',
     title: 'パキケファロサウルスのかぞく',
@@ -6872,6 +7279,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:25',
     popular: false,
   },
+
   {
     id: 'pteranodon-simple-1',
     title: 'かわいいプテラノドン',
@@ -6890,8 +7298,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:31',
-    popular: false,
+    seoDescription: '大きく広げた翼と長い嘴が特徴のプテラノドンが、両足をそろえてふわりと浮かんでいます。つぶらな瞳と少しニコッとした表情がとてもキュート。翼の曲線や背中の丸みを色鉛筆でなぞると、古代の空を飛ぶ恐竜の躍動感が引き出せます。足の小さな手指や、頭の突き出た冠のような部分など、細かな部位の色分けを楽しむポイントもたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pteranodon-easy-1',
     title: 'そらとぶプテラノドン',
@@ -6912,6 +7322,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:31',
     popular: false,
   },
+
   {
     id: 'pteranodon-normal-1',
     title: 'プテラノドンのおやこ',
@@ -6932,6 +7343,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:31',
     popular: false,
   },
+
   {
     id: 'pteranodon-rich-1',
     title: 'プテラノドンのかぞく',
@@ -6952,6 +7364,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:31',
     popular: false,
   },
+
   {
     id: 'mosasaurus-simple-1',
     title: 'かわいいモササウルス',
@@ -6970,8 +7383,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:37',
-    popular: false,
+    seoDescription: '大きな口を開けた古代の海の生き物が、四本のひれをぐっと前に出して泳いでいます。背中全体に並ぶ楕円形の模様は、鱗のパターンを塗り分ける楽しみがあり、尾びれはしなやかに波打っている姿が特徴です。丸くてやさしい瞳と、歯並びまで描き込まれた口元には、恐ろしさよりもユーモアが感じられます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mosasaurus-easy-1',
     title: 'うみのモササウルス',
@@ -6992,6 +7407,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:37',
     popular: false,
   },
+
   {
     id: 'mosasaurus-normal-1',
     title: 'モササウルスのおやこ',
@@ -7012,6 +7428,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:37',
     popular: false,
   },
+
   {
     id: 'mosasaurus-rich-1',
     title: 'モササウルスのかぞく',
@@ -7032,6 +7449,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:37',
     popular: false,
   },
+
   {
     id: 'plesiosaurus-simple-1',
     title: 'かわいいプレシオサウルス',
@@ -7050,8 +7468,10 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:43',
-    popular: false,
+    seoDescription: '長い首をすっと伸ばして、にっこり笑顔のプレシオサウルス。四本のひれをそろえて、水の中をするするっと泳いでいるようです。お腹の下の濃い影とひれの筋をどんな色で塗るか考えると、この恐竜がもっと立体的に見えてくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'plesiosaurus-easy-1',
     title: 'うみのプレシオサウルス',
@@ -7072,6 +7492,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:43',
     popular: false,
   },
+
   {
     id: 'plesiosaurus-normal-1',
     title: 'プレシオサウルスのおやこ',
@@ -7092,6 +7513,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:43',
     popular: false,
   },
+
   {
     id: 'plesiosaurus-rich-1',
     title: 'プレシオサウルスのかぞく',
@@ -7112,6 +7534,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-12T19:43',
     popular: false,
   },
+
   {
     id: 'pelican-simple-1',
     title: 'かわいいペリカン',
@@ -7132,6 +7555,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'pelican-easy-1',
     title: 'さかなをとるペリカン',
@@ -7152,6 +7576,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'pelican-normal-1',
     title: 'うみべのペリカン親子',
@@ -7172,6 +7597,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'pelican-rich-1',
     title: 'にぎやかなペリカンひろば',
@@ -7192,6 +7618,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stork-simple-1',
     title: 'かわいいコウノトリ',
@@ -7213,6 +7640,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stork-easy-1',
     title: 'くさはらのコウノトリ',
@@ -7234,6 +7662,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stork-normal-1',
     title: 'コウノトリの親子',
@@ -7255,6 +7684,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stork-rich-1',
     title: 'にぎやかなコウノトリ',
@@ -7276,6 +7706,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'cheetah-simple-1',
     title: 'かわいいチーター',
@@ -7296,6 +7727,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'cheetah-easy-1',
     title: 'くさはらのチーター',
@@ -7316,6 +7748,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'cheetah-normal-1',
     title: 'チーターの親子',
@@ -7336,6 +7769,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'cheetah-rich-1',
     title: 'にぎやかなチーター家族',
@@ -7356,6 +7790,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'leopard-simple-1',
     title: 'かわいいヒョウ',
@@ -7376,6 +7811,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'leopard-easy-1',
     title: 'えだにのるヒョウ',
@@ -7396,6 +7832,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'leopard-normal-1',
     title: 'ジャングルのヒョウ親子',
@@ -7416,6 +7853,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'leopard-rich-1',
     title: 'にぎやかなジャングルのヒョウ',
@@ -7436,6 +7874,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'alpaca-simple-1',
     title: 'かわいいアルパカ',
@@ -7456,6 +7895,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'alpaca-easy-1',
     title: 'くさをたべるアルパカ',
@@ -7476,6 +7916,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'alpaca-normal-1',
     title: 'アルパカの親子',
@@ -7496,6 +7937,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'alpaca-rich-1',
     title: 'にぎやかなアルパカ家族',
@@ -7516,6 +7958,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'capybara-simple-1',
     title: 'かわいいカピバラ',
@@ -7536,6 +7979,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'capybara-easy-1',
     title: 'おふろにはいるカピバラ',
@@ -7556,6 +8000,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'capybara-normal-1',
     title: 'みずべのカピバラ親子',
@@ -7576,6 +8021,7 @@ const _materials1: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
 ]
 
 const _materials2: Material[] = [
@@ -7599,6 +8045,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'butterfly-simple-1',
     title: 'かわいいチョウチョ',
@@ -7620,6 +8067,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'butterfly-easy-1',
     title: 'おはなにとまるチョウチョ',
@@ -7641,6 +8089,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'butterfly-normal-1',
     title: 'はなばたけのチョウチョ',
@@ -7662,6 +8111,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'butterfly-rich-1',
     title: 'にぎやかなはなばたけ',
@@ -7683,6 +8133,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'polar-bear-simple-1',
     title: 'かわいいシロクマ',
@@ -7704,6 +8155,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'polar-bear-easy-1',
     title: 'ゆきのうえのシロクマ',
@@ -7725,6 +8177,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'polar-bear-normal-1',
     title: 'シロクマの親子',
@@ -7746,6 +8199,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'polar-bear-rich-1',
     title: 'にぎやかなシロクマ家族',
@@ -7767,6 +8221,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'fennec-simple-1',
     title: 'かわいいフェネック',
@@ -7787,6 +8242,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'fennec-easy-1',
     title: 'すなのうえのフェネック',
@@ -7807,6 +8263,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'fennec-normal-1',
     title: 'さばくのフェネック親子',
@@ -7827,6 +8284,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'fennec-rich-1',
     title: 'にぎやかなフェネック家族',
@@ -7847,6 +8305,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'firefly-simple-1',
     title: 'かわいいほたる',
@@ -7868,6 +8327,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'firefly-easy-1',
     title: 'かわのほとりのほたる',
@@ -7889,6 +8349,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'firefly-normal-1',
     title: 'かわのほとりでひかるほたる',
@@ -7910,6 +8371,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'firefly-rich-1',
     title: 'にぎやかなほたるのよる',
@@ -7931,6 +8393,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'reindeer-simple-1',
     title: 'かわいいトナカイ',
@@ -7952,6 +8415,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'reindeer-easy-1',
     title: 'ゆきをかけるトナカイ',
@@ -7973,6 +8437,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'reindeer-normal-1',
     title: 'トナカイの親子',
@@ -7994,6 +8459,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'reindeer-rich-1',
     title: 'にぎやかなトナカイ家族',
@@ -8015,6 +8481,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'ladybug-simple-1',
     title: 'かわいいてんとうむし',
@@ -8036,6 +8503,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'ladybug-easy-1',
     title: 'はっぱのうえのてんとうむし',
@@ -8057,6 +8525,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'ladybug-normal-1',
     title: 'はなばたけのてんとうむし',
@@ -8078,6 +8547,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'ladybug-rich-1',
     title: 'にぎやかなはなばたけのむし',
@@ -8099,6 +8569,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'meerkat-simple-1',
     title: 'かわいいミーアキャット',
@@ -8119,6 +8590,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'meerkat-easy-1',
     title: 'みはりのミーアキャット',
@@ -8139,6 +8611,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'meerkat-normal-1',
     title: 'ミーアキャットの親子',
@@ -8159,6 +8632,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'meerkat-rich-1',
     title: 'にぎやかなミーアキャットの群れ',
@@ -8179,6 +8653,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'dragonfly-simple-1',
     title: 'かわいいトンボ',
@@ -8200,6 +8675,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'dragonfly-easy-1',
     title: 'くさにとまるトンボ',
@@ -8221,6 +8697,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'dragonfly-normal-1',
     title: 'たんぼのうえのトンボ',
@@ -8242,6 +8719,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'dragonfly-rich-1',
     title: 'にぎやかなあきのたんぼ',
@@ -8263,6 +8741,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chameleon-simple-1',
     title: 'かわいいカメレオン',
@@ -8283,6 +8762,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chameleon-easy-1',
     title: 'えだにのるカメレオン',
@@ -8303,6 +8783,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chameleon-normal-1',
     title: 'カメレオンの親子',
@@ -8323,6 +8804,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chameleon-rich-1',
     title: 'にぎやかなジャングルのカメレオン',
@@ -8343,6 +8825,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'orangutan-simple-1',
     title: 'かわいいオランウータン',
@@ -8363,6 +8846,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'orangutan-easy-1',
     title: 'きのうえのオランウータン',
@@ -8383,6 +8867,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'orangutan-normal-1',
     title: 'オランウータンの親子',
@@ -8403,6 +8888,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'orangutan-rich-1',
     title: 'にぎやかなジャングル',
@@ -8423,6 +8909,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'bee-simple-1',
     title: 'かわいいミツバチ',
@@ -8444,6 +8931,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'bee-easy-1',
     title: 'はなにとまるミツバチ',
@@ -8465,6 +8953,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'bee-normal-1',
     title: 'はなばたけのミツバチ',
@@ -8486,6 +8975,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'bee-rich-1',
     title: 'にぎやかなミツバチのはたらき',
@@ -8507,6 +8997,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'grasshopper-simple-1',
     title: 'かわいいバッタ',
@@ -8528,6 +9019,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'grasshopper-easy-1',
     title: 'くさのうえのバッタ',
@@ -8549,6 +9041,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'grasshopper-normal-1',
     title: 'くさはらのバッタ',
@@ -8570,6 +9063,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'grasshopper-rich-1',
     title: 'にぎやかなあきのくさはら',
@@ -8591,6 +9085,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chicken-simple-1',
     title: 'かわいいにわとり',
@@ -8612,6 +9107,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chicken-easy-1',
     title: 'ひよこをつれたにわとり',
@@ -8633,6 +9129,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chicken-normal-1',
     title: 'のうじょうのにわとり親子',
@@ -8654,6 +9151,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'chicken-rich-1',
     title: 'にぎやかなのうじょう',
@@ -8675,6 +9173,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'lemur-simple-1',
     title: 'かわいいキツネザル',
@@ -8695,6 +9194,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'lemur-easy-1',
     title: 'しっぽをひろげたキツネザル',
@@ -8715,6 +9215,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'lemur-normal-1',
     title: 'キツネザルの親子',
@@ -8735,6 +9236,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'lemur-rich-1',
     title: 'にぎやかなキツネザル家族',
@@ -8755,6 +9257,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'snail-simple-1',
     title: 'かわいいカタツムリ',
@@ -8776,6 +9279,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'snail-easy-1',
     title: 'はっぱのうえのカタツムリ',
@@ -8797,6 +9301,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'snail-normal-1',
     title: 'あめのひのカタツムリ',
@@ -8818,6 +9323,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'snail-rich-1',
     title: 'にぎやかなカタツムリのあめのひ',
@@ -8839,6 +9345,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'beetle-simple-1',
     title: 'かわいいカブトムシ',
@@ -8860,6 +9367,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'beetle-easy-1',
     title: 'えだにのるカブトムシ',
@@ -8881,6 +9389,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'beetle-normal-1',
     title: 'きのみきのカブトムシ',
@@ -8902,6 +9411,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'beetle-rich-1',
     title: 'にぎやかなもりのカブトムシ',
@@ -8923,6 +9433,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'donkey-simple-1',
     title: 'かわいいロバ',
@@ -8943,6 +9454,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'donkey-easy-1',
     title: 'くさをたべるロバ',
@@ -8963,6 +9475,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'donkey-normal-1',
     title: 'ロバの親子',
@@ -8983,6 +9496,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'donkey-rich-1',
     title: 'にぎやかなロバ家族',
@@ -9003,6 +9517,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'prairie-dog-simple-1',
     title: 'かわいいプレーリードッグ',
@@ -9023,6 +9538,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'prairie-dog-easy-1',
     title: 'あなからでてきたプレーリードッグ',
@@ -9043,6 +9559,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'prairie-dog-normal-1',
     title: 'プレーリードッグの親子',
@@ -9063,6 +9580,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'prairie-dog-rich-1',
     title: 'にぎやかなプレーリードッグの群れ',
@@ -9083,6 +9601,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stag-beetle-simple-1',
     title: 'かわいいクワガタ',
@@ -9104,6 +9623,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stag-beetle-easy-1',
     title: 'えだにのるクワガタ',
@@ -9125,6 +9645,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stag-beetle-normal-1',
     title: 'きのみきのクワガタ',
@@ -9146,6 +9667,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'stag-beetle-rich-1',
     title: 'にぎやかなもりのクワガタ',
@@ -9167,6 +9689,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'guinea-pig-simple-1',
     title: 'かわいいモルモット',
@@ -9187,6 +9710,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'guinea-pig-easy-1',
     title: 'やさいをたべるモルモット',
@@ -9207,6 +9731,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'guinea-pig-normal-1',
     title: 'モルモットの親子',
@@ -9227,6 +9752,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'guinea-pig-rich-1',
     title: 'にぎやかなモルモットたち',
@@ -9247,6 +9773,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'mini-pig-simple-1',
     title: 'かわいいミニブタ',
@@ -9267,6 +9794,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'mini-pig-easy-1',
     title: 'くさをたべるミニブタ',
@@ -9287,6 +9815,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'mini-pig-normal-1',
     title: 'ミニブタの親子',
@@ -9307,6 +9836,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'mini-pig-rich-1',
     title: 'にぎやかなミニブタ家族',
@@ -9327,6 +9857,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13',
     popular: false,
   },
+
   {
     id: 'mammoth-simple-1',
     title: 'かわいいマンモス',
@@ -9345,8 +9876,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:17',
-    popular: false,
+    seoDescription: '長い鼻をくるりと上に巻いたマンモスが、こちらに向かって歩いてきます。ふさふさの毛並みに覆われた体と、太い足の裏まで丁寧に線で描かれており、色を塗るときに毛の流れを意識しながら塗り分ける楽しさが生まれます。つぶらな瞳と優しい表情から、このマンモスがどんな色になったら素敵に見えるか、試行錯誤しながら筆を進めたくなる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mammoth-easy-1',
     title: 'ゆきげんのマンモス',
@@ -9367,6 +9900,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:17',
     popular: false,
   },
+
   {
     id: 'mammoth-normal-1',
     title: 'マンモスのおやこ',
@@ -9387,6 +9921,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:17',
     popular: false,
   },
+
   {
     id: 'mammoth-rich-1',
     title: 'マンモスのかぞく',
@@ -9407,6 +9942,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:17',
     popular: false,
   },
+
   {
     id: 'smilodon-simple-1',
     title: 'かわいいサーベルタイガー',
@@ -9425,8 +9961,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:23',
-    popular: false,
+    seoDescription: '立ち上がるポーズで堂々とした表情のサーベルタイガー。長く立派な牙がにっこり笑顔で目立ちます。しっかりした四本足と肉球のくぼみ、そして流れるような尾のラインが、このどう猛な動物のかわいらしさを引き出しています。全身に塗るスペースが広く、体の濃淡や顔の表情、牙の色の選び方で、このトラの個性がぐっと変わる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'smilodon-easy-1',
     title: 'そうげんのサーベルタイガー',
@@ -9447,6 +9985,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:23',
     popular: false,
   },
+
   {
     id: 'smilodon-normal-1',
     title: 'サーベルタイガーのおやこ',
@@ -9467,6 +10006,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:23',
     popular: false,
   },
+
   {
     id: 'smilodon-rich-1',
     title: 'サーベルタイガーのかぞく',
@@ -9487,6 +10027,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T20:23',
     popular: false,
   },
+
   {
     id: 'apple-simple-1',
     title: 'かわいいりんご',
@@ -9502,8 +10043,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
-    popular: false,
+    seoDescription: 'つやつやとした赤いりんごの本体に、茎の先からひょっこり顔を出した緑の葉っぱ。シンプルで愛らしい形は、赤一色で塗るのもいいし、葉だけ緑に塗り分けるのもいい。りんごの下部に少しへこんだ部分があるのに気づくと、より本物らしく色をのせたくなります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'apple-easy-1',
     title: 'りんごのき',
@@ -9519,8 +10062,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
-    popular: false,
+    seoDescription: 'りんごの木の枝からは6個のりんごがぶら下がり、葉っぱがところどころ顔を覗かせています。木全体が優しい曲線で描かれた雲のような形をしているので、赤いりんごを塗った後に、その背景となる緑の葉や茶色の幹をどう塗り分けるか工夫しがいがあります。1本の木にこんなにたくさんのりんごが実っている景色を見ると、色とりどりに塗ってみたくなるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'apple-normal-1',
     title: 'りんごのかご',
@@ -9538,6 +10083,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T22:27',
     popular: false,
   },
+
   {
     id: 'apple-rich-1',
     title: 'りんごがいっぱい',
@@ -9555,6 +10101,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T22:27',
     popular: false,
   },
+
   {
     id: 'banana-easy-1',
     title: 'バナナのき',
@@ -9570,8 +10117,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:51',
-    popular: false,
+    seoDescription: '左手に房をまとめて持った3本のバナナと、右手に皮をむいた状態の1本のバナナが並んでいます。房から下がるバナナたちの丸みのある曲線と、むかれた皮がひらひらとした動きのある形になっていて、同じバナナでも違う表情が楽しめます。黄色で塗ったときの房の束感と、むき身の白っぽさの色分けで、バナナの食べ方の違いが絵の中に表現されています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'banana-normal-1',
     title: 'くだもののかご',
@@ -9589,6 +10138,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T22:51',
     popular: false,
   },
+
   {
     id: 'strawberry-simple-1',
     title: 'かわいいいちご',
@@ -9604,8 +10154,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:00',
-    popular: false,
+    seoDescription: 'つぶつぶの小さなつぶがたくさん並んだいちごの表面と、上にぴんと立った葉っぱの特徴的な形が目立ちます。ハート型にふっくらした本体には、規則正しく並んだ種のつぶがおよそ30個あり、赤く塗ったときにどの部分から濃く塗るかを工夫できるしくみになっています。葉っぱの先端は少しくるんと丸まっていて、緑色とのコントラストを出すのが楽しみなポイントです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'strawberry-normal-1',
     title: 'いちごばたけ',
@@ -9623,6 +10175,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:00',
     popular: false,
   },
+
   {
     id: 'strawberry-rich-1',
     title: 'いちごがいっぱい',
@@ -9640,6 +10193,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:00',
     popular: false,
   },
+
   {
     id: 'banana-simple-1',
     title: 'かわいいバナナ',
@@ -9655,8 +10209,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:16',
-    popular: false,
+    seoDescription: 'つるんとした曲線の身体を持つバナナが、右上に立てた軸の部分をしゅっと伸ばしています。左端の丸くてちょっと凹んだ先端も、バナナならではの特徴的な形。全体が大きく描かれているので、黄色を塗るときに筆の動きが気持ちよく、上から下へ、曲線に沿って色を流すような塗り方ができます。軸の部分は茶色にしたり緑にしたり、色選びの工夫を楽しめるポイントです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'banana-rich-1',
     title: 'なんごくのくだもの',
@@ -9674,6 +10230,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:16',
     popular: false,
   },
+
   {
     id: 'orange-simple-1',
     title: 'かわいいみかん',
@@ -9689,8 +10246,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
-    popular: false,
+    seoDescription: 'つるんと丸いみかんの上には、かわいらしい花がぽつんと咲いていて、みかんの皮に小さな点々がたくさん描かれています。この点々を丁寧に塗るか、みかんの色に合わせて塗るか、子どもが自分で決められる自由度があります。シンプルな円形だからこそ、オレンジや黄色のグラデーションを試したり、上の花をビビッドに塗ったりと、色選びの工夫が楽しめるデザインです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'orange-easy-1',
     title: 'みかんのき',
@@ -9706,8 +10265,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
-    popular: false,
+    seoDescription: '左側に丸ごと一個のみかんがあり、茎の付け根には青々とした葉が一枚。表面には小さな粒粒がたくさん描かれています。右側には同じみかんを半分に切った断面図があり、くさび形に分かれた果肉がきれいに並んでいます。塗るときには、皮の色と中身の色の違いを見分けながら、粒々や果肉の筋をどう表現するかが楽しみどころです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'orange-normal-1',
     title: 'みかんをきろう',
@@ -9725,6 +10286,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:24',
     popular: false,
   },
+
   {
     id: 'orange-rich-1',
     title: 'かんきつるいのなかま',
@@ -9742,6 +10304,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:24',
     popular: false,
   },
+
   {
     id: 'grape-simple-1',
     title: 'かわいいぶどう',
@@ -9757,8 +10320,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
-    popular: false,
+    seoDescription: 'つるの先端からぶら下がるように、ぷっくりとした粒粒がびっしり詰まったぶどうの房。大きさがいろいろな円が重なり合って立体的な形を作っているので、奥行きを感じながら色を塗ることができます。上部の茶色いつるは少しカーブして生えており、パープルやグリーン、黄色など、ぶどうらしい色選びに迷う楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'grape-easy-1',
     title: 'ぶどうだな',
@@ -9774,8 +10339,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
-    popular: false,
+    seoDescription: 'つるをくるくると巻き付かせたぶどうの房が、いくつもの円で表現されています。葉脈が走る大きな葉と、横に半分に切られたぶどうの断面が添えられていて、塗るときに濃淡をつけたり、種の部分だけ色を変えたり、同じぶどうでも異なる見方で色遊びができる構成になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'grape-normal-1',
     title: 'ぶどうのふさ',
@@ -9793,6 +10360,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:34',
     popular: false,
   },
+
   {
     id: 'grape-rich-1',
     title: 'ぶどうがり',
@@ -9810,6 +10378,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:34',
     popular: false,
   },
+
   {
     id: 'watermelon-simple-1',
     title: 'かわいいすいか',
@@ -9825,8 +10394,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
-    popular: false,
+    seoDescription: '丸くてつやつやしたすいかが、くきをぴんと立てて堂々と並んでいます。表面には波のようにうねった筋が何本も走っていて、赤や緑、黄色で塗り分けるときにどこまでが一つの筋かを丁寧にたどる楽しさがあります。すいかの丸みに沿うように筋を塗っていくと、本物のすいかのようなふっくらした立体感が生まれてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'watermelon-easy-1',
     title: 'すいかをきろう',
@@ -9842,8 +10413,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
-    popular: false,
+    seoDescription: '丸々としたスイカの表皮には波のような模様がいくつも並んでいて、緑や黄色を重ねて塗ると本物らしくなります。右側に切られたスイカの断面では、白い部分と赤い部分をはっきり分けて塗ると、ジューシーな様子が引き立ちます。小さな種を表す楕円形の点々も丁寧に塗ると、スイカらしさが完成します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'watermelon-normal-1',
     title: 'すいかわり',
@@ -9861,6 +10434,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:43',
     popular: false,
   },
+
   {
     id: 'watermelon-rich-1',
     title: 'なつのおまつり',
@@ -9878,6 +10452,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:43',
     popular: false,
   },
+
   {
     id: 'peach-simple-1',
     title: 'かわいいもも',
@@ -9893,8 +10468,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
-    popular: false,
+    seoDescription: 'ふっくらと丸い形のもも。茎の先から二枚の葉がぴんと立ち上がり、実全体を優しく包み込むようにカーブしています。左右対称に見えて実は少しずつ異なる曲線なので、塗るときに濃淡をつけると立体感が出てきます。シンプルな線だからこそ、ピンク系の色選びや塗り方ひとつで、甘酸っぱそうな夏のもものおいしさが表現できる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'peach-easy-1',
     title: 'えだのもも',
@@ -9910,8 +10487,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
-    popular: false,
+    seoDescription: '枝に実ったふたつのもも。左側の丸いもも、ほっぺたのようなやさしい色合い。右側は半分に割れて、中身の種がくっきり見えています。小さな葉も添えられているので、色を変えて本物のように仕上げられます。種の筋模様と果肉の白さを丁寧に塗り分けると、もぎたてのもものみずみずしさが引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'peach-normal-1',
     title: 'もものはたけ',
@@ -9929,6 +10508,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:52',
     popular: false,
   },
+
   {
     id: 'peach-rich-1',
     title: 'ももたろう',
@@ -9946,6 +10526,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-13T23:52',
     popular: false,
   },
+
   {
     id: 'pineapple-simple-1',
     title: 'かわいいパイナップル',
@@ -9961,8 +10542,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
-    popular: false,
+    seoDescription: '南国の日差しを思わせるパイナップルが、冠のような葉を天に向けてすくっと立っています。果実を覆う幾何学模様のウロコ模様は、黄色や橙色で塗るときにどの部分を濃くするか工夫したくなるパターン。頭頂部に広がる長い葉ひとつひとつは、緑のバリエーション次第で立体感が生まれるポイントです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pineapple-easy-1',
     title: 'パイナップルのはたけ',
@@ -9978,8 +10561,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
-    popular: false,
+    seoDescription: 'パイナップルの畑に育った2つのパイナップル。左側は冠のような立派な葉をつけた大きなパイナップルで、格子模様の実がしっかり詰まっています。右側は輪切りにした断面で、中心から放射状に広がる果肉の部分を塗り分けられます。同じ果物でも全く違う見え方の2つの姿を、色えんぴつで丁寧に塗り分けることで、パイナップルがどんな形をしているのか立体的に理解できる工夫になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pineapple-normal-1',
     title: 'なんごくのくだもの',
@@ -9997,6 +10582,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-14T00:01',
     popular: false,
   },
+
   {
     id: 'pineapple-rich-1',
     title: 'なんごくのビーチ',
@@ -10014,6 +10600,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-14T00:01',
     popular: false,
   },
+
   {
     id: 'cherry-simple-1',
     title: 'かわいいさくらんぼ',
@@ -10029,8 +10616,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
-    popular: false,
+    seoDescription: 'ふたつのまんまるいさくらんぼが、ひとつの茎でつながっている様子を描いた絵です。つやつやした果実の丸い輪郭と、上に伸びた細い茎、そして茎の先端の小さな丸い部分など、単純だからこそ色の塗り分けを工夫するのが楽しくなります。左右対称に見えながらも、よく見るとそれぞれ少しずつ違う形をしているので、ふたつのさくらんぼに同じ色を塗るのか、別の赤でぬり分けるのか、そういった塗り方の工夫が引き出されやすい構図になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cherry-easy-1',
     title: 'さくらんぼのき',
@@ -10046,8 +10635,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
-    popular: false,
+    seoDescription: '茎の先端でふたつの真っ赤な実がぶら下がるさくらんぼ。左右対称な丸い形の実は、つやつやした赤色を塗るとより一層おいしそうに見えます。上から伸びる曲線の茎は、細くしなやかな線で描かれているので、濃い茶色や黒でしっかり塗ると実とのコントラストが生まれます。シンプルながら、色選びで印象ががらりと変わる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cherry-normal-1',
     title: 'さくらんぼつみ',
@@ -10065,6 +10656,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-14T00:10',
     popular: false,
   },
+
   {
     id: 'cherry-rich-1',
     title: 'あかいくだもの',
@@ -10082,6 +10674,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-14T00:10',
     popular: false,
   },
+
   {
     id: 'lemon-simple-1',
     title: 'かわいいレモン',
@@ -10097,8 +10690,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
-    popular: false,
+    seoDescription: 'つるんとした楕円形の身体にヘタと葉がついたレモン。上部の小さな茎からのびた緑の葉は、斜めに傾いたシンプルな形で、黄色だけでなく緑も塗りたくなります。下の方にはレモン独特の凹凸が描かれていて、塗り分けると立体的な印象になりそうです。全体的にやさしい曲線で、小さな手でクレヨンを握り始めた子どもが、はみ出しを気にせず色を重ねられる余白がたっぷり残っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lemon-easy-1',
     title: 'レモンをきろう',
@@ -10114,8 +10709,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
-    popular: false,
+    seoDescription: 'レモンの丸々とした黄色い果実と、切られて断面が見える半分のレモンが並んでいます。茎の先に付いた小さな葉が1枚、果実の上部でくるんと丸まった様子が印象的です。右側の断面レモンには放射状に広がる8つの果肉室が細かく描かれており、同じ黄色でも濃淡をつけて塗り分けると、みずみずしい立体感が生まれるポイントです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lemon-normal-1',
     title: 'レモンのき',
@@ -10133,6 +10730,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-14T00:47',
     popular: false,
   },
+
   {
     id: 'strawberry-easy-1',
     title: 'いちごのはちうえ',
@@ -10148,8 +10746,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T04:00',
-    popular: false,
+    seoDescription: 'ふたつのいちごが寄り添うように並んでいます。左のいちごはまるごと、右のいちごは半分に切られていて、内側のツブツブした種までくっきり見えます。どちらのいちごにも、先端にはおしゃれな葉飾りがピンと立っています。ツブツブの種をどの色で塗るか、いちごの赤をどれくらい濃くするかで、雰囲気ががらっと変わる楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lemon-rich-1',
     title: 'かんきつるいのなかま',
@@ -10167,6 +10767,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T04:15',
     popular: false,
   },
+
   {
     id: 'melon-simple-1',
     title: 'かわいいメロン',
@@ -10182,8 +10783,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T05:14',
-    popular: false,
+    seoDescription: 'つるりとした丸い形のメロンが、上についた茎をぴんと立てて存在感たっぷり。表面全体を覆う網目模様は、小さな四角形がぎっしり詰まっていて、色を塗り分けるときに規則正しい並びの楽しさが見えてきます。メロンの丸さに沿って曲線する網目を追いながら、黄色やグリーン、オレンジなど好きな色を選んで塗っていく時間が待っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'melon-easy-1',
     title: 'メロンをきろう',
@@ -10201,6 +10804,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T05:14',
     popular: false,
   },
+
   {
     id: 'melon-normal-1',
     title: 'メロンばたけ',
@@ -10218,6 +10822,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T05:14',
     popular: false,
   },
+
   {
     id: 'melon-rich-1',
     title: 'くだものやさん',
@@ -10235,6 +10840,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T05:14',
     popular: false,
   },
+
   {
     id: 'pear-simple-1',
     title: 'かわいいなし',
@@ -10250,8 +10856,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T06:07',
-    popular: false,
+    seoDescription: '上にぴんと立った茎がついた、ふっくらした梨。グラデーションで立体感を出したり、茎の細い部分を濃く塗ったりと、色の濃淡を試す絶好の題材です。シンプルな形だからこそ、どの色を選ぶか、淡く塗るか濃く塗るかで、同じ梨でも全く違う表情に変わります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pear-easy-1',
     title: 'なしのき',
@@ -10269,6 +10877,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T06:07',
     popular: false,
   },
+
   {
     id: 'pear-normal-1',
     title: 'あきのくだもの',
@@ -10286,6 +10895,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T06:07',
     popular: false,
   },
+
   {
     id: 'pear-rich-1',
     title: 'あきのくだものがいっぱい',
@@ -10303,6 +10913,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T06:07',
     popular: false,
   },
+
   {
     id: 'kiwi-simple-1',
     title: 'かわいいキウイ',
@@ -10318,8 +10929,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T07:10',
-    popular: false,
+    seoDescription: 'キウイフルーツを上から見たような、丸いフォルムの中に小さな種がたくさん並んでいます。中央の楕円形と、その周りに放射状に広がる細長い種、そして外側をぐるりと取り囲む小さな粒粒が、キウイの特徴をそのまま表現しています。波打つ外側の輪郭をなぞりながら、色を塗り進めると、本物のキウイの断面そのものが浮かび上がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'kiwi-easy-1',
     title: 'キウイをきろう',
@@ -10337,6 +10950,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T07:10',
     popular: false,
   },
+
   {
     id: 'kiwi-normal-1',
     title: 'キウイのたな',
@@ -10354,6 +10968,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T07:10',
     popular: false,
   },
+
   {
     id: 'kiwi-rich-1',
     title: 'トロピカルフルーツ',
@@ -10371,6 +10986,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T07:10',
     popular: false,
   },
+
   {
     id: 'mango-simple-1',
     title: 'かわいいマンゴー',
@@ -10386,8 +11002,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T08:24',
-    popular: false,
+    seoDescription: 'マンゴーの実がくるんと丸まった独特なカーブを描いていて、先端の茎と葉もしっかり付いています。塗るときは、丸い本体と長く伸びた曲がった部分を別の色合いで塗り分けたり、グラデーションで立体感を出したりと、いろいろな塗り方を試してみたくなる形状です。葉のディテールも細かく描かれているので、クレヨンの先端を使い分けながら丁寧に塗る経験ができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mango-easy-1',
     title: 'マンゴーのき',
@@ -10405,6 +11023,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T08:24',
     popular: false,
   },
+
   {
     id: 'mango-normal-1',
     title: 'マンゴーをきろう',
@@ -10422,6 +11041,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T08:24',
     popular: false,
   },
+
   {
     id: 'mango-rich-1',
     title: 'なんごくのフルーツ',
@@ -10439,6 +11059,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T08:24',
     popular: false,
   },
+
   {
     id: 'blueberry-simple-1',
     title: 'かわいいブルーベリー',
@@ -10454,8 +11075,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T09:40',
-    popular: false,
+    seoDescription: '枝先にたくさんのブルーベリーが実った様子を描いた一枚。丸くてぷっくりとした5つの実の頭には、小さな花のような模様がついていて、摘みたての新鮮さが感じられます。左側に広がる3枚の葉脈は細い線でていねいに描かれ、緑色を塗り重ねるときに葉っぱらしさがぐっと引き立つ工夫がされています。枝のカーブも優しく、実と葉と茎がひとつの束になった様子が自然に見えてくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'blueberry-easy-1',
     title: 'ブルーベリーのき',
@@ -10473,6 +11096,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T09:40',
     popular: false,
   },
+
   {
     id: 'blueberry-normal-1',
     title: 'ブルーベリーつみ',
@@ -10490,6 +11114,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T09:40',
     popular: false,
   },
+
   {
     id: 'blueberry-rich-1',
     title: 'ベリーのなかま',
@@ -10507,6 +11132,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T09:40',
     popular: false,
   },
+
   {
     id: 'grapefruit-simple-1',
     title: 'かわいいグレープフルーツ',
@@ -10522,8 +11148,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T10:33',
-    popular: false,
+    seoDescription: 'グレープフルーツが真正面を向いて、12個の果肉片に分かれた様子がはっきり見えます。中央の白い空間と放射状に広がる果肉のラインは、色を塗り分けるときに自然と立体感が生まれる作りになっており、濃淡をつけると果実の厚みが引き出せます。外側の円形の枠線は果皮を表現する場所で、黄色やオレンジをどう濃くするか迷う楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'grapefruit-easy-1',
     title: 'グレープフルーツをきろう',
@@ -10541,6 +11169,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T10:33',
     popular: false,
   },
+
   {
     id: 'grapefruit-normal-1',
     title: 'かんきつるいのなかま',
@@ -10558,6 +11187,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T10:33',
     popular: false,
   },
+
   {
     id: 'grapefruit-rich-1',
     title: 'くだものやさん',
@@ -10575,6 +11205,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T10:33',
     popular: false,
   },
+
   {
     id: 'persimmon-simple-1',
     title: 'かわいいかき',
@@ -10590,8 +11221,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T11:48',
-    popular: false,
+    seoDescription: '丸くてつやつやした柿が、緑の葉と茶色の枝に包まれてすっくと立っています。枝分かれした葉脈の細かい線は、薄い色で丁寧に塗り分けるチャンス。柿本体の大きな空白スペースは、赤やオレンジのグラデーションで秋らしさを表現できる場所です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'persimmon-easy-1',
     title: 'かきのき',
@@ -10609,6 +11242,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T11:48',
     popular: false,
   },
+
   {
     id: 'persimmon-normal-1',
     title: 'あきのくだもの',
@@ -10626,6 +11260,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T11:48',
     popular: false,
   },
+
   {
     id: 'persimmon-rich-1',
     title: 'あきのこうえん',
@@ -10643,6 +11278,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T11:48',
     popular: false,
   },
+
   {
     id: 'plum-simple-1',
     title: 'かわいいうめ',
@@ -10658,8 +11294,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T12:51',
-    popular: false,
+    seoDescription: '枝に成った大きな梅の実と、可憐な梅の花が一本の枝でつながっている情景です。花の中心には細かいおしべがたくさん放射状に描かれており、ピンクや黄色で丁寧に塗ると本物の梅の花らしさが引き出せます。葉脈も線で表現されているので、濃淡をつけながら塗ると立体感が生まれます。丸々とした梅の実の大きな面と、繊細な花びらや葉という、塗る難易度の異なる要素が一つの絵に詰まっているのが特徴です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'plum-easy-1',
     title: 'うめのはな',
@@ -10677,6 +11315,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T12:51',
     popular: false,
   },
+
   {
     id: 'plum-normal-1',
     title: 'うめのみのき',
@@ -10694,6 +11333,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T12:51',
     popular: false,
   },
+
   {
     id: 'plum-rich-1',
     title: 'うめがいっぱい',
@@ -10711,6 +11351,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T12:51',
     popular: false,
   },
+
   {
     id: 'fig-simple-1',
     title: 'かわいいいちじく',
@@ -10726,8 +11367,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T13:54',
-    popular: false,
+    seoDescription: '半分に切られたいちじくが、つるりとした皮と小さなつぶつぶの種がいっぱい詰まった断面を見せています。上には細い枝のようなへたが立っていて、中央から放射状に広がる種たちは、色を変えながら塗っていくと立体的に見えてきます。やさしい曲線で描かれた外側の皮と、ぎゅっと詰まった内側のコントラストを色えんぴつで表現できる、よく観察して塗りたくなる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fig-easy-1',
     title: 'いちじくをきろう',
@@ -10745,6 +11388,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T13:54',
     popular: false,
   },
+
   {
     id: 'fig-normal-1',
     title: 'いちじくのき',
@@ -10762,6 +11406,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T13:54',
     popular: false,
   },
+
   {
     id: 'fig-rich-1',
     title: 'あきのくだもの',
@@ -10779,6 +11424,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T13:54',
     popular: false,
   },
+
   {
     id: 'raspberry-simple-1',
     title: 'かわいいラズベリー',
@@ -10794,8 +11440,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T15:10',
-    popular: false,
+    seoDescription: 'つぶつぶの小さな粒がたくさん集まったラズベリーが、ころんと丸い形で画面いっぱいに広がっています。先端にはくるんとカールした葉が5枚、元気よく立ち上がっていて、茎もしっかり描かれています。一粒一粒は円形でそれぞれ独立しているので、赤や紫など違う色を塗り分けたり、同じ色で統一したり、自分だけの配色を自由に決められるのが魅力です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'raspberry-easy-1',
     title: 'ラズベリーのえだ',
@@ -10813,6 +11461,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T15:10',
     popular: false,
   },
+
   {
     id: 'raspberry-normal-1',
     title: 'ラズベリーつみ',
@@ -10830,6 +11479,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T15:10',
     popular: false,
   },
+
   {
     id: 'raspberry-rich-1',
     title: 'ベリーのなかま',
@@ -10847,6 +11497,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T15:10',
     popular: false,
   },
+
   {
     id: 'coconut-simple-1',
     title: 'かわいいヤシの実',
@@ -10864,6 +11515,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T16:40',
     popular: false,
   },
+
   {
     id: 'coconut-easy-1',
     title: 'ヤシのきのみ',
@@ -10881,6 +11533,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T16:40',
     popular: false,
   },
+
   {
     id: 'coconut-normal-1',
     title: 'ヤシのジュース',
@@ -10898,6 +11551,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T16:40',
     popular: false,
   },
+
   {
     id: 'coconut-rich-1',
     title: 'なんごくのビーチ',
@@ -10915,6 +11569,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T16:40',
     popular: false,
   },
+
   {
     id: 'yuzu-simple-1',
     title: 'かわいいゆず',
@@ -10932,6 +11587,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T17:38',
     popular: false,
   },
+
   {
     id: 'yuzu-easy-1',
     title: 'ゆずのき',
@@ -10949,6 +11605,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T17:38',
     popular: false,
   },
+
   {
     id: 'yuzu-normal-1',
     title: 'ゆずゆ',
@@ -10966,6 +11623,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T17:38',
     popular: false,
   },
+
   {
     id: 'yuzu-rich-1',
     title: 'ふゆのくだもの',
@@ -10983,6 +11641,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T17:38',
     popular: false,
   },
+
   {
     id: 'papaya-simple-1',
     title: 'かわいいパパイヤ',
@@ -11000,6 +11659,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T18:19',
     popular: false,
   },
+
   {
     id: 'papaya-easy-1',
     title: 'パパイヤをきろう',
@@ -11017,6 +11677,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T18:19',
     popular: false,
   },
+
   {
     id: 'papaya-normal-1',
     title: 'パパイヤのき',
@@ -11034,6 +11695,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T18:19',
     popular: false,
   },
+
   {
     id: 'papaya-rich-1',
     title: 'なんごくのフルーツ',
@@ -11051,6 +11713,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T18:19',
     popular: false,
   },
+
   {
     id: 'dragon-fruit-simple-1',
     title: 'かわいいドラゴンフルーツ',
@@ -11068,6 +11731,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T19:22',
     popular: false,
   },
+
   {
     id: 'dragon-fruit-easy-1',
     title: 'ドラゴンフルーツをきろう',
@@ -11085,6 +11749,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T19:22',
     popular: false,
   },
+
   {
     id: 'dragon-fruit-normal-1',
     title: 'サボテンのみ',
@@ -11102,6 +11767,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T19:22',
     popular: false,
   },
+
   {
     id: 'dragon-fruit-rich-1',
     title: 'エキゾチックフルーツ',
@@ -11119,6 +11785,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T19:22',
     popular: false,
   },
+
   {
     id: 'avocado-simple-1',
     title: 'かわいいアボカド',
@@ -11136,6 +11803,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T20:18',
     popular: false,
   },
+
   {
     id: 'avocado-easy-1',
     title: 'アボカドをきろう',
@@ -11153,6 +11821,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T20:18',
     popular: false,
   },
+
   {
     id: 'avocado-normal-1',
     title: 'アボカドトースト',
@@ -11170,6 +11839,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T20:18',
     popular: false,
   },
+
   {
     id: 'avocado-rich-1',
     title: 'サラダのざいりょう',
@@ -11187,6 +11857,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T20:18',
     popular: false,
   },
+
   {
     id: 'carrot-simple-1',
     title: 'かわいいにんじん',
@@ -11202,8 +11873,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
-    popular: false,
+    seoDescription: 'すっと伸びた根菜の体に、ギュッと詰まった葉っぱが3枚、元気よく広がっています。ニンジンの本体には横線がたくさん入っていて、オレンジ色で塗るときにこの筋模様をどう活かすか考えるのが楽しみです。上に向かってボリュームのある葉は、濃い緑と薄い緑を使い分けるとより立体的に見えるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-easy-1',
     title: 'はたけのにんじん',
@@ -11219,8 +11892,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
-    popular: false,
+    seoDescription: '畑の土の中からすくっと顔を出したにんじん。ピンと立った3本の葉は、くるんとした端っこがかわいらしく、赤と緑のコントラストが映えます。足元の土はゴツゴツとした石がごろごろしていて、ここに茶色を塗るとにんじんがもっと引き立ちます。にんじんの身体に入った筋のディテールと、ふんわりした土の曲線、しゃきっとした葉脈の塗り分けが、この絵の見どころです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-normal-1',
     title: 'ねっこやさい',
@@ -11238,6 +11913,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T20:52',
     popular: false,
   },
+
   {
     id: 'carrot-simple-2',
     title: 'かわいいにんじん',
@@ -11253,8 +11929,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
-    popular: false,
+    seoDescription: 'にんじんの根っこに引かれた細い横線をていねいに塗ると、土のなかに埋まった様子が生き生きしてきます。てっぺんから元気よく広がった5本の葉っぱは、それぞれ違う緑色を塗り分けると、ふさふさとした雰囲気が一層引き立ちます。すらりとした形のにんじん本体は、オレンジ色を濃淡つけて塗ると、野菜らしい立体感が出てくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-easy-2',
     title: 'にんじんがならんだ',
@@ -11270,8 +11948,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
-    popular: false,
+    seoDescription: '4本のにんじんが放射状に並んだ、シンプルで描きやすい構図です。太くて丸みのある根の部分と、ふさふさと広がった葉の部分のコントラストがはっきりしているので、色を分けて塗るのが楽しく感じられます。葉の細かい筋や根の表面に引かれた線は、子どもが細い線の上を丁寧になぞってみたくなるような仕上がりになっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-normal-2',
     title: 'にんじんをきろう',
@@ -11289,6 +11969,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T21:38',
     popular: false,
   },
+
   {
     id: 'carrot-rich-2',
     title: 'にんじんをしゅうかく',
@@ -11306,6 +11987,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T21:38',
     popular: false,
   },
+
   {
     id: 'onion-simple-1',
     title: 'かわいいたまねぎ',
@@ -11321,8 +12003,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
-    popular: false,
+    seoDescription: '丸くてぷっくりしたたまねぎが、根っこをしっかり下に張らせて立っています。上のほうから飛び出ている緑の芽は、何本もの細い筋でピンと立っていて、黄色や緑で色分けしたくなります。玉ねぎの身体全体は放射状の筋がたくさん走っているので、薄い黄色から濃い黄色へのグラデーションで奥行きを出したり、根の細い線一本一本を丁寧に塗ったりと、塗り方次第で表情が大きく変わります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'onion-easy-1',
     title: 'たまねぎをきろう',
@@ -11338,8 +12022,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
-    popular: false,
+    seoDescription: 'たまねぎの丸い身体を層状に描いた線が特徴で、中央の白い空間に色を入れると立体感が生まれます。上部の細く束ねられた茎と、下部にくるんと巻いた根の部分を塗り分けることで、たまねぎの全体像がぐんと引き立ちます。外側の大きな曲線から内側の細い曲線へ向かって色を塗り進めると、まるで本物のたまねぎの皮をむいていくような楽しさが味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'onion-normal-1',
     title: 'なかよしやさい',
@@ -11357,6 +12043,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T22:27',
     popular: false,
   },
+
   {
     id: 'onion-rich-1',
     title: 'やおやさん',
@@ -11374,6 +12061,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T22:27',
     popular: false,
   },
+
   {
     id: 'onion-simple-2',
     title: 'かわいいたまねぎ',
@@ -11389,8 +12077,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
-    popular: false,
+    seoDescription: 'ふっくらと丸い玉ねぎが、根っこをしゃんと立てて立っている姿。上のツンとしたとげのような茎の部分と、下に広がるひげのような根っこの対比が特徴です。縦に走る何本もの線は玉ねぎの薄皮の筋を表していて、どこから色を塗り始めるか、どの筋を濃くするか迷ってしまいそう。真っ白い丸い形は、クレヨンやペンで大胆に色を広げるのに最適な広さです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'onion-easy-2',
     title: 'たまねぎがならんだ',
@@ -11406,8 +12096,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
-    popular: false,
+    seoDescription: '4つのたまねぎが並んだ風景で、左から順に大きさが違うのが印象的です。それぞれの玉の部分に何本もの縦線が走っていて、塗るときに立体感を出すチャンスがあります。根元の細かいひげ根もていねいに描き込まれているので、ここを濃い色で仕上げると全体が引き締まります。白い余白をうまく使いながら、赤や黄色、紫など様々な玉ねぎの色に挑戦できる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'onion-normal-2',
     title: 'たまねぎをきろう',
@@ -11425,6 +12117,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T22:57',
     popular: false,
   },
+
   {
     id: 'onion-rich-2',
     title: 'たまねぎりょうり',
@@ -11442,6 +12135,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-15T22:57',
     popular: false,
   },
+
   {
     id: 'tomato-simple-1',
     title: 'かわいいトマト',
@@ -11457,8 +12151,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T01:03',
-    popular: false,
+    seoDescription: 'つんと立った丸いボディと、てっぺんにヒゲのようにカールした葉巻みたいな茎が特徴的なトマト。シンプルながら、赤く塗ったときにぐっと立体感が出る影のラインが左右に描かれているので、どこを濃く塗るかで仕上がりが変わります。葉の部分はギザギザと複雑な形をしているため、色分けして遊んでみるのもおもしろい一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-simple-3',
     title: 'かわいいにんじん',
@@ -11474,8 +12170,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
-    popular: false,
+    seoDescription: 'すっと立った緑色のにんじんの根っこから、ふさふさとした葉が5枚もりもり生えています。にんじん本体には斜めの線がたくさん入っていて、でこぼこした質感を表現しており、オレンジ色で塗るときに線の濃淡で立体感を出すのが楽しい仕上がりになります。葉の部分は細かくギザギザしたフチが特徴で、緑のいろいろな濃さを使い分けたくなるディテールが満載です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-easy-3',
     title: 'にんじんがならんだ',
@@ -11491,8 +12189,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
-    popular: false,
+    seoDescription: '4本のにんじんがきれいに並んだ様子を塗っていく絵です。ふっくらした根の部分には横線が何本も引かれていて、色の濃淡で立体感を出す絵の具の使い方が試せます。上にひろがる葉っぱはふわふわとした波線で表現されているので、緑のいろいろな濃さを重ねて塗るとより本物らしく見えるでしょう。どのにんじんも同じ大きさで並んでいるから、色選びに統一感を持たせるか、それぞれ違う塗り方を楽しむか、その選択も子どもの自由です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'carrot-normal-3',
     title: 'にんじんをきろう',
@@ -11510,6 +12210,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T05:05',
     popular: false,
   },
+
   {
     id: 'carrot-rich-3',
     title: 'にんじんをしゅうかく',
@@ -11527,6 +12228,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T05:05',
     popular: false,
   },
+
   {
     id: 'tomato-easy-1',
     title: 'はたけのトマト',
@@ -11542,8 +12244,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:49',
-    popular: false,
+    seoDescription: '畑でとれたばかりのトマトが、そのままの姿と切った姿で並んでいます。左側の丸々としたトマトには、葉のギザギザ模様が細かく描かれ、赤色で塗るときにこの部分の塗り分けが楽しめます。右側は半分に切られたトマトで、中には種がたくさん詰まっている様子が見えており、種の小ぶりな粒を丁寧に塗ったり、種の周りの実の部分を濃い赤で塗ったりと、色の工夫が試せます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tomato-normal-1',
     title: 'サラダやさい',
@@ -11561,6 +12265,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T05:49',
     popular: false,
   },
+
   {
     id: 'tomato-simple-2',
     title: 'かわいいトマト',
@@ -11576,8 +12281,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
-    popular: false,
+    seoDescription: '真っ赤に熟したトマトが、ふっくらとした丸い姿で描かれています。切り口から見える断面には、真ん中の白い種室と、その周りにぎっしり並んだ小さな種がたくさん。上についた緑の葉は、ちょっと立ち上がったユニークな形をしていて、トマトの頭頂部をかわいく飾っています。赤と緑の色合いをしっかり塗り分けることで、本物のトマトらしさが出てきますよ。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tomato-easy-2',
     title: 'トマトがならんだ',
@@ -11593,8 +12300,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
-    popular: false,
+    seoDescription: 'トマトが3つ並んで、一番手前のトマトは半分に切られて、中の種とじゃのめがはっきり見えています。つぶつぶの種の部分を赤く塗るか、黄色く塗るか、子どもの想像で変わります。ヘタの部分は星のような形をしていて、緑で塗るときに細かい線を丁寧になぞる練習ができます。丸くてシンプルな形なので、赤一色で仕上げるのも、濃い赤と薄い赤で影をつけるのも自由に表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tomato-normal-2',
     title: 'トマトをきろう',
@@ -11612,6 +12321,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T06:36',
     popular: false,
   },
+
   {
     id: 'potato-easy-1',
     title: 'じゃがいもほり',
@@ -11629,6 +12339,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T06:55',
     popular: false,
   },
+
   {
     id: 'potato-normal-1',
     title: 'カレーのざいりょう',
@@ -11646,6 +12357,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T06:55',
     popular: false,
   },
+
   {
     id: 'potato-simple-2',
     title: 'かわいいじゃがいも',
@@ -11663,6 +12375,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T07:34',
     popular: false,
   },
+
   {
     id: 'potato-easy-2',
     title: 'じゃがいもがならんだ',
@@ -11680,6 +12393,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T07:34',
     popular: false,
   },
+
   {
     id: 'potato-rich-2',
     title: 'じゃがいもをしゅうかく',
@@ -11697,6 +12411,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T07:34',
     popular: false,
   },
+
   {
     id: 'tomato-rich-1',
     title: 'トマトしゅうかく',
@@ -11714,6 +12429,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:27',
     popular: false,
   },
+
   {
     id: 'tomato-rich-2',
     title: 'トマトをしゅうかく',
@@ -11731,6 +12447,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:32',
     popular: false,
   },
+
   {
     id: 'potato-rich-1',
     title: 'じゃがいもりょうり',
@@ -11748,6 +12465,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:32',
     popular: false,
   },
+
   {
     id: 'potato-simple-1',
     title: 'かわいいじゃがいも',
@@ -11765,6 +12483,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:40',
     popular: false,
   },
+
   {
     id: 'potato-normal-2',
     title: 'じゃがいもをきろう',
@@ -11782,6 +12501,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:40',
     popular: false,
   },
+
   {
     id: 'carrot-rich-1',
     title: 'やさいばたけ',
@@ -11799,6 +12519,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T08:53',
     popular: false,
   },
+
   {
     id: 'broccoli-simple-1',
     title: 'かわいいブロッコリー',
@@ -11814,8 +12535,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
-    popular: false,
+    seoDescription: 'ふっくらと盛り上がったブロッコリーの房が、茎から元気よく枝分かれして広がっています。太い幹のような茎には縦筋の線が入っていて、野菜らしいゴツゴツ感を表現。上から見たような構図で、緑色で塗ったときに房ひとつひとつの濃淡をつけると、立体感が出て本物のブロッコリーらしく見えます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'broccoli-easy-1',
     title: 'はたけのブロッコリー',
@@ -11831,8 +12554,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
-    popular: false,
+    seoDescription: '畑に育つブロッコリーを、大きさの違いを感じながら塗ることができます。一番大きなブロッコリーはもこもこした花蕾がいっぱい詰まっていて、隣の3本は少しずつ小さくなり、親子で育つ様子が表現されています。太い茎から細い枝へと繋がる構造をよく見ると、本物のブロッコリーがどんなふうに成長しているのか気づけるでしょう。緑色で塗り分けるときに、葉のざらざらした質感を濃淡で表現できる工夫もあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'broccoli-normal-1',
     title: 'みどりのやさい',
@@ -11850,6 +12575,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T09:49',
     popular: false,
   },
+
   {
     id: 'broccoli-rich-1',
     title: 'やさいのもり',
@@ -11867,6 +12593,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T09:49',
     popular: false,
   },
+
   {
     id: 'corn-simple-1',
     title: 'かわいいとうもろこし',
@@ -11882,8 +12609,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
-    popular: false,
+    seoDescription: '粒がぎっしり詰まったとうもろこしが、大きく口を開けたように見える茎の上にまっすぐ立っています。先端からひらひらと広がるひげの部分は、元気に空へ伸びているようで、黄色で塗るとより生き生きとした表情が出てきます。左右に広がった緑の葉は大きくて塗りやすく、淡い黄色や濃い緑など色の濃淡をつけると、野菜らしいボリュームが生まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'corn-easy-1',
     title: 'はたけのとうもろこし',
@@ -11899,8 +12628,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
-    popular: false,
+    seoDescription: 'とうもろこしの粒一粒一粒が丁寧に描き分けられていて、色の濃淡をつけるとより立体的に見えます。左のとうもろこしはひげがふさふさと広がっており、右のものは皮をめくった状態で粒がきれいに並んでいます。両方とも根元の部分がしっかり描かれているので、茎の色をどうするか考えながら塗るのも楽しいでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'corn-normal-1',
     title: 'やきとうもろこし',
@@ -11918,6 +12649,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T12:04',
     popular: false,
   },
+
   {
     id: 'corn-rich-1',
     title: 'なつのやさいばたけ',
@@ -11935,6 +12667,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T12:04',
     popular: false,
   },
+
   {
     id: 'corn-simple-2',
     title: 'かわいいとうもろこし',
@@ -11950,8 +12683,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
-    popular: false,
+    seoDescription: '# 解説文  つやつやの黄色い粒がぎっしり詰まったとうもろこしが、大きく口を開けたようにほほえんでいます。上からふさふさっと広がるひげと、両脇をしっかり支える緑の葉が、このとうもろこしの立派さを引き立てています。粒ひとつひとつを丁寧に塗ったり、葉のカーブを濃淡で表現したり、ひげを細く仕上げたりと、同じトウモロコシでも塗り方次第でいろいろな表情が生まれるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'corn-easy-2',
     title: 'とうもろこしがならんだ',
@@ -11967,8 +12702,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
-    popular: false,
+    seoDescription: 'とうもろこしの粒がびっしり詰まった4本の穂が、左右に揺れるように並んでいます。一番左は皮をかぶったままの状態で、右へいくにつれて皮がめくれて、黄色く実った粒粒がはっきり見えてきます。ふさふさの毛先も上へぴんと立っていて、どの本の毛先を何色で塗るか考えながら、黄色や緑の色選びが楽しくなる1枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'corn-normal-2',
     title: 'とうもろこしをきろう',
@@ -11986,6 +12723,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T12:44',
     popular: false,
   },
+
   {
     id: 'corn-rich-2',
     title: 'やきとうもろこしたべよう',
@@ -12003,6 +12741,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T12:44',
     popular: false,
   },
+
   {
     id: 'cabbage-simple-1',
     title: 'かわいいキャベツ',
@@ -12018,8 +12757,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T13:51',
-    popular: false,
+    seoDescription: 'ふんわり丸くまとまったキャベツが、葉を幾重にも重ねながら立っています。外側の大きな葉から中心の小さな葉まで、段々と小さくなっていく構造をながめると、緑色だけでなく薄紫や黄緑を混ぜて塗ってみたくなるでしょう。葉ひとつひとつに走る筋は、同じ色でも濃淡をつけるチャンス。野菜らしい自然なしわを、どう彩るか考えながら塗り進めるおもしろさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cabbage-easy-1',
     title: 'はたけのキャベツ',
@@ -12037,6 +12778,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T13:51',
     popular: false,
   },
+
   {
     id: 'cabbage-rich-1',
     title: 'キャベツしゅうかく',
@@ -12054,6 +12796,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T13:51',
     popular: false,
   },
+
   {
     id: 'cabbage-simple-2',
     title: 'かわいいキャベツ',
@@ -12069,8 +12812,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T14:43',
-    popular: false,
+    seoDescription: 'ふっくら丸い形のキャベツが、何枚も重なった葉で構成されています。外側の大きな葉から中心の小さな葉へと段階的に描かれているので、緑色を濃淡つけて塗ると立体感が生まれます。葉脈の細い線をなぞるように色を入れれば、本物のキャベツのしわくちゃな質感が表現でき、黄緑や深緑の色使いで野菜らしさが一層引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cabbage-easy-2',
     title: 'キャベツがならんだ',
@@ -12088,6 +12833,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T14:43',
     popular: false,
   },
+
   {
     id: 'cabbage-normal-2',
     title: 'キャベツをきろう',
@@ -12105,6 +12851,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T14:43',
     popular: false,
   },
+
   {
     id: 'cabbage-rich-2',
     title: 'キャベツをしゅうかく',
@@ -12122,6 +12869,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T14:43',
     popular: false,
   },
+
   {
     id: 'eggplant-simple-1',
     title: 'かわいいなす',
@@ -12137,8 +12885,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T15:39',
-    popular: false,
+    seoDescription: 'つるんと丸いからだが特徴のなす。茎の先端についたギザギザの葉っぱと、くるんと丸まったくきの曲線が、紫や濃い色で塗ると一段と立体的に見えます。なすのおなか部分には薄い線が引かれているので、そこに違う色を重ねると、つやつやとした野菜らしさが出てくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'eggplant-easy-1',
     title: 'はたけのなす',
@@ -12156,6 +12906,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T15:39',
     popular: false,
   },
+
   {
     id: 'eggplant-normal-1',
     title: 'なつのやさい',
@@ -12173,6 +12924,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T15:39',
     popular: false,
   },
+
   {
     id: 'eggplant-rich-1',
     title: 'なつやさいばたけ',
@@ -12190,6 +12942,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T15:39',
     popular: false,
   },
+
   {
     id: 'eggplant-simple-2',
     title: 'かわいいなす',
@@ -12205,8 +12958,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T16:38',
-    popular: false,
+    seoDescription: 'つやつやとした紫色が似合いそうなナスが、茎の先でまっすぐ立っています。ボリュームのある身体の曲線と、てっぺんの細かいギザギザの葉のコントラストが面白く、色の濃淡で立体感を出すのに良さそうです。シンプルな輪郭だからこそ、紫一色で塗るのか、濃淡をつけるのか、子どもの色選びがそのまま作品に出てくる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'eggplant-easy-2',
     title: 'なすがならんだ',
@@ -12224,6 +12979,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T16:38',
     popular: false,
   },
+
   {
     id: 'eggplant-normal-2',
     title: 'なすをきろう',
@@ -12241,6 +12997,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T16:38',
     popular: false,
   },
+
   {
     id: 'eggplant-rich-2',
     title: 'なすをしゅうかく',
@@ -12258,6 +13015,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T16:38',
     popular: false,
   },
+
   {
     id: 'pumpkin-simple-1',
     title: 'かわいいかぼちゃ',
@@ -12273,8 +13031,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T17:33',
-    popular: false,
+    seoDescription: 'ずんぐりとした形がかわいいかぼちゃが、つるつるした表面の線で立体感たっぷりに描かれています。てっぺんの茎をよく見ると、ちょっと丸くふくらんだユニークな形をしていて、ここをどんな色で塗るか迷ってしまうかもしれません。かぼちゃの側面に何本も入った筋のラインは、オレンジを塗ったあとに濃い色を足すと、もっと丸くて立派に見えるポイントです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pumpkin-easy-1',
     title: 'はたけのかぼちゃ',
@@ -12292,6 +13052,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T17:33',
     popular: false,
   },
+
   {
     id: 'pumpkin-normal-1',
     title: 'ハロウィンかぼちゃ',
@@ -12309,6 +13070,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T17:33',
     popular: false,
   },
+
   {
     id: 'pumpkin-rich-1',
     title: 'ハロウィン',
@@ -12326,6 +13088,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T17:33',
     popular: false,
   },
+
   {
     id: 'pumpkin-simple-2',
     title: 'かわいいかぼちゃ',
@@ -12341,8 +13104,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T18:31',
-    popular: false,
+    seoDescription: 'ずんぐりとした丸いボディに、頭頂部からにょきにょき伸びた筋が特徴的なかぼちゃです。つるんとした表面には深い溝がいくつも走っていて、オレンジ色で塗るときにこの筋に沿って濃淡をつけると、ぷっくりとした立体感が出ます。上部の小さなくぼみには茎のようなパーツがついており、ここを黄緑や茶色で塗り分けるだけで、かぼちゃらしさがぐんと引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pumpkin-easy-2',
     title: 'かぼちゃがならんだ',
@@ -12360,6 +13125,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T18:31',
     popular: false,
   },
+
   {
     id: 'pumpkin-normal-2',
     title: 'かぼちゃをきろう',
@@ -12377,6 +13143,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T18:31',
     popular: false,
   },
+
   {
     id: 'cabbage-normal-1',
     title: 'はものやさい',
@@ -12394,6 +13161,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:17',
     popular: false,
   },
+
   {
     id: 'sweet-potato-simple-1',
     title: 'かわいいさつまいも',
@@ -12409,8 +13177,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:37',
-    popular: false,
+    seoDescription: 'ふっくらとした楕円形の体に、左右からひげのような根がぴょんと生えたさつまいも。つるの先端は優雅に上へカーブしながら伸びており、さつまいもらしい特徴がぎゅっと詰まっています。体全体には優しい陰影の線が引かれているので、紫や黄色、オレンジなど何色で塗ってもさつまいもらしく見えます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sweet-potato-easy-1',
     title: 'いもほり',
@@ -12428,6 +13198,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:37',
     popular: false,
   },
+
   {
     id: 'sweet-potato-normal-1',
     title: 'やきいもやさん',
@@ -12445,6 +13216,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:37',
     popular: false,
   },
+
   {
     id: 'sweet-potato-rich-1',
     title: 'いもほりえんそく',
@@ -12462,6 +13234,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:37',
     popular: false,
   },
+
   {
     id: 'cucumber-simple-1',
     title: 'かわいいきゅうり',
@@ -12477,8 +13250,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T05:21',
-    popular: false,
+    seoDescription: 'つぶつぶがいっぱいついた緑色のきゅうりが、左端でにっこり笑顔を見せています。長くのびたからだには細かいポツポツが規則正しく並んでいて、塗るときにどんな濃さの緑を選ぶかで印象がぐっと変わります。シンプルな形だからこそ、色の塗り方で自分だけのきゅうりが完成する一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cucumber-easy-1',
     title: 'はたけのきゅうり',
@@ -12496,6 +13271,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T05:21',
     popular: false,
   },
+
   {
     id: 'cucumber-normal-1',
     title: 'サラダやさい',
@@ -12513,6 +13289,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T05:21',
     popular: false,
   },
+
   {
     id: 'cucumber-rich-1',
     title: 'なつやさいばたけ',
@@ -12530,6 +13307,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T05:21',
     popular: false,
   },
+
   {
     id: 'spinach-simple-1',
     title: 'かわいいほうれんそう',
@@ -12545,8 +13323,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:00',
-    popular: false,
+    seoDescription: 'ほうれんそうが両手を広げるようにして、たくさんの葉をふわふわと広げています。根元から放射状に伸びた茎が幾本も見えて、葉脈の細い線がきちんと描かれているので、緑色の濃淡をつけて塗ると葉っぱらしさがぐんと出ます。ほうれんそうが笑っているような顔に見えるのは、葉の重なり方とかわいらしい輪郭のおかげ。野菜を親しみやすく感じられる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'spinach-easy-1',
     title: 'はたけのほうれんそう',
@@ -12564,6 +13344,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:00',
     popular: false,
   },
+
   {
     id: 'spinach-normal-1',
     title: 'はものやさい',
@@ -12581,6 +13362,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:00',
     popular: false,
   },
+
   {
     id: 'spinach-rich-1',
     title: 'ふゆのやさいばたけ',
@@ -12598,6 +13380,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:00',
     popular: false,
   },
+
   {
     id: 'radish-simple-1',
     title: 'かわいいだいこん',
@@ -12613,8 +13396,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:49',
-    popular: false,
+    seoDescription: '地面から真っすぐ伸びた大根の根っこと、てっぺんでふんわり広がる葉っぱが特徴的なかわいらしい野菜です。根の部分には細かい線が何本も引かれていて、大根の質感を表現できます。葉っぱはギザギザとした波線で縁取られていて、濃い緑と薄い緑で塗り分けると、ふさふさとした葉らしさが引き出せそうです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'radish-easy-1',
     title: 'はたけのだいこん',
@@ -12632,6 +13417,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:49',
     popular: false,
   },
+
   {
     id: 'radish-normal-1',
     title: 'ねっこやさい',
@@ -12649,6 +13435,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:49',
     popular: false,
   },
+
   {
     id: 'radish-rich-1',
     title: 'だいこんしゅうかく',
@@ -12666,6 +13453,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T06:49',
     popular: false,
   },
+
   {
     id: 'bell-pepper-simple-1',
     title: 'かわいいピーマン',
@@ -12683,6 +13471,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T07:37',
     popular: false,
   },
+
   {
     id: 'bell-pepper-easy-1',
     title: 'はたけのピーマン',
@@ -12700,6 +13489,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T07:37',
     popular: false,
   },
+
   {
     id: 'bell-pepper-normal-1',
     title: 'カラフルピーマン',
@@ -12717,6 +13507,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T07:37',
     popular: false,
   },
+
   {
     id: 'bell-pepper-rich-1',
     title: 'ピーマンのなかま',
@@ -12734,6 +13525,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T07:37',
     popular: false,
   },
+
   {
     id: 'mushroom-simple-1',
     title: 'かわいいきのこ',
@@ -12751,6 +13543,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T08:37',
     popular: false,
   },
+
   {
     id: 'mushroom-easy-1',
     title: 'もりのきのこ',
@@ -12768,6 +13561,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T08:37',
     popular: false,
   },
+
   {
     id: 'mushroom-normal-1',
     title: 'きのこのなかま',
@@ -12785,6 +13579,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T08:37',
     popular: false,
   },
+
   {
     id: 'mushroom-rich-1',
     title: 'きのこがり',
@@ -12802,6 +13597,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T08:37',
     popular: false,
   },
+
   {
     id: 'green-onion-simple-1',
     title: 'かわいいねぎ',
@@ -12819,6 +13615,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T09:19',
     popular: false,
   },
+
   {
     id: 'green-onion-easy-1',
     title: 'はたけのねぎ',
@@ -12836,6 +13633,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T09:19',
     popular: false,
   },
+
   {
     id: 'green-onion-normal-1',
     title: 'やくみのやさい',
@@ -12853,6 +13651,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T09:19',
     popular: false,
   },
+
   {
     id: 'green-onion-rich-1',
     title: 'ふゆのなべりょうり',
@@ -12870,6 +13669,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T09:19',
     popular: false,
   },
+
   {
     id: 'garlic-simple-1',
     title: 'かわいいにんにく',
@@ -12887,6 +13687,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:15',
     popular: false,
   },
+
   {
     id: 'garlic-easy-1',
     title: 'にんにくをわろう',
@@ -12904,6 +13705,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:15',
     popular: false,
   },
+
   {
     id: 'garlic-normal-1',
     title: 'やくみのやさい',
@@ -12921,6 +13723,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:15',
     popular: false,
   },
+
   {
     id: 'garlic-rich-1',
     title: 'ちょうみりょう',
@@ -12938,6 +13741,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:15',
     popular: false,
   },
+
   {
     id: 'hinamatsuri-simple-1',
     title: 'おひなさま',
@@ -12953,8 +13757,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
-    popular: false,
+    seoDescription: 'ひな祭りの主役、お姫様と殿様が向き合って立っています。二人とも優しい笑顔で、お姫様は扇を、殿様は笏を握っているところが見どころ。豪華な着物の襞や帯の模様、頭飾りの細かいパターンなど、色を塗り分けるのが楽しみなディテールが満載です。二人の衣装の色合いをどう組み合わせるか、また背景の空間をどんな色で彩るかによって、ひな壇が一層華やかに変身します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hinamatsuri-easy-1',
     title: 'ひな祭りのかざり',
@@ -12970,8 +13776,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
-    popular: false,
+    seoDescription: 'ひな壇に並ぶ男雛と女雛が、それぞれ違うポーズで微笑んでいます。男雛は扇を、女雛は大きな扇を広げて持っており、豪華な衣装には小さな花模様がいっぱい散りばめられています。左右に置かれた提灯にも花が描かれていて、全体が春らしい華やかさに満ちています。衣装の襞や帯の部分は線で細かく分けられているので、色を塗り分けるときに豪奢な雰囲気をより引き出せます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hinamatsuri-normal-1',
     title: 'ひなだんかざり',
@@ -12989,6 +13797,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T23:10',
     popular: false,
   },
+
   {
     id: 'hinamatsuri-rich-1',
     title: 'にぎやかなひなだん',
@@ -13006,6 +13815,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T23:10',
     popular: false,
   },
+
   {
     id: 'enrollment-simple-1',
     title: 'つうえんバッグ',
@@ -13021,8 +13831,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
-    popular: false,
+    seoDescription: '花のモチーフがあしらわれたかわいらしいバッグを塗ります。バッグ本体の大きな面には、桜のような花びら5枚の花と、真ん中に小さなドットが並ぶ詳細な模様が描かれており、その横には丸くぷっくりした花びらの花もあります。バッグの上部にはしっかりした持ち手と、素材感が出そうなボタンのような装飾品が並んでいます。右側のポケット部分には花のチャームがぶら下がっており、それぞれの花を違う色で塗り分けると、バッグ全体が華やかに仕上がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'enrollment-easy-1',
     title: 'さくらとつうえんバッグ',
@@ -13038,8 +13850,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
-    popular: false,
+    seoDescription: '春の季節に通園バッグを持って出かけようとする女の子。帽子に付いたリボンと、バッグから顔を出す桜の花が春らしく、手を挙げた元気なポーズが楽しい気分を表しています。周囲に散らばる桜の花びらと五弁花を色分けすることで、春の情景をより豊かに表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'enrollment-normal-1',
     title: 'にゅうえんしきのあさ',
@@ -13057,6 +13871,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T23:44',
     popular: false,
   },
+
   {
     id: 'enrollment-rich-1',
     title: 'にゅうえんおめでとう',
@@ -13074,6 +13889,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-16T23:44',
     popular: false,
   },
+
   {
     id: 'hanami-simple-1',
     title: 'さくらのき',
@@ -13089,8 +13905,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
-    popular: false,
+    seoDescription: '桜の木の下でおやつの時間。ウサギ、クマ、ネコが仲良く円になって座り、真ん中の箱から団子やクッキーを食べています。上空には満開の花がいっぱい咲いて、ふわりと落ちる花びらが地面に散らばっている様子が。ピンクや薄紫で塗ると、春らしい華やかな世界が広がります。キャラクターの丸い顔や、木の幹の質感、食べ物の細かい模様など、色を重ねる場所がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hanami-easy-1',
     title: 'おはなみのじゅんび',
@@ -13106,8 +13924,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
-    popular: false,
+    seoDescription: '満開の桜の木の下で、ピクニックのしたくを整えている場面です。敷物の上には、おにぎりやサンドイッチ、ドーナツなどのごちそうがかごに詰まっており、両脇には飲み物を入れるカップが置かれています。大きく枝を広げた桜の樹幹には細かい筋が描かれ、ふんわりした枝葉の塊とのコントラストが見どころです。ところどころに落ちてくる花びらも塗り分けると、春の空気がより感じられるようになります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'hanami-normal-1',
     title: 'さくらのしたでおべんとう',
@@ -13125,6 +13945,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T00:25',
     popular: false,
   },
+
   {
     id: 'hanami-rich-1',
     title: 'にぎやかなおはなみ',
@@ -13142,6 +13963,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T00:25',
     popular: false,
   },
+
   {
     id: 'excursion-simple-1',
     title: 'えんそくリュック',
@@ -13157,8 +13979,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
-    popular: false,
+    seoDescription: 'かわいい熊の顔がついた遠足用のリュック。大きなポケットにはお弁当やおやつが入っているのかな。両脇には水筒がぶら下がっていて、肩ひもにはキーホルダーのようなアクセサリーがついています。ふっくらした形と丸い輪郭は、クレヨンで優しく色を塗ると、本当に持ちたくなるような温かみのあるリュックに変身しそう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'excursion-easy-1',
     title: 'えんそくのじゅんび',
@@ -13174,8 +13998,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
-    popular: false,
+    seoDescription: '遠足の準備をする子どもたちの荷物がぎっしり詰まった一枚。クマさんの顔がプリントされたリュックと、おにぎりやみたらし団子、フルーツがぱんぱんに詰まったお弁当箱、そしてウサギのキャラクターがついた水筒が並んでいます。リュックの大きなポケットや、お弁当箱の細かい食べ物の描き分けなど、色を塗るときに子どもたちが「あ、ここはおにぎりだ」「ここは何色にしようかな」と一つ一つ発見できるディテールがたくさん隠れています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'excursion-normal-1',
     title: 'えんそくしゅっぱつ',
@@ -13193,6 +14019,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T01:10',
     popular: false,
   },
+
   {
     id: 'excursion-rich-1',
     title: 'たのしいえんそく',
@@ -13210,6 +14037,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T01:10',
     popular: false,
   },
+
   {
     id: 'childrensday-simple-1',
     title: 'こいのぼり',
@@ -13225,8 +14053,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
-    popular: false,
+    seoDescription: 'こいのぼりが大きな目をくりくりさせながら、頭の上には豪華なひれひらひらを立てています。体全体に重ねられた鱗のパターンは、赤や金色に塗ると本物の錦鯉みたいに輝きそう。口元には優しい笑顔が隠れていて、腹びれや背びれもちんまりと描かれているので、色を変えるとより立体的に見えてくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'childrensday-easy-1',
     title: 'こいのぼりがおよぐ',
@@ -13242,8 +14072,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
-    popular: false,
+    seoDescription: '風車がくるくる回る空の下で、二匹のこいのぼりが気持ちよさそうに泳いでいます。子どもは風車を高く掲げて、満面の笑みでこいのぼりを見上げているところ。雲が浮かぶ背景には、塗る色を自由に選べる広いスペースがあり、こいのぼりのウロコの規則正しい並びは、一列ずつていねいに色を塗る楽しさを引き出します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'childrensday-normal-1',
     title: 'こどもの日のそら',
@@ -13261,6 +14093,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T01:53',
     popular: false,
   },
+
   {
     id: 'childrensday-rich-1',
     title: 'にぎやかなこどもの日',
@@ -13278,6 +14111,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T01:53',
     popular: false,
   },
+
   {
     id: 'mothersday-simple-1',
     title: 'カーネーション',
@@ -13293,8 +14127,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
-    popular: false,
+    seoDescription: 'リボンで束ねられたカーネーションが、優しく手に握られています。花の先端のふわふわとした花びらと、茎に沿ってついた長い葉の細かな曲線が目を引き、赤やピンク、黄色などで丁寧に塗り分ける楽しさがあります。リボンの結び目もボリュームがあり、色使いで贈り物らしい華やかさを表現できる場面です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mothersday-easy-1',
     title: '母の日のプレゼント',
@@ -13310,8 +14146,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
-    popular: false,
+    seoDescription: 'カーネーションの花束と箱入りのプレゼント、ふたつの贈り物が並んでいます。左側の花束は大きなリボンで結ばれ、ふんわりと開いた花びらが幾重にも重なっており、ピンクや赤で塗ると華やかになりそうです。右側のギフトボックスには大きなリボンが結ばれ、立方体の形がはっきりしているので、濃淡をつけながら立体感を出す楽しみがあります。どちらも「ありがとう」の気持ちをかたちにした、特別なものばかりです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mothersday-normal-1',
     title: 'ははのひのかざり',
@@ -13329,6 +14167,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T02:45',
     popular: false,
   },
+
   {
     id: 'mothersday-rich-1',
     title: 'にぎやかなははのひ',
@@ -13346,6 +14185,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T02:45',
     popular: false,
   },
+
   {
     id: 'bamboo-shoot-simple-1',
     title: 'かわいいたけのこ',
@@ -13363,6 +14203,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:57',
     popular: false,
   },
+
   {
     id: 'bamboo-shoot-easy-1',
     title: 'はるのたけのこ',
@@ -13380,6 +14221,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:57',
     popular: false,
   },
+
   {
     id: 'bamboo-shoot-normal-1',
     title: 'たけのこほり',
@@ -13397,6 +14239,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:57',
     popular: false,
   },
+
   {
     id: 'bamboo-shoot-rich-1',
     title: 'はるのやさい',
@@ -13414,6 +14257,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T10:57',
     popular: false,
   },
+
   {
     id: 'lotus-root-simple-1',
     title: 'かわいいれんこん',
@@ -13431,6 +14275,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T12:04',
     popular: false,
   },
+
   {
     id: 'lotus-root-easy-1',
     title: 'れんこんをきろう',
@@ -13448,6 +14293,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T12:04',
     popular: false,
   },
+
   {
     id: 'lotus-root-normal-1',
     title: 'ねっこやさい',
@@ -13465,6 +14311,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T12:04',
     popular: false,
   },
+
   {
     id: 'lotus-root-rich-1',
     title: 'おせちりょうり',
@@ -13482,6 +14329,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T12:04',
     popular: false,
   },
+
   {
     id: 'asparagus-simple-1',
     title: 'かわいいアスパラガス',
@@ -13499,6 +14347,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'asparagus-easy-1',
     title: 'アスパラガスのたば',
@@ -13516,6 +14365,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'asparagus-normal-1',
     title: 'はるのアスパラガス',
@@ -13533,6 +14383,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'asparagus-rich-1',
     title: 'みどりのやさい',
@@ -13550,6 +14401,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'cauliflower-simple-1',
     title: 'かわいいカリフラワー',
@@ -13567,6 +14419,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T14:10',
     popular: false,
   },
+
   {
     id: 'cauliflower-easy-1',
     title: 'はたけのカリフラワー',
@@ -13584,6 +14437,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T14:10',
     popular: false,
   },
+
   {
     id: 'cauliflower-normal-1',
     title: 'やさいのなかま',
@@ -13601,6 +14455,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T14:10',
     popular: false,
   },
+
   {
     id: 'cauliflower-rich-1',
     title: 'カラフルカリフラワー',
@@ -13618,6 +14473,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T14:10',
     popular: false,
   },
+
   {
     id: 'bitter-gourd-simple-1',
     title: 'かわいいゴーヤ',
@@ -13635,6 +14491,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T15:04',
     popular: false,
   },
+
   {
     id: 'bitter-gourd-easy-1',
     title: 'ゴーヤのつる',
@@ -13652,6 +14509,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T15:04',
     popular: false,
   },
+
   {
     id: 'bitter-gourd-normal-1',
     title: 'ゴーヤのカーテン',
@@ -13669,6 +14527,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T15:04',
     popular: false,
   },
+
   {
     id: 'bitter-gourd-rich-1',
     title: 'なつのおきなわ',
@@ -13686,6 +14545,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T15:04',
     popular: false,
   },
+
   {
     id: 'edamame-simple-1',
     title: 'かわいいえだまめ',
@@ -13703,6 +14563,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:02',
     popular: false,
   },
+
   {
     id: 'edamame-easy-1',
     title: 'えだのえだまめ',
@@ -13720,6 +14581,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:02',
     popular: false,
   },
+
   {
     id: 'edamame-normal-1',
     title: 'なつのやさい',
@@ -13737,6 +14599,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:02',
     popular: false,
   },
+
   {
     id: 'edamame-rich-1',
     title: 'なつのえんがわ',
@@ -13754,6 +14617,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:02',
     popular: false,
   },
+
   {
     id: 'chinese-cabbage-simple-1',
     title: 'かわいいはくさい',
@@ -13771,6 +14635,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:49',
     popular: false,
   },
+
   {
     id: 'chinese-cabbage-easy-1',
     title: 'はくさいをきろう',
@@ -13788,6 +14653,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:49',
     popular: false,
   },
+
   {
     id: 'chinese-cabbage-normal-1',
     title: 'なべのざいりょう',
@@ -13805,6 +14671,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:49',
     popular: false,
   },
+
   {
     id: 'chinese-cabbage-rich-1',
     title: 'ふゆのなべりょうり',
@@ -13822,6 +14689,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T16:49',
     popular: false,
   },
+
   {
     id: 'okra-simple-1',
     title: 'かわいいオクラ',
@@ -13839,6 +14707,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T17:42',
     popular: false,
   },
+
   {
     id: 'okra-easy-1',
     title: 'オクラをきろう',
@@ -13856,6 +14725,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T17:42',
     popular: false,
   },
+
   {
     id: 'okra-normal-1',
     title: 'はたけのオクラ',
@@ -13873,6 +14743,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T17:42',
     popular: false,
   },
+
   {
     id: 'okra-rich-1',
     title: 'なんごくのやさい',
@@ -13890,6 +14761,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T17:42',
     popular: false,
   },
+
   {
     id: 'sakuramochi-simple-1',
     title: 'さくらもち',
@@ -13905,8 +14777,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
-    popular: false,
+    seoDescription: '桜の葉に包まれた、ふっくらとした白玉団子のさくらもち。透き通った葉脈の繊細な線と、生地につぶつぶと散らばった粒々の質感が、塗るときに指を止めたくなります。葉巻きの赤紫色と、白い求肥、そして淡いピンクの層が幾重にも重なる様子を、自分の色えんぴつで表現してみましょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sakuramochi-easy-1',
     title: 'さくらもちとおちゃ',
@@ -13922,8 +14796,10 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
-    popular: false,
+    seoDescription: '春の和菓子・桜餅が白い器に二つ並んでいて、大きな桜の葉がくるんと巻いてあります。横には湯気が立ちそうなお茶の湯のみが置かれ、周りに舞う桜の花びらと小さな花がそこかしこに散らばっています。淡いピンクや緑で塗り分ける餅の部分、白でまとめたお茶、そして細かい花びらたちで、春らしい色合いを自由に組み立てられる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sakuramochi-normal-1',
     title: 'はるのわがし',
@@ -13941,6 +14817,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:17',
     popular: false,
   },
+
   {
     id: 'sakuramochi-rich-1',
     title: 'にぎやかなはるのわがし',
@@ -13958,6 +14835,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T04:17',
     popular: false,
   },
+
   {
     id: 'botanical-rose-simple-1',
     title: '薔薇の植物画',
@@ -13976,6 +14854,7 @@ const _materials2: Material[] = [
     createdAt: '2026-05-17T13:42',
     popular: false,
   },
+
 ]
 
 const _materials3: Material[] = [
@@ -13997,6 +14876,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:42',
     popular: false,
   },
+
   {
     id: 'botanical-rose-normal-1',
     title: '薔薇の植物画',
@@ -14015,6 +14895,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:42',
     popular: false,
   },
+
   {
     id: 'botanical-rose-rich-1',
     title: '薔薇の植物画',
@@ -14033,6 +14914,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:42',
     popular: false,
   },
+
   {
     id: 'cityscape-kyoto-simple-1',
     title: '京都の町並み',
@@ -14051,6 +14933,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:55',
     popular: false,
   },
+
   {
     id: 'cityscape-kyoto-easy-1',
     title: '京都の町並み',
@@ -14069,6 +14952,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:55',
     popular: false,
   },
+
   {
     id: 'cityscape-kyoto-normal-1',
     title: '京都の町並み',
@@ -14087,6 +14971,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:55',
     popular: false,
   },
+
   {
     id: 'cityscape-kyoto-rich-1',
     title: '京都の町並み',
@@ -14105,6 +14990,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:55',
     popular: false,
   },
+
   {
     id: 'animals-detail-lion-simple-1',
     title: 'ライオンの細密画',
@@ -14123,6 +15009,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:05',
     popular: false,
   },
+
   {
     id: 'animals-detail-lion-easy-1',
     title: 'ライオンの細密画',
@@ -14141,6 +15028,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:05',
     popular: false,
   },
+
   {
     id: 'animals-detail-lion-normal-1',
     title: 'ライオンの細密画',
@@ -14159,6 +15047,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:05',
     popular: false,
   },
+
   {
     id: 'animals-detail-lion-rich-1',
     title: 'ライオンの細密画',
@@ -14177,6 +15066,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:05',
     popular: false,
   },
+
   {
     id: 'flowers-detail-camellia-simple-1',
     title: '椿の細密画',
@@ -14195,6 +15085,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-camellia-easy-1',
     title: '椿の細密画',
@@ -14213,6 +15104,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-camellia-normal-1',
     title: '椿の細密画',
@@ -14231,6 +15123,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-camellia-rich-1',
     title: '椿の細密画',
@@ -14249,6 +15142,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:16',
     popular: false,
   },
+
   {
     id: 'pattern-geometric-simple-1',
     title: '幾何模様',
@@ -14267,6 +15161,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:37',
     popular: false,
   },
+
   {
     id: 'pattern-geometric-easy-1',
     title: '幾何模様',
@@ -14285,6 +15180,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:37',
     popular: false,
   },
+
   {
     id: 'pattern-geometric-normal-1',
     title: '幾何模様',
@@ -14303,6 +15199,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:37',
     popular: false,
   },
+
   {
     id: 'pattern-geometric-rich-1',
     title: '幾何模様',
@@ -14321,6 +15218,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:37',
     popular: false,
   },
+
   {
     id: 'landscape-european-town-simple-1',
     title: 'ヨーロッパの街並み',
@@ -14339,6 +15237,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:48',
     popular: false,
   },
+
   {
     id: 'landscape-european-town-easy-1',
     title: 'ヨーロッパの街並み',
@@ -14357,6 +15256,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:48',
     popular: false,
   },
+
   {
     id: 'landscape-european-town-normal-1',
     title: 'ヨーロッパの街並み',
@@ -14375,6 +15275,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:48',
     popular: false,
   },
+
   {
     id: 'landscape-european-town-rich-1',
     title: 'ヨーロッパの街並み',
@@ -14393,6 +15294,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:48',
     popular: false,
   },
+
   {
     id: 'mandala-lotus-simple-1',
     title: '蓮の曼荼羅',
@@ -14411,6 +15313,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:56',
     popular: false,
   },
+
   {
     id: 'mandala-lotus-easy-1',
     title: '蓮の曼荼羅',
@@ -14429,6 +15332,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:56',
     popular: false,
   },
+
   {
     id: 'mandala-lotus-normal-1',
     title: '蓮の曼荼羅',
@@ -14447,6 +15351,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:56',
     popular: false,
   },
+
   {
     id: 'mandala-lotus-rich-1',
     title: '蓮の曼荼羅',
@@ -14465,6 +15370,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:56',
     popular: false,
   },
+
   {
     id: 'botanical-wisteria-simple-1',
     title: '藤の植物画',
@@ -14483,6 +15389,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:35',
     popular: false,
   },
+
   {
     id: 'botanical-wisteria-easy-1',
     title: '藤の植物画',
@@ -14501,6 +15408,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:35',
     popular: false,
   },
+
   {
     id: 'botanical-wisteria-normal-1',
     title: '藤の植物画',
@@ -14519,6 +15427,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:35',
     popular: false,
   },
+
   {
     id: 'botanical-wisteria-rich-1',
     title: '藤の植物画',
@@ -14537,6 +15446,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:35',
     popular: false,
   },
+
   {
     id: 'botanical-iris-simple-1',
     title: '菖蒲の植物画',
@@ -14555,6 +15465,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:48',
     popular: false,
   },
+
   {
     id: 'botanical-iris-easy-1',
     title: '菖蒲の植物画',
@@ -14573,6 +15484,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:48',
     popular: false,
   },
+
   {
     id: 'botanical-iris-normal-1',
     title: '菖蒲の植物画',
@@ -14591,6 +15503,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:48',
     popular: false,
   },
+
   {
     id: 'botanical-iris-rich-1',
     title: '菖蒲の植物画',
@@ -14609,6 +15522,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:48',
     popular: false,
   },
+
   {
     id: 'botanical-lily-simple-1',
     title: '百合の植物画',
@@ -14627,6 +15541,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:59',
     popular: false,
   },
+
   {
     id: 'botanical-lily-easy-1',
     title: '百合の植物画',
@@ -14645,6 +15560,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:59',
     popular: false,
   },
+
   {
     id: 'botanical-lily-normal-1',
     title: '百合の植物画',
@@ -14663,6 +15579,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:59',
     popular: false,
   },
+
   {
     id: 'botanical-lily-rich-1',
     title: '百合の植物画',
@@ -14681,6 +15598,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:59',
     popular: false,
   },
+
   {
     id: 'botanical-orchid-simple-1',
     title: '蘭の植物画',
@@ -14699,6 +15617,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:10',
     popular: false,
   },
+
   {
     id: 'botanical-orchid-easy-1',
     title: '蘭の植物画',
@@ -14717,6 +15636,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:10',
     popular: false,
   },
+
   {
     id: 'botanical-orchid-normal-1',
     title: '蘭の植物画',
@@ -14735,6 +15655,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:10',
     popular: false,
   },
+
   {
     id: 'botanical-orchid-rich-1',
     title: '蘭の植物画',
@@ -14753,6 +15674,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:10',
     popular: false,
   },
+
   {
     id: 'botanical-magnolia-simple-1',
     title: '木蓮の植物画',
@@ -14771,6 +15693,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:20',
     popular: false,
   },
+
   {
     id: 'botanical-magnolia-easy-1',
     title: '木蓮の植物画',
@@ -14789,6 +15712,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:20',
     popular: false,
   },
+
   {
     id: 'botanical-magnolia-normal-1',
     title: '木蓮の植物画',
@@ -14807,6 +15731,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:20',
     popular: false,
   },
+
   {
     id: 'botanical-magnolia-rich-1',
     title: '木蓮の植物画',
@@ -14825,6 +15750,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:20',
     popular: false,
   },
+
   {
     id: 'botanical-chrysanthemum-simple-1',
     title: '菊の植物画',
@@ -14843,6 +15769,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:31',
     popular: false,
   },
+
   {
     id: 'botanical-chrysanthemum-easy-1',
     title: '菊の植物画',
@@ -14861,6 +15788,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:31',
     popular: false,
   },
+
   {
     id: 'botanical-chrysanthemum-normal-1',
     title: '菊の植物画',
@@ -14879,6 +15807,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:31',
     popular: false,
   },
+
   {
     id: 'botanical-chrysanthemum-rich-1',
     title: '菊の植物画',
@@ -14897,6 +15826,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:31',
     popular: false,
   },
+
   {
     id: 'botanical-plum-simple-1',
     title: '梅の植物画',
@@ -14915,6 +15845,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:41',
     popular: false,
   },
+
   {
     id: 'botanical-plum-easy-1',
     title: '梅の植物画',
@@ -14933,6 +15864,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:41',
     popular: false,
   },
+
   {
     id: 'botanical-plum-normal-1',
     title: '梅の植物画',
@@ -14951,6 +15883,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:41',
     popular: false,
   },
+
   {
     id: 'botanical-plum-rich-1',
     title: '梅の植物画',
@@ -14969,6 +15902,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:41',
     popular: false,
   },
+
   {
     id: 'botanical-lotus-simple-1',
     title: '蓮の植物画',
@@ -14987,6 +15921,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:52',
     popular: false,
   },
+
   {
     id: 'botanical-lotus-easy-1',
     title: '蓮の植物画',
@@ -15005,6 +15940,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:52',
     popular: false,
   },
+
   {
     id: 'botanical-lotus-normal-1',
     title: '蓮の植物画',
@@ -15023,6 +15959,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:52',
     popular: false,
   },
+
   {
     id: 'botanical-lotus-rich-1',
     title: '蓮の植物画',
@@ -15041,6 +15978,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:52',
     popular: false,
   },
+
   {
     id: 'sakura-simple-1',
     title: 'さくらのはな',
@@ -15058,6 +15996,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T08:29',
     popular: false,
   },
+
   {
     id: 'sakura-easy-1',
     title: 'さくらのえだ',
@@ -15075,6 +16014,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T08:29',
     popular: false,
   },
+
   {
     id: 'sakura-normal-1',
     title: 'まんかいのさくら',
@@ -15092,6 +16032,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T08:29',
     popular: false,
   },
+
   {
     id: 'sakura-rich-1',
     title: 'さくらのしたであそぼう',
@@ -15109,6 +16050,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T08:29',
     popular: false,
   },
+
   {
     id: 'tulip-simple-1',
     title: 'かわいいチューリップ',
@@ -15126,6 +16068,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:14',
     popular: false,
   },
+
   {
     id: 'tulip-easy-1',
     title: 'チューリップがならんだ',
@@ -15143,6 +16086,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:14',
     popular: false,
   },
+
   {
     id: 'tulip-normal-1',
     title: 'チューリップのはなだん',
@@ -15160,6 +16104,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:14',
     popular: false,
   },
+
   {
     id: 'tulip-rich-1',
     title: 'チューリップばたけ',
@@ -15177,6 +16122,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:14',
     popular: false,
   },
+
   {
     id: 'dandelion-simple-1',
     title: 'かわいいたんぽぽ',
@@ -15194,6 +16140,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:53',
     popular: false,
   },
+
   {
     id: 'dandelion-easy-1',
     title: 'たんぽぽとわたげ',
@@ -15211,6 +16158,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:53',
     popular: false,
   },
+
   {
     id: 'dandelion-normal-1',
     title: 'くさはらのたんぽぽ',
@@ -15228,6 +16176,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:53',
     popular: false,
   },
+
   {
     id: 'dandelion-rich-1',
     title: 'わたげをふこう',
@@ -15245,6 +16194,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T09:53',
     popular: false,
   },
+
   {
     id: 'sunflower-simple-1',
     title: 'かわいいひまわり',
@@ -15262,6 +16212,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T10:47',
     popular: false,
   },
+
   {
     id: 'sunflower-easy-1',
     title: 'ひまわりがならんだ',
@@ -15279,6 +16230,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T10:47',
     popular: false,
   },
+
   {
     id: 'sunflower-normal-1',
     title: 'ひまわりばたけ',
@@ -15296,6 +16248,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T10:47',
     popular: false,
   },
+
   {
     id: 'sunflower-rich-1',
     title: 'にぎやかなひまわりばたけ',
@@ -15313,6 +16266,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T10:47',
     popular: false,
   },
+
   {
     id: 'morning-glory-simple-1',
     title: 'かわいいあさがお',
@@ -15330,6 +16284,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T11:20',
     popular: false,
   },
+
   {
     id: 'morning-glory-easy-1',
     title: 'あさがおのつる',
@@ -15347,6 +16302,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T11:20',
     popular: false,
   },
+
   {
     id: 'morning-glory-normal-1',
     title: 'あさがおのしちゅう',
@@ -15364,6 +16320,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T11:20',
     popular: false,
   },
+
   {
     id: 'morning-glory-rich-1',
     title: 'あさがおをそだてよう',
@@ -15381,6 +16338,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T11:20',
     popular: false,
   },
+
   {
     id: 'hydrangea-simple-1',
     title: 'かわいいあじさい',
@@ -15398,6 +16356,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T12:12',
     popular: false,
   },
+
   {
     id: 'hydrangea-easy-1',
     title: 'あじさいとはっぱ',
@@ -15415,6 +16374,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T12:12',
     popular: false,
   },
+
   {
     id: 'hydrangea-normal-1',
     title: 'あめのひのあじさい',
@@ -15432,6 +16392,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T12:12',
     popular: false,
   },
+
   {
     id: 'hydrangea-rich-1',
     title: 'にぎやかなつゆのひ',
@@ -15449,6 +16410,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T12:12',
     popular: false,
   },
+
   {
     id: 'rose-simple-1',
     title: 'かわいいバラ',
@@ -15466,6 +16428,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'rose-easy-1',
     title: 'バラのはなたば',
@@ -15483,6 +16446,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'rose-normal-1',
     title: 'バラのアーチ',
@@ -15500,6 +16464,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'rose-rich-1',
     title: 'バラえん',
@@ -15517,6 +16482,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T13:02',
     popular: false,
   },
+
   {
     id: 'carnation-simple-1',
     title: 'かわいいカーネーション',
@@ -15534,6 +16500,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:00',
     popular: false,
   },
+
   {
     id: 'carnation-easy-1',
     title: 'カーネーションのはなたば',
@@ -15551,6 +16518,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:00',
     popular: false,
   },
+
   {
     id: 'carnation-normal-1',
     title: 'カーネーションのかびん',
@@ -15568,6 +16536,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:00',
     popular: false,
   },
+
   {
     id: 'carnation-rich-1',
     title: 'にぎやかなカーネーション',
@@ -15585,6 +16554,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:00',
     popular: false,
   },
+
   {
     id: 'cosmos-simple-1',
     title: 'かわいいコスモス',
@@ -15602,6 +16572,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:43',
     popular: false,
   },
+
   {
     id: 'cosmos-easy-1',
     title: 'コスモスがゆれる',
@@ -15619,6 +16590,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:43',
     popular: false,
   },
+
   {
     id: 'cosmos-normal-1',
     title: 'コスモスのはら',
@@ -15636,6 +16608,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:43',
     popular: false,
   },
+
   {
     id: 'cosmos-rich-1',
     title: 'コスモスばたけであそぼう',
@@ -15653,6 +16626,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T14:43',
     popular: false,
   },
+
   {
     id: 'rapeseed-simple-1',
     title: 'かわいいなのはな',
@@ -15670,6 +16644,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T15:24',
     popular: false,
   },
+
   {
     id: 'rapeseed-easy-1',
     title: 'なのはなのたば',
@@ -15687,6 +16662,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T15:24',
     popular: false,
   },
+
   {
     id: 'rapeseed-normal-1',
     title: 'なのはなばたけ',
@@ -15704,6 +16680,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T15:24',
     popular: false,
   },
+
   {
     id: 'rapeseed-rich-1',
     title: 'はるのなのはなばたけ',
@@ -15721,6 +16698,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T15:24',
     popular: false,
   },
+
   {
     id: 'violet-simple-1',
     title: 'かわいいすみれ',
@@ -15738,6 +16716,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:10',
     popular: false,
   },
+
   {
     id: 'violet-easy-1',
     title: 'すみれがさいた',
@@ -15755,6 +16734,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:10',
     popular: false,
   },
+
   {
     id: 'violet-normal-1',
     title: 'くさはらのすみれ',
@@ -15772,6 +16752,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:10',
     popular: false,
   },
+
   {
     id: 'violet-rich-1',
     title: 'はるのはなばたけ',
@@ -15789,6 +16770,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:10',
     popular: false,
   },
+
   {
     id: 'horsetail-simple-1',
     title: 'かわいいつくし',
@@ -15806,6 +16788,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:54',
     popular: false,
   },
+
   {
     id: 'horsetail-easy-1',
     title: 'つくしがならんだ',
@@ -15823,6 +16806,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:54',
     popular: false,
   },
+
   {
     id: 'horsetail-normal-1',
     title: 'くさのなかのつくし',
@@ -15840,6 +16824,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:54',
     popular: false,
   },
+
   {
     id: 'horsetail-rich-1',
     title: 'つくしをつもう',
@@ -15857,6 +16842,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T16:54',
     popular: false,
   },
+
   {
     id: 'pansy-simple-1',
     title: 'かわいいパンジー',
@@ -15874,6 +16860,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:39',
     popular: false,
   },
+
   {
     id: 'pansy-easy-1',
     title: 'パンジーがならんだ',
@@ -15891,6 +16878,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:39',
     popular: false,
   },
+
   {
     id: 'pansy-normal-1',
     title: 'パンジーのうえきばち',
@@ -15908,6 +16896,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:39',
     popular: false,
   },
+
   {
     id: 'pansy-rich-1',
     title: 'パンジーのはなだん',
@@ -15925,6 +16914,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:39',
     popular: false,
   },
+
   {
     id: 'lily-simple-1',
     title: 'かわいいゆり',
@@ -15942,6 +16932,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:57',
     popular: false,
   },
+
   {
     id: 'lily-easy-1',
     title: 'ゆりがさいた',
@@ -15959,6 +16950,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:57',
     popular: false,
   },
+
   {
     id: 'lily-normal-1',
     title: 'にわのゆり',
@@ -15976,6 +16968,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:57',
     popular: false,
   },
+
   {
     id: 'lily-rich-1',
     title: 'ゆりばたけ',
@@ -15993,6 +16986,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T17:57',
     popular: false,
   },
+
   {
     id: 'clover-simple-1',
     title: 'かわいいクローバー',
@@ -16010,6 +17004,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:24',
     popular: false,
   },
+
   {
     id: 'clover-easy-1',
     title: 'みつばとよつば',
@@ -16027,6 +17022,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:24',
     popular: false,
   },
+
   {
     id: 'clover-normal-1',
     title: 'くさはらのクローバー',
@@ -16044,6 +17040,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:24',
     popular: false,
   },
+
   {
     id: 'clover-rich-1',
     title: 'よつばをさがそう',
@@ -16061,6 +17058,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:24',
     popular: false,
   },
+
   {
     id: 'botanical-dandelion-simple-1',
     title: 'たんぽぽの植物画',
@@ -16079,6 +17077,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:03',
     popular: false,
   },
+
   {
     id: 'botanical-dandelion-easy-1',
     title: 'たんぽぽの植物画',
@@ -16097,6 +17096,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:03',
     popular: false,
   },
+
   {
     id: 'botanical-dandelion-normal-1',
     title: 'たんぽぽの植物画',
@@ -16115,6 +17115,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:03',
     popular: false,
   },
+
   {
     id: 'botanical-dandelion-rich-1',
     title: 'たんぽぽの植物画',
@@ -16133,6 +17134,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:03',
     popular: false,
   },
+
   {
     id: 'ant-simple-1',
     title: 'かわいいアリ',
@@ -16150,6 +17152,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:49',
     popular: false,
   },
+
   {
     id: 'ant-easy-1',
     title: 'アリのおしごと',
@@ -16167,6 +17170,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:49',
     popular: false,
   },
+
   {
     id: 'ant-normal-1',
     title: 'アリのぎょうれつ',
@@ -16184,6 +17188,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:49',
     popular: false,
   },
+
   {
     id: 'ant-rich-1',
     title: 'アリをかんさつ',
@@ -16201,6 +17206,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T18:49',
     popular: false,
   },
+
   {
     id: 'cicada-simple-1',
     title: 'かわいいセミ',
@@ -16216,8 +17222,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:34',
-    popular: false,
+    seoDescription: '大きな目でにっこり笑うセミが、両翼を広げて元気よくポーズをとっています。透き通った翅には細かい筋模様が描かれており、薄紫や薄緑で塗り分けると昆虫らしさが引き立ちます。お腹の横しま模様と、触角の先端にある丸いパーツなど、小さな部分を塗るときの楽しさも詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cicada-easy-1',
     title: 'きのセミ',
@@ -16235,6 +17243,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:34',
     popular: false,
   },
+
   {
     id: 'cicada-normal-1',
     title: 'なつのセミ',
@@ -16252,6 +17261,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:34',
     popular: false,
   },
+
   {
     id: 'cicada-rich-1',
     title: 'セミをつかまえよう',
@@ -16269,6 +17279,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:34',
     popular: false,
   },
+
   {
     id: 'mantis-simple-1',
     title: 'かわいいカマキリ',
@@ -16286,6 +17297,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:05',
     popular: false,
   },
+
   {
     id: 'mantis-easy-1',
     title: 'はっぱのカマキリ',
@@ -16303,6 +17315,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:05',
     popular: false,
   },
+
   {
     id: 'mantis-normal-1',
     title: 'くさむらのカマキリ',
@@ -16320,6 +17333,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:05',
     popular: false,
   },
+
   {
     id: 'mantis-rich-1',
     title: 'カマキリをかんさつ',
@@ -16337,6 +17351,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T20:05',
     popular: false,
   },
+
   {
     id: 'caterpillar-simple-1',
     title: 'かわいいあおむし',
@@ -16354,6 +17369,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:51',
     popular: false,
   },
+
   {
     id: 'caterpillar-easy-1',
     title: 'はっぱのあおむし',
@@ -16371,6 +17387,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:51',
     popular: false,
   },
+
   {
     id: 'caterpillar-normal-1',
     title: 'えだのあおむし',
@@ -16388,6 +17405,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:51',
     popular: false,
   },
+
   {
     id: 'caterpillar-rich-1',
     title: 'あおむしをさわろう',
@@ -16405,6 +17423,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:51',
     popular: false,
   },
+
   {
     id: 'cricket-simple-1',
     title: 'かわいいコオロギ',
@@ -16422,6 +17441,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:35',
     popular: false,
   },
+
   {
     id: 'cricket-easy-1',
     title: 'いしのコオロギ',
@@ -16439,6 +17459,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:35',
     popular: false,
   },
+
   {
     id: 'cricket-normal-1',
     title: 'くさむらのコオロギ',
@@ -16456,6 +17477,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:35',
     popular: false,
   },
+
   {
     id: 'cricket-rich-1',
     title: 'コオロギをさがせ',
@@ -16473,6 +17495,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:35',
     popular: false,
   },
+
   {
     id: 'pill-bug-simple-1',
     title: 'かわいいダンゴムシ',
@@ -16490,6 +17513,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:12',
     popular: false,
   },
+
   {
     id: 'pill-bug-easy-1',
     title: 'まるまるダンゴムシ',
@@ -16507,6 +17531,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:12',
     popular: false,
   },
+
   {
     id: 'pill-bug-normal-1',
     title: 'おちばのダンゴムシ',
@@ -16524,6 +17549,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:12',
     popular: false,
   },
+
   {
     id: 'pill-bug-rich-1',
     title: 'ダンゴムシをみつけた',
@@ -16541,6 +17567,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:12',
     popular: false,
   },
+
   {
     id: 'spider-simple-1',
     title: 'かわいいクモ',
@@ -16558,6 +17585,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:54',
     popular: false,
   },
+
   {
     id: 'spider-easy-1',
     title: 'クモのす',
@@ -16575,6 +17603,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:54',
     popular: false,
   },
+
   {
     id: 'spider-normal-1',
     title: 'くさのクモのす',
@@ -16592,6 +17621,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:54',
     popular: false,
   },
+
   {
     id: 'spider-rich-1',
     title: 'クモのすをはっけん',
@@ -16609,6 +17639,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:54',
     popular: false,
   },
+
   {
     id: 'tanabata-simple-1',
     title: 'たなばたのかざり',
@@ -16624,8 +17655,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
-    popular: false,
+    seoDescription: '竹の枝に揺れる短冊と星飾り。笑顔の短冊はほっぺたがふくよか、星飾りはつぶらな瞳でこちらを見つめています。竹の節目ごとに葉が広がる様子や、ひもでやさしく結ばれた飾りの曲線を塗り進めると、七夕の夜に願い事がそっと空へ昇っていく情景が浮かびます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tanabata-easy-1',
     title: 'ささかざり',
@@ -16641,8 +17674,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
-    popular: false,
+    seoDescription: '竹の枝に吊るされた七夕飾りの世界。星型のチャームと四角い短冊が、にっこり笑った表情で枝からぶら下がっており、チェーンの飾りも一緒に揺れています。竹の節々や広がる葉の描き方は、色を重ねると立体的な雰囲気が出そうで、吊るされた小物たちの優しい表情を塗り分けるのも楽しみです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'tanabata-normal-1',
     title: 'おりひめとひこぼし',
@@ -16660,6 +17695,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:23',
     popular: false,
   },
+
   {
     id: 'tanabata-rich-1',
     title: 'たなばたかざりつけ',
@@ -16677,6 +17713,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T19:23',
     popular: false,
   },
+
   {
     id: 'pool-simple-1',
     title: 'うきわ',
@@ -16692,8 +17729,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
-    popular: false,
+    seoDescription: '夏の水遊びに欠かせない浮き輪が、にっこり笑顔で目の前に。大きな円形の浮き輪には、ところどころに花が咲いていて、水しぶきを表す粒々も散らばっています。浮き輪の中央には空いた楕円形の空間があり、ここに好きな色を塗ると浮き輪がより立体的に見えます。周りの花びらや水玉、顔のほっぺたなど、小さなパーツもあるので、細かく色を塗り分ける楽しみが広がっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pool-easy-1',
     title: 'プールにはいろう',
@@ -16709,8 +17748,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
-    popular: false,
+    seoDescription: 'プールで水鉄砲を勢いよく発射する子どもが、満面の笑顔で両腕を広げています。足元にはボール、アヒルの浮き輪、ゴム製のあひるちゃんが浮かんでいて、水しぶきが派手に飛び散る様子が元気いっぱいです。プールの底には水玉模様の装飾があり、どの色から塗ろうか迷ってしまうほど塗る場所に事欠きません。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pool-normal-1',
     title: 'みずてっぽうあそび',
@@ -16728,6 +17769,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:11',
     popular: false,
   },
+
   {
     id: 'pool-rich-1',
     title: 'にぎやかなプール',
@@ -16745,6 +17787,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:11',
     popular: false,
   },
+
   {
     id: 'summer-festival-simple-1',
     title: 'ちょうちん',
@@ -16760,8 +17803,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
-    popular: false,
+    seoDescription: '夏祭りの屋台で、花柄の浴衣を着た女の子たちが、ちょうちんの灯りに照らされながら、ボールすくいやあめ玉を手に笑顔で遊んでいます。屋台の天幕の下には、金魚がぷかぷか浮かぶ水槽や、つるんと光った玉菓子がたくさん並んでいて、上の空にぶら下がる大きなちょうちんは赤く塗るのが楽しみ。左奥の屋台店員さんの細かい表情や、女の子たちの髪飾りのふんわりした感じなど、色鉛筆で丁寧に塗り分けるポイントがいっぱい詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'summer-festival-easy-1',
     title: 'ゆかたでおまつり',
@@ -16777,8 +17822,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
-    popular: false,
+    seoDescription: '浴衣姿の3人の子どもたちが、提灯が灯る夏祭りの夜空の下で楽しそうに手をつないでいます。中央の女の子は両腕を広げてはしゃいだ表情、左右の子どもたちも笑顔で寄り添う姿が印象的です。背景には格子模様の夜店の暖簾や浮かぶ提灯がたくさん描かれており、ピンクや赤、黄色で祭りの活気を表現する準備が整っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'summer-festival-normal-1',
     title: 'なつまつりのやたい',
@@ -16796,6 +17843,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:54',
     popular: false,
   },
+
   {
     id: 'summer-festival-rich-1',
     title: 'にぎやかなおまつり',
@@ -16813,6 +17861,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T21:54',
     popular: false,
   },
+
   {
     id: 'bon-dance-simple-1',
     title: 'やぐら',
@@ -16828,8 +17877,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T22:48',
-    popular: false,
+    seoDescription: '夏祭りの夜、やぐらの周りで浴衣姿の子どもたちが花火や風車のおもちゃを手に笑顔で踊っています。中央のやぐらの上ではもう一人の子どもが大きな太鼓をバチで叩いており、上下に吊るされた提灯がお祭りの雰囲気を引き立てています。それぞれの子どもが異なる表情と動きをしているため、塗るときに各キャラクターの個性的な衣装の色分けや、提灯の明かりをどう表現するか工夫するのが楽しみです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bon-dance-easy-1',
     title: 'ゆかたでおどろう',
@@ -16847,6 +17898,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T22:48',
     popular: false,
   },
+
   {
     id: 'bon-dance-normal-1',
     title: 'ぼんおどり',
@@ -16864,6 +17916,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T22:48',
     popular: false,
   },
+
   {
     id: 'bon-dance-rich-1',
     title: 'にぎやかなぼんおどり',
@@ -16881,6 +17934,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T22:48',
     popular: false,
   },
+
   {
     id: 'fireworks-festival-simple-1',
     title: 'はなび',
@@ -16896,8 +17950,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T23:46',
-    popular: false,
+    seoDescription: '夜空に大きく開く花火が、中心からはじけるように放射状に広がっています。周りには小さな星や四つ葉の星がちらばっていて、下から二本の筒が支えているようなしぐさが見えます。曲線たちのグラデーションで夜空の深さを表現したり、星々を黄色やピンクで彩ったりと、花開く一瞬の輝きを好きな色で埋めていく楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fireworks-festival-easy-1',
     title: 'はなびがひらく',
@@ -16915,6 +17971,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T23:46',
     popular: false,
   },
+
   {
     id: 'fireworks-festival-normal-1',
     title: 'かわのはなびたいかい',
@@ -16932,6 +17989,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T23:46',
     popular: false,
   },
+
   {
     id: 'fireworks-festival-rich-1',
     title: 'にぎやかなはなびたいかい',
@@ -16949,6 +18007,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-17T23:46',
     popular: false,
   },
+
   {
     id: 'camping-simple-1',
     title: 'キャンプのテント',
@@ -16964,8 +18023,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T00:25',
-    popular: false,
+    seoDescription: '星がまたたく夜のキャンプ場で、テントの前には笑顔の炎が揺らめいています。テントの入口には結んだリボンがふたつ、左右対称についていて、そこを塗り分けるのも楽しみ。焚き火の周りに積み重ねられた丸い石のテクスチャーや、夜空に散りばめられた星々の大きさを変えて塗ることで、奥行きのある夜景が表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'camping-easy-1',
     title: 'テントとたきび',
@@ -16983,6 +18044,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T00:25',
     popular: false,
   },
+
   {
     id: 'camping-normal-1',
     title: 'もりのキャンプ',
@@ -17000,6 +18062,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T00:25',
     popular: false,
   },
+
   {
     id: 'camping-rich-1',
     title: 'にぎやかなキャンプ',
@@ -17017,6 +18080,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T00:25',
     popular: false,
   },
+
   {
     id: 'bbq-simple-1',
     title: 'バーベキューコンロ',
@@ -17032,8 +18096,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T01:10',
-    popular: false,
+    seoDescription: 'かわいらしい笑顔のバーベキューコンロが、お肉や野菜、えびなどの食材をたくさん焼いています。上からもくもくと立ち上る湯気は、グレーやうすい色で塗るとより焼き立ての熱さが伝わってきます。コロコロとした体に短い足がついたキャラクターらしい形と、グリルの格子模様、食材ひとつひとつの輪郭をなぞって塗ると、本当に焼き物のゴツゴツした質感が出てくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'bbq-easy-1',
     title: 'おにくをやこう',
@@ -17051,6 +18117,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T01:10',
     popular: false,
   },
+
   {
     id: 'bbq-normal-1',
     title: 'そとでバーベキュー',
@@ -17068,6 +18135,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T01:10',
     popular: false,
   },
+
   {
     id: 'bbq-rich-1',
     title: 'にぎやかなバーベキュー',
@@ -17085,6 +18153,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T01:10',
     popular: false,
   },
+
   {
     id: 'sea-bathing-simple-1',
     title: 'なつのうみ',
@@ -17100,8 +18169,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T02:01',
-    popular: false,
+    seoDescription: '砂浜でしゃがみ込む子どもが、波打ち際の貝殻やヒトデを夢中で探している情景です。背景には糸杉のようにすっと伸びたヤシの木が何本も立ち、左奥には波立つ海が広がっています。子どもの周りに散らばった貝殻やもじゃもじゃとした海草には、細かい模様がいっぱい詰まっているので、どの色を選ぶか迷いながら塗り進める楽しさがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sea-bathing-easy-1',
     title: 'なみとあそぼう',
@@ -17119,6 +18190,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T02:01',
     popular: false,
   },
+
   {
     id: 'sea-bathing-normal-1',
     title: 'うみであそぼう',
@@ -17136,6 +18208,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T02:01',
     popular: false,
   },
+
   {
     id: 'sea-bathing-rich-1',
     title: 'にぎやかなかいすいよく',
@@ -17153,91 +18226,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T02:01',
     popular: false,
   },
-  {
-    id: 'cicada-simple-1',
-    title: 'かわいいセミ',
-    description: 'シンプルなセミのぬりえ。',
-    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'seasonal-events', season: 'summer',
-    tags: ['cicada', 'summer', 'ぬりえ'],
-    tools: ['クレヨン'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-simple-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-simple-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-18T03:02',
-    popular: false,
-  },
-  {
-    id: 'cicada-easy-1',
-    title: 'きのきにとまるセミ',
-    description: '木の幹にとまるセミのぬりえ。',
-    ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'seasonal-events', season: 'summer',
-    tags: ['cicada', 'summer', 'ぬりえ'],
-    tools: ['クレヨン'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-easy-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-easy-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-18T03:02',
-    popular: false,
-  },
-  {
-    id: 'cicada-normal-1',
-    title: 'なつのセミ',
-    description: '木にとまる複数のセミのぬりえ。',
-    ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'seasonal-events', season: 'summer',
-    tags: ['cicada', 'summer', 'ぬりえ'],
-    tools: ['色えんぴつ'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-normal-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-normal-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-18T03:02',
-    popular: false,
-  },
-  {
-    id: 'cicada-rich-1',
-    title: 'セミとりだ！',
-    description: 'セミ採りをする子どもたちのにぎやかな線画。',
-    ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'seasonal-events', season: 'summer',
-    tags: ['cicada', 'summer', 'ぬりえ'],
-    tools: ['色えんぴつ'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-rich-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cicada-rich-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-18T03:02',
-    popular: false,
-  },
-  {
-    id: 'goldfish-simple-1',
-    title: 'かわいいきんぎょ',
-    description: 'シンプルな金魚のぬりえ。',
-    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'seasonal-events', season: 'summer',
-    tags: ['goldfish', 'summer', 'ぬりえ'],
-    tools: ['クレヨン'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/goldfish-simple-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/goldfish-simple-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-18T03:39',
-    popular: false,
-  },
+
   {
     id: 'goldfish-easy-1',
     title: 'きんぎょばち',
@@ -17255,6 +18244,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T03:39',
     popular: false,
   },
+
   {
     id: 'goldfish-normal-1',
     title: 'きんぎょすくい',
@@ -17272,6 +18262,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T03:39',
     popular: false,
   },
+
   {
     id: 'goldfish-rich-1',
     title: 'おまつりのきんぎょすくい',
@@ -17289,6 +18280,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T03:39',
     popular: false,
   },
+
   {
     id: 'watermelon-splitting-simple-1',
     title: 'スイカわりのぼう',
@@ -17304,8 +18296,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T04:11',
-    popular: false,
+    seoDescription: '目隠しをした元気な子どもが、野球のバットを握りしめてスイカを狙っています。スイカの表面には波線がたくさん引かれていて、緑と赤のコントラストがはっきり出せる部分がたくさんあります。子どもの頭巻きや服、足元の靴まで、塗り分ける箇所がいっぱいあるので、色えんぴつの使い分けが楽しめます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'watermelon-splitting-easy-1',
     title: 'スイカわりにちょうせん',
@@ -17323,6 +18317,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T04:11',
     popular: false,
   },
+
   {
     id: 'watermelon-splitting-normal-1',
     title: 'がんばれ！スイカわり',
@@ -17340,6 +18335,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T04:11',
     popular: false,
   },
+
   {
     id: 'watermelon-splitting-rich-1',
     title: 'うみべでスイカわり',
@@ -17357,6 +18353,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T04:11',
     popular: false,
   },
+
   {
     id: 'shaved-ice-simple-1',
     title: 'かわいいかきごおり',
@@ -17372,8 +18369,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:06',
-    popular: false,
+    seoDescription: 'ふんわりとした氷の山の上に、とろりと垂れるシロップがかかったかき氷。脇には小さなスプーンがちょこんと立てかけてあり、今にも一口食べたくなる瞬間が切り取られています。ボウルのひだひだした模様と、ふわふわの氷の層は塗り分ける楽しさがいっぱい。シロップの流れる線をどんな色で染めるか、氷と背景のコントラストをどうつけるか、塗りながら工夫の余地がある一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'shaved-ice-easy-1',
     title: 'いろいろかきごおり',
@@ -17391,6 +18390,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:06',
     popular: false,
   },
+
   {
     id: 'shaved-ice-normal-1',
     title: 'かきごおりやたい',
@@ -17408,6 +18408,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:06',
     popular: false,
   },
+
   {
     id: 'shaved-ice-rich-1',
     title: 'なつのかきごおり',
@@ -17425,6 +18426,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:06',
     popular: false,
   },
+
   {
     id: 'ice-cream-simple-1',
     title: 'アイスクリーム',
@@ -17440,8 +18442,10 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:55',
-    popular: false,
+    seoDescription: 'まあるい雲のような柔らかいアイスが、格子模様のコーンからふわりと顔を出しています。コーンには細かい網目が規則正しく引かれていて、ピンクと黄色で塗り分けると立体的に見えそう。アイスの下の部分にはギザギザとした波線があり、ここから食べかけの様子が伝わってきます。シンプルだからこそ、アイス部分と、細い線で描かれたコーン部分の塗り方で大きく印象が変わる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'ice-cream-easy-1',
     title: 'たかくつんだアイス',
@@ -17459,6 +18463,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:55',
     popular: false,
   },
+
   {
     id: 'ice-cream-normal-1',
     title: 'アイスクリームやさん',
@@ -17476,6 +18481,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:55',
     popular: false,
   },
+
   {
     id: 'ice-cream-rich-1',
     title: 'なつのアイスクリーム',
@@ -17493,6 +18499,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T05:55',
     popular: false,
   },
+
   {
     id: 'somen-simple-1',
     title: 'かわいいそうめん',
@@ -17510,6 +18517,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:36',
     popular: false,
   },
+
   {
     id: 'somen-easy-1',
     title: 'そうめんのじゅんび',
@@ -17527,6 +18535,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:36',
     popular: false,
   },
+
   {
     id: 'somen-normal-1',
     title: 'ながしそうめん',
@@ -17544,6 +18553,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:36',
     popular: false,
   },
+
   {
     id: 'somen-rich-1',
     title: 'みんなでながしそうめん',
@@ -17561,6 +18571,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T06:36',
     popular: false,
   },
+
   {
     id: 'fireworks-simple-1',
     title: 'てもちはなび',
@@ -17578,6 +18589,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:14',
     popular: false,
   },
+
   {
     id: 'fireworks-easy-1',
     title: 'はなびをもとう',
@@ -17595,6 +18607,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:14',
     popular: false,
   },
+
   {
     id: 'fireworks-normal-1',
     title: 'なつのよるのはなび',
@@ -17612,6 +18625,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:14',
     popular: false,
   },
+
   {
     id: 'fireworks-rich-1',
     title: 'にぎやかなはなびのよる',
@@ -17629,6 +18643,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:14',
     popular: false,
   },
+
   {
     id: 'uchiwa-simple-1',
     title: 'かわいいうちわ',
@@ -17646,6 +18661,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:51',
     popular: false,
   },
+
   {
     id: 'uchiwa-easy-1',
     title: 'いろいろうちわ',
@@ -17663,6 +18679,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:51',
     popular: false,
   },
+
   {
     id: 'uchiwa-normal-1',
     title: 'えんがわでひとやすみ',
@@ -17680,6 +18697,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:51',
     popular: false,
   },
+
   {
     id: 'uchiwa-rich-1',
     title: 'にほんのなつ',
@@ -17697,6 +18715,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T07:51',
     popular: false,
   },
+
   {
     id: 'float-simple-1',
     title: 'うきわ',
@@ -17714,6 +18733,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:47',
     popular: false,
   },
+
   {
     id: 'float-easy-1',
     title: 'うきわとビーチボール',
@@ -17731,6 +18751,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:47',
     popular: false,
   },
+
   {
     id: 'float-normal-1',
     title: 'なつのビーチグッズ',
@@ -17748,6 +18769,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:47',
     popular: false,
   },
+
   {
     id: 'float-rich-1',
     title: 'なつのプールであそぼう',
@@ -17765,6 +18787,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T08:47',
     popular: false,
   },
+
   {
     id: 'summer-sky-simple-1',
     title: 'にゅうどうぐも',
@@ -17782,6 +18805,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T09:32',
     popular: false,
   },
+
   {
     id: 'summer-sky-easy-1',
     title: 'なつのそら',
@@ -17799,6 +18823,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T09:32',
     popular: false,
   },
+
   {
     id: 'summer-sky-normal-1',
     title: 'もくもくぐも',
@@ -17816,6 +18841,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T09:32',
     popular: false,
   },
+
   {
     id: 'summer-sky-rich-1',
     title: 'にぎやかなにほんのなつ',
@@ -17833,6 +18859,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T09:32',
     popular: false,
   },
+
   {
     id: 'mosquito-coil-simple-1',
     title: 'かとりせんこう',
@@ -17850,6 +18877,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:18',
     popular: false,
   },
+
   {
     id: 'mosquito-coil-easy-1',
     title: 'かとりせんこうのけむり',
@@ -17867,6 +18895,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:18',
     popular: false,
   },
+
   {
     id: 'mosquito-coil-normal-1',
     title: 'なつのよるのえんがわ',
@@ -17884,6 +18913,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:18',
     popular: false,
   },
+
   {
     id: 'mosquito-coil-rich-1',
     title: 'なつのよるのひかり',
@@ -17901,6 +18931,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:18',
     popular: false,
   },
+
   {
     id: 'wind-chime-simple-1',
     title: 'かわいいふうりん',
@@ -17918,6 +18949,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:59',
     popular: false,
   },
+
   {
     id: 'wind-chime-easy-1',
     title: 'のきばのふうりん',
@@ -17935,6 +18967,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:59',
     popular: false,
   },
+
   {
     id: 'wind-chime-normal-1',
     title: 'なつのふうりん',
@@ -17952,6 +18985,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:59',
     popular: false,
   },
+
   {
     id: 'wind-chime-rich-1',
     title: 'ふうりんまつり',
@@ -17969,6 +19003,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T10:59',
     popular: false,
   },
+
   {
     id: 'yukata-simple-1',
     title: 'かわいいゆかた',
@@ -17986,6 +19021,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T11:46',
     popular: false,
   },
+
   {
     id: 'yukata-easy-1',
     title: 'ゆかたのこども',
@@ -18003,6 +19039,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T11:46',
     popular: false,
   },
+
   {
     id: 'yukata-normal-1',
     title: 'ゆかたのふたり',
@@ -18020,6 +19057,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T11:46',
     popular: false,
   },
+
   {
     id: 'yukata-rich-1',
     title: 'ゆかたでおまつり',
@@ -18037,6 +19075,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T11:46',
     popular: false,
   },
+
   {
     id: 'straw-hat-simple-1',
     title: 'むぎわらぼうし',
@@ -18054,6 +19093,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T12:28',
     popular: false,
   },
+
   {
     id: 'straw-hat-easy-1',
     title: 'なつのぼうし',
@@ -18071,6 +19111,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T12:28',
     popular: false,
   },
+
   {
     id: 'straw-hat-normal-1',
     title: 'むぎわらぼうしのこども',
@@ -18088,6 +19129,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T12:28',
     popular: false,
   },
+
   {
     id: 'straw-hat-rich-1',
     title: 'なつのそとあそび',
@@ -18105,6 +19147,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T12:28',
     popular: false,
   },
+
   {
     id: 'soccer-simple-1',
     title: 'サッカーボール',
@@ -18122,6 +19165,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:11',
     popular: false,
   },
+
   {
     id: 'soccer-easy-1',
     title: 'サッカーをしよう',
@@ -18139,6 +19183,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:11',
     popular: false,
   },
+
   {
     id: 'soccer-normal-1',
     title: 'ゴールをねらえ',
@@ -18156,6 +19201,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:11',
     popular: false,
   },
+
   {
     id: 'soccer-rich-1',
     title: 'みんなでサッカー',
@@ -18173,6 +19219,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:11',
     popular: false,
   },
+
   {
     id: 'masterpiece-red-fuji-rich-1',
     title: '凱風快晴・赤富士（北斎）',
@@ -18191,6 +19238,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:21',
     popular: false,
   },
+
   {
     id: 'masterpiece-hiroshige-tokaido-rich-1',
     title: '東海道五十三次・蒲原（広重）',
@@ -18209,6 +19257,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:26',
     popular: false,
   },
+
   {
     id: 'masterpiece-hiroshige-rain-rich-1',
     title: '大はしあたけの夕立（広重）',
@@ -18227,6 +19276,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:31',
     popular: false,
   },
+
   {
     id: 'masterpiece-monet-waterlilies-rich-1',
     title: '睡蓮（モネ）',
@@ -18245,6 +19295,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:36',
     popular: false,
   },
+
   {
     id: 'masterpiece-monet-impression-rich-1',
     title: '印象・日の出（モネ）',
@@ -18263,6 +19314,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:41',
     popular: false,
   },
+
   {
     id: 'masterpiece-monet-poppy-rich-1',
     title: 'ポピー畑（モネ）',
@@ -18281,6 +19333,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:47',
     popular: false,
   },
+
   {
     id: 'baseball-simple-1',
     title: 'やきゅうボール',
@@ -18298,6 +19351,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:16',
     popular: false,
   },
+
   {
     id: 'baseball-easy-1',
     title: 'バッターアップ',
@@ -18315,6 +19369,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:16',
     popular: false,
   },
+
   {
     id: 'baseball-normal-1',
     title: 'ボールをキャッチ',
@@ -18332,6 +19387,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:16',
     popular: false,
   },
+
   {
     id: 'baseball-rich-1',
     title: 'みんなで野球',
@@ -18349,6 +19405,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:16',
     popular: false,
   },
+
   {
     id: 'swimming-simple-1',
     title: 'うきわ',
@@ -18366,6 +19423,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:11',
     popular: false,
   },
+
   {
     id: 'swimming-easy-1',
     title: 'プールでおよごう',
@@ -18383,6 +19441,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:11',
     popular: false,
   },
+
   {
     id: 'swimming-normal-1',
     title: 'ビート板でおよぐ',
@@ -18400,6 +19459,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:11',
     popular: false,
   },
+
   {
     id: 'swimming-rich-1',
     title: 'みんなでプール',
@@ -18417,6 +19477,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:11',
     popular: false,
   },
+
   {
     id: 'running-simple-1',
     title: 'うんどうぐつ',
@@ -18434,6 +19495,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:01',
     popular: false,
   },
+
   {
     id: 'running-easy-1',
     title: 'かけっこしよう',
@@ -18451,6 +19513,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:01',
     popular: false,
   },
+
   {
     id: 'running-normal-1',
     title: 'ゴールはもうすぐ',
@@ -18468,6 +19531,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:01',
     popular: false,
   },
+
   {
     id: 'running-rich-1',
     title: 'うんどうかいのかけっこ',
@@ -18485,6 +19549,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:01',
     popular: false,
   },
+
   {
     id: 'gymnastics-simple-1',
     title: 'たいそうマット',
@@ -18502,6 +19567,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:02',
     popular: false,
   },
+
   {
     id: 'gymnastics-easy-1',
     title: 'ぜんてんしよう',
@@ -18519,6 +19585,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:02',
     popular: false,
   },
+
   {
     id: 'gymnastics-normal-1',
     title: 'とびばこをとぼう',
@@ -18536,6 +19603,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:02',
     popular: false,
   },
+
   {
     id: 'gymnastics-rich-1',
     title: 'たいいくかんで体操',
@@ -18553,6 +19621,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:02',
     popular: false,
   },
+
   {
     id: 'moon-viewing-simple-1',
     title: 'まんまるおつきさま',
@@ -18570,6 +19639,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T13:47',
     popular: false,
   },
+
   {
     id: 'moon-viewing-easy-1',
     title: 'おつきみのよる',
@@ -18587,6 +19657,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T13:47',
     popular: false,
   },
+
   {
     id: 'moon-viewing-normal-1',
     title: 'おだんごとおつきさま',
@@ -18604,6 +19675,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T13:47',
     popular: false,
   },
+
   {
     id: 'moon-viewing-rich-1',
     title: 'にぎやかおつきみ',
@@ -18621,6 +19693,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T13:47',
     popular: false,
   },
+
   {
     id: 'halloween-simple-1',
     title: 'かぼちゃランタン',
@@ -18638,6 +19711,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:22',
     popular: false,
   },
+
   {
     id: 'halloween-easy-1',
     title: 'かぼちゃとおばけ',
@@ -18655,6 +19729,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:22',
     popular: false,
   },
+
   {
     id: 'halloween-normal-1',
     title: 'ハロウィンのなかまたち',
@@ -18672,6 +19747,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:22',
     popular: false,
   },
+
   {
     id: 'halloween-rich-1',
     title: 'トリックオアトリート',
@@ -18689,6 +19765,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:22',
     popular: false,
   },
+
   {
     id: 'sports-day-simple-1',
     title: 'かけっこ',
@@ -18706,6 +19783,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:55',
     popular: false,
   },
+
   {
     id: 'sports-day-easy-1',
     title: 'ゴールテープをきろう',
@@ -18723,6 +19801,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:55',
     popular: false,
   },
+
   {
     id: 'sports-day-normal-1',
     title: 'たまいれ',
@@ -18740,6 +19819,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:55',
     popular: false,
   },
+
   {
     id: 'sports-day-rich-1',
     title: 'にぎやかうんどうかい',
@@ -18757,6 +19837,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:55',
     popular: false,
   },
+
   {
     id: 'potato-digging-simple-1',
     title: 'おおきなさつまいも',
@@ -18774,6 +19855,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:44',
     popular: false,
   },
+
   {
     id: 'potato-digging-easy-1',
     title: 'いもほりだ',
@@ -18791,6 +19873,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:44',
     popular: false,
   },
+
   {
     id: 'potato-digging-normal-1',
     title: 'はたけでいもほり',
@@ -18808,6 +19891,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:44',
     popular: false,
   },
+
   {
     id: 'potato-digging-rich-1',
     title: 'にぎやかいもほり',
@@ -18825,6 +19909,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:44',
     popular: false,
   },
+
   {
     id: 'shichi-go-san-simple-1',
     title: 'きもののおんなのこ',
@@ -18842,6 +19927,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:26',
     popular: false,
   },
+
   {
     id: 'shichi-go-san-easy-1',
     title: 'ちとせあめ',
@@ -18859,6 +19945,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:26',
     popular: false,
   },
+
   {
     id: 'shichi-go-san-normal-1',
     title: 'じんじゃのさんぽ',
@@ -18876,6 +19963,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:26',
     popular: false,
   },
+
   {
     id: 'shichi-go-san-rich-1',
     title: 'にぎやかしちごさん',
@@ -18893,6 +19981,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:26',
     popular: false,
   },
+
   {
     id: 'saury-simple-1',
     title: 'かわいいさんま',
@@ -18910,6 +19999,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:11',
     popular: false,
   },
+
   {
     id: 'saury-easy-1',
     title: 'さんまとレモン',
@@ -18927,6 +20017,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:11',
     popular: false,
   },
+
   {
     id: 'saury-normal-1',
     title: 'やきさんま',
@@ -18944,6 +20035,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:11',
     popular: false,
   },
+
   {
     id: 'saury-rich-1',
     title: 'あきのしょくたく',
@@ -18961,6 +20053,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:11',
     popular: false,
   },
+
   {
     id: 'chestnut-simple-1',
     title: 'かわいいくり',
@@ -18978,6 +20071,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:00',
     popular: false,
   },
+
   {
     id: 'chestnut-easy-1',
     title: 'くりとイガ',
@@ -18995,6 +20089,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:00',
     popular: false,
   },
+
   {
     id: 'chestnut-normal-1',
     title: 'きのしたのくり',
@@ -19012,6 +20107,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:00',
     popular: false,
   },
+
   {
     id: 'chestnut-rich-1',
     title: 'くりひろい',
@@ -19029,6 +20125,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:00',
     popular: false,
   },
+
   {
     id: 'autumn-leaves-simple-1',
     title: 'もみじのはっぱ',
@@ -19046,6 +20143,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:39',
     popular: false,
   },
+
   {
     id: 'autumn-leaves-easy-1',
     title: 'いろんなもみじ',
@@ -19063,6 +20161,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:39',
     popular: false,
   },
+
   {
     id: 'autumn-leaves-normal-1',
     title: 'もみじのき',
@@ -19080,6 +20179,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:39',
     popular: false,
   },
+
   {
     id: 'autumn-leaves-rich-1',
     title: 'こうようをみよう',
@@ -19097,6 +20197,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:39',
     popular: false,
   },
+
   {
     id: 'acorn-simple-1',
     title: 'かわいいどんぐり',
@@ -19114,6 +20215,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:23',
     popular: false,
   },
+
   {
     id: 'acorn-easy-1',
     title: 'いろんなどんぐり',
@@ -19131,6 +20233,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:23',
     popular: false,
   },
+
   {
     id: 'acorn-normal-1',
     title: 'おちばのどんぐり',
@@ -19148,6 +20251,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:23',
     popular: false,
   },
+
   {
     id: 'acorn-rich-1',
     title: 'どんぐりひろい',
@@ -19165,6 +20269,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:23',
     popular: false,
   },
+
   {
     id: 'pine-cone-simple-1',
     title: 'まつぼっくり',
@@ -19182,6 +20287,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:17',
     popular: false,
   },
+
   {
     id: 'pine-cone-easy-1',
     title: 'まつぼっくりとどんぐり',
@@ -19199,6 +20305,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:17',
     popular: false,
   },
+
   {
     id: 'pine-cone-normal-1',
     title: 'あきのじめん',
@@ -19216,6 +20323,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:17',
     popular: false,
   },
+
   {
     id: 'pine-cone-rich-1',
     title: 'あきのこうえん',
@@ -19233,6 +20341,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:17',
     popular: false,
   },
+
   {
     id: 'masterpiece-vangogh-starrynight-rich-1',
     title: '星月夜（ゴッホ）',
@@ -19251,6 +20360,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:52',
     popular: false,
   },
+
   {
     id: 'masterpiece-vangogh-sunflowers-rich-1',
     title: 'ひまわり（ゴッホ）',
@@ -19269,6 +20379,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T14:57',
     popular: false,
   },
+
   {
     id: 'masterpiece-vangogh-cafe-rich-1',
     title: '夜のカフェテラス（ゴッホ）',
@@ -19287,6 +20398,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:03',
     popular: false,
   },
+
   {
     id: 'masterpiece-vangogh-irises-rich-1',
     title: 'アイリス（ゴッホ）',
@@ -19305,6 +20417,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:08',
     popular: false,
   },
+
   {
     id: 'masterpiece-renoir-moulin-rich-1',
     title: 'ムーラン・ド・ラ・ギャレット（ルノワール）',
@@ -19323,6 +20436,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:15',
     popular: false,
   },
+
   {
     id: 'masterpiece-degas-dance-rich-1',
     title: '舞台の踊り子（ドガ）',
@@ -19341,6 +20455,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:20',
     popular: false,
   },
+
   {
     id: 'masterpiece-seurat-sunday-rich-1',
     title: 'グランド・ジャット島の日曜日（スーラ）',
@@ -19359,6 +20474,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:26',
     popular: false,
   },
+
   {
     id: 'masterpiece-cezanne-mountain-rich-1',
     title: 'サント＝ヴィクトワール山（セザンヌ）',
@@ -19377,6 +20493,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:31',
     popular: false,
   },
+
   {
     id: 'masterpiece-klimt-kiss-rich-1',
     title: '接吻（クリムト）',
@@ -19395,6 +20512,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:37',
     popular: false,
   },
+
   {
     id: 'masterpiece-klimt-tree-rich-1',
     title: '生命の樹（クリムト）',
@@ -19413,6 +20531,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:43',
     popular: false,
   },
+
   {
     id: 'masterpiece-mucha-seasons-rich-1',
     title: '四季・春（ミュシャ）',
@@ -19431,6 +20550,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T15:49',
     popular: false,
   },
+
   {
     id: 'botanical-lavender-simple-1',
     title: 'ラベンダーの植物画',
@@ -19449,6 +20569,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-lavender-easy-1',
     title: 'ラベンダーの植物画',
@@ -19467,6 +20588,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-lavender-normal-1',
     title: 'ラベンダーの植物画',
@@ -19485,6 +20607,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-lavender-rich-1',
     title: 'ラベンダーの植物画',
@@ -19503,6 +20626,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-morning-glory-simple-1',
     title: '朝顔の植物画',
@@ -19521,6 +20645,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-morning-glory-easy-1',
     title: '朝顔の植物画',
@@ -19539,6 +20664,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-morning-glory-normal-1',
     title: '朝顔の植物画',
@@ -19557,6 +20683,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-morning-glory-rich-1',
     title: '朝顔の植物画',
@@ -19575,6 +20702,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-autumn-leaves-simple-1',
     title: '紅葉の植物画',
@@ -19593,6 +20721,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-autumn-leaves-easy-1',
     title: '紅葉の植物画',
@@ -19611,6 +20740,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-autumn-leaves-normal-1',
     title: '紅葉の植物画',
@@ -19629,6 +20759,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-autumn-leaves-rich-1',
     title: '紅葉の植物画',
@@ -19647,6 +20778,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:39',
     popular: false,
   },
+
   {
     id: 'botanical-sunflower-simple-1',
     title: 'ひまわりの植物画',
@@ -19665,6 +20797,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-sunflower-easy-1',
     title: 'ひまわりの植物画',
@@ -19683,6 +20816,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-sunflower-normal-1',
     title: 'ひまわりの植物画',
@@ -19701,6 +20835,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-sunflower-rich-1',
     title: 'ひまわりの植物画',
@@ -19719,6 +20854,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-bamboo-simple-1',
     title: '竹の植物画',
@@ -19737,6 +20873,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-bamboo-easy-1',
     title: '竹の植物画',
@@ -19755,6 +20892,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-bamboo-normal-1',
     title: '竹の植物画',
@@ -19773,6 +20911,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'botanical-bamboo-rich-1',
     title: '竹の植物画',
@@ -19791,6 +20930,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T16:40',
     popular: false,
   },
+
   {
     id: 'arch-sagrada-familia-simple-1',
     title: 'サグラダ・ファミリア（やさしい）',
@@ -19809,6 +20949,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:38',
     popular: false,
   },
+
   {
     id: 'arch-sagrada-familia-easy-1',
     title: 'サグラダ・ファミリア（ふつう）',
@@ -19827,6 +20968,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:38',
     popular: false,
   },
+
   {
     id: 'arch-sagrada-familia-normal-1',
     title: 'サグラダ・ファミリア（こまかい）',
@@ -19845,6 +20987,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:38',
     popular: false,
   },
+
   {
     id: 'arch-sagrada-familia-rich-1',
     title: 'サグラダ・ファミリア（細密）',
@@ -19863,6 +21006,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:38',
     popular: false,
   },
+
   {
     id: 'arch-parthenon-simple-1',
     title: 'パルテノン神殿（やさしい）',
@@ -19881,6 +21025,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:57',
     popular: false,
   },
+
   {
     id: 'arch-parthenon-easy-1',
     title: 'パルテノン神殿（ふつう）',
@@ -19899,6 +21044,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:57',
     popular: false,
   },
+
   {
     id: 'arch-parthenon-normal-1',
     title: 'パルテノン神殿と丘（こまかい）',
@@ -19917,6 +21063,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:57',
     popular: false,
   },
+
   {
     id: 'arch-parthenon-rich-1',
     title: 'パルテノン神殿（細密）',
@@ -19935,6 +21082,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T17:57',
     popular: false,
   },
+
   {
     id: 'arch-notre-dame-simple-1',
     title: 'ノートルダム大聖堂（やさしい）',
@@ -19953,6 +21101,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:25',
     popular: false,
   },
+
   {
     id: 'arch-notre-dame-easy-1',
     title: 'ノートルダム大聖堂（ふつう）',
@@ -19971,6 +21120,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:25',
     popular: false,
   },
+
   {
     id: 'arch-notre-dame-normal-1',
     title: 'ノートルダムとセーヌ川（こまかい）',
@@ -19989,6 +21139,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:25',
     popular: false,
   },
+
   {
     id: 'arch-notre-dame-rich-1',
     title: 'ノートルダム大聖堂（細密）',
@@ -20007,6 +21158,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:25',
     popular: false,
   },
+
   {
     id: 'arch-taj-mahal-simple-1',
     title: 'タージ・マハル（やさしい）',
@@ -20025,6 +21177,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:47',
     popular: false,
   },
+
   {
     id: 'arch-taj-mahal-easy-1',
     title: 'タージ・マハルと庭園（ふつう）',
@@ -20043,6 +21196,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:47',
     popular: false,
   },
+
   {
     id: 'arch-taj-mahal-normal-1',
     title: 'タージ・マハルと噴水（こまかい）',
@@ -20061,6 +21215,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:47',
     popular: false,
   },
+
   {
     id: 'arch-taj-mahal-rich-1',
     title: 'タージ・マハル（細密）',
@@ -20079,6 +21234,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T18:47',
     popular: false,
   },
+
   {
     id: 'arch-colosseum-simple-1',
     title: 'コロッセオ（やさしい）',
@@ -20097,6 +21253,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:18',
     popular: false,
   },
+
   {
     id: 'arch-colosseum-easy-1',
     title: 'コロッセオとアーチ（ふつう）',
@@ -20115,6 +21272,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:18',
     popular: false,
   },
+
   {
     id: 'arch-colosseum-normal-1',
     title: 'コロッセオとローマ（こまかい）',
@@ -20133,6 +21291,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:18',
     popular: false,
   },
+
   {
     id: 'arch-colosseum-rich-1',
     title: 'コロッセオ（細密）',
@@ -20151,6 +21310,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:18',
     popular: false,
   },
+
   {
     id: 'arch-neuschwanstein-simple-1',
     title: 'ノイシュバンシュタイン城（やさしい）',
@@ -20169,6 +21329,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:39',
     popular: false,
   },
+
   {
     id: 'arch-neuschwanstein-easy-1',
     title: 'ノイシュバンシュタイン城（ふつう）',
@@ -20187,6 +21348,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:39',
     popular: false,
   },
+
   {
     id: 'arch-neuschwanstein-normal-1',
     title: '城と岩山（こまかい）',
@@ -20205,6 +21367,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:39',
     popular: false,
   },
+
   {
     id: 'arch-neuschwanstein-rich-1',
     title: 'ノイシュバンシュタイン城（細密）',
@@ -20223,6 +21386,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T19:39',
     popular: false,
   },
+
   {
     id: 'arch-eiffel-simple-1',
     title: 'エッフェル塔（やさしい）',
@@ -20241,6 +21405,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:06',
     popular: false,
   },
+
   {
     id: 'arch-eiffel-easy-1',
     title: 'エッフェル塔とセーヌ川（ふつう）',
@@ -20259,6 +21424,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:06',
     popular: false,
   },
+
   {
     id: 'arch-eiffel-normal-1',
     title: 'エッフェル塔とパリ（こまかい）',
@@ -20277,6 +21443,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:06',
     popular: false,
   },
+
   {
     id: 'landscape-tuscany-simple-1',
     title: 'トスカーナの丘',
@@ -20295,6 +21462,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:36',
     popular: false,
   },
+
   {
     id: 'landscape-tuscany-easy-1',
     title: 'トスカーナの丘',
@@ -20313,6 +21481,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:36',
     popular: false,
   },
+
   {
     id: 'landscape-tuscany-normal-1',
     title: 'トスカーナの丘',
@@ -20331,6 +21500,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:36',
     popular: false,
   },
+
   {
     id: 'landscape-tuscany-rich-1',
     title: 'トスカーナの丘',
@@ -20349,6 +21519,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:36',
     popular: false,
   },
+
   {
     id: 'landscape-japanese-village-simple-1',
     title: '日本の農村',
@@ -20367,6 +21538,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:56',
     popular: false,
   },
+
   {
     id: 'landscape-japanese-village-easy-1',
     title: '日本の農村',
@@ -20385,6 +21557,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:56',
     popular: false,
   },
+
   {
     id: 'landscape-japanese-village-normal-1',
     title: '日本の農村',
@@ -20403,6 +21576,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:56',
     popular: false,
   },
+
   {
     id: 'landscape-japanese-village-rich-1',
     title: '日本の農村',
@@ -20421,12 +21595,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T20:56',
     popular: false,
   },
+
   {
     id: 'pampas-grass-simple-1',
     title: 'かわいいすすき',
     description: 'シンプルなすすきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20438,12 +21613,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:01',
     popular: false,
   },
+
   {
     id: 'pampas-grass-easy-1',
     title: 'すすきとおつきさま',
     description: 'すすきとお月様が並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20455,12 +21631,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:01',
     popular: false,
   },
+
   {
     id: 'pampas-grass-normal-1',
     title: 'のはらのすすき',
     description: '秋の野原に群生するすすきのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20472,12 +21649,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:01',
     popular: false,
   },
+
   {
     id: 'pampas-grass-rich-1',
     title: 'すすきとおつきみ',
     description: 'すすき野原でお月見をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['pampas-grass', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20489,12 +21667,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:01',
     popular: false,
   },
+
   {
     id: 'fallen-leaves-simple-1',
     title: 'いちょうのはっぱ',
     description: 'シンプルないちょうの葉のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20506,12 +21685,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:52',
     popular: false,
   },
+
   {
     id: 'fallen-leaves-easy-1',
     title: 'いろんなおちば',
     description: 'いちょう・もみじ・かしわの落ち葉が並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20523,12 +21703,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:52',
     popular: false,
   },
+
   {
     id: 'fallen-leaves-normal-1',
     title: 'おちばがいっぱい',
     description: '落ち葉が散らばる秋の公園のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20540,12 +21721,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:52',
     popular: false,
   },
+
   {
     id: 'fallen-leaves-rich-1',
     title: 'おちばあつめ',
     description: '落ち葉集めをする子どもたちのにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['fallen-leaves', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20557,12 +21739,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:52',
     popular: false,
   },
+
   {
     id: 'baked-sweet-potato-simple-1',
     title: 'やきいも',
     description: 'シンプルな焼き芋のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20574,12 +21757,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'baked-sweet-potato-easy-1',
     title: 'やきいもとゆげ',
     description: '焼き芋と湯気・落ち葉が並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20591,12 +21775,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'baked-sweet-potato-normal-1',
     title: 'たきびのやきいも',
     description: '焚き火で焼かれる芋のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20608,12 +21793,13 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'baked-sweet-potato-rich-1',
     title: 'やきいもたべよう',
     description: '焼き芋を食べる子どもたちのにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'autumn',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['baked-sweet-potato', 'autumn', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -20625,6 +21811,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'landscape-swiss-mountains-simple-1',
     title: 'スイスアルプス',
@@ -20643,6 +21830,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:17',
     popular: false,
   },
+
   {
     id: 'landscape-swiss-mountains-easy-1',
     title: 'スイスアルプス',
@@ -20661,6 +21849,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:17',
     popular: false,
   },
+
   {
     id: 'landscape-swiss-mountains-normal-1',
     title: 'スイスアルプス',
@@ -20679,6 +21868,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:17',
     popular: false,
   },
+
   {
     id: 'landscape-swiss-mountains-rich-1',
     title: 'スイスアルプス',
@@ -20696,6 +21886,7 @@ const _materials3: Material[] = [
     pdfUrl: '',
     createdAt: '2026-05-18T21:17',    popular: false,
   },
+
   {
     id: 'flowers-detail-sakura-simple-1',
     title: '桜の細密画',
@@ -20714,6 +21905,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:46',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sakura-easy-1',
     title: '桜の細密画',
@@ -20732,6 +21924,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:46',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sakura-normal-1',
     title: '桜の細密画',
@@ -20750,6 +21943,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:46',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sakura-rich-1',
     title: '桜の細密画',
@@ -20768,6 +21962,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:46',
     popular: false,
   },
+
   {
     id: 'animals-detail-tiger-simple-1',
     title: 'トラの細密画',
@@ -20786,6 +21981,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-tiger-easy-1',
     title: 'トラの細密画',
@@ -20804,6 +22000,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-tiger-normal-1',
     title: 'トラの細密画',
@@ -20822,6 +22019,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-tiger-rich-1',
     title: 'トラの細密画',
@@ -20840,6 +22038,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-elephant-simple-1',
     title: 'ゾウの細密画',
@@ -20858,6 +22057,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:39',
     popular: false,
   },
+
   {
     id: 'animals-detail-elephant-easy-1',
     title: 'ゾウの細密画',
@@ -20876,6 +22076,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:39',
     popular: false,
   },
+
   {
     id: 'animals-detail-elephant-normal-1',
     title: 'ゾウの細密画',
@@ -20894,6 +22095,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:39',
     popular: false,
   },
+
   {
     id: 'animals-detail-elephant-rich-1',
     title: 'ゾウの細密画',
@@ -20912,6 +22114,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:39',
     popular: false,
   },
+
   {
     id: 'animals-detail-wolf-simple-1',
     title: 'オオカミの細密画',
@@ -20930,6 +22133,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:58',
     popular: false,
   },
+
   {
     id: 'animals-detail-wolf-easy-1',
     title: 'オオカミの細密画',
@@ -20948,6 +22152,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:58',
     popular: false,
   },
+
   {
     id: 'animals-detail-wolf-normal-1',
     title: 'オオカミの細密画',
@@ -20966,6 +22171,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:58',
     popular: false,
   },
+
   {
     id: 'animals-detail-wolf-rich-1',
     title: 'オオカミの細密画',
@@ -20984,6 +22190,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:58',
     popular: false,
   },
+
   {
     id: 'animals-detail-horse-simple-1',
     title: '馬の細密画',
@@ -21002,6 +22209,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:17',
     popular: false,
   },
+
   {
     id: 'animals-detail-horse-easy-1',
     title: '馬の細密画',
@@ -21020,6 +22228,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:17',
     popular: false,
   },
+
   {
     id: 'animals-detail-horse-normal-1',
     title: '馬の細密画',
@@ -21038,6 +22247,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:17',
     popular: false,
   },
+
   {
     id: 'animals-detail-horse-rich-1',
     title: '馬の細密画',
@@ -21056,6 +22266,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:17',
     popular: false,
   },
+
   {
     id: 'animals-detail-eagle-simple-1',
     title: '鷲の細密画',
@@ -21074,6 +22285,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:37',
     popular: false,
   },
+
   {
     id: 'animals-detail-eagle-easy-1',
     title: '鷲の細密画',
@@ -21092,6 +22304,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:37',
     popular: false,
   },
+
   {
     id: 'animals-detail-eagle-normal-1',
     title: '鷲の細密画',
@@ -21110,6 +22323,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:37',
     popular: false,
   },
+
   {
     id: 'animals-detail-eagle-rich-1',
     title: '鷲の細密画',
@@ -21128,6 +22342,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:37',
     popular: false,
   },
+
   {
     id: 'animals-detail-owl-simple-1',
     title: 'フクロウの細密画',
@@ -21146,6 +22361,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:57',
     popular: false,
   },
+
   {
     id: 'animals-detail-owl-easy-1',
     title: 'フクロウの細密画',
@@ -21164,6 +22380,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:57',
     popular: false,
   },
+
   {
     id: 'animals-detail-owl-normal-1',
     title: 'フクロウの細密画',
@@ -21182,6 +22399,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:57',
     popular: false,
   },
+
   {
     id: 'animals-detail-owl-rich-1',
     title: 'フクロウの細密画',
@@ -21200,6 +22418,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:57',
     popular: false,
   },
+
   {
     id: 'animals-detail-hummingbird-simple-1',
     title: 'ハチドリの細密画',
@@ -21218,6 +22437,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:18',
     popular: false,
   },
+
   {
     id: 'animals-detail-hummingbird-easy-1',
     title: 'ハチドリの細密画',
@@ -21236,6 +22456,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:18',
     popular: false,
   },
+
   {
     id: 'animals-detail-hummingbird-normal-1',
     title: 'ハチドリの細密画',
@@ -21254,6 +22475,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:18',
     popular: false,
   },
+
   {
     id: 'animals-detail-hummingbird-rich-1',
     title: 'ハチドリの細密画',
@@ -21272,6 +22494,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:18',
     popular: false,
   },
+
   {
     id: 'animals-detail-peacock-simple-1',
     title: '孔雀の細密画',
@@ -21290,6 +22513,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:38',
     popular: false,
   },
+
   {
     id: 'animals-detail-peacock-easy-1',
     title: '孔雀の細密画',
@@ -21308,6 +22532,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:38',
     popular: false,
   },
+
   {
     id: 'animals-detail-peacock-normal-1',
     title: '孔雀の細密画',
@@ -21326,6 +22551,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:38',
     popular: false,
   },
+
   {
     id: 'animals-detail-peacock-rich-1',
     title: '孔雀の細密画',
@@ -21344,6 +22570,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:38',
     popular: false,
   },
+
   {
     id: 'animals-detail-deer-simple-1',
     title: '鹿の細密画',
@@ -21362,6 +22589,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:59',
     popular: false,
   },
+
   {
     id: 'animals-detail-deer-easy-1',
     title: '鹿の細密画',
@@ -21380,6 +22608,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:59',
     popular: false,
   },
+
   {
     id: 'animals-detail-deer-normal-1',
     title: '鹿の細密画',
@@ -21398,6 +22627,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:59',
     popular: false,
   },
+
   {
     id: 'animals-detail-deer-rich-1',
     title: '鹿の細密画',
@@ -21416,6 +22646,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:59',
     popular: false,
   },
+
   {
     id: 'animals-detail-cat-simple-1',
     title: '猫の細密画',
@@ -21434,6 +22665,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-cat-easy-1',
     title: '猫の細密画',
@@ -21452,6 +22684,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-cat-normal-1',
     title: '猫の細密画',
@@ -21470,6 +22703,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-cat-rich-1',
     title: '猫の細密画',
@@ -21488,6 +22722,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:19',
     popular: false,
   },
+
   {
     id: 'animals-detail-swan-simple-1',
     title: '白鳥の細密画',
@@ -21506,6 +22741,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T02:25',
     popular: false,
   },
+
   {
     id: 'cityscape-paris-simple-1',
     title: 'パリの街並み',
@@ -21524,6 +22760,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-paris-easy-1',
     title: 'パリの街並み',
@@ -21542,6 +22779,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-paris-normal-1',
     title: 'パリの街並み',
@@ -21560,6 +22798,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-paris-rich-1',
     title: 'パリの街並み',
@@ -21578,6 +22817,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-london-simple-1',
     title: 'ロンドンの街並み',
@@ -21596,6 +22836,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-london-easy-1',
     title: 'ロンドンの街並み',
@@ -21614,6 +22855,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-london-normal-1',
     title: 'ロンドンの街並み',
@@ -21632,6 +22874,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-london-rich-1',
     title: 'ロンドンの街並み',
@@ -21650,6 +22893,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-new-york-simple-1',
     title: 'ニューヨークの街並み',
@@ -21668,6 +22912,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-new-york-easy-1',
     title: 'ニューヨークの街並み',
@@ -21686,6 +22931,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-new-york-normal-1',
     title: 'ニューヨークの街並み',
@@ -21704,6 +22950,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-new-york-rich-1',
     title: 'ニューヨークの街並み',
@@ -21722,6 +22969,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-tokyo-simple-1',
     title: '東京の街並み',
@@ -21740,6 +22988,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-tokyo-easy-1',
     title: '東京の街並み',
@@ -21758,6 +23007,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-tokyo-normal-1',
     title: '東京の街並み',
@@ -21776,6 +23026,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'cityscape-tokyo-rich-1',
     title: '東京の街並み',
@@ -21794,6 +23045,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:40',
     popular: false,
   },
+
   {
     id: 'arch-eiffel-rich-1',
     title: 'エッフェル塔（細密）',
@@ -21812,6 +23064,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T07:55',
     popular: false,
   },
+
   {
     id: 'arch-sydney-opera-simple-1',
     title: 'シドニー・オペラハウス（やさしい）',
@@ -21830,6 +23083,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:21',
     popular: false,
   },
+
   {
     id: 'arch-sydney-opera-easy-1',
     title: 'オペラハウスと湾（ふつう）',
@@ -21848,6 +23102,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:21',
     popular: false,
   },
+
   {
     id: 'arch-sydney-opera-normal-1',
     title: 'オペラハウスとハーバーブリッジ（こまかい）',
@@ -21866,6 +23121,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:21',
     popular: false,
   },
+
   {
     id: 'arch-sydney-opera-rich-1',
     title: 'シドニー・オペラハウス（細密）',
@@ -21884,6 +23140,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:21',
     popular: false,
   },
+
   {
     id: 'arch-himeji-simple-1',
     title: '姫路城（やさしい）',
@@ -21902,6 +23159,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'arch-himeji-easy-1',
     title: '姫路城と堀（ふつう）',
@@ -21920,6 +23178,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'arch-himeji-normal-1',
     title: '姫路城と桜（こまかい）',
@@ -21938,6 +23197,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'arch-himeji-rich-1',
     title: '姫路城（細密）',
@@ -21956,6 +23216,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:46',
     popular: false,
   },
+
   {
     id: 'pattern-celtic-simple-1',
     title: 'ケルト模様',
@@ -21974,6 +23235,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:39',
     popular: false,
   },
+
   {
     id: 'pattern-celtic-easy-1',
     title: 'ケルト模様',
@@ -21992,6 +23254,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:39',
     popular: false,
   },
+
   {
     id: 'pattern-celtic-normal-1',
     title: 'ケルト模様',
@@ -22010,6 +23273,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:39',
     popular: false,
   },
+
   {
     id: 'pattern-celtic-rich-1',
     title: 'ケルト模様',
@@ -22028,6 +23292,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:39',
     popular: false,
   },
+
   {
     id: 'pattern-arabesque-simple-1',
     title: 'アラベスク模様',
@@ -22046,6 +23311,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:58',
     popular: false,
   },
+
   {
     id: 'pattern-arabesque-easy-1',
     title: 'アラベスク模様',
@@ -22064,6 +23330,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:58',
     popular: false,
   },
+
   {
     id: 'pattern-arabesque-normal-1',
     title: 'アラベスク模様',
@@ -22082,6 +23349,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:58',
     popular: false,
   },
+
   {
     id: 'pattern-arabesque-rich-1',
     title: 'アラベスク模様',
@@ -22100,6 +23368,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T17:58',
     popular: false,
   },
+
   {
     id: 'pattern-kamon-simple-1',
     title: '家紋風模様',
@@ -22118,6 +23387,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:18',
     popular: false,
   },
+
   {
     id: 'pattern-kamon-easy-1',
     title: '家紋風模様',
@@ -22136,6 +23406,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:18',
     popular: false,
   },
+
   {
     id: 'pattern-kamon-normal-1',
     title: '家紋風模様',
@@ -22154,6 +23425,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:18',
     popular: false,
   },
+
   {
     id: 'pattern-kamon-rich-1',
     title: '家紋風模様',
@@ -22172,6 +23444,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:18',
     popular: false,
   },
+
   {
     id: 'pattern-art-nouveau-simple-1',
     title: 'アール・ヌーヴォー模様',
@@ -22190,6 +23463,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:39',
     popular: false,
   },
+
   {
     id: 'pattern-art-nouveau-easy-1',
     title: 'アール・ヌーヴォー模様',
@@ -22208,6 +23482,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:39',
     popular: false,
   },
+
   {
     id: 'pattern-art-nouveau-normal-1',
     title: 'アール・ヌーヴォー模様',
@@ -22226,6 +23501,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:39',
     popular: false,
   },
+
   {
     id: 'pattern-art-nouveau-rich-1',
     title: 'アール・ヌーヴォー模様',
@@ -22244,6 +23520,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T18:39',
     popular: false,
   },
+
   {
     id: 'pattern-seigaiha-simple-1',
     title: '青海波模様',
@@ -22262,6 +23539,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:08',
     popular: false,
   },
+
   {
     id: 'pattern-seigaiha-easy-1',
     title: '青海波模様',
@@ -22280,6 +23558,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:08',
     popular: false,
   },
+
   {
     id: 'pattern-seigaiha-normal-1',
     title: '青海波模様',
@@ -22298,6 +23577,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:08',
     popular: false,
   },
+
   {
     id: 'pattern-seigaiha-rich-1',
     title: '青海波模様',
@@ -22316,6 +23596,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:08',
     popular: false,
   },
+
   {
     id: 'pattern-asanoha-simple-1',
     title: '麻の葉模様',
@@ -22334,6 +23615,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:29',
     popular: false,
   },
+
   {
     id: 'pattern-asanoha-easy-1',
     title: '麻の葉模様',
@@ -22352,6 +23634,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:29',
     popular: false,
   },
+
   {
     id: 'pattern-asanoha-normal-1',
     title: '麻の葉模様',
@@ -22370,6 +23653,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:29',
     popular: false,
   },
+
   {
     id: 'pattern-asanoha-rich-1',
     title: '麻の葉模様',
@@ -22388,6 +23672,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:29',
     popular: false,
   },
+
   {
     id: 'pattern-shippo-simple-1',
     title: '七宝模様',
@@ -22406,6 +23691,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:48',
     popular: false,
   },
+
   {
     id: 'pattern-shippo-easy-1',
     title: '七宝模様',
@@ -22424,6 +23710,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:48',
     popular: false,
   },
+
   {
     id: 'pattern-shippo-normal-1',
     title: '七宝模様',
@@ -22442,6 +23729,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:48',
     popular: false,
   },
+
   {
     id: 'pattern-shippo-rich-1',
     title: '七宝模様',
@@ -22460,6 +23748,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T19:48',
     popular: false,
   },
+
   {
     id: 'pattern-floral-tile-simple-1',
     title: 'フローラルタイル模様',
@@ -22478,6 +23767,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T20:09',
     popular: false,
   },
+
   {
     id: 'pattern-floral-tile-easy-1',
     title: 'フローラルタイル模様',
@@ -22496,6 +23786,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T20:09',
     popular: false,
   },
+
   {
     id: 'pattern-floral-tile-normal-1',
     title: 'フローラルタイル模様',
@@ -22514,6 +23805,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T20:09',
     popular: false,
   },
+
   {
     id: 'pattern-floral-tile-rich-1',
     title: 'フローラルタイル模様',
@@ -22532,6 +23824,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T20:09',
     popular: false,
   },
+
   {
     id: 'pattern-nordic-simple-1',
     title: '北欧模様',
@@ -22550,6 +23843,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:26',
     popular: false,
   },
+
   {
     id: 'pattern-nordic-easy-1',
     title: '北欧模様',
@@ -22568,6 +23862,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:26',
     popular: false,
   },
+
   {
     id: 'pattern-nordic-normal-1',
     title: '北欧模様',
@@ -22586,6 +23881,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:26',
     popular: false,
   },
+
   {
     id: 'pattern-nordic-rich-1',
     title: '北欧模様',
@@ -22604,6 +23900,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:26',
     popular: false,
   },
+
   {
     id: 'flowers-detail-peony-simple-1',
     title: '牡丹の細密画',
@@ -22622,6 +23919,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:45',
     popular: false,
   },
+
   {
     id: 'flowers-detail-peony-easy-1',
     title: '牡丹の細密画',
@@ -22640,6 +23938,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:45',
     popular: false,
   },
+
   {
     id: 'flowers-detail-peony-normal-1',
     title: '牡丹の細密画',
@@ -22658,6 +23957,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:45',
     popular: false,
   },
+
   {
     id: 'flowers-detail-peony-rich-1',
     title: '牡丹の細密画',
@@ -22676,6 +23976,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T21:45',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lotus-simple-1',
     title: '蓮の細密画',
@@ -22694,6 +23995,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:04',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lotus-easy-1',
     title: '蓮の細密画',
@@ -22712,6 +24014,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:04',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lotus-normal-1',
     title: '蓮の細密画',
@@ -22730,6 +24033,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:04',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lotus-rich-1',
     title: '蓮の細密画',
@@ -22748,6 +24052,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:04',
     popular: false,
   },
+
   {
     id: 'flowers-detail-wisteria-simple-1',
     title: '藤の細密画',
@@ -22766,6 +24071,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:30',
     popular: false,
   },
+
   {
     id: 'flowers-detail-wisteria-easy-1',
     title: '藤の細密画',
@@ -22784,6 +24090,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:30',
     popular: false,
   },
+
   {
     id: 'flowers-detail-wisteria-normal-1',
     title: '藤の細密画',
@@ -22802,6 +24109,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:30',
     popular: false,
   },
+
   {
     id: 'flowers-detail-wisteria-rich-1',
     title: '藤の細密画',
@@ -22820,6 +24128,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:30',
     popular: false,
   },
+
   {
     id: 'flowers-detail-hydrangea-simple-1',
     title: '紫陽花の細密画',
@@ -22838,6 +24147,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:54',
     popular: false,
   },
+
   {
     id: 'flowers-detail-hydrangea-easy-1',
     title: '紫陽花の細密画',
@@ -22856,6 +24166,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:54',
     popular: false,
   },
+
   {
     id: 'flowers-detail-hydrangea-normal-1',
     title: '紫陽花の細密画',
@@ -22874,6 +24185,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:54',
     popular: false,
   },
+
   {
     id: 'flowers-detail-hydrangea-rich-1',
     title: '紫陽花の細密画',
@@ -22892,6 +24204,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T22:54',
     popular: false,
   },
+
   {
     id: 'flowers-detail-white-rose-simple-1',
     title: '白薔薇の細密画',
@@ -22910,6 +24223,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:18',
     popular: false,
   },
+
   {
     id: 'flowers-detail-white-rose-easy-1',
     title: '白薔薇の細密画',
@@ -22928,6 +24242,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:18',
     popular: false,
   },
+
   {
     id: 'flowers-detail-white-rose-normal-1',
     title: '白薔薇の細密画',
@@ -22946,6 +24261,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:18',
     popular: false,
   },
+
   {
     id: 'flowers-detail-white-rose-rich-1',
     title: '白薔薇の細密画',
@@ -22964,6 +24280,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:18',
     popular: false,
   },
+
   {
     id: 'flowers-detail-magnolia-simple-1',
     title: '木蓮の細密画',
@@ -22982,6 +24299,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:37',
     popular: false,
   },
+
   {
     id: 'flowers-detail-magnolia-easy-1',
     title: '木蓮の細密画',
@@ -23000,6 +24318,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:37',
     popular: false,
   },
+
   {
     id: 'flowers-detail-magnolia-normal-1',
     title: '木蓮の細密画',
@@ -23018,6 +24337,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:37',
     popular: false,
   },
+
   {
     id: 'flowers-detail-magnolia-rich-1',
     title: '木蓮の細密画',
@@ -23036,6 +24356,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T23:37',
     popular: false,
   },
+
   {
     id: 'arch-shirakawa-simple-1',
     title: '合掌造り（やさしい）',
@@ -23054,6 +24375,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T08:49',
     popular: false,
   },
+
   {
     id: 'arch-shirakawa-easy-1',
     title: '合掌造りと雪（ふつう）',
@@ -23072,6 +24394,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T08:49',
     popular: false,
   },
+
   {
     id: 'arch-shirakawa-normal-1',
     title: '白川郷の集落（こまかい）',
@@ -23090,6 +24413,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T08:49',
     popular: false,
   },
+
   {
     id: 'arch-shirakawa-rich-1',
     title: '白川郷の合掌造り（細密）',
@@ -23108,6 +24432,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T08:49',
     popular: false,
   },
+
   {
     id: 'arch-kinkakuji-simple-1',
     title: '金閣寺（やさしい）',
@@ -23126,6 +24451,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T09:19',
     popular: false,
   },
+
   {
     id: 'arch-kinkakuji-easy-1',
     title: '金閣寺と池（ふつう）',
@@ -23144,6 +24470,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T09:19',
     popular: false,
   },
+
   {
     id: 'arch-kinkakuji-normal-1',
     title: '金閣寺と庭園（こまかい）',
@@ -23162,6 +24489,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T09:19',
     popular: false,
   },
+
   {
     id: 'arch-kinkakuji-rich-1',
     title: '金閣寺（細密）',
@@ -23180,6 +24508,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T09:19',
     popular: false,
   },
+
   {
     id: 'arch-asakusa-simple-1',
     title: '浅草・雷門（やさしい）',
@@ -23198,6 +24527,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:11',
     popular: false,
   },
+
   {
     id: 'arch-asakusa-easy-1',
     title: '雷門と仲見世（ふつう）',
@@ -23216,6 +24546,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:11',
     popular: false,
   },
+
   {
     id: 'arch-asakusa-normal-1',
     title: '浅草・雷門と浅草寺（こまかい）',
@@ -23234,6 +24565,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:11',
     popular: false,
   },
+
   {
     id: 'arch-asakusa-rich-1',
     title: '浅草・雷門（細密）',
@@ -23252,6 +24584,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:11',
     popular: false,
   },
+
   {
     id: 'arch-dubrovnik-simple-1',
     title: 'ドブロヴニク（やさしい）',
@@ -23270,6 +24603,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:44',
     popular: false,
   },
+
   {
     id: 'arch-dubrovnik-easy-1',
     title: 'ドブロヴニクの城壁（ふつう）',
@@ -23288,6 +24622,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:44',
     popular: false,
   },
+
   {
     id: 'arch-dubrovnik-normal-1',
     title: 'ドブロヴニクの旧市街（こまかい）',
@@ -23306,6 +24641,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:44',
     popular: false,
   },
+
   {
     id: 'arch-dubrovnik-rich-1',
     title: 'ドブロヴニク（細密）',
@@ -23324,6 +24660,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T10:44',
     popular: false,
   },
+
   {
     id: 'arch-santorini-simple-1',
     title: 'サントリーニ島（やさしい）',
@@ -23342,6 +24679,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:04',
     popular: false,
   },
+
   {
     id: 'arch-santorini-easy-1',
     title: 'サントリーニの建物と海（ふつう）',
@@ -23360,6 +24698,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:04',
     popular: false,
   },
+
   {
     id: 'arch-santorini-normal-1',
     title: 'サントリーニの街並み（こまかい）',
@@ -23378,6 +24717,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:04',
     popular: false,
   },
+
   {
     id: 'arch-santorini-rich-1',
     title: 'サントリーニ島（細密）',
@@ -23396,6 +24736,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:04',
     popular: false,
   },
+
   {
     id: 'arch-machu-picchu-simple-1',
     title: 'マチュピチュ（やさしい）',
@@ -23414,6 +24755,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:30',
     popular: false,
   },
+
   {
     id: 'arch-machu-picchu-easy-1',
     title: 'マチュピチュと山（ふつう）',
@@ -23432,6 +24774,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:30',
     popular: false,
   },
+
   {
     id: 'arch-machu-picchu-normal-1',
     title: 'マチュピチュの遺跡と山（こまかい）',
@@ -23450,6 +24793,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:30',
     popular: false,
   },
+
   {
     id: 'arch-machu-picchu-rich-1',
     title: 'マチュピチュ（細密）',
@@ -23468,6 +24812,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:30',
     popular: false,
   },
+
   {
     id: 'arch-angkor-simple-1',
     title: 'アンコール・ワット（やさしい）',
@@ -23486,6 +24831,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:51',
     popular: false,
   },
+
   {
     id: 'arch-angkor-easy-1',
     title: 'アンコール・ワットと池（ふつう）',
@@ -23504,6 +24850,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:51',
     popular: false,
   },
+
   {
     id: 'arch-angkor-normal-1',
     title: 'アンコール・ワットの全景（こまかい）',
@@ -23522,6 +24869,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:51',
     popular: false,
   },
+
   {
     id: 'arch-angkor-rich-1',
     title: 'アンコール・ワット（細密）',
@@ -23540,6 +24888,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T11:51',
     popular: false,
   },
+
   {
     id: 'arch-hagia-sophia-simple-1',
     title: 'アヤ・ソフィア（やさしい）',
@@ -23558,6 +24907,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:17',
     popular: false,
   },
+
   {
     id: 'arch-hagia-sophia-easy-1',
     title: 'アヤ・ソフィアとミナレット（ふつう）',
@@ -23576,6 +24926,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:17',
     popular: false,
   },
+
   {
     id: 'arch-hagia-sophia-normal-1',
     title: 'アヤ・ソフィアと海峡（こまかい）',
@@ -23594,6 +24945,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:17',
     popular: false,
   },
+
   {
     id: 'arch-hagia-sophia-rich-1',
     title: 'アヤ・ソフィア（細密）',
@@ -23612,6 +24964,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:17',
     popular: false,
   },
+
   {
     id: 'arch-florence-duomo-simple-1',
     title: 'フィレンツェのドゥオーモ（やさしい）',
@@ -23630,6 +24983,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:44',
     popular: false,
   },
+
   {
     id: 'arch-florence-duomo-easy-1',
     title: 'ドゥオーモと鐘楼（ふつう）',
@@ -23648,6 +25002,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:44',
     popular: false,
   },
+
   {
     id: 'arch-florence-duomo-normal-1',
     title: 'ドゥオーモと広場（こまかい）',
@@ -23666,6 +25021,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:44',
     popular: false,
   },
+
   {
     id: 'arch-florence-duomo-rich-1',
     title: 'フィレンツェのドゥオーモ（細密）',
@@ -23684,6 +25040,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T12:44',
     popular: false,
   },
+
   {
     id: 'arch-prague-oldtown-simple-1',
     title: 'プラハの天文時計（やさしい）',
@@ -23702,6 +25059,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:38',
     popular: false,
   },
+
   {
     id: 'arch-prague-oldtown-easy-1',
     title: 'プラハの旧市街（ふつう）',
@@ -23720,6 +25078,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:38',
     popular: false,
   },
+
   {
     id: 'arch-prague-oldtown-normal-1',
     title: 'プラハの旧市街広場（こまかい）',
@@ -23738,6 +25097,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:38',
     popular: false,
   },
+
   {
     id: 'arch-prague-oldtown-rich-1',
     title: 'プラハの旧市街（細密）',
@@ -23756,6 +25116,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:38',
     popular: false,
   },
+
   {
     id: 'arch-big-ben-simple-1',
     title: 'ビッグ・ベン（やさしい）',
@@ -23774,6 +25135,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:59',
     popular: false,
   },
+
   {
     id: 'arch-big-ben-easy-1',
     title: 'ビッグ・ベンとテムズ川（ふつう）',
@@ -23792,6 +25154,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:59',
     popular: false,
   },
+
   {
     id: 'arch-big-ben-normal-1',
     title: 'ビッグ・ベンとロンドン（こまかい）',
@@ -23810,6 +25173,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:59',
     popular: false,
   },
+
   {
     id: 'arch-big-ben-rich-1',
     title: 'ビッグ・ベン（細密）',
@@ -23828,6 +25192,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T13:59',
     popular: false,
   },
+
   {
     id: 'railway-tokaido-fuji-simple-1',
     title: '新幹線と富士山（やさしい）',
@@ -23846,6 +25211,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T14:41',
     popular: false,
   },
+
   {
     id: 'railway-tokaido-fuji-easy-1',
     title: '新幹線と富士山（ふつう）',
@@ -23864,6 +25230,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T14:41',
     popular: false,
   },
+
   {
     id: 'railway-tokaido-fuji-normal-1',
     title: '新幹線と富士山（こまかい）',
@@ -23882,6 +25249,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T14:41',
     popular: false,
   },
+
   {
     id: 'railway-tokaido-fuji-rich-1',
     title: '新幹線と富士山（細密）',
@@ -23900,6 +25268,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T14:41',
     popular: false,
   },
+
   {
     id: 'railway-steam-d51-simple-1',
     title: 'D51蒸気機関車（やさしい）',
@@ -23918,6 +25287,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:06',
     popular: false,
   },
+
   {
     id: 'railway-steam-d51-easy-1',
     title: 'D51蒸気機関車（ふつう）',
@@ -23936,6 +25306,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:06',
     popular: false,
   },
+
   {
     id: 'railway-steam-d51-normal-1',
     title: 'D51蒸気機関車（こまかい）',
@@ -23954,6 +25325,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:06',
     popular: false,
   },
+
   {
     id: 'railway-steam-d51-rich-1',
     title: 'D51蒸気機関車（細密）',
@@ -23972,6 +25344,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:06',
     popular: false,
   },
+
   {
     id: 'railway-steam-c62-simple-1',
     title: 'C62蒸気機関車（やさしい）',
@@ -23990,6 +25363,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:47',
     popular: false,
   },
+
   {
     id: 'railway-steam-c62-easy-1',
     title: 'C62蒸気機関車（ふつう）',
@@ -24008,6 +25382,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:47',
     popular: false,
   },
+
   {
     id: 'railway-steam-c62-normal-1',
     title: 'C62蒸気機関車（こまかい）',
@@ -24026,6 +25401,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:47',
     popular: false,
   },
+
   {
     id: 'railway-steam-c62-rich-1',
     title: 'C62蒸気機関車（細密）',
@@ -24044,6 +25420,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T15:47',
     popular: false,
   },
+
   {
     id: 'railway-sakura-tunnel-simple-1',
     title: '桜と電車（やさしい）',
@@ -24062,6 +25439,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T16:23',
     popular: false,
   },
+
   {
     id: 'railway-sakura-tunnel-easy-1',
     title: '桜のトンネルと電車（ふつう）',
@@ -24080,6 +25458,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T16:23',
     popular: false,
   },
+
   {
     id: 'railway-sakura-tunnel-normal-1',
     title: '桜のトンネルと在来線（こまかい）',
@@ -24098,6 +25477,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T16:23',
     popular: false,
   },
+
   {
     id: 'railway-sakura-tunnel-rich-1',
     title: '桜のトンネルと在来線（細密）',
@@ -24116,6 +25496,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T16:23',
     popular: false,
   },
+
   {
     id: 'railway-autumn-valley-simple-1',
     title: '紅葉の山と列車（やさしい）',
@@ -24134,6 +25515,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T17:25',
     popular: false,
   },
+
   {
     id: 'railway-autumn-valley-easy-1',
     title: '紅葉の渓谷と列車（ふつう）',
@@ -24152,6 +25534,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T17:25',
     popular: false,
   },
+
   {
     id: 'railway-autumn-valley-normal-1',
     title: '紅葉の渓谷と列車（こまかい）',
@@ -24170,6 +25553,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T17:25',
     popular: false,
   },
+
   {
     id: 'railway-autumn-valley-rich-1',
     title: '紅葉の渓谷と列車（細密）',
@@ -24188,6 +25572,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T17:25',
     popular: false,
   },
+
   {
     id: 'railway-hokkaido-winter-simple-1',
     title: '雪原の列車（やさしい）',
@@ -24206,6 +25591,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:12',
     popular: false,
   },
+
   {
     id: 'railway-hokkaido-winter-easy-1',
     title: '雪原の列車（ふつう）',
@@ -24224,6 +25610,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:12',
     popular: false,
   },
+
   {
     id: 'railway-hokkaido-winter-normal-1',
     title: '北海道の雪原と列車（こまかい）',
@@ -24242,6 +25629,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:12',
     popular: false,
   },
+
   {
     id: 'railway-hokkaido-winter-rich-1',
     title: '北海道の雪原と列車（細密）',
@@ -24260,6 +25648,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:12',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hinamatsuri-simple-1',
     title: 'お雛様（やさしい）',
@@ -24278,6 +25667,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hinamatsuri-easy-1',
     title: 'お雛様と三人官女（ふつう）',
@@ -24296,6 +25686,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hinamatsuri-normal-1',
     title: '五段飾りのお雛様（こまかい）',
@@ -24314,6 +25705,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hinamatsuri-rich-1',
     title: '七段飾りのお雛様（細密）',
@@ -24332,6 +25724,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T18:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hanami-simple-1',
     title: '桜の枝と花びら（やさしい）',
@@ -24350,6 +25743,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:18',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hanami-easy-1',
     title: 'お花見と桜並木（ふつう）',
@@ -24368,6 +25762,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:18',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hanami-normal-1',
     title: '桜の下のお花見（こまかい）',
@@ -24386,6 +25781,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:18',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-hanami-rich-1',
     title: '夜桜とお花見（細密）',
@@ -24404,6 +25800,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:18',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tanabata-simple-1',
     title: '笹飾りと短冊（やさしい）',
@@ -24422,6 +25819,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tanabata-easy-1',
     title: '七夕と天の川（ふつう）',
@@ -24440,6 +25838,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tanabata-normal-1',
     title: '七夕の夜空と笹飾り（こまかい）',
@@ -24458,6 +25857,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tanabata-rich-1',
     title: '七夕祭りの夜（細密）',
@@ -24476,6 +25876,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-obon-simple-1',
     title: '灯籠流し（やさしい）',
@@ -24494,6 +25895,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-obon-easy-1',
     title: '灯籠と川（ふつう）',
@@ -24512,6 +25914,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-obon-normal-1',
     title: '灯籠流しと人々（こまかい）',
@@ -24530,6 +25933,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-obon-rich-1',
     title: 'お盆の灯籠流しの夜（細密）',
@@ -24548,6 +25952,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T19:58',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tsukimi-simple-1',
     title: '月とすすき（やさしい）',
@@ -24566,6 +25971,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:17',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tsukimi-easy-1',
     title: 'お月見とすすき（ふつう）',
@@ -24584,6 +25990,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:17',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tsukimi-normal-1',
     title: '月見台とすすき野原（こまかい）',
@@ -24602,6 +26009,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:17',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-tsukimi-rich-1',
     title: 'お月見の夜（細密）',
@@ -24620,6 +26028,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:17',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-koyo-simple-1',
     title: '紅葉と鳥居（やさしい）',
@@ -24638,6 +26047,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-koyo-easy-1',
     title: '紅葉の参道と鳥居（ふつう）',
@@ -24656,6 +26066,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-koyo-normal-1',
     title: '紅葉の神社の参道（こまかい）',
@@ -24674,6 +26085,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-koyo-rich-1',
     title: '紅葉の神社（細密）',
@@ -24692,6 +26104,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T20:38',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-halloween-simple-1',
     title: 'ハロウィンのかぼちゃ（やさしい）',
@@ -24710,6 +26123,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T21:08',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-halloween-easy-1',
     title: 'ハロウィンの夜（ふつう）',
@@ -24728,6 +26142,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T21:08',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-halloween-normal-1',
     title: 'ハロウィンの墓地（こまかい）',
@@ -24746,6 +26161,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T21:08',
     popular: false,
   },
+
   {
     id: 'masterpiece-great-wave-rich-1',
     title: '神奈川沖浪裏（北斎）',
@@ -24764,6 +26180,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T22:07',
     popular: false,
   },
+
   {
     id: 'masterpiece-mucha-job-rich-1',
     title: 'JOBポスター（ミュシャ）',
@@ -24782,6 +26199,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-20T22:17',
     popular: false,
   },
+
   {
     id: 'dodgeball-simple-1',
     title: 'ドッジボール',
@@ -24799,6 +26217,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:04',
     popular: false,
   },
+
   {
     id: 'dodgeball-easy-1',
     title: 'ボールをなげよう',
@@ -24816,6 +26235,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:04',
     popular: false,
   },
+
   {
     id: 'dodgeball-normal-1',
     title: 'よけろ！ドッジボール',
@@ -24833,6 +26253,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:04',
     popular: false,
   },
+
   {
     id: 'dodgeball-rich-1',
     title: 'みんなでドッジボール',
@@ -24850,6 +26271,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T21:04',
     popular: false,
   },
+
   {
     id: 'basketball-simple-1',
     title: 'バスケットボール',
@@ -24867,6 +26289,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:03',
     popular: false,
   },
+
   {
     id: 'basketball-easy-1',
     title: 'ドリブルしよう',
@@ -24884,6 +26307,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:03',
     popular: false,
   },
+
   {
     id: 'basketball-normal-1',
     title: 'シュートをねらえ',
@@ -24901,6 +26325,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:03',
     popular: false,
   },
+
   {
     id: 'basketball-rich-1',
     title: 'みんなでバスケ',
@@ -24918,6 +26343,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T22:03',
     popular: false,
   },
+
   {
     id: 'tennis-simple-1',
     title: 'テニスラケット',
@@ -24935,6 +26361,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:06',
     popular: false,
   },
+
   {
     id: 'tennis-easy-1',
     title: 'テニスをしよう',
@@ -24952,6 +26379,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:06',
     popular: false,
   },
+
   {
     id: 'tennis-normal-1',
     title: 'コートでテニス',
@@ -24969,6 +26397,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:06',
     popular: false,
   },
+
   {
     id: 'tennis-rich-1',
     title: 'テニスたいけつ',
@@ -24986,6 +26415,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-18T23:06',
     popular: false,
   },
+
   {
     id: 'sumo-simple-1',
     title: 'どすこい！',
@@ -25003,6 +26433,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:30',
     popular: false,
   },
+
   {
     id: 'sumo-easy-1',
     title: 'すもうポーズ',
@@ -25020,6 +26451,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:30',
     popular: false,
   },
+
   {
     id: 'sumo-normal-1',
     title: 'どひょうのうえで',
@@ -25037,6 +26469,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:30',
     popular: false,
   },
+
   {
     id: 'sumo-rich-1',
     title: 'うんどうかいのすもう',
@@ -25054,6 +26487,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T00:30',
     popular: false,
   },
+
   {
     id: 'cycling-simple-1',
     title: 'じてんしゃ',
@@ -25071,6 +26505,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:25',
     popular: false,
   },
+
   {
     id: 'cycling-easy-1',
     title: 'じてんしゃにのろう',
@@ -25088,6 +26523,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:25',
     popular: false,
   },
+
   {
     id: 'cycling-normal-1',
     title: 'こうえんをサイクリング',
@@ -25105,6 +26541,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:25',
     popular: false,
   },
+
   {
     id: 'cycling-rich-1',
     title: 'みんなでじてんしゃ',
@@ -25122,6 +26559,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T01:25',
     popular: false,
   },
+
   {
     id: 'skiing-simple-1',
     title: 'スキーのどうぐ',
@@ -25139,6 +26577,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T02:35',
     popular: false,
   },
+
   {
     id: 'skiing-easy-1',
     title: 'スキーをしよう',
@@ -25156,6 +26595,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T02:35',
     popular: false,
   },
+
   {
     id: 'skiing-normal-1',
     title: 'ゲレンデをすべろう',
@@ -25173,6 +26613,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T02:35',
     popular: false,
   },
+
   {
     id: 'skiing-rich-1',
     title: 'みんなでスキー',
@@ -25190,6 +26631,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T02:35',
     popular: false,
   },
+
   {
     id: 'skating-simple-1',
     title: 'スケートぐつ',
@@ -25207,6 +26649,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T03:47',
     popular: false,
   },
+
   {
     id: 'skating-easy-1',
     title: 'スケートをしよう',
@@ -25224,6 +26667,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T03:47',
     popular: false,
   },
+
   {
     id: 'skating-normal-1',
     title: 'リンクをすべろう',
@@ -25241,6 +26685,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T03:47',
     popular: false,
   },
+
   {
     id: 'skating-rich-1',
     title: 'みんなでスケート',
@@ -25258,6 +26703,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T03:47',
     popular: false,
   },
+
   {
     id: 'volleyball-simple-1',
     title: 'バレーボール',
@@ -25275,6 +26721,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T04:55',
     popular: false,
   },
+
   {
     id: 'volleyball-easy-1',
     title: 'アタックしよう',
@@ -25292,6 +26739,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T04:55',
     popular: false,
   },
+
   {
     id: 'volleyball-normal-1',
     title: 'ネットをこえて',
@@ -25309,6 +26757,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T04:55',
     popular: false,
   },
+
   {
     id: 'volleyball-rich-1',
     title: 'みんなでバレーボール',
@@ -25326,6 +26775,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T04:55',
     popular: false,
   },
+
   {
     id: 'karate-simple-1',
     title: 'からての道着',
@@ -25343,6 +26793,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T05:55',
     popular: false,
   },
+
   {
     id: 'karate-easy-1',
     title: 'からてのかまえ',
@@ -25360,6 +26811,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T05:55',
     popular: false,
   },
+
   {
     id: 'karate-normal-1',
     title: 'どうじょうでからて',
@@ -25377,6 +26829,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T05:55',
     popular: false,
   },
+
   {
     id: 'karate-rich-1',
     title: 'みんなでからての稽古',
@@ -25394,6 +26847,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T05:55',
     popular: false,
   },
+
   {
     id: 'oni-simple-1',
     title: 'おにだぞ〜！',
@@ -25411,6 +26865,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T06:54',
     popular: false,
   },
+
   {
     id: 'oni-easy-1',
     title: 'かわいいおに',
@@ -25428,6 +26883,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T06:54',
     popular: false,
   },
+
   {
     id: 'oni-normal-1',
     title: 'まめまき！おにはそと',
@@ -25445,6 +26901,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T06:54',
     popular: false,
   },
+
   {
     id: 'oni-rich-1',
     title: 'せつぶんのまめまき',
@@ -25462,6 +26919,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T06:54',
     popular: false,
   },
+
   {
     id: 'obake-simple-1',
     title: 'かわいいおばけ',
@@ -25479,6 +26937,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:02',
     popular: false,
   },
+
   {
     id: 'obake-easy-1',
     title: 'そらをとぶおばけ',
@@ -25496,6 +26955,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:02',
     popular: false,
   },
+
   {
     id: 'obake-normal-1',
     title: 'おばけのいえ',
@@ -25513,6 +26973,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:02',
     popular: false,
   },
+
   {
     id: 'obake-rich-1',
     title: 'おばけのパーティー',
@@ -25530,6 +26991,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T08:02',
     popular: false,
   },
+
   {
     id: 'tengu-simple-1',
     title: 'てんぐのおめん',
@@ -25547,6 +27009,7 @@ const _materials3: Material[] = [
     createdAt: '2026-05-19T09:20',
     popular: false,
   },
+
 ]
 
 const _materials4: Material[] = [
@@ -25567,6 +27030,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T09:20',
     popular: false,
   },
+
   {
     id: 'tengu-normal-1',
     title: 'そらをとぶてんぐ',
@@ -25584,6 +27048,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T09:20',
     popular: false,
   },
+
   {
     id: 'tengu-rich-1',
     title: 'てんぐのやまのがっこう',
@@ -25601,6 +27066,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T09:20',
     popular: false,
   },
+
   {
     id: 'kappa-simple-1',
     title: 'かわのかっぱ',
@@ -25618,6 +27084,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T10:08',
     popular: false,
   },
+
   {
     id: 'kappa-easy-1',
     title: 'きゅうりがすきなかっぱ',
@@ -25635,6 +27102,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T10:08',
     popular: false,
   },
+
   {
     id: 'kappa-normal-1',
     title: 'かわでおよぐかっぱ',
@@ -25652,6 +27120,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T10:08',
     popular: false,
   },
+
   {
     id: 'kappa-rich-1',
     title: 'かっぱとかわであそぼう',
@@ -25669,6 +27138,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T10:08',
     popular: false,
   },
+
   {
     id: 'tanuki-simple-1',
     title: 'ばけたぬき',
@@ -25686,6 +27156,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:06',
     popular: false,
   },
+
   {
     id: 'tanuki-easy-1',
     title: 'ぽんぽこたぬき',
@@ -25703,6 +27174,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:06',
     popular: false,
   },
+
   {
     id: 'tanuki-normal-1',
     title: 'へんしんたぬき',
@@ -25720,6 +27192,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:06',
     popular: false,
   },
+
   {
     id: 'tanuki-rich-1',
     title: 'たぬきのぽんぽこパーティー',
@@ -25737,6 +27210,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:06',
     popular: false,
   },
+
   {
     id: 'kitsune-simple-1',
     title: 'きつねのおめん',
@@ -25754,6 +27228,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:06',
     popular: false,
   },
+
   {
     id: 'kitsune-easy-1',
     title: 'おいなりさんのきつね',
@@ -25771,6 +27246,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:06',
     popular: false,
   },
+
   {
     id: 'kitsune-normal-1',
     title: 'つきよのきつね',
@@ -25788,6 +27264,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:06',
     popular: false,
   },
+
   {
     id: 'kitsune-rich-1',
     title: 'きつねとであった',
@@ -25805,6 +27282,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:06',
     popular: false,
   },
+
   {
     id: 'zashiki-warashi-simple-1',
     title: 'ざしきわらし',
@@ -25822,6 +27300,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T13:08',
     popular: false,
   },
+
   {
     id: 'zashiki-warashi-easy-1',
     title: 'わしつのざしきわらし',
@@ -25839,6 +27318,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T13:08',
     popular: false,
   },
+
   {
     id: 'zashiki-warashi-normal-1',
     title: 'いたずらざしきわらし',
@@ -25856,6 +27336,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T13:08',
     popular: false,
   },
+
   {
     id: 'zashiki-warashi-rich-1',
     title: 'ざしきわらしとなかよし',
@@ -25873,6 +27354,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T13:08',
     popular: false,
   },
+
   {
     id: 'nurikabe-simple-1',
     title: 'ぬりかべ',
@@ -25890,6 +27372,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:23',
     popular: false,
   },
+
   {
     id: 'nurikabe-easy-1',
     title: 'とおれないよぬりかべ',
@@ -25907,6 +27390,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:23',
     popular: false,
   },
+
   {
     id: 'nurikabe-normal-1',
     title: 'みちをふさぐぬりかべ',
@@ -25924,6 +27408,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:23',
     popular: false,
   },
+
   {
     id: 'nurikabe-rich-1',
     title: 'ようかいのあつまり',
@@ -25941,6 +27426,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:23',
     popular: false,
   },
+
   {
     id: 'ittanmomen-simple-1',
     title: 'いったんもめん',
@@ -25958,6 +27444,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T15:12',
     popular: false,
   },
+
   {
     id: 'ittanmomen-easy-1',
     title: 'そらをとぶいったんもめん',
@@ -25975,6 +27462,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T15:12',
     popular: false,
   },
+
   {
     id: 'ittanmomen-normal-1',
     title: 'もりのいったんもめん',
@@ -25992,6 +27480,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T15:12',
     popular: false,
   },
+
   {
     id: 'ittanmomen-rich-1',
     title: 'いったんもめんとおいかけっこ',
@@ -26009,6 +27498,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T15:12',
     popular: false,
   },
+
   {
     id: 'kodama-simple-1',
     title: 'こだま',
@@ -26026,6 +27516,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:29',
     popular: false,
   },
+
   {
     id: 'kodama-easy-1',
     title: 'きのうえのこだま',
@@ -26043,6 +27534,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:29',
     popular: false,
   },
+
   {
     id: 'kodama-normal-1',
     title: 'もりのこだまたち',
@@ -26060,6 +27552,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:29',
     popular: false,
   },
+
   {
     id: 'kodama-rich-1',
     title: 'こだまとあそぼう',
@@ -26077,6 +27570,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:29',
     popular: false,
   },
+
   {
     id: 'hitotsume-kozou-simple-1',
     title: 'ひとつめこぞう',
@@ -26094,6 +27588,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T17:42',
     popular: false,
   },
+
   {
     id: 'hitotsume-kozou-easy-1',
     title: 'にこにこひとつめこぞう',
@@ -26111,6 +27606,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T17:42',
     popular: false,
   },
+
   {
     id: 'hitotsume-kozou-normal-1',
     title: 'まちをあるくひとつめこぞう',
@@ -26128,6 +27624,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T17:42',
     popular: false,
   },
+
   {
     id: 'hitotsume-kozou-rich-1',
     title: 'ようかいのなかよしあつまり',
@@ -26145,6 +27642,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T17:42',
     popular: false,
   },
+
   {
     id: 'nekomata-simple-1',
     title: 'ねこまた',
@@ -26162,6 +27660,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:51',
     popular: false,
   },
+
   {
     id: 'nekomata-easy-1',
     title: 'おどるねこまた',
@@ -26179,6 +27678,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:51',
     popular: false,
   },
+
   {
     id: 'nekomata-normal-1',
     title: 'つきよにおどるねこまた',
@@ -26196,6 +27696,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:51',
     popular: false,
   },
+
   {
     id: 'nekomata-rich-1',
     title: 'ねこまたのダンスパーティー',
@@ -26213,6 +27714,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:51',
     popular: false,
   },
+
   {
     id: 'amabie-simple-1',
     title: 'アマビエ',
@@ -26230,6 +27732,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T19:51',
     popular: false,
   },
+
   {
     id: 'amabie-easy-1',
     title: 'うみからきたアマビエ',
@@ -26247,6 +27750,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T19:51',
     popular: false,
   },
+
   {
     id: 'amabie-normal-1',
     title: 'うみのアマビエ',
@@ -26264,6 +27768,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T19:51',
     popular: false,
   },
+
   {
     id: 'amabie-rich-1',
     title: 'アマビエとであった',
@@ -26281,6 +27786,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T19:51',
     popular: false,
   },
+
   {
     id: 'betobeto-san-simple-1',
     title: 'べとべとさん',
@@ -26298,6 +27804,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:45',
     popular: false,
   },
+
   {
     id: 'betobeto-san-easy-1',
     title: 'あしおとのべとべとさん',
@@ -26315,6 +27822,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:45',
     popular: false,
   },
+
   {
     id: 'betobeto-san-normal-1',
     title: 'よみちのべとべとさん',
@@ -26332,6 +27840,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:45',
     popular: false,
   },
+
   {
     id: 'betobeto-san-rich-1',
     title: 'べとべとさんがきた！',
@@ -26349,6 +27858,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:45',
     popular: false,
   },
+
   {
     id: 'yukionna-simple-1',
     title: 'ゆきおんな',
@@ -26366,6 +27876,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T21:28',
     popular: false,
   },
+
   {
     id: 'yukionna-easy-1',
     title: 'かわいいゆきおんな',
@@ -26383,6 +27894,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T21:28',
     popular: false,
   },
+
   {
     id: 'yukionna-normal-1',
     title: 'ゆきのゆきおんな',
@@ -26400,6 +27912,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T21:28',
     popular: false,
   },
+
   {
     id: 'yukionna-rich-1',
     title: 'ゆきおんなとゆきあそび',
@@ -26417,12 +27930,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T21:28',
     popular: false,
   },
+
   {
     id: 'snowman-simple-1',
     title: 'ゆきだるま',
     description: 'シンプルなゆきだるまのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snowman', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26434,12 +27948,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:25',
     popular: false,
   },
+
   {
     id: 'snowman-easy-1',
     title: 'ゆきだるまのおかお',
     description: 'ゆきだるまとバケツ・ニンジン・マフラーが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snowman', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26451,12 +27966,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:25',
     popular: false,
   },
+
   {
     id: 'snowman-normal-1',
     title: 'ゆきのなかのゆきだるま',
     description: '雪の野原に立つゆきだるまのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snowman', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26468,12 +27984,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:25',
     popular: false,
   },
+
   {
     id: 'snowman-rich-1',
     title: 'ゆきだるまをつくろう',
     description: '子どもたちがゆきだるまを作るにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snowman', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26485,12 +28002,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T11:25',
     popular: false,
   },
+
   {
     id: 'sled-simple-1',
     title: 'そり',
     description: 'シンプルなそりのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['sled', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26502,12 +28020,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:34',
     popular: false,
   },
+
   {
     id: 'sled-easy-1',
     title: 'そりにのろう',
     description: 'そりに乗る子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['sled', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26519,12 +28038,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:34',
     popular: false,
   },
+
   {
     id: 'sled-normal-1',
     title: 'ゆきのさかをすべろう',
     description: '雪の坂を滑るそり遊びのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['sled', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26536,12 +28056,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:34',
     popular: false,
   },
+
   {
     id: 'sled-rich-1',
     title: 'みんなでそりあそび',
     description: 'みんなでそり遊びをする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['sled', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26553,12 +28074,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T12:34',
     popular: false,
   },
+
   {
     id: 'ice-skating-simple-1',
     title: 'スケートぐつ',
     description: 'シンプルなスケート靴のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26570,12 +28092,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:34',
     popular: false,
   },
+
   {
     id: 'ice-skating-easy-1',
     title: 'スケートにのろう',
     description: 'スケートを楽しむ子どものぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26587,12 +28110,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:34',
     popular: false,
   },
+
   {
     id: 'ice-skating-normal-1',
     title: 'すべれたよ！',
     description: 'スケートで滑る子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26604,12 +28128,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:34',
     popular: false,
   },
+
   {
     id: 'ice-skating-rich-1',
     title: 'みんなでスケート',
     description: 'みんなでスケートを楽しむ子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['ice-skating', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26621,12 +28146,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T14:34',
     popular: false,
   },
+
   {
     id: 'christmas-tree-simple-1',
     title: 'クリスマスツリー',
     description: 'シンプルなクリスマスツリーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26638,12 +28164,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:34',
     popular: false,
   },
+
   {
     id: 'christmas-tree-easy-1',
     title: 'かざりのツリー',
     description: '星とボールで飾ったクリスマスツリーのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26655,12 +28182,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:34',
     popular: false,
   },
+
   {
     id: 'christmas-tree-normal-1',
     title: 'ツリーとプレゼント',
     description: 'プレゼントが並ぶクリスマスツリーのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26672,12 +28200,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:34',
     popular: false,
   },
+
   {
     id: 'christmas-tree-rich-1',
     title: 'ツリーをかざろう',
     description: '子どもたちがツリーを飾り付けするにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-tree', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26689,12 +28218,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T16:34',
     popular: false,
   },
+
   {
     id: 'santa-simple-1',
     title: 'サンタクロース',
     description: 'シンプルなサンタクロースのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['santa', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26706,12 +28236,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:28',
     popular: false,
   },
+
   {
     id: 'santa-easy-1',
     title: 'プレゼントをもってきたよ',
     description: 'プレゼントを持つサンタクロースのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['santa', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26723,12 +28254,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:28',
     popular: false,
   },
+
   {
     id: 'santa-normal-1',
     title: 'えんとつからサンタさん',
     description: '煙突からプレゼントを届けるサンタのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['santa', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26740,12 +28272,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:28',
     popular: false,
   },
+
   {
     id: 'santa-rich-1',
     title: 'サンタさんがきた！',
     description: 'そりで夜空を飛ぶサンタとトナカイのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['santa', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26757,12 +28290,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T18:28',
     popular: false,
   },
+
   {
     id: 'christmas-wreath-simple-1',
     title: 'クリスマスリース',
     description: 'シンプルなクリスマスリースのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26774,12 +28308,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:29',
     popular: false,
   },
+
   {
     id: 'christmas-wreath-easy-1',
     title: 'リースとかざり',
     description: 'ヒイラギとベルが飾られたリースのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26791,12 +28326,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:29',
     popular: false,
   },
+
   {
     id: 'christmas-wreath-normal-1',
     title: 'ドアのリース',
     description: 'ドアに飾られたクリスマスリースのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26808,12 +28344,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:29',
     popular: false,
   },
+
   {
     id: 'christmas-wreath-rich-1',
     title: 'リースをつくろう',
     description: '子どもたちがリースを作るにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['christmas-wreath', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26825,12 +28362,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T20:29',
     popular: false,
   },
+
   {
     id: 'kotatsu-simple-1',
     title: 'こたつ',
     description: 'シンプルなこたつのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26842,12 +28380,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T22:34',
     popular: false,
   },
+
   {
     id: 'kotatsu-easy-1',
     title: 'こたつとみかん',
     description: 'こたつとみかんが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26859,12 +28398,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T22:34',
     popular: false,
   },
+
   {
     id: 'kotatsu-normal-1',
     title: 'こたつであったか',
     description: 'こたつでみかんを食べる子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26876,12 +28416,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T22:34',
     popular: false,
   },
+
   {
     id: 'kotatsu-rich-1',
     title: 'みんなでこたつ',
     description: '家族でこたつに入るにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['kotatsu', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26893,12 +28434,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T22:34',
     popular: false,
   },
+
   {
     id: 'mittens-simple-1',
     title: 'てぶくろ',
     description: 'シンプルなてぶくろのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mittens', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26910,12 +28452,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T23:47',
     popular: false,
   },
+
   {
     id: 'mittens-easy-1',
     title: 'ふゆのこしらえ',
     description: 'てぶくろとぼうし・マフラーが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mittens', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26927,12 +28470,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T23:47',
     popular: false,
   },
+
   {
     id: 'mittens-normal-1',
     title: 'てぶくろをはめよう',
     description: 'てぶくろをはめて外出する子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mittens', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26944,12 +28488,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T23:47',
     popular: false,
   },
+
   {
     id: 'mittens-rich-1',
     title: 'ふゆのおでかけじゅんび',
     description: '冬のお出かけ準備をする子どもたちのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mittens', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26961,12 +28506,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-19T23:47',
     popular: false,
   },
+
   {
     id: 'scarf-simple-1',
     title: 'マフラー',
     description: 'シンプルなマフラーのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['scarf', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26978,12 +28524,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T01:05',
     popular: false,
   },
+
   {
     id: 'scarf-easy-1',
     title: 'ふゆのこしらえ',
     description: 'マフラーとぼうし・てぶくろが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['scarf', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -26995,12 +28542,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T01:05',
     popular: false,
   },
+
   {
     id: 'scarf-normal-1',
     title: 'マフラーをまいて',
     description: 'マフラーを巻いて歩く子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['scarf', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27012,12 +28560,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T01:05',
     popular: false,
   },
+
   {
     id: 'scarf-rich-1',
     title: 'ふゆのこうえんであそぼう',
     description: '冬の公園で遊ぶ子どもたちのにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['scarf', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27029,12 +28578,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T01:05',
     popular: false,
   },
+
   {
     id: 'new-year-simple-1',
     title: 'かどまつ',
     description: 'シンプルな門松のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['new-year', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27046,12 +28596,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T02:47',
     popular: false,
   },
+
   {
     id: 'new-year-easy-1',
     title: 'おしょうがつのかざり',
     description: '門松・しめ縄・凧が並ぶお正月のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['new-year', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27063,12 +28614,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T02:47',
     popular: false,
   },
+
   {
     id: 'new-year-normal-1',
     title: 'たこあげしよう',
     description: '凧揚げをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['new-year', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27080,12 +28632,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T02:47',
     popular: false,
   },
+
   {
     id: 'new-year-rich-1',
     title: 'にぎやかなおしょうがつ',
     description: 'お正月遊びをする子どもたちのにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['new-year', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27097,12 +28650,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T02:47',
     popular: false,
   },
+
   {
     id: 'setsubun-simple-1',
     title: 'おにのおめん',
     description: 'シンプルな鬼の面のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['setsubun', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27114,12 +28668,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T04:44',
     popular: false,
   },
+
   {
     id: 'setsubun-easy-1',
     title: 'まめまきのじゅんび',
     description: '鬼の面・枡・ヒイラギが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['setsubun', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27131,12 +28686,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T04:44',
     popular: false,
   },
+
   {
     id: 'setsubun-normal-1',
     title: 'おにはそと！ふくはうち！',
     description: '豆まきをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['setsubun', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27148,12 +28704,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T04:44',
     popular: false,
   },
+
   {
     id: 'setsubun-rich-1',
     title: 'みんなでまめまき',
     description: 'みんなで豆まきをするにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['setsubun', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27165,12 +28722,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T04:44',
     popular: false,
   },
+
   {
     id: 'mochi-pounding-simple-1',
     title: 'おもち',
     description: 'シンプルなおもちのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27182,12 +28740,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T07:06',
     popular: false,
   },
+
   {
     id: 'mochi-pounding-easy-1',
     title: 'もちつきのどうぐ',
     description: 'きね・うす・おもちが並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27199,12 +28758,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T07:06',
     popular: false,
   },
+
   {
     id: 'mochi-pounding-normal-1',
     title: 'よいしょっともちつき',
     description: 'もちつきをする子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27216,12 +28776,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T07:06',
     popular: false,
   },
+
   {
     id: 'mochi-pounding-rich-1',
     title: 'みんなでもちつき',
     description: 'みんなでもちつきをするにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['mochi-pounding', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27233,12 +28794,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T07:06',
     popular: false,
   },
+
   {
     id: 'snow-play-simple-1',
     title: 'かまくら',
     description: 'シンプルなかまくらのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snow-play', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27250,12 +28812,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T08:24',
     popular: false,
   },
+
   {
     id: 'snow-play-easy-1',
     title: 'かまくらとゆきだま',
     description: 'かまくらと雪玉が並ぶ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snow-play', 'winter', 'ぬりえ'],
     tools: ['クレヨン'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27267,12 +28830,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T08:24',
     popular: false,
   },
+
   {
     id: 'snow-play-normal-1',
     title: 'かまくらのなか',
     description: 'かまくらの中にいる子どものぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snow-play', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27284,12 +28848,13 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T08:24',
     popular: false,
   },
+
   {
     id: 'snow-play-rich-1',
     title: 'ゆきであそぼう',
     description: '雪あそびをする子どもたちのにぎやかな線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
-    category: 'coloring', theme: 'winter',
+    category: 'coloring', theme: 'seasonal-events',
     tags: ['snow-play', 'winter', 'ぬりえ'],
     tools: ['色えんぴつ'],
     activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
@@ -27301,6 +28866,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T08:24',
     popular: false,
   },
+
   {
     id: 'masterpiece-matisse-dance-rich-1',
     title: 'ダンス（マティス）',
@@ -27319,6 +28885,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:28',
     popular: false,
   },
+
   {
     id: 'masterpiece-botticelli-venus-rich-1',
     title: 'ヴィーナスの誕生（ボッティチェッリ）',
@@ -27337,6 +28904,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:34',
     popular: false,
   },
+
   {
     id: 'masterpiece-vermeer-girl-rich-1',
     title: '真珠の耳飾りの少女（フェルメール）',
@@ -27355,6 +28923,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:45',
     popular: false,
   },
+
   {
     id: 'masterpiece-vermeer-milkmaid-rich-1',
     title: '牛乳を注ぐ女（フェルメール）',
@@ -27373,6 +28942,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:56',
     popular: false,
   },
+
   {
     id: 'masterpiece-rembrandt-nightwatch-rich-1',
     title: '夜警（レンブラント）',
@@ -27391,6 +28961,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:23',
     popular: false,
   },
+
   {
     id: 'masterpiece-raphael-athens-rich-1',
     title: 'アテネの学堂（ラファエロ）',
@@ -27409,6 +28980,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:41',
     popular: false,
   },
+
   {
     id: 'masterpiece-davinci-lastsupper-rich-1',
     title: '最後の晩餐（ダ・ヴィンチ）',
@@ -27427,6 +28999,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:46',
     popular: false,
   },
+
   {
     id: 'masterpiece-velazquez-meninas-rich-1',
     title: 'ラス・メニーナス（ベラスケス）',
@@ -27445,6 +29018,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:05',
     popular: false,
   },
+
   {
     id: 'masterpiece-turner-temeraire-rich-1',
     title: '戦艦テメレーア（ターナー）',
@@ -27463,6 +29037,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:10',
     popular: false,
   },
+
   {
     id: 'masterpiece-constable-haywain-rich-1',
     title: '干し草車（コンスタブル）',
@@ -27481,6 +29056,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:21',
     popular: false,
   },
+
   {
     id: 'masterpiece-waterhouse-shalott-rich-1',
     title: 'シャロットの女（ウォーターハウス）',
@@ -27499,6 +29075,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:27',
     popular: false,
   },
+
   {
     id: 'masterpiece-toulouse-moulin-rich-1',
     title: 'ムーラン・ルージュ（ロートレック）',
@@ -27517,6 +29094,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:45',
     popular: false,
   },
+
   {
     id: 'masterpiece-kandinsky-composition-rich-1',
     title: 'コンポジション VIII（カンディンスキー）',
@@ -27535,6 +29113,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:51',
     popular: false,
   },
+
   {
     id: 'masterpiece-mondrian-composition-rich-1',
     title: '赤・青・黄のコンポジション（モンドリアン）',
@@ -27553,6 +29132,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:09',
     popular: false,
   },
+
   {
     id: 'masterpiece-whistler-mother-rich-1',
     title: 'ホイッスラーの母（ホイッスラー）',
@@ -27571,6 +29151,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:20',
     popular: false,
   },
+
   {
     id: 'masterpiece-sargent-carnation-rich-1',
     title: 'カーネーション・ユリ・バラ（サージェント）',
@@ -27589,6 +29170,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:00',
     popular: false,
   },
+
   {
     id: 'cityscape-osaka-simple-1',
     title: '大阪の街並み',
@@ -27607,6 +29189,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:04',
     popular: false,
   },
+
   {
     id: 'cityscape-osaka-easy-1',
     title: '大阪の街並み',
@@ -27625,6 +29208,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:04',
     popular: false,
   },
+
   {
     id: 'cityscape-osaka-normal-1',
     title: '大阪の街並み',
@@ -27643,6 +29227,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:04',
     popular: false,
   },
+
   {
     id: 'cityscape-osaka-rich-1',
     title: '大阪の街並み',
@@ -27661,6 +29246,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:04',
     popular: false,
   },
+
   {
     id: 'cityscape-night-simple-1',
     title: '夜の都市',
@@ -27679,6 +29265,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:27',
     popular: false,
   },
+
   {
     id: 'cityscape-night-easy-1',
     title: '夜の都市',
@@ -27697,6 +29284,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:27',
     popular: false,
   },
+
   {
     id: 'cityscape-night-normal-1',
     title: '夜の都市',
@@ -27715,6 +29303,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:27',
     popular: false,
   },
+
   {
     id: 'cityscape-night-rich-1',
     title: '夜の都市',
@@ -27733,6 +29322,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:27',
     popular: false,
   },
+
   {
     id: 'cityscape-san-francisco-simple-1',
     title: 'サンフランシスコの街並み',
@@ -27751,6 +29341,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:47',
     popular: false,
   },
+
   {
     id: 'cityscape-san-francisco-easy-1',
     title: 'サンフランシスコの街並み',
@@ -27769,6 +29360,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:47',
     popular: false,
   },
+
   {
     id: 'cityscape-san-francisco-normal-1',
     title: 'サンフランシスコの街並み',
@@ -27787,6 +29379,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:47',
     popular: false,
   },
+
   {
     id: 'cityscape-san-francisco-rich-1',
     title: 'サンフランシスコの街並み',
@@ -27805,6 +29398,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:47',
     popular: false,
   },
+
   {
     id: 'cityscape-florence-simple-1',
     title: 'フィレンツェの街並み',
@@ -27823,6 +29417,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:08',
     popular: false,
   },
+
   {
     id: 'cityscape-florence-easy-1',
     title: 'フィレンツェの街並み',
@@ -27841,6 +29436,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:08',
     popular: false,
   },
+
   {
     id: 'cityscape-florence-normal-1',
     title: 'フィレンツェの街並み',
@@ -27859,6 +29455,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:08',
     popular: false,
   },
+
   {
     id: 'cityscape-florence-rich-1',
     title: 'フィレンツェの街並み',
@@ -27877,6 +29474,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:08',
     popular: false,
   },
+
   {
     id: 'cityscape-marrakech-simple-1',
     title: 'マラケシュの街並み',
@@ -27895,6 +29493,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:29',
     popular: false,
   },
+
   {
     id: 'cityscape-marrakech-easy-1',
     title: 'マラケシュの街並み',
@@ -27913,6 +29512,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:29',
     popular: false,
   },
+
   {
     id: 'cityscape-marrakech-normal-1',
     title: 'マラケシュの街並み',
@@ -27931,6 +29531,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:29',
     popular: false,
   },
+
   {
     id: 'cityscape-marrakech-rich-1',
     title: 'マラケシュの街並み',
@@ -27949,6 +29550,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:29',
     popular: false,
   },
+
   {
     id: 'cityscape-edinburgh-simple-1',
     title: 'エディンバラの街並み',
@@ -27967,6 +29569,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:51',
     popular: false,
   },
+
   {
     id: 'cityscape-edinburgh-easy-1',
     title: 'エディンバラの街並み',
@@ -27985,6 +29588,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:51',
     popular: false,
   },
+
   {
     id: 'cityscape-edinburgh-normal-1',
     title: 'エディンバラの街並み',
@@ -28003,6 +29607,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:51',
     popular: false,
   },
+
   {
     id: 'cityscape-edinburgh-rich-1',
     title: 'エディンバラの街並み',
@@ -28021,6 +29626,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:51',
     popular: false,
   },
+
   {
     id: 'cityscape-istanbul-simple-1',
     title: 'イスタンブールの街並み',
@@ -28039,6 +29645,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:12',
     popular: false,
   },
+
   {
     id: 'cityscape-istanbul-easy-1',
     title: 'イスタンブールの街並み',
@@ -28057,6 +29664,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:12',
     popular: false,
   },
+
   {
     id: 'cityscape-istanbul-normal-1',
     title: 'イスタンブールの街並み',
@@ -28075,6 +29683,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:12',
     popular: false,
   },
+
   {
     id: 'cityscape-istanbul-rich-1',
     title: 'イスタンブールの街並み',
@@ -28093,6 +29702,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:12',
     popular: false,
   },
+
   {
     id: 'flowers-detail-orchid-simple-1',
     title: '蘭の細密画',
@@ -28111,6 +29721,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-orchid-easy-1',
     title: '蘭の細密画',
@@ -28129,6 +29740,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-orchid-normal-1',
     title: '蘭の細密画',
@@ -28147,6 +29759,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-orchid-rich-1',
     title: '蘭の細密画',
@@ -28165,6 +29778,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lily-simple-1',
     title: '百合の細密画',
@@ -28183,6 +29797,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lily-easy-1',
     title: '百合の細密画',
@@ -28201,6 +29816,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lily-normal-1',
     title: '百合の細密画',
@@ -28219,6 +29835,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-lily-rich-1',
     title: '百合の細密画',
@@ -28237,6 +29854,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sunflower-simple-1',
     title: 'ひまわりの細密画',
@@ -28255,6 +29873,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sunflower-easy-1',
     title: 'ひまわりの細密画',
@@ -28273,6 +29892,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sunflower-normal-1',
     title: 'ひまわりの細密画',
@@ -28291,6 +29911,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-sunflower-rich-1',
     title: 'ひまわりの細密画',
@@ -28309,6 +29930,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-chrysanthemum-simple-1',
     title: '菊の細密画',
@@ -28327,6 +29949,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-chrysanthemum-easy-1',
     title: '菊の細密画',
@@ -28345,6 +29968,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-chrysanthemum-normal-1',
     title: '菊の細密画',
@@ -28363,6 +29987,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-chrysanthemum-rich-1',
     title: '菊の細密画',
@@ -28381,6 +30006,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:35',
     popular: false,
   },
+
   {
     id: 'flowers-detail-iris-simple-1',
     title: '菖蒲の細密画',
@@ -28399,6 +30025,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-iris-easy-1',
     title: '菖蒲の細密画',
@@ -28417,6 +30044,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-iris-normal-1',
     title: '菖蒲の細密画',
@@ -28435,6 +30063,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-iris-rich-1',
     title: '菖蒲の細密画',
@@ -28453,6 +30082,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:56',
     popular: false,
   },
+
   {
     id: 'flowers-detail-daisy-simple-1',
     title: 'デイジーの細密画',
@@ -28471,6 +30101,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-daisy-easy-1',
     title: 'デイジーの細密画',
@@ -28489,6 +30120,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-daisy-normal-1',
     title: 'デイジーの細密画',
@@ -28507,6 +30139,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-daisy-rich-1',
     title: 'デイジーの細密画',
@@ -28525,6 +30158,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:16',
     popular: false,
   },
+
   {
     id: 'flowers-detail-poppy-simple-1',
     title: 'ポピーの細密画',
@@ -28543,6 +30177,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:36',
     popular: false,
   },
+
   {
     id: 'flowers-detail-poppy-easy-1',
     title: 'ポピーの細密画',
@@ -28561,6 +30196,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:36',
     popular: false,
   },
+
   {
     id: 'flowers-detail-poppy-normal-1',
     title: 'ポピーの細密画',
@@ -28579,6 +30215,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:36',
     popular: false,
   },
+
   {
     id: 'flowers-detail-poppy-rich-1',
     title: 'ポピーの細密画',
@@ -28597,6 +30234,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:36',
     popular: false,
   },
+
   {
     id: 'railway-sanin-coast-simple-1',
     title: '海岸の列車（やさしい）',
@@ -28615,6 +30253,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:00',
     popular: false,
   },
+
   {
     id: 'hokkaido-bear-normal-1',
     title: 'ヒグマ（北海道）',
@@ -28632,6 +30271,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:04',
     popular: false,
   },
+
   {
     id: 'hokkaido-crane-normal-1',
     title: 'タンチョウヅル（北海道）',
@@ -28649,6 +30289,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:11',
     popular: false,
   },
+
   {
     id: 'hokkaido-lavender-normal-1',
     title: 'ラベンダー畑（北海道）',
@@ -28666,6 +30307,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:24',
     popular: false,
   },
+
   {
     id: 'hokkaido-potato-normal-1',
     title: 'じゃがいも（北海道）',
@@ -28683,6 +30325,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:37',
     popular: false,
   },
+
   {
     id: 'hokkaido-corn-normal-1',
     title: 'とうきび（北海道）',
@@ -28700,6 +30343,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:51',
     popular: false,
   },
+
   {
     id: 'hokkaido-clocktower-normal-1',
     title: '札幌時計台（北海道）',
@@ -28717,6 +30361,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T11:58',
     popular: false,
   },
+
   {
     id: 'hokkaido-crab-normal-1',
     title: '毛ガニ（北海道）',
@@ -28734,6 +30379,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:03',
     popular: false,
   },
+
   {
     id: 'hokkaido-drift-ice-normal-1',
     title: '流氷（北海道）',
@@ -28751,6 +30397,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:13',
     popular: false,
   },
+
   {
     id: 'hokkaido-goryokaku-normal-1',
     title: '五稜郭（北海道）',
@@ -28768,6 +30415,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:24',
     popular: false,
   },
+
   {
     id: 'hokkaido-jingisukan-normal-1',
     title: 'ジンギスカン（北海道）',
@@ -28785,6 +30433,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:34',
     popular: false,
   },
+
   {
     id: 'hokkaido-zoo-normal-1',
     title: 'ペンギン行進（北海道・旭山動物園）',
@@ -28802,6 +30451,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:42',
     popular: false,
   },
+
   {
     id: 'hokkaido-uni-normal-1',
     title: 'ウニ丼（北海道）',
@@ -28819,6 +30469,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:49',
     popular: false,
   },
+
   {
     id: 'hokkaido-ikura-normal-1',
     title: 'イクラ丼（北海道）',
@@ -28836,6 +30487,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T12:56',
     popular: false,
   },
+
   {
     id: 'hokkaido-cow-normal-1',
     title: '乳牛（北海道）',
@@ -28853,6 +30505,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:01',
     popular: false,
   },
+
   {
     id: 'hokkaido-saury-normal-1',
     title: 'サンマ（北海道）',
@@ -28870,6 +30523,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:09',
     popular: false,
   },
+
   {
     id: 'aomori-nebuta-normal-1',
     title: 'ねぶた祭（青森）',
@@ -28887,6 +30541,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:16',
     popular: false,
   },
+
   {
     id: 'aomori-apple-normal-1',
     title: 'りんご（青森）',
@@ -28904,6 +30559,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:18',
     popular: false,
   },
+
   {
     id: 'aomori-shamisen-normal-1',
     title: '津軽三味線（青森）',
@@ -28921,6 +30577,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:27',
     popular: false,
   },
+
   {
     id: 'aomori-garlic-normal-1',
     title: 'にんにく（青森）',
@@ -28938,6 +30595,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:34',
     popular: false,
   },
+
   {
     id: 'aomori-scallop-normal-1',
     title: 'ホタテ貝（青森）',
@@ -28955,6 +30613,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:40',
     popular: false,
   },
+
   {
     id: 'aomori-sannai-normal-1',
     title: '三内丸山遺跡（青森）',
@@ -28972,6 +30631,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:43',
     popular: false,
   },
+
   {
     id: 'aomori-senbei-normal-1',
     title: '南部煎餅（青森）',
@@ -28989,6 +30649,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:57',
     popular: false,
   },
+
   {
     id: 'aomori-hakkoda-normal-1',
     title: '八甲田山（青森）',
@@ -29006,6 +30667,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T13:59',
     popular: false,
   },
+
   {
     id: 'aomori-towada-normal-1',
     title: '十和田湖（青森）',
@@ -29023,6 +30685,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:05',
     popular: false,
   },
+
   {
     id: 'aomori-shirakami-normal-1',
     title: '白神山地のブナ（青森）',
@@ -29040,6 +30703,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:09',
     popular: false,
   },
+
   {
     id: 'iwate-wanko-soba-normal-1',
     title: 'わんこそば（岩手）',
@@ -29057,6 +30721,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:18',
     popular: false,
   },
+
   {
     id: 'iwate-kappa-normal-1',
     title: '河童（岩手・遠野）',
@@ -29074,6 +30739,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:25',
     popular: false,
   },
+
   {
     id: 'iwate-nambu-ironware-normal-1',
     title: '南部鉄器（岩手）',
@@ -29091,6 +30757,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:37',
     popular: false,
   },
+
   {
     id: 'iwate-konjikido-normal-1',
     title: '金色堂（岩手・平泉）',
@@ -29108,6 +30775,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:40',
     popular: false,
   },
+
   {
     id: 'iwate-zashiki-warashi-normal-1',
     title: 'ざしきわらし（岩手・遠野）',
@@ -29125,6 +30793,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T14:47',
     popular: false,
   },
+
   {
     id: 'iwate-reimen-normal-1',
     title: '盛岡冷麺（岩手）',
@@ -29142,6 +30811,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:01',
     popular: false,
   },
+
   {
     id: 'iwate-miyazawa-normal-1',
     title: '銀河鉄道（岩手・宮沢賢治）',
@@ -29159,6 +30829,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:10',
     popular: false,
   },
+
   {
     id: 'iwate-salmon-normal-1',
     title: '鮭の遡上（岩手）',
@@ -29176,6 +30847,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:15',
     popular: false,
   },
+
   {
     id: 'iwate-shorthorn-normal-1',
     title: 'いわて短角牛（岩手）',
@@ -29193,6 +30865,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:23',
     popular: false,
   },
+
   {
     id: 'iwate-rikuchu-normal-1',
     title: '陸中海岸（岩手）',
@@ -29210,6 +30883,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:31',
     popular: false,
   },
+
   {
     id: 'miyagi-tanabata-normal-1',
     title: '仙台七夕（宮城）',
@@ -29227,6 +30901,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:39',
     popular: false,
   },
+
   {
     id: 'miyagi-gyutan-normal-1',
     title: '牛タン（宮城）',
@@ -29244,6 +30919,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T15:56',
     popular: false,
   },
+
   {
     id: 'miyagi-matsushima-normal-1',
     title: '松島（宮城）',
@@ -29261,6 +30937,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:03',
     popular: false,
   },
+
   {
     id: 'miyagi-zunda-normal-1',
     title: 'ずんだもち（宮城）',
@@ -29278,6 +30955,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:18',
     popular: false,
   },
+
   {
     id: 'miyagi-kamaboko-normal-1',
     title: '笹かまぼこ（宮城）',
@@ -29295,6 +30973,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:26',
     popular: false,
   },
+
   {
     id: 'miyagi-masamune-normal-1',
     title: '伊達政宗（宮城）',
@@ -29312,6 +30991,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:35',
     popular: false,
   },
+
   {
     id: 'miyagi-hagi-normal-1',
     title: '萩の月（宮城）',
@@ -29329,6 +31009,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:42',
     popular: false,
   },
+
   {
     id: 'miyagi-castle-normal-1',
     title: '青葉城址（宮城）',
@@ -29346,6 +31027,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T16:58',
     popular: false,
   },
+
   {
     id: 'miyagi-oyster-normal-1',
     title: '三陸の牡蠣（宮城）',
@@ -29363,6 +31045,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T17:13',
     popular: false,
   },
+
   {
     id: 'miyagi-kokeshi-normal-1',
     title: '鳴子こけし（宮城）',
@@ -29380,6 +31063,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T17:25',
     popular: false,
   },
+
   {
     id: 'akita-namahage-normal-1',
     title: 'なまはげ（秋田・男鹿）',
@@ -29397,6 +31081,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T17:38',
     popular: false,
   },
+
   {
     id: 'akita-kiritanpo-normal-1',
     title: 'きりたんぽ（秋田）',
@@ -29414,6 +31099,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T17:55',
     popular: false,
   },
+
   {
     id: 'akita-kanto-normal-1',
     title: '竿燈まつり（秋田）',
@@ -29431,6 +31117,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T18:10',
     popular: false,
   },
+
   {
     id: 'akita-dog-normal-1',
     title: '秋田犬（秋田）',
@@ -29448,6 +31135,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T18:27',
     popular: false,
   },
+
   {
     id: 'akita-fireworks-normal-1',
     title: '大曲の花火（秋田）',
@@ -29465,6 +31153,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T18:40',
     popular: false,
   },
+
   {
     id: 'akita-inaniwa-normal-1',
     title: '稲庭うどん（秋田）',
@@ -29482,6 +31171,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T18:50',
     popular: false,
   },
+
   {
     id: 'akita-kamakura-normal-1',
     title: '横手のかまくら（秋田）',
@@ -29499,6 +31189,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T19:05',
     popular: false,
   },
+
   {
     id: 'akita-hinai-normal-1',
     title: '比内地鶏（秋田）',
@@ -29516,6 +31207,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T19:15',
     popular: false,
   },
+
   {
     id: 'akita-tazawa-normal-1',
     title: '田沢湖（秋田）',
@@ -29533,6 +31225,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T19:27',
     popular: false,
   },
+
   {
     id: 'akita-oga-normal-1',
     title: '男鹿半島（秋田）',
@@ -29550,6 +31243,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T19:34',
     popular: false,
   },
+
   {
     id: 'yamagata-hanagasa-normal-1',
     title: '花笠まつり（山形）',
@@ -29567,6 +31261,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T19:48',
     popular: false,
   },
+
   {
     id: 'yamagata-cherry-normal-1',
     title: 'さくらんぼ（山形）',
@@ -29584,6 +31279,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:01',
     popular: false,
   },
+
   {
     id: 'yamagata-shogi-normal-1',
     title: '天童の将棋駒（山形）',
@@ -29601,6 +31297,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:08',
     popular: false,
   },
+
   {
     id: 'yamagata-soba-normal-1',
     title: '山形そば（山形）',
@@ -29618,6 +31315,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:22',
     popular: false,
   },
+
   {
     id: 'yamagata-imoni-normal-1',
     title: '芋煮（山形）',
@@ -29635,6 +31333,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:33',
     popular: false,
   },
+
   {
     id: 'yamagata-zao-normal-1',
     title: '蔵王のお釜（山形）',
@@ -29652,6 +31351,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:48',
     popular: false,
   },
+
   {
     id: 'yamagata-dashi-normal-1',
     title: '山形のだし（山形）',
@@ -29669,6 +31369,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T20:58',
     popular: false,
   },
+
   {
     id: 'yamagata-yamadera-normal-1',
     title: '山寺（山形・立石寺）',
@@ -29686,6 +31387,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:06',
     popular: false,
   },
+
   {
     id: 'yamagata-konnyaku-normal-1',
     title: '玉こんにゃく（山形）',
@@ -29703,6 +31405,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:13',
     popular: false,
   },
+
   {
     id: 'yamagata-pear-normal-1',
     title: 'ラ・フランス（山形）',
@@ -29720,6 +31423,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:20',
     popular: false,
   },
+
   {
     id: 'fukushima-akabeko-normal-1',
     title: '赤べこ（福島・会津）',
@@ -29737,6 +31441,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:32',
     popular: false,
   },
+
   {
     id: 'fukushima-okiagari-normal-1',
     title: '起き上がり小法師（福島・会津）',
@@ -29754,6 +31459,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:41',
     popular: false,
   },
+
   {
     id: 'fukushima-peach-normal-1',
     title: '福島の桃（福島）',
@@ -29771,6 +31477,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T21:48',
     popular: false,
   },
+
   {
     id: 'fukushima-castle-normal-1',
     title: '会津若松城（福島）',
@@ -29788,6 +31495,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:02',
     popular: false,
   },
+
   {
     id: 'fukushima-kokeshi-normal-1',
     title: '土湯こけし（福島）',
@@ -29805,6 +31513,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:13',
     popular: false,
   },
+
   {
     id: 'fukushima-wappa-normal-1',
     title: 'わっぱ飯（福島）',
@@ -29822,6 +31531,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:20',
     popular: false,
   },
+
   {
     id: 'fukushima-noguchi-normal-1',
     title: '野口英世（福島）',
@@ -29839,6 +31549,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:28',
     popular: false,
   },
+
   {
     id: 'fukushima-ramen-normal-1',
     title: '喜多方ラーメン（福島）',
@@ -29856,6 +31567,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:41',
     popular: false,
   },
+
   {
     id: 'fukushima-sakura-normal-1',
     title: '三春滝桜（福島）',
@@ -29873,6 +31585,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:49',
     popular: false,
   },
+
   {
     id: 'fukushima-lacquer-normal-1',
     title: '会津漆器（福島）',
@@ -29890,6 +31603,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T22:56',
     popular: false,
   },
+
   {
     id: 'ibaraki-natto-normal-1',
     title: '納豆（茨城・水戸）',
@@ -29907,6 +31621,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:08',
     popular: false,
   },
+
   {
     id: 'ibaraki-mitokomon-normal-1',
     title: '水戸黄門（茨城）',
@@ -29924,6 +31639,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:24',
     popular: false,
   },
+
   {
     id: 'ibaraki-ankou-normal-1',
     title: 'あんこう鍋（茨城）',
@@ -29941,6 +31657,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:37',
     popular: false,
   },
+
   {
     id: 'ibaraki-tsukuba-normal-1',
     title: '筑波山（茨城）',
@@ -29958,6 +31675,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:44',
     popular: false,
   },
+
   {
     id: 'ibaraki-melon-normal-1',
     title: '茨城メロン（茨城）',
@@ -29975,6 +31693,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-20T23:59',
     popular: false,
   },
+
   {
     id: 'ibaraki-beef-normal-1',
     title: '常陸牛（茨城）',
@@ -29992,6 +31711,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:06',
     popular: false,
   },
+
   {
     id: 'ibaraki-lotus-normal-1',
     title: '霞ヶ浦の蓮（茨城）',
@@ -30009,6 +31729,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:22',
     popular: false,
   },
+
   {
     id: 'ibaraki-kairakuen-normal-1',
     title: '偕楽園の梅（茨城）',
@@ -30026,6 +31747,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:33',
     popular: false,
   },
+
   {
     id: 'ibaraki-kashima-normal-1',
     title: '鹿島神宮（茨城）',
@@ -30043,6 +31765,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:40',
     popular: false,
   },
+
   {
     id: 'ibaraki-kochia-normal-1',
     title: 'コキア（茨城・ひたち海浜公園）',
@@ -30060,6 +31783,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T00:57',
     popular: false,
   },
+
   {
     id: 'tochigi-nikko-normal-1',
     title: '日光東照宮（栃木）',
@@ -30077,6 +31801,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:04',
     popular: false,
   },
+
   {
     id: 'tochigi-strawberry-normal-1',
     title: 'とちおとめ（栃木）',
@@ -30094,6 +31819,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:14',
     popular: false,
   },
+
   {
     id: 'tochigi-gyoza-normal-1',
     title: '宇都宮餃子（栃木）',
@@ -30111,6 +31837,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:27',
     popular: false,
   },
+
   {
     id: 'tochigi-sanzaru-normal-1',
     title: '三猿（栃木・日光）',
@@ -30128,6 +31855,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:34',
     popular: false,
   },
+
   {
     id: 'tochigi-nasu-normal-1',
     title: '那須高原の牛（栃木）',
@@ -30145,6 +31873,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T01:50',
     popular: false,
   },
+
   {
     id: 'tochigi-kegon-normal-1',
     title: '華厳の滝（栃木・日光）',
@@ -30162,6 +31891,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:02',
     popular: false,
   },
+
   {
     id: 'tochigi-sl-normal-1',
     title: 'SL大樹（栃木・鬼怒川）',
@@ -30179,6 +31909,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:18',
     popular: false,
   },
+
   {
     id: 'tochigi-nikko-carving-normal-1',
     title: '日光彫り（栃木）',
@@ -30196,6 +31927,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:30',
     popular: false,
   },
+
   {
     id: 'tochigi-kinugawa-normal-1',
     title: '鬼怒川温泉（栃木）',
@@ -30213,6 +31945,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:43',
     popular: false,
   },
+
   {
     id: 'tochigi-wisteria-normal-1',
     title: '藤の花（栃木・あしかがフラワーパーク）',
@@ -30230,6 +31963,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T02:50',
     popular: false,
   },
+
   {
     id: 'gunma-daruma-normal-1',
     title: '高崎だるま（群馬）',
@@ -30247,6 +31981,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:04',
     popular: false,
   },
+
   {
     id: 'gunma-kusatsu-normal-1',
     title: '草津温泉（群馬）',
@@ -30264,6 +31999,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:21',
     popular: false,
   },
+
   {
     id: 'gunma-yaki-manju-normal-1',
     title: '焼きまんじゅう（群馬）',
@@ -30281,6 +32017,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:34',
     popular: false,
   },
+
   {
     id: 'gunma-konnyaku-normal-1',
     title: 'こんにゃく（群馬）',
@@ -30298,6 +32035,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T03:49',
     popular: false,
   },
+
   {
     id: 'gunma-silk-normal-1',
     title: '富岡製糸場（群馬）',
@@ -30315,6 +32053,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:06',
     popular: false,
   },
+
   {
     id: 'gunma-akagi-normal-1',
     title: '赤城山（群馬）',
@@ -30332,6 +32071,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:23',
     popular: false,
   },
+
   {
     id: 'gunma-isobe-normal-1',
     title: '磯部せんべい（群馬）',
@@ -30349,6 +32089,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:40',
     popular: false,
   },
+
   {
     id: 'gunma-minakami-normal-1',
     title: '水上温泉（群馬）',
@@ -30366,6 +32107,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:47',
     popular: false,
   },
+
   {
     id: 'gunma-chan-normal-1',
     title: 'ぐんまちゃん（群馬）',
@@ -30383,6 +32125,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T04:59',
     popular: false,
   },
+
   {
     id: 'gunma-karuta-normal-1',
     title: '上毛かるた（群馬）',
@@ -30400,6 +32143,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:11',
     popular: false,
   },
+
   {
     id: 'saitama-kawagoe-normal-1',
     title: '川越の蔵造り（埼玉）',
@@ -30417,6 +32161,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:22',
     popular: false,
   },
+
   {
     id: 'saitama-bell-normal-1',
     title: '時の鐘（埼玉・川越）',
@@ -30434,6 +32179,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:36',
     popular: false,
   },
+
   {
     id: 'saitama-satsumaimo-normal-1',
     title: 'さつまいも菓子（埼玉・川越）',
@@ -30451,6 +32197,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:45',
     popular: false,
   },
+
   {
     id: 'saitama-chichibu-normal-1',
     title: '秩父夜祭（埼玉）',
@@ -30468,6 +32215,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T05:57',
     popular: false,
   },
+
   {
     id: 'saitama-oshi-normal-1',
     title: '忍城（埼玉・行田）',
@@ -30485,6 +32233,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:08',
     popular: false,
   },
+
   {
     id: 'saitama-unagi-normal-1',
     title: 'うなぎ（埼玉・浦和）',
@@ -30502,6 +32251,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:23',
     popular: false,
   },
+
   {
     id: 'saitama-zerifurai-normal-1',
     title: 'ゼリーフライ（埼玉・行田）',
@@ -30519,6 +32269,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:33',
     popular: false,
   },
+
   {
     id: 'saitama-negi-normal-1',
     title: '深谷ねぎ（埼玉）',
@@ -30536,6 +32287,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:44',
     popular: false,
   },
+
   {
     id: 'saitama-kinchaku-normal-1',
     title: '曼珠沙華（埼玉・巾着田）',
@@ -30553,6 +32305,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:59',
     popular: false,
   },
+
   {
     id: 'railway-sanin-coast-easy-1',
     title: '日本海と列車（ふつう）',
@@ -30571,6 +32324,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:59',
     popular: false,
   },
+
   {
     id: 'railway-sanin-coast-normal-1',
     title: '山陰本線と日本海（こまかい）',
@@ -30589,6 +32343,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:59',
     popular: false,
   },
+
   {
     id: 'railway-sanin-coast-rich-1',
     title: '山陰本線と日本海（細密）',
@@ -30607,6 +32362,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T06:59',
     popular: false,
   },
+
   {
     id: 'railway-hakone-hydrangea-simple-1',
     title: '紫陽花と登山電車（やさしい）',
@@ -30625,6 +32381,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:34',
     popular: false,
   },
+
   {
     id: 'railway-hakone-hydrangea-easy-1',
     title: '箱根登山電車と紫陽花（ふつう）',
@@ -30643,6 +32400,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:34',
     popular: false,
   },
+
   {
     id: 'railway-hakone-hydrangea-normal-1',
     title: '箱根登山鉄道と紫陽花（こまかい）',
@@ -30661,6 +32419,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:34',
     popular: false,
   },
+
   {
     id: 'railway-hakone-hydrangea-rich-1',
     title: '箱根登山鉄道と紫陽花（細密）',
@@ -30679,6 +32438,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:34',
     popular: false,
   },
+
   {
     id: 'railway-tram-nagasaki-simple-1',
     title: '長崎の路面電車（やさしい）',
@@ -30697,6 +32457,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:55',
     popular: false,
   },
+
   {
     id: 'railway-tram-nagasaki-easy-1',
     title: '長崎の路面電車（ふつう）',
@@ -30715,6 +32476,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:55',
     popular: false,
   },
+
   {
     id: 'railway-tram-nagasaki-normal-1',
     title: '長崎の坂道と路面電車（こまかい）',
@@ -30733,6 +32495,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:55',
     popular: false,
   },
+
   {
     id: 'railway-tram-nagasaki-rich-1',
     title: '長崎の路面電車と街（細密）',
@@ -30751,6 +32514,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T07:55',
     popular: false,
   },
+
   {
     id: 'masterpiece-gaugin-tahiti-rich-1',
     title: 'タヒチの女たち（ゴーギャン）',
@@ -30769,6 +32533,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:06',
     popular: false,
   },
+
   {
     id: 'masterpiece-mucha-zodiac-rich-1',
     title: '黄道帯（ミュシャ）',
@@ -30787,6 +32552,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:15',
     popular: false,
   },
+
   {
     id: 'masterpiece-delacroix-liberty-rich-1',
     title: '民衆を導く自由の女神（ドラクロワ）',
@@ -30805,6 +32571,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:20',
     popular: false,
   },
+
   {
     id: 'masterpiece-david-napoleon-rich-1',
     title: 'アルプスを越えるナポレオン（ダヴィッド）',
@@ -30823,6 +32590,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:25',
     popular: false,
   },
+
   {
     id: 'masterpiece-pissarro-boulevard-rich-1',
     title: 'モンマルトルの大通り（ピサロ）',
@@ -30841,6 +32609,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:30',
     popular: false,
   },
+
   {
     id: 'masterpiece-morisot-cradle-rich-1',
     title: '揺りかご（モリゾ）',
@@ -30859,6 +32628,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:36',
     popular: false,
   },
+
   {
     id: 'masterpiece-vermeer-geographer-rich-1',
     title: '地理学者（フェルメール）',
@@ -30877,6 +32647,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:41',
     popular: false,
   },
+
   {
     id: 'masterpiece-millais-ophelia-rich-1',
     title: 'オフィーリア（ミレー）',
@@ -30895,6 +32666,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:46',
     popular: false,
   },
+
   {
     id: 'masterpiece-leighton-flaming-rich-1',
     title: '燃える六月（レイトン）',
@@ -30913,6 +32685,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:51',
     popular: false,
   },
+
   {
     id: 'masterpiece-klimt-judith-rich-1',
     title: 'ユディット（クリムト）',
@@ -30931,6 +32704,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:19',
     popular: false,
   },
+
   {
     id: 'masterpiece-homer-snap-rich-1',
     title: 'スナップ・ザ・ウィップ（ホーマー）',
@@ -30949,6 +32723,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:25',
     popular: false,
   },
+
   {
     id: 'masterpiece-tissot-ball-rich-1',
     title: '舞踏会（ティソ）',
@@ -30967,6 +32742,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:30',
     popular: false,
   },
+
   {
     id: 'masterpiece-sorolla-beach-rich-1',
     title: '浜辺を歩く（ソローリャ）',
@@ -30985,6 +32761,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:35',
     popular: false,
   },
+
   {
     id: 'masterpiece-van-eyck-arnolfini-rich-1',
     title: 'アルノルフィーニ夫妻の肖像（ファン・エイク）',
@@ -31003,6 +32780,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:40',
     popular: false,
   },
+
   {
     id: 'masterpiece-ingres-spring-rich-1',
     title: '泉（アングル）',
@@ -31021,6 +32799,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:45',
     popular: false,
   },
+
   {
     id: 'masterpiece-rossetti-beata-rich-1',
     title: 'ベアタ・ベアトリクス（ロセッティ）',
@@ -31039,6 +32818,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:50',
     popular: false,
   },
+
   {
     id: 'masterpiece-alma-tadema-roses-rich-1',
     title: 'ヘリオガバルスのバラ（アルマ＝タデマ）',
@@ -31057,6 +32837,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:56',
     popular: false,
   },
+
   {
     id: 'animals-detail-fox-simple-1',
     title: 'キツネの細密画',
@@ -31075,6 +32856,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:51',
     popular: false,
   },
+
   {
     id: 'animals-detail-fox-easy-1',
     title: 'キツネの細密画',
@@ -31093,6 +32875,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:51',
     popular: false,
   },
+
   {
     id: 'animals-detail-fox-normal-1',
     title: 'キツネの細密画',
@@ -31111,6 +32894,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:51',
     popular: false,
   },
+
   {
     id: 'animals-detail-fox-rich-1',
     title: 'キツネの細密画',
@@ -31129,6 +32913,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:51',
     popular: false,
   },
+
   {
     id: 'animals-detail-bear-simple-1',
     title: 'クマの細密画',
@@ -31147,6 +32932,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:11',
     popular: false,
   },
+
   {
     id: 'animals-detail-bear-easy-1',
     title: 'クマの細密画',
@@ -31165,6 +32951,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:11',
     popular: false,
   },
+
   {
     id: 'animals-detail-bear-normal-1',
     title: 'クマの細密画',
@@ -31183,6 +32970,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:11',
     popular: false,
   },
+
   {
     id: 'animals-detail-bear-rich-1',
     title: 'クマの細密画',
@@ -31201,6 +32989,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:11',
     popular: false,
   },
+
   {
     id: 'animals-detail-dolphin-simple-1',
     title: 'イルカの細密画',
@@ -31219,6 +33008,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:30',
     popular: false,
   },
+
   {
     id: 'animals-detail-dolphin-easy-1',
     title: 'イルカの細密画',
@@ -31237,6 +33027,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:30',
     popular: false,
   },
+
   {
     id: 'animals-detail-dolphin-normal-1',
     title: 'イルカの細密画',
@@ -31255,6 +33046,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:30',
     popular: false,
   },
+
   {
     id: 'animals-detail-dolphin-rich-1',
     title: 'イルカの細密画',
@@ -31273,6 +33065,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:30',
     popular: false,
   },
+
   {
     id: 'animals-detail-swan-easy-1',
     title: 'ハクチョウの細密画',
@@ -31291,6 +33084,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:45',
     popular: false,
   },
+
   {
     id: 'animals-detail-swan-normal-1',
     title: 'ハクチョウの細密画',
@@ -31309,6 +33103,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:45',
     popular: false,
   },
+
   {
     id: 'animals-detail-swan-rich-1',
     title: 'ハクチョウの細密画',
@@ -31327,6 +33122,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:45',
     popular: false,
   },
+
   {
     id: 'railway-swiss-alps-simple-1',
     title: 'スイスアルプスの山岳鉄道',
@@ -31345,6 +33141,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:54',
     popular: false,
   },
+
   {
     id: 'railway-swiss-alps-easy-1',
     title: 'スイスアルプスの山岳鉄道',
@@ -31363,6 +33160,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:54',
     popular: false,
   },
+
   {
     id: 'railway-swiss-alps-normal-1',
     title: 'スイスアルプスの山岳鉄道',
@@ -31381,6 +33179,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:54',
     popular: false,
   },
+
   {
     id: 'railway-swiss-alps-rich-1',
     title: 'スイスアルプスの山岳鉄道',
@@ -31399,6 +33198,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:54',
     popular: false,
   },
+
   {
     id: 'mandala-rose-simple-1',
     title: '薔薇の曼荼羅',
@@ -31417,6 +33217,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:16',
     popular: false,
   },
+
   {
     id: 'mandala-rose-easy-1',
     title: '薔薇の曼荼羅',
@@ -31435,6 +33236,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:16',
     popular: false,
   },
+
   {
     id: 'mandala-rose-normal-1',
     title: '薔薇の曼荼羅',
@@ -31453,6 +33255,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:16',
     popular: false,
   },
+
   {
     id: 'mandala-rose-rich-1',
     title: '薔薇の曼荼羅',
@@ -31471,6 +33274,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:16',
     popular: false,
   },
+
   {
     id: 'mandala-sunflower-simple-1',
     title: 'ひまわりの曼荼羅',
@@ -31489,6 +33293,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:35',
     popular: false,
   },
+
   {
     id: 'mandala-sunflower-easy-1',
     title: 'ひまわりの曼荼羅',
@@ -31507,6 +33312,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:35',
     popular: false,
   },
+
   {
     id: 'mandala-sunflower-normal-1',
     title: 'ひまわりの曼荼羅',
@@ -31525,6 +33331,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:35',
     popular: false,
   },
+
   {
     id: 'mandala-sunflower-rich-1',
     title: 'ひまわりの曼荼羅',
@@ -31543,6 +33350,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:35',
     popular: false,
   },
+
   {
     id: 'mandala-geometric-star-simple-1',
     title: '星の幾何曼荼羅',
@@ -31561,6 +33369,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:56',
     popular: false,
   },
+
   {
     id: 'mandala-geometric-star-easy-1',
     title: '星の幾何曼荼羅',
@@ -31579,6 +33388,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:56',
     popular: false,
   },
+
   {
     id: 'mandala-geometric-star-normal-1',
     title: '星の幾何曼荼羅',
@@ -31597,6 +33407,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:56',
     popular: false,
   },
+
   {
     id: 'mandala-geometric-star-rich-1',
     title: '星の幾何曼荼羅',
@@ -31615,6 +33426,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:56',
     popular: false,
   },
+
   {
     id: 'mandala-peacock-simple-1',
     title: '孔雀の曼荼羅',
@@ -31633,6 +33445,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:16',
     popular: false,
   },
+
   {
     id: 'mandala-peacock-easy-1',
     title: '孔雀の曼荼羅',
@@ -31651,6 +33464,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:16',
     popular: false,
   },
+
   {
     id: 'mandala-peacock-normal-1',
     title: '孔雀の曼荼羅',
@@ -31669,6 +33483,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:16',
     popular: false,
   },
+
   {
     id: 'mandala-peacock-rich-1',
     title: '孔雀の曼荼羅',
@@ -31687,6 +33502,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:16',
     popular: false,
   },
+
   {
     id: 'mandala-butterfly-simple-1',
     title: '蝶の曼荼羅',
@@ -31705,6 +33521,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:36',
     popular: false,
   },
+
   {
     id: 'mandala-butterfly-easy-1',
     title: '蝶の曼荼羅',
@@ -31723,6 +33540,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:36',
     popular: false,
   },
+
   {
     id: 'mandala-butterfly-normal-1',
     title: '蝶の曼荼羅',
@@ -31741,6 +33559,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:36',
     popular: false,
   },
+
   {
     id: 'mandala-butterfly-rich-1',
     title: '蝶の曼荼羅',
@@ -31759,6 +33578,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:36',
     popular: false,
   },
+
   {
     id: 'mandala-elephant-simple-1',
     title: '象の曼荼羅',
@@ -31777,6 +33597,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:56',
     popular: false,
   },
+
   {
     id: 'mandala-elephant-easy-1',
     title: '象の曼荼羅',
@@ -31795,6 +33616,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:56',
     popular: false,
   },
+
   {
     id: 'mandala-elephant-normal-1',
     title: '象の曼荼羅',
@@ -31813,6 +33635,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:56',
     popular: false,
   },
+
   {
     id: 'mandala-elephant-rich-1',
     title: '象の曼荼羅',
@@ -31831,6 +33654,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:56',
     popular: false,
   },
+
   {
     id: 'mandala-owl-simple-1',
     title: 'フクロウの曼荼羅',
@@ -31849,6 +33673,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:16',
     popular: false,
   },
+
   {
     id: 'mandala-owl-easy-1',
     title: 'フクロウの曼荼羅',
@@ -31867,6 +33692,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:16',
     popular: false,
   },
+
   {
     id: 'mandala-owl-normal-1',
     title: 'フクロウの曼荼羅',
@@ -31885,6 +33711,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:16',
     popular: false,
   },
+
   {
     id: 'mandala-owl-rich-1',
     title: 'フクロウの曼荼羅',
@@ -31903,6 +33730,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:16',
     popular: false,
   },
+
   {
     id: 'mandala-tree-of-life-simple-1',
     title: '生命の木の曼荼羅',
@@ -31921,6 +33749,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:37',
     popular: false,
   },
+
   {
     id: 'mandala-tree-of-life-easy-1',
     title: '生命の木の曼荼羅',
@@ -31939,6 +33768,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:37',
     popular: false,
   },
+
   {
     id: 'mandala-tree-of-life-normal-1',
     title: '生命の木の曼荼羅',
@@ -31957,6 +33787,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:37',
     popular: false,
   },
+
   {
     id: 'mandala-tree-of-life-rich-1',
     title: '生命の木の曼荼羅',
@@ -31975,6 +33806,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:37',
     popular: false,
   },
+
   {
     id: 'mandala-snowflake-simple-1',
     title: '雪の結晶の曼荼羅',
@@ -31993,6 +33825,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:57',
     popular: false,
   },
+
   {
     id: 'mandala-snowflake-easy-1',
     title: '雪の結晶の曼荼羅',
@@ -32011,6 +33844,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:57',
     popular: false,
   },
+
   {
     id: 'mandala-snowflake-normal-1',
     title: '雪の結晶の曼荼羅',
@@ -32029,6 +33863,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:57',
     popular: false,
   },
+
   {
     id: 'mandala-snowflake-rich-1',
     title: '雪の結晶の曼荼羅',
@@ -32047,6 +33882,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:57',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-oshogatsu-simple-1',
     title: 'お正月（やさしい）',
@@ -32065,6 +33901,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:20',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-oshogatsu-easy-1',
     title: 'お正月（ふつう）',
@@ -32083,6 +33920,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:20',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-oshogatsu-normal-1',
     title: 'お正月（こまかい）',
@@ -32101,6 +33939,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:20',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-oshogatsu-rich-1',
     title: 'お正月（細密）',
@@ -32119,6 +33958,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:20',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-setsubun-simple-1',
     title: '節分（やさしい）',
@@ -32137,6 +33977,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:40',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-setsubun-easy-1',
     title: '節分（ふつう）',
@@ -32155,6 +33996,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:40',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-setsubun-normal-1',
     title: '節分（こまかい）',
@@ -32173,6 +34015,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:40',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-setsubun-rich-1',
     title: '節分（細密）',
@@ -32191,6 +34034,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:40',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-natsu-matsuri-simple-1',
     title: '夏祭り（やさしい）',
@@ -32209,6 +34053,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:03',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-natsu-matsuri-easy-1',
     title: '夏祭り（ふつう）',
@@ -32227,6 +34072,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:03',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-natsu-matsuri-normal-1',
     title: '夏祭り（こまかい）',
@@ -32245,6 +34091,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:03',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-natsu-matsuri-rich-1',
     title: '夏祭り（細密）',
@@ -32263,6 +34110,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:03',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-christmas-simple-1',
     title: 'クリスマス（やさしい）',
@@ -32281,6 +34129,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:23',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-christmas-easy-1',
     title: 'クリスマス（ふつう）',
@@ -32299,6 +34148,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:23',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-christmas-normal-1',
     title: 'クリスマス（こまかい）',
@@ -32317,6 +34167,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:23',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-christmas-rich-1',
     title: 'クリスマス（細密）',
@@ -32335,6 +34186,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:23',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-yukimi-simple-1',
     title: '雪見（やさしい）',
@@ -32353,6 +34205,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:44',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-yukimi-easy-1',
     title: '雪見（ふつう）',
@@ -32371,6 +34224,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:44',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-yukimi-normal-1',
     title: '雪見（こまかい）',
@@ -32389,6 +34243,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:44',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-yukimi-rich-1',
     title: '雪見（細密）',
@@ -32407,6 +34262,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:44',
     popular: false,
   },
+
   {
     id: 'seasonal-adult-halloween-rich-1',
     title: 'ハロウィンの夜（細密）',
@@ -32425,6 +34281,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T08:50',
     popular: false,
   },
+
   {
     id: 'landscape-provence-simple-1',
     title: 'プロヴァンスのラベンダー畑',
@@ -32443,6 +34300,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:10',
     popular: false,
   },
+
   {
     id: 'landscape-provence-easy-1',
     title: 'プロヴァンスのラベンダー畑',
@@ -32461,6 +34319,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:10',
     popular: false,
   },
+
   {
     id: 'landscape-provence-normal-1',
     title: 'プロヴァンスのラベンダー畑',
@@ -32479,6 +34338,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:10',
     popular: false,
   },
+
   {
     id: 'landscape-provence-rich-1',
     title: 'プロヴァンスのラベンダー畑',
@@ -32497,6 +34357,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:10',
     popular: false,
   },
+
   {
     id: 'landscape-norwegian-fjord-simple-1',
     title: 'ノルウェーのフィヨルド',
@@ -32515,6 +34376,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:29',
     popular: false,
   },
+
   {
     id: 'landscape-norwegian-fjord-easy-1',
     title: 'ノルウェーのフィヨルド',
@@ -32533,6 +34395,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:29',
     popular: false,
   },
+
   {
     id: 'landscape-norwegian-fjord-normal-1',
     title: 'ノルウェーのフィヨルド',
@@ -32551,6 +34414,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:29',
     popular: false,
   },
+
   {
     id: 'landscape-norwegian-fjord-rich-1',
     title: 'ノルウェーのフィヨルド',
@@ -32569,6 +34433,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:29',
     popular: false,
   },
+
   {
     id: 'landscape-scottish-highlands-simple-1',
     title: 'スコットランドの高地',
@@ -32587,6 +34452,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:49',
     popular: false,
   },
+
   {
     id: 'landscape-scottish-highlands-easy-1',
     title: 'スコットランドの高地',
@@ -32605,6 +34471,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:49',
     popular: false,
   },
+
   {
     id: 'landscape-scottish-highlands-normal-1',
     title: 'スコットランドの高地',
@@ -32623,6 +34490,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:49',
     popular: false,
   },
+
   {
     id: 'landscape-scottish-highlands-rich-1',
     title: 'スコットランドの高地',
@@ -32641,6 +34509,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T09:49',
     popular: false,
   },
+
   {
     id: 'landscape-moroccan-desert-simple-1',
     title: 'モロッコの砂漠',
@@ -32659,6 +34528,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T10:08',
     popular: false,
   },
+
   {
     id: 'landscape-moroccan-desert-easy-1',
     title: 'モロッコの砂漠',
@@ -32677,6 +34547,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T10:08',
     popular: false,
   },
+
   {
     id: 'landscape-moroccan-desert-normal-1',
     title: 'モロッコの砂漠',
@@ -32695,6 +34566,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T10:08',
     popular: false,
   },
+
   {
     id: 'landscape-moroccan-desert-rich-1',
     title: 'モロッコの砂漠',
@@ -32713,6 +34585,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T10:08',
     popular: false,
   },
+
   {
     id: 'saitama-canoe-normal-1',
     title: '荒川のカヌー（埼玉）',
@@ -32730,6 +34603,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:10',
     popular: false,
   },
+
   {
     id: 'chiba-peanut-normal-1',
     title: '落花生（千葉）',
@@ -32747,6 +34621,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:17',
     popular: false,
   },
+
   {
     id: 'chiba-lighthouse-normal-1',
     title: '犬吠埼灯台（千葉）',
@@ -32764,6 +34639,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:27',
     popular: false,
   },
+
   {
     id: 'chiba-naritasan-normal-1',
     title: '成田山新勝寺（千葉）',
@@ -32781,6 +34657,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:34',
     popular: false,
   },
+
   {
     id: 'chiba-loquat-normal-1',
     title: '房総のびわ（千葉）',
@@ -32798,6 +34675,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:42',
     popular: false,
   },
+
   {
     id: 'chiba-soysauce-normal-1',
     title: '銚子の醤油樽（千葉）',
@@ -32815,6 +34693,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T09:52',
     popular: false,
   },
+
   {
     id: 'chiba-bonito-normal-1',
     title: '勝浦のカツオ（千葉）',
@@ -32832,6 +34711,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:06',
     popular: false,
   },
+
   {
     id: 'chiba-kujukuri-normal-1',
     title: '九十九里の波（千葉）',
@@ -32849,6 +34729,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:18',
     popular: false,
   },
+
   {
     id: 'chiba-nanohana-normal-1',
     title: '房総の菜の花（千葉）',
@@ -32866,6 +34747,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:30',
     popular: false,
   },
+
   {
     id: 'chiba-train-normal-1',
     title: '銚子電鉄（千葉）',
@@ -32883,6 +34765,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:37',
     popular: false,
   },
+
   {
     id: 'chiba-hamaguri-normal-1',
     title: 'はまぐり（千葉・九十九里）',
@@ -32900,6 +34783,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:48',
     popular: false,
   },
+
   {
     id: 'tokyo-tower-normal-1',
     title: '東京タワー（東京）',
@@ -32917,6 +34801,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T10:55',
     popular: false,
   },
+
   {
     id: 'tokyo-skytree-normal-1',
     title: '東京スカイツリー（東京）',
@@ -32934,6 +34819,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T11:10',
     popular: false,
   },
+
   {
     id: 'tokyo-sensoji-normal-1',
     title: '浅草寺（東京）',
@@ -32951,6 +34837,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T11:18',
     popular: false,
   },
+
   {
     id: 'tokyo-rickshaw-normal-1',
     title: '人力車（東京・浅草）',
@@ -32968,6 +34855,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T11:24',
     popular: false,
   },
+
   {
     id: 'tokyo-sumo-normal-1',
     title: '相撲力士（東京・両国）',
@@ -32985,6 +34873,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T11:37',
     popular: false,
   },
+
   {
     id: 'tokyo-monja-normal-1',
     title: 'もんじゃ焼き（東京・月島）',
@@ -33002,6 +34891,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T11:53',
     popular: false,
   },
+
   {
     id: 'tokyo-hanami-normal-1',
     title: '上野の花見（東京）',
@@ -33019,6 +34909,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:06',
     popular: false,
   },
+
   {
     id: 'tokyo-station-normal-1',
     title: '東京駅赤レンガ駅舎（東京）',
@@ -33036,6 +34927,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:20',
     popular: false,
   },
+
   {
     id: 'tokyo-edo-castle-normal-1',
     title: '皇居（東京）',
@@ -33053,6 +34945,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:28',
     popular: false,
   },
+
   {
     id: 'tokyo-mikoshi-normal-1',
     title: 'お神輿（東京・下町）',
@@ -33070,6 +34963,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:35',
     popular: false,
   },
+
   {
     id: 'tokyo-toden-normal-1',
     title: '都電荒川線（東京）',
@@ -33087,6 +34981,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:41',
     popular: false,
   },
+
   {
     id: 'tokyo-fukagawa-normal-1',
     title: '深川めし（東京）',
@@ -33104,6 +34999,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T12:58',
     popular: false,
   },
+
   {
     id: 'tokyo-kabuki-normal-1',
     title: '歌舞伎（東京）',
@@ -33121,6 +35017,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T13:12',
     popular: false,
   },
+
   {
     id: 'kanagawa-daibutsu-normal-1',
     title: '鎌倉大仏（神奈川）',
@@ -33138,6 +35035,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T13:27',
     popular: false,
   },
+
   {
     id: 'kanagawa-chinatown-normal-1',
     title: '横浜中華街（神奈川）',
@@ -33155,6 +35053,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T13:38',
     popular: false,
   },
+
   {
     id: 'kanagawa-kintoki-normal-1',
     title: '金太郎（神奈川・足柄山）',
@@ -33172,6 +35071,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T13:50',
     popular: false,
   },
+
   {
     id: 'kanagawa-shumai-normal-1',
     title: '崎陽軒シウマイ（神奈川・横浜）',
@@ -33189,6 +35089,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:01',
     popular: false,
   },
+
   {
     id: 'kanagawa-akarenga-normal-1',
     title: '横浜赤レンガ倉庫（神奈川）',
@@ -33206,6 +35107,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:15',
     popular: false,
   },
+
   {
     id: 'kanagawa-shonan-normal-1',
     title: '湘南サーフィン（神奈川）',
@@ -33223,6 +35125,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:24',
     popular: false,
   },
+
   {
     id: 'kanagawa-tuna-normal-1',
     title: '三浦マグロ（神奈川・三崎）',
@@ -33240,6 +35143,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:31',
     popular: false,
   },
+
   {
     id: 'kanagawa-baybridge-normal-1',
     title: '横浜ベイブリッジ（神奈川）',
@@ -33257,6 +35161,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:41',
     popular: false,
   },
+
   {
     id: 'kanagawa-hakone-normal-1',
     title: '箱根の関所（神奈川）',
@@ -33274,6 +35179,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T14:52',
     popular: false,
   },
+
   {
     id: 'kanagawa-enoshima-normal-1',
     title: '江の島灯台（神奈川）',
@@ -33291,6 +35197,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T15:07',
     popular: false,
   },
+
   {
     id: 'niigata-koi-normal-1',
     title: '錦鯉（新潟）',
@@ -33308,6 +35215,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T15:17',
     popular: false,
   },
+
   {
     id: 'niigata-toki-normal-1',
     title: 'トキ（新潟・佐渡）',
@@ -33325,6 +35233,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T15:31',
     popular: false,
   },
+
   {
     id: 'niigata-tarai-normal-1',
     title: 'たらい舟（新潟・佐渡）',
@@ -33342,6 +35251,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T15:47',
     popular: false,
   },
+
   {
     id: 'niigata-sasa-dango-normal-1',
     title: '笹団子（新潟）',
@@ -33359,6 +35269,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T16:03',
     popular: false,
   },
+
   {
     id: 'niigata-hegi-soba-normal-1',
     title: 'へぎそば（新潟）',
@@ -33376,6 +35287,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T16:17',
     popular: false,
   },
+
   {
     id: 'niigata-snow-normal-1',
     title: '新潟の豪雪（新潟）',
@@ -33393,6 +35305,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T16:34',
     popular: false,
   },
+
   {
     id: 'niigata-rice-normal-1',
     title: 'コシヒカリ（新潟・魚沼）',
@@ -33410,6 +35323,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T16:48',
     popular: false,
   },
+
   {
     id: 'niigata-gold-mine-normal-1',
     title: '佐渡金山（新潟）',
@@ -33427,6 +35341,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:03',
     popular: false,
   },
+
   {
     id: 'niigata-shishi-normal-1',
     title: '越後獅子（新潟）',
@@ -33444,6 +35359,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:16',
     popular: false,
   },
+
   {
     id: 'niigata-sake-normal-1',
     title: '新潟の日本酒（新潟）',
@@ -33461,6 +35377,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:23',
     popular: false,
   },
+
   {
     id: 'toyama-tulip-normal-1',
     title: 'チューリップ（富山・砺波）',
@@ -33478,6 +35395,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:31',
     popular: false,
   },
+
   {
     id: 'toyama-masuzushi-normal-1',
     title: 'ますのすし（富山）',
@@ -33495,6 +35413,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:43',
     popular: false,
   },
+
   {
     id: 'toyama-tateyama-normal-1',
     title: '立山連峰（富山）',
@@ -33512,6 +35431,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T17:54',
     popular: false,
   },
+
   {
     id: 'toyama-raicho-normal-1',
     title: '雷鳥（富山・立山）',
@@ -33529,6 +35449,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:01',
     popular: false,
   },
+
   {
     id: 'toyama-hotaru-ika-normal-1',
     title: 'ホタルイカ（富山）',
@@ -33546,6 +35467,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:12',
     popular: false,
   },
+
   {
     id: 'toyama-gassho-normal-1',
     title: '合掌造り（富山・南砺）',
@@ -33563,6 +35485,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:28',
     popular: false,
   },
+
   {
     id: 'toyama-kusuri-normal-1',
     title: '越中富山の薬売り（富山）',
@@ -33580,6 +35503,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:38',
     popular: false,
   },
+
   {
     id: 'toyama-black-normal-1',
     title: '富山ブラック（富山）',
@@ -33597,6 +35521,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:47',
     popular: false,
   },
+
   {
     id: 'toyama-himi-buri-normal-1',
     title: '氷見の寒ブリ（富山）',
@@ -33614,6 +35539,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T18:55',
     popular: false,
   },
+
   {
     id: 'toyama-kurobe-normal-1',
     title: '黒部ダム（富山）',
@@ -33631,6 +35557,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T19:03',
     popular: false,
   },
+
   {
     id: 'ishikawa-kenrokuen-normal-1',
     title: '兼六園（石川）',
@@ -33648,6 +35575,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T19:12',
     popular: false,
   },
+
   {
     id: 'ishikawa-kinpaku-normal-1',
     title: '金箔（石川・金沢）',
@@ -33665,6 +35593,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T19:25',
     popular: false,
   },
+
   {
     id: 'ishikawa-wajima-normal-1',
     title: '輪島塗（石川）',
@@ -33682,6 +35611,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T19:38',
     popular: false,
   },
+
   {
     id: 'ishikawa-kaga-yuzen-normal-1',
     title: '加賀友禅（石川）',
@@ -33699,6 +35629,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T19:54',
     popular: false,
   },
+
   {
     id: 'ishikawa-noto-shio-normal-1',
     title: '能登の塩田（石川）',
@@ -33716,6 +35647,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:01',
     popular: false,
   },
+
   {
     id: 'ishikawa-zuwai-normal-1',
     title: '加能ガニ（石川）',
@@ -33733,6 +35665,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:08',
     popular: false,
   },
+
   {
     id: 'ishikawa-kutani-normal-1',
     title: '九谷焼（石川）',
@@ -33750,6 +35683,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:19',
     popular: false,
   },
+
   {
     id: 'ishikawa-tsuzumi-normal-1',
     title: '金沢駅鼓門（石川）',
@@ -33767,6 +35701,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:33',
     popular: false,
   },
+
   {
     id: 'ishikawa-castle-normal-1',
     title: '金沢城（石川）',
@@ -33784,6 +35719,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:41',
     popular: false,
   },
+
   {
     id: 'ishikawa-asaichi-normal-1',
     title: '輪島朝市（石川）',
@@ -33801,6 +35737,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T20:51',
     popular: false,
   },
+
   {
     id: 'ishikawa-jibuni-normal-1',
     title: '治部煮（石川・金沢）',
@@ -33818,6 +35755,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:03',
     popular: false,
   },
+
   {
     id: 'ishikawa-kaga-onsen-normal-1',
     title: '加賀温泉郷（石川）',
@@ -33835,6 +35773,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:13',
     popular: false,
   },
+
   {
     id: 'fukui-dinosaur-normal-1',
     title: '福井の恐竜（福井）',
@@ -33852,6 +35791,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:27',
     popular: false,
   },
+
   {
     id: 'fukui-echizen-gani-normal-1',
     title: '越前がに（福井）',
@@ -33869,6 +35809,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:39',
     popular: false,
   },
+
   {
     id: 'fukui-eiheiji-normal-1',
     title: '永平寺（福井）',
@@ -33886,6 +35827,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:46',
     popular: false,
   },
+
   {
     id: 'fukui-washi-normal-1',
     title: '越前和紙（福井）',
@@ -33903,6 +35845,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T21:57',
     popular: false,
   },
+
   {
     id: 'fukui-glasses-normal-1',
     title: '鯖江の眼鏡（福井）',
@@ -33920,6 +35863,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T22:06',
     popular: false,
   },
+
   {
     id: 'fukui-mizuyokan-normal-1',
     title: '水ようかん（福井）',
@@ -33937,6 +35881,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T22:19',
     popular: false,
   },
+
   {
     id: 'fukui-tojinbo-normal-1',
     title: '東尋坊（福井）',
@@ -33954,6 +35899,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T22:31',
     popular: false,
   },
+
   {
     id: 'fukui-shikki-normal-1',
     title: '越前漆器（福井）',
@@ -33971,6 +35917,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T22:38',
     popular: false,
   },
+
   {
     id: 'fukui-wakasa-nuribashi-normal-1',
     title: '若狭塗箸（福井）',
@@ -33988,6 +35935,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T22:54',
     popular: false,
   },
+
   {
     id: 'fukui-saba-kaido-normal-1',
     title: '鯖街道（福井・若狭）',
@@ -34005,6 +35953,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T23:07',
     popular: false,
   },
+
   {
     id: 'yamanashi-fuji-normal-1',
     title: '富士山（山梨）',
@@ -34022,6 +35971,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T23:16',
     popular: false,
   },
+
   {
     id: 'yamanashi-grape-normal-1',
     title: '甲州ぶどう（山梨）',
@@ -34039,6 +35989,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T23:32',
     popular: false,
   },
+
   {
     id: 'yamanashi-hoto-normal-1',
     title: 'ほうとう（山梨）',
@@ -34056,6 +36007,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T23:39',
     popular: false,
   },
+
   {
     id: 'yamanashi-peach-normal-1',
     title: '山梨の桃（山梨）',
@@ -34073,6 +36025,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-21T23:54',
     popular: false,
   },
+
   {
     id: 'yamanashi-shingen-normal-1',
     title: '信玄餅（山梨）',
@@ -34090,6 +36043,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:11',
     popular: false,
   },
+
   {
     id: 'yamanashi-wine-normal-1',
     title: '山梨ワイン（山梨）',
@@ -34107,6 +36061,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:24',
     popular: false,
   },
+
   {
     id: 'yamanashi-katchu-normal-1',
     title: '武田信玄（山梨）',
@@ -34124,6 +36079,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:32',
     popular: false,
   },
+
   {
     id: 'yamanashi-shojiko-normal-1',
     title: '精進湖（山梨）',
@@ -34141,6 +36097,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:43',
     popular: false,
   },
+
   {
     id: 'yamanashi-suisho-normal-1',
     title: '甲府水晶（山梨）',
@@ -34158,6 +36115,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T00:55',
     popular: false,
   },
+
   {
     id: 'yamanashi-yoshida-udon-normal-1',
     title: '吉田のうどん（山梨）',
@@ -34175,6 +36133,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:02',
     popular: false,
   },
+
   {
     id: 'nagano-soba-normal-1',
     title: '信州そば（長野）',
@@ -34192,6 +36151,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:13',
     popular: false,
   },
+
   {
     id: 'nagano-zenkoji-normal-1',
     title: '善光寺（長野）',
@@ -34209,6 +36169,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:30',
     popular: false,
   },
+
   {
     id: 'nagano-apple-normal-1',
     title: '信州りんご（長野）',
@@ -34226,6 +36187,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:38',
     popular: false,
   },
+
   {
     id: 'nagano-nozawana-normal-1',
     title: '野沢菜漬け（長野）',
@@ -34243,6 +36205,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:49',
     popular: false,
   },
+
   {
     id: 'nagano-matsumoto-castle-normal-1',
     title: '松本城（長野）',
@@ -34260,6 +36223,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T01:56',
     popular: false,
   },
+
   {
     id: 'nagano-ski-jump-normal-1',
     title: 'スキージャンプ（長野・白馬）',
@@ -34277,6 +36241,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:07',
     popular: false,
   },
+
   {
     id: 'nagano-raicho-normal-1',
     title: '雷鳥（長野・北アルプス）',
@@ -34294,6 +36259,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:16',
     popular: false,
   },
+
   {
     id: 'nagano-wasabi-normal-1',
     title: 'わさび農場（長野・安曇野）',
@@ -34311,6 +36277,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:30',
     popular: false,
   },
+
   {
     id: 'nagano-kamikochi-normal-1',
     title: '上高地（長野）',
@@ -34328,6 +36295,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:45',
     popular: false,
   },
+
   {
     id: 'nagano-oyaki-normal-1',
     title: 'おやき（長野）',
@@ -34345,6 +36313,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T02:55',
     popular: false,
   },
+
   {
     id: 'gifu-shirakawa-normal-1',
     title: '白川郷（岐阜）',
@@ -34362,6 +36331,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:03',
     popular: false,
   },
+
   {
     id: 'gifu-ukai-normal-1',
     title: '鵜飼い（岐阜・長良川）',
@@ -34379,6 +36349,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:09',
     popular: false,
   },
+
   {
     id: 'gifu-takayama-normal-1',
     title: '飛騨高山（岐阜）',
@@ -34396,6 +36367,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:25',
     popular: false,
   },
+
   {
     id: 'gifu-castle-normal-1',
     title: '岐阜城（岐阜）',
@@ -34413,6 +36385,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:41',
     popular: false,
   },
+
   {
     id: 'gifu-sarubobo-normal-1',
     title: 'さるぼぼ（岐阜・飛騨）',
@@ -34430,6 +36403,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T03:53',
     popular: false,
   },
+
   {
     id: 'gifu-hooba-normal-1',
     title: '朴葉味噌（岐阜・飛騨）',
@@ -34447,6 +36421,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:04',
     popular: false,
   },
+
   {
     id: 'gifu-mino-washi-normal-1',
     title: '美濃和紙（岐阜）',
@@ -34464,6 +36439,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:13',
     popular: false,
   },
+
   {
     id: 'gifu-chochin-normal-1',
     title: '岐阜提灯（岐阜）',
@@ -34481,6 +36457,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:28',
     popular: false,
   },
+
   {
     id: 'gifu-gero-onsen-normal-1',
     title: '下呂温泉（岐阜）',
@@ -34498,6 +36475,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T04:45',
     popular: false,
   },
+
   {
     id: 'gifu-hida-beef-normal-1',
     title: '飛騨牛（岐阜）',
@@ -34515,6 +36493,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:01',
     popular: false,
   },
+
   {
     id: 'shizuoka-fuji-normal-1',
     title: '富士山（静岡）',
@@ -34532,6 +36511,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:11',
     popular: false,
   },
+
   {
     id: 'shizuoka-tea-normal-1',
     title: '静岡のお茶（静岡）',
@@ -34549,6 +36529,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:25',
     popular: false,
   },
+
   {
     id: 'shizuoka-mikan-normal-1',
     title: '静岡みかん（静岡）',
@@ -34566,6 +36547,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:41',
     popular: false,
   },
+
   {
     id: 'shizuoka-unagi-normal-1',
     title: '浜松うなぎ（静岡）',
@@ -34583,6 +36565,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T05:50',
     popular: false,
   },
+
   {
     id: 'shizuoka-sakuraebi-normal-1',
     title: '由比の桜えび（静岡）',
@@ -34600,6 +36583,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:03',
     popular: false,
   },
+
   {
     id: 'shizuoka-wasabi-normal-1',
     title: 'わさび田（静岡・有東木）',
@@ -34617,6 +36601,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:15',
     popular: false,
   },
+
   {
     id: 'shizuoka-izu-onsen-normal-1',
     title: '伊豆の温泉（静岡）',
@@ -34634,6 +36619,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:24',
     popular: false,
   },
+
   {
     id: 'shizuoka-shirasu-normal-1',
     title: 'しらす丼（静岡・駿河湾）',
@@ -34651,6 +36637,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:39',
     popular: false,
   },
+
   {
     id: 'shizuoka-kuno-normal-1',
     title: '久能山東照宮（静岡）',
@@ -34668,6 +36655,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T06:56',
     popular: false,
   },
+
   {
     id: 'shizuoka-hamamatsu-gyoza-normal-1',
     title: '浜松餃子（静岡）',
@@ -34685,6 +36673,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:04',
     popular: false,
   },
+
   {
     id: 'shizuoka-oden-normal-1',
     title: '静岡おでん（静岡）',
@@ -34702,6 +36691,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:17',
     popular: false,
   },
+
   {
     id: 'aichi-nagoya-castle-normal-1',
     title: '名古屋城（愛知）',
@@ -34719,6 +36709,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-22T07:29',
     popular: false,
   },
+
   {
     id: 'rainbow-simple-1',
     title: 'かわいいにじ',
@@ -34734,8 +36725,10 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
-    popular: false,
+    seoDescription: '虹の両端に抱かれるようにそっと浮かぶ2つの雲。虹の弧は6本の層が重なっていて、1番外側から順に色を塗っていくと立体感が出ます。雲のふんわりとした輪郭線をなぞりながら、虹がどんな色合いでつながるのか考えながら塗り進める時間になるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rainbow-easy-1',
     title: 'にじ',
@@ -34751,8 +36744,10 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
-    popular: false,
+    seoDescription: '虹の両端に寄り添う二つの雲が、ふわふわの笑顔で空を見守っています。虹の弧は何本も重なり、それぞれ違う色を塗る喜びが待っています。雲のまんまるい形と、虹の優雅なカーブのコントラストを色選びで表現できる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rainbow-normal-1',
     title: 'にじのえ',
@@ -34770,9 +36765,10 @@ const _materials4: Material[] = [
     createdAt: '2026-05-26T17:01',
     popular: false,
   },
+
   {
     id: 'rainbow-rich-1',
-    title: 'にじのせかい',
+    title: 'おおきなにじ',
     description: 'にじが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -34787,9 +36783,10 @@ const _materials4: Material[] = [
     createdAt: '2026-05-26T17:01',
     popular: false,
   },
+
   {
     id: 'fairytale-ali-baba-simple-1',
-    title: 'ひらけごま',
+    title: 'アリババ：ひらけごま',
     description: 'ひらけごまのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -34802,11 +36799,13 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
-    popular: false,
+    seoDescription: '宝物がいっぱい詰まった大きな壺の前に立つ、バンダナを巻いた女の子。両手を広げた嬉しそうな表情と、豪華な衣装の細かい模様、そして目の前にそびえ立つ壺の迫力あるボリュームが見どころです。壺の表面には質感を表す線がたくさん引かれているので、茶色系で濃淡をつけると陶器らしい味わいが出ます。女の子の衣装も、帯や襟の装飾模様を丁寧に塗ると、ずっと豪華に見えてきますよ。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-ali-baba-easy-1',
-    title: 'たからのやま',
+    title: 'アリババ：たからのやま',
     description: '宝の山のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -34819,11 +36818,13 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
-    popular: false,
+    seoDescription: '洞窟の入り口で、宝物の山を前に目を輝かせた女の子。頭に巻いたターバンとふっくらした頬がキュートなキャラクターが、両手を合わせてこんなにたくさんの宝が本当にあるの？という驚きの表情をしています。背景には金貨や宝石がぎっしり詰まった宝箱や壺が積み重なっていて、きらきら光る星のマークも散りばめられています。女の子の服のボタンから宝物の細かい模様まで、塗り分けの仕甲斐がある1枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-ali-baba-normal-1',
-    title: 'あぶらつぼにかくれるとうぞく',
+    title: 'アリババ：あぶらつぼにかくれるとうぞく',
     description: '盗賊侵入のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -34838,9 +36839,10 @@ const _materials4: Material[] = [
     createdAt: '2026-05-26T17:31',
     popular: false,
   },
+
   {
     id: 'fairytale-ali-baba-rich-1',
-    title: 'モルジアナがこらしめる',
+    title: 'アリババ：モルジアナがこらしめる',
     description: 'モルジアナのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -34855,6 +36857,7 @@ const _materials4: Material[] = [
     createdAt: '2026-05-26T17:31',
     popular: false,
   },
+
 ]
 
 const _materials5: Material[] = [
@@ -34875,6 +36878,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T07:44',
     popular: false,
   },
+
   {
     id: 'aichi-tebasaki-normal-1',
     title: '手羽先（愛知・名古屋）',
@@ -34892,6 +36896,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T07:51',
     popular: false,
   },
+
   {
     id: 'aichi-misokatsu-normal-1',
     title: 'みそかつ（愛知）',
@@ -34909,6 +36914,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T10:23',
     popular: false,
   },
+
   {
     id: 'aichi-uiro-normal-1',
     title: 'ういろう（愛知・名古屋）',
@@ -34926,6 +36932,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T10:37',
     popular: false,
   },
+
   {
     id: 'aichi-shippo-normal-1',
     title: '七宝焼（愛知）',
@@ -34943,6 +36950,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T10:47',
     popular: false,
   },
+
   {
     id: 'aichi-shinkansen-normal-1',
     title: '新幹線（愛知・浜松工場）',
@@ -34960,6 +36968,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T11:02',
     popular: false,
   },
+
   {
     id: 'aichi-toyota-normal-1',
     title: 'トヨタ自動車（愛知）',
@@ -34977,6 +36986,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T11:09',
     popular: false,
   },
+
   {
     id: 'aichi-okazaki-hanabi-normal-1',
     title: '三河花火（愛知・岡崎）',
@@ -34994,6 +37004,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T11:19',
     popular: false,
   },
+
   {
     id: 'aichi-inuyama-normal-1',
     title: '犬山城（愛知）',
@@ -35011,6 +37022,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T11:35',
     popular: false,
   },
+
   {
     id: 'aichi-ogura-normal-1',
     title: '小倉トースト（愛知・名古屋）',
@@ -35028,6 +37040,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T11:51',
     popular: false,
   },
+
   {
     id: 'aichi-nobunaga-normal-1',
     title: '織田信長（愛知）',
@@ -35045,6 +37058,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T12:07',
     popular: false,
   },
+
   {
     id: 'mie-ise-jingu-normal-1',
     title: '伊勢神宮（三重）',
@@ -35062,6 +37076,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T13:02',
     popular: false,
   },
+
   {
     id: 'yamanote-e235-rich-1',
     title: '山手線E235系のたび',
@@ -35079,6 +37094,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T18:15',
     popular: false,
   },
+
   {
     id: 'chuo-orange-rich-1',
     title: '中央線快速E233系のたび',
@@ -35096,6 +37112,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T18:54',
     popular: false,
   },
+
   {
     id: 'keikyu-rich-1',
     title: '京急2100形のたび',
@@ -35113,6 +37130,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T19:26',
     popular: false,
   },
+
   {
     id: 'hankyu-rich-1',
     title: '阪急電車1000系のたび',
@@ -35130,6 +37148,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T20:54',
     popular: false,
   },
+
   {
     id: 'keihan-rich-1',
     title: '京阪電車3000系のたび',
@@ -35147,6 +37166,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T21:29',
     popular: false,
   },
+
   {
     id: 'kintetsu-futsuu-rich-1',
     title: '近鉄通勤車5820系のたび',
@@ -35164,6 +37184,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T22:03',
     popular: false,
   },
+
   {
     id: 'seibu-yellow-rich-1',
     title: '西武電車2000系のたび',
@@ -35181,6 +37202,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T22:35',
     popular: false,
   },
+
   {
     id: 'tokyu-rich-1',
     title: '東急電車2020系のたび',
@@ -35198,6 +37220,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-20T23:21',
     popular: false,
   },
+
   {
     id: 'odakyu-futsuu-rich-1',
     title: '小田急電車3000形のたび',
@@ -35215,6 +37238,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T00:03',
     popular: false,
   },
+
   {
     id: 'tobu-rich-1',
     title: '東武電車50050系のたび',
@@ -35232,6 +37256,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T00:43',
     popular: false,
   },
+
   {
     id: 'romancecar-gse-rich-1',
     title: 'ロマンスカーGSE70000形のたび',
@@ -35249,6 +37274,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T01:17',
     popular: false,
   },
+
   {
     id: 'romancecar-mse-rich-1',
     title: 'ロマンスカーMSE60000形のたび',
@@ -35266,6 +37292,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T01:49',
     popular: false,
   },
+
   {
     id: 'narita-express-rich-1',
     title: '成田エクスプレスE259系のたび',
@@ -35283,6 +37310,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T15:36',
     popular: false,
   },
+
   {
     id: 'safir-odoriko-rich-1',
     title: 'サフィール踊り子E261系のたび',
@@ -35300,6 +37328,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T16:11',
     popular: false,
   },
+
   {
     id: 'lapit-rich-1',
     title: 'ラピート50000系のたび',
@@ -35317,6 +37346,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T16:45',
     popular: false,
   },
+
   {
     id: 'kintetsu-hinotori-rich-1',
     title: 'ひのとり80000系のたび',
@@ -35334,6 +37364,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T18:22',
     popular: false,
   },
+
   {
     id: 'kintetsu-urban-rich-1',
     title: 'アーバンライナーplus21020系のたび',
@@ -35351,6 +37382,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T19:00',
     popular: false,
   },
+
   {
     id: 'sonic-885-rich-1',
     title: 'ソニック885系のたび',
@@ -35368,6 +37400,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T19:33',
     popular: false,
   },
+
   {
     id: 'thunderbird-rich-1',
     title: 'サンダーバード683系のたび',
@@ -35385,6 +37418,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T20:05',
     popular: false,
   },
+
   {
     id: 'azusa-e353-rich-1',
     title: 'あずさE353系のたび',
@@ -35402,6 +37436,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T20:40',
     popular: false,
   },
+
   {
     id: 'kuroshio-rich-1',
     title: 'くろしおHC85系のたび',
@@ -35419,6 +37454,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T21:15',
     popular: false,
   },
+
   {
     id: 'fuji-excursion-rich-1',
     title: '富士回遊E353系のたび',
@@ -35436,6 +37472,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T21:46',
     popular: false,
   },
+
   {
     id: 'anpanman-train-rich-1',
     title: 'アンパンマン列車のたび',
@@ -35453,6 +37490,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T22:21',
     popular: false,
   },
+
   {
     id: 'thomas-train-rich-1',
     title: 'きかんしゃトーマス号がきたよ',
@@ -35470,6 +37508,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T22:53',
     popular: false,
   },
+
   {
     id: 'exe-alpha-rich-1',
     title: 'EXEα 30000形のたび',
@@ -35487,6 +37526,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-21T23:26',
     popular: false,
   },
+
   {
     id: 'kintetsu-vista-rich-1',
     title: 'ビスタEX 30000系のたび',
@@ -35504,6 +37544,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T00:01',
     popular: false,
   },
+
   {
     id: 'yakumo-273-rich-1',
     title: 'やくも273系のたび',
@@ -35521,6 +37562,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T00:34',
     popular: false,
   },
+
   {
     id: 'izukyu-resort21-rich-1',
     title: 'リゾート21のたび',
@@ -35538,6 +37580,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T01:07',
     popular: false,
   },
+
   {
     id: 'keio-liner-rich-1',
     title: '京王ライナー5000系のたび',
@@ -35555,6 +37598,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T01:40',
     popular: false,
   },
+
   {
     id: 'mie-ise-ebi-normal-1',
     title: '伊勢えび（三重）',
@@ -35572,6 +37616,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T19:42',
     popular: false,
   },
+
   {
     id: 'mie-pearl-normal-1',
     title: '真珠貝（三重・英虞湾）',
@@ -35589,6 +37634,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T19:50',
     popular: false,
   },
+
   {
     id: 'mie-akafuku-normal-1',
     title: '赤福餅（三重）',
@@ -35606,6 +37652,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T19:56',
     popular: false,
   },
+
   {
     id: 'mie-iga-ninja-normal-1',
     title: '伊賀忍者（三重）',
@@ -35623,6 +37670,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:03',
     popular: false,
   },
+
   {
     id: 'mie-matsusaka-normal-1',
     title: '松阪牛（三重）',
@@ -35640,6 +37688,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:10',
     popular: false,
   },
+
   {
     id: 'mie-tekone-normal-1',
     title: 'てこね寿司（三重・志摩）',
@@ -35657,6 +37706,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:17',
     popular: false,
   },
+
   {
     id: 'mie-meoto-iwa-normal-1',
     title: '夫婦岩（三重・二見浦）',
@@ -35674,6 +37724,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:25',
     popular: false,
   },
+
   {
     id: 'mie-kumano-normal-1',
     title: '熊野古道（三重）',
@@ -35691,6 +37742,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:31',
     popular: false,
   },
+
   {
     id: 'mie-ise-udon-normal-1',
     title: '伊勢うどん（三重）',
@@ -35708,6 +37760,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:38',
     popular: false,
   },
+
   {
     id: 'shiga-biwako-normal-1',
     title: '琵琶湖（滋賀）',
@@ -35725,6 +37778,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:44',
     popular: false,
   },
+
   {
     id: 'shiga-hikone-normal-1',
     title: '彦根城（滋賀）',
@@ -35742,6 +37796,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:52',
     popular: false,
   },
+
   {
     id: 'shiga-hikonyan-normal-1',
     title: 'ひこにゃん（滋賀）',
@@ -35759,6 +37814,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T20:59',
     popular: false,
   },
+
   {
     id: 'shiga-omi-beef-normal-1',
     title: '近江牛（滋賀）',
@@ -35776,6 +37832,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:06',
     popular: false,
   },
+
   {
     id: 'shiga-funa-zushi-normal-1',
     title: '鮒ずし（滋賀）',
@@ -35793,6 +37850,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:14',
     popular: false,
   },
+
   {
     id: 'shiga-shigaraki-tanuki-normal-1',
     title: '信楽たぬき（滋賀・信楽）',
@@ -35810,6 +37868,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:21',
     popular: false,
   },
+
   {
     id: 'shiga-hiei-normal-1',
     title: '比叡山延暦寺（滋賀）',
@@ -35827,6 +37886,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:29',
     popular: false,
   },
+
   {
     id: 'shiga-omi-shonin-normal-1',
     title: '近江商人（滋賀）',
@@ -35844,6 +37904,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:35',
     popular: false,
   },
+
   {
     id: 'shiga-ukimi-do-normal-1',
     title: '浮御堂（滋賀・堅田）',
@@ -35861,6 +37922,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:43',
     popular: false,
   },
+
   {
     id: 'shiga-omi-asa-normal-1',
     title: '近江麻（滋賀）',
@@ -35878,6 +37940,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:50',
     popular: false,
   },
+
   {
     id: 'kyoto-maiko-normal-1',
     title: '舞妓（京都）',
@@ -35895,6 +37958,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T21:57',
     popular: false,
   },
+
   {
     id: 'kyoto-kinkakuji-normal-1',
     title: '金閣寺（京都）',
@@ -35912,6 +37976,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:04',
     popular: false,
   },
+
   {
     id: 'kyoto-toji-pagoda-normal-1',
     title: '東寺五重塔（京都）',
@@ -35929,6 +37994,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:11',
     popular: false,
   },
+
   {
     id: 'kyoto-matcha-normal-1',
     title: '抹茶（京都・宇治）',
@@ -35946,6 +38012,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:17',
     popular: false,
   },
+
   {
     id: 'kyoto-yatsuhashi-normal-1',
     title: '八つ橋（京都）',
@@ -35963,6 +38030,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:24',
     popular: false,
   },
+
   {
     id: 'kyoto-gion-yamahoko-normal-1',
     title: '祇園祭の山鉾（京都）',
@@ -35980,6 +38048,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:31',
     popular: false,
   },
+
   {
     id: 'kyoto-arashiyama-bamboo-normal-1',
     title: '嵐山の竹林（京都）',
@@ -35997,6 +38066,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:37',
     popular: false,
   },
+
   {
     id: 'kyoto-fushimi-inari-normal-1',
     title: '伏見稲荷千本鳥居（京都）',
@@ -36014,6 +38084,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:44',
     popular: false,
   },
+
   {
     id: 'kyoto-nishijin-normal-1',
     title: '西陣織（京都）',
@@ -36031,6 +38102,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:51',
     popular: false,
   },
+
   {
     id: 'kyoto-kyoyasai-normal-1',
     title: '京野菜（京都）',
@@ -36048,6 +38120,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T22:58',
     popular: false,
   },
+
   {
     id: 'kyoto-daimonji-normal-1',
     title: '五山送り火（京都）',
@@ -36065,6 +38138,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:13',
     popular: false,
   },
+
   {
     id: 'kyoto-tetsugaku-normal-1',
     title: '哲学の道の桜（京都）',
@@ -36082,6 +38156,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:20',
     popular: false,
   },
+
   {
     id: 'kyoto-nijo-castle-normal-1',
     title: '二条城（京都）',
@@ -36099,6 +38174,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:27',
     popular: false,
   },
+
   {
     id: 'kyoto-sado-normal-1',
     title: '茶道（京都）',
@@ -36116,6 +38192,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:33',
     popular: false,
   },
+
   {
     id: 'kyoto-jizo-normal-1',
     title: '京都のお地蔵様（京都）',
@@ -36133,6 +38210,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:40',
     popular: false,
   },
+
   {
     id: 'osaka-takoyaki-normal-1',
     title: 'たこ焼き（大阪）',
@@ -36150,6 +38228,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:47',
     popular: false,
   },
+
   {
     id: 'osaka-tsutenkaku-normal-1',
     title: '通天閣（大阪・新世界）',
@@ -36167,6 +38246,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-22T23:53',
     popular: false,
   },
+
   {
     id: 'osaka-kuidaore-normal-1',
     title: 'くいだおれ太郎（大阪・道頓堀）',
@@ -36184,6 +38264,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:01',
     popular: false,
   },
+
   {
     id: 'osaka-okonomiyaki-normal-1',
     title: 'お好み焼き（大阪）',
@@ -36201,6 +38282,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:07',
     popular: false,
   },
+
   {
     id: 'osaka-castle-normal-1',
     title: '大阪城（大阪）',
@@ -36218,6 +38300,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:13',
     popular: false,
   },
+
   {
     id: 'osaka-551-normal-1',
     title: '豚まん（大阪・551）',
@@ -36235,6 +38318,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:21',
     popular: false,
   },
+
   {
     id: 'osaka-glico-normal-1',
     title: 'グリコ看板（大阪・道頓堀）',
@@ -36252,6 +38336,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:28',
     popular: false,
   },
+
   {
     id: 'osaka-kushikatsu-normal-1',
     title: '串カツ（大阪・新世界）',
@@ -36269,6 +38354,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:35',
     popular: false,
   },
+
   {
     id: 'osaka-danjiri-normal-1',
     title: '岸和田だんじり祭（大阪）',
@@ -36286,6 +38372,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:42',
     popular: false,
   },
+
   {
     id: 'osaka-sumiyoshi-normal-1',
     title: '住吉大社（大阪）',
@@ -36303,6 +38390,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:49',
     popular: false,
   },
+
   {
     id: 'osaka-tsuruhashi-normal-1',
     title: '鶴橋の焼肉（大阪）',
@@ -36320,6 +38408,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T00:56',
     popular: false,
   },
+
   {
     id: 'osaka-mizunasu-normal-1',
     title: '水なす（大阪・泉州）',
@@ -36337,6 +38426,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:04',
     popular: false,
   },
+
   {
     id: 'hyogo-himeji-castle-normal-1',
     title: '姫路城（兵庫）',
@@ -36354,6 +38444,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:10',
     popular: false,
   },
+
   {
     id: 'hyogo-kobe-beef-normal-1',
     title: '神戸牛（兵庫）',
@@ -36371,6 +38462,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:16',
     popular: false,
   },
+
   {
     id: 'hyogo-akashiyaki-normal-1',
     title: '明石焼き（兵庫・明石）',
@@ -36388,6 +38480,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:23',
     popular: false,
   },
+
   {
     id: 'hyogo-arima-normal-1',
     title: '有馬温泉（兵庫）',
@@ -36405,6 +38498,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:31',
     popular: false,
   },
+
   {
     id: 'hyogo-nada-sake-normal-1',
     title: '灘の日本酒（兵庫）',
@@ -36422,6 +38516,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:38',
     popular: false,
   },
+
   {
     id: 'hyogo-port-tower-normal-1',
     title: '神戸ポートタワー（兵庫）',
@@ -36439,6 +38534,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:45',
     popular: false,
   },
+
   {
     id: 'hyogo-awaji-onion-normal-1',
     title: '淡路島の玉ねぎ（兵庫）',
@@ -36456,6 +38552,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:52',
     popular: false,
   },
+
   {
     id: 'hyogo-kitano-normal-1',
     title: '神戸北野異人館（兵庫）',
@@ -36473,6 +38570,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T01:58',
     popular: false,
   },
+
   {
     id: 'hyogo-tanba-mame-normal-1',
     title: '丹波黒豆（兵庫）',
@@ -36490,6 +38588,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:05',
     popular: false,
   },
+
   {
     id: 'hyogo-yakei-normal-1',
     title: '神戸の夜景（兵庫・摩耶山）',
@@ -36507,6 +38606,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:12',
     popular: false,
   },
+
   {
     id: 'hyogo-bokkake-normal-1',
     title: 'ぼっかけ（兵庫・神戸）',
@@ -36524,6 +38624,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:20',
     popular: false,
   },
+
   {
     id: 'hyogo-ikuta-normal-1',
     title: '生田神社（兵庫・神戸）',
@@ -36541,6 +38642,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:26',
     popular: false,
   },
+
   {
     id: 'nara-deer-normal-1',
     title: '奈良の鹿（奈良）',
@@ -36558,6 +38660,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:32',
     popular: false,
   },
+
   {
     id: 'nara-daibutsu-normal-1',
     title: '奈良の大仏（奈良・東大寺）',
@@ -36575,6 +38678,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:40',
     popular: false,
   },
+
   {
     id: 'nara-kasuga-toro-normal-1',
     title: '春日大社の燈籠（奈良）',
@@ -36592,6 +38696,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:47',
     popular: false,
   },
+
   {
     id: 'nara-kakinoha-sushi-normal-1',
     title: '柿の葉寿司（奈良）',
@@ -36609,6 +38714,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T02:54',
     popular: false,
   },
+
   {
     id: 'nara-miwa-somen-normal-1',
     title: '三輪そうめん（奈良）',
@@ -36626,6 +38732,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:01',
     popular: false,
   },
+
   {
     id: 'nara-yoshino-sakura-normal-1',
     title: '吉野の千本桜（奈良）',
@@ -36643,6 +38750,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:07',
     popular: false,
   },
+
   {
     id: 'nara-shosoin-normal-1',
     title: '正倉院（奈良）',
@@ -36660,6 +38768,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:14',
     popular: false,
   },
+
   {
     id: 'nara-yamayaki-normal-1',
     title: '若草山の山焼き（奈良）',
@@ -36677,6 +38786,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:21',
     popular: false,
   },
+
   {
     id: 'nara-horyuji-normal-1',
     title: '法隆寺（奈良）',
@@ -36694,6 +38804,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:28',
     popular: false,
   },
+
   {
     id: 'nara-asuka-ishi-normal-1',
     title: '石舞台古墳（奈良・飛鳥）',
@@ -36711,6 +38822,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T03:35',
     popular: false,
   },
+
   {
     id: 'nara-yamato-cha-normal-1',
     title: '大和茶（奈良）',
@@ -36728,6 +38840,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T08:26',
     popular: false,
   },
+
   {
     id: 'nara-mimuro-normal-1',
     title: 'みむろ最中（奈良）',
@@ -36745,6 +38858,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T08:33',
     popular: false,
   },
+
   {
     id: 'wakayama-mikan-normal-1',
     title: '有田みかん（和歌山）',
@@ -36762,6 +38876,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T08:39',
     popular: false,
   },
+
   {
     id: 'wakayama-kumano-kodo-normal-1',
     title: '熊野古道（和歌山）',
@@ -36779,6 +38894,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T08:47',
     popular: false,
   },
+
   {
     id: 'wakayama-nachi-falls-normal-1',
     title: '那智の滝（和歌山）',
@@ -36796,6 +38912,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T08:54',
     popular: false,
   },
+
   {
     id: 'wakayama-ume-normal-1',
     title: '南高梅（和歌山・みなべ）',
@@ -36813,6 +38930,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:01',
     popular: false,
   },
+
   {
     id: 'wakayama-maguro-normal-1',
     title: 'クロマグロ（和歌山・那智勝浦）',
@@ -36830,6 +38948,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:21',
     popular: false,
   },
+
   {
     id: 'wakayama-jabara-normal-1',
     title: 'じゃばら（和歌山・北山村）',
@@ -36847,6 +38966,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:28',
     popular: false,
   },
+
   {
     id: 'wakayama-koyasan-normal-1',
     title: '高野山（和歌山）',
@@ -36864,6 +38984,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:35',
     popular: false,
   },
+
   {
     id: 'wakayama-ramen-normal-1',
     title: '和歌山ラーメン（和歌山）',
@@ -36881,6 +39002,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:41',
     popular: false,
   },
+
   {
     id: 'wakayama-shirahama-normal-1',
     title: '白浜（和歌山）',
@@ -36898,6 +39020,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:49',
     popular: false,
   },
+
   {
     id: 'wakayama-panda-normal-1',
     title: 'パンダ（和歌山・白浜）',
@@ -36915,6 +39038,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T09:56',
     popular: false,
   },
+
   {
     id: 'tottori-sand-dune-normal-1',
     title: '鳥取砂丘（鳥取）',
@@ -36932,6 +39056,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:02',
     popular: false,
   },
+
   {
     id: 'tottori-camel-normal-1',
     title: '砂丘のらくだ（鳥取）',
@@ -36949,6 +39074,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:10',
     popular: false,
   },
+
   {
     id: 'tottori-zuwai-normal-1',
     title: '松葉ガニ（鳥取）',
@@ -36966,6 +39092,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:17',
     popular: false,
   },
+
   {
     id: 'tottori-nashi-normal-1',
     title: '二十世紀梨（鳥取）',
@@ -36983,6 +39110,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:25',
     popular: false,
   },
+
   {
     id: 'tottori-daisen-normal-1',
     title: '大山（鳥取）',
@@ -37000,6 +39128,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:31',
     popular: false,
   },
+
   {
     id: 'tottori-yokai-normal-1',
     title: '妖怪（鳥取・境港）',
@@ -37017,6 +39146,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:38',
     popular: false,
   },
+
   {
     id: 'tottori-sand-museum-normal-1',
     title: '砂の美術館（鳥取）',
@@ -37034,6 +39164,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:45',
     popular: false,
   },
+
   {
     id: 'tottori-inaba-usagi-normal-1',
     title: '因幡の白兎（鳥取）',
@@ -37051,6 +39182,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T10:52',
     popular: false,
   },
+
   {
     id: 'tottori-shirobara-normal-1',
     title: '白バラ牛乳（鳥取）',
@@ -37068,6 +39200,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:00',
     popular: false,
   },
+
   {
     id: 'tottori-rakkyo-normal-1',
     title: 'らっきょう（鳥取）',
@@ -37085,6 +39218,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:06',
     popular: false,
   },
+
   {
     id: 'shimane-izumo-taisha-normal-1',
     title: '出雲大社（島根）',
@@ -37102,6 +39236,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:13',
     popular: false,
   },
+
   {
     id: 'shimane-shijimi-normal-1',
     title: '宍道湖のしじみ（島根）',
@@ -37119,6 +39254,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:21',
     popular: false,
   },
+
   {
     id: 'shimane-matsue-castle-normal-1',
     title: '松江城（島根）',
@@ -37136,6 +39272,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:28',
     popular: false,
   },
+
   {
     id: 'shimane-ginzan-normal-1',
     title: '石見銀山（島根）',
@@ -37153,6 +39290,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:35',
     popular: false,
   },
+
   {
     id: 'shimane-kagura-normal-1',
     title: '石見神楽（島根）',
@@ -37170,6 +39308,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:42',
     popular: false,
   },
+
   {
     id: 'shimane-izumo-soba-normal-1',
     title: '出雲そば（島根）',
@@ -37187,6 +39326,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:49',
     popular: false,
   },
+
   {
     id: 'shimane-magatama-normal-1',
     title: '勾玉（島根・玉造）',
@@ -37204,6 +39344,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T11:56',
     popular: false,
   },
+
   {
     id: 'shimane-sunset-normal-1',
     title: '宍道湖の夕日（島根）',
@@ -37221,6 +39362,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:03',
     popular: false,
   },
+
   {
     id: 'shimane-oki-normal-1',
     title: '隠岐の島（島根）',
@@ -37238,6 +39380,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:10',
     popular: false,
   },
+
   {
     id: 'shimane-shimenawa-normal-1',
     title: '出雲大社大注連縄（島根）',
@@ -37255,6 +39398,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:17',
     popular: false,
   },
+
   {
     id: 'okayama-momotaro-normal-1',
     title: '桃太郎（岡山）',
@@ -37272,6 +39416,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:23',
     popular: false,
   },
+
   {
     id: 'okayama-kibi-dango-normal-1',
     title: 'きびだんご（岡山）',
@@ -37289,6 +39434,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:30',
     popular: false,
   },
+
   {
     id: 'okayama-muscat-normal-1',
     title: 'マスカット（岡山）',
@@ -37306,6 +39452,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:37',
     popular: false,
   },
+
   {
     id: 'okayama-castle-normal-1',
     title: '岡山城（岡山）',
@@ -37323,6 +39470,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:44',
     popular: false,
   },
+
   {
     id: 'okayama-korakuen-normal-1',
     title: '後楽園（岡山）',
@@ -37340,6 +39488,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:52',
     popular: false,
   },
+
   {
     id: 'okayama-denim-normal-1',
     title: '倉敷デニム（岡山・児島）',
@@ -37357,6 +39506,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T12:58',
     popular: false,
   },
+
   {
     id: 'okayama-mamakari-normal-1',
     title: 'ままかり（岡山）',
@@ -37374,6 +39524,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:05',
     popular: false,
   },
+
   {
     id: 'okayama-kurashiki-normal-1',
     title: '倉敷美観地区（岡山）',
@@ -37391,6 +39542,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:12',
     popular: false,
   },
+
   {
     id: 'okayama-seto-bridge-normal-1',
     title: '瀬戸大橋（岡山）',
@@ -37408,6 +39560,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:25',
     popular: false,
   },
+
   {
     id: 'okayama-jersey-normal-1',
     title: '蒜山のジャージー牛（岡山）',
@@ -37425,6 +39578,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:32',
     popular: false,
   },
+
   {
     id: 'hiroshima-itsukushima-normal-1',
     title: '厳島の大鳥居（広島・宮島）',
@@ -37442,6 +39596,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:39',
     popular: false,
   },
+
   {
     id: 'hiroshima-momiji-manju-normal-1',
     title: 'もみじまんじゅう（広島）',
@@ -37459,6 +39614,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:45',
     popular: false,
   },
+
   {
     id: 'hiroshima-okonomi-normal-1',
     title: '広島お好み焼き（広島）',
@@ -37476,6 +39632,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T13:53',
     popular: false,
   },
+
   {
     id: 'hiroshima-kaki-normal-1',
     title: '広島の牡蠣（広島）',
@@ -37493,6 +39650,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:00',
     popular: false,
   },
+
   {
     id: 'hiroshima-peace-normal-1',
     title: '原爆ドーム（広島）',
@@ -37510,6 +39668,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:07',
     popular: false,
   },
+
   {
     id: 'hiroshima-shamoji-normal-1',
     title: '宮島のしゃもじ（広島）',
@@ -37527,6 +39686,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:15',
     popular: false,
   },
+
   {
     id: 'hiroshima-miyajima-deer-normal-1',
     title: '宮島の鹿（広島）',
@@ -37544,6 +39704,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:22',
     popular: false,
   },
+
   {
     id: 'hiroshima-shimanami-normal-1',
     title: 'しまなみ海道（広島）',
@@ -37561,6 +39722,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:29',
     popular: false,
   },
+
   {
     id: 'hiroshima-onomichi-cat-normal-1',
     title: '尾道の猫（広島）',
@@ -37578,6 +39740,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:35',
     popular: false,
   },
+
   {
     id: 'hiroshima-tomonoura-normal-1',
     title: '鞆の浦（広島）',
@@ -37595,6 +39758,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:42',
     popular: false,
   },
+
   {
     id: 'hiroshima-hiroshima-na-normal-1',
     title: '広島菜漬け（広島）',
@@ -37612,6 +39776,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:48',
     popular: false,
   },
+
   {
     id: 'hiroshima-bingo-kagura-normal-1',
     title: '備北神楽（広島）',
@@ -37629,6 +39794,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T14:55',
     popular: false,
   },
+
   {
     id: 'yamaguchi-fugu-normal-1',
     title: '下関のふぐ（山口）',
@@ -37646,6 +39812,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:02',
     popular: false,
   },
+
   {
     id: 'yamaguchi-kintaikyo-normal-1',
     title: '錦帯橋（山口・岩国）',
@@ -37663,6 +39830,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:09',
     popular: false,
   },
+
   {
     id: 'yamaguchi-hagi-yaki-normal-1',
     title: '萩焼（山口）',
@@ -37680,6 +39848,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:16',
     popular: false,
   },
+
   {
     id: 'yamaguchi-rurikoji-normal-1',
     title: '瑠璃光寺五重塔（山口）',
@@ -37697,6 +39866,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:24',
     popular: false,
   },
+
   {
     id: 'yamaguchi-natsu-mikan-normal-1',
     title: '萩の夏みかん（山口）',
@@ -37714,6 +39884,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:31',
     popular: false,
   },
+
   {
     id: 'yamaguchi-kanmon-normal-1',
     title: '関門海峡（山口）',
@@ -37731,6 +39902,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:37',
     popular: false,
   },
+
   {
     id: 'yamaguchi-uiro-normal-1',
     title: '山口外郎（山口）',
@@ -37748,6 +39920,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:44',
     popular: false,
   },
+
   {
     id: 'yamaguchi-akiyoshidai-normal-1',
     title: '秋吉台（山口）',
@@ -37765,6 +39938,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:50',
     popular: false,
   },
+
   {
     id: 'yamaguchi-aoumi-normal-1',
     title: '青海島（山口・長門）',
@@ -37782,6 +39956,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T15:56',
     popular: false,
   },
+
   {
     id: 'yamaguchi-shoin-normal-1',
     title: '松下村塾（山口・萩）',
@@ -37799,6 +39974,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:04',
     popular: false,
   },
+
   {
     id: 'tokushima-awaodori-normal-1',
     title: '阿波踊り（徳島）',
@@ -37816,6 +39992,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:10',
     popular: false,
   },
+
   {
     id: 'tokushima-tanuki-normal-1',
     title: '金長狸（徳島）',
@@ -37833,6 +40010,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:18',
     popular: false,
   },
+
   {
     id: 'tokushima-naruto-normal-1',
     title: '鳴門の渦潮（徳島）',
@@ -37850,6 +40028,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:25',
     popular: false,
   },
+
   {
     id: 'tokushima-sudachi-normal-1',
     title: 'すだち（徳島）',
@@ -37867,6 +40046,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:32',
     popular: false,
   },
+
   {
     id: 'tokushima-ramen-normal-1',
     title: '徳島ラーメン（徳島）',
@@ -37884,6 +40064,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:39',
     popular: false,
   },
+
   {
     id: 'tokushima-washi-normal-1',
     title: '阿波和紙（徳島）',
@@ -37901,6 +40082,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:46',
     popular: false,
   },
+
   {
     id: 'tokushima-kazura-normal-1',
     title: 'かずら橋（徳島・祖谷）',
@@ -37918,6 +40100,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:53',
     popular: false,
   },
+
   {
     id: 'tokushima-ningyo-normal-1',
     title: '阿波人形浄瑠璃（徳島）',
@@ -37935,6 +40118,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T16:59',
     popular: false,
   },
+
   {
     id: 'tokushima-bizan-normal-1',
     title: '眉山（徳島）',
@@ -37952,6 +40136,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:05',
     popular: false,
   },
+
   {
     id: 'tokushima-handa-somen-normal-1',
     title: '半田そうめん（徳島）',
@@ -37969,6 +40154,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:13',
     popular: false,
   },
+
   {
     id: 'kagawa-sanuki-udon-normal-1',
     title: '讃岐うどん（香川）',
@@ -37986,6 +40172,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:18',
     popular: false,
   },
+
   {
     id: 'kagawa-kotohira-normal-1',
     title: '金刀比羅宮（香川）',
@@ -38003,6 +40190,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:26',
     popular: false,
   },
+
   {
     id: 'kagawa-olive-normal-1',
     title: '小豆島オリーブ（香川）',
@@ -38020,6 +40208,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:32',
     popular: false,
   },
+
   {
     id: 'kagawa-takamatsu-castle-normal-1',
     title: '高松城（香川）',
@@ -38037,6 +40226,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:38',
     popular: false,
   },
+
   {
     id: 'kagawa-shoyu-normal-1',
     title: '小豆島の醤油（香川）',
@@ -38054,6 +40244,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:46',
     popular: false,
   },
+
   {
     id: 'kagawa-honetsuki-dori-normal-1',
     title: '骨付鳥（香川・丸亀）',
@@ -38071,6 +40262,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T17:53',
     popular: false,
   },
+
   {
     id: 'kagawa-shodoshima-somen-normal-1',
     title: '小豆島そうめん（香川）',
@@ -38088,6 +40280,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:01',
     popular: false,
   },
+
   {
     id: 'kagawa-yashima-normal-1',
     title: '屋島（香川）',
@@ -38105,6 +40298,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:08',
     popular: false,
   },
+
   {
     id: 'kagawa-ritsurin-normal-1',
     title: '栗林公園（香川）',
@@ -38122,6 +40316,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:15',
     popular: false,
   },
+
   {
     id: 'kagawa-uchiwa-normal-1',
     title: '丸亀うちわ（香川）',
@@ -38139,6 +40334,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:22',
     popular: false,
   },
+
   {
     id: 'ehime-mikan-normal-1',
     title: '愛媛みかん（愛媛）',
@@ -38156,6 +40352,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:30',
     popular: false,
   },
+
   {
     id: 'ehime-dogo-normal-1',
     title: '道後温泉（愛媛）',
@@ -38173,6 +40370,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:37',
     popular: false,
   },
+
   {
     id: 'ehime-botchan-normal-1',
     title: '坊っちゃん列車（愛媛・松山）',
@@ -38190,6 +40388,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:43',
     popular: false,
   },
+
   {
     id: 'ehime-imabari-towel-normal-1',
     title: '今治タオル（愛媛）',
@@ -38207,6 +40406,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:50',
     popular: false,
   },
+
   {
     id: 'ehime-tai-meshi-normal-1',
     title: '宇和島鯛めし（愛媛）',
@@ -38224,6 +40424,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T18:58',
     popular: false,
   },
+
   {
     id: 'ehime-matsuyama-castle-normal-1',
     title: '松山城（愛媛）',
@@ -38241,6 +40442,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:05',
     popular: false,
   },
+
   {
     id: 'ehime-pon-juice-normal-1',
     title: 'ポンジュース（愛媛）',
@@ -38258,6 +40460,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:11',
     popular: false,
   },
+
   {
     id: 'ehime-shimanami-cycle-normal-1',
     title: 'しまなみ海道サイクリング（愛媛）',
@@ -38275,6 +40478,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:18',
     popular: false,
   },
+
   {
     id: 'ehime-ushioni-normal-1',
     title: '牛鬼（愛媛・宇和島）',
@@ -38292,6 +40496,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:25',
     popular: false,
   },
+
   {
     id: 'ehime-tobe-yaki-normal-1',
     title: '砥部焼（愛媛）',
@@ -38309,6 +40514,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:32',
     popular: false,
   },
+
   {
     id: 'kochi-katsuo-tataki-normal-1',
     title: 'カツオのたたき（高知）',
@@ -38326,6 +40532,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:40',
     popular: false,
   },
+
   {
     id: 'kochi-ryoma-normal-1',
     title: '坂本龍馬（高知）',
@@ -38343,6 +40550,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:47',
     popular: false,
   },
+
   {
     id: 'kochi-yosakoi-normal-1',
     title: 'よさこい踊り（高知）',
@@ -38360,6 +40568,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T19:54',
     popular: false,
   },
+
   {
     id: 'kochi-tosa-inu-normal-1',
     title: '土佐犬（高知）',
@@ -38377,6 +40586,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:01',
     popular: false,
   },
+
   {
     id: 'kochi-yuzu-normal-1',
     title: '高知ゆず（高知）',
@@ -38394,6 +40604,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:08',
     popular: false,
   },
+
   {
     id: 'kochi-shimanto-normal-1',
     title: '四万十川（高知）',
@@ -38411,6 +40622,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:15',
     popular: false,
   },
+
   {
     id: 'kochi-washi-normal-1',
     title: '土佐和紙（高知）',
@@ -38428,6 +40640,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:22',
     popular: false,
   },
+
   {
     id: 'kochi-katsurahama-normal-1',
     title: '桂浜（高知）',
@@ -38445,6 +40658,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:29',
     popular: false,
   },
+
   {
     id: 'kochi-harimaya-normal-1',
     title: 'はりまや橋（高知）',
@@ -38462,6 +40676,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:36',
     popular: false,
   },
+
   {
     id: 'kochi-ipponzuri-normal-1',
     title: '土佐の一本釣り（高知）',
@@ -38479,6 +40694,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:45',
     popular: false,
   },
+
   {
     id: 'fukuoka-hakata-ramen-normal-1',
     title: '博多ラーメン（福岡）',
@@ -38496,6 +40712,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:51',
     popular: false,
   },
+
   {
     id: 'fukuoka-dazaifu-normal-1',
     title: '太宰府天満宮（福岡）',
@@ -38513,6 +40730,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T20:58',
     popular: false,
   },
+
   {
     id: 'fukuoka-yamakasa-normal-1',
     title: '博多祇園山笠（福岡）',
@@ -38530,6 +40748,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:05',
     popular: false,
   },
+
   {
     id: 'fukuoka-motsunabe-normal-1',
     title: 'もつ鍋（福岡）',
@@ -38547,6 +40766,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:12',
     popular: false,
   },
+
   {
     id: 'fukuoka-mentaiko-normal-1',
     title: '明太子（福岡）',
@@ -38564,6 +40784,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:19',
     popular: false,
   },
+
   {
     id: 'fukuoka-hakata-doll-normal-1',
     title: '博多人形（福岡）',
@@ -38581,6 +40802,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:26',
     popular: false,
   },
+
   {
     id: 'fukuoka-yanagawa-normal-1',
     title: '柳川川下り（福岡）',
@@ -38598,6 +40820,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:33',
     popular: false,
   },
+
   {
     id: 'fukuoka-hakata-ori-normal-1',
     title: '博多織（福岡）',
@@ -38615,6 +40838,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:40',
     popular: false,
   },
+
   {
     id: 'fukuoka-yame-cha-normal-1',
     title: '八女茶（福岡）',
@@ -38632,6 +40856,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:47',
     popular: false,
   },
+
   {
     id: 'fukuoka-ohori-normal-1',
     title: '大濠公園の桜（福岡）',
@@ -38649,6 +40874,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T21:54',
     popular: false,
   },
+
   {
     id: 'fukuoka-chikugo-ukai-normal-1',
     title: '筑後川の鵜飼い（福岡）',
@@ -38666,6 +40892,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:01',
     popular: false,
   },
+
   {
     id: 'fukuoka-dontaku-normal-1',
     title: '博多どんたく（福岡）',
@@ -38683,6 +40910,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:08',
     popular: false,
   },
+
   {
     id: 'saga-arita-yaki-normal-1',
     title: '有田焼（佐賀）',
@@ -38700,6 +40928,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:15',
     popular: false,
   },
+
   {
     id: 'saga-balloon-normal-1',
     title: 'バルーンフェスタ（佐賀）',
@@ -38717,6 +40946,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:21',
     popular: false,
   },
+
   {
     id: 'saga-yobuko-ika-normal-1',
     title: '呼子のイカ（佐賀）',
@@ -38734,6 +40964,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:28',
     popular: false,
   },
+
   {
     id: 'saga-beef-normal-1',
     title: '佐賀牛（佐賀）',
@@ -38751,6 +40982,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:36',
     popular: false,
   },
+
   {
     id: 'saga-karatsu-castle-normal-1',
     title: '唐津城（佐賀）',
@@ -38768,6 +41000,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:44',
     popular: false,
   },
+
   {
     id: 'saga-ureshino-normal-1',
     title: '嬉野湯豆腐（佐賀）',
@@ -38785,6 +41018,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:51',
     popular: false,
   },
+
   {
     id: 'saga-karatsu-yaki-normal-1',
     title: '唐津焼（佐賀）',
@@ -38802,6 +41036,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T22:57',
     popular: false,
   },
+
   {
     id: 'saga-kunchi-normal-1',
     title: '唐津くんち（佐賀）',
@@ -38819,6 +41054,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:05',
     popular: false,
   },
+
   {
     id: 'saga-yoshinogari-normal-1',
     title: '吉野ヶ里遺跡（佐賀）',
@@ -38836,6 +41072,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:17',
     popular: false,
   },
+
   {
     id: 'saga-nori-normal-1',
     title: '佐賀海苔（佐賀）',
@@ -38853,6 +41090,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:24',
     popular: false,
   },
+
   {
     id: 'nagasaki-chanpon-normal-1',
     title: '長崎ちゃんぽん（長崎）',
@@ -38870,6 +41108,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:38',
     popular: false,
   },
+
   {
     id: 'nagasaki-dejima-normal-1',
     title: '出島（長崎）',
@@ -38887,6 +41126,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:46',
     popular: false,
   },
+
   {
     id: 'nagasaki-meganebashi-normal-1',
     title: '眼鏡橋（長崎）',
@@ -38904,6 +41144,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-23T23:52',
     popular: false,
   },
+
   {
     id: 'nagasaki-castella-normal-1',
     title: 'カステラ（長崎）',
@@ -38921,6 +41162,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T00:00',
     popular: false,
   },
+
   {
     id: 'nagasaki-gunkanjima-normal-1',
     title: '軍艦島（長崎）',
@@ -38938,6 +41180,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:21',
     popular: false,
   },
+
   {
     id: 'nagasaki-huistenbosch-normal-1',
     title: 'ハウステンボス（長崎）',
@@ -38955,6 +41198,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:29',
     popular: false,
   },
+
   {
     id: 'nagasaki-peace-statue-normal-1',
     title: '平和祈念像（長崎）',
@@ -38972,6 +41216,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:38',
     popular: false,
   },
+
   {
     id: 'nagasaki-kunchi-normal-1',
     title: '長崎くんち（長崎）',
@@ -38989,6 +41234,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:46',
     popular: false,
   },
+
   {
     id: 'nagasaki-shimabara-castle-normal-1',
     title: '島原城（長崎）',
@@ -39006,6 +41252,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:52',
     popular: false,
   },
+
   {
     id: 'nagasaki-iki-uni-normal-1',
     title: '壱岐ウニ丼（長崎）',
@@ -39023,6 +41270,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:00',
     popular: false,
   },
+
   {
     id: 'nagasaki-goto-udon-normal-1',
     title: '五島うどん（長崎）',
@@ -39040,6 +41288,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:07',
     popular: false,
   },
+
   {
     id: 'nagasaki-inasayama-normal-1',
     title: '稲佐山の夜景（長崎）',
@@ -39057,6 +41306,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:15',
     popular: false,
   },
+
   {
     id: 'kumamoto-kumamon-normal-1',
     title: 'くまモン（熊本）',
@@ -39074,6 +41324,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:23',
     popular: false,
   },
+
   {
     id: 'kumamoto-castle-normal-1',
     title: '熊本城（熊本）',
@@ -39091,6 +41342,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:30',
     popular: false,
   },
+
   {
     id: 'kumamoto-basashi-normal-1',
     title: '馬刺し（熊本）',
@@ -39108,6 +41360,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:38',
     popular: false,
   },
+
   {
     id: 'kumamoto-ikinari-dango-normal-1',
     title: 'いきなり団子（熊本）',
@@ -39125,6 +41378,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:45',
     popular: false,
   },
+
   {
     id: 'kumamoto-aso-normal-1',
     title: '阿蘇山（熊本）',
@@ -39142,6 +41396,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:01',
     popular: false,
   },
+
   {
     id: 'kumamoto-karashi-renkon-normal-1',
     title: '辛子蓮根（熊本）',
@@ -39159,6 +41414,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:08',
     popular: false,
   },
+
   {
     id: 'kumamoto-igusa-normal-1',
     title: 'い草（熊本・八代）',
@@ -39176,6 +41432,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:15',
     popular: false,
   },
+
   {
     id: 'kumamoto-amakusa-dolphin-normal-1',
     title: '天草のイルカ（熊本）',
@@ -39193,6 +41450,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:22',
     popular: false,
   },
+
   {
     id: 'kumamoto-suizenji-normal-1',
     title: '水前寺成趣園（熊本）',
@@ -39210,6 +41468,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:30',
     popular: false,
   },
+
   {
     id: 'kumamoto-taipien-normal-1',
     title: '太平燕（熊本）',
@@ -39227,6 +41486,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:39',
     popular: false,
   },
+
   {
     id: 'kumamoto-banpeiyu-normal-1',
     title: '晩白柚（熊本）',
@@ -39244,6 +41504,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:46',
     popular: false,
   },
+
   {
     id: 'kumamoto-spring-normal-1',
     title: '熊本の湧水（熊本）',
@@ -39261,6 +41522,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:55',
     popular: false,
   },
+
   {
     id: 'oita-beppu-normal-1',
     title: '別府温泉（大分）',
@@ -39278,6 +41540,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:02',
     popular: false,
   },
+
   {
     id: 'oita-kabosu-normal-1',
     title: 'かぼす（大分）',
@@ -39295,6 +41558,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:09',
     popular: false,
   },
+
   {
     id: 'oita-seki-aji-saba-normal-1',
     title: '関さば・関あじ（大分）',
@@ -39312,6 +41576,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:17',
     popular: false,
   },
+
   {
     id: 'oita-yufuin-normal-1',
     title: '湯布院（大分）',
@@ -39329,6 +41594,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:25',
     popular: false,
   },
+
   {
     id: 'oita-jigoku-normal-1',
     title: '地獄めぐり（大分・別府）',
@@ -39346,6 +41612,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:33',
     popular: false,
   },
+
   {
     id: 'oita-toriten-normal-1',
     title: 'とり天（大分）',
@@ -39363,6 +41630,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:40',
     popular: false,
   },
+
   {
     id: 'oita-usuki-sekibutsu-normal-1',
     title: '臼杵石仏（大分）',
@@ -39380,6 +41648,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:48',
     popular: false,
   },
+
   {
     id: 'oita-karaage-normal-1',
     title: '大分からあげ（大分・中津）',
@@ -39397,6 +41666,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:56',
     popular: false,
   },
+
   {
     id: 'oita-kitsuki-castle-normal-1',
     title: '杵築城（大分）',
@@ -39414,6 +41684,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:03',
     popular: false,
   },
+
   {
     id: 'oita-shiitake-normal-1',
     title: '大分の干し椎茸（大分）',
@@ -39431,6 +41702,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:11',
     popular: false,
   },
+
   {
     id: 'oita-kuju-normal-1',
     title: '九重の紅葉（大分）',
@@ -39448,6 +41720,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:19',
     popular: false,
   },
+
   {
     id: 'oita-usa-jingu-normal-1',
     title: '宇佐神宮（大分）',
@@ -39465,6 +41738,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:27',
     popular: false,
   },
+
   {
     id: 'miyazaki-chicken-nanban-normal-1',
     title: 'チキン南蛮（宮崎）',
@@ -39482,6 +41756,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:35',
     popular: false,
   },
+
   {
     id: 'miyazaki-mango-normal-1',
     title: '宮崎マンゴー（宮崎）',
@@ -39499,6 +41774,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:43',
     popular: false,
   },
+
   {
     id: 'miyazaki-takachiho-normal-1',
     title: '高千穂峡（宮崎）',
@@ -39516,6 +41792,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:51',
     popular: false,
   },
+
   {
     id: 'miyazaki-hyottoko-normal-1',
     title: 'ひょっとこ（宮崎・日向）',
@@ -39533,6 +41810,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:59',
     popular: false,
   },
+
   {
     id: 'miyazaki-hyuganatsu-normal-1',
     title: '日向夏（宮崎）',
@@ -39550,6 +41828,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:07',
     popular: false,
   },
+
   {
     id: 'miyazaki-udo-normal-1',
     title: '鵜戸神宮（宮崎）',
@@ -39567,6 +41846,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:15',
     popular: false,
   },
+
   {
     id: 'miyazaki-shochu-normal-1',
     title: '宮崎焼酎（宮崎）',
@@ -39584,6 +41864,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:21',
     popular: false,
   },
+
   {
     id: 'miyazaki-aoshima-normal-1',
     title: '青島・鬼の洗濯板（宮崎）',
@@ -39601,6 +41882,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:29',
     popular: false,
   },
+
   {
     id: 'miyazaki-obi-castle-normal-1',
     title: '飫肥城（宮崎）',
@@ -39618,6 +41900,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:37',
     popular: false,
   },
+
   {
     id: 'miyazaki-hiyajiru-normal-1',
     title: '冷汁（宮崎）',
@@ -39635,6 +41918,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:45',
     popular: false,
   },
+
   {
     id: 'kagoshima-sakurajima-normal-1',
     title: '桜島（鹿児島）',
@@ -39652,6 +41936,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:52',
     popular: false,
   },
+
   {
     id: 'kagoshima-saigo-normal-1',
     title: '西郷隆盛（鹿児島）',
@@ -39669,6 +41954,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:00',
     popular: false,
   },
+
   {
     id: 'kagoshima-kurobuta-normal-1',
     title: '鹿児島黒豚（鹿児島）',
@@ -39686,6 +41972,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:06',
     popular: false,
   },
+
   {
     id: 'kagoshima-satsuma-kiriko-normal-1',
     title: '薩摩切子（鹿児島）',
@@ -39703,6 +41990,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:15',
     popular: false,
   },
+
   {
     id: 'kagoshima-sunamushi-normal-1',
     title: '砂蒸し温泉（鹿児島・指宿）',
@@ -39720,6 +42008,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:22',
     popular: false,
   },
+
   {
     id: 'kagoshima-kokuto-normal-1',
     title: '奄美の黒糖（鹿児島）',
@@ -39737,6 +42026,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:30',
     popular: false,
   },
+
   {
     id: 'kagoshima-chiran-normal-1',
     title: '知覧武家屋敷（鹿児島）',
@@ -39754,6 +42044,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:38',
     popular: false,
   },
+
   {
     id: 'kagoshima-karukan-normal-1',
     title: 'かるかん（鹿児島）',
@@ -39771,6 +42062,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:45',
     popular: false,
   },
+
   {
     id: 'kagoshima-satsumaage-normal-1',
     title: 'さつまあげ（鹿児島）',
@@ -39788,6 +42080,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:52',
     popular: false,
   },
+
   {
     id: 'kagoshima-yakusugi-normal-1',
     title: '屋久杉（鹿児島・屋久島）',
@@ -39805,6 +42098,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:00',
     popular: false,
   },
+
   {
     id: 'kagoshima-umigame-normal-1',
     title: '奄美のウミガメ（鹿児島）',
@@ -39822,6 +42116,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:07',
     popular: false,
   },
+
   {
     id: 'kagoshima-kaimon-normal-1',
     title: '開聞岳（鹿児島）',
@@ -39839,6 +42134,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:15',
     popular: false,
   },
+
   {
     id: 'okinawa-shisa-normal-1',
     title: 'シーサー（沖縄）',
@@ -39856,6 +42152,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:22',
     popular: false,
   },
+
   {
     id: 'okinawa-eisa-normal-1',
     title: 'エイサー（沖縄）',
@@ -39873,6 +42170,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:30',
     popular: false,
   },
+
   {
     id: 'okinawa-chinsuko-normal-1',
     title: 'ちんすこう（沖縄）',
@@ -39890,6 +42188,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:38',
     popular: false,
   },
+
   {
     id: 'okinawa-yanbaru-kuina-normal-1',
     title: 'ヤンバルクイナ（沖縄）',
@@ -39907,6 +42206,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:46',
     popular: false,
   },
+
   {
     id: 'okinawa-coral-normal-1',
     title: 'サンゴ礁（沖縄）',
@@ -39924,6 +42224,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:54',
     popular: false,
   },
+
   {
     id: 'okinawa-goya-normal-1',
     title: 'ゴーヤ（沖縄）',
@@ -39941,6 +42242,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:03',
     popular: false,
   },
+
   {
     id: 'okinawa-snorkel-normal-1',
     title: 'シュノーケリング（沖縄）',
@@ -39958,6 +42260,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:11',
     popular: false,
   },
+
   {
     id: 'okinawa-shuri-castle-normal-1',
     title: '首里城（沖縄）',
@@ -39975,6 +42278,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:19',
     popular: false,
   },
+
   {
     id: 'okinawa-sanshin-normal-1',
     title: '三線（沖縄）',
@@ -39992,6 +42296,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:27',
     popular: false,
   },
+
   {
     id: 'okinawa-bingata-normal-1',
     title: '紅型（沖縄）',
@@ -40009,6 +42314,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:34',
     popular: false,
   },
+
   {
     id: 'okinawa-mangrove-normal-1',
     title: 'マングローブ（沖縄）',
@@ -40026,6 +42332,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:42',
     popular: false,
   },
+
   {
     id: 'okinawa-whaleshark-normal-1',
     title: 'ジンベエザメ（沖縄・美ら海）',
@@ -40043,6 +42350,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:49',
     popular: false,
   },
+
   {
     id: 'okinawa-hibiscus-normal-1',
     title: 'ハイビスカス（沖縄）',
@@ -40060,6 +42368,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:57',
     popular: false,
   },
+
   {
     id: 'okinawa-hateruma-sugar-normal-1',
     title: '波照間サトウキビ（沖縄）',
@@ -40077,6 +42386,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:05',
     popular: false,
   },
+
   {
     id: 'okinawa-ryukyu-dance-normal-1',
     title: '琉球舞踊（沖縄）',
@@ -40094,9 +42404,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:13',
     popular: false,
   },
+
   {
     id: 'fairytale-momotaro-simple-1',
-    title: 'おばあさんとおおきなもも（ももたろう）',
+    title: 'ももたろう：おばあさんとおおきなもも（ももたろう）',
     description: '川で大きな桃を拾うおばあさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40109,11 +42420,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
-    popular: false,
+    seoDescription: 'おばあさんが川で拾った大きなももを両手で抱えて、驚きと喜びに満ちた表情で見つめています。隣のおばあさんも思わず口を開けて驚く様子が伝わり、二人の感動が一つの場面に凝縮されています。手前の水の流れや石ころ、奥の草むらなど、川沿いの風景を丁寧に塗り分けることで、昔話の世界へぐっと引き込まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-momotaro-easy-1',
-    title: 'ももからうまれたももたろう（ももたろう）',
+    title: 'ももたろう：ももからうまれたももたろう（ももたろう）',
     description: '桃から桃太郎が生まれる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40126,11 +42439,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
-    popular: false,
+    seoDescription: '桃から生まれたももたろうが、両脇に付き添う家来たちと一緒に、大きな桃の前で両手を広げて喜びに満ちた表情を見せています。中央のももたろうは頭巾をかぶり、胸元の装飾的な結び紐が目を引き、左右の家来たちも同じように手を上げてはしゃいでいます。桃の下には葉が描かれ、空を表す短い線たちが画面に明るさと動きをもたらしています。三人の顔の輪郭や衣装の細部など、淡い色合いで柔らかく塗り分けるシーンが随所に待っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-momotaro-normal-1',
-    title: 'きびだんごでなかま（ももたろう）',
+    title: 'ももたろう：きびだんごでなかま（ももたろう）',
     description: '犬さるきじを家来にする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40145,9 +42460,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T09:08',
     popular: false,
   },
+
   {
     id: 'fairytale-momotaro-rich-1',
-    title: 'おにがしまでおにたいじ（ももたろう）',
+    title: 'ももたろう：おにがしまでおにたいじ（ももたろう）',
     description: '鬼ヶ島で鬼退治する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40162,9 +42478,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T09:08',
     popular: false,
   },
+
   {
     id: 'fairytale-urashima-taro-simple-1',
-    title: 'かめをたすける（浦島太郎）',
+    title: 'うらしまたろう：かめをたすける（浦島太郎）',
     description: '亀を助ける浦島のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40177,11 +42494,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
-    popular: false,
+    seoDescription: '浜辺でウミガメが涙を流しており、その周りで三人の子どもたちが大喜び。左の子どもが拾った枝を掲げて歓声を上げ、右の子どもは手を振って挨拶をしています。波打つ砂浜には貝殻や星の形をした生き物が散らばり、空には雲とかもめが浮かぶ気持ちのよい景色です。ウミガメの甲羅の模様や、子どもたちの髪の毛の流れ、砂の質感など、細かい部分まで丁寧に描き込まれているので、どこから塗り始めるか迷ってしまうほどです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-urashima-taro-easy-1',
-    title: 'りゅうぐうへ（浦島太郎）',
+    title: 'うらしまたろう：りゅうぐうへ（浦島太郎）',
     description: '海中の竜宮城へ向かう線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40194,11 +42513,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
-    popular: false,
+    seoDescription: '大きな亀の背中に乗った浦島太郎が、海の中の冒険へ出発する場面です。亀の甲羅の模様、タロウの着物の皺や帯の結び目、背景に聳える竜宮城の複雑な屋根など、細かい部分がたくさん。周りには小魚やクラゲ、海草が浮かび、貝殻や星形の生き物も散らばっているので、どれから塗ろうか迷ってしまうくらい塗る場所がいっぱいです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-urashima-taro-normal-1',
-    title: 'おとひめのうたげ（浦島太郎）',
+    title: 'うらしまたろう：おとひめのうたげ（浦島太郎）',
     description: '乙姫の歓待のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40213,9 +42534,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T09:35',
     popular: false,
   },
+
   {
     id: 'fairytale-urashima-taro-rich-1',
-    title: 'たまてばこ（浦島太郎）',
+    title: 'うらしまたろう：たまてばこ（浦島太郎）',
     description: '玉手箱を開けて老人になる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40230,9 +42552,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T09:35',
     popular: false,
   },
+
   {
     id: 'fairytale-kintaro-simple-1',
-    title: 'やまのきんたろう（きんたろう）',
+    title: 'きんたろう：やまのきんたろう（きんたろう）',
     description: 'まさかりを構えるきんたろうのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40245,11 +42568,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
-    popular: false,
+    seoDescription: '岩の上に立ち、大きな斧を高く掲げて笑顔のきんたろう。腹掛けに描かれた可愛らしい花紋と、ふんわりした翼のような背景が、子どもの塗り色選びの工夫を引き出します。足元の岩のゴツゴツした質感や、ところどころに生える草の表現も、細かく色分けする楽しさが詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kintaro-easy-1',
-    title: 'くまとすもう（きんたろう）',
+    title: 'きんたろう：くまとすもう（きんたろう）',
     description: 'くまと相撲する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40262,11 +42587,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
-    popular: false,
+    seoDescription: '金太郎が相撲の得意なポーズで向かい合う相手は、悔しそうな表情の大きな熊。金太郎の胸には花のマークが入った腹掛けがあり、熊の頭には指輪のような輪がついています。二人の迫力のある対決シーンですが、キャラクターたちのコミカルな表情や丸みのある体つきのおかげで、ほほえましい雰囲気に仕上がっています。熊の毛並みの質感表現や、金太郎の髪の流れなど、塗り分けるパーツが多く工夫できる場面です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kintaro-normal-1',
-    title: 'やまのなかまたち（きんたろう）',
+    title: 'きんたろう：やまのなかまたち（きんたろう）',
     description: '山で動物と遊ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40281,9 +42608,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:05',
     popular: false,
   },
+
   {
     id: 'fairytale-kaguya-hime-simple-1',
-    title: 'たけのかぐやひめ（かぐや姫）',
+    title: 'かぐやひめ：たけのかぐやひめ（かぐや姫）',
     description: '竹から姫を発見する線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40296,11 +42624,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
-    popular: false,
+    seoDescription: '竹の根元で、おじいさんが大きく口を開けて喜んでいます。竹の筒の中からは、キラキラした表情のかぐや姫が顔をのぞかせており、おじいさんとの嬉しそうな出会いの瞬間が伝わってきます。足元に散らばった竹の葉や、背景にそびえる竹の節々は、この物語の舞台となる竹林の雰囲気をしっかりと表現しています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kaguya-hime-easy-1',
-    title: 'ごにんのきぞくのきゅうこん（かぐや姫）',
+    title: 'かぐやひめ：ごにんのきぞくのきゅうこん（かぐや姫）',
     description: '5人の求婚のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40313,11 +42643,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
-    popular: false,
+    seoDescription: 'かぐや姫が5人の貴族たちに囲まれた場面です。姫の華やかな着物には細かい花模様が描かれていて、長く流れる髪に飾りがついています。5人の貴族たちは揃いの帽子と着物を着ており、それぞれ扇や籠など異なる贈り物を手に持っています。みんなの柔らかな表情と並んだ姿から、古い物語の中の大事な場面が広がっていて、着物の地色や贈り物の模様、背景の塗り分けなど、色を重ねたくなる箇所がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kaguya-hime-normal-1',
-    title: 'つきをみあげるひめ（かぐや姫）',
+    title: 'かぐやひめ：つきをみあげるひめ（かぐや姫）',
     description: '月を見上げ涙ぐむ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40332,9 +42664,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:34',
     popular: false,
   },
+
   {
     id: 'fairytale-kaguya-hime-rich-1',
-    title: 'つきへかえる（かぐや姫）',
+    title: 'かぐやひめ：つきへかえる（かぐや姫）',
     description: '月へ帰る別れのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40349,9 +42682,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T10:34',
     popular: false,
   },
+
   {
     id: 'fairytale-issun-boshi-simple-1',
-    title: 'おわんのふねでたびだち（一寸法師）',
+    title: 'いっすんぼうし：おわんのふねでたびだち（一寸法師）',
     description: 'お椀の舟の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40364,11 +42698,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
-    popular: false,
+    seoDescription: '一寸法師が小さなおわんの舟に乗って、大冒険へ出発するシーン。左手に握った木の刀を構えた勇ましいポーズと、頭に巻いた鉢巻きのくしゅっとした質感、そして足元の波しぶきの動きが、この小さな武士の旅の興奮を表現しています。右奥に見える背の高い草や左側の石ころなど、周りの風景がいっそう一寸法師のちっぽけさを引き立てていて、塗り分けるときに大きさの違いをより感じられるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-issun-boshi-easy-1',
-    title: 'ひめさまとであう（一寸法師）',
+    title: 'いっすんぼうし：ひめさまとであう（一寸法師）',
     description: '姫の前の一寸法師のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40381,11 +42717,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
-    popular: false,
+    seoDescription: '一寸法師が姫さまと出会う場面です。豪華な着物に花の模様をあしらった姫さまは、長く流れる髪と立派な冠が特徴。一方、小さな一寸法師は帽子をかぶり、姫さまを見上げるほほえみの表情が印象的です。姫さまのドレスに散りばめられた花々や髪飾りの細かい装飾は、丁寧に塗り分ける楽しみがあります。二人の大きさの違いがストーリーの核となる場面で、色選びで二人の関係性を表現できる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-issun-boshi-normal-1',
-    title: 'おにとたたかう（一寸法師）',
+    title: 'いっすんぼうし：おにとたたかう（一寸法師）',
     description: '鬼と戦う線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40400,9 +42738,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:06',
     popular: false,
   },
+
   {
     id: 'fairytale-issun-boshi-rich-1',
-    title: 'おおきくなってけっこん（一寸法師）',
+    title: 'いっすんぼうし：おおきくなってけっこん（一寸法師）',
     description: '大きくなって結婚する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40417,9 +42756,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:06',
     popular: false,
   },
+
   {
     id: 'fairytale-hanasaka-jiisan-simple-1',
-    title: 'シロとおじいさん（はなさかじいさん）',
+    title: 'はなさかじいさん：シロとおじいさん（はなさかじいさん）',
     description: 'シロを抱くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40432,11 +42772,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
-    popular: false,
+    seoDescription: '日本昔話の「花咲かじいさん」の場面です。左側のやさしい表情のおじいさんは、小さな犬を抱っこしてにっこり笑っています。一方、右側の怒ったような顔のおじいさんは腕を組んで不機嫌そう。両方のおじいさんのズボンには大きなつぎはぎがあり、古い着物姿も見えます。同じキャラクターなのに、表情とポーズで全く違う雰囲気に仕上がるので、肌色や洋服の色を工夫してみると物語の違いが引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-hanasaka-jiisan-easy-1',
-    title: 'ここほれわんわん（はなさかじいさん）',
+    title: 'はなさかじいさん：ここほれわんわん（はなさかじいさん）',
     description: 'シロが宝を掘る線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40449,11 +42791,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
-    popular: false,
+    seoDescription: '花咲くじいさんの物語の一場面で、掘り当てた宝物に大喜びするじいさんとじゃあさん、そして「ここほれわんわん」と教えてくれた忠犬が一緒に描かれています。じいさんは両手を上げて驚き、じゃあさんはうれしそうに目を閉じ、犬も誇らしげにしっぽを立てる三者三様の表情が見どころです。地面に積み重ねられた大きな宝箱は、塗り分けるときに金色や銀色で輝きを表現できる場所です。草むらや衣装の柄など、細かい部分も多く、色選びで全体の雰囲気がぐっと変わる一枚です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-hanasaka-jiisan-normal-1',
-    title: 'はなをさかせる（はなさかじいさん）',
+    title: 'はなさかじいさん：はなをさかせる（はなさかじいさん）',
     description: '枯れ木に桜を咲かせる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40468,9 +42812,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:36',
     popular: false,
   },
+
   {
     id: 'fairytale-hanasaka-jiisan-rich-1',
-    title: 'いじわるじいさんのしっぱい（はなさかじいさん）',
+    title: 'はなさかじいさん：いじわるじいさんのしっぱい（はなさかじいさん）',
     description: '意地悪じいさんの失敗のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40485,9 +42830,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T11:36',
     popular: false,
   },
+
   {
     id: 'fairytale-tongue-cut-sparrow-simple-1',
-    title: 'すずめをてあて（舌切りすずめ）',
+    title: 'したきりすずめ：すずめをてあて（舌切りすずめ）',
     description: 'すずめを手当するおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40500,11 +42846,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
-    popular: false,
+    seoDescription: 'おばあさんが優しい笑顔で、小さなすずめに食べ物をあげようとしている温かい場面です。すずめの開いた口や、おばあさんの手に乗ったちいさな体など、細かい部分を丁寧に塗り分けると生き生きとした表情が引き立ちます。手前の器や背景の花々、窓から見える庭の緑など、色を重ねる場所がたくさんあり、塗る順番を考えながら進める楽しさが味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-tongue-cut-sparrow-easy-1',
-    title: 'いじわるおばあさん（舌切りすずめ）',
+    title: 'したきりすずめ：いじわるおばあさん（舌切りすずめ）',
     description: 'すずめをいじめるおばあさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40517,11 +42865,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
-    popular: false,
+    seoDescription: 'いじわるおばあさんが大きなはさみを握りしめて怒った顔で走ってきて、舌切りすずめは目を大きく開いて泣きながら逃げています。おばあさんの髪の毛は結い上げられ、着物の帯もはっきり描かれていて、キャラクターの違いを色分けで表現したくなります。背景の怒りマークと涙のしぶきは、この場面の緊迫した雰囲気を盛り上げる工夫になっていて、どんな色を選ぶか考えながら塗り進めるのが面白い場面です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-tongue-cut-sparrow-normal-1',
-    title: 'ちいさなつづらのおおばんこばん（舌切りすずめ）',
+    title: 'したきりすずめ：ちいさなつづらのおおばんこばん（舌切りすずめ）',
     description: '小さな葛籠から宝物のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40536,9 +42886,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:06',
     popular: false,
   },
+
   {
     id: 'fairytale-tongue-cut-sparrow-rich-1',
-    title: 'ようかいだらけのおおきなつづら（舌切りすずめ）',
+    title: 'したきりすずめ：ようかいだらけのおおきなつづら（舌切りすずめ）',
     description: '大きな葛籠から妖怪が飛び出す線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40553,9 +42904,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:06',
     popular: false,
   },
+
   {
     id: 'fairytale-kobutori-jiisan-simple-1',
-    title: 'あまやどりするじいさん（こぶとりじいさん）',
+    title: 'こぶとりじいさん：あまやどりするじいさん（こぶとりじいさん）',
     description: 'こぶのおじいさんが雨宿りする線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40568,11 +42920,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
-    popular: false,
+    seoDescription: '雨の中、大きな木の根元で雨宿りをするおじいさんと、晴れた場所で笑顔のおじいさんが向かい合っています。左側のおじいさんは杖をついて少しうなだれた表情で、頭部に大きなこぶがあり、雨粒が降り注ぐ背景が印象的です。右側のおじいさんはほほえみながら腕を組み、同じこぶが目立つのに全く違う雰囲気を醸し出しています。二人の対比を楽しみながら、雨の表現には青系、晴れた側には黄色系など色分けして塗ると、物語の場面がぐっと引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kobutori-jiisan-easy-1',
-    title: 'おにのうたげでおどる（こぶとりじいさん）',
+    title: 'こぶとりじいさん：おにのうたげでおどる（こぶとりじいさん）',
     description: '鬼たちと踊る線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40585,11 +42939,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
-    popular: false,
+    seoDescription: '鬼たちが宴会で大喜びで踊っている場面です。中央のテーブルには丸ごとの魚と器に盛られたごちそうが並び、左右に積み重ねられた鬼たちは角をぴんと立てて、大きく口を開けて笑顔で飛び跳ねています。手前には徳利や盃が置かれ、お祭りの楽しさが伝わってきます。塗るときには、肌の色、鬼の角や衣装の色、食べ物の色合いで、にぎやかさを表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kobutori-jiisan-normal-1',
-    title: 'こぶをとってもらう（こぶとりじいさん）',
+    title: 'こぶとりじいさん：こぶをとってもらう（こぶとりじいさん）',
     description: 'こぶを取ってもらう線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40604,9 +42960,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:38',
     popular: false,
   },
+
   {
     id: 'fairytale-kobutori-jiisan-rich-1',
-    title: 'いじわるじいさんのこぶがふえる（こぶとりじいさん）',
+    title: 'こぶとりじいさん：いじわるじいさんのこぶがふえる（こぶとりじいさん）',
     description: '意地悪じいさんのこぶが増える線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40621,9 +42978,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T12:38',
     popular: false,
   },
+
   {
     id: 'fairytale-grateful-crane-simple-1',
-    title: 'つるをたすける（つるの恩返し）',
+    title: 'つるのおんがえし：つるをたすける（つるの恩返し）',
     description: '罠の鶴を助ける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40636,11 +42994,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
-    popular: false,
+    seoDescription: '優しい表情のおじいさんが、助けた鶴と一緒に雪の中で寄り添っています。鶴の羽には細かい羽根の模様が描かれていて、色の濃淡をつけるとより美しく見えそう。背景には裸木と小さな雪の粒がいっぱい散っていて、寒い季節の静かな情景が広がっています。おじいさんの優しく閉じた目と、鶴の見つめる瞳には、二人の心が通じ合っている瞬間が表現されています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-grateful-crane-easy-1',
-    title: 'むすめがたずねてくる（つるの恩返し）',
+    title: 'つるのおんがえし：むすめがたずねてくる（つるの恩返し）',
     description: '娘が訪ねる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40653,11 +43013,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
-    popular: false,
+    seoDescription: 'つるが訪ねてきた雪の日、家の戸口で親夫婦と再会する場面です。つるの羽衣には細かい花模様がびっしり描かれており、色鉛筆で丁寧に塗り分ける楽しさがあります。親たちの優しい笑顔と、屋根に積もった雪、そして舞う雪の粒をそれぞれ違う色で表現することで、冬の温かみが生まれます。つるの髪飾りの花と衣装の花をどう色分けするか、考えながら塗ってみましょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-grateful-crane-normal-1',
-    title: 'はたをおるむすめ（つるの恩返し）',
+    title: 'つるのおんがえし：はたをおるむすめ（つるの恩返し）',
     description: '機を織る娘のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40672,9 +43034,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:09',
     popular: false,
   },
+
   {
     id: 'fairytale-grateful-crane-rich-1',
-    title: 'つるのすがたでとびさる（つるの恩返し）',
+    title: 'つるのおんがえし：つるのすがたでとびさる（つるの恩返し）',
     description: '鶴の正体で飛び去る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40689,9 +43052,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:09',
     popular: false,
   },
+
   {
     id: 'fairytale-onigiri-korori-simple-1',
-    title: 'おむすびがころころ（おむすびころりん）',
+    title: 'おむすびころりん：おむすびがころころ（おむすびころりん）',
     description: 'おむすびが転がる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40704,11 +43068,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:42',
-    popular: false,
+    seoDescription: 'おむすびがころころと穴の中へ落ちていく場面です。上の地面では、おむすびを食べていたおばあさんが片手を上げて驚いた表情で見送り、かごには丸いおむすびがいくつも詰まっています。下の穴の中では、ねずみが両手を広げて喜んでいて、周りには野菜やとうもろこしなど、ねずみの食べ物が並んでいます。地面の上下で異なる世界が広がっていて、色を塗り分けることで、地上と地下の違いがもっとはっきり見えてくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-onigiri-korori-easy-1',
-    title: 'あなをのぞく（おむすびころりん）',
+    title: 'おむすびころりん：あなをのぞく（おむすびころりん）',
     description: '穴を覗くおじいさんのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40723,9 +43089,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:42',
     popular: false,
   },
+
   {
     id: 'fairytale-onigiri-korori-normal-1',
-    title: 'ねずみのうたとごちそう（おむすびころりん）',
+    title: 'おむすびころりん：ねずみのうたとごちそう（おむすびころりん）',
     description: 'ねずみのごちそうのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40740,9 +43107,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:42',
     popular: false,
   },
+
   {
     id: 'fairytale-onigiri-korori-rich-1',
-    title: 'たからものをもってかえる（おむすびころりん）',
+    title: 'おむすびころりん：たからものをもってかえる（おむすびころりん）',
     description: '宝物を持ち帰る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40757,9 +43125,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T13:42',
     popular: false,
   },
+
   {
     id: 'fairytale-kasa-jizo-simple-1',
-    title: 'かさがうれないじいさん（かさじぞう）',
+    title: 'かさじぞう：かさがうれないじいさん（かさじぞう）',
     description: '市場で困るおじいさんのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40772,11 +43141,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:12',
-    popular: false,
+    seoDescription: '雪の中でかさを売ろうとしたおじいさんが、売れずに悔しそうな表情を浮かべている上の場面から、おじいさんがかさを被ったお地蔵さんにかぶせてあげる優しい瞬間、そして最後におじいさんがたくさんのお餅を抱えてにっこり笑う場面へと物語が進みます。三つの場面では、ほぼ同じ大きさで塗り分けられているので、おじいさんの気持ちの変化に合わせて色選びを工夫する楽しさが生まれます。それぞれの背景に散らばる丸い雪の粒や、かぶり物の格子模様も丁寧に塗るとより一層物語が引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-kasa-jizo-easy-1',
-    title: 'ゆきのおじぞうさま（かさじぞう）',
+    title: 'かさじぞう：ゆきのおじぞうさま（かさじぞう）',
     description: '雪の地蔵を見つける線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40791,9 +43162,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:12',
     popular: false,
   },
+
   {
     id: 'fairytale-kasa-jizo-normal-1',
-    title: 'かさをかぶせる（かさじぞう）',
+    title: 'かさじぞう：かさをかぶせる（かさじぞう）',
     description: '地蔵に笠をかぶせる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40808,9 +43180,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:12',
     popular: false,
   },
+
   {
     id: 'fairytale-kasa-jizo-rich-1',
-    title: 'おじぞうさまのおれい（かさじぞう）',
+    title: 'かさじぞう：おじぞうさまのおれい（かさじぞう）',
     description: '地蔵がお礼を運ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40825,9 +43198,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:12',
     popular: false,
   },
+
   {
     id: 'fairytale-monkey-crab-simple-1',
-    title: 'かにとさるのこうかん（さるかに合戦）',
+    title: 'さるかにがっせん：かにとさるのこうかん（さるかに合戦）',
     description: 'おにぎりと種の交換のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40840,11 +43214,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:44',
-    popular: false,
+    seoDescription: 'カニとサルが向き合っているユーモラスなシーン。サルは両手いっぱいにバナナを抱えてニッコリ笑い、カニはその大きな目玉と大きく開いた口で喜びを表現しています。サルの耳の丸さ、バナナの房の細かい筋、カニのはさみの迫力ある形など、塗り分けるパーツが多いので、何色でどこを塗るか考えながら進める楽しさがあります。背景がシンプルだからこそ、二匹のキャラクターへ色鮮やかに仕上げたくなる構図です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-monkey-crab-easy-1',
-    title: 'あおいかきがぶつかる（さるかに合戦）',
+    title: 'さるかにがっせん：あおいかきがぶつかる（さるかに合戦）',
     description: '柿の実を投げる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40859,9 +43235,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:44',
     popular: false,
   },
+
   {
     id: 'fairytale-monkey-crab-normal-1',
-    title: 'なかまのさくせんかいぎ（さるかに合戦）',
+    title: 'さるかにがっせん：なかまのさくせんかいぎ（さるかに合戦）',
     description: '作戦会議のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40876,9 +43253,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:44',
     popular: false,
   },
+
   {
     id: 'fairytale-monkey-crab-rich-1',
-    title: 'さるをこらしめる（さるかに合戦）',
+    title: 'さるかにがっせん：さるをこらしめる（さるかに合戦）',
     description: 'さるを懲らしめる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40893,9 +43271,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T14:44',
     popular: false,
   },
+
   {
     id: 'fairytale-straw-millionaire-simple-1',
-    title: 'ころんでわらをひろう（わらしべ長者）',
+    title: 'わらしべちょうじゃ：ころんでわらをひろう（わらしべ長者）',
     description: 'わらを握る若者のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40908,11 +43287,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:15',
-    popular: false,
+    seoDescription: 'わらを拾ったことから始まる物語のしょっぱなを描いた一場面。転んだ勢いで片足を上げ、驚いた顔で何かを発見した子どもの躍動感あふれるポーズと、周囲に浮かぶ布、ロープ、魚、容器といった次々と交換されていく品々が、目まぐるしい展開をほのめかしています。わらから始まる交換の旅路を彩ることで、物語を自分の手で進めていく感覚が生まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-straw-millionaire-easy-1',
-    title: 'わらとみかんのこうかん（わらしべ長者）',
+    title: 'わらしべちょうじゃ：わらとみかんのこうかん（わらしべ長者）',
     description: 'みかんと交換する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40927,9 +43308,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:15',
     popular: false,
   },
+
   {
     id: 'fairytale-straw-millionaire-normal-1',
-    title: 'みかんがたんものに（わらしべ長者）',
+    title: 'わらしべちょうじゃ：みかんがたんものに（わらしべ長者）',
     description: '次々と交換する線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -40944,9 +43326,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:15',
     popular: false,
   },
+
   {
     id: 'fairytale-straw-millionaire-rich-1',
-    title: 'ちょうじゃのやかた（わらしべ長者）',
+    title: 'わらしべちょうじゃ：ちょうじゃのやかた（わらしべ長者）',
     description: '長者の屋敷のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -40961,9 +43344,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:15',
     popular: false,
   },
+
   {
     id: 'fairytale-tanabata-simple-1',
-    title: 'はたおりとうしひき（七夕）',
+    title: 'たなばた：はたおりとうしひき（七夕）',
     description: '織姫と彦星が働く線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -40976,11 +43360,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:44',
-    popular: false,
+    seoDescription: '七夕の夜、雲の上で織姫と彦星が出会う場面です。左側では彦星が牛に乗り、手綱を優しく握りながら微笑む表情を見せており、右側では織姫が機織り機の前に座ってこちらを見つめています。天の川を表す流れるような曲線が二人の間を優雅に描き、星と丸い点がちりばめられた空間が広がっています。雲のふかふかとした輪郭や、機織り機の細かい格子模様、牛のやさしい目など、色鉛筆で丁寧に塗り分けたくなる部分がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-tanabata-easy-1',
-    title: 'あまのがわでであう（七夕）',
+    title: 'たなばた：あまのがわでであう（七夕）',
     description: '天の川での出会いのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -40995,9 +43381,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:44',
     popular: false,
   },
+
   {
     id: 'fairytale-tanabata-normal-1',
-    title: 'ひきはなされる（七夕）',
+    title: 'たなばた：ひきはなされる（七夕）',
     description: '引き離される線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41012,9 +43399,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:44',
     popular: false,
   },
+
   {
     id: 'fairytale-tanabata-rich-1',
-    title: 'カササギのはしでさいかい（七夕）',
+    title: 'たなばた：カササギのはしでさいかい（七夕）',
     description: 'カササギの橋で再会する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41029,9 +43417,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T15:44',
     popular: false,
   },
+
   {
     id: 'fairytale-inaba-white-rabbit-simple-1',
-    title: 'わにのせをわたる（因幡の白うさぎ）',
+    title: 'いなばのしろうさぎ：わにのせをわたる（因幡の白うさぎ）',
     description: 'わにの背を渡る線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41044,11 +43433,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T16:31',
-    popular: false,
+    seoDescription: '白いウサギが大きく跳ねて、三匹のワニの背中を渡っていく場面です。ウサギの元気いっぱいな表情と、飛び跳ねるポーズが躍動感を生み出しており、水面の波のしぶきもダイナミックに描かれています。向こう岸で待つ女の子はウサギを応援するように両手を広げ、足元の草も塗ることで物語の世界がぐっと広がります。ワニたちの目玉や歯、ウサギのふさふさした毛並みなど、細部の塗り分けで各キャラクターの個性が引き出せるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-inaba-white-rabbit-easy-1',
-    title: 'けがわをはがされる（因幡の白うさぎ）',
+    title: 'いなばのしろうさぎ：けがわをはがされる（因幡の白うさぎ）',
     description: '毛皮を剥がれて泣く線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41063,9 +43454,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:31',
     popular: false,
   },
+
   {
     id: 'fairytale-inaba-white-rabbit-normal-1',
-    title: 'しおみずでくるしむ（因幡の白うさぎ）',
+    title: 'いなばのしろうさぎ：しおみずでくるしむ（因幡の白うさぎ）',
     description: '塩水で苦しむ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41080,9 +43472,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:31',
     popular: false,
   },
+
   {
     id: 'fairytale-inaba-white-rabbit-rich-1',
-    title: 'おおくにぬしのてあて（因幡の白うさぎ）',
+    title: 'いなばのしろうさぎ：おおくにぬしのてあて（因幡の白うさぎ）',
     description: '大国主の手当のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41097,9 +43490,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T16:31',
     popular: false,
   },
+
   {
     id: 'fairytale-tennyo-hagoromo-simple-1',
-    title: 'まつにかかったはごろも（天女の羽衣）',
+    title: 'てんにょのはごろも：まつにかかったはごろも（天女の羽衣）',
     description: '羽衣を見つける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41112,11 +43506,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:01',
-    popular: false,
+    seoDescription: '浜辺で漁師の少女が、大きな籠を手に持ちながら空を見上げています。彼女の頭上には、花や星の模様が散りばめられた優雅な羽衣がゆるやかに流れており、松の木に引っかかっています。足元には貝殻やヒトデが転がっていて、奥には小舟も静かに浮かんでいます。羽衣の流麗な曲線は、白から淡い色へのグラデーションで塗ると一段と美しくなりそうです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-tennyo-hagoromo-easy-1',
-    title: 'てんにょのおねがい（天女の羽衣）',
+    title: 'てんにょのはごろも：てんにょのおねがい（天女の羽衣）',
     description: '羽衣を返してと哀願する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41131,9 +43527,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:01',
     popular: false,
   },
+
   {
     id: 'fairytale-tennyo-hagoromo-normal-1',
-    title: 'うつくしいまい（天女の羽衣）',
+    title: 'てんにょのはごろも：うつくしいまい（天女の羽衣）',
     description: '天女の舞のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41148,9 +43545,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:01',
     popular: false,
   },
+
   {
     id: 'fairytale-tennyo-hagoromo-rich-1',
-    title: 'そらへかえる（天女の羽衣）',
+    title: 'てんにょのはごろも：そらへかえる（天女の羽衣）',
     description: '天女が空へ帰る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41165,9 +43563,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:01',
     popular: false,
   },
+
   {
     id: 'fairytale-uriko-hime-simple-1',
-    title: 'おおきなうりをひろう（瓜子姫）',
+    title: 'うりこひめ：おおきなうりをひろう（瓜子姫）',
     description: '瓜を拾う線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41180,11 +43579,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:40',
-    popular: false,
+    seoDescription: '大きなうりを挟んで向き合う、おじいさんとおばあさん。二人の驚いた表情と、うりの表面に描かれたたくさんの点々が、この野菜がどれほど大きいのかを物語っています。足元には小石がころころと散らばり、かごや草も配置されていて、田舎の風景らしさが広がっています。うりの丸い形に濃い色を入れれば立体感が出ますし、衣装や背景の小物たちも色とりどりに塗ることで、この驚きの瞬間がより生き生きと蘇ります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-uriko-hime-easy-1',
-    title: 'うりからひめ（瓜子姫）',
+    title: 'うりこひめ：うりからひめ（瓜子姫）',
     description: '瓜から姫のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41199,9 +43600,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:40',
     popular: false,
   },
+
   {
     id: 'fairytale-uriko-hime-normal-1',
-    title: 'アマノジャクのたくらみ（瓜子姫）',
+    title: 'うりこひめ：アマノジャクのたくらみ（瓜子姫）',
     description: 'アマノジャクが騙そうとする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41216,9 +43618,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:40',
     popular: false,
   },
+
   {
     id: 'fairytale-uriko-hime-rich-1',
-    title: 'アマノジャクをこらしめる（瓜子姫）',
+    title: 'うりこひめ：アマノジャクをこらしめる（瓜子姫）',
     description: 'アマノジャクを懲らしめる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41233,9 +43636,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T17:40',
     popular: false,
   },
+
   {
     id: 'fairytale-tanuki-itoguruma-simple-1',
-    title: 'わなにかかったたぬき（分福茶釜）',
+    title: 'たぬきのいとぐるま：わなにかかったたぬき（分福茶釜）',
     description: '罠のたぬきのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41248,11 +43652,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:12',
-    popular: false,
+    seoDescription: 'わなに引っかかって泣いているたぬき、助けに来た友だちたち、そして水車小屋で楽しそうに遊ぶたぬきの姿が四つのシーンで描き分けられています。困った表情と嬉しそうな表情の違い、ぐるぐる巻きの網と回転する水車の輪郭線、ふさふさの尾の毛並みなど、細かい部分を丁寧に塗ると場面の雰囲気がぐんと生きてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-tanuki-itoguruma-easy-1',
-    title: 'おばあさんにばける（分福茶釜）',
+    title: 'たぬきのいとぐるま：おばあさんにばける（分福茶釜）',
     description: 'おばあさんに化ける線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41267,9 +43673,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:12',
     popular: false,
   },
+
   {
     id: 'fairytale-tanuki-itoguruma-normal-1',
-    title: 'いとぐるまをまわす（分福茶釜）',
+    title: 'たぬきのいとぐるま：いとぐるまをまわす（分福茶釜）',
     description: '糸車を回す線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41284,9 +43691,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:12',
     popular: false,
   },
+
   {
     id: 'fairytale-tanuki-itoguruma-rich-1',
-    title: 'たぬきとおちゃ（分福茶釜）',
+    title: 'たぬきのいとぐるま：たぬきとおちゃ（分福茶釜）',
     description: 'たぬきとお茶を飲む線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41301,9 +43709,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:12',
     popular: false,
   },
+
   {
     id: 'fairytale-yuki-onna-simple-1',
-    title: 'ゆきのよるのこや（雪女）',
+    title: 'ゆきおんな：ゆきのよるのこや（雪女）',
     description: '雪の夜の小屋のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41316,11 +43725,13 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:41',
-    popular: false,
+    seoDescription: '雪の夜、小屋の中で火を囲む男の子と、窓の外から雪を降らせながら現れた雪女。男の子の心配そうな表情と、ふわりと浮かぶようなしぐさの雪女の対比が印象的です。火の炎、ころころとした薪、そして窓の外に舞う雪の結晶は、冬の世界を色分けする大切なポイント。温かみのある室内と、冷たさが伝わる屋外の色選びで、二つの世界がどう違うのか表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fairytale-yuki-onna-easy-1',
-    title: 'ゆきおんなあらわる（雪女）',
+    title: 'ゆきおんな：ゆきおんなあらわる（雪女）',
     description: '雪女が現れる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41335,9 +43746,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:41',
     popular: false,
   },
+
   {
     id: 'fairytale-yuki-onna-normal-1',
-    title: 'おゆきとしあわせなくらし（雪女）',
+    title: 'ゆきおんな：おゆきとしあわせなくらし（雪女）',
     description: 'お雪と幸せに暮らす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41352,9 +43764,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:41',
     popular: false,
   },
+
   {
     id: 'fairytale-yuki-onna-rich-1',
-    title: 'ゆきおんなのしょうたい（雪女）',
+    title: 'ゆきおんな：ゆきおんなのしょうたい（雪女）',
     description: '雪女が消える線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41369,9 +43782,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T18:41',
     popular: false,
   },
+
   {
     id: 'fairytale-sannen-netaro-simple-1',
-    title: 'さんねんねつづける（三年寝太郎）',
+    title: 'さんねんねたろう：さんねんねつづける（三年寝太郎）',
     description: '三年寝続ける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41386,9 +43800,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:11',
     popular: false,
   },
+
   {
     id: 'fairytale-sannen-netaro-easy-1',
-    title: 'とつぜんめざめる（三年寝太郎）',
+    title: 'さんねんねたろう：とつぜんめざめる（三年寝太郎）',
     description: '目覚めて立ち上がる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41403,9 +43818,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:11',
     popular: false,
   },
+
   {
     id: 'fairytale-sannen-netaro-normal-1',
-    title: 'おおいわをうごかす（三年寝太郎）',
+    title: 'さんねんねたろう：おおいわをうごかす（三年寝太郎）',
     description: '大岩を動かす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41420,9 +43836,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:11',
     popular: false,
   },
+
   {
     id: 'fairytale-sannen-netaro-rich-1',
-    title: 'むらびとにかんしゃされる（三年寝太郎）',
+    title: 'さんねんねたろう：むらびとにかんしゃされる（三年寝太郎）',
     description: '村人に讃えられる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41437,9 +43854,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:11',
     popular: false,
   },
+
   {
     id: 'fairytale-umisachi-yamasachi-simple-1',
-    title: 'つりばりをなくす（海幸彦と山幸彦）',
+    title: 'うみさちやまさち：つりばりをなくす（海幸彦と山幸彦）',
     description: '釣り針をなくす線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41454,9 +43872,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:42',
     popular: false,
   },
+
   {
     id: 'fairytale-umisachi-yamasachi-easy-1',
-    title: 'とよたまひめとであう（海幸彦と山幸彦）',
+    title: 'うみさちやまさち：とよたまひめとであう（海幸彦と山幸彦）',
     description: '豊玉姫と出会う線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41471,9 +43890,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:42',
     popular: false,
   },
+
   {
     id: 'fairytale-umisachi-yamasachi-normal-1',
-    title: 'うみのかみのめぐみ（海幸彦と山幸彦）',
+    title: 'うみさちやまさち：うみのかみのめぐみ（海幸彦と山幸彦）',
     description: '海の神の恵みのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41488,9 +43908,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:42',
     popular: false,
   },
+
   {
     id: 'fairytale-umisachi-yamasachi-rich-1',
-    title: 'あにとわかい（海幸彦と山幸彦）',
+    title: 'うみさちやまさち：あにとわかい（海幸彦と山幸彦）',
     description: '兄と和解する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41505,9 +43926,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T19:42',
     popular: false,
   },
+
   {
     id: 'fairytale-tengu-kakuremino-simple-1',
-    title: 'てんぐとかくれみの（天狗のかくれみの）',
+    title: 'てんぐのかくれみの：てんぐとかくれみの（天狗のかくれみの）',
     description: '天狗とかくれみののぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -41522,9 +43944,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T20:13',
     popular: false,
   },
+
   {
     id: 'fairytale-tengu-kakuremino-easy-1',
-    title: 'たけづつでだます（天狗のかくれみの）',
+    title: 'てんぐのかくれみの：たけづつでだます（天狗のかくれみの）',
     description: '竹筒で天狗を騙す線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -41539,9 +43962,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T20:13',
     popular: false,
   },
+
   {
     id: 'fairytale-tengu-kakuremino-normal-1',
-    title: 'とうめいでいたずら（天狗のかくれみの）',
+    title: 'てんぐのかくれみの：とうめいでいたずら（天狗のかくれみの）',
     description: '透明でいたずらする線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -41556,9 +43980,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T20:13',
     popular: false,
   },
+
   {
     id: 'fairytale-tengu-kakuremino-rich-1',
-    title: 'てんぐとなかなおり（天狗のかくれみの）',
+    title: 'てんぐのかくれみの：てんぐとなかなおり（天狗のかくれみの）',
     description: '天狗と仲直りする線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -41573,6 +43998,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T20:13',
     popular: false,
   },
+
   {
     id: 'cake-simple-1',
     title: 'ショートケーキ',
@@ -41588,8 +44014,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
-    popular: false,
+    seoDescription: 'ふんわりとした生クリームに包まれたショートケーキが、今にも食べたくなるほど贅沢に描かれています。上には3つのいちごがたっぷりとのっていて、ツヤのある赤色を塗るのが楽しみ。中段のいちごは半分に切られた様子が見えるので、色の塗り分けを工夫できます。ケーキ全体に点々と施された細かいしぶきのような模様は、おいしそうなテクスチャーを出すのに欠かせない要素。クリームの波状の流れと、ふっくら立体的な土台の層を塗り分けると、本物らしく仕上がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cake-easy-1',
     title: 'ショートケーキをきろう',
@@ -41605,8 +44033,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
-    popular: false,
+    seoDescription: '左手のまあるいショートケーキには、ふんわりした生クリームの上にいくつもの赤いいちごが乗っていて、右手には同じいちごでトッピングされたケーキがスライスされた様子が見えます。層状に重なったスポンジとクリームを塗り分けることで、ふんわりとした食感が表現できますし、細かいドットや筋で描かれたいちごの粒々に色えんぴつを寄せると、本物のいちごにぐっと近づきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cake-normal-1',
     title: 'おかしのテーブル',
@@ -41624,6 +44054,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T21:48',
     popular: false,
   },
+
   {
     id: 'cake-rich-1',
     title: 'たんじょうびケーキ',
@@ -41641,6 +44072,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T21:48',
     popular: false,
   },
+
   {
     id: 'donut-simple-1',
     title: 'ドーナツ',
@@ -41656,8 +44088,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
-    popular: false,
+    seoDescription: '中央の穴を囲むようにたっぷりした生地が広がるドーナツ。表面には小さな粒々がびっしり散りばめられ、下側には波状の装飾で、まるで本物のドーナツにコーティングされたしゅがりが見えます。粒を一つひとつ丁寧に塗っていくと、ドーナツがますます美味しそうに見えてくる仕掛けになっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'donut-easy-1',
     title: 'いろんなドーナツ',
@@ -41673,8 +44107,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
-    popular: false,
+    seoDescription: '3つのドーナツが仲良く並んでいます。左はショートケーキのような短い線のトッピング、真ん中はチョコレートスプレッドのこまかい粒々、右は円いチョコチップと波のような模様で、それぞれ全く違う表情をしています。波打ったふちを塗るのは少しむずかしいですが、トッピングの部分では好きな色を思い思いに選んで塗り分けられるので、3つ並んだドーナツがさらにカラフルに変身します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'donut-normal-1',
     title: 'ドーナツのはこ',
@@ -41692,6 +44128,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T22:18',
     popular: false,
   },
+
   {
     id: 'donut-rich-1',
     title: 'ドーナツやさん',
@@ -41709,6 +44146,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T22:18',
     popular: false,
   },
+
   {
     id: 'pudding-simple-1',
     title: 'プリン',
@@ -41724,8 +44162,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
-    popular: false,
+    seoDescription: 'つやつやのプリンが器にのった、まさにデザート屋さんのショーケースから出てきたような一皿です。プリンの表面には光が当たった様子を表す曲線があり、茶色で塗ると本物みたいに見えます。器の底には細かい筋が何本も走っていて、陰影をつけるのが楽しい場所。かかった布のようなカラメルソースはゆらゆらとした波線なので、黒や茶色で濃淡をつけてみるのも良いでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pudding-easy-1',
     title: 'プリンをたべよう',
@@ -41741,8 +44181,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
-    popular: false,
+    seoDescription: 'つるんとした表面に、中身がとろりと流れ落ちるプリンの断面図。スプーンは手前でじっと待機していて、今からすくい取る瞬間が目に浮かびます。プリンの上にはカラメルソースがかかっている様子が波線で表現されていて、茶色と白のコントラストで塗り分ける楽しさが詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'pudding-normal-1',
     title: 'デザートセット',
@@ -41760,6 +44202,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T22:48',
     popular: false,
   },
+
   {
     id: 'pudding-rich-1',
     title: 'おおきなプリン',
@@ -41777,6 +44220,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T22:48',
     popular: false,
   },
+
   {
     id: 'cookie-simple-1',
     title: 'クッキー',
@@ -41792,8 +44236,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
-    popular: false,
+    seoDescription: 'ハート形をした焼きたてのクッキーが、ぷっくりとした波打ちエッジの皿の上に乗っています。クッキーの表面には小さなくぼみがたくさん並んでいて、バターの焦げ目やチョコチップを置きたくなり、外側の皿にも大きさの違う丸や線の模様が散らばっているので、デコレーションの色分けの工夫が見える塗り方ができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cookie-easy-1',
     title: 'いろんなクッキー',
@@ -41809,8 +44255,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
-    popular: false,
+    seoDescription: '星型、ハート型、花型、円型など、形も模様も全く異なる5つのクッキーが並んでいます。星のまわりには小さな粒々が散らばり、ハート型には波線の飾りが、花型には中心に円を持つ花びらが、円形には斜めの線が引かれ、もう一つのハート型には格子模様が詳しく描かれています。塗り始めるときに、どのクッキーからどんな色にしようか迷ってしまうほど、個性的な装飾ばかりが目に入ってきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cookie-normal-1',
     title: 'クッキーをつくろう',
@@ -41828,6 +44276,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T23:19',
     popular: false,
   },
+
   {
     id: 'cookie-rich-1',
     title: 'みんなでクッキング',
@@ -41845,6 +44294,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T23:19',
     popular: false,
   },
+
   {
     id: 'cupcake-simple-1',
     title: 'カップケーキ',
@@ -41860,8 +44310,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
-    popular: false,
+    seoDescription: 'ふわふわのクリームが三段に積み重なったカップケーキ。先端のクリームにはきらめく月のようなカーブが描かれ、全体に散りばめられた5つの小さな星が、夜空のようなおとぎ話の世界を表現しています。ひだひだのカップ部分は規則正しい線で彩色の練習に丁度良く、クリームの層ごとに色を変えたり、星を輝く色で塗ったりする楽しさが詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cupcake-easy-1',
     title: 'いろんなカップケーキ',
@@ -41877,8 +44329,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
-    popular: false,
+    seoDescription: '3つのカップケーキが並んでいて、それぞれ異なる飾りが乗っています。左から順に、いちごとお星さまが飾られたもの、お菓子の家みたいなクッキーと星が輝くデコレーション、そしてリボンと大きな星が特徴のケーキです。クリーム部分の波模様や、ふりかけのような細かいドット、そして各段のフロスティングの厚みの描き分けが、どの色を選ぶかで大きく印象が変わります。カップ部分のひだひだを丁寧に塗れば、より立体的で本物らしいカップケーキに仕上がるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cupcake-normal-1',
     title: 'カップケーキをかざろう',
@@ -41896,6 +44350,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T23:51',
     popular: false,
   },
+
   {
     id: 'cupcake-rich-1',
     title: 'たんじょうびパーティー',
@@ -41913,6 +44368,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-24T23:51',
     popular: false,
   },
+
   {
     id: 'macaron-simple-1',
     title: 'マカロン',
@@ -41928,8 +44384,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
-    popular: false,
+    seoDescription: 'ふっくらと膨らんだ上下の層が特徴のマカロン。2枚の貝殻のような形をした生地に挟まれた真ん中のクリームの部分は、波打つ線でていねいに描かれています。全体のやさしい曲線と、生地の細かいギザギザの質感を塗り分けるのが楽しく、ピンク、黄色、紫など好きな色でこのお菓子を自分らしくデコレーションできます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'macaron-easy-1',
     title: 'いろんなマカロン',
@@ -41945,8 +44403,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
-    popular: false,
+    seoDescription: '6つのマカロンが並んだ様子を塗る絵です。つやつやした丸いクッキーの天板と、フリルのようにヒダヒダした周りの部分がはっきり描き分けられているので、違う色で塗り分けたくなります。ところどころ小さな丸や曲線が入っているのは、お菓子の光の反射を表現したディテール。ピンク、黄色、紫など好きな色で彩色すれば、本物そっくりの色合いのマカロンが完成します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'macaron-normal-1',
     title: 'アフタヌーンティー',
@@ -41964,6 +44424,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T00:23',
     popular: false,
   },
+
   {
     id: 'macaron-rich-1',
     title: 'マカロンやさん',
@@ -41981,6 +44442,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T00:23',
     popular: false,
   },
+
   {
     id: 'waffle-simple-1',
     title: 'ワッフル',
@@ -41996,8 +44458,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
-    popular: false,
+    seoDescription: '正方形のマス目にぎっしり詰まったワッフルの中央に、ぽっかり大きなマスが浮き上がっています。その周りを囲む小さなマスたちは波線でつながっていて、まるでワッフルが息をしているみたい。色鉛筆で一マスずつ丁寧に塗っていくと、この中央の大きな四角がどんどん目立ってくるでしょう。小さなマスを濃い色で埋めれば、ワッフルの焼き目がより立体的に見えます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'waffle-easy-1',
     title: 'ワッフルのトッピング',
@@ -42013,8 +44477,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
-    popular: false,
+    seoDescription: 'ふんわりと焼きあがったワッフルの上には、とろりと流れ落ちるシロップと、つやつやの大きなイチゴがトッピングされています。格子模様のくぼみがたくさんあるワッフルは、色を塗り分けると立体的に見えてきます。イチゴのつぶつぶや、葉っぱの細かい部分を丁寧に塗ることで、本当に食べたくなるようなおいしそうなワッフルに仕上がります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'waffle-normal-1',
     title: 'おやつプレート',
@@ -42032,6 +44498,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T00:55',
     popular: false,
   },
+
   {
     id: 'waffle-rich-1',
     title: 'ワッフルパーティー',
@@ -42049,6 +44516,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T00:55',
     popular: false,
   },
+
   {
     id: 'crepe-simple-1',
     title: 'クレープ',
@@ -42064,8 +44532,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
-    popular: false,
+    seoDescription: 'クレープの筒状の生地をしっかり握った手に包まれた、てっぺんからこんもりと盛り上がったクリームやフルーツがのぞいています。いちご、バナナ、キウイのような果物がいくつも積み重なり、どれから塗ろうかな？と目移りしてしまいそう。生地の部分の淡い色合いと、中身の果物のあざやかな色合いとで塗り分ける楽しさが味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'crepe-easy-1',
     title: 'いろんなクレープ',
@@ -42081,8 +44551,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
-    popular: false,
+    seoDescription: '三つのクレープが並んでいて、左からレタスをたっぷり詰めたもの、マッシュルームとポテト、そしてエビフライが飛び出すようにのっているクレープです。くるくると巻かれた紙から中身がこぼれ落ちそうなくらいボリュームたっぷりで、それぞれ違う具材の形をていねいに塗り分けるのが楽しみになります。葉野菜のしゃきしゃきした質感や、まるい野菜の立体感、揚げ物のサクサク感を、色選びで表現できる工夫が詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'crepe-normal-1',
     title: 'クレープやさん',
@@ -42100,6 +44572,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T01:27',
     popular: false,
   },
+
   {
     id: 'crepe-rich-1',
     title: 'クレープをかおう',
@@ -42117,6 +44590,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T01:27',
     popular: false,
   },
+
   {
     id: 'parfait-simple-1',
     title: 'パフェ',
@@ -42132,8 +44606,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
-    popular: false,
+    seoDescription: 'グラスの中に層状に詰まったフルーツとクリーム、そして頂上にはいちご、バナナ、チェリーが華やかに盛られたパフェです。ストローが斜めに挿してあり、底から見える小さな粒々のグラノーラまで、色を塗る楽しみがたくさん詰まっています。白いクリームの波線模様やアイスの山型、様々な大きさのフルーツを塗り分けることで、本物のおいしそうなパフェに近づけます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'parfait-easy-1',
     title: 'いろんなパフェ',
@@ -42149,8 +44625,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
-    popular: false,
+    seoDescription: '三つのグラスに積み重なったアイスクリーム、フルーツ、アイス。左のパフェはストロー付きの苺とミント、中央はクッキーとチョコボール、右はさくらんぼとぶどうが顔を出しており、それぞれ違う組み合わせが詰まっています。グラスの中の層ごとに色を変えたり、トッピングのアイスクリームにはピンク、白、茶色など好きな色を選べるようになっており、同じパフェでも自分だけの配色を作る楽しみがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'parfait-normal-1',
     title: 'カフェのデザート',
@@ -42168,6 +44646,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T01:58',
     popular: false,
   },
+
   {
     id: 'parfait-rich-1',
     title: 'カフェでパフェ',
@@ -42185,6 +44664,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T01:58',
     popular: false,
   },
+
   {
     id: 'soft-cream-simple-1',
     title: 'ソフトクリーム',
@@ -42200,8 +44680,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
-    popular: false,
+    seoDescription: 'コーンの格子模様をていねいに塗ると、立体感が生まれるソフトクリーム。てっぺんのくるくるとした渦巻き状の生クリームは、薄い線で何重にも描かれているため、色を重ねたり濃淡をつけたりすることで、ふんわりとした質感を表現できます。コーン部分の網目模様と、その中の白い空間のコントラストを意識しながら塗っていくと、凸凹した焼き色が自然に浮かび上がってきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'soft-cream-easy-1',
     title: 'いろんなソフトクリーム',
@@ -42217,8 +44699,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
-    popular: false,
+    seoDescription: '三つのソフトクリームが並んでいる場面で、コーンの網目模様、ふんわり盛られた生クリーム、てっぺんのクルンとした毛先のような形が、それぞれ違う塗り方を誘います。同じアイスクリームでも、左から右へ色を変えてみたり、コーンには濃い茶色、生クリームは白と薄い色で立体感を出したり、思い思いの配色で三姉妹のように仕上げられます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'soft-cream-normal-1',
     title: 'ソフトクリームをたべよう',
@@ -42236,6 +44720,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T02:29',
     popular: false,
   },
+
   {
     id: 'soft-cream-rich-1',
     title: 'ソフトクリームやさん',
@@ -42253,6 +44738,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T02:29',
     popular: false,
   },
+
   {
     id: 'chocolate-simple-1',
     title: 'チョコレート',
@@ -42268,8 +44754,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T03:40',
-    popular: false,
+    seoDescription: 'ハート型のチョコレートボックスと、クロワッサンやシナモンロールといった焼き菓子たちが、大きなグリッドの周りに並んでいます。お花と葉っぱの飾りが左右から顔を出していて、甘いデザートの世界を作り出しています。グリッドの16マスは色塗りの自由度が高く、チョコレート色で統一したり、マスごとに違う模様を描き足したりと、工夫の見せ場になります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'chocolate-easy-1',
     title: 'いろんなチョコ',
@@ -42287,6 +44775,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T03:40',
     popular: false,
   },
+
   {
     id: 'chocolate-normal-1',
     title: 'バレンタインのチョコ',
@@ -42304,6 +44793,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T03:40',
     popular: false,
   },
+
   {
     id: 'dorayaki-simple-1',
     title: 'どら焼き',
@@ -42319,8 +44809,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:13',
-    popular: false,
+    seoDescription: 'ふっくらと膨らんだ二枚の焼き皮に挟まれたどら焼き。上の皮には小さな穴がたくさん開いていて、焼き目の濃淡を表現するのが楽しみなポイント。中身の層には波のような模様が描かれていて、あんこのしっとりした感じを塗り分けることで、本物そっくりのどら焼きが完成します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'dorayaki-easy-1',
     title: 'どら焼きのなか',
@@ -42338,6 +44830,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:13',
     popular: false,
   },
+
   {
     id: 'dorayaki-normal-1',
     title: 'わがしのなかま',
@@ -42355,6 +44848,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:13',
     popular: false,
   },
+
   {
     id: 'dorayaki-rich-1',
     title: 'わがしパーティー',
@@ -42372,6 +44866,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:13',
     popular: false,
   },
+
   {
     id: 'chocolate-rich-1',
     title: 'チョコをつくろう',
@@ -42389,6 +44884,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:20',
     popular: false,
   },
+
   {
     id: 'candy-simple-1',
     title: 'あめ',
@@ -42404,8 +44900,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:49',
-    popular: false,
+    seoDescription: '棒の先端にくるくるとらせん状に巻きついた飴。外側の円形の枠から中心へ向かって渦巻く模様は、舐めるたびに色が変わっていく様子をイメージさせます。棒を握る手の部分はシンプルな二本線で、子どもが実際に持つ感覚を思い出しやすくなっています。飴の表面に描かれた小さな楕円は光の反射を表現していて、ここに色を重ねるとつやつやした飴らしさが引き出せるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'candy-easy-1',
     title: 'いろんなあめ',
@@ -42423,6 +44921,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:49',
     popular: false,
   },
+
   {
     id: 'candy-normal-1',
     title: 'あめのびん',
@@ -42440,6 +44939,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:49',
     popular: false,
   },
+
   {
     id: 'candy-rich-1',
     title: 'ハロウィンのあめ',
@@ -42457,6 +44957,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T10:49',
     popular: false,
   },
+
   {
     id: 'gummy-simple-1',
     title: 'グミ',
@@ -42472,8 +44973,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:21',
-    popular: false,
+    seoDescription: 'くりんとした目と、ころんとした体が特徴のグミベア。頭と手足の四つの丸い部分、そして真ん中の大きなお腹の部分と、ブロックのように組み立てられた形をしています。小さな口元には、ほんのり笑ったような表情が見えます。赤や黄色、オレンジなど、カラフルなグミの色を塗るとき、それぞれのパーツをどんな色に分けるか考えながら塗る楽しみがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'gummy-easy-1',
     title: 'いろんなグミ',
@@ -42491,6 +44994,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:21',
     popular: false,
   },
+
   {
     id: 'gummy-normal-1',
     title: 'おかしのぶくろ',
@@ -42508,6 +45012,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:21',
     popular: false,
   },
+
   {
     id: 'gummy-rich-1',
     title: 'グミやさん',
@@ -42525,6 +45030,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:21',
     popular: false,
   },
+
   {
     id: 'taiyaki-simple-1',
     title: 'たい焼き',
@@ -42540,8 +45046,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:50',
-    popular: false,
+    seoDescription: '大きく丸い体に細かい鱗がぎっしり並んだたい焼き。頭の上にはとげとげの背びれ、口のあたりには小さなひれがついていて、尾びれはぱたぱたと動きそうな形です。鱗の一つひとつは半円の模様で繰り返され、色を塗るたびに手が進む楽しさがあります。背中と腹、ひれの部分で色を分けると、ぐんと立体的に見えてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'taiyaki-easy-1',
     title: 'たい焼きならんで',
@@ -42559,6 +45067,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:50',
     popular: false,
   },
+
   {
     id: 'taiyaki-normal-1',
     title: 'たい焼きのやたい',
@@ -42576,6 +45085,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:50',
     popular: false,
   },
+
   {
     id: 'taiyaki-rich-1',
     title: 'おまつりのおかし',
@@ -42593,6 +45103,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T11:50',
     popular: false,
   },
+
   {
     id: 'daifuku-simple-1',
     title: 'だいふく',
@@ -42608,8 +45119,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T12:28',
-    popular: false,
+    seoDescription: 'もこもこした大福が、白くて丸いお皿の上にちょこんと乗っています。上には緑色の葉がぴょんと立ち上がり、表面には小さな粒つぶがいくつもあるので、赤やピンク色で丁寧に塗り分けるのも面白そう。お皿の広い白い部分は、影を付けたり模様を足したり、色遊びの工夫がしやすい空間になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'daifuku-easy-1',
     title: 'いろんなおもち',
@@ -42627,6 +45140,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T12:28',
     popular: false,
   },
+
   {
     id: 'daifuku-normal-1',
     title: 'もちつき',
@@ -42644,6 +45158,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T12:28',
     popular: false,
   },
+
   {
     id: 'daifuku-rich-1',
     title: 'おしょうがつのおもち',
@@ -42661,6 +45176,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T12:28',
     popular: false,
   },
+
   {
     id: 'warabi-mochi-simple-1',
     title: 'わらびもち',
@@ -42676,8 +45192,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T13:00',
-    popular: false,
+    seoDescription: '串に刺さった三つのわらびもちが、ぷるぷるの揺れるような曲線で表現されています。各段に描かれた豆の粒々は、きな粉がまぶされた質感を感じさせ、色を塗り分けるときの目印になります。串の部分は細い直線なので、こげ茶色や濃い色でしっかり塗ると、ぷにぷにのもち部分との対比がはっきり出てくるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'warabi-mochi-easy-1',
     title: 'わらびもちのおさら',
@@ -42695,6 +45213,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T13:00',
     popular: false,
   },
+
   {
     id: 'warabi-mochi-normal-1',
     title: 'なつのわがし',
@@ -42712,6 +45231,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T13:00',
     popular: false,
   },
+
   {
     id: 'warabi-mochi-rich-1',
     title: 'なつまつりのおかし',
@@ -42729,6 +45249,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T13:00',
     popular: false,
   },
+
   {
     id: 'mitarashi-simple-1',
     title: 'みたらしだんご',
@@ -42744,8 +45265,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T14:17',
-    popular: false,
+    seoDescription: '串に刺さった四つのだんごが、あんをたっぷりかけた様子をそのままに積み重なっています。上から順に垂れ流れるあんの形がそれぞれ異なるので、塗るときにどの部分を濃い茶色にするか、どこを白く残すかを考えながら進めることになります。持ち手の木製の串はシンプルな一本線で、だんごの丸みとの対比が気持ちよく見えます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mitarashi-easy-1',
     title: 'いろんなだんご',
@@ -42763,6 +45286,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T14:17',
     popular: false,
   },
+
   {
     id: 'mitarashi-normal-1',
     title: 'おはなみだんご',
@@ -42780,6 +45304,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T14:17',
     popular: false,
   },
+
   {
     id: 'candy-apple-simple-1',
     title: 'りんごあめ',
@@ -42795,8 +45320,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:21',
-    popular: false,
+    seoDescription: 'りんご飴の艶やかな表面には、小さな水玉模様がいくつも描かれており、光が当たっているようすが感じられます。上部には飴をコーティングしている透き通った部分があり、その下に見える赤いりんごの身を工夫して塗り分けると、立体感が生まれます。下から支える棒は長く伸びていて、まるで誰かが両手で握ろうとしているような仕上がりになる予感があり、秋祭りで見かけるあの懐かしい存在が目の前で色づいていくのを体験できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'candy-apple-easy-1',
     title: 'くだものあめ',
@@ -42814,6 +45341,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:21',
     popular: false,
   },
+
   {
     id: 'candy-apple-normal-1',
     title: 'りんごあめのやたい',
@@ -42831,6 +45359,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:21',
     popular: false,
   },
+
   {
     id: 'candy-apple-rich-1',
     title: 'なつまつりとりんごあめ',
@@ -42848,6 +45377,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:21',
     popular: false,
   },
+
   {
     id: 'cotton-candy-simple-1',
     title: 'わたあめ',
@@ -42863,8 +45393,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:49',
-    popular: false,
+    seoDescription: 'ふわふわに巻き上がったわたあめを両手でしっかり握る子どもの姿。くるくると螺旋状に積み重なった甘い見た目は、ピンク色やブルー、黄色など好きな色でグラデーションをつけると、より一層ふんわりとした食感が伝わってきます。下から上へ向かって広がる形は、塗るときに色の濃淡をつけるだけで、綿菓子特有のボリューム感が生まれる工夫になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cotton-candy-easy-1',
     title: 'いろんなわたあめ',
@@ -42882,6 +45414,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:49',
     popular: false,
   },
+
   {
     id: 'cotton-candy-normal-1',
     title: 'わたあめのやたい',
@@ -42899,6 +45432,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:49',
     popular: false,
   },
+
   {
     id: 'cotton-candy-rich-1',
     title: 'おまつりでわたあめ',
@@ -42916,6 +45450,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T18:49',
     popular: false,
   },
+
   {
     id: 'ramune-simple-1',
     title: 'ラムネのびん',
@@ -42933,6 +45468,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T19:19',
     popular: false,
   },
+
   {
     id: 'ramune-easy-1',
     title: 'ラムネとビー玉',
@@ -42950,6 +45486,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T19:19',
     popular: false,
   },
+
   {
     id: 'ramune-normal-1',
     title: 'なつのおかし',
@@ -42967,6 +45504,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T19:19',
     popular: false,
   },
+
   {
     id: 'ramune-rich-1',
     title: 'えんにちでラムネ',
@@ -42984,6 +45522,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-25T19:19',
     popular: false,
   },
+
   {
     id: 'mitarashi-rich-1',
     title: 'えんにちのだんご',
@@ -43001,6 +45540,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T00:04',
     popular: false,
   },
+
   {
     id: 'bear-easy-2',
     title: 'かわいいくま',
@@ -43018,6 +45558,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T00:31',
     popular: false,
   },
+
   {
     id: 'rabbit-easy-2',
     title: 'かわいいうさぎ',
@@ -43035,6 +45576,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T00:39',
     popular: false,
   },
+
   {
     id: 'cat-easy-2',
     title: 'かわいいねこ',
@@ -43052,6 +45594,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T00:48',
     popular: false,
   },
+
   {
     id: 'dog-easy-2',
     title: 'かわいいいぬ',
@@ -43069,6 +45612,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T00:56',
     popular: false,
   },
+
   {
     id: 'panda-easy-2',
     title: 'かわいいパンダ',
@@ -43086,6 +45630,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:04',
     popular: false,
   },
+
   {
     id: 'elephant-easy-2',
     title: 'かわいいぞう',
@@ -43103,6 +45648,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:12',
     popular: false,
   },
+
   {
     id: 'giraffe-easy-2',
     title: 'かわいいきりん',
@@ -43120,6 +45666,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:21',
     popular: false,
   },
+
   {
     id: 'lion-easy-2',
     title: 'かわいいライオン',
@@ -43137,6 +45684,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:29',
     popular: false,
   },
+
   {
     id: 'penguin-easy-2',
     title: 'かわいいペンギン',
@@ -43154,6 +45702,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:37',
     popular: false,
   },
+
   {
     id: 'duck-easy-2',
     title: 'かわいいあひる',
@@ -43171,6 +45720,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:46',
     popular: false,
   },
+
   {
     id: 'pig-easy-2',
     title: 'かわいいぶた',
@@ -43188,6 +45738,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T01:55',
     popular: false,
   },
+
   {
     id: 'cow-easy-2',
     title: 'かわいいうし',
@@ -43205,6 +45756,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:03',
     popular: false,
   },
+
   {
     id: 'horse-easy-2',
     title: 'かわいいうま',
@@ -43222,6 +45774,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:12',
     popular: false,
   },
+
   {
     id: 'sheep-easy-2',
     title: 'かわいいひつじ',
@@ -43239,6 +45792,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:20',
     popular: false,
   },
+
   {
     id: 'frog-easy-2',
     title: 'かわいいかえる',
@@ -43256,6 +45810,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:28',
     popular: false,
   },
+
   {
     id: 'chick-easy-2',
     title: 'かわいいひよこ',
@@ -43273,6 +45828,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:36',
     popular: false,
   },
+
   {
     id: 'chicken-easy-2',
     title: 'かわいいにわとり',
@@ -43290,6 +45846,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:43',
     popular: false,
   },
+
   {
     id: 'fox-easy-2',
     title: 'かわいいきつね',
@@ -43307,6 +45864,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T02:52',
     popular: false,
   },
+
   {
     id: 'monkey-easy-2',
     title: 'かわいいさる',
@@ -43324,6 +45882,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:00',
     popular: false,
   },
+
   {
     id: 'koala-easy-2',
     title: 'かわいいコアラ',
@@ -43341,6 +45900,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:08',
     popular: false,
   },
+
   {
     id: 'kangaroo-easy-2',
     title: 'かわいいカンガルー',
@@ -43358,6 +45918,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:17',
     popular: false,
   },
+
   {
     id: 'hippo-easy-2',
     title: 'かわいいカバ',
@@ -43375,6 +45936,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:24',
     popular: false,
   },
+
   {
     id: 'polar-bear-easy-2',
     title: 'かわいいシロクマ',
@@ -43392,6 +45954,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:32',
     popular: false,
   },
+
   {
     id: 'tiger-easy-2',
     title: 'かわいいとら',
@@ -43409,6 +45972,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:41',
     popular: false,
   },
+
   {
     id: 'zebra-easy-2',
     title: 'かわいいしまうま',
@@ -43426,6 +45990,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:50',
     popular: false,
   },
+
   {
     id: 'deer-easy-2',
     title: 'かわいいしか',
@@ -43443,6 +46008,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T03:57',
     popular: false,
   },
+
   {
     id: 'reindeer-easy-2',
     title: 'かわいいトナカイ',
@@ -43460,6 +46026,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:05',
     popular: false,
   },
+
   {
     id: 'wolf-easy-2',
     title: 'かわいいおおかみ',
@@ -43477,6 +46044,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:14',
     popular: false,
   },
+
   {
     id: 'gorilla-easy-2',
     title: 'かわいいゴリラ',
@@ -43494,6 +46062,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:23',
     popular: false,
   },
+
   {
     id: 'camel-easy-2',
     title: 'かわいいラクダ',
@@ -43511,6 +46080,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:31',
     popular: false,
   },
+
   {
     id: 'turtle-easy-2',
     title: 'かわいいかめ',
@@ -43528,6 +46098,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:40',
     popular: false,
   },
+
   {
     id: 'crocodile-easy-2',
     title: 'かわいいわに',
@@ -43545,6 +46116,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:48',
     popular: false,
   },
+
   {
     id: 'whale-easy-2',
     title: 'かわいいくじら',
@@ -43562,6 +46134,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T04:56',
     popular: false,
   },
+
   {
     id: 'flamingo-easy-2',
     title: 'かわいいフラミンゴ',
@@ -43579,6 +46152,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:05',
     popular: false,
   },
+
   {
     id: 'owl-easy-2',
     title: 'かわいいフクロウ',
@@ -43596,6 +46170,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:13',
     popular: false,
   },
+
   {
     id: 'crane-easy-2',
     title: 'かわいいつる',
@@ -43613,6 +46188,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:21',
     popular: false,
   },
+
   {
     id: 'stork-easy-2',
     title: 'かわいいこうのとり',
@@ -43630,6 +46206,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:30',
     popular: false,
   },
+
   {
     id: 'peacock-easy-2',
     title: 'かわいいクジャク',
@@ -43647,6 +46224,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:38',
     popular: false,
   },
+
   {
     id: 'pelican-easy-2',
     title: 'かわいいペリカン',
@@ -43664,6 +46242,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:46',
     popular: false,
   },
+
   {
     id: 'ostrich-easy-2',
     title: 'かわいいダチョウ',
@@ -43681,6 +46260,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T05:56',
     popular: false,
   },
+
   {
     id: 'bird-easy-2',
     title: 'かわいいことり',
@@ -43698,6 +46278,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:03',
     popular: false,
   },
+
   {
     id: 'hamster-easy-2',
     title: 'かわいいハムスター',
@@ -43715,6 +46296,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:11',
     popular: false,
   },
+
   {
     id: 'guinea-pig-easy-2',
     title: 'かわいいモルモット',
@@ -43732,6 +46314,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:20',
     popular: false,
   },
+
   {
     id: 'hedgehog-easy-2',
     title: 'かわいいハリネズミ',
@@ -43749,6 +46332,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:29',
     popular: false,
   },
+
   {
     id: 'squirrel-easy-2',
     title: 'かわいいりす',
@@ -43766,6 +46350,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:38',
     popular: false,
   },
+
   {
     id: 'raccoon-easy-2',
     title: 'かわいいアライグマ',
@@ -43783,6 +46368,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:46',
     popular: false,
   },
+
   {
     id: 'capybara-easy-2',
     title: 'かわいいカピバラ',
@@ -43800,6 +46386,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T06:55',
     popular: false,
   },
+
   {
     id: 'meerkat-easy-2',
     title: 'かわいいミーアキャット',
@@ -43817,6 +46404,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:04',
     popular: false,
   },
+
   {
     id: 'prairie-dog-easy-2',
     title: 'かわいいプレーリードッグ',
@@ -43834,6 +46422,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:13',
     popular: false,
   },
+
   {
     id: 'fennec-easy-2',
     title: 'かわいいフェネック',
@@ -43851,6 +46440,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:22',
     popular: false,
   },
+
   {
     id: 'lemur-easy-2',
     title: 'かわいいキツネザル',
@@ -43868,6 +46458,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:31',
     popular: false,
   },
+
   {
     id: 'orangutan-easy-2',
     title: 'かわいいオランウータン',
@@ -43885,6 +46476,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:40',
     popular: false,
   },
+
   {
     id: 'cheetah-easy-2',
     title: 'かわいいチーター',
@@ -43902,6 +46494,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:49',
     popular: false,
   },
+
   {
     id: 'leopard-easy-2',
     title: 'かわいいヒョウ',
@@ -43919,6 +46512,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T07:58',
     popular: false,
   },
+
   {
     id: 'chameleon-easy-2',
     title: 'かわいいカメレオン',
@@ -43936,6 +46530,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:06',
     popular: false,
   },
+
   {
     id: 'boar-easy-2',
     title: 'かわいいいのしし',
@@ -43953,6 +46548,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:14',
     popular: false,
   },
+
   {
     id: 'goat-easy-2',
     title: 'かわいいやぎ',
@@ -43970,6 +46566,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:23',
     popular: false,
   },
+
   {
     id: 'donkey-easy-2',
     title: 'かわいいロバ',
@@ -43987,6 +46584,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:32',
     popular: false,
   },
+
   {
     id: 'alpaca-easy-2',
     title: 'かわいいアルパカ',
@@ -44004,6 +46602,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:40',
     popular: false,
   },
+
   {
     id: 'mini-pig-easy-2',
     title: 'かわいいミニブタ',
@@ -44021,40 +46620,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T08:48',
     popular: false,
   },
-  {
-    id: 'rainbow-simple-1',
-    title: 'かわいいにじ',
-    description: 'ぽってりかわいいにじの線画。',
-    ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
-    category: 'coloring', theme: 'nature',
-    tags: ['rainbow', 'しぜん', 'ぬりえ'],
-    tools: ['クレヨン'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rainbow-simple-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rainbow-simple-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-26T17:01',
-    popular: false,
-  },
-  {
-    id: 'rainbow-easy-1',
-    title: 'にじ',
-    description: 'かわいくデフォルメしたにじの線画。',
-    ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
-    category: 'coloring', theme: 'nature',
-    tags: ['rainbow', 'しぜん', 'ぬりえ'],
-    tools: ['クレヨン'],
-    activityIdeas: ['好きな色で塗ってみよう', '背景もカラフルに仕上げよう'],
-    imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rainbow-easy-1-illust.png',
-    illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rainbow-easy-1-illust.png',
-    illustVersion: 1,
-    imageStatus: 'pending_review',
-    pdfUrl: '',
-    createdAt: '2026-05-26T17:01',
-    popular: false,
-  },
+
   {
     id: 'sun-simple-1',
     title: 'かわいいたいよう',
@@ -44070,8 +46636,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
-    popular: false,
+    seoDescription: 'にっこり笑顔で両頬に涙のしずくがこぼれている太陽さん。周りにはひまわりのような放射状の光線が十六本、規則正しく並んでいます。大きな黒い瞳と小さな口、そして両側の円い頬がとても優しい表情を作っていて、黄色く塗ったときにどんなに明るく輝いて見えるか想像が膨らみます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sun-easy-1',
     title: 'たいよう',
@@ -44087,8 +46655,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
-    popular: false,
+    seoDescription: 'にこにこと笑顔の太陽が、四方を囲む雲たちに見守られています。太陽の周りに放射状に広がる光の線と、ふっくらした雲のやさしい輪郭が、塗るたびに色が重なって空間が立体的に見えてくる構図です。雲ひとつひとつの表情も違うので、同じ白でも色の濃淡をつけたり、太陽と雲でコントラストをつけたりと、色選びのアイデアが自然と湧いてきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sun-normal-1',
     title: 'たいようのえ',
@@ -44106,9 +46676,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T19:20',
     popular: false,
   },
+
   {
     id: 'sun-rich-1',
-    title: 'たいようのせかい',
+    title: 'かがやくたいよう',
     description: 'たいようが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44123,6 +46694,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T19:20',
     popular: false,
   },
+
   {
     id: 'cloud-simple-1',
     title: 'かわいいくも',
@@ -44138,8 +46710,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
-    popular: false,
+    seoDescription: 'ふっくらとした丸みのある雲が、空いっぱいに浮かんでいます。雲の縁には小さな凹みがいくつもあって、それぞれに細い線が描き込まれているので、ふわふわとした質感を表現できます。白く広い内側を好きな色で埋めていくと、自分だけの空が完成します。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cloud-easy-1',
     title: 'くも',
@@ -44155,8 +46729,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
-    popular: false,
+    seoDescription: '三つのふわふわした雲が、にっこり笑顔で空間に浮かんでいます。一番大きな雲は左に構えて、右奥には中くらいの雲、そして中央手前には一番小さな雲が位置しており、大きさの違いが奥行きを生み出しています。どの雲もまるまるとした輪郭で、つぶらな瞳と優しいカーブの口元が同じ表情をしているので、色を選ぶときに三つの個性を出す工夫が楽しめます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'cloud-normal-1',
     title: 'くものえ',
@@ -44174,9 +46750,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T19:55',
     popular: false,
   },
+
   {
     id: 'cloud-rich-1',
-    title: 'くものせかい',
+    title: 'そらにうかぶくも',
     description: 'くもが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44191,6 +46768,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T19:55',
     popular: false,
   },
+
   {
     id: 'rain-simple-1',
     title: 'かわいいあめ',
@@ -44206,8 +46784,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
-    popular: false,
+    seoDescription: '5つのかわいいあめたちが画面いっぱいに散らばっています。大きさがそれぞれ違うあめは、どれもにっこり笑顔で、小さなほっぺに赤みを入れたくなります。いくつかのあめの側面には小さなしずくのような模様があり、ツヤツヤとした質感を表現できるポイント。大きなあめから小さなあめまで、色を統一するか変えるか、どう塗り分けるかで全く違う世界観になる作品です。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rain-easy-1',
     title: 'あめ',
@@ -44223,8 +46803,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
-    popular: false,
+    seoDescription: 'にっこり笑った雲さんが、空からたくさんの雨粒を降らせています。丸くてふっくらした雲の輪郭をなぞると、頬の丸い部分が塗りやすく、つぶらな瞳には黒をしっかり入れるタイミングが大切です。下に落ちてくる雨粒は大きさが違うので、濃淡をつけて立体感を出したり、水色と薄紫で塗り分けたりと、同じしずくでも表現を工夫する場面になります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'rain-normal-1',
     title: 'あめのえ',
@@ -44242,9 +46824,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T20:28',
     popular: false,
   },
+
   {
     id: 'rain-rich-1',
-    title: 'あめのせかい',
+    title: 'あめのひ',
     description: 'あめが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44259,6 +46842,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T20:28',
     popular: false,
   },
+
   {
     id: 'snow-simple-1',
     title: 'かわいいゆき',
@@ -44274,8 +46858,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
-    popular: false,
+    seoDescription: '六角形を中心に、左右対称に広がる雪の結晶。上下左右斜めの6本の腕からは、さらに細かい枝がぎっしり生えていて、どこから塗り始めるか迷ってしまうほど。白い部分がたくさん残っているので、同じ色でグラデーションをつけたり、キラキラした色を重ねたりして、冬らしさを表現できます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'snow-easy-1',
     title: 'ゆき',
@@ -44291,8 +46877,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
-    popular: false,
+    seoDescription: '冬の空を舞い降りる雪の世界。ふんわりとした雲のキャラクターたちと、幾何学的な美しさを持つ雪の結晶が並んでいます。雲たちはどれもにこにこ顔で、結晶はそれぞれ異なる枝分かれのパターンを見せています。青や水色で塗ると冬らしさが引き立ち、白や薄紫で塗るとやさしい雪景色になるなど、色選びの工夫が活躍する場面がたくさんあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'snow-normal-1',
     title: 'ゆきのえ',
@@ -44310,9 +46898,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T21:03',
     popular: false,
   },
+
   {
     id: 'snow-rich-1',
-    title: 'ゆきのせかい',
+    title: 'ゆきのひ',
     description: 'ゆきが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44327,6 +46916,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T21:03',
     popular: false,
   },
+
   {
     id: 'lightning-simple-1',
     title: 'かわいいかみなり',
@@ -44342,8 +46932,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
-    popular: false,
+    seoDescription: '# 解説文  ふわふわの雲たちに囲まれた、かわいらしいかみなりさん。中央の三角形の稲妻が堂々とした存在感を放ちながら、左右の大きなカーブした雲は、ボリュームのある形をしています。雲の柔らかさと稲妻の鋭さという、正反対の質感の組み合わせが面白く、どちらを先に塗るか迷ってしまうほど。背景の白さが広々としているので、好きな色で思い切り塗り広げる楽しさが味わえます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lightning-easy-1',
     title: 'かみなり',
@@ -44359,8 +46951,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
-    popular: false,
+    seoDescription: 'にっこり笑顔の雲の下から、ギザギザの稲妻が勢いよく降りてくる場面です。丸い目と小さな口、そしてほのかに膨らむ頬が、このいたずら好きな雲のキャラクターをぐっと愛らしくしています。稲妻の複雑に折れ曲がった線は、黄色やオレンジで塗ると迫力が出そうですし、ふわふわの雲の白さとの対比も楽しめます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lightning-normal-1',
     title: 'かみなりのえ',
@@ -44378,9 +46972,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T21:37',
     popular: false,
   },
+
   {
     id: 'lightning-rich-1',
-    title: 'かみなりのせかい',
+    title: 'かみなりがなる',
     description: 'かみなりが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44395,6 +46990,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T21:37',
     popular: false,
   },
+
   {
     id: 'mountain-simple-1',
     title: 'かわいいやま',
@@ -44410,8 +47006,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
-    popular: false,
+    seoDescription: '真っ白な雪をかぶった山が、ふんわりと立っています。山頂の波打つ雪のふち、その下に広がる大きな斜面、そして裾野の緩やかな曲線と、塗る場所がはっきり分かれているので、色を変えてメリハリをつけたくなります。シンプルな形だからこそ、どの色を選ぶか、濃淡をどうつけるか、お子さんの色選びの個性が引き立ちます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mountain-easy-1',
     title: 'やま',
@@ -44427,8 +47025,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
-    popular: false,
+    seoDescription: '雪をかぶった二つの山が並んでそびえています。大きな山の頂上には波打つような雪の縞模様があり、隣の小さな山にも同じ模様が入っていて、塗り方で山々の表情が変わります。山の輪郭はシンプルな三角形ですが、雪が積もった部分の曲線はふんわりやさしく、色を重ねたり変えたりするスペースがたくさん残っています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'mountain-normal-1',
     title: 'やまのえ',
@@ -44446,9 +47046,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T22:13',
     popular: false,
   },
+
   {
     id: 'mountain-rich-1',
-    title: 'やまのせかい',
+    title: 'やまのけしき',
     description: 'やまが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44463,6 +47064,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T22:13',
     popular: false,
   },
+
   {
     id: 'sea-simple-1',
     title: 'かわいいうみ',
@@ -44478,8 +47080,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
-    popular: false,
+    seoDescription: '波が左から右へ流れるように連なった海の景色。一本の線でうねうねと描かれた波のカーブは、どこから塗り始めるか迷ってしまうほど優雅に続いています。青や緑、水色など、好きな色をどんどん塗ってグラデーションを作ると、本物の海みたいに見えてきます。シンプルな構図だからこそ、色選びで海の表情がガラッと変わる楽しさが詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sea-easy-1',
     title: 'うみ',
@@ -44495,8 +47099,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
-    popular: false,
+    seoDescription: 'にっこり笑顔の太陽が小さな雲を見守る海辺の風景。波のうねりは優雅な曲線で何重にも重なり、砂浜には星形や貝殻がちらばっています。色を塗るときは、太陽の黄色、空の青、海の濃い青といったように同じ色でも濃淡を工夫できる場所がたくさんあり、波の流れを色で表現する楽しさも感じられます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sea-normal-1',
     title: 'うみのえ',
@@ -44514,9 +47120,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T22:47',
     popular: false,
   },
+
   {
     id: 'sea-rich-1',
-    title: 'うみのせかい',
+    title: 'うみのけしき',
     description: 'うみが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44531,6 +47138,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T22:47',
     popular: false,
   },
+
   {
     id: 'river-simple-1',
     title: 'かわいいかわ',
@@ -44546,8 +47154,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
-    popular: false,
+    seoDescription: '流れる水の動きを表現した、やさしい波線がいくつも重なっています。太い外側の輪郭と細い内側の曲線で、水のふくらみやへこみがリアルに見えます。上から下へ流れていく様子を、色の濃淡で表現する絵なので、青や水色をグラデーションさせたり、白い部分を活かしたりと、色の工夫がしがいがあります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'river-easy-1',
     title: 'かわ',
@@ -44563,8 +47173,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
-    popular: false,
+    seoDescription: '両脇の大きな木に見守られながら、蛇行した川が景色の中心を流れる風景です。川沿いには小さな石ころがゴロゴロと点在し、足元に何があるのか想像しながら塗り進められます。灌木や草むらも随所に配置されているので、緑や茶色の色選びで奥行きを表現できる場面になっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'river-normal-1',
     title: 'かわのえ',
@@ -44582,9 +47194,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T23:19',
     popular: false,
   },
+
   {
     id: 'river-rich-1',
-    title: 'かわのせかい',
+    title: 'かわのながれ',
     description: 'かわが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44599,6 +47212,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T23:19',
     popular: false,
   },
+
   {
     id: 'waterfall-simple-1',
     title: 'かわいいたき',
@@ -44614,8 +47228,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:52',
-    popular: false,
+    seoDescription: '迫力のある滝が上から下へ勢いよく流れ落ちる様子を、たくさんの縦線で表現した一枚です。滝の裾野はもくもくとした雲のような形で、水が池に落ちてしぶきが上がっている瞬間が捉えられています。青や紫、白などで塗り分けると、水の動きや奥行きが生まれて、本物の滝に近づきそうです。',
+    popular: false, featured: true,
   },
+
   {
     id: 'waterfall-easy-1',
     title: 'たき',
@@ -44633,6 +47249,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T23:52',
     popular: false,
   },
+
   {
     id: 'waterfall-normal-1',
     title: 'たきのえ',
@@ -44650,9 +47267,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T23:52',
     popular: false,
   },
+
   {
     id: 'waterfall-rich-1',
-    title: 'たきのせかい',
+    title: 'おおきなたき',
     description: 'たきが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44667,6 +47285,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-26T23:52',
     popular: false,
   },
+
   {
     id: 'forest-simple-1',
     title: 'かわいいもり',
@@ -44682,8 +47301,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T00:27',
-    popular: false,
+    seoDescription: 'ふんわりとした枝葉に包まれた木が、両足をそろえて立っている姿。冠のような丸い樹冠には、ひらひらと舞い落ちる葉っぱがいくつも散りばめられていて、秋の情景が静かに広がっています。太い幹にはみずみずしい質感が出せるよう筋が入り、樹冠の曲線は淡い色合いで優しく塗ると、ほっこりとした表情が生まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'forest-easy-1',
     title: 'もり',
@@ -44701,6 +47322,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T00:27',
     popular: false,
   },
+
   {
     id: 'forest-normal-1',
     title: 'もりのえ',
@@ -44718,9 +47340,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T00:27',
     popular: false,
   },
+
   {
     id: 'forest-rich-1',
-    title: 'もりのせかい',
+    title: 'もりのなか',
     description: 'もりが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44735,6 +47358,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T00:27',
     popular: false,
   },
+
   {
     id: 'volcano-simple-1',
     title: 'かわいいかざん',
@@ -44750,8 +47374,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:01',
-    popular: false,
+    seoDescription: 'もくもくとした大きな煙を噴き出す火山が、どっしりとした円錐形の山体で堂々と立っています。山の頂上からふわふわと流れ出す煙のカーブと、裾野の広がりを見ると、赤や黒、オレンジなどの色を重ねたくなります。山肌に入った細かい線は、火山の凸凹した質感を表現する絶好のポイントになるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'volcano-easy-1',
     title: 'かざん',
@@ -44769,6 +47395,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:01',
     popular: false,
   },
+
   {
     id: 'volcano-normal-1',
     title: 'かざんのえ',
@@ -44786,9 +47413,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:01',
     popular: false,
   },
+
   {
     id: 'volcano-rich-1',
-    title: 'かざんのせかい',
+    title: 'ふんかするかざん',
     description: 'かざんが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44803,6 +47431,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:01',
     popular: false,
   },
+
   {
     id: 'aurora-simple-1',
     title: 'かわいいオーロラ',
@@ -44818,8 +47447,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:34',
-    popular: false,
+    seoDescription: '二本の柱の上から、何本ものひもが大きく弧を描いて垂れ下がる様子が、まるで風になびくカーテンのよう。柱の脇にはくねくねとした曲線が流れており、塗り方次第でオーロラの光の動きがうかがえます。複数のひもが重なり合う中央の空間は白くぽっかり空いていて、虹色や淡い色合いを自由に組み合わせて塗る喜びが詰まっています。',
+    popular: false, featured: true,
   },
+
   {
     id: 'aurora-easy-1',
     title: 'オーロラ',
@@ -44837,6 +47468,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:34',
     popular: false,
   },
+
   {
     id: 'aurora-normal-1',
     title: 'オーロラのえ',
@@ -44854,9 +47486,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:34',
     popular: false,
   },
+
   {
     id: 'aurora-rich-1',
-    title: 'オーロラのせかい',
+    title: 'よぞらのオーロラ',
     description: 'オーロラが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44871,6 +47504,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T01:34',
     popular: false,
   },
+
   {
     id: 'shooting-star-simple-1',
     title: 'かわいいながれぼし',
@@ -44886,8 +47520,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:07',
-    popular: false,
+    seoDescription: 'にっこり笑顔の星が夜空を駆け抜ける瞬間を捉えた一枚。星の丸い目と小さな口、そしてほわっとした柔らかい輪郭が愛らしく、長く伸びた尾の曲線は色鉛筆やクレヨンでなめらかに塗るのが楽しい部分です。シンプルな線だからこそ、星本体をどんな色で塗るか、尾をどのようなグラデーションにするか、子どもの色選びが映える作品になります。',
+    popular: false, featured: true,
   },
+
   {
     id: 'shooting-star-easy-1',
     title: 'ながれぼし',
@@ -44905,6 +47541,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:07',
     popular: false,
   },
+
   {
     id: 'shooting-star-normal-1',
     title: 'ながれぼしのえ',
@@ -44922,9 +47559,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:07',
     popular: false,
   },
+
   {
     id: 'shooting-star-rich-1',
-    title: 'ながれぼしのせかい',
+    title: 'ながれぼしのよぞら',
     description: 'ながれぼしが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -44939,6 +47577,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:07',
     popular: false,
   },
+
   {
     id: 'sunset-simple-1',
     title: 'かわいいゆうやけ',
@@ -44954,8 +47593,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:40',
-    popular: false,
+    seoDescription: '水平線からちょうど顔を出した太陽が、にっこり笑顔で朝日か夕日かを迎えてくれます。放射線のような光の筋が太陽の周りをぐるりと囲んでいるので、黄色やオレンジ、ピンクの色選びが映える場面です。水面の波線はゆるやかなカーブで描かれ、水色や青の濃淡を工夫する楽しさがあり、太陽の温かみと水の冷たさを色で表現することができます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'sunset-easy-1',
     title: 'ゆうやけ',
@@ -44973,6 +47614,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:40',
     popular: false,
   },
+
   {
     id: 'sunset-normal-1',
     title: 'ゆうやけのえ',
@@ -44990,9 +47632,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:40',
     popular: false,
   },
+
   {
     id: 'sunset-rich-1',
-    title: 'ゆうやけのせかい',
+    title: 'ゆうやけぞら',
     description: 'ゆうやけが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45007,6 +47650,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T02:40',
     popular: false,
   },
+
   {
     id: 'moon-simple-1',
     title: 'かわいいつき',
@@ -45022,8 +47666,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:13',
-    popular: false,
+    seoDescription: '満月のような丸い顔に、優しく閉じた目と穏やかな笑顔が浮かぶ月のキャラクター。ほおの位置にある二つの丸は、照れたような表情をさらに柔らかく見せてくれます。シンプルな輪郭だからこそ、どの色を選ぶか、ほおの丸をどう塗り分けるかで、その子だけの月の表情が生まれます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'moon-easy-1',
     title: 'つき',
@@ -45041,6 +47687,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:13',
     popular: false,
   },
+
   {
     id: 'moon-normal-1',
     title: 'つきのえ',
@@ -45058,9 +47705,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:13',
     popular: false,
   },
+
   {
     id: 'moon-rich-1',
-    title: 'つきのせかい',
+    title: 'よぞらのつき',
     description: 'つきが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45075,6 +47723,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:13',
     popular: false,
   },
+
   {
     id: 'fog-simple-1',
     title: 'かわいいきり',
@@ -45090,8 +47739,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:56',
-    popular: false,
+    seoDescription: '三本の波打つ曲線が重なり合った、ゆらゆら揺れるきりの姿です。ふっくらとしたボディから左右に伸びた細長い首の先には、くるんと巻いた耳がついており、その愛らしいフォルムが印象的です。線がなめらかに上下に波打っているので、色を塗るときに同じ色でも濃淡をつけたり、虹色に塗ったりと、子どもが自由に表現する楽しさを感じられるでしょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'fog-easy-1',
     title: 'きり',
@@ -45109,6 +47760,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:56',
     popular: false,
   },
+
   {
     id: 'fog-normal-1',
     title: 'きりのえ',
@@ -45126,9 +47778,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:56',
     popular: false,
   },
+
   {
     id: 'fog-rich-1',
-    title: 'きりのせかい',
+    title: 'きりのなか',
     description: 'きりが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45143,6 +47796,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T03:56',
     popular: false,
   },
+
   {
     id: 'icicle-simple-1',
     title: 'かわいいつらら',
@@ -45158,8 +47812,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T04:28',
-    popular: false,
+    seoDescription: '冬の空から落ちてきた、先端がシュッと尖ったつらら。上の部分には波打つような縁取りがあり、透き通った氷の質感を出すのにぴったりです。細長い本体には筋が入っているので、薄い青や水色を重ねて塗ると、光が透けて見える様子が表現できます。つららの先端に向かってだんだん細くなる形を追いながら、冷たい冬の世界を色で作ってみましょう。',
+    popular: false, featured: true,
   },
+
   {
     id: 'icicle-easy-1',
     title: 'つらら',
@@ -45177,6 +47833,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T04:28',
     popular: false,
   },
+
   {
     id: 'icicle-normal-1',
     title: 'つららのえ',
@@ -45194,9 +47851,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T04:28',
     popular: false,
   },
+
   {
     id: 'icicle-rich-1',
-    title: 'つららのせかい',
+    title: 'つららがさがる',
     description: 'つららが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45211,6 +47869,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T04:28',
     popular: false,
   },
+
   {
     id: 'lake-simple-1',
     title: 'かわいいみずうみ',
@@ -45226,8 +47885,10 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T05:01',
-    popular: false,
+    seoDescription: '雪をかぶった大きな山を背景に、静かな湖が広がる冬景色です。湖の周りには様々な木々が立ち並び、葉を落とした細い枝の木、ふっくらした常緑樹、そして雪が積もった針葉樹が、色のコントラストを作る配置になっています。岩や低い草むらが湖岸を囲み、深さのある奥行きが生まれており、水色で湖を塗るときに周りの樹々とのバランスを考えながら進める楽しさが出てきます。',
+    popular: false, featured: true,
   },
+
   {
     id: 'lake-easy-1',
     title: 'みずうみ',
@@ -45245,6 +47906,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:01',
     popular: false,
   },
+
   {
     id: 'lake-normal-1',
     title: 'みずうみのえ',
@@ -45262,9 +47924,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:01',
     popular: false,
   },
+
   {
     id: 'lake-rich-1',
-    title: 'みずうみのせかい',
+    title: 'しずかなみずうみ',
     description: 'みずうみが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45279,6 +47942,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:01',
     popular: false,
   },
+
   {
     id: 'wave-simple-1',
     title: 'かわいいなみ',
@@ -45296,6 +47960,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:35',
     popular: false,
   },
+
   {
     id: 'wave-easy-1',
     title: 'なみ',
@@ -45313,6 +47978,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:35',
     popular: false,
   },
+
   {
     id: 'wave-normal-1',
     title: 'なみのえ',
@@ -45330,9 +47996,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:35',
     popular: false,
   },
+
   {
     id: 'wave-rich-1',
-    title: 'なみのせかい',
+    title: 'うちよせるなみ',
     description: 'なみが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45347,6 +48014,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T05:35',
     popular: false,
   },
+
   {
     id: 'island-simple-1',
     title: 'かわいいしま',
@@ -45364,6 +48032,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:08',
     popular: false,
   },
+
   {
     id: 'island-easy-1',
     title: 'しま',
@@ -45381,6 +48050,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:08',
     popular: false,
   },
+
   {
     id: 'island-normal-1',
     title: 'しまのえ',
@@ -45398,9 +48068,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:08',
     popular: false,
   },
+
   {
     id: 'island-rich-1',
-    title: 'しまのせかい',
+    title: 'とおくのしま',
     description: 'しまが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45415,6 +48086,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:08',
     popular: false,
   },
+
   {
     id: 'tornado-simple-1',
     title: 'かわいいたつまき',
@@ -45432,6 +48104,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:41',
     popular: false,
   },
+
   {
     id: 'tornado-easy-1',
     title: 'たつまき',
@@ -45449,6 +48122,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:41',
     popular: false,
   },
+
   {
     id: 'tornado-normal-1',
     title: 'たつまきのえ',
@@ -45466,9 +48140,10 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:41',
     popular: false,
   },
+
   {
     id: 'tornado-rich-1',
-    title: 'たつまきのせかい',
+    title: 'たつまき',
     description: 'たつまきが登場するかわいいシーンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'nature',
@@ -45483,6 +48158,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T06:41',
     popular: false,
   },
+
   {
     id: 'star-simple-1',
     title: 'かわいいほし',
@@ -45500,6 +48176,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T07:13',
     popular: false,
   },
+
   {
     id: 'star-easy-1',
     title: 'ほし',
@@ -45517,6 +48194,7 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T07:13',
     popular: false,
   },
+
   {
     id: 'star-normal-1',
     title: 'ほしのえ',
@@ -45534,12 +48212,13 @@ const _materials5: Material[] = [
     createdAt: '2026-05-27T07:13',
     popular: false,
   },
+
 ]
 const _materialsRepair: Material[] = [
 
   {
     id: 'fairytale-alice-wonderland-easy-1',
-    title: 'ちいさくなる', description: '小さくなる線画。',
+    title: 'ふしぎのくにのアリス：ちいさくなる', description: '小さくなる線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],
@@ -45548,334 +48227,362 @@ const _materialsRepair: Material[] = [
     illustVersion: 1, imageStatus: 'needs_revision',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-alice-wonderland-normal-1',
-    title: 'おちゃかい', description: 'お茶会のぬりえ。',
+    title: 'ふしぎのくにのアリス：おちゃかい', description: 'お茶会のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-alice-wonderland-rich-1',
-    title: 'トランプのじょおうのさいばん', description: '女王の裁判のぬりえ。',
+    title: 'ふしぎのくにのアリス：トランプのじょおうのさいばん', description: '女王の裁判のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-alice-wonderland-simple-1',
-    title: 'あなにおちる', description: '穴に落ちる線画。',
+    title: 'ふしぎのくにのアリス：あなにおちる', description: '穴に落ちる線画。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-alice-wonderland', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-beauty-beast-easy-1',
-    title: 'ベルがしろへ', description: 'ベルが城へ行く線画。',
+    title: 'びじょとやじゅう：ベルがしろへ', description: 'ベルが城へ行く線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-beauty-beast', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-beauty-beast-normal-1',
-    title: 'ふたりがおどる', description: '2人が踊る線画。',
+    title: 'びじょとやじゅう：ふたりがおどる', description: '2人が踊る線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-beauty-beast', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-beauty-beast-rich-1',
-    title: 'やじゅうがおうじへ', description: '王子に戻る線画。',
+    title: 'びじょとやじゅう：やじゅうがおうじへ', description: '王子に戻る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-beauty-beast', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-beauty-beast-simple-1',
-    title: 'バラとちちのきけん', description: '父が見つかる線画。',
+    title: 'びじょとやじゅう：バラとちちのきけん', description: '父が見つかる線画。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-beauty-beast', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-little-mermaid-easy-1',
-    title: 'おうじをたすける', description: '王子を助ける線画。',
+    title: 'にんぎょひめ：おうじをたすける', description: '王子を助ける線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-little-mermaid-normal-1',
-    title: 'うみのまじょとのとりひき', description: '魔女との取引のぬりえ。',
+    title: 'にんぎょひめ：うみのまじょとのとりひき', description: '魔女との取引のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-little-mermaid-rich-1',
-    title: 'あわになってそらへ', description: '泡になる線画。',
+    title: 'にんぎょひめ：あわになってそらへ', description: '泡になる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-little-mermaid-simple-1',
-    title: 'うみのいわのうえ', description: '海面を眺める人魚姫のぬりえ。',
+    title: 'にんぎょひめ：うみのいわのうえ', description: '海面を眺める人魚姫のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-little-mermaid', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-peter-pan-easy-1',
-    title: 'そらをとぶ', description: '空を飛ぶ線画。',
+    title: 'ピーターパン：そらをとぶ', description: '空を飛ぶ線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-peter-pan', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-peter-pan-normal-1',
-    title: 'フックせんちょうとたたかう', description: '海賊と戦う線画。',
+    title: 'ピーターパン：フックせんちょうとたたかう', description: '海賊と戦う線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-peter-pan', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-peter-pan-rich-1',
-    title: 'ウェンディがいえへ', description: '見送る線画。',
+    title: 'ピーターパン：ウェンディがいえへ', description: '見送る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-peter-pan', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-peter-pan-simple-1',
-    title: 'こどもべやのピーターパン', description: '子ども部屋のぬりえ。',
+    title: 'ピーターパン：こどもべやのピーターパン', description: '子ども部屋のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-peter-pan', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-pinocchio-easy-1',
-    title: 'うそでははながのびる', description: '嘘で鼻が伸びる線画。',
+    title: 'ピノキオ：うそでははながのびる', description: '嘘で鼻が伸びる線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-pinocchio', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-pinocchio-normal-1',
-    title: 'クジラのおなかで', description: 'クジラの中のぬりえ。',
+    title: 'ピノキオ：クジラのおなかで', description: 'クジラの中のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-pinocchio', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-pinocchio-rich-1',
-    title: 'ほんもののこどもに', description: '本物の子どもになる線画。',
+    title: 'ピノキオ：ほんもののこどもに', description: '本物の子どもになる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-pinocchio', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-pinocchio-simple-1',
-    title: 'ゼペットがにんぎょうをつくる', description: 'ピノキオを彫る線画。',
+    title: 'ピノキオ：ゼペットがにんぎょうをつくる', description: 'ピノキオを彫る線画。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-pinocchio', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-rapunzel-easy-1',
-    title: 'おうじがかみをのぼる', description: '髪を登る王子のぬりえ。',
+    title: 'ラプンツェル：おうじがかみをのぼる', description: '髪を登る王子のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-rapunzel-normal-1',
-    title: 'まじょのいかり', description: '魔女の怒りのぬりえ。',
+    title: 'ラプンツェル：まじょのいかり', description: '魔女の怒りのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-rapunzel-rich-1',
-    title: 'なみだでさいかい', description: '涙で再会する線画。',
+    title: 'ラプンツェル：なみだでさいかい', description: '涙で再会する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-rapunzel-simple-1',
-    title: 'とうのちょうのかみ', description: '塔の姫のぬりえ。',
+    title: 'ラプンツェル：とうのちょうのかみ', description: '塔の姫のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-rapunzel', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-queen-easy-1',
-    title: 'ゆきのじょおうにつれさられる', description: '連れ去られる線画。',
+    title: 'ゆきのじょおう：ゆきのじょおうにつれさられる', description: '連れ去られる線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-queen', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-queen-normal-1',
-    title: 'こおりのきゅうでん', description: '氷の宮殿のぬりえ。',
+    title: 'ゆきのじょおう：こおりのきゅうでん', description: '氷の宮殿のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-queen', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-queen-rich-1',
-    title: 'なみだでこころがとける', description: '涙で心が溶ける線画。',
+    title: 'ゆきのじょおう：なみだでこころがとける', description: '涙で心が溶ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-queen', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-queen-simple-1',
-    title: 'かがみのかけら', description: '鏡のかけらが刺さる線画。',
+    title: 'ゆきのじょおう：かがみのかけら', description: '鏡のかけらが刺さる線画。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-snow-queen', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-white-easy-1',
-    title: 'りんごのまほう',
+    title: 'しらゆきひめ：りんごのまほう',
     description: '魔女がリンゴを差し出す場面のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -45883,13 +48590,14 @@ const _materialsRepair: Material[] = [
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T14:53', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-white-normal-1',
-    title: 'ガラスのひつぎ',
+    title: 'しらゆきひめ：ガラスのひつぎ',
     description: 'ガラスの棺のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -45899,15 +48607,16 @@ const _materialsRepair: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-25T00:06',
     popular: false,
   },
 
+
   {
     id: 'fairytale-snow-white-rich-1',
-    title: 'しらゆきひめのめざめ',
+    title: 'しらゆきひめ：しらゆきひめのめざめ',
     description: '王子のキスで目覚めるしらゆきひめのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -45915,13 +48624,14 @@ const _materialsRepair: Material[] = [
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T14:53', popular: false,
   },
 
+
   {
     id: 'fairytale-snow-white-simple-1',
-    title: 'しらゆきひめと小人たち',
+    title: 'しらゆきひめ：しらゆきひめと小人たち',
     description: 'しらゆきひめと小人たちの出会いのぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
@@ -45929,156 +48639,169 @@ const _materialsRepair: Material[] = [
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'pending_review',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T14:53', popular: false,
   },
 
+
   {
     id: 'fairytale-thumbelina-easy-1',
-    title: 'ヒキガエルにさらわれる', description: 'ヒキガエルにさらわれる線画。',
+    title: 'おやゆびひめ：ヒキガエルにさらわれる', description: 'ヒキガエルにさらわれる線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-thumbelina', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-thumbelina-normal-1',
-    title: 'つばめをかんびょう', description: 'つばめを看病する線画。',
+    title: 'おやゆびひめ：つばめをかんびょう', description: 'つばめを看病する線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-thumbelina', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-thumbelina-rich-1',
-    title: 'はなのおうじとあう', description: '花の王子と出会う線画。',
+    title: 'おやゆびひめ：はなのおうじとあう', description: '花の王子と出会う線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-thumbelina', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-thumbelina-simple-1',
-    title: 'チューリップからうまれる', description: 'チューリップから誕生のぬりえ。',
+    title: 'おやゆびひめ：チューリップからうまれる', description: 'チューリップから誕生のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-thumbelina', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-tin-soldier-easy-1',
-    title: 'おどりことのこい', description: '踊り子に恋する線画。',
+    title: 'すずのへいたい：おどりことのこい', description: '踊り子に恋する線画。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tin-soldier', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
 
   {
     id: 'fairytale-tin-soldier-normal-1',
-    title: 'さかなにのまれる', description: '魚に飲まれる線画。',
+    title: 'すずのへいたい：さかなにのまれる', description: '魚に飲まれる線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tin-soldier', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-tin-soldier-rich-1',
-    title: 'だんろのなかでひとつに', description: '暖炉で心が溶ける線画。',
+    title: 'すずのへいたい：だんろのなかでひとつに', description: '暖炉で心が溶ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tin-soldier', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-tin-soldier-simple-1',
-    title: 'かたあしのへいたい', description: '片足の兵隊のぬりえ。',
+    title: 'すずのへいたい：かたあしのへいたい', description: '片足の兵隊のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-tin-soldier', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-ugly-duckling-easy-1',
-    title: 'いじめられてさまよう', description: 'さまよう雛のぬりえ。',
+    title: 'みにくいあひるのこ：いじめられてさまよう', description: 'さまよう雛のぬりえ。',
     ageMin: 3, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-ugly-duckling-normal-1',
-    title: 'ふゆをひとりで', description: '雪の池のぬりえ。',
+    title: 'みにくいあひるのこ：ふゆをひとりで', description: '雪の池のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-ugly-duckling-rich-1',
-    title: 'うつくしいはくちょうに', description: '白鳥に変身のぬりえ。',
+    title: 'みにくいあひるのこ：うつくしいはくちょうに', description: '白鳥に変身のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 20,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
 
+
   {
     id: 'fairytale-ugly-duckling-simple-1',
-    title: 'ひとりだけちがう', description: '1羽違うひな鳥のぬりえ。',
+    title: 'みにくいあひるのこ：ひとりだけちがう', description: '1羽違うひな鳥のぬりえ。',
     ageMin: 2, ageMax: 3, difficulty: 1, duration: 5,
     category: 'coloring', theme: 'fairytale',
     tags: ['fairytale-ugly-duckling', 'どうわ', 'ぬりえ'],
     tools: ['色えんぴつ'], activityIdeas: ['好きな色で塗ってみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-snow-white-normal-1-illust.png',
-    illustVersion: 1, imageStatus: 'needs_revision',
+    illustVersion: 1, imageStatus: 'duplicate',
     pdfUrl: '', createdAt: '2026-05-25T16:10', popular: false,
   },
+
   {
     id: 'fairytale-sinbad-simple-1',
-    title: 'ふねでしゅっぱつ',
+    title: 'シンドバッド：ふねでしゅっぱつ',
     description: '船の出発のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -46094,6 +48817,7 @@ const _materialsRepair: Material[] = [
     popular: false,
   },
 
+
 ]
 
 
@@ -46102,7 +48826,7 @@ const _materialsRepair: Material[] = [
 const _materialsRecovered: Material[] = [
   {
     id: 'fairytale-kintaro-rich-1',
-    title: 'みやこへたびだち',
+    title: 'きんたろう：みやこへたびだち',
     description: '都へ旅立つ線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -46117,9 +48841,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-kachi-kachi-yama-simple-1',
-    title: 'たぬきがつかまる',
+    title: 'かちかちやま：たぬきがつかまる',
     description: 'たぬきが捕まる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -46134,9 +48859,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-kachi-kachi-yama-easy-1',
-    title: 'おばあさんをだまして',
+    title: 'かちかちやま：おばあさんをだまして',
     description: 'おばあさんを騙す線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -46151,9 +48877,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-kachi-kachi-yama-normal-1',
-    title: 'せなかにかちかち',
+    title: 'かちかちやま：せなかにかちかち',
     description: '背中の火のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -46168,9 +48895,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-kachi-kachi-yama-rich-1',
-    title: 'どろぶねでしずむ',
+    title: 'かちかちやま：どろぶねでしずむ',
     description: '泥舟で沈む線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -46185,9 +48913,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-journey-west-simple-1',
-    title: 'いしからうまれたそんごくう',
+    title: 'さいゆうき：いしからうまれたそんごくう',
     description: '石から生まれる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -46202,9 +48931,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-journey-west-easy-1',
-    title: 'きんとうんでそらをとぶ',
+    title: 'さいゆうき：きんとうんでそらをとぶ',
     description: 'きんと雲のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -46219,9 +48949,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-journey-west-normal-1',
-    title: 'なかまとてんじくへ',
+    title: 'さいゆうき：なかまとてんじくへ',
     description: '仲間と旅する線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -46236,9 +48967,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-journey-west-rich-1',
-    title: 'ようかいとたたかう',
+    title: 'さいゆうき：ようかいとたたかう',
     description: '妖怪と戦う線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -46253,9 +48985,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-cinderella-simple-1',
-    title: 'ゆかみがき',
+    title: 'シンデレラ：ゆかみがき',
     description: '床掃除する線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -46270,9 +49003,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-cinderella-easy-1',
-    title: 'まほうのばしゃ',
+    title: 'シンデレラ：まほうのばしゃ',
     description: '魔法でかぼちゃが馬車になる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -46287,9 +49021,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-cinderella-normal-1',
-    title: 'ぶとうかいとガラスのくつ',
+    title: 'シンデレラ：ぶとうかいとガラスのくつ',
     description: '舞踏会から逃げる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -46304,9 +49039,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'fairytale-cinderella-rich-1',
-    title: 'おうじとさいかい',
+    title: 'シンデレラ：おうじとさいかい',
     description: 'ガラスの靴で再会する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -46321,6 +49057,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T10:57',
     popular: false,
   },
+
   {
     id: 'broccoli-simple-2',
     title: 'かわいいブロッコリー',
@@ -46333,11 +49070,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-simple-2-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-simple-2-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-16T11:08',
     popular: false,
   },
+
   {
     id: 'broccoli-easy-2',
     title: 'ブロッコリーがならんだ',
@@ -46355,6 +49093,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-16T11:08',
     popular: false,
   },
+
   {
     id: 'broccoli-normal-2',
     title: 'ブロッコリーをきろう',
@@ -46367,11 +49106,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-normal-2-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-normal-2-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-16T11:08',
     popular: false,
   },
+
   {
     id: 'broccoli-rich-2',
     title: 'ブロッコリーりょうり',
@@ -46384,11 +49124,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-rich-2-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/broccoli-rich-2-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-16T11:08',
     popular: false,
   },
+
   {
     id: 'yamanote-e235-simple-1',
     title: '山手線E235系',
@@ -46401,11 +49142,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'yamanote-e235-easy-1',
     title: '山手線E235系がはしる',
@@ -46418,11 +49160,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'yamanote-e235-normal-1',
     title: '山手線E235系のけしき',
@@ -46435,11 +49178,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yamanote-e235-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
     popular: false,
   },
+
   {
     id: 'chuo-orange-simple-1',
     title: '中央線快速E233系',
@@ -46452,11 +49196,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'chuo-orange-easy-1',
     title: '中央線快速E233系がはしる',
@@ -46469,11 +49214,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'chuo-orange-normal-1',
     title: '中央線快速E233系のけしき',
@@ -46486,11 +49232,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chuo-orange-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
     popular: false,
   },
+
   {
     id: 'keikyu-simple-1',
     title: '京急2100形',
@@ -46503,11 +49250,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'keikyu-easy-1',
     title: '京急2100形がはしる',
@@ -46520,11 +49268,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'keikyu-normal-1',
     title: '京急2100形のけしき',
@@ -46537,11 +49286,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keikyu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
     popular: false,
   },
+
   {
     id: 'hankyu-simple-1',
     title: '阪急電車1000系',
@@ -46554,11 +49304,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'hankyu-easy-1',
     title: '阪急電車1000系がはしる',
@@ -46571,11 +49322,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'hankyu-normal-1',
     title: '阪急電車1000系のけしき',
@@ -46588,11 +49340,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hankyu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
     popular: false,
   },
+
   {
     id: 'keihan-simple-1',
     title: '京阪電車3000系',
@@ -46605,11 +49358,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'keihan-easy-1',
     title: '京阪電車3000系がはしる',
@@ -46622,11 +49376,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'keihan-normal-1',
     title: '京阪電車3000系のけしき',
@@ -46639,11 +49394,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keihan-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
     popular: false,
   },
+
   {
     id: 'kintetsu-futsuu-simple-1',
     title: '近鉄通勤車5820系',
@@ -46656,11 +49412,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'kintetsu-futsuu-easy-1',
     title: '近鉄通勤車5820系がはしる',
@@ -46673,11 +49430,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'kintetsu-futsuu-normal-1',
     title: '近鉄通勤車5820系のけしき',
@@ -46690,11 +49448,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-futsuu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
     popular: false,
   },
+
   {
     id: 'seibu-yellow-simple-1',
     title: '西武電車2000系',
@@ -46707,11 +49466,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'seibu-yellow-easy-1',
     title: '西武電車2000系がはしる',
@@ -46724,11 +49484,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'seibu-yellow-normal-1',
     title: '西武電車2000系のけしき',
@@ -46741,11 +49502,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/seibu-yellow-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
     popular: false,
   },
+
   {
     id: 'tokyu-simple-1',
     title: '東急電車2020系',
@@ -46758,11 +49520,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'tokyu-easy-1',
     title: '東急電車2020系がはしる',
@@ -46775,11 +49538,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'tokyu-normal-1',
     title: '東急電車2020系のけしき',
@@ -46792,11 +49556,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tokyu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
     popular: false,
   },
+
   {
     id: 'odakyu-futsuu-simple-1',
     title: '小田急電車3000形',
@@ -46809,11 +49574,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'odakyu-futsuu-easy-1',
     title: '小田急電車3000形がはしる',
@@ -46826,11 +49592,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'odakyu-futsuu-normal-1',
     title: '小田急電車3000形のけしき',
@@ -46843,11 +49610,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/odakyu-futsuu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
     popular: false,
   },
+
   {
     id: 'tobu-simple-1',
     title: '東武電車50050系',
@@ -46860,11 +49628,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'tobu-easy-1',
     title: '東武電車50050系がはしる',
@@ -46877,11 +49646,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'tobu-normal-1',
     title: '東武電車50050系のけしき',
@@ -46894,11 +49664,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tobu-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
     popular: false,
   },
+
   {
     id: 'romancecar-gse-simple-1',
     title: 'ロマンスカーGSE70000形',
@@ -46911,11 +49682,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:17',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'romancecar-gse-easy-1',
     title: 'ロマンスカーGSE70000形がはしる',
@@ -46928,11 +49700,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:17',
     popular: false,
   },
+
   {
     id: 'romancecar-gse-normal-1',
     title: 'ロマンスカーGSE70000形のけしき',
@@ -46945,11 +49718,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-gse-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:17',
     popular: false,
   },
+
   {
     id: 'romancecar-mse-simple-1',
     title: 'ロマンスカーMSE60000形',
@@ -46962,11 +49736,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:49',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'romancecar-mse-easy-1',
     title: 'ロマンスカーMSE60000形がはしる',
@@ -46979,11 +49754,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:49',
     popular: false,
   },
+
   {
     id: 'romancecar-mse-normal-1',
     title: 'ロマンスカーMSE60000形のけしき',
@@ -46996,11 +49772,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/romancecar-mse-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T01:49',
     popular: false,
   },
+
   {
     id: 'narita-express-simple-1',
     title: '成田エクスプレスE259系',
@@ -47013,11 +49790,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T15:36',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'narita-express-easy-1',
     title: '成田エクスプレスE259系がはしる',
@@ -47030,11 +49808,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T15:36',
     popular: false,
   },
+
   {
     id: 'narita-express-normal-1',
     title: '成田エクスプレスE259系のけしき',
@@ -47047,11 +49826,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/narita-express-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T15:36',
     popular: false,
   },
+
   {
     id: 'safir-odoriko-simple-1',
     title: 'サフィール踊り子E261系',
@@ -47064,11 +49844,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:11',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'safir-odoriko-easy-1',
     title: 'サフィール踊り子E261系がはしる',
@@ -47081,11 +49862,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:11',
     popular: false,
   },
+
   {
     id: 'safir-odoriko-normal-1',
     title: 'サフィール踊り子E261系のけしき',
@@ -47098,11 +49880,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/safir-odoriko-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:11',
     popular: false,
   },
+
   {
     id: 'lapit-simple-1',
     title: 'ラピート50000系',
@@ -47115,11 +49898,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:45',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'lapit-easy-1',
     title: 'ラピート50000系がはしる',
@@ -47132,11 +49916,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:45',
     popular: false,
   },
+
   {
     id: 'lapit-normal-1',
     title: 'ラピート50000系のけしき',
@@ -47149,11 +49934,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/lapit-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T16:45',
     popular: false,
   },
+
   {
     id: 'spacia-x-simple-1',
     title: 'スペーシアX100系',
@@ -47166,11 +49952,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T17:32',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'spacia-x-easy-1',
     title: 'スペーシアX100系がはしる',
@@ -47183,11 +49970,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T17:32',
     popular: false,
   },
+
   {
     id: 'spacia-x-normal-1',
     title: 'スペーシアX100系のけしき',
@@ -47200,11 +49988,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/spacia-x-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T17:32',
     popular: false,
   },
+
   {
     id: 'kintetsu-hinotori-simple-1',
     title: 'ひのとり80000系',
@@ -47217,11 +50006,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T18:22',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'kintetsu-hinotori-easy-1',
     title: 'ひのとり80000系がはしる',
@@ -47234,11 +50024,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T18:22',
     popular: false,
   },
+
   {
     id: 'kintetsu-hinotori-normal-1',
     title: 'ひのとり80000系のけしき',
@@ -47251,11 +50042,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-hinotori-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T18:22',
     popular: false,
   },
+
   {
     id: 'kintetsu-urban-simple-1',
     title: 'アーバンライナーplus21020系',
@@ -47268,11 +50060,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:00',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'kintetsu-urban-easy-1',
     title: 'アーバンライナーplus21020系がはしる',
@@ -47285,11 +50078,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:00',
     popular: false,
   },
+
   {
     id: 'kintetsu-urban-normal-1',
     title: 'アーバンライナーplus21020系のけしき',
@@ -47302,11 +50096,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-urban-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:00',
     popular: false,
   },
+
   {
     id: 'sonic-885-simple-1',
     title: 'ソニック885系',
@@ -47319,11 +50114,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:33',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'sonic-885-easy-1',
     title: 'ソニック885系がはしる',
@@ -47336,11 +50132,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:33',
     popular: false,
   },
+
   {
     id: 'sonic-885-normal-1',
     title: 'ソニック885系のけしき',
@@ -47353,11 +50150,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sonic-885-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T19:33',
     popular: false,
   },
+
   {
     id: 'thunderbird-simple-1',
     title: 'サンダーバード683系',
@@ -47370,11 +50168,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:05',
-    popular: false,
+    popular: false, 
   },
+
   {
     id: 'thunderbird-easy-1',
     title: 'サンダーバード683系がはしる',
@@ -47387,11 +50186,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:05',
     popular: false,
   },
+
   {
     id: 'thunderbird-normal-1',
     title: 'サンダーバード683系のけしき',
@@ -47404,11 +50204,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thunderbird-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:05',
     popular: false,
   },
+
   {
     id: 'azusa-e353-simple-1',
     title: 'あずさE353系',
@@ -47421,11 +50222,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:40',
     popular: false,
   },
+
   {
     id: 'azusa-e353-easy-1',
     title: 'あずさE353系がはしる',
@@ -47438,11 +50240,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:40',
     popular: false,
   },
+
   {
     id: 'azusa-e353-normal-1',
     title: 'あずさE353系のけしき',
@@ -47455,11 +50258,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/azusa-e353-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T20:40',
     popular: false,
   },
+
   {
     id: 'kuroshio-simple-1',
     title: 'くろしおHC85系',
@@ -47472,11 +50276,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:15',
     popular: false,
   },
+
   {
     id: 'kuroshio-easy-1',
     title: 'くろしおHC85系がはしる',
@@ -47489,11 +50294,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:15',
     popular: false,
   },
+
   {
     id: 'kuroshio-normal-1',
     title: 'くろしおHC85系のけしき',
@@ -47506,11 +50312,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kuroshio-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:15',
     popular: false,
   },
+
   {
     id: 'fuji-excursion-simple-1',
     title: '富士回遊E353系',
@@ -47523,11 +50330,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:46',
     popular: false,
   },
+
   {
     id: 'fuji-excursion-easy-1',
     title: '富士回遊E353系がはしる',
@@ -47540,11 +50348,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:46',
     popular: false,
   },
+
   {
     id: 'fuji-excursion-normal-1',
     title: '富士回遊E353系のけしき',
@@ -47557,11 +50366,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fuji-excursion-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T21:46',
     popular: false,
   },
+
   {
     id: 'anpanman-train-simple-1',
     title: 'アンパンマン列車',
@@ -47574,11 +50384,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:21',
     popular: false,
   },
+
   {
     id: 'anpanman-train-easy-1',
     title: 'アンパンマン列車がはしる',
@@ -47591,11 +50402,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:21',
     popular: false,
   },
+
   {
     id: 'anpanman-train-normal-1',
     title: 'アンパンマン列車のけしき',
@@ -47608,11 +50420,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/anpanman-train-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:21',
     popular: false,
   },
+
   {
     id: 'thomas-train-simple-1',
     title: 'きかんしゃトーマス号',
@@ -47625,11 +50438,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:53',
     popular: false,
   },
+
   {
     id: 'thomas-train-easy-1',
     title: 'きかんしゃトーマス号しゅっぱつ',
@@ -47642,11 +50456,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:53',
     popular: false,
   },
+
   {
     id: 'thomas-train-normal-1',
     title: 'きかんしゃトーマス号てっきょうわたる',
@@ -47659,11 +50474,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/thomas-train-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T22:53',
     popular: false,
   },
+
   {
     id: 'exe-alpha-simple-1',
     title: 'EXEα 30000形',
@@ -47676,11 +50492,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T23:26',
     popular: false,
   },
+
   {
     id: 'exe-alpha-easy-1',
     title: 'EXEα 30000形がはしる',
@@ -47693,11 +50510,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T23:26',
     popular: false,
   },
+
   {
     id: 'exe-alpha-normal-1',
     title: 'EXEα 30000形のけしき',
@@ -47710,11 +50528,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/exe-alpha-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-21T23:26',
     popular: false,
   },
+
   {
     id: 'kintetsu-vista-simple-1',
     title: 'ビスタEX 30000系',
@@ -47727,11 +50546,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:01',
     popular: false,
   },
+
   {
     id: 'kintetsu-vista-easy-1',
     title: 'ビスタEX 30000系がはしる',
@@ -47744,11 +50564,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:01',
     popular: false,
   },
+
   {
     id: 'kintetsu-vista-normal-1',
     title: 'ビスタEX 30000系のけしき',
@@ -47761,11 +50582,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintetsu-vista-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:01',
     popular: false,
   },
+
   {
     id: 'yakumo-273-simple-1',
     title: 'やくも273系',
@@ -47778,11 +50600,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:34',
     popular: false,
   },
+
   {
     id: 'yakumo-273-easy-1',
     title: 'やくも273系がはしる',
@@ -47795,11 +50618,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:34',
     popular: false,
   },
+
   {
     id: 'yakumo-273-normal-1',
     title: 'やくも273系のけしき',
@@ -47812,11 +50636,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yakumo-273-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T00:34',
     popular: false,
   },
+
   {
     id: 'izukyu-resort21-simple-1',
     title: 'リゾート21',
@@ -47829,11 +50654,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:07',
     popular: false,
   },
+
   {
     id: 'izukyu-resort21-easy-1',
     title: 'リゾート21がはしる',
@@ -47846,11 +50672,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:07',
     popular: false,
   },
+
   {
     id: 'izukyu-resort21-normal-1',
     title: 'リゾート21のけしき',
@@ -47863,11 +50690,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/izukyu-resort21-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:07',
     popular: false,
   },
+
   {
     id: 'keio-liner-simple-1',
     title: '京王ライナー5000系',
@@ -47880,11 +50708,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:40',
     popular: false,
   },
+
   {
     id: 'keio-liner-easy-1',
     title: '京王ライナー5000系がはしる',
@@ -47897,11 +50726,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:40',
     popular: false,
   },
+
   {
     id: 'keio-liner-normal-1',
     title: '京王ライナー5000系のけしき',
@@ -47914,11 +50744,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keio-liner-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'broken',
     pdfUrl: '',
     createdAt: '2026-05-22T01:40',
     popular: false,
   },
+
   {
     id: 'spacia-x-rich-1',
     title: 'スペーシアX100系のたび',
@@ -47936,6 +50767,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T17:58',
     popular: false,
   },
+
   {
     id: 'kamome-885-simple-1',
     title: 'かもめ885系',
@@ -47953,6 +50785,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:12',
     popular: false,
   },
+
   {
     id: 'kamome-885-easy-1',
     title: 'かもめ885系がはしる',
@@ -47970,6 +50803,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:12',
     popular: false,
   },
+
   {
     id: 'kamome-885-normal-1',
     title: 'かもめ885系のけしき',
@@ -47987,6 +50821,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:12',
     popular: false,
   },
+
   {
     id: 'kamome-885-rich-1',
     title: 'かもめ885系のたび',
@@ -48004,6 +50839,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:12',
     popular: false,
   },
+
   {
     id: 'shiki-shima-simple-1',
     title: 'トランスイート四季島',
@@ -48021,6 +50857,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:40',
     popular: false,
   },
+
   {
     id: 'shiki-shima-easy-1',
     title: 'トランスイート四季島がはしる',
@@ -48038,6 +50875,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:40',
     popular: false,
   },
+
   {
     id: 'shiki-shima-normal-1',
     title: 'トランスイート四季島のけしき',
@@ -48055,6 +50893,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:40',
     popular: false,
   },
+
   {
     id: 'shiki-shima-rich-1',
     title: 'トランスイート四季島のたび',
@@ -48072,6 +50911,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T18:40',
     popular: false,
   },
+
   {
     id: 'nanatsuboshi-simple-1',
     title: 'ななつ星in九州',
@@ -48089,6 +50929,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:07',
     popular: false,
   },
+
   {
     id: 'nanatsuboshi-easy-1',
     title: 'ななつ星in九州がはしる',
@@ -48106,6 +50947,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:07',
     popular: false,
   },
+
   {
     id: 'nanatsuboshi-normal-1',
     title: 'ななつ星in九州のけしき',
@@ -48123,6 +50965,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:07',
     popular: false,
   },
+
   {
     id: 'nanatsuboshi-rich-1',
     title: 'ななつ星in九州のたび',
@@ -48140,6 +50983,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:07',
     popular: false,
   },
+
   {
     id: 'mizukaze-simple-1',
     title: '瑞風',
@@ -48157,6 +51001,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:34',
     popular: false,
   },
+
   {
     id: 'mizukaze-easy-1',
     title: '瑞風がはしる',
@@ -48174,6 +51019,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:34',
     popular: false,
   },
+
   {
     id: 'mizukaze-normal-1',
     title: '瑞風のけしき',
@@ -48191,6 +51037,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:34',
     popular: false,
   },
+
   {
     id: 'mizukaze-rich-1',
     title: '瑞風のたび',
@@ -48208,6 +51055,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T19:34',
     popular: false,
   },
+
   {
     id: 'royal-express-simple-1',
     title: 'THE ROYAL EXPRESS',
@@ -48225,6 +51073,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:03',
     popular: false,
   },
+
   {
     id: 'royal-express-easy-1',
     title: 'THE ROYAL EXPRESSがはしる',
@@ -48242,6 +51091,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:03',
     popular: false,
   },
+
   {
     id: 'royal-express-normal-1',
     title: 'THE ROYAL EXPRESSのけしき',
@@ -48259,6 +51109,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:03',
     popular: false,
   },
+
   {
     id: 'royal-express-rich-1',
     title: 'THE ROYAL EXPRESSのたび',
@@ -48276,6 +51127,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:03',
     popular: false,
   },
+
   {
     id: 'resort-shirakam-simple-1',
     title: 'リゾートしらかみ',
@@ -48293,6 +51145,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:40',
     popular: false,
   },
+
   {
     id: 'resort-shirakam-easy-1',
     title: 'リゾートしらかみがはしる',
@@ -48310,6 +51163,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:40',
     popular: false,
   },
+
   {
     id: 'resort-shirakam-normal-1',
     title: 'リゾートしらかみのけしき',
@@ -48327,6 +51181,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:40',
     popular: false,
   },
+
   {
     id: 'resort-shirakam-rich-1',
     title: 'リゾートしらかみのたび',
@@ -48344,6 +51199,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T20:40',
     popular: false,
   },
+
   {
     id: 'resort-buna-simple-1',
     title: 'リゾートしらかみぶな号',
@@ -48361,6 +51217,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:08',
     popular: false,
   },
+
   {
     id: 'resort-buna-easy-1',
     title: 'リゾートしらかみぶな号がはしる',
@@ -48378,6 +51235,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:08',
     popular: false,
   },
+
   {
     id: 'resort-buna-normal-1',
     title: 'リゾートしらかみぶな号のけしき',
@@ -48395,6 +51253,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:08',
     popular: false,
   },
+
   {
     id: 'resort-buna-rich-1',
     title: 'リゾートしらかみぶな号のたび',
@@ -48412,6 +51271,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:08',
     popular: false,
   },
+
   {
     id: 'joyful-train-simple-1',
     title: 'ジョイフルトレイン',
@@ -48429,6 +51289,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:37',
     popular: false,
   },
+
   {
     id: 'joyful-train-easy-1',
     title: 'ジョイフルトレインがはしる',
@@ -48446,6 +51307,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:37',
     popular: false,
   },
+
   {
     id: 'joyful-train-normal-1',
     title: 'ジョイフルトレインのけしき',
@@ -48463,6 +51325,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:37',
     popular: false,
   },
+
   {
     id: 'joyful-train-rich-1',
     title: 'ジョイフルトレインのたび',
@@ -48480,6 +51343,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T21:37',
     popular: false,
   },
+
   {
     id: 'christmas-train-simple-1',
     title: 'クリスマストレイン',
@@ -48497,6 +51361,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:03',
     popular: false,
   },
+
   {
     id: 'christmas-train-easy-1',
     title: 'クリスマストレインがはしる',
@@ -48514,6 +51379,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:03',
     popular: false,
   },
+
   {
     id: 'christmas-train-normal-1',
     title: 'クリスマストレインのけしき',
@@ -48531,6 +51397,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:03',
     popular: false,
   },
+
   {
     id: 'christmas-train-rich-1',
     title: 'クリスマストレインのたび',
@@ -48548,6 +51415,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:03',
     popular: false,
   },
+
   {
     id: 'sl-yamaguchi-simple-1',
     title: 'SLやまぐち号',
@@ -48565,6 +51433,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:32',
     popular: false,
   },
+
   {
     id: 'sl-yamaguchi-easy-1',
     title: 'SLやまぐち号しゅっぱつ',
@@ -48582,6 +51451,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:32',
     popular: false,
   },
+
   {
     id: 'sl-yamaguchi-normal-1',
     title: 'SLやまぐち号てっきょうわたる',
@@ -48599,6 +51469,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:32',
     popular: false,
   },
+
   {
     id: 'sl-yamaguchi-rich-1',
     title: 'SLやまぐち号がきたよ',
@@ -48616,6 +51487,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T22:32',
     popular: false,
   },
+
   {
     id: 'd51-degoichi-simple-1',
     title: 'D51デゴイチ',
@@ -48633,6 +51505,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:00',
     popular: false,
   },
+
   {
     id: 'd51-degoichi-easy-1',
     title: 'D51デゴイチしゅっぱつ',
@@ -48650,6 +51523,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:00',
     popular: false,
   },
+
   {
     id: 'd51-degoichi-normal-1',
     title: 'D51デゴイチてっきょうわたる',
@@ -48667,6 +51541,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:00',
     popular: false,
   },
+
   {
     id: 'd51-degoichi-rich-1',
     title: 'D51デゴイチがきたよ',
@@ -48684,6 +51559,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:00',
     popular: false,
   },
+
   {
     id: 'c57-kifujin-simple-1',
     title: 'C57貴婦人',
@@ -48701,6 +51577,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:27',
     popular: false,
   },
+
   {
     id: 'c57-kifujin-easy-1',
     title: 'C57貴婦人しゅっぱつ',
@@ -48718,6 +51595,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:27',
     popular: false,
   },
+
   {
     id: 'c57-kifujin-normal-1',
     title: 'C57貴婦人てっきょうわたる',
@@ -48735,6 +51613,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:27',
     popular: false,
   },
+
   {
     id: 'c57-kifujin-rich-1',
     title: 'C57貴婦人がきたよ',
@@ -48752,6 +51631,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:27',
     popular: false,
   },
+
   {
     id: 'sl-paleoexpress-simple-1',
     title: 'SLパレオエクスプレス',
@@ -48769,6 +51649,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:55',
     popular: false,
   },
+
   {
     id: 'sl-paleoexpress-easy-1',
     title: 'SLパレオエクスプレスしゅっぱつ',
@@ -48786,6 +51667,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:55',
     popular: false,
   },
+
   {
     id: 'sl-paleoexpress-normal-1',
     title: 'SLパレオエクスプレスてっきょうわたる',
@@ -48803,6 +51685,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:55',
     popular: false,
   },
+
   {
     id: 'sl-paleoexpress-rich-1',
     title: 'SLパレオエクスプレスがきたよ',
@@ -48820,6 +51703,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-22T23:55',
     popular: false,
   },
+
   {
     id: 'sl-fuyu-shitsugen-simple-1',
     title: 'SL冬の湿原号',
@@ -48837,6 +51721,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:31',
     popular: false,
   },
+
   {
     id: 'sl-fuyu-shitsugen-easy-1',
     title: 'SL冬の湿原号しゅっぱつ',
@@ -48854,6 +51739,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:31',
     popular: false,
   },
+
   {
     id: 'sl-fuyu-shitsugen-normal-1',
     title: 'SL冬の湿原号てっきょうわたる',
@@ -48871,6 +51757,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:31',
     popular: false,
   },
+
   {
     id: 'sl-fuyu-shitsugen-rich-1',
     title: 'SL冬の湿原号がきたよ',
@@ -48888,6 +51775,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:31',
     popular: false,
   },
+
   {
     id: 'c62-simple-1',
     title: 'C62',
@@ -48905,6 +51793,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:59',
     popular: false,
   },
+
   {
     id: 'c62-easy-1',
     title: 'C62しゅっぱつ',
@@ -48922,6 +51811,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:59',
     popular: false,
   },
+
   {
     id: 'c62-normal-1',
     title: 'C62てっきょうわたる',
@@ -48939,6 +51829,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:59',
     popular: false,
   },
+
   {
     id: 'c62-rich-1',
     title: 'C62がきたよ',
@@ -48956,6 +51847,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T00:59',
     popular: false,
   },
+
   {
     id: 'c11-simple-1',
     title: 'C11',
@@ -48973,6 +51865,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T01:27',
     popular: false,
   },
+
   {
     id: 'c11-easy-1',
     title: 'C11しゅっぱつ',
@@ -48990,6 +51883,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T01:27',
     popular: false,
   },
+
   {
     id: 'c11-normal-1',
     title: 'C11てっきょうわたる',
@@ -49007,6 +51901,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T01:27',
     popular: false,
   },
+
   {
     id: 'c11-rich-1',
     title: 'C11がきたよ',
@@ -49024,6 +51919,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T01:27',
     popular: false,
   },
+
   {
     id: 'sl-hitoyoshi-simple-1',
     title: 'SL人吉',
@@ -49041,6 +51937,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:02',
     popular: false,
   },
+
   {
     id: 'sl-hitoyoshi-easy-1',
     title: 'SL人吉しゅっぱつ',
@@ -49058,6 +51955,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:02',
     popular: false,
   },
+
   {
     id: 'sl-hitoyoshi-normal-1',
     title: 'SL人吉てっきょうわたる',
@@ -49075,6 +51973,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:02',
     popular: false,
   },
+
   {
     id: 'sl-hitoyoshi-rich-1',
     title: 'SL人吉がきたよ',
@@ -49092,6 +51991,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:02',
     popular: false,
   },
+
   {
     id: 'enoden-simple-1',
     title: '江ノ電',
@@ -49109,6 +52009,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:32',
     popular: false,
   },
+
   {
     id: 'enoden-easy-1',
     title: '江ノ電がはしるよ',
@@ -49126,6 +52027,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:32',
     popular: false,
   },
+
   {
     id: 'enoden-normal-1',
     title: '江ノ電のけしき',
@@ -49143,6 +52045,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:32',
     popular: false,
   },
+
   {
     id: 'enoden-rich-1',
     title: '江ノ電のまち',
@@ -49160,6 +52063,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T02:32',
     popular: false,
   },
+
   {
     id: 'randen-simple-1',
     title: '嵐電',
@@ -49177,6 +52081,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T03:00',
     popular: false,
   },
+
   {
     id: 'randen-easy-1',
     title: '嵐電がはしるよ',
@@ -49194,6 +52099,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T03:00',
     popular: false,
   },
+
   {
     id: 'randen-normal-1',
     title: '嵐電のけしき',
@@ -49211,6 +52117,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T03:00',
     popular: false,
   },
+
   {
     id: 'randen-rich-1',
     title: '嵐電のまち',
@@ -49228,6 +52135,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T03:00',
     popular: false,
   },
+
   {
     id: 'hakone-tozan-simple-1',
     title: '箱根登山鉄道',
@@ -49245,6 +52153,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-23T20:59',
     popular: false,
   },
+
   {
     id: 'hakone-tozan-easy-1',
     title: '箱根登山鉄道がはしるよ',
@@ -49257,11 +52166,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T20:59',
     popular: false,
   },
+
   {
     id: 'hakone-tozan-normal-1',
     title: '箱根登山鉄道のけしき',
@@ -49274,11 +52184,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T20:59',
     popular: false,
   },
+
   {
     id: 'hakone-tozan-rich-1',
     title: '箱根登山鉄道のまち',
@@ -49291,11 +52202,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakone-tozan-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T20:59',
     popular: false,
   },
+
   {
     id: 'keifuku-kirara-simple-1',
     title: '叡山電鉄きらら',
@@ -49308,11 +52220,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:27',
     popular: false,
   },
+
   {
     id: 'keifuku-kirara-easy-1',
     title: '叡山電鉄きららがはしるよ',
@@ -49325,11 +52238,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:27',
     popular: false,
   },
+
   {
     id: 'keifuku-kirara-normal-1',
     title: '叡山電鉄きららのけしき',
@@ -49342,11 +52256,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:27',
     popular: false,
   },
+
   {
     id: 'keifuku-kirara-rich-1',
     title: '叡山電鉄きららのまち',
@@ -49359,11 +52274,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/keifuku-kirara-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:27',
     popular: false,
   },
+
   {
     id: 'hiroshima-romen-simple-1',
     title: '広島電鉄グリーンムーバー',
@@ -49376,11 +52292,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:55',
     popular: false,
   },
+
   {
     id: 'hiroshima-romen-easy-1',
     title: '広島電鉄グリーンムーバーがはしるよ',
@@ -49393,11 +52310,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:55',
     popular: false,
   },
+
   {
     id: 'hiroshima-romen-normal-1',
     title: '広島電鉄グリーンムーバーのけしき',
@@ -49410,11 +52328,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:55',
     popular: false,
   },
+
   {
     id: 'hiroshima-romen-rich-1',
     title: '広島電鉄グリーンムーバーのまち',
@@ -49427,11 +52346,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-romen-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T21:55',
     popular: false,
   },
+
   {
     id: 'hakodate-romen-simple-1',
     title: '函館市電',
@@ -49444,11 +52364,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:22',
     popular: false,
   },
+
   {
     id: 'hakodate-romen-easy-1',
     title: '函館市電がはしるよ',
@@ -49461,11 +52382,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:22',
     popular: false,
   },
+
   {
     id: 'hakodate-romen-normal-1',
     title: '函館市電のけしき',
@@ -49478,11 +52400,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:22',
     popular: false,
   },
+
   {
     id: 'hakodate-romen-rich-1',
     title: '函館市電のまち',
@@ -49495,11 +52418,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hakodate-romen-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:22',
     popular: false,
   },
+
   {
     id: 'kumamoto-romen-simple-1',
     title: '熊本市電',
@@ -49512,11 +52436,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:51',
     popular: false,
   },
+
   {
     id: 'kumamoto-romen-easy-1',
     title: '熊本市電がはしるよ',
@@ -49529,11 +52454,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:51',
     popular: false,
   },
+
   {
     id: 'kumamoto-romen-normal-1',
     title: '熊本市電のけしき',
@@ -49546,11 +52472,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:51',
     popular: false,
   },
+
   {
     id: 'kumamoto-romen-rich-1',
     title: '熊本市電のまち',
@@ -49563,11 +52490,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kumamoto-romen-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T22:51',
     popular: false,
   },
+
   {
     id: 'toyama-light-simple-1',
     title: '万葉線',
@@ -49580,11 +52508,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:19',
     popular: false,
   },
+
   {
     id: 'toyama-light-easy-1',
     title: '万葉線がはしるよ',
@@ -49597,11 +52526,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:19',
     popular: false,
   },
+
   {
     id: 'toyama-light-normal-1',
     title: '万葉線のけしき',
@@ -49614,11 +52544,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:19',
     popular: false,
   },
+
   {
     id: 'toyama-light-rich-1',
     title: '万葉線のまち',
@@ -49631,11 +52562,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toyama-light-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:19',
     popular: false,
   },
+
   {
     id: 'yurikamome-simple-1',
     title: 'ゆりかもめ',
@@ -49648,11 +52580,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:48',
     popular: false,
   },
+
   {
     id: 'yurikamome-easy-1',
     title: 'そらをはしるゆりかもめ',
@@ -49665,11 +52598,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:48',
     popular: false,
   },
+
   {
     id: 'yurikamome-normal-1',
     title: 'ゆりかもめのえき',
@@ -49682,11 +52616,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:48',
     popular: false,
   },
+
   {
     id: 'yurikamome-rich-1',
     title: 'ゆりかもめとまち',
@@ -49699,11 +52634,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurikamome-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-23T23:48',
     popular: false,
   },
+
   {
     id: 'yui-rail-simple-1',
     title: 'ゆいレール',
@@ -49716,11 +52652,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:15',
     popular: false,
   },
+
   {
     id: 'yui-rail-easy-1',
     title: 'そらをはしるゆいレール',
@@ -49733,11 +52670,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:15',
     popular: false,
   },
+
   {
     id: 'yui-rail-normal-1',
     title: 'ゆいレールのえき',
@@ -49750,11 +52688,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:15',
     popular: false,
   },
+
   {
     id: 'yui-rail-rich-1',
     title: 'ゆいレールとまち',
@@ -49767,11 +52706,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yui-rail-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:15',
     popular: false,
   },
+
   {
     id: 'chiba-monorail-simple-1',
     title: '千葉都市モノレール',
@@ -49784,11 +52724,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:43',
     popular: false,
   },
+
   {
     id: 'chiba-monorail-easy-1',
     title: 'そらをはしる千葉都市モノレール',
@@ -49801,11 +52742,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:43',
     popular: false,
   },
+
   {
     id: 'chiba-monorail-normal-1',
     title: '千葉都市モノレールのえき',
@@ -49818,11 +52760,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:43',
     popular: false,
   },
+
   {
     id: 'chiba-monorail-rich-1',
     title: '千葉都市モノレールとまち',
@@ -49835,11 +52778,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiba-monorail-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T00:43',
     popular: false,
   },
+
   {
     id: 'tama-monorail-simple-1',
     title: '多摩都市モノレール',
@@ -49852,11 +52796,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:12',
     popular: false,
   },
+
   {
     id: 'tama-monorail-easy-1',
     title: 'そらをはしる多摩都市モノレール',
@@ -49869,11 +52814,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:12',
     popular: false,
   },
+
   {
     id: 'tama-monorail-normal-1',
     title: '多摩都市モノレールのえき',
@@ -49886,11 +52832,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:12',
     popular: false,
   },
+
   {
     id: 'tama-monorail-rich-1',
     title: '多摩都市モノレールとまち',
@@ -49903,11 +52850,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tama-monorail-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:12',
     popular: false,
   },
+
   {
     id: 'kita-kyushu-mono-simple-1',
     title: '北九州モノレール',
@@ -49920,11 +52868,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:40',
     popular: false,
   },
+
   {
     id: 'kita-kyushu-mono-easy-1',
     title: 'そらをはしる北九州モノレール',
@@ -49937,11 +52886,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:40',
     popular: false,
   },
+
   {
     id: 'kita-kyushu-mono-normal-1',
     title: '北九州モノレールのえき',
@@ -49954,11 +52904,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:40',
     popular: false,
   },
+
   {
     id: 'kita-kyushu-mono-rich-1',
     title: '北九州モノレールとまち',
@@ -49971,11 +52922,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kita-kyushu-mono-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T01:40',
     popular: false,
   },
+
   {
     id: 'rascel-simple-1',
     title: 'ラッセル車',
@@ -49988,11 +52940,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:07',
     popular: false,
   },
+
   {
     id: 'rascel-easy-1',
     title: 'ラッセル車でさぎょう',
@@ -50005,11 +52958,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:07',
     popular: false,
   },
+
   {
     id: 'rascel-normal-1',
     title: 'ラッセル車とさぎょういん',
@@ -50022,11 +52976,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:07',
     popular: false,
   },
+
   {
     id: 'rascel-rich-1',
     title: 'ラッセル車のおしごと',
@@ -50039,11 +52994,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rascel-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:07',
     popular: false,
   },
+
   {
     id: 'rotary-rascel-simple-1',
     title: 'ロータリー式除雪車',
@@ -50056,11 +53012,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:36',
     popular: false,
   },
+
   {
     id: 'rotary-rascel-easy-1',
     title: 'ロータリー式除雪車でさぎょう',
@@ -50073,11 +53030,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:36',
     popular: false,
   },
+
   {
     id: 'rotary-rascel-normal-1',
     title: 'ロータリー式除雪車とさぎょういん',
@@ -50090,11 +53048,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:36',
     popular: false,
   },
+
   {
     id: 'rotary-rascel-rich-1',
     title: 'ロータリー式除雪車のおしごと',
@@ -50107,11 +53066,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rotary-rascel-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T02:36',
     popular: false,
   },
+
   {
     id: 'de15-rascel-simple-1',
     title: 'DE15ラッセル機関車',
@@ -50124,11 +53084,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:03',
     popular: false,
   },
+
   {
     id: 'de15-rascel-easy-1',
     title: 'DE15ラッセル機関車でさぎょう',
@@ -50141,11 +53102,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:03',
     popular: false,
   },
+
   {
     id: 'de15-rascel-normal-1',
     title: 'DE15ラッセル機関車とさぎょういん',
@@ -50158,11 +53120,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:03',
     popular: false,
   },
+
   {
     id: 'de15-rascel-rich-1',
     title: 'DE15ラッセル機関車のおしごと',
@@ -50175,11 +53138,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/de15-rascel-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:03',
     popular: false,
   },
+
   {
     id: 'ki100-simple-1',
     title: 'キ100形ラッセル',
@@ -50192,11 +53156,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:30',
     popular: false,
   },
+
   {
     id: 'ki100-easy-1',
     title: 'キ100形ラッセルでさぎょう',
@@ -50209,11 +53174,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:30',
     popular: false,
   },
+
   {
     id: 'ki100-normal-1',
     title: 'キ100形ラッセルとさぎょういん',
@@ -50226,11 +53192,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:30',
     popular: false,
   },
+
   {
     id: 'ki100-rich-1',
     title: 'キ100形ラッセルのおしごと',
@@ -50243,11 +53210,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ki100-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:30',
     popular: false,
   },
+
   {
     id: 'malti-tamper-simple-1',
     title: 'マルチプルタイタンパー',
@@ -50260,11 +53228,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:56',
     popular: false,
   },
+
   {
     id: 'malti-tamper-easy-1',
     title: 'マルチプルタイタンパーでさぎょう',
@@ -50277,11 +53246,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:56',
     popular: false,
   },
+
   {
     id: 'malti-tamper-normal-1',
     title: 'マルチプルタイタンパーとさぎょういん',
@@ -50294,11 +53264,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:56',
     popular: false,
   },
+
   {
     id: 'malti-tamper-rich-1',
     title: 'マルチプルタイタンパーのおしごと',
@@ -50311,11 +53282,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/malti-tamper-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T03:56',
     popular: false,
   },
+
   {
     id: 'rail-doctor-simple-1',
     title: 'レールドクター',
@@ -50328,11 +53300,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:25',
     popular: false,
   },
+
   {
     id: 'rail-doctor-easy-1',
     title: 'レールドクターでさぎょう',
@@ -50345,11 +53318,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:25',
     popular: false,
   },
+
   {
     id: 'rail-doctor-normal-1',
     title: 'レールドクターとさぎょういん',
@@ -50362,11 +53336,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:25',
     popular: false,
   },
+
   {
     id: 'rail-doctor-rich-1',
     title: 'レールドクターのおしごと',
@@ -50379,11 +53354,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-doctor-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:25',
     popular: false,
   },
+
   {
     id: 'ballast-regulator-simple-1',
     title: 'バラストレギュレーター',
@@ -50396,11 +53372,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:55',
     popular: false,
   },
+
   {
     id: 'ballast-regulator-easy-1',
     title: 'バラストレギュレーターでさぎょう',
@@ -50418,6 +53395,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T04:55',
     popular: false,
   },
+
   {
     id: 'ballast-regulator-normal-1',
     title: 'バラストレギュレーターとさぎょういん',
@@ -50430,11 +53408,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:55',
     popular: false,
   },
+
   {
     id: 'ballast-regulator-rich-1',
     title: 'バラストレギュレーターのおしごと',
@@ -50447,11 +53426,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ballast-regulator-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T04:55',
     popular: false,
   },
+
   {
     id: 'rail-grinder-simple-1',
     title: 'レールグラインダー',
@@ -50464,11 +53444,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:22',
     popular: false,
   },
+
   {
     id: 'rail-grinder-easy-1',
     title: 'レールグラインダーでさぎょう',
@@ -50481,11 +53462,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:22',
     popular: false,
   },
+
   {
     id: 'rail-grinder-normal-1',
     title: 'レールグラインダーとさぎょういん',
@@ -50498,11 +53480,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:22',
     popular: false,
   },
+
   {
     id: 'rail-grinder-rich-1',
     title: 'レールグラインダーのおしごと',
@@ -50515,11 +53498,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rail-grinder-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:22',
     popular: false,
   },
+
   {
     id: 'kasen-kensa-simple-1',
     title: '架線検査車',
@@ -50532,11 +53516,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:49',
     popular: false,
   },
+
   {
     id: 'kasen-kensa-easy-1',
     title: '架線検査車でさぎょう',
@@ -50549,11 +53534,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:49',
     popular: false,
   },
+
   {
     id: 'kasen-kensa-normal-1',
     title: '架線検査車とさぎょういん',
@@ -50566,11 +53552,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:49',
     popular: false,
   },
+
   {
     id: 'kasen-kensa-rich-1',
     title: '架線検査車のおしごと',
@@ -50583,11 +53570,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kasen-kensa-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T05:49',
     popular: false,
   },
+
   {
     id: 'railway-crane-simple-1',
     title: 'レールクレーン',
@@ -50600,11 +53588,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:19',
     popular: false,
   },
+
   {
     id: 'railway-crane-easy-1',
     title: 'レールクレーンでさぎょう',
@@ -50617,11 +53606,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:19',
     popular: false,
   },
+
   {
     id: 'railway-crane-normal-1',
     title: 'レールクレーンとさぎょういん',
@@ -50634,11 +53624,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:19',
     popular: false,
   },
+
   {
     id: 'railway-crane-rich-1',
     title: 'レールクレーンのおしごと',
@@ -50651,11 +53642,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/railway-crane-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:19',
     popular: false,
   },
+
   {
     id: 'hi-rail-truck-simple-1',
     title: '軌陸車',
@@ -50668,11 +53660,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:47',
     popular: false,
   },
+
   {
     id: 'hi-rail-truck-easy-1',
     title: '軌陸車でさぎょう',
@@ -50685,11 +53678,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:47',
     popular: false,
   },
+
   {
     id: 'hi-rail-truck-normal-1',
     title: '軌陸車とさぎょういん',
@@ -50702,11 +53696,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:47',
     popular: false,
   },
+
   {
     id: 'hi-rail-truck-rich-1',
     title: '軌陸車のおしごと',
@@ -50719,11 +53714,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hi-rail-truck-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T06:47',
     popular: false,
   },
+
   {
     id: 'yuki-funsha-simple-1',
     title: '雪噴射車',
@@ -50736,11 +53732,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:14',
     popular: false,
   },
+
   {
     id: 'yuki-funsha-easy-1',
     title: '雪噴射車でさぎょう',
@@ -50753,11 +53750,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:14',
     popular: false,
   },
+
   {
     id: 'yuki-funsha-normal-1',
     title: '雪噴射車とさぎょういん',
@@ -50770,11 +53768,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:14',
     popular: false,
   },
+
   {
     id: 'yuki-funsha-rich-1',
     title: '雪噴射車のおしごと',
@@ -50787,11 +53786,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yuki-funsha-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:14',
     popular: false,
   },
+
   {
     id: 'east-i-rail-simple-1',
     title: 'イーストアイ在来線E491系',
@@ -50804,11 +53804,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:42',
     popular: false,
   },
+
   {
     id: 'east-i-rail-easy-1',
     title: 'イーストアイ在来線E491系でさぎょう',
@@ -50821,11 +53822,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:42',
     popular: false,
   },
+
   {
     id: 'east-i-rail-normal-1',
     title: 'イーストアイ在来線E491系とさぎょういん',
@@ -50838,11 +53840,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:42',
     popular: false,
   },
+
   {
     id: 'east-i-rail-rich-1',
     title: 'イーストアイ在来線E491系のおしごと',
@@ -50855,11 +53858,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/east-i-rail-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T07:42',
     popular: false,
   },
+
   {
     id: 'koji-ressha-simple-1',
     title: '工事列車',
@@ -50872,11 +53876,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:09',
     popular: false,
   },
+
   {
     id: 'koji-ressha-easy-1',
     title: '工事列車でさぎょう',
@@ -50889,11 +53894,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:09',
     popular: false,
   },
+
   {
     id: 'koji-ressha-normal-1',
     title: '工事列車とさぎょういん',
@@ -50906,11 +53912,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:09',
     popular: false,
   },
+
   {
     id: 'koji-ressha-rich-1',
     title: '工事列車のおしごと',
@@ -50923,11 +53930,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/koji-ressha-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:09',
     popular: false,
   },
+
   {
     id: 'ginza-1000-simple-1',
     title: '東京メトロ銀座線1000系',
@@ -50940,11 +53948,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:38',
     popular: false,
   },
+
   {
     id: 'ginza-1000-easy-1',
     title: 'トンネルを走る東京メトロ銀座線1000系',
@@ -50957,11 +53966,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:38',
     popular: false,
   },
+
   {
     id: 'ginza-1000-normal-1',
     title: '東京メトロ銀座線1000系のホーム',
@@ -50974,11 +53984,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:38',
     popular: false,
   },
+
   {
     id: 'ginza-1000-rich-1',
     title: '東京メトロ銀座線1000系のえき',
@@ -50991,11 +54002,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/ginza-1000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T08:38',
     popular: false,
   },
+
   {
     id: 'marunouchi-02-simple-1',
     title: '東京メトロ丸ノ内線02系',
@@ -51008,11 +54020,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:05',
     popular: false,
   },
+
   {
     id: 'marunouchi-02-easy-1',
     title: 'トンネルを走る東京メトロ丸ノ内線02系',
@@ -51025,11 +54038,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:05',
     popular: false,
   },
+
   {
     id: 'marunouchi-02-normal-1',
     title: '東京メトロ丸ノ内線02系のホーム',
@@ -51042,11 +54056,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:05',
     popular: false,
   },
+
   {
     id: 'marunouchi-02-rich-1',
     title: '東京メトロ丸ノ内線02系のえき',
@@ -51059,11 +54074,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/marunouchi-02-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:05',
     popular: false,
   },
+
   {
     id: 'hibiya-13000-simple-1',
     title: '東京メトロ日比谷線13000系',
@@ -51076,11 +54092,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:33',
     popular: false,
   },
+
   {
     id: 'hibiya-13000-easy-1',
     title: 'トンネルを走る東京メトロ日比谷線13000系',
@@ -51093,11 +54110,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:33',
     popular: false,
   },
+
   {
     id: 'hibiya-13000-normal-1',
     title: '東京メトロ日比谷線13000系のホーム',
@@ -51110,11 +54128,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:33',
     popular: false,
   },
+
   {
     id: 'hibiya-13000-rich-1',
     title: '東京メトロ日比谷線13000系のえき',
@@ -51127,11 +54146,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hibiya-13000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T09:33',
     popular: false,
   },
+
   {
     id: 'tozai-15000-simple-1',
     title: '東京メトロ東西線15000系',
@@ -51144,11 +54164,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:02',
     popular: false,
   },
+
   {
     id: 'tozai-15000-easy-1',
     title: 'トンネルを走る東京メトロ東西線15000系',
@@ -51161,11 +54182,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:02',
     popular: false,
   },
+
   {
     id: 'tozai-15000-normal-1',
     title: '東京メトロ東西線15000系のホーム',
@@ -51178,11 +54200,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:02',
     popular: false,
   },
+
   {
     id: 'tozai-15000-rich-1',
     title: '東京メトロ東西線15000系のえき',
@@ -51195,11 +54218,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tozai-15000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:02',
     popular: false,
   },
+
   {
     id: 'chiyoda-16000-simple-1',
     title: '東京メトロ千代田線16000系',
@@ -51212,11 +54236,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:29',
     popular: false,
   },
+
   {
     id: 'chiyoda-16000-easy-1',
     title: 'トンネルを走る東京メトロ千代田線16000系',
@@ -51229,11 +54254,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:29',
     popular: false,
   },
+
   {
     id: 'chiyoda-16000-normal-1',
     title: '東京メトロ千代田線16000系のホーム',
@@ -51246,11 +54272,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:29',
     popular: false,
   },
+
   {
     id: 'chiyoda-16000-rich-1',
     title: '東京メトロ千代田線16000系のえき',
@@ -51263,11 +54290,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/chiyoda-16000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:29',
     popular: false,
   },
+
   {
     id: 'yurakucho-17000-simple-1',
     title: '東京メトロ有楽町線17000系',
@@ -51280,11 +54308,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:57',
     popular: false,
   },
+
   {
     id: 'yurakucho-17000-easy-1',
     title: 'トンネルを走る東京メトロ有楽町線17000系',
@@ -51297,11 +54326,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:57',
     popular: false,
   },
+
   {
     id: 'yurakucho-17000-normal-1',
     title: '東京メトロ有楽町線17000系のホーム',
@@ -51314,11 +54344,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:57',
     popular: false,
   },
+
   {
     id: 'yurakucho-17000-rich-1',
     title: '東京メトロ有楽町線17000系のえき',
@@ -51331,11 +54362,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yurakucho-17000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T10:57',
     popular: false,
   },
+
   {
     id: 'hanzomon-18000-simple-1',
     title: '東京メトロ半蔵門線18000系',
@@ -51348,11 +54380,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:25',
     popular: false,
   },
+
   {
     id: 'hanzomon-18000-easy-1',
     title: 'トンネルを走る東京メトロ半蔵門線18000系',
@@ -51365,11 +54398,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:25',
     popular: false,
   },
+
   {
     id: 'hanzomon-18000-normal-1',
     title: '東京メトロ半蔵門線18000系のホーム',
@@ -51382,11 +54416,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:25',
     popular: false,
   },
+
   {
     id: 'hanzomon-18000-rich-1',
     title: '東京メトロ半蔵門線18000系のえき',
@@ -51399,11 +54434,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hanzomon-18000-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:25',
     popular: false,
   },
+
   {
     id: 'toei-asakusa-5500-simple-1',
     title: '都営浅草線5500形',
@@ -51416,11 +54452,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:53',
     popular: false,
   },
+
   {
     id: 'toei-asakusa-5500-easy-1',
     title: 'トンネルを走る都営浅草線5500形',
@@ -51433,11 +54470,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:53',
     popular: false,
   },
+
   {
     id: 'toei-asakusa-5500-normal-1',
     title: '都営浅草線5500形のホーム',
@@ -51450,11 +54488,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:53',
     popular: false,
   },
+
   {
     id: 'toei-asakusa-5500-rich-1',
     title: '都営浅草線5500形のえき',
@@ -51467,11 +54506,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-asakusa-5500-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T11:53',
     popular: false,
   },
+
   {
     id: 'toei-oedo-12600-simple-1',
     title: '都営大江戸線12600形',
@@ -51484,11 +54524,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:23',
     popular: false,
   },
+
   {
     id: 'toei-oedo-12600-easy-1',
     title: 'トンネルを走る都営大江戸線12600形',
@@ -51501,11 +54542,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:23',
     popular: false,
   },
+
   {
     id: 'toei-oedo-12600-normal-1',
     title: '都営大江戸線12600形のホーム',
@@ -51518,11 +54560,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:23',
     popular: false,
   },
+
   {
     id: 'toei-oedo-12600-rich-1',
     title: '都営大江戸線12600形のえき',
@@ -51535,11 +54578,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-oedo-12600-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:23',
     popular: false,
   },
+
   {
     id: 'toei-mita-6500-simple-1',
     title: '都営三田線6500形',
@@ -51552,11 +54596,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:51',
     popular: false,
   },
+
   {
     id: 'toei-mita-6500-easy-1',
     title: 'トンネルを走る都営三田線6500形',
@@ -51569,11 +54614,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:51',
     popular: false,
   },
+
   {
     id: 'toei-mita-6500-normal-1',
     title: '都営三田線6500形のホーム',
@@ -51586,11 +54632,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:51',
     popular: false,
   },
+
   {
     id: 'toei-mita-6500-rich-1',
     title: '都営三田線6500形のえき',
@@ -51603,11 +54650,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/toei-mita-6500-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T12:51',
     popular: false,
   },
+
   {
     id: 'osaka-midosuji-simple-1',
     title: '大阪メトロ御堂筋線30000A系',
@@ -51620,11 +54668,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:18',
     popular: false,
   },
+
   {
     id: 'osaka-midosuji-easy-1',
     title: 'トンネルを走る大阪メトロ御堂筋線30000A系',
@@ -51637,11 +54686,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:18',
     popular: false,
   },
+
   {
     id: 'osaka-midosuji-normal-1',
     title: '大阪メトロ御堂筋線30000A系のホーム',
@@ -51654,11 +54704,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:18',
     popular: false,
   },
+
   {
     id: 'osaka-midosuji-rich-1',
     title: '大阪メトロ御堂筋線30000A系のえき',
@@ -51671,11 +54722,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-midosuji-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:18',
     popular: false,
   },
+
   {
     id: 'osaka-chuo-400-simple-1',
     title: '大阪メトロ中央線400系',
@@ -51688,11 +54740,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:47',
     popular: false,
   },
+
   {
     id: 'osaka-chuo-400-easy-1',
     title: 'トンネルを走る大阪メトロ中央線400系',
@@ -51705,11 +54758,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:47',
     popular: false,
   },
+
   {
     id: 'osaka-chuo-400-normal-1',
     title: '大阪メトロ中央線400系のホーム',
@@ -51722,11 +54776,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:47',
     popular: false,
   },
+
   {
     id: 'osaka-chuo-400-rich-1',
     title: '大阪メトロ中央線400系のえき',
@@ -51739,11 +54794,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/osaka-chuo-400-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T13:47',
     popular: false,
   },
+
   {
     id: 'nagoya-higashiyama-simple-1',
     title: '名古屋市営東山線N1000形',
@@ -51756,11 +54812,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:14',
     popular: false,
   },
+
   {
     id: 'nagoya-higashiyama-easy-1',
     title: 'トンネルを走る名古屋市営東山線N1000形',
@@ -51773,11 +54830,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:14',
     popular: false,
   },
+
   {
     id: 'nagoya-higashiyama-normal-1',
     title: '名古屋市営東山線N1000形のホーム',
@@ -51790,11 +54848,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:14',
     popular: false,
   },
+
   {
     id: 'nagoya-higashiyama-rich-1',
     title: '名古屋市営東山線N1000形のえき',
@@ -51807,11 +54866,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nagoya-higashiyama-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:14',
     popular: false,
   },
+
   {
     id: 'yokohama-blue-simple-1',
     title: '横浜市営ブルーライン4000系',
@@ -51824,11 +54884,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:42',
     popular: false,
   },
+
   {
     id: 'yokohama-blue-easy-1',
     title: 'トンネルを走る横浜市営ブルーライン4000系',
@@ -51841,11 +54902,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:42',
     popular: false,
   },
+
   {
     id: 'yokohama-blue-normal-1',
     title: '横浜市営ブルーライン4000系のホーム',
@@ -51858,11 +54920,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:42',
     popular: false,
   },
+
   {
     id: 'yokohama-blue-rich-1',
     title: '横浜市営ブルーライン4000系のえき',
@@ -51875,11 +54938,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/yokohama-blue-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T14:42',
     popular: false,
   },
+
   {
     id: 'sapporo-subway-simple-1',
     title: '札幌市営地下鉄南北線5000形',
@@ -51892,11 +54956,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:11',
     popular: false,
   },
+
   {
     id: 'sapporo-subway-easy-1',
     title: 'トンネルを走る札幌市営地下鉄南北線5000形',
@@ -51909,11 +54974,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:11',
     popular: false,
   },
+
   {
     id: 'sapporo-subway-normal-1',
     title: '札幌市営地下鉄南北線5000形のホーム',
@@ -51926,11 +54992,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:11',
     popular: false,
   },
+
   {
     id: 'sapporo-subway-rich-1',
     title: '札幌市営地下鉄南北線5000形のえき',
@@ -51943,11 +55010,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sapporo-subway-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:11',
     popular: false,
   },
+
   {
     id: 'fukuoka-nanakuma-easy-1',
     title: 'トンネルを走る福岡市営七隈線3000系',
@@ -51960,11 +55028,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:40',
     popular: false,
   },
+
   {
     id: 'fukuoka-nanakuma-normal-1',
     title: '福岡市営七隈線3000系のホーム',
@@ -51977,11 +55046,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:40',
     popular: false,
   },
+
   {
     id: 'fukuoka-nanakuma-rich-1',
     title: '福岡市営七隈線3000系のえき',
@@ -51994,11 +55064,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fukuoka-nanakuma-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T15:40',
     popular: false,
   },
+
   {
     id: 'kamotsu-container-simple-1',
     title: 'コンテナ貨物列車',
@@ -52011,11 +55082,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:08',
     popular: false,
   },
+
   {
     id: 'kamotsu-container-easy-1',
     title: 'コンテナ貨物列車がはしる',
@@ -52028,11 +55100,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:08',
     popular: false,
   },
+
   {
     id: 'kamotsu-container-normal-1',
     title: 'コンテナ貨物列車とふみきり',
@@ -52045,11 +55118,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:08',
     popular: false,
   },
+
   {
     id: 'kamotsu-container-rich-1',
     title: 'コンテナ貨物列車のけしき',
@@ -52062,11 +55136,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kamotsu-container-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:08',
     popular: false,
   },
+
   {
     id: 'kintaro-eh500-simple-1',
     title: '金太郎EH500',
@@ -52079,11 +55154,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:35',
     popular: false,
   },
+
   {
     id: 'kintaro-eh500-easy-1',
     title: '金太郎EH500がはしる',
@@ -52096,11 +55172,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:35',
     popular: false,
   },
+
   {
     id: 'kintaro-eh500-normal-1',
     title: '金太郎EH500とふみきり',
@@ -52113,11 +55190,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:35',
     popular: false,
   },
+
   {
     id: 'kintaro-eh500-rich-1',
     title: '金太郎EH500のけしき',
@@ -52130,11 +55208,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kintaro-eh500-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T16:35',
     popular: false,
   },
+
   {
     id: 'momotaro-ef210-simple-1',
     title: '桃太郎EF210',
@@ -52147,11 +55226,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:03',
     popular: false,
   },
+
   {
     id: 'momotaro-ef210-easy-1',
     title: '桃太郎EF210がはしる',
@@ -52164,11 +55244,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:03',
     popular: false,
   },
+
   {
     id: 'momotaro-ef210-normal-1',
     title: '桃太郎EF210とふみきり',
@@ -52181,11 +55262,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:03',
     popular: false,
   },
+
   {
     id: 'momotaro-ef210-rich-1',
     title: '桃太郎EF210のけしき',
@@ -52198,11 +55280,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/momotaro-ef210-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:03',
     popular: false,
   },
+
   {
     id: 'linear-l0-simple-1',
     title: 'リニアL0系',
@@ -52215,11 +55298,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:31',
     popular: false,
   },
+
   {
     id: 'linear-l0-easy-1',
     title: 'リニアL0系がはしる',
@@ -52232,11 +55316,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:31',
     popular: false,
   },
+
   {
     id: 'linear-l0-normal-1',
     title: 'リニアL0系のけしき',
@@ -52249,11 +55334,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:31',
     popular: false,
   },
+
   {
     id: 'linear-l0-rich-1',
     title: 'リニアL0系のたび',
@@ -52266,11 +55352,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/linear-l0-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T17:31',
     popular: false,
   },
+
   {
     id: 'tunnel-kensa-simple-1',
     title: 'トンネル検査車',
@@ -52283,11 +55370,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:00',
     popular: false,
   },
+
   {
     id: 'tunnel-kensa-easy-1',
     title: 'トンネル検査車でさぎょう',
@@ -52300,11 +55388,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:00',
     popular: false,
   },
+
   {
     id: 'tunnel-kensa-normal-1',
     title: 'トンネル検査車とさぎょういん',
@@ -52317,11 +55406,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:00',
     popular: false,
   },
+
   {
     id: 'tunnel-kensa-rich-1',
     title: 'トンネル検査車のおしごと',
@@ -52334,11 +55424,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/tunnel-kensa-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:00',
     popular: false,
   },
+
   {
     id: 'sotetsu-ynb-simple-1',
     title: '相鉄20000系',
@@ -52351,11 +55442,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:27',
     popular: false,
   },
+
   {
     id: 'sotetsu-ynb-easy-1',
     title: '相鉄20000系がはしる',
@@ -52368,11 +55460,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:27',
     popular: false,
   },
+
   {
     id: 'sotetsu-ynb-normal-1',
     title: '相鉄20000系のけしき',
@@ -52385,11 +55478,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:27',
     popular: false,
   },
+
   {
     id: 'sotetsu-ynb-rich-1',
     title: '相鉄20000系のたび',
@@ -52402,11 +55496,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sotetsu-ynb-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:27',
     popular: false,
   },
+
   {
     id: 'minatomirai-y500-simple-1',
     title: 'みなとみらい線Y500系',
@@ -52419,11 +55514,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:57',
     popular: false,
   },
+
   {
     id: 'minatomirai-y500-easy-1',
     title: 'みなとみらい線Y500系がはしる',
@@ -52436,11 +55532,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:57',
     popular: false,
   },
+
   {
     id: 'minatomirai-y500-normal-1',
     title: 'みなとみらい線Y500系のけしき',
@@ -52453,11 +55550,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:57',
     popular: false,
   },
+
   {
     id: 'minatomirai-y500-rich-1',
     title: 'みなとみらい線Y500系のたび',
@@ -52470,11 +55568,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/minatomirai-y500-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T18:57',
     popular: false,
   },
+
   {
     id: 'kyoto-karasuma-simple-1',
     title: '京都市営烏丸線20系',
@@ -52487,11 +55586,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:24',
     popular: false,
   },
+
   {
     id: 'kyoto-karasuma-easy-1',
     title: 'トンネルを走る京都市営烏丸線20系',
@@ -52504,11 +55604,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:24',
     popular: false,
   },
+
   {
     id: 'kyoto-karasuma-normal-1',
     title: '京都市営烏丸線20系のホーム',
@@ -52521,11 +55622,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:24',
     popular: false,
   },
+
   {
     id: 'kyoto-karasuma-rich-1',
     title: '京都市営烏丸線20系のえき',
@@ -52538,11 +55640,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/kyoto-karasuma-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:24',
     popular: false,
   },
+
   {
     id: 'sendai-namboku-simple-1',
     title: '仙台市営南北線3000形',
@@ -52555,11 +55658,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:51',
     popular: false,
   },
+
   {
     id: 'sendai-namboku-easy-1',
     title: 'トンネルを走る仙台市営南北線3000形',
@@ -52572,11 +55676,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:51',
     popular: false,
   },
+
   {
     id: 'sendai-namboku-normal-1',
     title: '仙台市営南北線3000形のホーム',
@@ -52589,11 +55694,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:51',
     popular: false,
   },
+
   {
     id: 'sendai-namboku-rich-1',
     title: '仙台市営南北線3000形のえき',
@@ -52606,11 +55712,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/sendai-namboku-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T19:51',
     popular: false,
   },
+
   {
     id: 'hiroshima-astram-simple-1',
     title: '広島アストラムライン',
@@ -52623,11 +55730,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:19',
     popular: false,
   },
+
   {
     id: 'hiroshima-astram-easy-1',
     title: 'そらをはしる広島アストラムライン',
@@ -52640,11 +55748,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:19',
     popular: false,
   },
+
   {
     id: 'hiroshima-astram-normal-1',
     title: '広島アストラムラインのえき',
@@ -52657,11 +55766,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:19',
     popular: false,
   },
+
   {
     id: 'hiroshima-astram-rich-1',
     title: '広島アストラムラインとまち',
@@ -52674,11 +55784,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/hiroshima-astram-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:19',
     popular: false,
   },
+
   {
     id: 'nozomi-n700s-simple-1',
     title: 'のぞみN700S',
@@ -52691,11 +55802,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:46',
     popular: false,
   },
+
   {
     id: 'nozomi-n700s-easy-1',
     title: 'はしるのぞみN700S',
@@ -52708,11 +55820,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:46',
     popular: false,
   },
+
   {
     id: 'nozomi-n700s-normal-1',
     title: 'のぞみN700Sのホーム',
@@ -52725,11 +55838,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:46',
     popular: false,
   },
+
   {
     id: 'nozomi-n700s-rich-1',
     title: 'のぞみN700Sとけしき',
@@ -52742,11 +55856,12 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/nozomi-n700s-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'pending_review',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-24T20:46',
     popular: false,
   },
+
   {
     id: 'doctor-yellow-rich-1',
     title: 'ドクターイエローとけしき',
@@ -52764,6 +55879,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T21:32',
     popular: false,
   },
+
   {
     id: 'hayabusa-e5-rich-1',
     title: 'はやぶさE5系とけしき',
@@ -52781,6 +55897,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T21:38',
     popular: false,
   },
+
   {
     id: 'komachi-e6-rich-1',
     title: 'こまちE6系とけしき',
@@ -52798,6 +55915,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T21:53',
     popular: false,
   },
+
   {
     id: 'hayabusa-komachi-rich-1',
     title: 'はやぶさ・こまち連結とけしき',
@@ -52815,6 +55933,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:00',
     popular: false,
   },
+
   {
     id: 'tsubasa-e8-rich-1',
     title: 'つばさE8系とけしき',
@@ -52832,6 +55951,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:06',
     popular: false,
   },
+
   {
     id: 'kagayaki-e7-rich-1',
     title: 'かがやきE7系とけしき',
@@ -52849,6 +55969,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:15',
     popular: false,
   },
+
   {
     id: 'hakutaka-e7-rich-1',
     title: 'はくたかE7系とけしき',
@@ -52866,6 +55987,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:21',
     popular: false,
   },
+
   {
     id: 'sakura-n700-rich-1',
     title: 'さくらN700系とけしき',
@@ -52883,6 +56005,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:28',
     popular: false,
   },
+
   {
     id: 'mizuho-n700-rich-1',
     title: 'みずほN700系とけしき',
@@ -52900,6 +56023,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:34',
     popular: false,
   },
+
   {
     id: 'tsubame-800-rich-1',
     title: 'つばめ800系とけしき',
@@ -52917,6 +56041,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:42',
     popular: false,
   },
+
   {
     id: 'kamome-n700s-rich-1',
     title: 'かもめN700Sとけしき',
@@ -52934,6 +56059,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:48',
     popular: false,
   },
+
   {
     id: 'tsurugi-w7-rich-1',
     title: 'つるぎW7系とけしき',
@@ -52951,6 +56077,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T22:56',
     popular: false,
   },
+
   {
     id: 'h5-hayabusa-rich-1',
     title: 'H5系はやぶさとけしき',
@@ -52968,6 +56095,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:03',
     popular: false,
   },
+
   {
     id: 'hikari-n700-rich-1',
     title: 'ひかりN700系とけしき',
@@ -52985,6 +56113,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:11',
     popular: false,
   },
+
   {
     id: 'yamabiko-e2-rich-1',
     title: 'やまびこE2系とけしき',
@@ -53002,6 +56131,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:18',
     popular: false,
   },
+
   {
     id: 'asama-e7-rich-1',
     title: 'あさまE7系とけしき',
@@ -53019,6 +56149,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:25',
     popular: false,
   },
+
   {
     id: 'kodama-n700-rich-1',
     title: 'こだまN700系とけしき',
@@ -53036,6 +56167,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:32',
     popular: false,
   },
+
   {
     id: 'nasuno-e2-rich-1',
     title: 'なすのE2系とけしき',
@@ -53053,6 +56185,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:38',
     popular: false,
   },
+
   {
     id: 'toki-e7-rich-1',
     title: 'ときE7系とけしき',
@@ -53070,6 +56203,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:45',
     popular: false,
   },
+
   {
     id: 'tanigawa-e7-rich-1',
     title: 'たにがわE7系とけしき',
@@ -53087,6 +56221,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:52',
     popular: false,
   },
+
   {
     id: 'mogami-e8-rich-1',
     title: 'もがみE8系とけしき',
@@ -53104,6 +56239,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-24T23:59',
     popular: false,
   },
+
   {
     id: 'fuji-nozomi-rich-1',
     title: 'ふじさんのみえるけしき',
@@ -53121,6 +56257,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:06',
     popular: false,
   },
+
   {
     id: 'fuji-hayabusa-rich-1',
     title: 'さくらとふじさんとはやぶさ',
@@ -53138,6 +56275,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:14',
     popular: false,
   },
+
   {
     id: 'snow-hayabusa-rich-1',
     title: 'ゆきあそびとはやぶさ',
@@ -53155,6 +56293,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:21',
     popular: false,
   },
+
   {
     id: 'tunnel-shin-rich-1',
     title: 'トンネルのけしき',
@@ -53172,6 +56311,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:28',
     popular: false,
   },
+
   {
     id: 'koukakyo-shin-rich-1',
     title: 'こうかとまちのけしき',
@@ -53189,6 +56329,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:35',
     popular: false,
   },
+
   {
     id: 'umi-sakura-rich-1',
     title: 'うみべのけしき',
@@ -53206,6 +56347,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:41',
     popular: false,
   },
+
   {
     id: 'inaka-shin-rich-1',
     title: 'いなかののどかなけしき',
@@ -53223,6 +56365,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:48',
     popular: false,
   },
+
   {
     id: 'heiso-hayabusa-komachi-rich-1',
     title: 'にぎやかなへいそう',
@@ -53240,6 +56383,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:55',
     popular: false,
   },
+
   {
     id: 'yoru-nozomi-rich-1',
     title: 'よるのにぎやかなえき',
@@ -53257,6 +56401,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:02',
     popular: false,
   },
+
   {
     id: 'doctor-yellow-sight-rich-1',
     title: 'みんなでみつけた！',
@@ -53274,6 +56419,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:09',
     popular: false,
   },
+
   {
     id: 'sakura-fuji-rich-1',
     title: 'さくらとおはなみ',
@@ -53291,6 +56437,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:17',
     popular: false,
   },
+
   {
     id: 'himawari-shin-rich-1',
     title: 'なつとしんかんせん',
@@ -53308,6 +56455,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:22',
     popular: false,
   },
+
   {
     id: 'umi-fuji-rich-1',
     title: 'うみとふじのけしき',
@@ -53325,6 +56473,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:30',
     popular: false,
   },
+
   {
     id: 'rice-field-shin-rich-1',
     title: 'たうえのいなかのけしき',
@@ -53342,6 +56491,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:36',
     popular: false,
   },
+
   {
     id: 'ice-river-shin-rich-1',
     title: 'ふゆのにぎやかなしんかんせん',
@@ -53359,6 +56509,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:42',
     popular: false,
   },
+
   {
     id: 'setsujo-scene-rich-1',
     title: 'にぎやかなじょせつシーン',
@@ -53376,6 +56527,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:50',
     popular: false,
   },
+
   {
     id: 'ohigawa-bridge-rich-1',
     title: 'にぎやかなてっきょう',
@@ -53393,6 +56545,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:56',
     popular: false,
   },
+
   {
     id: 'parallel-3-rich-1',
     title: 'にぎやかなへいそう',
@@ -53410,6 +56563,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:10',
     popular: false,
   },
+
   {
     id: 'morning-tokyo-rich-1',
     title: 'にぎやかなあさ',
@@ -53427,6 +56581,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:17',
     popular: false,
   },
+
   {
     id: 'alpine-back-rich-1',
     title: 'にぎやかなアルプスとE7',
@@ -53444,6 +56599,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:31',
     popular: false,
   },
+
   {
     id: 'rainbow-komachi-rich-1',
     title: 'にぎやかなにじとこまち',
@@ -53461,6 +56617,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:39',
     popular: false,
   },
+
   {
     id: 'tokyo-eki-shin-rich-1',
     title: 'にぎやかな東京駅',
@@ -53478,6 +56635,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:47',
     popular: false,
   },
+
   {
     id: 'shin-osaka-eki-rich-1',
     title: 'にぎやかな新大阪駅',
@@ -53495,6 +56653,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T02:54',
     popular: false,
   },
+
   {
     id: 'hakata-eki-shin-rich-1',
     title: 'にぎやかな博多駅',
@@ -53512,6 +56671,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:01',
     popular: false,
   },
+
   {
     id: 'kyoto-eki-shin-rich-1',
     title: 'にぎやかな京都駅',
@@ -53529,6 +56689,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:08',
     popular: false,
   },
+
   {
     id: 'kanazawa-eki-shin-rich-1',
     title: 'にぎやかな金沢駅',
@@ -53546,6 +56707,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:15',
     popular: false,
   },
+
   {
     id: 'nagasaki-kamome-eki-rich-1',
     title: 'にぎやかな長崎駅',
@@ -53563,6 +56725,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:23',
     popular: false,
   },
+
   {
     id: 'shin-yokohama-rich-1',
     title: 'にぎやかな新横浜駅',
@@ -53580,6 +56743,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:29',
     popular: false,
   },
+
   {
     id: 'sendai-eki-shin-rich-1',
     title: 'にぎやかな仙台駅',
@@ -53597,6 +56761,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:35',
     popular: false,
   },
+
   {
     id: 'shin-aomori-eki-rich-1',
     title: 'にぎやかな新青森駅',
@@ -53614,6 +56779,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:42',
     popular: false,
   },
+
   {
     id: 'fukuyama-eki-rich-1',
     title: 'にぎやかな福山駅',
@@ -53631,6 +56797,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:50',
     popular: false,
   },
+
   {
     id: 'east-i-e926-rich-1',
     title: 'イーストアイE926系とけしき',
@@ -53648,6 +56815,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T03:57',
     popular: false,
   },
+
   {
     id: 'shinkansen-setsujo-rich-1',
     title: '新幹線除雪車のおしごと',
@@ -53665,6 +56833,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:05',
     popular: false,
   },
+
   {
     id: 'shinkansen-tamper-rich-1',
     title: '新幹線マルチプルタイタンパーのおしごと',
@@ -53682,6 +56851,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:12',
     popular: false,
   },
+
   {
     id: 'hikari-railstar-rich-1',
     title: 'ひかりレールスター700系とけしき',
@@ -53699,6 +56869,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:19',
     popular: false,
   },
+
   {
     id: 'osaka-tanimachi-rich-1',
     title: '大阪メトロ谷町線22系のえき',
@@ -53716,6 +56887,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:25',
     popular: false,
   },
+
   {
     id: 'osaka-sakaisuji-rich-1',
     title: '大阪メトロ堺筋線66系のえき',
@@ -53733,6 +56905,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:32',
     popular: false,
   },
+
   {
     id: 'osaka-nagahori-rich-1',
     title: '大阪メトロ長堀鶴見緑地線70系のえき',
@@ -53750,6 +56923,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:39',
     popular: false,
   },
+
   {
     id: 'nagoya-sakuradori-rich-1',
     title: '名古屋市営桜通線6050形のえき',
@@ -53767,6 +56941,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:46',
     popular: false,
   },
+
   {
     id: 'nagoya-tsurumai-rich-1',
     title: '名古屋市営鶴舞線3050形のえき',
@@ -53784,6 +56959,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:53',
     popular: false,
   },
+
   {
     id: 'yokohama-green-rich-1',
     title: '横浜市営グリーンライン10000形のえき',
@@ -53801,6 +56977,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T04:59',
     popular: false,
   },
+
   {
     id: 'kyoto-tozai-rich-1',
     title: '京都市営東西線50系のえき',
@@ -53818,6 +56995,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:14',
     popular: false,
   },
+
   {
     id: 'kobe-seishin-rich-1',
     title: '神戸市営西神・山手線6000形のえき',
@@ -53835,6 +57013,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:21',
     popular: false,
   },
+
   {
     id: 'kobe-kaigan-rich-1',
     title: '神戸市営海岸線5000形のえき',
@@ -53852,6 +57031,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:27',
     popular: false,
   },
+
   {
     id: 'sendai-tozai-rich-1',
     title: '仙台市営東西線2000系のえき',
@@ -53869,6 +57049,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:34',
     popular: false,
   },
+
   {
     id: 'sapporo-tozai-rich-1',
     title: '札幌市営東西線8000形のえき',
@@ -53886,6 +57067,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:41',
     popular: false,
   },
+
   {
     id: 'sapporo-toho-rich-1',
     title: '札幌市営東豊線9000形のえき',
@@ -53903,6 +57085,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:48',
     popular: false,
   },
+
   {
     id: 'fukuoka-kuko-rich-1',
     title: '福岡市営空港線2000N系のえき',
@@ -53920,6 +57103,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T05:53',
     popular: false,
   },
+
   {
     id: 'toei-shinjuku-10300-rich-1',
     title: '都営新宿線10300形のえき',
@@ -53937,6 +57121,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:01',
     popular: false,
   },
+
   {
     id: 'nanboku-9000-rich-1',
     title: '東京メトロ南北線9000系のえき',
@@ -53954,6 +57139,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:09',
     popular: false,
   },
+
   {
     id: 'fukutoshin-17000-rich-1',
     title: '東京メトロ副都心線17000系のえき',
@@ -53971,6 +57157,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:16',
     popular: false,
   },
+
   {
     id: 'saitama-rapid-rich-1',
     title: '埼玉高速鉄道2000系のえき',
@@ -53988,6 +57175,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:23',
     popular: false,
   },
+
   {
     id: 'tsukuba-express-rich-1',
     title: 'つくばエクスプレスTX-2000系のえき',
@@ -54005,6 +57193,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:30',
     popular: false,
   },
+
   {
     id: 'rinkai-70000-rich-1',
     title: 'りんかい線70-000系のえき',
@@ -54022,6 +57211,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:37',
     popular: false,
   },
+
   {
     id: 'keio-inokashira-rich-1',
     title: '京王井の頭線1000系のたび',
@@ -54039,6 +57229,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:45',
     popular: false,
   },
+
   {
     id: 'nagoya-meijo-rich-1',
     title: '名古屋市営名城線2000形のえき',
@@ -54056,6 +57247,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:51',
     popular: false,
   },
+
   {
     id: 'nagoya-kamiiida-rich-1',
     title: '名古屋市営上飯田線7000形のえき',
@@ -54073,6 +57265,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T06:59',
     popular: false,
   },
+
   {
     id: 'osaka-imazatosuji-rich-1',
     title: '大阪メトロ今里筋線80系のえき',
@@ -54090,6 +57283,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:37',
     popular: false,
   },
+
   {
     id: 'osaka-yotsubashi-rich-1',
     title: '大阪メトロ四つ橋線23系のえき',
@@ -54107,6 +57301,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:44',
     popular: false,
   },
+
   {
     id: 'osaka-sennichimae-rich-1',
     title: '大阪メトロ千日前線25系のえき',
@@ -54124,6 +57319,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:57',
     popular: false,
   },
+
   {
     id: 'kobe-hokushin-rich-1',
     title: '神戸市営北神線7000系のえき',
@@ -54141,6 +57337,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:05',
     popular: false,
   },
+
   {
     id: 'nagoya-linimo-rich-1',
     title: '愛知高速交通リニモとまち',
@@ -54158,6 +57355,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:12',
     popular: false,
   },
+
   {
     id: 'osaka-monorail-rich-1',
     title: '大阪モノレール2000系とまち',
@@ -54175,6 +57373,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:20',
     popular: false,
   },
+
   {
     id: 'shonan-monorail-rich-1',
     title: '湘南モノレール5000系とまち',
@@ -54192,6 +57391,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:28',
     popular: false,
   },
+
   {
     id: 'kanazawa-seaside-rich-1',
     title: '金沢シーサイドライン2000形とまち',
@@ -54209,6 +57409,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:35',
     popular: false,
   },
+
   {
     id: 'chiba-new-town-rich-1',
     title: '北総鉄道7300系のたび',
@@ -54226,6 +57427,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:42',
     popular: false,
   },
+
   {
     id: 'kobe-portliner-rich-1',
     title: 'ポートライナー2020形とまち',
@@ -54243,6 +57445,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:50',
     popular: false,
   },
+
   {
     id: 'nakanoshima-line-rich-1',
     title: '京阪中之島線3000系のたび',
@@ -54260,6 +57463,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T00:58',
     popular: false,
   },
+
   {
     id: 'fukuoka-hakozaki-rich-1',
     title: '福岡市営箱崎線2000N系のえき',
@@ -54277,6 +57481,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:05',
     popular: false,
   },
+
   {
     id: 'sapporo-namboku-rich-1',
     title: '札幌市営南北線5000形のえき',
@@ -54294,6 +57499,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:13',
     popular: false,
   },
+
   {
     id: 'nishitetsu-6000-rich-1',
     title: '西鉄電車6000形のたび',
@@ -54311,6 +57517,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:20',
     popular: false,
   },
+
   {
     id: 'toyama-chitetsu-rich-1',
     title: '富山地方鉄道17480形のたび',
@@ -54328,6 +57535,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:26',
     popular: false,
   },
+
   {
     id: 'nagano-dentetsu-rich-1',
     title: '長野電鉄2100系のたび',
@@ -54345,6 +57553,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:34',
     popular: false,
   },
+
   {
     id: 'izumino-line-rich-1',
     title: '泉北高速鉄道12000系のたび',
@@ -54362,6 +57571,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:42',
     popular: false,
   },
+
   {
     id: 'shin-keisei-rich-1',
     title: '新京成電鉄80000形のたび',
@@ -54379,6 +57589,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:50',
     popular: false,
   },
+
   {
     id: 'tobu-urban-park-rich-1',
     title: '東武アーバンパークライン60000系のたび',
@@ -54396,6 +57607,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:58',
     popular: false,
   },
+
   {
     id: 'keikyu-airport-rich-1',
     title: '京急空港線1500形のたび',
@@ -54413,6 +57625,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:05',
     popular: false,
   },
+
   {
     id: 'keisei-skyliner-rich-1',
     title: '京成スカイライナーAE形のたび',
@@ -54430,6 +57643,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:12',
     popular: false,
   },
+
   {
     id: 'swing-simple-1',
     title: 'こうえんのブランコ',
@@ -54447,6 +57661,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:41',
     popular: false,
   },
+
   {
     id: 'swing-easy-1',
     title: 'ブランコにのろう',
@@ -54464,6 +57679,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:41',
     popular: false,
   },
+
   {
     id: 'swing-normal-1',
     title: 'なかよしブランコ',
@@ -54481,6 +57697,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:41',
     popular: false,
   },
+
   {
     id: 'swing-rich-1',
     title: 'にぎやかなブランコひろば',
@@ -54498,6 +57715,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:41',
     popular: false,
   },
+
   {
     id: 'baby-swing-simple-1',
     title: 'あかちゃんブランコ',
@@ -54515,6 +57733,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:12',
     popular: false,
   },
+
   {
     id: 'baby-swing-easy-1',
     title: 'ブランコにのるあかちゃん',
@@ -54532,6 +57751,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:12',
     popular: false,
   },
+
   {
     id: 'baby-swing-normal-1',
     title: 'おやこでブランコ',
@@ -54549,6 +57769,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:12',
     popular: false,
   },
+
   {
     id: 'baby-swing-rich-1',
     title: 'こうえんであかちゃんブランコ',
@@ -54566,6 +57787,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:12',
     popular: false,
   },
+
   {
     id: 'tire-swing-simple-1',
     title: 'タイヤブランコ',
@@ -54583,6 +57805,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:43',
     popular: false,
   },
+
   {
     id: 'tire-swing-easy-1',
     title: 'タイヤにのろう',
@@ -54600,6 +57823,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:43',
     popular: false,
   },
+
   {
     id: 'tire-swing-normal-1',
     title: 'みんなでタイヤブランコ',
@@ -54617,6 +57841,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:43',
     popular: false,
   },
+
   {
     id: 'tire-swing-rich-1',
     title: 'タイヤブランコのこうえん',
@@ -54634,6 +57859,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:43',
     popular: false,
   },
+
   {
     id: 'slide-simple-1',
     title: 'こうえんのすべり台',
@@ -54651,6 +57877,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:13',
     popular: false,
   },
+
   {
     id: 'slide-easy-1',
     title: 'すべり台でしゅー',
@@ -54668,6 +57895,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:13',
     popular: false,
   },
+
   {
     id: 'slide-normal-1',
     title: 'なかよしすべり台',
@@ -54685,6 +57913,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:13',
     popular: false,
   },
+
   {
     id: 'slide-rich-1',
     title: 'にぎやかなすべり台',
@@ -54702,6 +57931,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:13',
     popular: false,
   },
+
   {
     id: 'spiral-slide-simple-1',
     title: 'らせんすべり台',
@@ -54719,6 +57949,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:43',
     popular: false,
   },
+
   {
     id: 'spiral-slide-easy-1',
     title: 'くるくるすべり台',
@@ -54736,6 +57967,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:43',
     popular: false,
   },
+
   {
     id: 'spiral-slide-normal-1',
     title: 'たのしいらせんすべり台',
@@ -54753,6 +57985,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:43',
     popular: false,
   },
+
   {
     id: 'spiral-slide-rich-1',
     title: 'らせんすべり台のこうえん',
@@ -54770,6 +58003,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:43',
     popular: false,
   },
+
   {
     id: 'tunnel-slide-simple-1',
     title: 'トンネルすべり台',
@@ -54787,6 +58021,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:13',
     popular: false,
   },
+
   {
     id: 'tunnel-slide-easy-1',
     title: 'トンネルくぐろう',
@@ -54804,6 +58039,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:13',
     popular: false,
   },
+
   {
     id: 'tunnel-slide-normal-1',
     title: 'たのしいトンネルすべり台',
@@ -54821,6 +58057,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:13',
     popular: false,
   },
+
   {
     id: 'tunnel-slide-rich-1',
     title: 'トンネルすべり台のこうえん',
@@ -54838,6 +58075,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:13',
     popular: false,
   },
+
   {
     id: 'seesaw-simple-1',
     title: 'こうえんのシーソー',
@@ -54855,6 +58093,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:51',
     popular: false,
   },
+
   {
     id: 'seesaw-easy-1',
     title: 'シーソーでぎったんばっこ',
@@ -54872,6 +58111,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:51',
     popular: false,
   },
+
   {
     id: 'seesaw-normal-1',
     title: 'なかよしシーソー',
@@ -54889,6 +58129,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:51',
     popular: false,
   },
+
   {
     id: 'seesaw-rich-1',
     title: 'にぎやかなシーソーひろば',
@@ -54906,6 +58147,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:51',
     popular: false,
   },
+
   {
     id: 'sandbox-simple-1',
     title: 'こうえんのすなば',
@@ -54923,6 +58165,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:22',
     popular: false,
   },
+
   {
     id: 'sandbox-easy-1',
     title: 'すなばでおしろ',
@@ -54940,6 +58183,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:22',
     popular: false,
   },
+
   {
     id: 'sandbox-normal-1',
     title: 'なかよしすなば',
@@ -54957,6 +58201,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:22',
     popular: false,
   },
+
   {
     id: 'sandbox-rich-1',
     title: 'にぎやかなすなばひろば',
@@ -54974,6 +58219,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:22',
     popular: false,
   },
+
   {
     id: 'jungle-gym-simple-1',
     title: 'ジャングルジム',
@@ -54991,6 +58237,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:51',
     popular: false,
   },
+
   {
     id: 'jungle-gym-easy-1',
     title: 'ジャングルジムにのぼろう',
@@ -55008,6 +58255,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:51',
     popular: false,
   },
+
   {
     id: 'jungle-gym-normal-1',
     title: 'みんなでジャングルジム',
@@ -55025,6 +58273,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:51',
     popular: false,
   },
+
   {
     id: 'jungle-gym-rich-1',
     title: 'ジャングルジムのこうえん',
@@ -55042,6 +58291,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:51',
     popular: false,
   },
+
   {
     id: 'horizontal-bar-simple-1',
     title: 'こうえんのてつぼう',
@@ -55059,6 +58309,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:21',
     popular: false,
   },
+
   {
     id: 'horizontal-bar-easy-1',
     title: 'てつぼうにぶらさがろう',
@@ -55076,6 +58327,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:21',
     popular: false,
   },
+
   {
     id: 'horizontal-bar-normal-1',
     title: 'てつぼうでまえまわり',
@@ -55093,6 +58345,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:21',
     popular: false,
   },
+
   {
     id: 'horizontal-bar-rich-1',
     title: 'にぎやかなてつぼうひろば',
@@ -55110,6 +58363,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:21',
     popular: false,
   },
+
   {
     id: 'spring-rider-simple-1',
     title: 'スプリングライダー',
@@ -55127,6 +58381,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:52',
     popular: false,
   },
+
   {
     id: 'spring-rider-easy-1',
     title: 'スプリングライダーにのろう',
@@ -55144,6 +58399,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:52',
     popular: false,
   },
+
   {
     id: 'spring-rider-normal-1',
     title: 'いろんなスプリングライダー',
@@ -55161,6 +58417,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:52',
     popular: false,
   },
+
   {
     id: 'spring-rider-rich-1',
     title: 'スプリングライダーのこうえん',
@@ -55178,6 +58435,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T07:52',
     popular: false,
   },
+
   {
     id: 'balance-beam-simple-1',
     title: 'こうえんの平均台',
@@ -55195,6 +58453,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:21',
     popular: false,
   },
+
   {
     id: 'balance-beam-easy-1',
     title: '平均台をわたろう',
@@ -55212,6 +58471,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:21',
     popular: false,
   },
+
   {
     id: 'balance-beam-normal-1',
     title: 'みんなで平均台',
@@ -55229,6 +58489,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:21',
     popular: false,
   },
+
   {
     id: 'balance-beam-rich-1',
     title: '平均台のあるこうえん',
@@ -55246,6 +58507,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:21',
     popular: false,
   },
+
   {
     id: 'climbing-wall-simple-1',
     title: 'クライミングウォール',
@@ -55263,6 +58525,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:51',
     popular: false,
   },
+
   {
     id: 'climbing-wall-easy-1',
     title: 'クライミングウォールをのぼろう',
@@ -55280,6 +58543,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:51',
     popular: false,
   },
+
   {
     id: 'climbing-wall-normal-1',
     title: 'みんなでクライミング',
@@ -55297,6 +58561,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:51',
     popular: false,
   },
+
   {
     id: 'climbing-wall-rich-1',
     title: 'クライミングウォールのこうえん',
@@ -55314,6 +58579,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T08:51',
     popular: false,
   },
+
   {
     id: 'water-play-simple-1',
     title: 'じゃぶじゃぶ池',
@@ -55331,6 +58597,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T09:20',
     popular: false,
   },
+
   {
     id: 'water-play-easy-1',
     title: 'みずあそびだ！',
@@ -55348,6 +58615,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T09:20',
     popular: false,
   },
+
   {
     id: 'water-play-normal-1',
     title: 'みんなでじゃぶじゃぶ',
@@ -55365,6 +58633,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T09:20',
     popular: false,
   },
+
   {
     id: 'water-play-rich-1',
     title: 'なつのじゃぶじゃぶ池',
@@ -55382,9 +58651,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T09:20',
     popular: false,
   },
+
   {
     id: 'fairytale-sleeping-beauty-simple-1',
-    title: 'まじょののろい',
+    title: 'ねむれるもりのびじょ：まじょののろい',
     description: '魔女の呪いのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55399,9 +58669,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:39',
     popular: false,
   },
+
   {
     id: 'fairytale-sleeping-beauty-easy-1',
-    title: 'いとぐるまのはり',
+    title: 'ねむれるもりのびじょ：いとぐるまのはり',
     description: '糸車の針のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55416,9 +58687,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:39',
     popular: false,
   },
+
   {
     id: 'fairytale-sleeping-beauty-normal-1',
-    title: 'バラのとげのしろ',
+    title: 'ねむれるもりのびじょ：バラのとげのしろ',
     description: 'バラに覆われた城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55433,9 +58705,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:39',
     popular: false,
   },
+
   {
     id: 'fairytale-sleeping-beauty-rich-1',
-    title: 'おうじのキスでめざめる',
+    title: 'ねむれるもりのびじょ：おうじのキスでめざめる',
     description: '王子のキスのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55450,9 +58723,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T00:39',
     popular: false,
   },
+
   {
     id: 'fairytale-red-riding-hood-simple-1',
-    title: 'おつかいにいく',
+    title: 'あかずきん：おつかいにいく',
     description: 'お使いに出る線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55467,9 +58741,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:10',
     popular: false,
   },
+
   {
     id: 'fairytale-red-riding-hood-easy-1',
-    title: 'もりでオオカミとあう',
+    title: 'あかずきん：もりでオオカミとあう',
     description: '森でオオカミに会う線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55484,9 +58759,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:10',
     popular: false,
   },
+
   {
     id: 'fairytale-red-riding-hood-normal-1',
-    title: 'おばあさんにばけたオオカミ',
+    title: 'あかずきん：おばあさんにばけたオオカミ',
     description: 'ベッドのオオカミのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55501,9 +58777,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:10',
     popular: false,
   },
+
   {
     id: 'fairytale-red-riding-hood-rich-1',
-    title: 'りょうしがたすける',
+    title: 'あかずきん：りょうしがたすける',
     description: '猟師が助ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55518,9 +58795,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T01:10',
     popular: false,
   },
+
   {
     id: 'fairytale-hansel-gretel-simple-1',
-    title: 'もりにすてられる',
+    title: 'ヘンゼルとグレーテル：もりにすてられる',
     description: '森を歩く線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55535,9 +58813,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T15:29',
     popular: false,
   },
+
   {
     id: 'fairytale-hansel-gretel-easy-1',
-    title: 'おかしのいえ',
+    title: 'ヘンゼルとグレーテル：おかしのいえ',
     description: 'お菓子の家のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55552,9 +58831,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T15:29',
     popular: false,
   },
+
   {
     id: 'fairytale-hansel-gretel-normal-1',
-    title: 'まじょのおり',
+    title: 'ヘンゼルとグレーテル：まじょのおり',
     description: '魔女の檻のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55569,9 +58849,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T15:29',
     popular: false,
   },
+
   {
     id: 'fairytale-hansel-gretel-rich-1',
-    title: 'まじょをやっつける',
+    title: 'ヘンゼルとグレーテル：まじょをやっつける',
     description: '魔女を倒す線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55586,9 +58867,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T15:29',
     popular: false,
   },
+
   {
     id: 'fairytale-puss-in-boots-simple-1',
-    title: 'ながぐつのねこ',
+    title: 'ながぐつをはいたねこ：ながぐつのねこ',
     description: '長靴の猫のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55603,9 +58885,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T16:47',
     popular: false,
   },
+
   {
     id: 'fairytale-puss-in-boots-easy-1',
-    title: 'おうさまにけんじょう',
+    title: 'ながぐつをはいたねこ：おうさまにけんじょう',
     description: '王様に献上する線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55620,9 +58903,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T16:47',
     popular: false,
   },
+
   {
     id: 'fairytale-puss-in-boots-normal-1',
-    title: 'まほうつかいをだます',
+    title: 'ながぐつをはいたねこ：まほうつかいをだます',
     description: '魔法使いを騙す線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55637,9 +58921,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T16:47',
     popular: false,
   },
+
   {
     id: 'fairytale-puss-in-boots-rich-1',
-    title: 'おうじょとけっこん',
+    title: 'ながぐつをはいたねこ：おうじょとけっこん',
     description: '王女と結婚する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55654,9 +58939,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T16:47',
     popular: false,
   },
+
   {
     id: 'fairytale-bremen-musicians-simple-1',
-    title: 'よんひきがであう',
+    title: 'ブレーメンのおんがくたい：よんひきがであう',
     description: '4匹が出会う線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55671,9 +58957,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:24',
     popular: false,
   },
+
   {
     id: 'fairytale-bremen-musicians-easy-1',
-    title: 'つみかさなる',
+    title: 'ブレーメンのおんがくたい：つみかさなる',
     description: '積み重なる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55688,9 +58975,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:24',
     popular: false,
   },
+
   {
     id: 'fairytale-bremen-musicians-normal-1',
-    title: 'どろぼうをおいはらう',
+    title: 'ブレーメンのおんがくたい：どろぼうをおいはらう',
     description: '泥棒を追い払う線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55705,9 +58993,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:24',
     popular: false,
   },
+
   {
     id: 'fairytale-bremen-musicians-rich-1',
-    title: 'おんがくかい',
+    title: 'ブレーメンのおんがくたい：おんがくかい',
     description: '音楽会のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55722,9 +59011,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:24',
     popular: false,
   },
+
   {
     id: 'fairytale-wolf-seven-goats-simple-1',
-    title: 'ははヤギのいいつけ',
+    title: 'おおかみとしちひきのこやぎ：ははヤギのいいつけ',
     description: '母ヤギの言いつけのぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55739,9 +59029,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:57',
     popular: false,
   },
+
   {
     id: 'fairytale-wolf-seven-goats-easy-1',
-    title: 'オオカミがやってくる',
+    title: 'おおかみとしちひきのこやぎ：オオカミがやってくる',
     description: 'オオカミの侵入のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55756,9 +59047,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:57',
     popular: false,
   },
+
   {
     id: 'fairytale-wolf-seven-goats-normal-1',
-    title: 'とけいにかくれる',
+    title: 'おおかみとしちひきのこやぎ：とけいにかくれる',
     description: '時計に隠れる線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55773,9 +59065,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:57',
     popular: false,
   },
+
   {
     id: 'fairytale-wolf-seven-goats-rich-1',
-    title: 'おなかにいしをつめる',
+    title: 'おおかみとしちひきのこやぎ：おなかにいしをつめる',
     description: 'オオカミに石を詰める線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55790,9 +59083,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T17:57',
     popular: false,
   },
+
   {
     id: 'fairytale-rumpelstiltskin-simple-1',
-    title: 'わらをきんに',
+    title: 'ルンペルシュティルツキン：わらをきんに',
     description: 'わらを金に命じられる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55807,9 +59101,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T18:31',
     popular: false,
   },
+
   {
     id: 'fairytale-rumpelstiltskin-easy-1',
-    title: 'こびとのいとぐるま',
+    title: 'ルンペルシュティルツキン：こびとのいとぐるま',
     description: '小人が紡ぐ線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55824,9 +59119,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T18:31',
     popular: false,
   },
+
   {
     id: 'fairytale-rumpelstiltskin-normal-1',
-    title: 'なまえあてのかけ',
+    title: 'ルンペルシュティルツキン：なまえあてのかけ',
     description: '名前当ての賭けのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55841,9 +59137,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T18:31',
     popular: false,
   },
+
   {
     id: 'fairytale-rumpelstiltskin-rich-1',
-    title: 'なまえをあてられる',
+    title: 'ルンペルシュティルツキン：なまえをあてられる',
     description: '名前を当てる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55858,9 +59155,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T18:31',
     popular: false,
   },
+
   {
     id: 'fairytale-golden-goose-simple-1',
-    title: 'ろうじんにパンをあげる',
+    title: 'きんのがちょう：ろうじんにパンをあげる',
     description: '老人にパンを分ける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55875,9 +59173,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:04',
     popular: false,
   },
+
   {
     id: 'fairytale-golden-goose-easy-1',
-    title: 'ガチョウにくっつく',
+    title: 'きんのがちょう：ガチョウにくっつく',
     description: 'ガチョウにくっつく線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55892,9 +59191,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:04',
     popular: false,
   },
+
   {
     id: 'fairytale-golden-goose-normal-1',
-    title: 'ながいぎょうれつ',
+    title: 'きんのがちょう：ながいぎょうれつ',
     description: '長い行列のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55909,9 +59209,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:04',
     popular: false,
   },
+
   {
     id: 'fairytale-golden-goose-rich-1',
-    title: 'おうじょがわらう',
+    title: 'きんのがちょう：おうじょがわらう',
     description: '王女が笑う線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55926,9 +59227,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:04',
     popular: false,
   },
+
   {
     id: 'fairytale-white-snake-simple-1',
-    title: 'しろへびのりょうり',
+    title: 'しろへび：しろへびのりょうり',
     description: '蛇の料理を食べる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -55943,9 +59245,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:37',
     popular: false,
   },
+
   {
     id: 'fairytale-white-snake-easy-1',
-    title: 'アリをたすける',
+    title: 'しろへび：アリをたすける',
     description: 'アリを助ける線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -55960,9 +59263,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:37',
     popular: false,
   },
+
   {
     id: 'fairytale-white-snake-normal-1',
-    title: 'さかなをたすける',
+    title: 'しろへび：さかなをたすける',
     description: '魚を助ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -55977,9 +59281,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:37',
     popular: false,
   },
+
   {
     id: 'fairytale-white-snake-rich-1',
-    title: 'おうじょとむすばれる',
+    title: 'しろへび：おうじょとむすばれる',
     description: '王女と結ばれる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -55994,9 +59299,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T19:37',
     popular: false,
   },
+
   {
     id: 'fairytale-frog-prince-simple-1',
-    title: 'ボールをおとす',
+    title: 'かえるのおうじさま：ボールをおとす',
     description: 'ボールを落とす線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56011,9 +59317,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T20:12',
     popular: false,
   },
+
   {
     id: 'fairytale-frog-prince-easy-1',
-    title: 'カエルとやくそく',
+    title: 'かえるのおうじさま：カエルとやくそく',
     description: 'カエルとの取引のぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56028,9 +59335,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T20:12',
     popular: false,
   },
+
   {
     id: 'fairytale-frog-prince-normal-1',
-    title: 'しょくたくのカエル',
+    title: 'かえるのおうじさま：しょくたくのカエル',
     description: '食卓のカエルのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56045,9 +59353,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T20:12',
     popular: false,
   },
+
   {
     id: 'fairytale-frog-prince-rich-1',
-    title: 'おうじへへんしん',
+    title: 'かえるのおうじさま：おうじへへんしん',
     description: '王子に変身する線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56062,9 +59371,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T20:12',
     popular: false,
   },
+
   {
     id: 'fairytale-snow-white-rose-red-simple-1',
-    title: 'しろとあかのバラ',
+    title: 'ゆきしろとべにばら：しろとあかのバラ',
     description: '庭で遊ぶ姉妹の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56079,9 +59389,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:03',
     popular: false,
   },
+
   {
     id: 'fairytale-snow-white-rose-red-easy-1',
-    title: 'くまとあたたまる',
+    title: 'ゆきしろとべにばら：くまとあたたまる',
     description: '熊と暖炉の線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56096,9 +59407,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:03',
     popular: false,
   },
+
   {
     id: 'fairytale-snow-white-rose-red-normal-1',
-    title: 'いじわるなこびと',
+    title: 'ゆきしろとべにばら：いじわるなこびと',
     description: '小人を助ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56113,9 +59425,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:03',
     popular: false,
   },
+
   {
     id: 'fairytale-snow-white-rose-red-rich-1',
-    title: 'おうじにもどる',
+    title: 'ゆきしろとべにばら：おうじにもどる',
     description: '王子と結ばれる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56130,9 +59443,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:03',
     popular: false,
   },
+
   {
     id: 'fairytale-match-girl-simple-1',
-    title: 'ゆきのよのマッチうり',
+    title: 'マッチうりのしょうじょ：ゆきのよのマッチうり',
     description: '雪の街角の少女の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56147,9 +59461,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:37',
     popular: false,
   },
+
   {
     id: 'fairytale-match-girl-easy-1',
-    title: 'ストーブのまぼろし',
+    title: 'マッチうりのしょうじょ：ストーブのまぼろし',
     description: 'ストーブの幻の線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56164,9 +59479,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:37',
     popular: false,
   },
+
   {
     id: 'fairytale-match-girl-normal-1',
-    title: 'ごちそうのまぼろし',
+    title: 'マッチうりのしょうじょ：ごちそうのまぼろし',
     description: 'ごちそうの幻の線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56181,9 +59497,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:37',
     popular: false,
   },
+
   {
     id: 'fairytale-match-girl-rich-1',
-    title: 'おばあちゃんとそらへ',
+    title: 'マッチうりのしょうじょ：おばあちゃんとそらへ',
     description: 'おばあちゃんと天へ昇る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56198,9 +59515,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T21:37',
     popular: false,
   },
+
   {
     id: 'fairytale-red-shoes-simple-1',
-    title: 'あかいくつをみつめる',
+    title: 'あかいくつ：あかいくつをみつめる',
     description: '赤い靴を見つめる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56215,9 +59533,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:19',
     popular: false,
   },
+
   {
     id: 'fairytale-red-shoes-easy-1',
-    title: 'うれしそうにおどる',
+    title: 'あかいくつ：うれしそうにおどる',
     description: '踊り始める線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56232,9 +59551,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:19',
     popular: false,
   },
+
   {
     id: 'fairytale-red-shoes-normal-1',
-    title: 'とまらないダンス',
+    title: 'あかいくつ：とまらないダンス',
     description: '止まらず踊る線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56249,9 +59569,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:19',
     popular: false,
   },
+
   {
     id: 'fairytale-red-shoes-rich-1',
-    title: 'てんしがゆるす',
+    title: 'あかいくつ：てんしがゆるす',
     description: '天使が現れる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56266,9 +59587,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:19',
     popular: false,
   },
+
   {
     id: 'fairytale-nightingale-simple-1',
-    title: 'もりでうたうこえ',
+    title: 'ナイチンゲール：もりでうたうこえ',
     description: '庭園で歌う線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56283,9 +59605,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:52',
     popular: false,
   },
+
   {
     id: 'fairytale-nightingale-easy-1',
-    title: 'きゅうていでうたう',
+    title: 'ナイチンゲール：きゅうていでうたう',
     description: '宮廷で歌う線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56300,9 +59623,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:52',
     popular: false,
   },
+
   {
     id: 'fairytale-nightingale-normal-1',
-    title: 'きかいのとりにわすれられる',
+    title: 'ナイチンゲール：きかいのとりにわすれられる',
     description: '機械の鳥の線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56317,9 +59641,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:52',
     popular: false,
   },
+
   {
     id: 'fairytale-nightingale-rich-1',
-    title: 'こうていをすくう',
+    title: 'ナイチンゲール：こうていをすくう',
     description: '皇帝を救う線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56334,9 +59659,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T22:52',
     popular: false,
   },
+
   {
     id: 'fairytale-wild-swans-simple-1',
-    title: 'あにたちがはくちょうに',
+    title: 'やせいのはくちょう：あにたちがはくちょうに',
     description: '兄が白鳥に変わる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56351,9 +59677,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:26',
     popular: false,
   },
+
   {
     id: 'fairytale-wild-swans-easy-1',
-    title: 'せにのせてとぶ',
+    title: 'やせいのはくちょう：せにのせてとぶ',
     description: '白鳥に運ばれる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56368,9 +59695,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:26',
     popular: false,
   },
+
   {
     id: 'fairytale-wild-swans-normal-1',
-    title: 'イラクサのふくをあむ',
+    title: 'やせいのはくちょう：イラクサのふくをあむ',
     description: '服を編む線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56385,9 +59713,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:26',
     popular: false,
   },
+
   {
     id: 'fairytale-wild-swans-rich-1',
-    title: 'にんげんにもどる',
+    title: 'やせいのはくちょう：にんげんにもどる',
     description: '兄が戻る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56402,9 +59731,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:26',
     popular: false,
   },
+
   {
     id: 'fairytale-princess-pea-simple-1',
-    title: 'あらしのよるのひめ',
+    title: 'えんどうまめのおひめさま：あらしのよるのひめ',
     description: '嵐の夜の姫の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56419,9 +59749,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:59',
     popular: false,
   },
+
   {
     id: 'fairytale-princess-pea-easy-1',
-    title: 'まめをひそかにおく',
+    title: 'えんどうまめのおひめさま：まめをひそかにおく',
     description: '豆を置く線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56436,9 +59767,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:59',
     popular: false,
   },
+
   {
     id: 'fairytale-princess-pea-normal-1',
-    title: 'たかいベッドでねむれない',
+    title: 'えんどうまめのおひめさま：たかいベッドでねむれない',
     description: '高いベッドの線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56453,9 +59785,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:59',
     popular: false,
   },
+
   {
     id: 'fairytale-princess-pea-rich-1',
-    title: 'ほんもののひめとしょうめい',
+    title: 'えんどうまめのおひめさま：ほんもののひめとしょうめい',
     description: '本物の姫と証明される線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56470,9 +59803,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-25T23:59',
     popular: false,
   },
+
   {
     id: 'fairytale-emperors-new-clothes-simple-1',
-    title: 'みえないぬの',
+    title: 'はだかのおうさま：みえないぬの',
     description: '詐欺師と王様の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56487,9 +59821,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T01:41',
     popular: false,
   },
+
   {
     id: 'fairytale-tinderbox-simple-1',
-    title: 'きのなかのいど',
+    title: 'ひのうちばこ：きのなかのいど',
     description: '井戸へ降りる線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56504,9 +59839,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:15',
     popular: false,
   },
+
   {
     id: 'fairytale-tinderbox-easy-1',
-    title: 'おおきないぬがあらわれる',
+    title: 'ひのうちばこ：おおきないぬがあらわれる',
     description: '大きな犬の線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56521,9 +59857,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:15',
     popular: false,
   },
+
   {
     id: 'fairytale-tinderbox-normal-1',
-    title: 'ひめをはこぶ',
+    title: 'ひのうちばこ：ひめをはこぶ',
     description: '姫を運ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56538,9 +59875,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:15',
     popular: false,
   },
+
   {
     id: 'fairytale-tinderbox-rich-1',
-    title: 'おうさまをこらしめる',
+    title: 'ひのうちばこ：おうさまをこらしめる',
     description: '王様を懲らしめる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56555,9 +59893,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:15',
     popular: false,
   },
+
   {
     id: 'fairytale-ant-grasshopper-simple-1',
-    title: 'なつにあそぶキリギリス',
+    title: 'アリとキリギリス：なつにあそぶキリギリス',
     description: '歌うキリギリスの線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56572,9 +59911,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:46',
     popular: false,
   },
+
   {
     id: 'fairytale-ant-grasshopper-easy-1',
-    title: 'はたらくアリ',
+    title: 'アリとキリギリス：はたらくアリ',
     description: '働くアリの線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56589,9 +59929,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:46',
     popular: false,
   },
+
   {
     id: 'fairytale-ant-grasshopper-normal-1',
-    title: 'ふゆでこごえる',
+    title: 'アリとキリギリス：ふゆでこごえる',
     description: '冬で凍えるキリギリスの線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56606,9 +59947,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:46',
     popular: false,
   },
+
   {
     id: 'fairytale-ant-grasshopper-rich-1',
-    title: 'アリのいえにまねかれる',
+    title: 'アリとキリギリス：アリのいえにまねかれる',
     description: 'アリに招かれる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56623,9 +59965,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T02:46',
     popular: false,
   },
+
   {
     id: 'fairytale-tortoise-hare-simple-1',
-    title: 'スタート',
+    title: 'うさぎとかめ：スタート',
     description: 'スタートの線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56640,9 +59983,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:21',
     popular: false,
   },
+
   {
     id: 'fairytale-tortoise-hare-easy-1',
-    title: 'うさぎがおおきくリード',
+    title: 'うさぎとかめ：うさぎがおおきくリード',
     description: '走るうさぎとかめの線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56657,9 +60001,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:21',
     popular: false,
   },
+
   {
     id: 'fairytale-tortoise-hare-normal-1',
-    title: 'うさぎがひるね',
+    title: 'うさぎとかめ：うさぎがひるね',
     description: '昼寝するうさぎの線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56674,9 +60019,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:21',
     popular: false,
   },
+
   {
     id: 'fairytale-tortoise-hare-rich-1',
-    title: 'かめがゴール',
+    title: 'うさぎとかめ：かめがゴール',
     description: 'かめがゴールの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56691,9 +60037,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:21',
     popular: false,
   },
+
   {
     id: 'fairytale-north-wind-sun-simple-1',
-    title: 'コートをきたたびびと',
+    title: 'きたかぜとたいよう：コートをきたたびびと',
     description: '旅人の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56708,9 +60055,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:54',
     popular: false,
   },
+
   {
     id: 'fairytale-north-wind-sun-easy-1',
-    title: 'きたかぜがふく',
+    title: 'きたかぜとたいよう：きたかぜがふく',
     description: '北風が吹く線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56725,9 +60073,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:54',
     popular: false,
   },
+
   {
     id: 'fairytale-north-wind-sun-normal-1',
-    title: 'たいようがてらす',
+    title: 'きたかぜとたいよう：たいようがてらす',
     description: '太陽が照らす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56742,9 +60091,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:54',
     popular: false,
   },
+
   {
     id: 'fairytale-north-wind-sun-rich-1',
-    title: 'コートをぬぐたびびと',
+    title: 'きたかぜとたいよう：コートをぬぐたびびと',
     description: 'コートを脱ぐ線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56759,9 +60109,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T03:54',
     popular: false,
   },
+
   {
     id: 'fairytale-boy-cried-wolf-simple-1',
-    title: 'ひつじをみはるしょうねん',
+    title: 'おおかみしょうねん：ひつじをみはるしょうねん',
     description: '羊を見張る少年の線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56776,9 +60127,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:28',
     popular: false,
   },
+
   {
     id: 'fairytale-boy-cried-wolf-easy-1',
-    title: 'うそをさけぶ',
+    title: 'おおかみしょうねん：うそをさけぶ',
     description: '嘘の叫びと村人の線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56793,9 +60145,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:28',
     popular: false,
   },
+
   {
     id: 'fairytale-boy-cried-wolf-normal-1',
-    title: 'むらびとがあきれる',
+    title: 'おおかみしょうねん：むらびとがあきれる',
     description: '呆れる村人の線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56810,9 +60163,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:28',
     popular: false,
   },
+
   {
     id: 'fairytale-boy-cried-wolf-rich-1',
-    title: 'ほんとうにオオカミがきた',
+    title: 'おおかみしょうねん：ほんとうにオオカミがきた',
     description: '本当のオオカミの線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56827,9 +60181,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T04:28',
     popular: false,
   },
+
   {
     id: 'fairytale-lion-mouse-simple-1',
-    title: 'ネズミがライオンをおこす',
+    title: 'ライオンとねずみ：ネズミがライオンをおこす',
     description: 'ネズミが起こす線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56844,9 +60199,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:02',
     popular: false,
   },
+
   {
     id: 'fairytale-lion-mouse-easy-1',
-    title: 'おんがえしのやくそく',
+    title: 'ライオンとねずみ：おんがえしのやくそく',
     description: 'ネズミが頼む線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56861,9 +60217,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:02',
     popular: false,
   },
+
   {
     id: 'fairytale-lion-mouse-normal-1',
-    title: 'あみにかかったライオン',
+    title: 'ライオンとねずみ：あみにかかったライオン',
     description: '網にかかったライオンの線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56878,9 +60235,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:02',
     popular: false,
   },
+
   {
     id: 'fairytale-lion-mouse-rich-1',
-    title: 'ネズミがあみをかじる',
+    title: 'ライオンとねずみ：ネズミがあみをかじる',
     description: 'ネズミが助ける線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56895,9 +60253,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:02',
     popular: false,
   },
+
   {
     id: 'fairytale-fox-grapes-simple-1',
-    title: 'ブドウをみつける',
+    title: 'きつねとぶどう：ブドウをみつける',
     description: 'ブドウを見つける線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56912,9 +60271,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:36',
     popular: false,
   },
+
   {
     id: 'fairytale-fox-grapes-easy-1',
-    title: 'ジャンプする',
+    title: 'きつねとぶどう：ジャンプする',
     description: 'ジャンプする線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56929,9 +60289,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:36',
     popular: false,
   },
+
   {
     id: 'fairytale-fox-grapes-normal-1',
-    title: 'つかれてすわりこむ',
+    title: 'きつねとぶどう：つかれてすわりこむ',
     description: '座り込む線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -56946,9 +60307,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:36',
     popular: false,
   },
+
   {
     id: 'fairytale-fox-grapes-rich-1',
-    title: 'すっぱいといってさる',
+    title: 'きつねとぶどう：すっぱいといってさる',
     description: '強がって去る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -56963,9 +60325,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T05:36',
     popular: false,
   },
+
   {
     id: 'fairytale-crow-pitcher-simple-1',
-    title: 'みずをさがすカラス',
+    title: 'カラスとみずがめ：みずをさがすカラス',
     description: '水を探すカラスの線画。',
     ageMin: 3, ageMax: 5, difficulty: 1, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -56980,9 +60343,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:19',
     popular: false,
   },
+
   {
     id: 'fairytale-crow-pitcher-easy-1',
-    title: 'くちばしがとどかない',
+    title: 'カラスとみずがめ：くちばしがとどかない',
     description: '嘴が届かない線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -56997,9 +60361,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:19',
     popular: false,
   },
+
   {
     id: 'fairytale-crow-pitcher-normal-1',
-    title: 'いしをおとす',
+    title: 'カラスとみずがめ：いしをおとす',
     description: '石を落とす線画。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -57014,9 +60379,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:19',
     popular: false,
   },
+
   {
     id: 'fairytale-emperors-new-clothes-easy-1',
-    title: 'だいじんがほめる',
+    title: 'はだかのおうさま：だいじんがほめる',
     description: '大臣のふりのぬりえ。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -57031,9 +60397,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T17:00',
     popular: false,
   },
+
   {
     id: 'fairytale-emperors-new-clothes-normal-1',
-    title: 'したぎでパレード',
+    title: 'はだかのおうさま：したぎでパレード',
     description: 'パレードのぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -57048,9 +60415,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T17:00',
     popular: false,
   },
+
   {
     id: 'fairytale-emperors-new-clothes-rich-1',
-    title: 'おうさまははだかだ',
+    title: 'はだかのおうさま：おうさまははだかだ',
     description: '子どもが叫ぶ線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -57065,9 +60433,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T17:00',
     popular: false,
   },
+
   {
     id: 'fairytale-crow-pitcher-rich-1',
-    title: 'みずをのめる',
+    title: 'カラスとみずがめ：みずをのめる',
     description: '水を飲む線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -57082,9 +60451,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-26T06:19',
     popular: false,
   },
+
   {
     id: 'fairytale-three-little-pigs-simple-1',
-    title: 'いえをたてる',
+    title: 'さんびきのこぶた：いえをたてる',
     description: '家を建てる線画。',
     ageMin: 2, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -57094,14 +60464,15 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-simple-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-simple-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-27T06:28',
     popular: false,
   },
+
   {
     id: 'fairytale-three-little-pigs-easy-1',
-    title: 'わらのいえがふきとぶ',
+    title: 'さんびきのこぶた：わらのいえがふきとぶ',
     description: 'わらの家が飛ぶ線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -57111,14 +60482,15 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-easy-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-easy-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-27T06:36',
     popular: false,
   },
+
   {
     id: 'fairytale-three-little-pigs-normal-1',
-    title: 'レンガはふきとばない',
+    title: 'さんびきのこぶた：レンガはふきとばない',
     description: 'レンガの家のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -57128,14 +60500,15 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-normal-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-normal-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-27T06:45',
     popular: false,
   },
+
   {
     id: 'fairytale-three-little-pigs-rich-1',
-    title: 'オオカミがにげる',
+    title: 'さんびきのこぶた：オオカミがにげる',
     description: 'オオカミ逃げる線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -57145,14 +60518,15 @@ const _materialsRecovered: Material[] = [
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-rich-1-illust.png',
     illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/fairytale-three-little-pigs-rich-1-illust.png',
     illustVersion: 1,
-    imageStatus: 'needs_revision',
+    imageStatus: 'duplicate',
     pdfUrl: '',
     createdAt: '2026-05-27T06:53',
     popular: false,
   },
+
   {
     id: 'fairytale-wizard-oz-simple-1',
-    title: 'たつまきでいえがとぶ',
+    title: 'オズのまほうつかい：たつまきでいえがとぶ',
     description: '竜巻のぬりえ。',
     ageMin: 2, ageMax: 4, difficulty: 2, duration: 10,
     category: 'coloring', theme: 'fairytale',
@@ -57167,9 +60541,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T08:00',
     popular: false,
   },
+
   {
     id: 'fairytale-wizard-oz-easy-1',
-    title: 'なかまとであう',
+    title: 'オズのまほうつかい：なかまとであう',
     description: '仲間と出会う線画。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -57184,9 +60559,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T08:00',
     popular: false,
   },
+
   {
     id: 'fairytale-wizard-oz-normal-1',
-    title: 'きいろいレンガみち',
+    title: 'オズのまほうつかい：きいろいレンガみち',
     description: '黄色い道のぬりえ。',
     ageMin: 3, ageMax: 5, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -57201,9 +60577,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T08:00',
     popular: false,
   },
+
   {
     id: 'fairytale-wizard-oz-rich-1',
-    title: 'ぎんのくつでいえへ',
+    title: 'オズのまほうつかい：ぎんのくつでいえへ',
     description: '家に帰る線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -57218,9 +60595,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T08:00',
     popular: false,
   },
+
   {
     id: 'fairytale-jack-beanstalk-easy-1',
-    title: 'まめのきがくもまで',
+    title: 'ジャックとまめのき：まめのきがくもまで',
     description: '豆の木が伸びる線画。',
     ageMin: 3, ageMax: 6, difficulty: 2, duration: 15,
     category: 'coloring', theme: 'fairytale',
@@ -57235,9 +60613,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T09:46',
     popular: false,
   },
+
   {
     id: 'fairytale-jack-beanstalk-normal-1',
-    title: 'きょじんのしろ',
+    title: 'ジャックとまめのき：きょじんのしろ',
     description: '巨人の城のぬりえ。',
     ageMin: 4, ageMax: 6, difficulty: 3, duration: 20,
     category: 'coloring', theme: 'fairytale',
@@ -57252,9 +60631,10 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T09:46',
     popular: false,
   },
+
   {
     id: 'fairytale-jack-beanstalk-rich-1',
-    title: 'きをきりたおす',
+    title: 'ジャックとまめのき：きをきりたおす',
     description: '木を切り倒す線画。',
     ageMin: 4, ageMax: 6, difficulty: 4, duration: 30,
     category: 'coloring', theme: 'fairytale',
@@ -57269,6 +60649,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T09:46',
     popular: false,
   },
+
   {
     id: 'table-simple-1',
     title: 'かわいいテーブル',
@@ -57286,6 +60667,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T14:54',
     popular: false,
   },
+
   {
     id: 'table-easy-1',
     title: 'テーブル',
@@ -57303,6 +60685,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T14:54',
     popular: false,
   },
+
   {
     id: 'chair-simple-1',
     title: 'かわいいいす',
@@ -57320,6 +60703,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:12',
     popular: false,
   },
+
   {
     id: 'chair-easy-1',
     title: 'いす',
@@ -57337,6 +60721,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:12',
     popular: false,
   },
+
   {
     id: 'bed-simple-1',
     title: 'かわいいベッド',
@@ -57354,6 +60739,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:29',
     popular: false,
   },
+
   {
     id: 'bed-easy-1',
     title: 'ベッド',
@@ -57371,6 +60757,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:29',
     popular: false,
   },
+
   {
     id: 'wardrobe-simple-1',
     title: 'かわいいたんす',
@@ -57388,6 +60775,7 @@ const _materialsRecovered: Material[] = [
     createdAt: '2026-05-27T15:44',
     popular: false,
   },
+
   {
     id: 'wardrobe-easy-1',
     title: 'たんす',
@@ -59272,7 +62660,8 @@ export function getAudience(m: Material): Audience {
 
 export function isPublic(m: Material, overrides?: Map<string, { imageStatus: string | null }>): boolean {
   const status = overrides?.get(m.id)?.imageStatus ?? m.imageStatus
-  return status !== 'needs_revision'
+  // 非公開ステータス: needs_revision(要修正) / duplicate(画像が他IDと完全一致) / broken(画像404・0バイト)
+  return status !== 'needs_revision' && status !== 'duplicate' && status !== 'broken'
 }
 
 export function getMaterialsForAudience(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Material[] {
@@ -59362,4 +62751,27 @@ export function getRelatedMaterials(material: Material, limit = 4, overrides?: M
       m.event === material.event
     ))
     .slice(0, limit)
+}
+
+export function getThemeCounts(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Record<string, number> {
+  const result: Record<string, number> = {}
+  for (const m of materials) {
+    if (!isPublic(m, overrides)) continue
+    if (getAudience(m) !== audience) continue
+    if (!m.theme) continue
+    result[m.theme] = (result[m.theme] ?? 0) + 1
+  }
+  return result
+}
+
+export function getAgeCounts(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Record<number, number> {
+  const result: Record<number, number> = {}
+  for (const m of materials) {
+    if (!isPublic(m, overrides)) continue
+    if (getAudience(m) !== audience) continue
+    for (let age = m.ageMin; age <= m.ageMax; age++) {
+      result[age] = (result[age] ?? 0) + 1
+    }
+  }
+  return result
 }

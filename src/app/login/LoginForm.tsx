@@ -10,11 +10,18 @@ export function LoginForm() {
   const searchParams = useSearchParams()
   const initialTab: Tab = searchParams.get('tab') === 'register' ? 'register' : 'login'
   const callbackUrl = searchParams.get('callbackUrl') ?? undefined
+  // NextAuth v5 が credentials 失敗時に ?error=... へリダイレクトする
+  const urlError = searchParams.get('error')
+  const initialError = urlError === 'CredentialsSignin'
+    ? 'メールアドレスまたはパスワードが間違っています'
+    : urlError
+    ? 'ログインに失敗しました。再度お試しください'
+    : ''
   const [tab, setTab]         = useState<Tab>(initialTab)
   const [email, setEmail]     = useState('')
   const [password, setPw]     = useState('')
   const [confirm, setConfirm] = useState('')
-  const [error, setError]     = useState('')
+  const [error, setError]     = useState(initialError)
   const [loading, setLoading] = useState(false)
 
   async function handleSubmit(e: React.FormEvent) {

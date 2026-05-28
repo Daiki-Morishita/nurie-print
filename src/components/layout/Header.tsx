@@ -1,27 +1,15 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Search, User, LogOut, Heart, LogIn, UserPlus } from 'lucide-react'
+import { Menu, X, Search, User, LogOut, Heart, LogIn, UserPlus, ChevronDown } from 'lucide-react'
 import { useSession, signOut } from 'next-auth/react'
 import { useFavorites } from '@/components/favorites/FavoritesProvider'
+import { THEME_LABELS } from '@/lib/types'
+import type { Theme } from '@/lib/types'
 
 type NavItem = { href: string; label: string; isNew?: boolean }
-
-const KIDS_NAV: NavItem[] = [
-  { href: '/category/theme/animals', label: '動物' },
-  { href: '/category/theme/dinosaurs', label: '恐竜' },
-  { href: '/category/theme/vehicles', label: '乗り物' },
-  { href: '/category/theme/sea', label: '海' },
-  { href: '/category/theme/insects', label: '虫', isNew: true },
-  { href: '/category/theme/fruits', label: '食べ物', isNew: true },
-  { href: '/maze', label: '迷路', isNew: true },
-  { href: '/category/age/3', label: '年齢で探す' },
-  { href: '/materials?difficulty=1', label: '難易度で探す' },
-  { href: '/columns', label: '読みもの' },
-  { href: '/faq', label: 'FAQ' },
-]
 
 const ADULT_NAV: NavItem[] = [
   { href: '/adult/category/theme/mandala', label: '曼荼羅' },
@@ -33,7 +21,21 @@ const ADULT_NAV: NavItem[] = [
   { href: '/adult/materials', label: 'すべて見る' },
 ]
 
-export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number; adultCount?: number }) {
+const KIDS_AGES: number[] = [2, 3, 4, 5, 6]
+
+type ThemeEntry = { value: string; label: string; count: number }
+
+export function Header({
+  kidsCount = 555,
+  adultCount = 0,
+  kidsThemeCounts = {},
+  kidsAgeCounts = {},
+}: {
+  kidsCount?: number
+  adultCount?: number
+  kidsThemeCounts?: Record<string, number>
+  kidsAgeCounts?: Record<string, number> | Record<number, number>
+}) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchValue, setSearchValue] = useState('')
   const { data: session } = useSession()
@@ -41,20 +43,27 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
   const pathname = usePathname() ?? ''
   const isAdult = pathname.startsWith('/adult')
   const isAdmin = pathname.startsWith('/admin')
-  const nav = isAdult ? ADULT_NAV : KIDS_NAV
   const searchAction = isAdult ? '/adult/materials' : '/materials'
   const materialCount = isAdult ? adultCount : kidsCount
 
-  // 管理画面ではグローバルヘッダーを表示しない（操作エリアの固定を妨げるため）
+  const themeEntries: ThemeEntry[] = Object.entries(kidsThemeCounts)
+    .filter(([, count]) => count > 0)
+    .map(([value, count]) => ({ value, label: THEME_LABELS[value as Theme] ?? value, count }))
+    .sort((a, b) => b.count - a.count)
+
+  const ageEntries = KIDS_AGES.map(age => ({
+    age,
+    count: (kidsAgeCounts as Record<string, number>)[String(age)] ?? (kidsAgeCounts as Record<number, number>)[age] ?? 0,
+  }))
+
   if (isAdmin) return null
 
   return (
     <div className={`print:hidden ${isAdult ? 'adult-section' : ''}`}>
-      {/* Audience switcher — prominent tab bar */}
+      {/* Audience switcher */}
       <div className={`${isAdult ? 'bg-[#1E2A28]' : 'bg-[#2A2620]'} text-white`}>
         <div className="max-w-[1280px] mx-auto px-3 sm:px-6">
           <div className="flex items-stretch justify-between gap-2 h-12 sm:h-14">
-            {/* Audience tabs */}
             <div className="flex items-stretch gap-1">
               <Link
                 href="/"
@@ -86,7 +95,6 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
               </Link>
             </div>
 
-            {/* Utility links (desktop) */}
             <div className="hidden md:flex items-center gap-1 text-[13px]">
               {session ? (
                 <>
@@ -140,7 +148,6 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
       <header className="sticky top-0 z-50 bg-background border-b border-border">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-[auto_1fr_auto] md:grid-cols-[220px_1fr_220px] gap-3 md:gap-8 items-center h-16 md:h-20">
-            {/* Logo */}
             {isAdult ? (
               <Link href="/adult" className="flex items-baseline gap-0 group">
                 <span className="font-mincho text-[22px] md:text-[26px] font-black tracking-[0.04em] text-foreground group-hover:text-primary transition-colors">
@@ -163,7 +170,6 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
               </Link>
             )}
 
-            {/* Search bar (desktop) */}
             <form action={searchAction} method="get" className={`hidden md:flex border-[2px] border-foreground overflow-hidden bg-card shadow-sm ${isAdult ? 'rounded' : 'rounded-full'}`}>
               <input
                 name="search"
@@ -179,7 +185,6 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
               </button>
             </form>
 
-            {/* Meta count (desktop): favorites for logged-in, material count otherwise */}
             <div className="hidden md:flex items-center justify-end gap-4">
               {session && !isAdult && (
                 <Link
@@ -199,7 +204,6 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
               </div>
             </div>
 
-            {/* Mobile actions */}
             <div className="md:hidden flex items-center gap-1 justify-self-end">
               {session && !isAdult && (
                 <Link href="/favorites" aria-label="お気に入り" className="relative p-2 hover:bg-muted rounded transition-colors">
@@ -226,21 +230,35 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
         </div>
 
         {/* Category nav (desktop) */}
-        <nav className="hidden md:block border-t border-border bg-background">
+        <nav className="hidden md:block border-t border-border bg-background relative">
           <div className="max-w-[1280px] mx-auto px-6">
-            <div className="flex items-center gap-7 h-10 text-[13px] overflow-x-auto">
-              {nav.map(item => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium flex items-center gap-1.5"
-                >
-                  {item.label}
-                  {item.isNew && (
+            <div className="flex items-center gap-7 h-10 text-[13px]">
+              {isAdult ? (
+                ADULT_NAV.map(item => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium flex items-center gap-1.5"
+                  >
+                    {item.label}
+                  </Link>
+                ))
+              ) : (
+                <>
+                  <AgeDropdown ageEntries={ageEntries} />
+                  <ThemeDropdown themeEntries={themeEntries} />
+                  <Link href="/posts" className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium flex items-center gap-1.5">
+                    今日のいちまい
                     <span className="bg-primary text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold tracking-wide">NEW</span>
-                  )}
-                </Link>
-              ))}
+                  </Link>
+                  <Link href="/columns" className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium">
+                    読みもの
+                  </Link>
+                  <Link href="/materials" className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium">
+                    すべての塗り絵
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </nav>
@@ -260,21 +278,77 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
                   さがす
                 </button>
               </form>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-0">
-                {nav.map(item => (
+              {isAdult ? (
+                <div className="grid grid-cols-2 gap-x-2 gap-y-0">
+                  {ADULT_NAV.map(item => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="py-2.5 text-sm border-b border-border/50"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-1">
+                  <MobileAccordion title="年齢で探す">
+                    <div className="grid grid-cols-3 gap-2 py-2">
+                      {ageEntries.map(({ age, count }) => (
+                        <Link
+                          key={age}
+                          href={`/category/age/${age}`}
+                          onClick={() => setMobileOpen(false)}
+                          className="flex items-center justify-between px-3 py-2 text-sm bg-muted rounded hover:bg-primary hover:text-white transition-colors"
+                        >
+                          <span>{age}歳</span>
+                          <span className="text-[11px] opacity-70">{count}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </MobileAccordion>
+                  <MobileAccordion title="テーマで探す">
+                    <div className="grid grid-cols-2 gap-1.5 py-2">
+                      {themeEntries.map(t => (
+                        <Link
+                          key={t.value}
+                          href={`/category/theme/${t.value}`}
+                          onClick={() => setMobileOpen(false)}
+                          className="flex items-center justify-between px-3 py-2 text-sm bg-muted rounded hover:bg-primary hover:text-white transition-colors"
+                        >
+                          <span className="truncate">{t.label}</span>
+                          <span className="text-[11px] opacity-70 ml-2">{t.count}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </MobileAccordion>
                   <Link
-                    key={item.href}
-                    href={item.href}
+                    href="/posts"
                     onClick={() => setMobileOpen(false)}
                     className="py-2.5 text-sm border-b border-border/50 flex items-center gap-1.5"
                   >
-                    {item.label}
-                    {item.isNew && <span className="bg-primary text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold">NEW</span>}
+                    今日のいちまい
+                    <span className="bg-primary text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold">NEW</span>
                   </Link>
-                ))}
-              </div>
+                  <Link
+                    href="/columns"
+                    onClick={() => setMobileOpen(false)}
+                    className="block py-2.5 text-sm border-b border-border/50"
+                  >
+                    読みもの
+                  </Link>
+                  <Link
+                    href="/materials"
+                    onClick={() => setMobileOpen(false)}
+                    className="block py-2.5 text-sm border-b border-border/50"
+                  >
+                    すべての塗り絵
+                  </Link>
+                </div>
+              )}
               {session ? (
-                <Link href="/account" className="block mt-3 py-2 text-sm flex items-center gap-1.5" onClick={() => setMobileOpen(false)}>
+                <Link href="/account" className="mt-3 py-2 text-sm flex items-center gap-1.5" onClick={() => setMobileOpen(false)}>
                   <User className="w-4 h-4" />マイページ
                 </Link>
               ) : (
@@ -290,41 +364,134 @@ export function Header({ kidsCount = 555, adultCount = 0 }: { kidsCount?: number
   )
 }
 
-// Crayon icon — tilted with point and label band
+function AgeDropdown({ ageEntries }: { ageEntries: { age: number; count: number }[] }) {
+  return (
+    <Dropdown label="年齢で探す">
+      <div className="p-2 grid grid-cols-3 gap-1 min-w-[280px]">
+        {ageEntries.map(({ age, count }) => (
+          <Link
+            key={age}
+            href={`/category/age/${age}`}
+            className="flex items-center justify-between px-3 py-2 rounded hover:bg-muted text-sm text-foreground"
+          >
+            <span>{age}歳</span>
+            <span className="text-[11px] text-muted-foreground">{count}</span>
+          </Link>
+        ))}
+      </div>
+    </Dropdown>
+  )
+}
+
+function ThemeDropdown({ themeEntries }: { themeEntries: ThemeEntry[] }) {
+  return (
+    <Dropdown label="テーマで探す">
+      <div className="p-2 grid grid-cols-3 gap-1 min-w-[520px] max-w-[640px] max-h-[60vh] overflow-y-auto">
+        {themeEntries.map(t => (
+          <Link
+            key={t.value}
+            href={`/category/theme/${t.value}`}
+            className="flex items-center justify-between px-3 py-2 rounded hover:bg-muted text-sm text-foreground"
+          >
+            <span className="truncate">{t.label}</span>
+            <span className="text-[11px] text-muted-foreground ml-2">{t.count}</span>
+          </Link>
+        ))}
+      </div>
+    </Dropdown>
+  )
+}
+
+function Dropdown({ label, children }: { label: string; children: React.ReactNode }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!open) return
+    const onDocClick = (e: MouseEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false)
+    }
+    const onEsc = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('mousedown', onDocClick)
+    document.addEventListener('keydown', onEsc)
+    return () => {
+      document.removeEventListener('mousedown', onDocClick)
+      document.removeEventListener('keydown', onEsc)
+    }
+  }, [open])
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium"
+      >
+        {label}
+        <ChevronDown className={`w-3 h-3 transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+      {open && (
+        <div
+          className="absolute top-full left-0 mt-0 bg-white border border-border rounded-lg shadow-lg z-40"
+          onClick={() => setOpen(false)}
+        >
+          {children}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function MobileAccordion({ title, children }: { title: string; children: React.ReactNode }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="border-b border-border/50">
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        aria-expanded={open}
+        className="w-full py-2.5 flex items-center justify-between text-sm font-medium"
+      >
+        <span>{title}</span>
+        <ChevronDown className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+      {open && <div>{children}</div>}
+    </div>
+  )
+}
+
 function CrayonIcon({ active }: { active: boolean }) {
   const body = active ? '#E66A2C' : '#9CA3AF'
   const tip = active ? '#332C24' : '#6B7280'
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
       <g transform="rotate(-30 12 12)">
-        {/* body */}
         <rect x="8" y="6" width="8" height="14" rx="1.2" fill={body} />
-        {/* paper label band */}
         <rect x="8" y="10" width="8" height="2" fill="#fff" opacity="0.45" />
         <rect x="8" y="13.5" width="8" height="1" fill="#fff" opacity="0.3" />
-        {/* tip */}
         <polygon points="8,6 12,1.5 16,6" fill={tip} />
-        {/* tip highlight */}
         <polygon points="11,5 12,3 13,5" fill="#fff" opacity="0.6" />
       </g>
     </svg>
   )
 }
 
-// Brush icon — fountain pen / sumi brush silhouette
 function BrushIcon({ active }: { active: boolean }) {
   const handle = active ? '#1E2A28' : '#9CA3AF'
   const bristle = active ? '#2D5043' : '#6B7280'
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
       <g transform="rotate(35 12 12)">
-        {/* handle */}
         <rect x="11" y="2" width="2" height="13" rx="0.6" fill={handle} />
-        {/* ferrule */}
         <rect x="10.2" y="14" width="3.6" height="1.8" rx="0.4" fill="#C9A66B" />
-        {/* bristle tuft */}
         <path d="M 10.2 15.6 Q 12 22 13.8 15.6 Z" fill={bristle} />
-        {/* ink tip */}
         <circle cx="12" cy="21.2" r="0.7" fill={bristle} />
       </g>
     </svg>

@@ -24,7 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       publishedTime: col.publishedAt,
       modifiedTime: col.updatedAt,
-      ...(col.heroSrc ? { images: [{ url: col.heroSrc, alt: col.heroAlt }] } : {}),
+      authors: ['ぬりえプリント編集部'],
+      ...(col.heroSrc ? { images: [{ url: col.heroSrc, width: 1200, height: 630, alt: col.heroAlt }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: col.title,
+      description: col.description,
+      ...(col.heroSrc ? { images: [col.heroSrc] } : {}),
     },
   }
 }

@@ -141,3 +141,40 @@ model ContactMessage {
   @@index([createdAt])
   @@index([status])
 }
+
+// ── 「今日のいちまい」投稿 ──────────────────────────────────────────────────
+// Twitter風の編集UIから入稿する記事。複数画像 + 本文 + 関連素材リンク。
+// publishedAt の値で状態を表す:
+//   NULL          → 下書き（非公開）
+//   未来日時      → 投稿予約
+//   過去 or 現在  → 公開中
+model Post {
+  id          String   @id @default(cuid())
+  /** 任意のタイトル。未指定なら本文先頭から自動抽出 */
+  title       String?
+  /** 本文（Markdownライト・改行保持） */
+  body        String   @db.Text
+  /** 公開・予約日時。null = 下書き */
+  publishedAt DateTime?
+  /** リンクする素材ID配列（data.ts の materials[].id） */
+  materialIds String[]
+  images      PostImage[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([publishedAt])
+  @@index([createdAt])
+}
+
+model PostImage {
+  id        String   @id @default(cuid())
+  postId    String
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  /** Supabase Storage の公開URL */
+  url       String
+  /** 表示順（小さい順） */
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([postId, order])
+}

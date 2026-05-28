@@ -3341,6 +3341,7 @@ THEMES = {
     "seikatsu":   SEIKATSU_ITEMS,
     "sea":        SEA_ITEMS,
     "fairytale":  FAIRYTALE,
+    "vehicles":   VEHICLES_ITEMS,
 }
 
 # =============================================
@@ -4725,7 +4726,7 @@ def main():
                  "mandala", "botanical", "landscape", "pattern",
                  "animals-detail", "flowers-detail", "cityscape",
                  "railway", "architecture", "seasonal-adult", "masterpiece",
-                 "fairytale"],
+                 "fairytale", "vehicles"],
         help="テーマ種別（--all-adult 使用時は不要）")
     parser.add_argument("--item",    default=None,  help="アイテムID（例: swing, tyrannosaurus）")
     parser.add_argument("--variant", type=int, default=1, help="バリエーション番号（デフォルト: 1）")

@@ -68,8 +68,13 @@ export default async function AdminPage() {
               AIイラストの配置・レビュー・差し替えを管理します
             </p>
           </div>
-          <div className="text-xs text-gray-400 bg-yellow-50 border border-yellow-200 px-3 py-1.5 rounded-lg">
-            ⚠️ 管理者専用ページ
+          <div className="flex items-center gap-3">
+            <a href="/admin/posts" className="text-xs font-bold text-primary border border-primary px-3 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">
+              📝 今日のいちまい 管理
+            </a>
+            <div className="text-xs text-gray-400 bg-yellow-50 border border-yellow-200 px-3 py-1.5 rounded-lg">
+              ⚠️ 管理者専用ページ
+            </div>
           </div>
         </div>
       </div>

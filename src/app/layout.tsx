@@ -6,7 +6,7 @@ import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Providers } from '@/components/Providers'
-import { getMaterialsForAudience } from '@/lib/data'
+import { getMaterialsForAudience, getThemeCounts, getAgeCounts } from '@/lib/data'
 
 const GA_ID = 'G-DZ7JFS2RS3'
 
@@ -38,27 +38,30 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 export const metadata: Metadata = {
   metadataBase: new URL('https://nurie-print.com'),
   title: {
-    default: 'ぬりえプリント | 保育士のための無料教材プリント',
+    default: 'ぬりえプリント | おやこの無料ぬりえ・年齢別3,200点',
     template: '%s | ぬりえプリント',
   },
-  description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など年齢別・テーマ別・季節別に検索でき、すぐに印刷して使えます。',
-  keywords: ['ぬりえ', '塗り絵', '保育園', '幼稚園', '無料プリント', '保育士', '教材', '幼児'],
+  description: 'おうちで楽しむ無料ぬりえプリント。動物・恐竜・乗り物・童話・季節など3,200点以上を、年齢・テーマ別に登録なしで印刷できます。雨の日のおうち時間や旅先のひとときに。',
+  keywords: ['ぬりえ', '塗り絵', '無料', '印刷', '幼児', '2歳', '3歳', '4歳', '5歳', '6歳', 'A4', '動物', '恐竜', '童話', 'おうち遊び', 'おうち時間', '知育', '親子', '家族'],
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
     url: 'https://nurie-print.com',
     siteName: 'ぬりえプリント',
-    title: 'ぬりえプリント | 保育士のための無料教材プリント',
-    description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など豊富なテーマをすぐ印刷できます。',
+    title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別3,200点',
+    description: 'おうちで楽しむ年齢別3,200点のぬりえ。登録なしですぐ印刷、動物・恐竜・乗り物・童話などテーマで簡単に探せます。',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'ぬりえプリント' }],
   },
   robots: { index: true, follow: true },
   twitter: {
     card: 'summary_large_image',
     site: '@nurie_print',
-    title: 'ぬりえプリント | 保育士のための無料教材プリント',
-    description: '保育園・幼稚園の先生向け無料ぬりえプリント配布サイト。動物・恐竜・乗り物など豊富なテーマをすぐ印刷できます。',
+    title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別3,200点',
+    description: 'おうちで楽しむ年齢別ぬりえ。登録なしですぐ印刷、雨の日のおうち遊びや旅先のひとときに。',
   },
+  verification: process.env.NEXT_PUBLIC_PINTEREST_VERIFY
+    ? { other: { 'p:domain_verify': process.env.NEXT_PUBLIC_PINTEREST_VERIFY } }
+    : undefined,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -95,8 +98,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             })(window, document, "clarity", "script", "wuyjgxh5hx");
           `}
         </Script>
+        {/* Pinterest Tag — lazyOnload。env var セット時のみ実行 */}
+        {process.env.NEXT_PUBLIC_PINTEREST_TAG_ID && (
+          <Script id="pinterest-tag" strategy="lazyOnload">
+            {`
+              !function(e){if(!window.pintrk){window.pintrk=function(){
+              window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
+              var n=window.pintrk;n.queue=[],n.version="3.0";
+              var t=document.createElement("script");t.async=!0,t.src=e;
+              var r=document.getElementsByTagName("script")[0];
+              r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+              pintrk('load', '${process.env.NEXT_PUBLIC_PINTEREST_TAG_ID}');
+              pintrk('page');
+            `}
+          </Script>
+        )}
         <Providers>
-          <Header kidsCount={getMaterialsForAudience('kids').length} adultCount={getMaterialsForAudience('adult').length} />
+          <Header
+            kidsCount={getMaterialsForAudience('kids').length}
+            adultCount={getMaterialsForAudience('adult').length}
+            kidsThemeCounts={getThemeCounts('kids')}
+            kidsAgeCounts={getAgeCounts('kids')}
+          />
           <main className="flex-1">{children}</main>
           <Footer materialCount={getMaterialsForAudience('kids').length} />
         </Providers>

@@ -28,9 +28,11 @@ type TileSize = 'sm' | 'md' | 'lg' | 'xl'
 
 const STATUS_ORDER: Record<ImageStatus | 'placeholder', number> = {
   needs_revision: 0,
-  pending_review: 1,
-  approved: 2,
-  placeholder: 3,
+  broken: 1,
+  duplicate: 2,
+  pending_review: 3,
+  approved: 4,
+  placeholder: 5,
 }
 
 const DIFFICULTY_RANK: Record<string, number> = {

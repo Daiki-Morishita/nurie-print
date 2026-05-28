@@ -2,10 +2,12 @@ import Link from 'next/link'
 import { ArrowRight, ChevronRight, Clock } from 'lucide-react'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { FeaturedPick, type FeaturedItem } from '@/components/home/FeaturedPick'
+import { TodaysPost } from '@/components/home/TodaysPost'
 import type { Difficulty } from '@/lib/types'
 import { materials, getPopularMaterials, getMaterialById, filterMaterials, getMaterialsForAudience } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { columns } from '@/lib/columns'
+import { getPublishedPosts } from '@/lib/posts'
 
 export const metadata = {
   alternates: { canonical: 'https://nurie-print.com' },
@@ -22,7 +24,7 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   name: 'ぬりえプリント',
   url: 'https://nurie-print.com',
-  description: `保育士・幼稚園教諭のための無料ぬりえプリントサービス。${totalMaterials}点以上を無料配布。`,
+  description: `おやこで楽しむ無料ぬりえプリント。${totalMaterials}点以上を、登録なしですぐ印刷できます。`,
   potentialAction: {
     '@type': 'SearchAction',
     target: { '@type': 'EntryPoint', urlTemplate: 'https://nurie-print.com/materials?search={search_term_string}' },
@@ -36,7 +38,7 @@ const organizationJsonLd = {
   name: 'ぬりえプリント編集部',
   url: 'https://nurie-print.com',
   logo: { '@type': 'ImageObject', url: 'https://nurie-print.com/icon.svg', width: 512, height: 512 },
-  description: '保育士・幼稚園教諭向けの無料ぬりえプリント配布サービス',
+  description: 'おやこで楽しむ無料ぬりえプリント配布サービス',
 }
 
 // Featured pool — テーマ分散させて多様化、サーバーシャッフル。クライアント側で更にローテート
@@ -118,7 +120,7 @@ const FAQS = [
   },
   {
     q: '園や教室で使ってもいいですか？',
-    a: '保育園・幼稚園・教室での教材利用は自由です。販売・再配布のみご遠慮ください。',
+    a: 'ご家庭はもちろん、保育園・幼稚園・教室での利用も自由です。販売・再配布のみご遠慮ください。',
   },
   {
     q: 'どのくらいの頻度で更新していますか？',
@@ -134,6 +136,9 @@ export default async function HomePage() {
   const popular = getPopularMaterials(12, 'kids', overrides)
   const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
+  const todaysPosts = await getPublishedPosts(1)
+  const todaysPost = todaysPosts[0] ?? null
+  const postsTitleMap = new Map(materials.map(m => [m.id, m.title]))
 
   return (
     <>
@@ -147,17 +152,17 @@ export default async function HomePage() {
 
         <div className="max-w-[1280px] mx-auto px-6 relative">
           <div className="font-rounded text-[12px] md:text-[13px] text-primary tracking-[0.25em] mb-4 font-bold inline-flex items-center gap-2">
-            <span className="text-base">🌸</span>
-            今日は何をぬる？
-            <span className="text-base">🌸</span>
+            <span className="text-base">🖍️</span>
+            今日のおうち時間に
+            <span className="text-base">🖍️</span>
           </div>
           <h1 className="font-rounded text-[34px] md:text-[58px] font-black leading-[1.35] tracking-[0.02em] mb-6">
-            先生たちと、<br className="md:hidden" />
-            <span className="text-primary">子どもたちへ</span>。
+            おやこの一枚を、<br className="md:hidden" />
+            <span className="text-primary">無料で</span>。
           </h1>
           <p className="text-[15px] md:text-[16px] text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-            {totalMaterials} 点の塗り絵が、ぜんぶ無料。<br className="md:hidden" />
-            年齢・季節・テーマで見つかります。
+            年齢に合う {totalMaterials} 点のぬりえを、登録なしですぐ印刷。<br className="md:hidden" />
+            動物・恐竜・乗り物・童話… テーマで簡単に探せます。
           </p>
 
           {/* Big search — pop pill */}
@@ -216,7 +221,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 01"
             title="むずかしさで探す"
             subtitle="お子さまの発達段階に合わせて選べる4段階"
             emoji="⭐"
@@ -255,7 +259,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 02"
             title="人気のぬりえ"
             count={`トップ ${popular.length}`}
             href="/materials?sort=popular"
@@ -270,11 +273,13 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ===== TODAY'S PIECE (今日のいちまい) — 投稿0件なら自動非表示 ===== */}
+      <TodaysPost post={todaysPost} titleMap={postsTitleMap} />
+
       {/* ===== THEMES ===== */}
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 03"
             title="テーマで探す"
             count={`全${THEMES.length}カテゴリ`}
             subtitle="お子さま・園児が好きなテーマからお選びください"
@@ -337,11 +342,10 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 04"
             title="読みもの"
             count="ぬりえ完全ガイド"
             href="/columns"
-            subtitle="保育士・幼児教育の現場で役立つ知識を編集部が解説"
+            subtitle="子どもの育ちを支える知識を編集部が整理"
             emoji="📖"
           />
           <div className="grid lg:grid-cols-[2fr_1fr] gap-6">
@@ -389,7 +393,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[860px] mx-auto px-6">
           <SectionHead
-            kicker="No. 05"
             title="よくある質問"
             subtitle="お問い合わせの多い質問にお答えします"
             emoji="💬"
@@ -423,12 +426,12 @@ export default async function HomePage() {
             <span>💌</span>INVITATION<span>💌</span>
           </div>
           <h2 className="font-rounded text-[28px] md:text-[38px] font-black leading-[1.4] mb-4">
-            保育の現場を、<br />
-            すこし、らくに。
+            おやこの時間を、<br />
+            すこし、ゆたかに。
           </h2>
           <p className="text-[15px] text-muted-foreground mb-8 leading-relaxed">
-            雨の日も、自由時間も、行事前も。<br />
-            すぐ使える教材が、ここにあります。
+            雨の日も、休みの日も、ふと手持ちぶさたな夜も。<br />
+            すぐ使えるぬりえが、ここにあります。
           </p>
           <Link
             href="/materials"
@@ -469,14 +472,12 @@ export default async function HomePage() {
 }
 
 function SectionHead({
-  kicker,
   title,
   count,
   href,
   subtitle,
   emoji,
 }: {
-  kicker?: string
   title: string
   count?: string
   href?: string
@@ -487,11 +488,6 @@ function SectionHead({
     <div className="mb-6 md:mb-8">
       <div className="flex items-end justify-between border-b-2 border-primary/15 pb-3">
         <div>
-          {kicker && (
-            <div className="font-rounded font-bold text-[11px] text-primary mb-1 tracking-[0.1em]">
-              {kicker}
-            </div>
-          )}
           <div className="flex items-baseline gap-2.5">
             {emoji && <span className="text-[22px] md:text-[26px] leading-none">{emoji}</span>}
             <h2 className="font-rounded text-[22px] md:text-[28px] font-black">{title}</h2>
@@ -593,7 +589,7 @@ function CompactCard({ material }: { material: ReturnType<typeof getPopularMater
         ) : null}
       </div>
       <div className="p-2.5">
-        <h3 className="font-rounded text-[13px] font-black mb-1 line-clamp-1">
+        <h3 className="text-material-title-sm mb-1 line-clamp-1">
           {material.title.split('（')[0]}
         </h3>
         <div className="text-[12px] text-muted-foreground flex gap-1.5 items-center">

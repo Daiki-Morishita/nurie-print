@@ -4,12 +4,22 @@
  */
 
 type GtagArgs = unknown[]
+type PintrkArgs = unknown[]
 
 declare global {
   interface Window {
     gtag?: (...args: GtagArgs) => void
     dataLayer?: GtagArgs[]
+    pintrk?: (...args: PintrkArgs) => void
   }
+}
+
+// GA4のカスタムイベント名 → Pinterest標準イベント名のマップ。
+// 該当なしのイベントはPinterestには送らない（customに丸投げしない）。
+const PINTEREST_EVENT_MAP: Record<string, string> = {
+  print_click: 'lead',
+  search: 'search',
+  signup: 'signup',
 }
 
 export function trackEvent(
@@ -21,5 +31,13 @@ export function trackEvent(
     window.gtag?.('event', name, params)
   } catch {
     // noop
+  }
+  const pinEvent = PINTEREST_EVENT_MAP[name]
+  if (pinEvent) {
+    try {
+      window.pintrk?.('track', pinEvent, params)
+    } catch {
+      // noop
+    }
   }
 }

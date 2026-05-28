@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'ぬりえプリント — 先生たちと、子どもたちへ'
+export const alt = 'ぬりえプリント — おやこの一枚を、無料で。'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -29,7 +29,7 @@ export default async function OGImage() {
           letterSpacing: '0.3em',
           marginBottom: 32,
         }}>
-          — 今日は何をぬる？ —
+          — 今日のおうち時間に —
         </div>
 
         {/* Main title */}
@@ -42,7 +42,7 @@ export default async function OGImage() {
           lineHeight: 1.2,
           display: 'flex',
         }}>
-          先生たちと、
+          おやこの一枚を、
         </div>
         <div style={{
           fontSize: 96,
@@ -53,12 +53,12 @@ export default async function OGImage() {
           lineHeight: 1.2,
           display: 'flex',
         }}>
-          子どもたちへ。
+          無料で。
         </div>
 
         {/* Sub */}
         <div style={{ fontSize: 26, color: '#888', marginBottom: 8, display: 'flex' }}>
-          保育士・幼稚園教諭のための無料ぬりえプリント
+          年齢別2,600点・登録なし・A4印刷
         </div>
         <div style={{ fontSize: 22, color: '#3A3A3A', fontWeight: 700, display: 'flex' }}>
           ぬりえプリント

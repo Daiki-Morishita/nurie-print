@@ -30,7 +30,7 @@ export const columns: Column[] = [
   // =========================================================
   {
     slug: 'benefits-of-coloring-for-kids',
-    title: 'ぬりえが子どもの発達に与える5つの効果【保育士・専門家が解説】',
+    title: 'ぬりえが子どもの発達に与える5つの効果',
     description: 'ぬりえは「暇つぶし」ではありません。脳科学・発達心理学の観点から、手先の器用さ・集中力・感情表現・色彩感覚・自己効力感を育てる5つの効果を解説します。',
     category: '発達・知育',
     heroQuery: 'child coloring drawing happy',
@@ -46,7 +46,7 @@ export const columns: Column[] = [
       },
       {
         type: 'p',
-        text: 'この記事では、保育・発達心理学で語られているぬりえの効果を、現場の保育士目線で5つに整理しました。「静かにさせる道具」としてではなく、子どもの成長を支える教材としてぬりえを見直すきっかけになれば嬉しいです。',
+        text: 'この記事では、保育・発達心理学で語られているぬりえの効果を、現場感覚で5つに整理しました。「静かにさせる道具」としてではなく、子どもの成長を支える教材としてぬりえを見直すきっかけになれば嬉しいです。',
       },
       {
         type: 'image',
@@ -446,7 +446,7 @@ export const columns: Column[] = [
   {
     slug: 'rainy-day-indoor-activities',
     title: '雨の日のおうち遊び15選｜幼児が静かに集中できる室内アクティビティ',
-    description: '「雨の日、何をして過ごせばいい？」保育士がおすすめする、2〜6歳が集中して楽しめる室内遊び15選。プリント教材・工作・体遊びをバランスよく紹介します。',
+    description: '「雨の日、何をして過ごせばいい？」2〜6歳が集中して楽しめる室内遊び15選。プリント教材・工作・体遊びをバランスよく紹介します。',
     category: '遊び・アイデア',
     heroQuery: 'rainy day children indoor playing crafts cozy',
     heroAlt: '雨の日に室内で遊ぶ子どもたち',
@@ -505,7 +505,7 @@ export const columns: Column[] = [
       },
       {
         type: 'callout',
-        label: '保育士のコツ',
+        label: '現場のコツ',
         text: '遊びを「詰め込み過ぎない」のが長続きのコツ。1つの活動に30〜40分（年齢によって調整）使い、次の活動まで少し「ぼーっとする時間」を入れると、子どもの集中力がリセットされます。',
       },
       {
@@ -528,7 +528,7 @@ export const columns: Column[] = [
   {
     slug: 'seasonal-crafts-for-nursery',
     title: '保育園・幼稚園の季節行事別 制作活動アイデア集【年間カレンダー付き】',
-    description: '七夕・ハロウィン・クリスマス…季節ごとの制作活動に使える教材とアイデアを年間カレンダー形式でまとめました。保育士の制作計画立てにご活用ください。',
+    description: '七夕・ハロウィン・クリスマス…季節ごとの制作活動に使える教材とアイデアを年間カレンダー形式でまとめました。年間の制作計画にご活用ください。',
     category: '季節・行事',
     heroQuery: 'kindergarten seasonal craft decoration holiday children',
     heroAlt: '季節の制作活動をする子どもたち',
@@ -616,7 +616,7 @@ export const columns: Column[] = [
   // =========================================================
   {
     slug: 'hiragana-practice-guide',
-    title: 'ひらがなはいつから教える？保育士が教える年齢別の進め方と教材の選び方',
+    title: 'ひらがなはいつから教える？年齢別の進め方と教材の選び方',
     description: '「うちの子、まだひらがなが書けない」と焦っていませんか？文字の習得には発達段階があります。保育現場の視点から、ひらがな練習を始める適切な時期・順序・おすすめ教材を解説します。',
     category: '運筆・書き方',
     heroQuery: 'child writing japanese hiragana practice notebook pencil',
@@ -688,7 +688,7 @@ export const columns: Column[] = [
       { type: 'h2', text: '練習を楽しくするコツ' },
       {
         type: 'callout',
-        label: '保育士おすすめの声かけ',
+        label: 'おすすめの声かけ',
         text: '「間違えた！」と消しゴムで消させるより、「もう一回書いてみよう」と次の行に書かせる方が◎。失敗を責めず、書こうとする意欲を大切にしましょう。丁寧さは後から自然についてきます。',
       },
       {
@@ -965,7 +965,7 @@ export const columns: Column[] = [
   {
     slug: 'motivating-kids-to-learn',
     title: '勉強させようとすると逃げる子へ。「やりたい」を引き出す3つの工夫',
-    description: 'プリントを目の前に置いても気が向かない、机に座らせると逃げる。それは子どものやる気がないのではなく、入り口の設計に原因があるかもしれません。保育士目線で意欲の引き出し方を考えます。',
+    description: 'プリントを目の前に置いても気が向かない、机に座らせると逃げる。それは子どものやる気がないのではなく、入り口の設計に原因があるかもしれません。意欲の引き出し方を考えます。',
     category: '発達・知育',
     heroQuery: 'preschool child reluctant studying parent encouraging',
     heroAlt: '机に向かう気が乗らない子ども',
@@ -1106,7 +1106,7 @@ export const columns: Column[] = [
   {
     slug: 'outdoor-play-benefits',
     title: '「外遊びなんてただ遊んでるだけ」ではない。体を動かすことが子どもの脳と心に与える5つの影響',
-    description: '走る・跳ぶ・転がる。外遊びが認知機能・情動調整・創造性に与える影響を保育士目線で解説。雨の日の代替活動の考え方にも使える視点です。',
+    description: '走る・跳ぶ・転がる。外遊びが認知機能・情動調整・創造性に与える影響を整理。雨の日の代替活動の考え方にも使える視点です。',
     category: '発達・知育',
     heroQuery: 'children playing outdoors park playground happy active',
     heroAlt: '公園で元気に遊ぶ子どもたち',
@@ -1245,7 +1245,7 @@ export const columns: Column[] = [
   {
     slug: 'free-drawing-creative-expression',
     title: '「うまく描けなくていい」。自由描画がぬりえとは違う理由と、創造力の育て方',
-    description: 'ぬりえは「線の内側を塗る」活動。それとは別に「自由に描く」時間を持つことが、子どもの創造性と自己表現力を育てます。保育士がすすめる自由描画のアプローチを紹介。',
+    description: 'ぬりえは「線の内側を塗る」活動。それとは別に「自由に描く」時間を持つことが、子どもの創造性と自己表現力を育てます。自由描画のアプローチを紹介。',
     category: '教育・学習',
     heroQuery: 'child free drawing creativity art expression happy',
     heroAlt: '自由に絵を描く子ども',
@@ -1326,7 +1326,7 @@ export const columns: Column[] = [
   {
     slug: 'concentration-tips-for-toddlers',
     title: '幼児の「集中力がない」は当たり前。保育現場で使える5つのアプローチ',
-    description: '5分で動く、10分で飽きる。幼児の集中力は大人とまったく違います。発達段階を踏まえた上で、集中できる環境と活動の作り方を保育士目線で解説します。',
+    description: '5分で動く、10分で飽きる。幼児の集中力は大人とまったく違います。発達段階を踏まえた上で、集中できる環境と活動の作り方を整理します。',
     category: '発達・知育',
     heroQuery: 'young child focused concentrating activity table',
     heroAlt: '集中して取り組む子ども',
@@ -1385,7 +1385,7 @@ export const columns: Column[] = [
       },
       {
         type: 'callout',
-        label: '保育士の声',
+        label: '現場の声',
         text: '「1枚終わったら終わり」にせず、「3分やったら好きなことしていいよ」のほうが案外長く続きます。制限付きのほうが見通しが立ちやすくて集中しやすい子は多いです。',
       },
       { type: 'h2', text: '⑤ 小さな達成感を積む' },
@@ -1412,11 +1412,11 @@ export const columns: Column[] = [
   // =========================================================
   {
     slug: 'supporting-kids-who-dislike-crafts',
-    title: '「工作・ぬりえが苦手」に見える子どもへ。保育士が考える4つのアプローチ',
-    description: '手先が不器用、すぐに「できない」と言う、はみ出すことを怖がる。ぬりえや工作を避けているように見える子どもへの関わり方を保育士目線で整理します。',
+    title: '「工作・ぬりえが苦手」に見える子どもへ。4つのアプローチ',
+    description: '手先が不器用、すぐに「できない」と言う、はみ出すことを怖がる。ぬりえや工作を避けているように見える子どもへの関わり方を整理します。',
     category: '工作・ハサミ',
     heroQuery: 'shy child hesitant art activity teacher helping',
-    heroAlt: '工作を試みる子どもと保育士',
+    heroAlt: '工作を試みる子どもと寄り添う大人',
     heroSrc: '/columns/col17-hero.jpg',
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
@@ -1636,7 +1636,7 @@ export const columns: Column[] = [
   {
     slug: 'making-printouts-a-daily-habit',
     title: '「毎日少しずつ」の習慣にするコツ。プリント学習を長続きさせる5つのルール',
-    description: '始めたばかりは続いても、1週間後には続かない。プリント学習の習慣化に失敗しやすいパターンと、保育士が家庭に伝えている5つのシンプルなルールを紹介します。',
+    description: '始めたばかりは続いても、1週間後には続かない。プリント学習の習慣化に失敗しやすいパターンと、家庭で取り入れやすい5つのシンプルなルールを紹介します。',
     category: '教育・学習',
     heroQuery: 'daily routine child morning breakfast learning table happy',
     heroAlt: '毎日のルーティンで学習する子ども',
@@ -2060,7 +2060,7 @@ export const columns: Column[] = [
   {
     slug: 'sensory-play-benefits',
     title: '感覚遊びが子どもの脳と体を育てる理由｜保育現場で使える10のアクティビティ',
-    description: '砂遊び・水遊び・粘土・フィンガーペイントなどの感覚遊びが五感と脳の発達に与える効果。保育士が現場で使う10のアクティビティを紹介。',
+    description: '砂遊び・水遊び・粘土・フィンガーペイントなどの感覚遊びが五感と脳の発達に与える効果。保育現場で使われている10のアクティビティを紹介。',
     category: '遊び・アイデア',
     heroQuery: 'child sensory play sand water activities',
     heroAlt: '感覚遊びを楽しむ子ども',
@@ -2246,7 +2246,7 @@ export const columns: Column[] = [
   {
     slug: 'drawing-development-stages',
     title: '子どもの「絵の発達」段階を知るとぬりえの意味が深まる｜なぐり書きから写実へ',
-    description: '「なぐり書き期→基底線期→写実期」など子どもの絵の発達段階を理解することで、適切なぬりえ選びと声かけができるようになります。保育士が解説。',
+    description: '「なぐり書き期→基底線期→写実期」など子どもの絵の発達段階を理解することで、適切なぬりえ選びと声かけができるようになります。',
     category: '発達・知育',
     heroQuery: 'child drawing art development stages',
     heroAlt: '子どもが絵を描いている場面',
@@ -2397,7 +2397,7 @@ export const columns: Column[] = [
   {
     slug: 'school-readiness-printouts',
     title: '小学校入学前の「書く準備」はプリントで整える｜就学準備に必要な5つの力',
-    description: '就学前に「椅子に座る・鉛筆を持つ・線を書く」習慣を作ることが、小学校入学後の学力の差を生む。保育士が教える就学準備に必要な5つの力とプリント活用法。',
+    description: '就学前に「椅子に座る・鉛筆を持つ・線を書く」習慣を作ることが、小学校入学後の学力の差を生む。就学準備に必要な5つの力とプリント活用法。',
     category: '教育・学習',
     heroQuery: 'child school readiness pencil writing preparation',
     heroAlt: '就学前の子どもが鉛筆で書く練習をしている',
@@ -2927,7 +2927,7 @@ export const columns: Column[] = [
   {
     slug: 'playground-equipment-development',
     title: '公園の遊具それぞれの発達効果｜ブランコ・滑り台・砂場で育つ力とは',
-    description: 'ブランコ・滑り台・砂場・鉄棒・ジャングルジム…公園の遊具がそれぞれどんな発達に役立つかを保育士が解説。外遊びの意義を再確認できる保護者向けガイド。',
+    description: 'ブランコ・滑り台・砂場・鉄棒・ジャングルジム…公園の遊具がそれぞれどんな発達に役立つかを整理。外遊びの意義を再確認できる保護者向けガイド。',
     category: '発達・知育',
     heroQuery: 'children playground equipment park swing slide sandbox',
     heroAlt: '公園の遊具で遊ぶ子どもたち',
@@ -2972,7 +2972,7 @@ export const columns: Column[] = [
       { type: 'h2', text: 'ブランコが特に重要な理由' },
       {
         type: 'p',
-        text: 'ブランコの前後の揺れは「前庭覚（バランス感覚）」への強力な刺激です。前庭覚は読み書きや集中力の土台ともいわれており、感覚統合理論では特に重要視されています。「ブランコが苦手」「ブランコで酔う」という子どもは前庭覚の過敏・鈍感の可能性があり、保育士が把握しておくと良い観察ポイントになります。',
+        text: 'ブランコの前後の揺れは「前庭覚（バランス感覚）」への強力な刺激です。前庭覚は読み書きや集中力の土台ともいわれており、感覚統合理論では特に重要視されています。「ブランコが苦手」「ブランコで酔う」という子どもは前庭覚の過敏・鈍感の可能性があり、大人が把握しておくと良い観察ポイントになります。',
       },
       { type: 'h2', text: '砂場遊びの多面的な発達効果' },
       {

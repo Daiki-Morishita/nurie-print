@@ -46,6 +46,8 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --font-rounded: var(--font-mplus-rounded), 'Hiragino Maru Gothic ProN', 'YuGothic', 'Meiryo', sans-serif;
+  --font-mincho: var(--font-zen-mincho), 'YuMincho', 'Hiragino Mincho ProN', 'Noto Serif JP', serif;
 }
 
 :root {
@@ -147,6 +149,20 @@
   .input {
     @apply w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 outline-none
            focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-colors;
+  }
+
+  /* 素材タイトル統一クラス。サイズ違いで揺れが出ないよう一元管理 */
+  .text-material-title {
+    @apply font-rounded font-black leading-snug;
+  }
+  .text-material-title-sm {
+    @apply font-rounded font-black text-[13px] leading-snug;
+  }
+  .text-material-title-md {
+    @apply font-rounded font-black text-[14px] leading-snug;
+  }
+  .text-material-title-lg {
+    @apply font-rounded font-black text-[26px] sm:text-[32px] leading-[1.3];
   }
 }
 

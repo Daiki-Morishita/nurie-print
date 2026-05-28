@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/category/type/maze', destination: '/maze', permanent: true },
+      // /upgrade は有料プラン未実装のため非公開化。リンク残存に備え /materials へ恒久リダイレクト
+      { source: '/upgrade', destination: '/materials', permanent: true },
+      // 季節テーマ統合: autumn/winter は seasonal-events に統合
+      { source: '/category/theme/autumn', destination: '/category/theme/seasonal-events', permanent: true },
+      { source: '/category/theme/winter', destination: '/category/theme/seasonal-events', permanent: true },
     ]
   },
   serverExternalPackages: ['sharp'],

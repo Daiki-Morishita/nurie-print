@@ -3,7 +3,7 @@ import { Printer, Heart, Users, Sparkles, ChevronRight, BookOpen, Shield } from 
 
 export const metadata = {
   title: 'ぬりえプリントについて',
-  description: '保育士・幼稚園教諭・ご家庭で使える無料の幼児向け教材プリント配布サイト「ぬりえプリント」の運営理念とサービス内容のご紹介。',
+  description: 'おやこで楽しむ無料の幼児向けぬりえプリント配布サイト「ぬりえプリント」の運営理念とサービス内容のご紹介。',
   alternates: { canonical: 'https://nurie-print.com/about' },
 }
 
@@ -13,7 +13,7 @@ const orgJsonLd = {
   name: 'ぬりえプリント',
   url: 'https://nurie-print.com',
   logo: { '@type': 'ImageObject', url: 'https://nurie-print.com/icon.svg' },
-  description: '保育士・幼稚園教諭・ご家庭で使える無料の幼児向け教材プリント配布サービス。',
+  description: 'おやこで楽しむ無料の幼児向けぬりえプリント配布サービス。',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', url: 'https://nurie-print.com/contact' },
   sameAs: [],
 }
@@ -34,8 +34,8 @@ export default function AboutPage() {
 
       <section className="prose max-w-none text-foreground leading-relaxed space-y-4 mb-10">
         <p>
-          「ぬりえプリント」は、保育士・幼稚園教諭の先生方、そしてご家庭でお子様と過ごす保護者の方々のために、
-          <strong>すぐに印刷して使える幼児向け教材プリント</strong>を無料で配布するサービスです。
+          「ぬりえプリント」は、ご家庭でお子さまと過ごす時間を、すこし楽しくするためのサービスです。
+          <strong>すぐに印刷して使える幼児向けぬりえプリント</strong>を、登録なしで無料配布しています。保育園・幼稚園・教室での教材利用にもどうぞ。
         </p>
         <p>
           現場で「明日の活動にちょうどいい教材が欲しい」「子どもが集中できるぬりえを探したい」と思ったとき、
@@ -58,7 +58,7 @@ export default function AboutPage() {
         <li className="flex gap-2"><span className="text-primary">•</span>
           <span><strong>豊富なテーマ</strong>：動物・恐竜・乗り物・海の生き物など多様なぬりえテーマを用意。季節に合わせた教材も充実。</span></li>
         <li className="flex gap-2"><span className="text-primary">•</span>
-          <span><strong>活動アイデア付き</strong>：各教材に「保育・家庭での活用例」を添えています。</span></li>
+          <span><strong>活動アイデア付き</strong>：各教材に「家庭・教育現場での活用例」を添えています。</span></li>
       </ul>
 
       <h2 className="font-mincho text-[20px] font-bold mb-4 flex items-center gap-2 pb-2 border-b border-border">
@@ -76,7 +76,8 @@ export default function AboutPage() {
         想定利用シーン
       </h2>
       <ul className="space-y-2 mb-10 text-sm leading-relaxed">
-        <li className="flex gap-2"><span className="text-primary">•</span>保育園・幼稚園での自由遊び・設定保育の教材として</li>
+        <li className="flex gap-2"><span className="text-primary">•</span>ご家庭での雨の日のおうち遊び、旅先のひととき、寝る前の静かな時間に</li>
+        <li className="flex gap-2"><span className="text-primary">•</span>保育園・幼稚園・教室での自由遊び・教材として（副次利用）</li>
         <li className="flex gap-2"><span className="text-primary">•</span>季節行事（七夕・ハロウィン・クリスマス等）の制作活動の素材として</li>
         <li className="flex gap-2"><span className="text-primary">•</span>ご家庭での雨の日のおうち遊びに</li>
         <li className="flex gap-2"><span className="text-primary">•</span>祖父母宅・帰省先での孫との時間に</li>
@@ -107,7 +108,7 @@ export default function AboutPage() {
       </h2>
       <div className="mb-10 text-sm leading-relaxed space-y-3">
         <p>
-          ぬりえプリントは、保育士・幼稚園教諭の先生方、ご家庭で幼児と関わる方々に向けて教材プリントとコラム記事を配信する個人運営サイトです。営利目的の販売活動は行っておらず、運営費は本サイトに掲載される広告収入によってまかなっています。
+          ぬりえプリントは、ご家庭でお子さまと過ごす方々を主な対象に、ぬりえプリントとコラム記事を配信する個人運営サイトです（保育園・幼稚園・教室の教材としても自由にご利用いただけます）。営利目的の販売活動は行っておらず、運営費は本サイトに掲載される広告収入によってまかなっています。
         </p>
         <p>
           サイトの内容についてのご質問・ご指摘・教材リクエストは、
@@ -121,7 +122,7 @@ export default function AboutPage() {
         利用について
       </h2>
       <ul className="space-y-2 mb-10 text-sm leading-relaxed">
-        <li className="flex gap-2"><span className="text-primary">•</span>教材は保育・教育・家庭利用に限り無料でご使用いただけます。</li>
+        <li className="flex gap-2"><span className="text-primary">•</span>教材はご家庭・教育・保育利用に限り無料でご使用いただけます。</li>
         <li className="flex gap-2"><span className="text-primary">•</span>商用での再配布・販売、画像の二次配布は禁止です。</li>
         <li className="flex gap-2"><span className="text-primary">•</span>ライセンスは CC BY-NC 4.0（非商用）に準じます。</li>
       </ul>
