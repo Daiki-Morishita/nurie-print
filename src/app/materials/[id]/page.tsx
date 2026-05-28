@@ -289,17 +289,15 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               )}
             </div>
 
-            {/* 解説テキスト */}
+            {/* 解説テキスト — 冒頭は素材固有の説明文（description）でユニーク性を確保 */}
             <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
               <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
-              <p>
-                「{material.title}」は、{ageLabel}のお子様向けに作られた{CATEGORY_LABELS[material.category]}プリントです。
-                {DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分で、
-                ご家庭でのおうち時間や保育園・幼稚園での自由遊び、設定保育の教材としてお使いいただけます。
-              </p>
-              <p>
+              <p className="text-[15px] text-foreground font-medium leading-relaxed">
                 {material.description}
-                線画はA4横長・白黒印刷に最適化されており、家庭用プリンタでそのまま印刷してすぐご利用いただけます。
+              </p>
+              <p className="text-muted-foreground">
+                {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
+                A4横長・白黒印刷に最適化されており、家庭用プリンタでそのまま印刷してすぐご利用いただけます。
                 {material.tools.length > 0 && (
                   <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
                 )}
