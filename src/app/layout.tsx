@@ -6,7 +6,7 @@ import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Providers } from '@/components/Providers'
-import { getMaterialsForAudience } from '@/lib/data'
+import { getMaterialsForAudience, getThemeCounts, getAgeCounts } from '@/lib/data'
 
 const GA_ID = 'G-DZ7JFS2RS3'
 
@@ -96,7 +96,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         <Providers>
-          <Header kidsCount={getMaterialsForAudience('kids').length} adultCount={getMaterialsForAudience('adult').length} />
+          <Header
+            kidsCount={getMaterialsForAudience('kids').length}
+            adultCount={getMaterialsForAudience('adult').length}
+            kidsThemeCounts={getThemeCounts('kids')}
+            kidsAgeCounts={getAgeCounts('kids')}
+          />
           <main className="flex-1">{children}</main>
           <Footer materialCount={getMaterialsForAudience('kids').length} />
         </Providers>

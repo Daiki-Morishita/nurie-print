@@ -62052,3 +62052,26 @@ export function getRelatedMaterials(material: Material, limit = 4, overrides?: M
     ))
     .slice(0, limit)
 }
+
+export function getThemeCounts(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Record<string, number> {
+  const result: Record<string, number> = {}
+  for (const m of materials) {
+    if (!isPublic(m, overrides)) continue
+    if (getAudience(m) !== audience) continue
+    if (!m.theme) continue
+    result[m.theme] = (result[m.theme] ?? 0) + 1
+  }
+  return result
+}
+
+export function getAgeCounts(audience: Audience, overrides?: Map<string, { imageStatus: string | null }>): Record<number, number> {
+  const result: Record<number, number> = {}
+  for (const m of materials) {
+    if (!isPublic(m, overrides)) continue
+    if (getAudience(m) !== audience) continue
+    for (let age = m.ageMin; age <= m.ageMax; age++) {
+      result[age] = (result[age] ?? 0) + 1
+    }
+  }
+  return result
+}

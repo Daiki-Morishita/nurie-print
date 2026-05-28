@@ -280,6 +280,19 @@ export type Material = {
   featured?: boolean
   /** Featured 素材専用の独自解説文（200字以上推奨）。素材ページに表示 */
   seoDescription?: string
+
+  /** 素材ページ「この教材について」セクション内の個別解説（AI生成で別途投入する想定） */
+  about?: MaterialAbout
+}
+
+/** 素材ごとに個別の解説3要素を持つための構造。値が無いブロックは UI で非表示。 */
+export type MaterialAbout = {
+  /** 「この絵の特徴」80字程度（絵柄を踏まえた個別解説） */
+  featureDescription?: string
+  /** 「色のアイデア」具体的な色名と部位 */
+  colorIdeas?: string
+  /** 「塗り方ワンポイント」実用Tips */
+  coloringTips?: string
 }
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {

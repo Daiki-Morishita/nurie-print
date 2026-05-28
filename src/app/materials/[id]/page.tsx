@@ -302,6 +302,24 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                   <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
                 )}
               </p>
+              {material.about?.featureDescription && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">この絵の特徴</h3>
+                  <p>{material.about.featureDescription}</p>
+                </>
+              )}
+              {material.about?.colorIdeas && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">色のアイデア</h3>
+                  <p>{material.about.colorIdeas}</p>
+                </>
+              )}
+              {material.about?.coloringTips && (
+                <>
+                  <h3 className="font-rounded text-[14px] font-bold pt-2">塗り方のワンポイント</h3>
+                  <p>{material.about.coloringTips}</p>
+                </>
+              )}
               {material.theme && THEME_INSIGHT[material.theme] && (
                 <>
                   <h3 className="font-rounded text-[14px] font-bold pt-2">「{THEME_LABELS[material.theme]}」テーマで育てる力</h3>
@@ -310,12 +328,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               )}
               <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
               <p>{DIFFICULTY_TIPS[material.difficulty]}</p>
-              <h3 className="font-rounded text-[14px] font-bold pt-2">活用シーン</h3>
+              <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
               <p>
-                ぬりえは手先の発達・色彩感覚・集中力を育てる大切な遊びです。
-                完成した作品はお部屋に飾ったり、季節の制作物として活用したり、お子様の成長記録としてアルバムに残すのもおすすめです。
-                保育園・幼稚園では雨の日の自由遊び、設定保育の導入、誕生日カードの素材としても活用できます。
-                同じ題材でも年齢や難易度に応じて構図を変えて練習できるため、繰り返しの活動にもご活用ください。
+                完成したぬりえは、お部屋に飾ったり、季節のカード作りに活用したり、
+                お子さまの成長記録としてアルバムに残すのもおすすめです。
+                同じ題材でも年齢や難易度を変えて繰り返し楽しめるので、お気に入りの一枚を見つけてみてください。
               </p>
             </div>
 
