@@ -13,7 +13,8 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でくまさんを塗ってオリジナルのぬいぐるみを作ろう', '塗ったあとに名前をつけて発表ごっこをしよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'リボンを首に結んだくまさんが、ニッコリ笑顔で片手を挙げているようす。肉球がたっぷり描かれたふっくらした足で座っているくまさんの、バランスの取れた丸い体と立ったような耳の形も塗るときに目につきます。リボンはくまさんの体とは違う色で塗ると、より一層かわいらしく引き立つポイントになります。',
+    popular: true, featured: true,
   },
 
   {
@@ -26,7 +27,8 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['茶色や黄色を使ってくまさんとはちみつを塗ってみよう', '塗り終わったら「くまさんは何を食べているのかな?」とお話を広げよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/bear-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふわふわの丸い体をしたくまさんが、両足の肉球をしっかり見せて座っています。目の前には「HONEY」と書かれた蜜がいっぱい詰まった壺があり、上からはみつばちがくるくる飛びながら近づいてきています。くまさんのほほえみ顔と蜜の壺の茶色、そしてはちみつ色に染まるはちみつ色のグラデーション、みつばちの黄色と黒の縞模様など、色をいろいろ試してみたくなる場面です。',
+    popular: false, featured: true,
   },
 
   {
@@ -67,7 +69,8 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['好きな色でねこちゃんを自由に塗ってみよう', 'リボンの色を考えて塗り、おしゃれなねこちゃんを作ろう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: '両手をふわりと上げて、胸元の大きなリボンをさらに引き立てているねこちゃん。丸くて愛らしい顔には笑顔が満面で、ぱっちりした目と小さな鼻が優しい印象です。縞模様の尾がくるんと後ろに見えて、白い体全体にたっぷりと色を塗る喜びを感じられます。リボンの結び目や肉球、ひげの線まで丁寧に描かれているので、細かい部分を塗り分ける楽しさも広がります。',
+    popular: false, featured: true,
   },
 
   {
@@ -80,7 +83,8 @@ const _materials1: Material[] = [
     tools: ['クレヨン', '色鉛筆'],
     activityIdeas: ['ねこの毛色を自由に塗って、自分だけのねこを作ろう', 'きんぎょばちの水を青く塗って、お魚さんの色も考えてみよう'],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/cat-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'リボンをつけたかわいい猫が、ニッコリ笑顔で金魚鉢をのぞいています。鉢の中には砂利や水草に囲まれて泳ぐ小さな金魚が一匹、ぷくぷくと泡を出しながら浮かんでいます。猫の丸い瞳と頬の可愛らしいしるしが印象的で、金魚鉢は丸みのある優しい曲線で描かれているため、オレンジと青、黄色などで塗り分けると二つの存在がより引き立つでしょう。',
+    popular: false, featured: true,
   },
 
   {
@@ -123,7 +127,8 @@ const _materials1: Material[] = [
       '首輪を好きな色にカラフルに塗って自分だけの子犬を作ろう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/dog-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'おすわりして舌を出す笑顔の子犬。立てた両耳と、首輪についた小さな鈴が特徴です。前足の肉球や、ふさふさとした後ろ足の毛並みは、クレヨンで何度も塗ると温かみが出ます。シンプルな輪郭だからこそ、色選びが子犬の表情をぐんと引き出す一枚です。',
+    popular: true, featured: true,
   },
 
   {
@@ -172,7 +177,8 @@ const _materials1: Material[] = [
       'ピンクや白などお気に入りの色でうさぎさんを自由に塗ってみよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-simple-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: true, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふんわりした耳をぴんと立てた、笑顔のうさぎさんです。両手を胸の前で合わせたポーズがかわいらしく、肉球がはっきり描かれた足の裏には塗り方の工夫を試したくなります。顔の両側の頬のまるみや、口元の優しい表情をどんな色で表現するかで、このうさぎさんの印象がぐっと変わる仕上がりになるでしょう。',
+    popular: true, featured: true,
   },
 
   {
@@ -189,7 +195,8 @@ const _materials1: Material[] = [
       'イースターエッグに好きな模様を描き足してデコレーションしよう',
     ],
     imageUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png', illustUrl: 'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/materials/rabbit-easy-illust.png',
-    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', popular: false, featured: true,
+    illustVersion: 1, imageStatus: 'approved', pdfUrl: '', createdAt: '2026-05-08', seoDescription: 'ふわふわの耳としっぽが特徴のうさぎが、両手でオレンジ色のにんじんをしっかり握りしめて、嬉しそうに笑っています。右側には編み目模様のかごが描かれていて、ふたの上には水玉模様のイースターエッグが見えます。うさぎの丸い足裏の肉球や、かごの編み目の細かい線をどの色で塗るか考えるのが楽しい一枚です。',
+    popular: false, featured: true,
   },
 
   {
@@ -306,6 +313,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
+    seoDescription: 'にっこり笑顔のぞうさんが、長い鼻を高くあげて花をつかもうとしています。片方の前足は優しくあげ、もう片方は地面に、その隣には5枚の花びらが可愛らしく並んだお花が待っています。ぞうさんの耳の大きなカーブや、足の肉球の描き方など、細かいディテールを塗り分ける楽しさが詰まった一枚です。',
     popular: false, featured: true,
   },
 
@@ -333,6 +341,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-08',
+    seoDescription: '手を上げてにっこり笑うかわいいこぞうさん。大きな耳と長い鼻、そして小さな尾っぽが、象らしさを引き出しています。ぽっちゃりした体や四本の足など、丸みのあるフォルムがいっぱいあるので、同じ色でも塗る場所によって象の形がどう見えるか楽しめます。',
     popular: true, featured: true,
   },
 
@@ -414,6 +423,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: '長いお首を立てたあかちゃんキリンが、横に置かれた葉っぱを見つめています。頭の上の三本のツノと、からだ全体に広がる水玉模様が塗りがいのあるポイント。四本の足がしっかりと地面に着いた安定した姿勢から、これからお母さんキリンについていく様子が伝わってきます。',
     popular: false, featured: true,
   },
 
@@ -441,6 +451,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: '長い首をすっと伸ばして、元気よく歩むきりんさん。頭の上にはひょこひょこと立った2本の角と、耳の上には丸いもようがついています。体いっぱいに散らばった大きな円形のもようは、色ごとに塗り分けるのが楽しく、きりんさんの個性が引き立つポイントになります。太い足と短いしっぽ、にっこり笑った顔もはっきり描かれていて、塗り始めたらすぐにきりんさんの表情が生き生きと浮かび上がるでしょう。',
     popular: false, featured: true,
   },
 
@@ -522,6 +533,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: 'ふわふわのたてがみに包まれた、にっこり笑顔のライオンが右前足を上げて、まるで「やあ」と挨拶しているようなポーズです。左奥には細い茎の小さなお花が寄り添い、ライオンの大きなからだとの大きさの違いが楽しく表現されています。顔の輪郭に沿ったたてがみの波線や、肉球が見える前足、ひげの曲線など、細かい部分が多くて、どこからどんな色を塗ろうか迷ってしまうほど塗りがいのある一枚です。',
     popular: false, featured: true,
   },
 
@@ -549,6 +561,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: 'ふさふさのたてがみに包まれた、つぶらな瞳のライオンが正面を向いてこちらを見つめています。口元は優しい笑顔で、ひげもくっきり描かれているので、黒く塗るとより表情が生き生きします。立派なたてがみは花びらのような波線が何重にも重なっていて、茶色やオレンジ、黄色などで段階的に塗り分けると、ボリュームが一層引き立ちます。四本足はしっかりと地面に着いた安定した姿勢で、右側に立てた小さなしっぽまで、塗りどころが満載です。',
     popular: true, featured: true,
   },
 
@@ -630,6 +643,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: '笹の前に座ってこちらに手を振るパンダは、丸くて大きな目とにっこり笑った口がとても愛らしく、左手を高く上げたポーズが元気いっぱいです。背後にはセグメント状に描かれた竹が立ち、葉っぱの細かな線は塗り分ける楽しさが詰まっています。丸みを帯びた体と足の円形は、濃い色でしっかり塗るとぐっと立体的になる部分で、パンダならではの白と黒のコントラストを思い出しながら色選びができます。',
     popular: false, featured: true,
   },
 
@@ -657,6 +671,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-09',
+    seoDescription: '手を上げてにこにこ笑うパンダが、ころんとした体で立っています。丸い耳、くりくりの目、小さな鼻と口のやさしい顔立ちは、黒で縁取られた白い部分がたくさんあるので、クレヨンやマーカーで塗り分けるのが楽しい構図です。足の裏のぷっくりした肉球や、側面に描かれた丸みのあるお腹の線も、色を変えて塗ると動きのあるパンダに見えてきます。',
     popular: true, featured: true,
   },
 
@@ -741,6 +756,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: 'つぶらな瞳と満面の笑顔のペンギンが、片足を上げてジャンプするように立っています。ふわふわの丸いおなかに色を塗ると、冬のぽっちゃりペンギンらしさが引き立ちます。右上に浮かぶ結晶模様の雪の結晶は、冷たい青や白で彩色すると、ペンギンがいる季節の世界がぐっと広がります。',
     popular: false, featured: true,
   },
 
@@ -769,6 +785,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '手を大きく振ってにこにこ笑うペンギンが、元気よく歩いてきます。ぽてぽてとした足と、広げた翼のユーモラスなポーズが目を引き、どこかおどけた雰囲気。顔の中心に集まった目と口には濃い色を入れると表情がぐっと引き立ち、白く大きなお腹のエリアにはどんな色を選ぶか迷ってしまいそう。丸みのある全身の輪郭線は色からはみ出す心配も少なく、塗りやすい優しい設計になっています。',
     popular: false, featured: true,
   },
 
@@ -853,6 +870,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: 'ふわふわの毛並みをもったひつじさんが、元気よくジャンプしている様子が描かれています。横には小ぶりなお花が咲いていて、ひつじさんの楽しそうな表情と一緒に春の雰囲気が伝わってきます。足元の蹄や耳の部分、そしてもこもことした体全体と、塗る場所がたくさんあるので、色選びを工夫するのが面白くなりそうです。',
     popular: false, featured: true,
   },
 
@@ -879,6 +897,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: 'ふわふわの毛並みが全身を包むひつじが、片足を高く上げてぴょんとジャンプしている瞬間です。丸い瞳と開いた口から、楽しさいっぱいの表情が伝わってきます。耳の形や足の先端、首元のリボンのような模様など、細かい部分を丁寧に塗り分けると、より一層ふんわりとした愛らしさが引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -961,6 +980,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '花に向かって元気よく走るピンク色のこぶた。くるんと巻いた尻尾と、前に出した足のポーズから、今にも花に飛び込みそうな勢いが伝わります。目を細めた笑顔と大きく開いた口で、花との再会を喜ぶ表情がはっきり見えます。右側に立つ花は丸くまあるい花びらが五つ、真ん中にぽっこりとした黄色い部分があり、緑の茎と葉を塗り分けると、こぶたの走る先がぐんと明るく輝きます。',
     popular: false, featured: true,
   },
 
@@ -988,6 +1008,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '左手を高くあげて、元気よく歩いているこぶたさん。つぶらな瞳と、にっこり笑った口元からは喜びがいっぱい伝わってきます。ぽっちゃりした体と、くるんと巻いた尻尾、立派な鼻も塗るときによく目に入るポイント。シンプルで厚みのある線で描かれているから、はじめてのぬりえでも色が塗りやすく、ピンク一色でもいいし、お気に入りの色で自由に塗ってみたくなります。',
     popular: false, featured: true,
   },
 
@@ -1099,6 +1120,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '手を元気よく振り上げ、大きく口を開けて笑顔を見せるかえるさん。丸くぽっこりしたお腹と、頬のくぼみを表す円形のパーツが愛らしく、色を塗るときに立体感が生まれる場所です。つぶらな瞳には光が入っており、黒と白のコントラストで目に表情が宿ります。四本足のかえるらしい足の形も個性的で、どんな色を選ぶかで印象が大きく変わるでしょう。',
     popular: false, featured: true,
   },
 
@@ -1206,6 +1228,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '手を元気よく挙げてウェーイと笑顔で挨拶するこざる。くるんとカールした長い尻尾と、ぴょんと立った耳の先まで、全身が喜びで満ちあふれています。大きなお目目と鼻のまんまるシンプルな顔は、どんな色を選んでも優しく仕上がりそう。茶色や黄色、オレンジなど、複数の色を試したくなる毛並みの流れが随所に待っています。',
     popular: false, featured: true,
   },
 
@@ -1317,6 +1340,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '足を高くあげて、今にも踊りだしそうなひよこ。パッチリとした目と、開いた口からは楽しさがあふれでています。左右に広げた羽、細い足の指まで、ぜんぶ動きのある形をしているので、黄色や橙色を塗るときに、どこをどう塗ると元気さが引き立つか考えながら色を選びたくなる一枚です。',
     popular: false, featured: true,
   },
 
@@ -1427,6 +1451,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: 'ふわふわの大きなしっぽが特徴のこぎつね。目をすっと閉じた優しい表情と、くの字に曲がった口元から、とても機嫌のいい様子が伝わってきます。胸元のふんわりとした毛並みと、後ろに流れるボリュームのあるしっぽは、濃淡をつけるとより立体感が出ます。小ぶりな足をちょこんと揃えた姿勢が、全体のかわいらしさを引き立てます。',
     popular: false, featured: true,
   },
 
@@ -1453,6 +1478,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '手をふりふり笑顔で挨拶するタヌキ。ころんとした体と、ふわふわの大きなしっぽ、肉球がいっぱい描かれた足の裏など、かわいらしい細部がいっぱい。目や口の黒い部分と、耳や顔周りの白い部分のコントラストで、どんな色を選んでも表情がしっかり生きる設計になっています。',
     popular: false, featured: true,
   },
 
@@ -1561,6 +1587,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: '両手でどんぐりをしっかり握りしめて、にこにこ笑っているリス。ふわふわの大きな尾や立った耳、足もとに落ちているどんぐりとキノコなど、秋の森の様子が詰まっています。リスの毛並みと尾の部分では濃淡をつけると立体的に見えますし、どんぐりとキノコには茶色と赤など色を分けて塗る楽しみもあります。',
     popular: false, featured: true,
   },
 
@@ -1669,6 +1696,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-10',
+    seoDescription: 'にっこり笑顔でこちらを見つめるかめさんは、立派な甲羅を背負っていかにも幸せそう。丸くて大きな瞳と、元気よく開いたお口が、この子のご機嫌な様子を教えてくれます。甲羅の六角形のパターンはぬり分けるのが楽しいし、短い足の爪もていねいに塗ると、かめさんがもっともっと愛らしく見えるはずです。',
     popular: false, featured: true,
   },
 
@@ -1775,6 +1803,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
+    seoDescription: 'まんまるな体がかわいいハムスター。大きな目をぱっちり開いて、小さな前足を胸の前でそろえています。頬のひげをピンと張った表情は、何かおいしいものを見つけたときのハムスターそのもの。ほっぺたから体にかけての丸みを活かした塗り分けが楽しく、前足の小さな肉球や足裏の細かい線も、色を入れるたびにハムスターが生き生きしていくのを感じられます。',
     popular: false, featured: true,
   },
 
@@ -1881,6 +1910,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-11',
+    seoDescription: 'ふっくらとした体に小さなくちばしをもつ、笑顔のひよこ。つぶらな黒い瞳がキュートで、頭のてっぺんにはふわふわの毛束がぴょんと立っています。両脇に生えた翼と、足元に描かれた小さな爪をじっくり見ながら色を塗ると、全身がきいろに輝く小鳥の姿が浮かび上がってきます。',
     popular: false, featured: true,
   },
 
@@ -4276,6 +4306,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '大きな瞳と優しい笑顔が特徴の、まん丸いフォルムの車です。ウインカーのような小さな丸や、ほっぺたに見える円形など、細部にも表情が隠れていて、塗り進めるにつれて車らしさと愛らしさが同時に引き立ちます。シンプルな線で構成されているため、はじめてのぬりえでも色鉛筆やクレヨンが塗りやすく、黄色や赤、青など好きな色を自由に選んで個性的な一台に仕上げられます。',
     popular: true, featured: true,
   },
 
@@ -4297,6 +4328,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: 'まるまるとしたボディに大きな瞳と笑顔が特徴の、とても機嫌のいい車が道を走っています。青空のもとくねくねと続く道路の上で、ふわふわの雲たちに囲まれながら、まるで楽しくおしゃべりしているみたい。タイヤや窓、ドアなど細かい丸や四角がたくさんあるので、色を塗り分けるとこの車がもっと生き生きして見えます。太陽も元気に輝いているから、晴れた日のドライブ気分が味わえます。',
     popular: false, featured: true,
   },
 
@@ -4360,6 +4392,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: 'シンプルな形の電車が横向きで止まっています。キャビン部分の丸い窓、車体に並ぶ四角い窓、そして下部に4つ並んだ円い車輪が、子どもが色分けしたくなるポイントです。左右対称に近い構成なので、同じ色を繰り返し塗る楽しみもあります。窓と車輪をどんな色にするか決めるだけで、電車らしさが引き立つ一枚です。',
     popular: false, featured: true,
   },
 
@@ -4381,6 +4414,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '山並みを背景に、レールの上を走る長い電車。窓がたくさんついた車両の側面と、ゴロゴロと回る車輪の存在感が印象的です。空には大小さまざまな雲が浮かび、手前の線路は奥へ向かって消えていく遠近感があります。電車の白い車体と空の広がりのコントラストが気持ちよく、どの部分をどんな色で塗るか迷ってしまいそうなほど、塗るべき場所がたくさん待っています。',
     popular: false, featured: true,
   },
 
@@ -4444,6 +4478,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '横向きに停まったバスの側面には、5つの大きな窓がズラリと並んでいて、それぞれを違う色で塗り分けるのが楽しみです。丸くて大きなタイヤは濃いめの色を塗ると立体感が出ますし、右奥に見える開いたドアの二枚のパネルは細かく塗り分けられます。シンプルな線で描かれているため、バス本体は好きな色で大胆に塗れて、ちいさな子どもの手でも塗りやすい構成です。',
     popular: false, featured: true,
   },
 
@@ -4465,6 +4500,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '街中を走るバスの側面には大きな窓がいくつも並び、乗客が乗り降りできるドアも見えます。バスの周りには信号や街路樹、そして背景にはさまざまな高さの建物が立ち並んでおり、本当の町並みのようです。路面には白い横断歩道の線が引かれ、小さな花も咲いているので、バスだけでなく周囲の環境全体を塗り分ける楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -4528,6 +4564,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: 'スピード感あふれる新幹線が横向きで描かれています。先頭の丸い窓から運転手さんが見えるようで、7つ並んだ四角い窓からは乗客たちがのぞいているイメージ。艶やかな曲線で描かれた車体と、太くはっきりした輪郭の車輪が特徴で、シンプルな線だからこそ、ピンクや黄色、赤など好きな色で塗ると新幹線の速さが引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -4549,6 +4586,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '富士山の雪化粧を背景に、新幹線が勢いよく走り去ろうとしています。機体の流線形のボディと整列した小窓、線路を表す格子模様が細かく描かれていて、どの部分から塗ろうかワクワク考えたくなります。空には雲がふわふわと浮かび、斜めの線で風や速度感も表現されているので、赤や青、黄色をどう組み合わせて勢いを出すか、工夫のしがいがあります。',
     popular: false, featured: true,
   },
 
@@ -4612,6 +4650,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '真っ白なベレー帽をかぶった女の子が、かごつきの自転車に乗ってニコニコ笑顔。両手でハンドルをしっかり握り、ふんわりした洋服のすそが揺れている姿が描かれています。大きな車輪とペダル、かごの格子模様など、塗る場所がたくさんあり、帽子のリボンや女の子の髪の毛のカール、靴などの細かいディテールにも色を入れると、とても素敵な一台ができあがります。',
     popular: false, featured: true,
   },
 
@@ -4633,6 +4672,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '公園の小道を颯爽と走る女の子。ヘルメットをかぶった顔は笑顔で、両手でしっかりハンドルを握っています。路脇には色とりどりの花が咲き、背景には大きな木が葉をゆらゆらと揺らしており、塗り始めると木の幹から葉の濃淡、花びらの色分けなど、細かな部分の塗り分けが必要になることに気づくでしょう。自転車のタイヤの放射状の線も塗ってみると、立体感が出てきます。',
     popular: false, featured: true,
   },
 
@@ -4696,6 +4736,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '運搬用の大きな箱を積んだトラックが、真横から見たまっすぐな姿勢で停まっています。大きなタイヤ2つと、運転席の小さな窓、そして箱型の荷台という、トラックの特徴がシンプルに描かれているので、どの部分を何色にするか迷わず塗り進められます。荷台の広い面積は色塗りのしがいがあり、タイヤの円形や窓の小さな四角形など、異なる形の塗り分けも楽しめます。',
     popular: false, featured: true,
   },
 
@@ -4717,6 +4758,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '荷物をいっぱい積んだトラックが、道路を走っています。運転席の窓や、積み荷の箱の凹凸した形、周りに生えている木々や空に浮かぶ雲など、色分けしたくなる要素がたくさんあります。タイヤの大きな円も塗り始めるのに丁度よく、荷台の段々になった箱たちはそれぞれ違う色で塗る楽しさが味わえます。',
     popular: false, featured: true,
   },
 
@@ -4780,6 +4822,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '消防車のボディ側面に描かれた大きな格子模様の扉と、ホースがしっかり巻き付けられた円形のリール、そして車体上部に積み重ねられた梯子が、この車の本当のお仕事ぶりを物語っています。赤や黄色で塗れば、まさに町で見かけるあの活躍する消防車そのものになります。窓や車体、ホースのパイプなど、塗り分ける場所がたくさんあって、色の組み合わせを考えるのが楽しくなる一台です。',
     popular: false, featured: true,
   },
 
@@ -4801,6 +4844,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '急いで駆けつけるはしご車が、サイレンを鳴らしながら走ってきます。屋根の上には長く伸びるはしごが装備されていて、車体両側には通気口のような細い線がたくさん引かれています。道路を示す線も描かれているので、このはしご車がどんなスピードで動いているのか想像しながら、赤や黄色で迫力いっぱいに塗ることができます。',
     popular: false, featured: true,
   },
 
@@ -4864,6 +4908,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '屋根に大きなサイレンを乗せた救急車が、ピカピカと光りながら走っています。側面には3つの大きな窓が並んでいて、赤や青などの色を塗り分けるのが楽しい場所。フロントガラスと運転席の小さな窓には、救急車らしい雰囲気を作る細かい線が引かれており、どの色を選ぶか考えながら塗る工夫が見られます。',
     popular: false, featured: true,
   },
 
@@ -4885,6 +4930,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '赤と白のサイレンをぐるぐるに回して、急いで走る救急車。屋根の上には担架や医療道具が積み込まれ、横には素早い動きを表す流線がいくつも引かれています。フロントガラスの大きさや、開いたドアの奥に見える車内のくぼみなど、細部まで丁寧に線で描かれているので、赤一色で塗りつぶすだけでなく、窓や輪っこ、グリルの部分を別の色で塗り分ける楽しさが広がります。',
     popular: false, featured: true,
   },
 
@@ -4948,6 +4994,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '屋根に付いた赤色灯とサイレンのような装置が目印のパトカーです。フロントガラスと側面の4つの窓には太い線で枠が引かれていて、色を分けて塗るのが楽しい設計になっています。前後の大きなタイヤと、ドアの取っ手もはっきり描かれているので、細かい部分まで色えんぴつを走らせる練習にぴったりです。',
     popular: false, featured: true,
   },
 
@@ -4969,6 +5016,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '街中を走るパトカーが、サイレンをピカッピカッと光らせながら緊急出動中。屋根の上の回転灯と、勢いよく描かれた斜線の効果音から、急いで現場へ向かう様子がビシビシ伝わります。背景には高層ビルと街路樹が建ち並び、車体の白と青のツートンカラーは塗り分けの練習にぴったり。ドアやタイヤのくぼみなど細かい部分も多く、色鉛筆やクレヨンの使い分けを自然と考える場面がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -5032,6 +5080,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '屋根の上に赤いランプを付けた、いかにもなタクシーの側面図。大きな丸い車輪が二つ、どっしりと地面を捉えていて、ドアのハンドルや窓枠などの細部も愛らしく描かれています。黄色で塗ればぐんと「タクシーらしく」なる車体と、銀色や黒で表現したくなるランプや窓、さらには車輪の立体感を出すための濃淡づけなど、限られた色数でも工夫のしがいがある一台です。',
     popular: false, featured: true,
   },
 
@@ -5053,6 +5102,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '街並みの道路を走るタクシー。フロントガラスの大きさが印象的で、側面には黒いチェック模様がしっかり描かれています。背景には高さの違う建物や丸い形の木が立ち並び、タクシーの黄色や建物のグレー、空の白など、色分けしたくなるレイアウト。タイヤや窓の細部までしっかり線で描かれているので、どこから塗り始めるか選ぶ楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -5116,6 +5166,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '広大な畑を走るトラクターが、大きなタイヤと小ぶりなタイヤの対比が印象的です。運転席の後ろにそびえた煙突からは、働く機械らしい迫力が感じられます。ハンドルをしっかり握る運転手の姿勢から、これからどんどん進んでいく様子が想像できて、黄色や赤、緑など色鮮やかに仕上げたくなります。',
     popular: false, featured: true,
   },
 
@@ -5200,6 +5251,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: 'キャビンの窓から顔をのぞかせるブルドーザー。前方に大きく張り出したブレード（押し出す部分）と、ゴツゴツとした迫力のあるキャタピラ（ベルト状の足）が特徴です。アームの関節部分や、細かく描き込まれたエンジン部分など、色を塗り分けたくなるディテールがたくさん隠れています。働く乗り物の形をしっかり観察しながら、自分の好きな色で塗ることができます。',
     popular: false, featured: true,
   },
 
@@ -5284,6 +5336,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '履帯の上にどっしりと構えたショベルカーが、大きく伸ばした腕で砂をすくい上げようとしています。キャビンの四角い窓、履帯の下に並ぶ丸い連結パーツ、そして曲線で描かれたバケットなど、重機らしい細部が子どもにも分かりやすく表現されています。黄色や赤で塗れば工事現場の主役らしく、または青や緑で塗れば別の世界観も生まれる、色選びの自由度が高い一枚です。',
     popular: false, featured: true,
   },
 
@@ -5368,6 +5421,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '工事現場で活躍するロードローラーが、大きなローラーを回転させながら進んでいます。操縦席に座った運転手がハンドルをしっかり握っている様子と、ローラーの中心に描かれた放射状の模様がポイント。右側の大きなタイヤには穴がいくつも開いていて、それぞれに色を塗り分けると立体的に見えてきます。',
     popular: false, featured: true,
   },
 
@@ -5452,6 +5506,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '大空を飛んでいく旅客機。胴体にはいくつもの窓が並んでいて、それぞれに色を塗るのが楽しみです。主翼と尾翼には大きな余白があるので、大胆な色使いも思いきって試せます。操縦席の窓もカーブしていて、クレヨンの先端を上手に使って塗り分ける工夫が生まれるかもしれません。',
     popular: false, featured: true,
   },
 
@@ -5536,6 +5591,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '大きな窓からパイロットを見守るヘリコプターが、スキーのような着陸脚でしっかり地面に立っています。回転するプロペラは上部に2つ、後ろにも1つあり、赤や黄色で色分けしたくなる楽しい配置です。丸みのあるボディと小さな窓のバランスが親しみやすく、背景のない白いスペースがクレヨンやマーカーの色を存分に引き立てます。',
     popular: false, featured: true,
   },
 
@@ -5620,6 +5676,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: 'ふわふわの球体が空へ浮かぶ熱気球。縦にスッと伸びた筋模様がたくさんあるので、赤・青・黄色など好きな色を1本ずつ塗り分けるのが楽しい。下についた四角いかごの部分も、球体とは違う色で塗ると、ぐんぐん空へ上がっていく様子がより引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -5704,6 +5761,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '炎をぼうぼうと噴き出しながら宇宙へ向かって飛び立つロケット。先端の窓には丸い窓がついていて、誰が乗っているのかな？と想像が広がります。左右に広がった大きなフィンと、下から勢いよく吹き出す炎の部分は、赤やオレンジ、黄色で塗り分ける楽しさがあります。シンプルな形だからこそ、ロケット本体をどんな色にするか自由に選べます。',
     popular: false, featured: true,
   },
 
@@ -5788,6 +5846,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '木製のボートが波に浮かんでいる様子を描いた一枚。オールが二本、ボートの中央に立てかけてあり、右側に備え付けられたオール一本とともに、水の上での移動の道具がしっかり表現されています。ボートの側面には何本もの線が入り、木の板で組み立てられた質感を感じさせます。シンプルな線だからこそ、子どもが色を塗るときにボートの丸みを感じたり、オールの茶色さを想像したりする余地が生まれる、素朴で味わい深い一枚です。',
     popular: false, featured: true,
   },
 
@@ -5872,6 +5931,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '波立つ海の上にどっしりと浮かぶ大きなフネ。船体には4つの丸い窓がくっきりと並び、上の階には4つの四角い窓が見えます。一番てっぺんの煙突からは、もくもくと煙が出ているところを想像しながら塗ることになります。窓の丸さと四角さの違いを色分けしたり、波のうねりを何色にするか決めたり、塗る場所がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -6208,6 +6268,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '大きく口を開けて笑顔のティラノサウルス。上下の歯がギザギザと並んだ迫力ある口元と、片目をつぶったようなユーモラスな表情が特徴です。がっしりした足のしわしわした質感や、長く伸びた尾の流れるような曲線も丁寧に描かれており、色を塗るたびに恐竜らしさが引き立ちます。',
     popular: true, featured: true,
   },
 
@@ -6229,6 +6290,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12',
+    seoDescription: '恐竜の森での一場面。大きく口を開けたティラノサウルスが、背の高いヤシの木に囲まれた草原にいます。体全体に丸いうろこが並んでいて、色分けのしがいがあります。足元には小さな石ころや草が散らばっており、細かい部分まで丁寧に塗ると、まるで本当の恐竜がそこにいるような迫力が生まれます。',
     popular: false, featured: true,
   },
 
@@ -6292,6 +6354,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
+    seoDescription: '大きく口を開けた恐竜が、背中いっぱいに広がった帆のようなヒレを立てて堂々と立っています。ギザギザの歯と目の輝きから、ユーモラスな表情が伝わり、太く力強い4本の足と長くしなやかな尻尾のバランスが独特です。背中の帆の部分はたくさんの放射状の線が描かれているので、色を塗り分けたり濃淡をつけたりするのが楽しく、恐竜全体を何色で表現するかで印象がガラリと変わります。',
     popular: false, featured: true,
   },
 
@@ -6313,6 +6376,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T15:45',
+    seoDescription: '川底を探検するスピノサウルスは、背中の大きなヒレを立てて、するどい歯をむき出しにした迫力ある表情で獲物を探しています。水中にはちいさな魚が泳いでいて、足元には石ころや水草が生えており、塗るときに水の世界がどんな色に変わるか考えながら筆を進めることになります。',
     popular: false, featured: true,
   },
 
@@ -6376,6 +6440,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
+    seoDescription: 'にこにこ笑顔のヴェロキラプトルが、長い尾をぴんと伸ばしてポーズをとっています。両腕に生えた立派な爪や、背中から翼のように広がるギザギザの羽毛をよく見ると、恐竜らしさと可愛らしさが同時に感じられます。塗るときは、爪の先端や足の指の細かい部分、羽毛のフサフサ感を色分けすると、より立体的で生き生きとした恐竜に生まれ変わります。',
     popular: false, featured: true,
   },
 
@@ -6397,6 +6462,7 @@ const _materials1: Material[] = [
     imageStatus: 'approved',
     pdfUrl: '',
     createdAt: '2026-05-12T17:01',
+    seoDescription: '森の中を颯爽と歩くヴェロキラプトル。長く伸びた尾がS字カーブを描き、両腕を自然に構えたダイナミックなポーズが特徴です。足元にはシダのような草が生い茂り、背景には太い幹の大きな木が左右対称に立っています。恐竜の体と背景の植物で、色の使い分けが映える構図になっており、塗るときに遠近感を出す楽しさが感じられます。',
     popular: false, featured: true,
   },
 
@@ -6460,6 +6526,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
+    seoDescription: '大きく口を開けて元気いっぱいのアロサウルスが、こちらを向いてポーズをとっています。背中から尾にかけて三角形のトゲがずっと並んでいて、色を塗り分けるのが楽しい部分です。太くしっかりした四本の足と、先端が細くなる長い尾は、動きのある恐竜らしさを感じさせます。顔の大きな目と、歯がたくさん見える開いた口の表情がかわいらしく、怖さは全くありません。',
     popular: false, featured: true,
   },
 
@@ -6481,6 +6548,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:02',
+    seoDescription: '森の中で堂々と立つアロサウルスが、左右に生える背の高いシダ植物に囲まれています。恐竜の体全体に描かれた丸いうろこと、口角が上がった親友のような優しい表情が印象的です。太い脚と長い尾のバランスが良く、オレンジやグリーン、ブラウンなど様々な色を試したくなる部分がたくさんあります。背景のシダは幾何学的な線で表現されているため、同じ色でも濃淡をつけたり、恐竜と背景を別の色で分けたりする工夫も発見できるでしょう。',
     popular: false, featured: true,
   },
 
@@ -6544,6 +6612,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
+    seoDescription: '大きく口を開けて元気に歩くギガノトサウルス。背中のギザギザした突起から長い尾まで、恐竜らしいゴツゴツとした質感が全身に広がっています。太い後ろ足と鋭い爪をした前足のバランスを見ていると、どんな色で強そく見せようか考えたくなります。',
     popular: false, featured: true,
   },
 
@@ -6565,6 +6634,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:47',
+    seoDescription: '草原に立つ大きなギガノトサウルスが、背中の棘をそびえ立たせながらこちらを向いています。足元には丸い石ころや草むらが散らばり、奥には素朴なヤシの木や岩が見えて、太古の世界が広がっています。恐竜のお腹の模様や体全体に色を塗り分けるとき、濃い色と薄い色のコントラストで迫力ある表現ができる構図です。',
     popular: false, featured: true,
   },
 
@@ -6628,6 +6698,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
+    seoDescription: '長い首をすっと伸ばして立つ大きな恐竜が、にっこり笑っています。両手には鋭いかぎ爪がいくつも並んでいて、塗り分けるのが楽しい部分。太い後ろ足や長い尾の曲線は、ぐるぐるとクレヨンを走らせたくなる広いスペースになっており、自分で色の濃淡をつけてみたくなります。',
     popular: false, featured: true,
   },
 
@@ -6649,6 +6720,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:52',
+    seoDescription: '長い腕を伸ばして、背の高い木の葉をもぐもぐ食べているテリジノサウルス。頭上の花々に鼻を近づけるほほえみの表情と、足元に散らばった小石や地面の草たちが、恐竜がここにいる実感をくれます。スポット模様で覆われた体全体を塗るときも、樹幹の立体感や地面の段差を意識すると、この恐竜がどっしりと立っている様子がより生き生きして見えるでしょう。',
     popular: false, featured: true,
   },
 
@@ -6712,6 +6784,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
+    seoDescription: 'にっこり笑顔のトリケラトプスが、堂々と立っている姿を色づけします。頭上のフリルの波々とした輪郭、そして口元の優しい表情をていねいに塗ると、この恐竜の愛らしさがぐんと引き立ちます。太い四本の足と爪をしっかり色分けすれば、地面に力強く立っているようすが伝わり、全身のバランスの良さにも気づくでしょう。',
     popular: false, featured: true,
   },
 
@@ -6733,6 +6806,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T18:58',
+    seoDescription: '草原に立つトリケラトプスが、満面の笑みで こちらを向いています。背中の大きなフリルと三本の角には、丸いプレートのような装甲が並び、色を塗り分ける楽しさがあります。足元には可愛らしい花がいくつも咲いていて、恐竜らしい迫力と優しい雰囲気が両立した一枚です。太い輪郭線なので、はじめてのぬりえでも色が枠からはみ出しにくくなっています。',
     popular: false, featured: true,
   },
 
@@ -6796,6 +6870,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
+    seoDescription: 'ステゴサウルスが背中をまっすぐ伸ばして立っているシーン。背中に並ぶ大きな板状のトゲは、色を変えたり模様を入れたりしたくなるほどの存在感があります。愛らしい丸い目とにっこり笑った口元が、迫力満点の恐竜を親しみやすくしていて、尾の先端のトゲもしっかり描き込まれているので、どの部分から塗り始めようか迷ってしまいそう。全体的にふっくらとしたボディラインは、優しい色合いで仕上げたい気持ちになります。',
     popular: false, featured: true,
   },
 
@@ -6817,6 +6892,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:03',
+    seoDescription: '草原にたたずむステゴサウルスが、背中いっぱいに並んだ大きな板状のトゲをたくましく立てています。優しい目で前を向くその顔と、太い四本の足でどっしりと地面に立つ姿勢から、このクラシック恐竜の堂々とした魅力が伝わります。左右の木々や足元の草むらは、緑色で塗ると自然らしさがぐんと出る部分で、特に背中のトゲは明るい色から濃い色へのグラデーションを試すのに最適な広いスペースです。',
     popular: false, featured: true,
   },
 
@@ -6880,6 +6956,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
+    seoDescription: '長い首をすっと伸ばして、微笑むブラキオサウルス。背中全体に描かれた丸いプレート模様は、大きさの異なる円をいろいろな色で塗り分けると立体的に見えてきます。太くしっかりした四本の足と、地面に向かって伸びた尾には筋肉の流れを表す線が入っているので、色の濃淡をつけるとこの大きな体がどう動いているのかが見えてきます。',
     popular: false, featured: true,
   },
 
@@ -6901,6 +6978,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:08',
+    seoDescription: '首を長く伸ばして、大きな樹の葉っぱを食べようとするブラキオサウルス。背中には楕円形の模様が並んでいて、塗り分けると恐竜らしさがぐんと出てきます。足元の草や樹の根元、そして頭上の枝葉に広がった空間は色を選ぶのが楽しい部分です。優しい線で描かれた太い足と長い尾のバランスが、この巨大な恐竜の堂々とした存在感を引き出しています。',
     popular: false, featured: true,
   },
 
@@ -6964,6 +7042,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
+    seoDescription: 'よろこびの表情で立つアンキロサウルスの背中いっぱいに並ぶ、ゴツゴツとした装甲プレート。短い脚の裏にはクローがくっきり刻まれ、尻尾の先端は球のような形をしています。恐竜らしい武装をしながらも、大きな瞳と優しい口角がこの生き物を親しみやすくしており、装甲のすきまや足裏の細かい模様など、タッチの違いを色で表現できる部分がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -6985,6 +7064,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:14',
+    seoDescription: '草原にのっそり立つアンキロサウルスの背中は、盾のような板状の骨で全身覆われています。先の丸い球体の尾と、にっこりした優しい表情が特徴的で、足元には色とりどりの小さな花が咲いています。重厚な体つきなのに、どこか親しみやすい雰囲気が漂う恐竜で、背中のゴツゴツとした骨板や足の爪、首周りの装甲など、細かく描き分けられた部分を色分けするのが見どころです。',
     popular: false, featured: true,
   },
 
@@ -7048,6 +7128,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:20',
+    seoDescription: 'くりんとした瞳でこちらを見つめるパラサウロロフス。頭の上に立派に伸びた湾曲した冠と、身体から伸びる長い尾が特徴的です。四本の脚でしっかり立つ姿勢は安定していて、塗るときに前足と後ろ足の色を変えてみたり、お腹と背中で濃淡をつけたりすることで、恐竜らしい立体感が出てきます。',
     popular: false, featured: true,
   },
 
@@ -7132,6 +7213,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:25',
+    seoDescription: '首から背中にかけてゴツゴツした装甲に覆われたトリケラトプスが、少し得意げな顔で立ち止まっています。背中いっぱいに描かれた丸いウロコはどんな色にしようか迷うほど、塗りがいのある配置になっていて、尾の先端までするりと伸びた体のラインは大きなクレヨンで優しくなぞりやすい形です。4本の足はしっかりとした着地感があり、手足の爪まで細かく描き込まれているので、色分けでより立体的に見えてくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -7216,6 +7298,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:31',
+    seoDescription: '大きく広げた翼と長い嘴が特徴のプテラノドンが、両足をそろえてふわりと浮かんでいます。つぶらな瞳と少しニコッとした表情がとてもキュート。翼の曲線や背中の丸みを色鉛筆でなぞると、古代の空を飛ぶ恐竜の躍動感が引き出せます。足の小さな手指や、頭の突き出た冠のような部分など、細かな部位の色分けを楽しむポイントもたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -7300,6 +7383,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:37',
+    seoDescription: '大きな口を開けた古代の海の生き物が、四本のひれをぐっと前に出して泳いでいます。背中全体に並ぶ楕円形の模様は、鱗のパターンを塗り分ける楽しみがあり、尾びれはしなやかに波打っている姿が特徴です。丸くてやさしい瞳と、歯並びまで描き込まれた口元には、恐ろしさよりもユーモアが感じられます。',
     popular: false, featured: true,
   },
 
@@ -7384,6 +7468,7 @@ const _materials1: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-12T19:43',
+    seoDescription: '長い首をすっと伸ばして、にっこり笑顔のプレシオサウルス。四本のひれをそろえて、水の中をするするっと泳いでいるようです。お腹の下の濃い影とひれの筋をどんな色で塗るか考えると、この恐竜がもっと立体的に見えてくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -9791,6 +9876,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:17',
+    seoDescription: '長い鼻をくるりと上に巻いたマンモスが、こちらに向かって歩いてきます。ふさふさの毛並みに覆われた体と、太い足の裏まで丁寧に線で描かれており、色を塗るときに毛の流れを意識しながら塗り分ける楽しさが生まれます。つぶらな瞳と優しい表情から、このマンモスがどんな色になったら素敵に見えるか、試行錯誤しながら筆を進めたくなる一枚です。',
     popular: false, featured: true,
   },
 
@@ -9875,6 +9961,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T20:23',
+    seoDescription: '立ち上がるポーズで堂々とした表情のサーベルタイガー。長く立派な牙がにっこり笑顔で目立ちます。しっかりした四本足と肉球のくぼみ、そして流れるような尾のラインが、このどう猛な動物のかわいらしさを引き出しています。全身に塗るスペースが広く、体の濃淡や顔の表情、牙の色の選び方で、このトラの個性がぐっと変わる一枚です。',
     popular: false, featured: true,
   },
 
@@ -9956,6 +10043,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
+    seoDescription: 'つやつやとした赤いりんごの本体に、茎の先からひょっこり顔を出した緑の葉っぱ。シンプルで愛らしい形は、赤一色で塗るのもいいし、葉だけ緑に塗り分けるのもいい。りんごの下部に少しへこんだ部分があるのに気づくと、より本物らしく色をのせたくなります。',
     popular: false, featured: true,
   },
 
@@ -9974,6 +10062,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:27',
+    seoDescription: 'りんごの木の枝からは6個のりんごがぶら下がり、葉っぱがところどころ顔を覗かせています。木全体が優しい曲線で描かれた雲のような形をしているので、赤いりんごを塗った後に、その背景となる緑の葉や茶色の幹をどう塗り分けるか工夫しがいがあります。1本の木にこんなにたくさんのりんごが実っている景色を見ると、色とりどりに塗ってみたくなるでしょう。',
     popular: false, featured: true,
   },
 
@@ -10028,6 +10117,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T22:51',
+    seoDescription: '左手に房をまとめて持った3本のバナナと、右手に皮をむいた状態の1本のバナナが並んでいます。房から下がるバナナたちの丸みのある曲線と、むかれた皮がひらひらとした動きのある形になっていて、同じバナナでも違う表情が楽しめます。黄色で塗ったときの房の束感と、むき身の白っぽさの色分けで、バナナの食べ方の違いが絵の中に表現されています。',
     popular: false, featured: true,
   },
 
@@ -10064,6 +10154,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:00',
+    seoDescription: 'つぶつぶの小さなつぶがたくさん並んだいちごの表面と、上にぴんと立った葉っぱの特徴的な形が目立ちます。ハート型にふっくらした本体には、規則正しく並んだ種のつぶがおよそ30個あり、赤く塗ったときにどの部分から濃く塗るかを工夫できるしくみになっています。葉っぱの先端は少しくるんと丸まっていて、緑色とのコントラストを出すのが楽しみなポイントです。',
     popular: false, featured: true,
   },
 
@@ -10118,6 +10209,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:16',
+    seoDescription: 'つるんとした曲線の身体を持つバナナが、右上に立てた軸の部分をしゅっと伸ばしています。左端の丸くてちょっと凹んだ先端も、バナナならではの特徴的な形。全体が大きく描かれているので、黄色を塗るときに筆の動きが気持ちよく、上から下へ、曲線に沿って色を流すような塗り方ができます。軸の部分は茶色にしたり緑にしたり、色選びの工夫を楽しめるポイントです。',
     popular: false, featured: true,
   },
 
@@ -10154,6 +10246,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
+    seoDescription: 'つるんと丸いみかんの上には、かわいらしい花がぽつんと咲いていて、みかんの皮に小さな点々がたくさん描かれています。この点々を丁寧に塗るか、みかんの色に合わせて塗るか、子どもが自分で決められる自由度があります。シンプルな円形だからこそ、オレンジや黄色のグラデーションを試したり、上の花をビビッドに塗ったりと、色選びの工夫が楽しめるデザインです。',
     popular: false, featured: true,
   },
 
@@ -10172,6 +10265,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:24',
+    seoDescription: '左側に丸ごと一個のみかんがあり、茎の付け根には青々とした葉が一枚。表面には小さな粒粒がたくさん描かれています。右側には同じみかんを半分に切った断面図があり、くさび形に分かれた果肉がきれいに並んでいます。塗るときには、皮の色と中身の色の違いを見分けながら、粒々や果肉の筋をどう表現するかが楽しみどころです。',
     popular: false, featured: true,
   },
 
@@ -10226,6 +10320,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
+    seoDescription: 'つるの先端からぶら下がるように、ぷっくりとした粒粒がびっしり詰まったぶどうの房。大きさがいろいろな円が重なり合って立体的な形を作っているので、奥行きを感じながら色を塗ることができます。上部の茶色いつるは少しカーブして生えており、パープルやグリーン、黄色など、ぶどうらしい色選びに迷う楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -10244,6 +10339,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:34',
+    seoDescription: 'つるをくるくると巻き付かせたぶどうの房が、いくつもの円で表現されています。葉脈が走る大きな葉と、横に半分に切られたぶどうの断面が添えられていて、塗るときに濃淡をつけたり、種の部分だけ色を変えたり、同じぶどうでも異なる見方で色遊びができる構成になっています。',
     popular: false, featured: true,
   },
 
@@ -10298,6 +10394,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
+    seoDescription: '丸くてつやつやしたすいかが、くきをぴんと立てて堂々と並んでいます。表面には波のようにうねった筋が何本も走っていて、赤や緑、黄色で塗り分けるときにどこまでが一つの筋かを丁寧にたどる楽しさがあります。すいかの丸みに沿うように筋を塗っていくと、本物のすいかのようなふっくらした立体感が生まれてきます。',
     popular: false, featured: true,
   },
 
@@ -10316,6 +10413,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:43',
+    seoDescription: '丸々としたスイカの表皮には波のような模様がいくつも並んでいて、緑や黄色を重ねて塗ると本物らしくなります。右側に切られたスイカの断面では、白い部分と赤い部分をはっきり分けて塗ると、ジューシーな様子が引き立ちます。小さな種を表す楕円形の点々も丁寧に塗ると、スイカらしさが完成します。',
     popular: false, featured: true,
   },
 
@@ -10370,6 +10468,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
+    seoDescription: 'ふっくらと丸い形のもも。茎の先から二枚の葉がぴんと立ち上がり、実全体を優しく包み込むようにカーブしています。左右対称に見えて実は少しずつ異なる曲線なので、塗るときに濃淡をつけると立体感が出てきます。シンプルな線だからこそ、ピンク系の色選びや塗り方ひとつで、甘酸っぱそうな夏のもものおいしさが表現できる一枚です。',
     popular: false, featured: true,
   },
 
@@ -10388,6 +10487,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-13T23:52',
+    seoDescription: '枝に実ったふたつのもも。左側の丸いもも、ほっぺたのようなやさしい色合い。右側は半分に割れて、中身の種がくっきり見えています。小さな葉も添えられているので、色を変えて本物のように仕上げられます。種の筋模様と果肉の白さを丁寧に塗り分けると、もぎたてのもものみずみずしさが引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -10442,6 +10542,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
+    seoDescription: '南国の日差しを思わせるパイナップルが、冠のような葉を天に向けてすくっと立っています。果実を覆う幾何学模様のウロコ模様は、黄色や橙色で塗るときにどの部分を濃くするか工夫したくなるパターン。頭頂部に広がる長い葉ひとつひとつは、緑のバリエーション次第で立体感が生まれるポイントです。',
     popular: false, featured: true,
   },
 
@@ -10460,6 +10561,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:01',
+    seoDescription: 'パイナップルの畑に育った2つのパイナップル。左側は冠のような立派な葉をつけた大きなパイナップルで、格子模様の実がしっかり詰まっています。右側は輪切りにした断面で、中心から放射状に広がる果肉の部分を塗り分けられます。同じ果物でも全く違う見え方の2つの姿を、色えんぴつで丁寧に塗り分けることで、パイナップルがどんな形をしているのか立体的に理解できる工夫になっています。',
     popular: false, featured: true,
   },
 
@@ -10514,6 +10616,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
+    seoDescription: 'ふたつのまんまるいさくらんぼが、ひとつの茎でつながっている様子を描いた絵です。つやつやした果実の丸い輪郭と、上に伸びた細い茎、そして茎の先端の小さな丸い部分など、単純だからこそ色の塗り分けを工夫するのが楽しくなります。左右対称に見えながらも、よく見るとそれぞれ少しずつ違う形をしているので、ふたつのさくらんぼに同じ色を塗るのか、別の赤でぬり分けるのか、そういった塗り方の工夫が引き出されやすい構図になっています。',
     popular: false, featured: true,
   },
 
@@ -10532,6 +10635,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:10',
+    seoDescription: '茎の先端でふたつの真っ赤な実がぶら下がるさくらんぼ。左右対称な丸い形の実は、つやつやした赤色を塗るとより一層おいしそうに見えます。上から伸びる曲線の茎は、細くしなやかな線で描かれているので、濃い茶色や黒でしっかり塗ると実とのコントラストが生まれます。シンプルながら、色選びで印象ががらりと変わる一枚です。',
     popular: false, featured: true,
   },
 
@@ -10586,6 +10690,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
+    seoDescription: 'つるんとした楕円形の身体にヘタと葉がついたレモン。上部の小さな茎からのびた緑の葉は、斜めに傾いたシンプルな形で、黄色だけでなく緑も塗りたくなります。下の方にはレモン独特の凹凸が描かれていて、塗り分けると立体的な印象になりそうです。全体的にやさしい曲線で、小さな手でクレヨンを握り始めた子どもが、はみ出しを気にせず色を重ねられる余白がたっぷり残っています。',
     popular: false, featured: true,
   },
 
@@ -10604,6 +10709,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-14T00:47',
+    seoDescription: 'レモンの丸々とした黄色い果実と、切られて断面が見える半分のレモンが並んでいます。茎の先に付いた小さな葉が1枚、果実の上部でくるんと丸まった様子が印象的です。右側の断面レモンには放射状に広がる8つの果肉室が細かく描かれており、同じ黄色でも濃淡をつけて塗り分けると、みずみずしい立体感が生まれるポイントです。',
     popular: false, featured: true,
   },
 
@@ -10640,6 +10746,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T04:00',
+    seoDescription: 'ふたつのいちごが寄り添うように並んでいます。左のいちごはまるごと、右のいちごは半分に切られていて、内側のツブツブした種までくっきり見えます。どちらのいちごにも、先端にはおしゃれな葉飾りがピンと立っています。ツブツブの種をどの色で塗るか、いちごの赤をどれくらい濃くするかで、雰囲気ががらっと変わる楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -10676,6 +10783,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T05:14',
+    seoDescription: 'つるりとした丸い形のメロンが、上についた茎をぴんと立てて存在感たっぷり。表面全体を覆う網目模様は、小さな四角形がぎっしり詰まっていて、色を塗り分けるときに規則正しい並びの楽しさが見えてきます。メロンの丸さに沿って曲線する網目を追いながら、黄色やグリーン、オレンジなど好きな色を選んで塗っていく時間が待っています。',
     popular: false, featured: true,
   },
 
@@ -10748,6 +10856,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T06:07',
+    seoDescription: '上にぴんと立った茎がついた、ふっくらした梨。グラデーションで立体感を出したり、茎の細い部分を濃く塗ったりと、色の濃淡を試す絶好の題材です。シンプルな形だからこそ、どの色を選ぶか、淡く塗るか濃く塗るかで、同じ梨でも全く違う表情に変わります。',
     popular: false, featured: true,
   },
 
@@ -10820,6 +10929,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T07:10',
+    seoDescription: 'キウイフルーツを上から見たような、丸いフォルムの中に小さな種がたくさん並んでいます。中央の楕円形と、その周りに放射状に広がる細長い種、そして外側をぐるりと取り囲む小さな粒粒が、キウイの特徴をそのまま表現しています。波打つ外側の輪郭をなぞりながら、色を塗り進めると、本物のキウイの断面そのものが浮かび上がります。',
     popular: false, featured: true,
   },
 
@@ -10892,6 +11002,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T08:24',
+    seoDescription: 'マンゴーの実がくるんと丸まった独特なカーブを描いていて、先端の茎と葉もしっかり付いています。塗るときは、丸い本体と長く伸びた曲がった部分を別の色合いで塗り分けたり、グラデーションで立体感を出したりと、いろいろな塗り方を試してみたくなる形状です。葉のディテールも細かく描かれているので、クレヨンの先端を使い分けながら丁寧に塗る経験ができます。',
     popular: false, featured: true,
   },
 
@@ -10964,6 +11075,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T09:40',
+    seoDescription: '枝先にたくさんのブルーベリーが実った様子を描いた一枚。丸くてぷっくりとした5つの実の頭には、小さな花のような模様がついていて、摘みたての新鮮さが感じられます。左側に広がる3枚の葉脈は細い線でていねいに描かれ、緑色を塗り重ねるときに葉っぱらしさがぐっと引き立つ工夫がされています。枝のカーブも優しく、実と葉と茎がひとつの束になった様子が自然に見えてくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -11036,6 +11148,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T10:33',
+    seoDescription: 'グレープフルーツが真正面を向いて、12個の果肉片に分かれた様子がはっきり見えます。中央の白い空間と放射状に広がる果肉のラインは、色を塗り分けるときに自然と立体感が生まれる作りになっており、濃淡をつけると果実の厚みが引き出せます。外側の円形の枠線は果皮を表現する場所で、黄色やオレンジをどう濃くするか迷う楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -11108,6 +11221,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T11:48',
+    seoDescription: '丸くてつやつやした柿が、緑の葉と茶色の枝に包まれてすっくと立っています。枝分かれした葉脈の細かい線は、薄い色で丁寧に塗り分けるチャンス。柿本体の大きな空白スペースは、赤やオレンジのグラデーションで秋らしさを表現できる場所です。',
     popular: false, featured: true,
   },
 
@@ -11180,6 +11294,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T12:51',
+    seoDescription: '枝に成った大きな梅の実と、可憐な梅の花が一本の枝でつながっている情景です。花の中心には細かいおしべがたくさん放射状に描かれており、ピンクや黄色で丁寧に塗ると本物の梅の花らしさが引き出せます。葉脈も線で表現されているので、濃淡をつけながら塗ると立体感が生まれます。丸々とした梅の実の大きな面と、繊細な花びらや葉という、塗る難易度の異なる要素が一つの絵に詰まっているのが特徴です。',
     popular: false, featured: true,
   },
 
@@ -11252,6 +11367,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T13:54',
+    seoDescription: '半分に切られたいちじくが、つるりとした皮と小さなつぶつぶの種がいっぱい詰まった断面を見せています。上には細い枝のようなへたが立っていて、中央から放射状に広がる種たちは、色を変えながら塗っていくと立体的に見えてきます。やさしい曲線で描かれた外側の皮と、ぎゅっと詰まった内側のコントラストを色えんぴつで表現できる、よく観察して塗りたくなる一枚です。',
     popular: false, featured: true,
   },
 
@@ -11324,6 +11440,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T15:10',
+    seoDescription: 'つぶつぶの小さな粒がたくさん集まったラズベリーが、ころんと丸い形で画面いっぱいに広がっています。先端にはくるんとカールした葉が5枚、元気よく立ち上がっていて、茎もしっかり描かれています。一粒一粒は円形でそれぞれ独立しているので、赤や紫など違う色を塗り分けたり、同じ色で統一したり、自分だけの配色を自由に決められるのが魅力です。',
     popular: false, featured: true,
   },
 
@@ -11756,6 +11873,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
+    seoDescription: 'すっと伸びた根菜の体に、ギュッと詰まった葉っぱが3枚、元気よく広がっています。ニンジンの本体には横線がたくさん入っていて、オレンジ色で塗るときにこの筋模様をどう活かすか考えるのが楽しみです。上に向かってボリュームのある葉は、濃い緑と薄い緑を使い分けるとより立体的に見えるでしょう。',
     popular: false, featured: true,
   },
 
@@ -11774,6 +11892,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T20:52',
+    seoDescription: '畑の土の中からすくっと顔を出したにんじん。ピンと立った3本の葉は、くるんとした端っこがかわいらしく、赤と緑のコントラストが映えます。足元の土はゴツゴツとした石がごろごろしていて、ここに茶色を塗るとにんじんがもっと引き立ちます。にんじんの身体に入った筋のディテールと、ふんわりした土の曲線、しゃきっとした葉脈の塗り分けが、この絵の見どころです。',
     popular: false, featured: true,
   },
 
@@ -11810,6 +11929,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
+    seoDescription: 'にんじんの根っこに引かれた細い横線をていねいに塗ると、土のなかに埋まった様子が生き生きしてきます。てっぺんから元気よく広がった5本の葉っぱは、それぞれ違う緑色を塗り分けると、ふさふさとした雰囲気が一層引き立ちます。すらりとした形のにんじん本体は、オレンジ色を濃淡つけて塗ると、野菜らしい立体感が出てくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -11828,6 +11948,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T21:38',
+    seoDescription: '4本のにんじんが放射状に並んだ、シンプルで描きやすい構図です。太くて丸みのある根の部分と、ふさふさと広がった葉の部分のコントラストがはっきりしているので、色を分けて塗るのが楽しく感じられます。葉の細かい筋や根の表面に引かれた線は、子どもが細い線の上を丁寧になぞってみたくなるような仕上がりになっています。',
     popular: false, featured: true,
   },
 
@@ -11882,6 +12003,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
+    seoDescription: '丸くてぷっくりしたたまねぎが、根っこをしっかり下に張らせて立っています。上のほうから飛び出ている緑の芽は、何本もの細い筋でピンと立っていて、黄色や緑で色分けしたくなります。玉ねぎの身体全体は放射状の筋がたくさん走っているので、薄い黄色から濃い黄色へのグラデーションで奥行きを出したり、根の細い線一本一本を丁寧に塗ったりと、塗り方次第で表情が大きく変わります。',
     popular: false, featured: true,
   },
 
@@ -11900,6 +12022,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:27',
+    seoDescription: 'たまねぎの丸い身体を層状に描いた線が特徴で、中央の白い空間に色を入れると立体感が生まれます。上部の細く束ねられた茎と、下部にくるんと巻いた根の部分を塗り分けることで、たまねぎの全体像がぐんと引き立ちます。外側の大きな曲線から内側の細い曲線へ向かって色を塗り進めると、まるで本物のたまねぎの皮をむいていくような楽しさが味わえます。',
     popular: false, featured: true,
   },
 
@@ -11954,6 +12077,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
+    seoDescription: 'ふっくらと丸い玉ねぎが、根っこをしゃんと立てて立っている姿。上のツンとしたとげのような茎の部分と、下に広がるひげのような根っこの対比が特徴です。縦に走る何本もの線は玉ねぎの薄皮の筋を表していて、どこから色を塗り始めるか、どの筋を濃くするか迷ってしまいそう。真っ白い丸い形は、クレヨンやペンで大胆に色を広げるのに最適な広さです。',
     popular: false, featured: true,
   },
 
@@ -11972,6 +12096,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-15T22:57',
+    seoDescription: '4つのたまねぎが並んだ風景で、左から順に大きさが違うのが印象的です。それぞれの玉の部分に何本もの縦線が走っていて、塗るときに立体感を出すチャンスがあります。根元の細かいひげ根もていねいに描き込まれているので、ここを濃い色で仕上げると全体が引き締まります。白い余白をうまく使いながら、赤や黄色、紫など様々な玉ねぎの色に挑戦できる一枚です。',
     popular: false, featured: true,
   },
 
@@ -12026,6 +12151,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T01:03',
+    seoDescription: 'つんと立った丸いボディと、てっぺんにヒゲのようにカールした葉巻みたいな茎が特徴的なトマト。シンプルながら、赤く塗ったときにぐっと立体感が出る影のラインが左右に描かれているので、どこを濃く塗るかで仕上がりが変わります。葉の部分はギザギザと複雑な形をしているため、色分けして遊んでみるのもおもしろい一枚です。',
     popular: false, featured: true,
   },
 
@@ -12044,6 +12170,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
+    seoDescription: 'すっと立った緑色のにんじんの根っこから、ふさふさとした葉が5枚もりもり生えています。にんじん本体には斜めの線がたくさん入っていて、でこぼこした質感を表現しており、オレンジ色で塗るときに線の濃淡で立体感を出すのが楽しい仕上がりになります。葉の部分は細かくギザギザしたフチが特徴で、緑のいろいろな濃さを使い分けたくなるディテールが満載です。',
     popular: false, featured: true,
   },
 
@@ -12062,6 +12189,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:05',
+    seoDescription: '4本のにんじんがきれいに並んだ様子を塗っていく絵です。ふっくらした根の部分には横線が何本も引かれていて、色の濃淡で立体感を出す絵の具の使い方が試せます。上にひろがる葉っぱはふわふわとした波線で表現されているので、緑のいろいろな濃さを重ねて塗るとより本物らしく見えるでしょう。どのにんじんも同じ大きさで並んでいるから、色選びに統一感を持たせるか、それぞれ違う塗り方を楽しむか、その選択も子どもの自由です。',
     popular: false, featured: true,
   },
 
@@ -12116,6 +12244,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T05:49',
+    seoDescription: '畑でとれたばかりのトマトが、そのままの姿と切った姿で並んでいます。左側の丸々としたトマトには、葉のギザギザ模様が細かく描かれ、赤色で塗るときにこの部分の塗り分けが楽しめます。右側は半分に切られたトマトで、中には種がたくさん詰まっている様子が見えており、種の小ぶりな粒を丁寧に塗ったり、種の周りの実の部分を濃い赤で塗ったりと、色の工夫が試せます。',
     popular: false, featured: true,
   },
 
@@ -12152,6 +12281,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
+    seoDescription: '真っ赤に熟したトマトが、ふっくらとした丸い姿で描かれています。切り口から見える断面には、真ん中の白い種室と、その周りにぎっしり並んだ小さな種がたくさん。上についた緑の葉は、ちょっと立ち上がったユニークな形をしていて、トマトの頭頂部をかわいく飾っています。赤と緑の色合いをしっかり塗り分けることで、本物のトマトらしさが出てきますよ。',
     popular: false, featured: true,
   },
 
@@ -12170,6 +12300,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T06:36',
+    seoDescription: 'トマトが3つ並んで、一番手前のトマトは半分に切られて、中の種とじゃのめがはっきり見えています。つぶつぶの種の部分を赤く塗るか、黄色く塗るか、子どもの想像で変わります。ヘタの部分は星のような形をしていて、緑で塗るときに細かい線を丁寧になぞる練習ができます。丸くてシンプルな形なので、赤一色で仕上げるのも、濃い赤と薄い赤で影をつけるのも自由に表現できます。',
     popular: false, featured: true,
   },
 
@@ -12404,6 +12535,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
+    seoDescription: 'ふっくらと盛り上がったブロッコリーの房が、茎から元気よく枝分かれして広がっています。太い幹のような茎には縦筋の線が入っていて、野菜らしいゴツゴツ感を表現。上から見たような構図で、緑色で塗ったときに房ひとつひとつの濃淡をつけると、立体感が出て本物のブロッコリーらしく見えます。',
     popular: false, featured: true,
   },
 
@@ -12422,6 +12554,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T09:49',
+    seoDescription: '畑に育つブロッコリーを、大きさの違いを感じながら塗ることができます。一番大きなブロッコリーはもこもこした花蕾がいっぱい詰まっていて、隣の3本は少しずつ小さくなり、親子で育つ様子が表現されています。太い茎から細い枝へと繋がる構造をよく見ると、本物のブロッコリーがどんなふうに成長しているのか気づけるでしょう。緑色で塗り分けるときに、葉のざらざらした質感を濃淡で表現できる工夫もあります。',
     popular: false, featured: true,
   },
 
@@ -12476,6 +12609,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
+    seoDescription: '粒がぎっしり詰まったとうもろこしが、大きく口を開けたように見える茎の上にまっすぐ立っています。先端からひらひらと広がるひげの部分は、元気に空へ伸びているようで、黄色で塗るとより生き生きとした表情が出てきます。左右に広がった緑の葉は大きくて塗りやすく、淡い黄色や濃い緑など色の濃淡をつけると、野菜らしいボリュームが生まれます。',
     popular: false, featured: true,
   },
 
@@ -12494,6 +12628,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:04',
+    seoDescription: 'とうもろこしの粒一粒一粒が丁寧に描き分けられていて、色の濃淡をつけるとより立体的に見えます。左のとうもろこしはひげがふさふさと広がっており、右のものは皮をめくった状態で粒がきれいに並んでいます。両方とも根元の部分がしっかり描かれているので、茎の色をどうするか考えながら塗るのも楽しいでしょう。',
     popular: false, featured: true,
   },
 
@@ -12548,6 +12683,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
+    seoDescription: '# 解説文  つやつやの黄色い粒がぎっしり詰まったとうもろこしが、大きく口を開けたようにほほえんでいます。上からふさふさっと広がるひげと、両脇をしっかり支える緑の葉が、このとうもろこしの立派さを引き立てています。粒ひとつひとつを丁寧に塗ったり、葉のカーブを濃淡で表現したり、ひげを細く仕上げたりと、同じトウモロコシでも塗り方次第でいろいろな表情が生まれるでしょう。',
     popular: false, featured: true,
   },
 
@@ -12566,6 +12702,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T12:44',
+    seoDescription: 'とうもろこしの粒がびっしり詰まった4本の穂が、左右に揺れるように並んでいます。一番左は皮をかぶったままの状態で、右へいくにつれて皮がめくれて、黄色く実った粒粒がはっきり見えてきます。ふさふさの毛先も上へぴんと立っていて、どの本の毛先を何色で塗るか考えながら、黄色や緑の色選びが楽しくなる1枚です。',
     popular: false, featured: true,
   },
 
@@ -12620,6 +12757,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T13:51',
+    seoDescription: 'ふんわり丸くまとまったキャベツが、葉を幾重にも重ねながら立っています。外側の大きな葉から中心の小さな葉まで、段々と小さくなっていく構造をながめると、緑色だけでなく薄紫や黄緑を混ぜて塗ってみたくなるでしょう。葉ひとつひとつに走る筋は、同じ色でも濃淡をつけるチャンス。野菜らしい自然なしわを、どう彩るか考えながら塗り進めるおもしろさがあります。',
     popular: false, featured: true,
   },
 
@@ -12674,6 +12812,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T14:43',
+    seoDescription: 'ふっくら丸い形のキャベツが、何枚も重なった葉で構成されています。外側の大きな葉から中心の小さな葉へと段階的に描かれているので、緑色を濃淡つけて塗ると立体感が生まれます。葉脈の細い線をなぞるように色を入れれば、本物のキャベツのしわくちゃな質感が表現でき、黄緑や深緑の色使いで野菜らしさが一層引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -12746,6 +12885,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T15:39',
+    seoDescription: 'つるんと丸いからだが特徴のなす。茎の先端についたギザギザの葉っぱと、くるんと丸まったくきの曲線が、紫や濃い色で塗ると一段と立体的に見えます。なすのおなか部分には薄い線が引かれているので、そこに違う色を重ねると、つやつやとした野菜らしさが出てくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -12818,6 +12958,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T16:38',
+    seoDescription: 'つやつやとした紫色が似合いそうなナスが、茎の先でまっすぐ立っています。ボリュームのある身体の曲線と、てっぺんの細かいギザギザの葉のコントラストが面白く、色の濃淡で立体感を出すのに良さそうです。シンプルな輪郭だからこそ、紫一色で塗るのか、濃淡をつけるのか、子どもの色選びがそのまま作品に出てくる一枚です。',
     popular: false, featured: true,
   },
 
@@ -12890,6 +13031,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T17:33',
+    seoDescription: 'ずんぐりとした形がかわいいかぼちゃが、つるつるした表面の線で立体感たっぷりに描かれています。てっぺんの茎をよく見ると、ちょっと丸くふくらんだユニークな形をしていて、ここをどんな色で塗るか迷ってしまうかもしれません。かぼちゃの側面に何本も入った筋のラインは、オレンジを塗ったあとに濃い色を足すと、もっと丸くて立派に見えるポイントです。',
     popular: false, featured: true,
   },
 
@@ -12962,6 +13104,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T18:31',
+    seoDescription: 'ずんぐりとした丸いボディに、頭頂部からにょきにょき伸びた筋が特徴的なかぼちゃです。つるんとした表面には深い溝がいくつも走っていて、オレンジ色で塗るときにこの筋に沿って濃淡をつけると、ぷっくりとした立体感が出ます。上部の小さなくぼみには茎のようなパーツがついており、ここを黄緑や茶色で塗り分けるだけで、かぼちゃらしさがぐんと引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -13034,6 +13177,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:37',
+    seoDescription: 'ふっくらとした楕円形の体に、左右からひげのような根がぴょんと生えたさつまいも。つるの先端は優雅に上へカーブしながら伸びており、さつまいもらしい特徴がぎゅっと詰まっています。体全体には優しい陰影の線が引かれているので、紫や黄色、オレンジなど何色で塗ってもさつまいもらしく見えます。',
     popular: false, featured: true,
   },
 
@@ -13106,6 +13250,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T05:21',
+    seoDescription: 'つぶつぶがいっぱいついた緑色のきゅうりが、左端でにっこり笑顔を見せています。長くのびたからだには細かいポツポツが規則正しく並んでいて、塗るときにどんな濃さの緑を選ぶかで印象がぐっと変わります。シンプルな形だからこそ、色の塗り方で自分だけのきゅうりが完成する一枚です。',
     popular: false, featured: true,
   },
 
@@ -13178,6 +13323,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:00',
+    seoDescription: 'ほうれんそうが両手を広げるようにして、たくさんの葉をふわふわと広げています。根元から放射状に伸びた茎が幾本も見えて、葉脈の細い線がきちんと描かれているので、緑色の濃淡をつけて塗ると葉っぱらしさがぐんと出ます。ほうれんそうが笑っているような顔に見えるのは、葉の重なり方とかわいらしい輪郭のおかげ。野菜を親しみやすく感じられる一枚です。',
     popular: false, featured: true,
   },
 
@@ -13250,6 +13396,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T06:49',
+    seoDescription: '地面から真っすぐ伸びた大根の根っこと、てっぺんでふんわり広がる葉っぱが特徴的なかわいらしい野菜です。根の部分には細かい線が何本も引かれていて、大根の質感を表現できます。葉っぱはギザギザとした波線で縁取られていて、濃い緑と薄い緑で塗り分けると、ふさふさとした葉らしさが引き出せそうです。',
     popular: false, featured: true,
   },
 
@@ -13610,6 +13757,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
+    seoDescription: 'ひな祭りの主役、お姫様と殿様が向き合って立っています。二人とも優しい笑顔で、お姫様は扇を、殿様は笏を握っているところが見どころ。豪華な着物の襞や帯の模様、頭飾りの細かいパターンなど、色を塗り分けるのが楽しみなディテールが満載です。二人の衣装の色合いをどう組み合わせるか、また背景の空間をどんな色で彩るかによって、ひな壇が一層華やかに変身します。',
     popular: false, featured: true,
   },
 
@@ -13628,6 +13776,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:10',
+    seoDescription: 'ひな壇に並ぶ男雛と女雛が、それぞれ違うポーズで微笑んでいます。男雛は扇を、女雛は大きな扇を広げて持っており、豪華な衣装には小さな花模様がいっぱい散りばめられています。左右に置かれた提灯にも花が描かれていて、全体が春らしい華やかさに満ちています。衣装の襞や帯の部分は線で細かく分けられているので、色を塗り分けるときに豪奢な雰囲気をより引き出せます。',
     popular: false, featured: true,
   },
 
@@ -13682,6 +13831,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
+    seoDescription: '花のモチーフがあしらわれたかわいらしいバッグを塗ります。バッグ本体の大きな面には、桜のような花びら5枚の花と、真ん中に小さなドットが並ぶ詳細な模様が描かれており、その横には丸くぷっくりした花びらの花もあります。バッグの上部にはしっかりした持ち手と、素材感が出そうなボタンのような装飾品が並んでいます。右側のポケット部分には花のチャームがぶら下がっており、それぞれの花を違う色で塗り分けると、バッグ全体が華やかに仕上がります。',
     popular: false, featured: true,
   },
 
@@ -13700,6 +13850,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-16T23:44',
+    seoDescription: '春の季節に通園バッグを持って出かけようとする女の子。帽子に付いたリボンと、バッグから顔を出す桜の花が春らしく、手を挙げた元気なポーズが楽しい気分を表しています。周囲に散らばる桜の花びらと五弁花を色分けすることで、春の情景をより豊かに表現できます。',
     popular: false, featured: true,
   },
 
@@ -13754,6 +13905,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
+    seoDescription: '桜の木の下でおやつの時間。ウサギ、クマ、ネコが仲良く円になって座り、真ん中の箱から団子やクッキーを食べています。上空には満開の花がいっぱい咲いて、ふわりと落ちる花びらが地面に散らばっている様子が。ピンクや薄紫で塗ると、春らしい華やかな世界が広がります。キャラクターの丸い顔や、木の幹の質感、食べ物の細かい模様など、色を重ねる場所がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -13772,6 +13924,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T00:25',
+    seoDescription: '満開の桜の木の下で、ピクニックのしたくを整えている場面です。敷物の上には、おにぎりやサンドイッチ、ドーナツなどのごちそうがかごに詰まっており、両脇には飲み物を入れるカップが置かれています。大きく枝を広げた桜の樹幹には細かい筋が描かれ、ふんわりした枝葉の塊とのコントラストが見どころです。ところどころに落ちてくる花びらも塗り分けると、春の空気がより感じられるようになります。',
     popular: false, featured: true,
   },
 
@@ -13826,6 +13979,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
+    seoDescription: 'かわいい熊の顔がついた遠足用のリュック。大きなポケットにはお弁当やおやつが入っているのかな。両脇には水筒がぶら下がっていて、肩ひもにはキーホルダーのようなアクセサリーがついています。ふっくらした形と丸い輪郭は、クレヨンで優しく色を塗ると、本当に持ちたくなるような温かみのあるリュックに変身しそう。',
     popular: false, featured: true,
   },
 
@@ -13844,6 +13998,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:10',
+    seoDescription: '遠足の準備をする子どもたちの荷物がぎっしり詰まった一枚。クマさんの顔がプリントされたリュックと、おにぎりやみたらし団子、フルーツがぱんぱんに詰まったお弁当箱、そしてウサギのキャラクターがついた水筒が並んでいます。リュックの大きなポケットや、お弁当箱の細かい食べ物の描き分けなど、色を塗るときに子どもたちが「あ、ここはおにぎりだ」「ここは何色にしようかな」と一つ一つ発見できるディテールがたくさん隠れています。',
     popular: false, featured: true,
   },
 
@@ -13898,6 +14053,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
+    seoDescription: 'こいのぼりが大きな目をくりくりさせながら、頭の上には豪華なひれひらひらを立てています。体全体に重ねられた鱗のパターンは、赤や金色に塗ると本物の錦鯉みたいに輝きそう。口元には優しい笑顔が隠れていて、腹びれや背びれもちんまりと描かれているので、色を変えるとより立体的に見えてくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -13916,6 +14072,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T01:53',
+    seoDescription: '風車がくるくる回る空の下で、二匹のこいのぼりが気持ちよさそうに泳いでいます。子どもは風車を高く掲げて、満面の笑みでこいのぼりを見上げているところ。雲が浮かぶ背景には、塗る色を自由に選べる広いスペースがあり、こいのぼりのウロコの規則正しい並びは、一列ずつていねいに色を塗る楽しさを引き出します。',
     popular: false, featured: true,
   },
 
@@ -13970,6 +14127,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
+    seoDescription: 'リボンで束ねられたカーネーションが、優しく手に握られています。花の先端のふわふわとした花びらと、茎に沿ってついた長い葉の細かな曲線が目を引き、赤やピンク、黄色などで丁寧に塗り分ける楽しさがあります。リボンの結び目もボリュームがあり、色使いで贈り物らしい華やかさを表現できる場面です。',
     popular: false, featured: true,
   },
 
@@ -13988,6 +14146,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T02:45',
+    seoDescription: 'カーネーションの花束と箱入りのプレゼント、ふたつの贈り物が並んでいます。左側の花束は大きなリボンで結ばれ、ふんわりと開いた花びらが幾重にも重なっており、ピンクや赤で塗ると華やかになりそうです。右側のギフトボックスには大きなリボンが結ばれ、立方体の形がはっきりしているので、濃淡をつけながら立体感を出す楽しみがあります。どちらも「ありがとう」の気持ちをかたちにした、特別なものばかりです。',
     popular: false, featured: true,
   },
 
@@ -14618,6 +14777,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
+    seoDescription: '桜の葉に包まれた、ふっくらとした白玉団子のさくらもち。透き通った葉脈の繊細な線と、生地につぶつぶと散らばった粒々の質感が、塗るときに指を止めたくなります。葉巻きの赤紫色と、白い求肥、そして淡いピンクの層が幾重にも重なる様子を、自分の色えんぴつで表現してみましょう。',
     popular: false, featured: true,
   },
 
@@ -14636,6 +14796,7 @@ const _materials2: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T04:17',
+    seoDescription: '春の和菓子・桜餅が白い器に二つ並んでいて、大きな桜の葉がくるんと巻いてあります。横には湯気が立ちそうなお茶の湯のみが置かれ、周りに舞う桜の花びらと小さな花がそこかしこに散らばっています。淡いピンクや緑で塗り分ける餅の部分、白でまとめたお茶、そして細かい花びらたちで、春らしい色合いを自由に組み立てられる一枚です。',
     popular: false, featured: true,
   },
 
@@ -17061,6 +17222,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:34',
+    seoDescription: '大きな目でにっこり笑うセミが、両翼を広げて元気よくポーズをとっています。透き通った翅には細かい筋模様が描かれており、薄紫や薄緑で塗り分けると昆虫らしさが引き立ちます。お腹の横しま模様と、触角の先端にある丸いパーツなど、小さな部分を塗るときの楽しさも詰まっています。',
     popular: false, featured: true,
   },
 
@@ -17493,6 +17655,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
+    seoDescription: '竹の枝に揺れる短冊と星飾り。笑顔の短冊はほっぺたがふくよか、星飾りはつぶらな瞳でこちらを見つめています。竹の節目ごとに葉が広がる様子や、ひもでやさしく結ばれた飾りの曲線を塗り進めると、七夕の夜に願い事がそっと空へ昇っていく情景が浮かびます。',
     popular: false, featured: true,
   },
 
@@ -17511,6 +17674,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T19:23',
+    seoDescription: '竹の枝に吊るされた七夕飾りの世界。星型のチャームと四角い短冊が、にっこり笑った表情で枝からぶら下がっており、チェーンの飾りも一緒に揺れています。竹の節々や広がる葉の描き方は、色を重ねると立体的な雰囲気が出そうで、吊るされた小物たちの優しい表情を塗り分けるのも楽しみです。',
     popular: false, featured: true,
   },
 
@@ -17565,6 +17729,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
+    seoDescription: '夏の水遊びに欠かせない浮き輪が、にっこり笑顔で目の前に。大きな円形の浮き輪には、ところどころに花が咲いていて、水しぶきを表す粒々も散らばっています。浮き輪の中央には空いた楕円形の空間があり、ここに好きな色を塗ると浮き輪がより立体的に見えます。周りの花びらや水玉、顔のほっぺたなど、小さなパーツもあるので、細かく色を塗り分ける楽しみが広がっています。',
     popular: false, featured: true,
   },
 
@@ -17583,6 +17748,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:11',
+    seoDescription: 'プールで水鉄砲を勢いよく発射する子どもが、満面の笑顔で両腕を広げています。足元にはボール、アヒルの浮き輪、ゴム製のあひるちゃんが浮かんでいて、水しぶきが派手に飛び散る様子が元気いっぱいです。プールの底には水玉模様の装飾があり、どの色から塗ろうか迷ってしまうほど塗る場所に事欠きません。',
     popular: false, featured: true,
   },
 
@@ -17637,6 +17803,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
+    seoDescription: '夏祭りの屋台で、花柄の浴衣を着た女の子たちが、ちょうちんの灯りに照らされながら、ボールすくいやあめ玉を手に笑顔で遊んでいます。屋台の天幕の下には、金魚がぷかぷか浮かぶ水槽や、つるんと光った玉菓子がたくさん並んでいて、上の空にぶら下がる大きなちょうちんは赤く塗るのが楽しみ。左奥の屋台店員さんの細かい表情や、女の子たちの髪飾りのふんわりした感じなど、色鉛筆で丁寧に塗り分けるポイントがいっぱい詰まっています。',
     popular: false, featured: true,
   },
 
@@ -17655,6 +17822,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T21:54',
+    seoDescription: '浴衣姿の3人の子どもたちが、提灯が灯る夏祭りの夜空の下で楽しそうに手をつないでいます。中央の女の子は両腕を広げてはしゃいだ表情、左右の子どもたちも笑顔で寄り添う姿が印象的です。背景には格子模様の夜店の暖簾や浮かぶ提灯がたくさん描かれており、ピンクや赤、黄色で祭りの活気を表現する準備が整っています。',
     popular: false, featured: true,
   },
 
@@ -17709,6 +17877,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T22:48',
+    seoDescription: '夏祭りの夜、やぐらの周りで浴衣姿の子どもたちが花火や風車のおもちゃを手に笑顔で踊っています。中央のやぐらの上ではもう一人の子どもが大きな太鼓をバチで叩いており、上下に吊るされた提灯がお祭りの雰囲気を引き立てています。それぞれの子どもが異なる表情と動きをしているため、塗るときに各キャラクターの個性的な衣装の色分けや、提灯の明かりをどう表現するか工夫するのが楽しみです。',
     popular: false, featured: true,
   },
 
@@ -17781,6 +17950,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-17T23:46',
+    seoDescription: '夜空に大きく開く花火が、中心からはじけるように放射状に広がっています。周りには小さな星や四つ葉の星がちらばっていて、下から二本の筒が支えているようなしぐさが見えます。曲線たちのグラデーションで夜空の深さを表現したり、星々を黄色やピンクで彩ったりと、花開く一瞬の輝きを好きな色で埋めていく楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -17853,6 +18023,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T00:25',
+    seoDescription: '星がまたたく夜のキャンプ場で、テントの前には笑顔の炎が揺らめいています。テントの入口には結んだリボンがふたつ、左右対称についていて、そこを塗り分けるのも楽しみ。焚き火の周りに積み重ねられた丸い石のテクスチャーや、夜空に散りばめられた星々の大きさを変えて塗ることで、奥行きのある夜景が表現できます。',
     popular: false, featured: true,
   },
 
@@ -17925,6 +18096,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T01:10',
+    seoDescription: 'かわいらしい笑顔のバーベキューコンロが、お肉や野菜、えびなどの食材をたくさん焼いています。上からもくもくと立ち上る湯気は、グレーやうすい色で塗るとより焼き立ての熱さが伝わってきます。コロコロとした体に短い足がついたキャラクターらしい形と、グリルの格子模様、食材ひとつひとつの輪郭をなぞって塗ると、本当に焼き物のゴツゴツした質感が出てくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -17997,6 +18169,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T02:01',
+    seoDescription: '砂浜でしゃがみ込む子どもが、波打ち際の貝殻やヒトデを夢中で探している情景です。背景には糸杉のようにすっと伸びたヤシの木が何本も立ち、左奥には波立つ海が広がっています。子どもの周りに散らばった貝殻やもじゃもじゃとした海草には、細かい模様がいっぱい詰まっているので、どの色を選ぶか迷いながら塗り進める楽しさがあります。',
     popular: false, featured: true,
   },
 
@@ -18123,6 +18296,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T04:11',
+    seoDescription: '目隠しをした元気な子どもが、野球のバットを握りしめてスイカを狙っています。スイカの表面には波線がたくさん引かれていて、緑と赤のコントラストがはっきり出せる部分がたくさんあります。子どもの頭巻きや服、足元の靴まで、塗り分ける箇所がいっぱいあるので、色えんぴつの使い分けが楽しめます。',
     popular: false, featured: true,
   },
 
@@ -18195,6 +18369,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:06',
+    seoDescription: 'ふんわりとした氷の山の上に、とろりと垂れるシロップがかかったかき氷。脇には小さなスプーンがちょこんと立てかけてあり、今にも一口食べたくなる瞬間が切り取られています。ボウルのひだひだした模様と、ふわふわの氷の層は塗り分ける楽しさがいっぱい。シロップの流れる線をどんな色で染めるか、氷と背景のコントラストをどうつけるか、塗りながら工夫の余地がある一枚です。',
     popular: false, featured: true,
   },
 
@@ -18267,6 +18442,7 @@ const _materials3: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-18T05:55',
+    seoDescription: 'まあるい雲のような柔らかいアイスが、格子模様のコーンからふわりと顔を出しています。コーンには細かい網目が規則正しく引かれていて、ピンクと黄色で塗り分けると立体的に見えそう。アイスの下の部分にはギザギザとした波線があり、ここから食べかけの様子が伝わってきます。シンプルだからこそ、アイス部分と、細い線で描かれたコーン部分の塗り方で大きく印象が変わる一枚です。',
     popular: false, featured: true,
   },
 
@@ -36549,6 +36725,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
+    seoDescription: '虹の両端に抱かれるようにそっと浮かぶ2つの雲。虹の弧は6本の層が重なっていて、1番外側から順に色を塗っていくと立体感が出ます。雲のふんわりとした輪郭線をなぞりながら、虹がどんな色合いでつながるのか考えながら塗り進める時間になるでしょう。',
     popular: false, featured: true,
   },
 
@@ -36567,6 +36744,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:01',
+    seoDescription: '虹の両端に寄り添う二つの雲が、ふわふわの笑顔で空を見守っています。虹の弧は何本も重なり、それぞれ違う色を塗る喜びが待っています。雲のまんまるい形と、虹の優雅なカーブのコントラストを色選びで表現できる一枚です。',
     popular: false, featured: true,
   },
 
@@ -36621,6 +36799,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
+    seoDescription: '宝物がいっぱい詰まった大きな壺の前に立つ、バンダナを巻いた女の子。両手を広げた嬉しそうな表情と、豪華な衣装の細かい模様、そして目の前にそびえ立つ壺の迫力あるボリュームが見どころです。壺の表面には質感を表す線がたくさん引かれているので、茶色系で濃淡をつけると陶器らしい味わいが出ます。女の子の衣装も、帯や襟の装飾模様を丁寧に塗ると、ずっと豪華に見えてきますよ。',
     popular: false, featured: true,
   },
 
@@ -36639,6 +36818,7 @@ const _materials4: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T17:31',
+    seoDescription: '洞窟の入り口で、宝物の山を前に目を輝かせた女の子。頭に巻いたターバンとふっくらした頬がキュートなキャラクターが、両手を合わせてこんなにたくさんの宝が本当にあるの？という驚きの表情をしています。背景には金貨や宝石がぎっしり詰まった宝箱や壺が積み重なっていて、きらきら光る星のマークも散りばめられています。女の子の服のボタンから宝物の細かい模様まで、塗り分けの仕甲斐がある1枚です。',
     popular: false, featured: true,
   },
 
@@ -42240,6 +42420,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
+    seoDescription: 'おばあさんが川で拾った大きなももを両手で抱えて、驚きと喜びに満ちた表情で見つめています。隣のおばあさんも思わず口を開けて驚く様子が伝わり、二人の感動が一つの場面に凝縮されています。手前の水の流れや石ころ、奥の草むらなど、川沿いの風景を丁寧に塗り分けることで、昔話の世界へぐっと引き込まれます。',
     popular: false, featured: true,
   },
 
@@ -42258,6 +42439,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:08',
+    seoDescription: '桃から生まれたももたろうが、両脇に付き添う家来たちと一緒に、大きな桃の前で両手を広げて喜びに満ちた表情を見せています。中央のももたろうは頭巾をかぶり、胸元の装飾的な結び紐が目を引き、左右の家来たちも同じように手を上げてはしゃいでいます。桃の下には葉が描かれ、空を表す短い線たちが画面に明るさと動きをもたらしています。三人の顔の輪郭や衣装の細部など、淡い色合いで柔らかく塗り分けるシーンが随所に待っています。',
     popular: false, featured: true,
   },
 
@@ -42312,6 +42494,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
+    seoDescription: '浜辺でウミガメが涙を流しており、その周りで三人の子どもたちが大喜び。左の子どもが拾った枝を掲げて歓声を上げ、右の子どもは手を振って挨拶をしています。波打つ砂浜には貝殻や星の形をした生き物が散らばり、空には雲とかもめが浮かぶ気持ちのよい景色です。ウミガメの甲羅の模様や、子どもたちの髪の毛の流れ、砂の質感など、細かい部分まで丁寧に描き込まれているので、どこから塗り始めるか迷ってしまうほどです。',
     popular: false, featured: true,
   },
 
@@ -42330,6 +42513,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T09:35',
+    seoDescription: '大きな亀の背中に乗った浦島太郎が、海の中の冒険へ出発する場面です。亀の甲羅の模様、タロウの着物の皺や帯の結び目、背景に聳える竜宮城の複雑な屋根など、細かい部分がたくさん。周りには小魚やクラゲ、海草が浮かび、貝殻や星形の生き物も散らばっているので、どれから塗ろうか迷ってしまうくらい塗る場所がいっぱいです。',
     popular: false, featured: true,
   },
 
@@ -42384,6 +42568,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
+    seoDescription: '岩の上に立ち、大きな斧を高く掲げて笑顔のきんたろう。腹掛けに描かれた可愛らしい花紋と、ふんわりした翼のような背景が、子どもの塗り色選びの工夫を引き出します。足元の岩のゴツゴツした質感や、ところどころに生える草の表現も、細かく色分けする楽しさが詰まっています。',
     popular: false, featured: true,
   },
 
@@ -42402,6 +42587,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:05',
+    seoDescription: '金太郎が相撲の得意なポーズで向かい合う相手は、悔しそうな表情の大きな熊。金太郎の胸には花のマークが入った腹掛けがあり、熊の頭には指輪のような輪がついています。二人の迫力のある対決シーンですが、キャラクターたちのコミカルな表情や丸みのある体つきのおかげで、ほほえましい雰囲気に仕上がっています。熊の毛並みの質感表現や、金太郎の髪の流れなど、塗り分けるパーツが多く工夫できる場面です。',
     popular: false, featured: true,
   },
 
@@ -42438,6 +42624,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
+    seoDescription: '竹の根元で、おじいさんが大きく口を開けて喜んでいます。竹の筒の中からは、キラキラした表情のかぐや姫が顔をのぞかせており、おじいさんとの嬉しそうな出会いの瞬間が伝わってきます。足元に散らばった竹の葉や、背景にそびえる竹の節々は、この物語の舞台となる竹林の雰囲気をしっかりと表現しています。',
     popular: false, featured: true,
   },
 
@@ -42456,6 +42643,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T10:34',
+    seoDescription: 'かぐや姫が5人の貴族たちに囲まれた場面です。姫の華やかな着物には細かい花模様が描かれていて、長く流れる髪に飾りがついています。5人の貴族たちは揃いの帽子と着物を着ており、それぞれ扇や籠など異なる贈り物を手に持っています。みんなの柔らかな表情と並んだ姿から、古い物語の中の大事な場面が広がっていて、着物の地色や贈り物の模様、背景の塗り分けなど、色を重ねたくなる箇所がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -42510,6 +42698,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
+    seoDescription: '一寸法師が小さなおわんの舟に乗って、大冒険へ出発するシーン。左手に握った木の刀を構えた勇ましいポーズと、頭に巻いた鉢巻きのくしゅっとした質感、そして足元の波しぶきの動きが、この小さな武士の旅の興奮を表現しています。右奥に見える背の高い草や左側の石ころなど、周りの風景がいっそう一寸法師のちっぽけさを引き立てていて、塗り分けるときに大きさの違いをより感じられるでしょう。',
     popular: false, featured: true,
   },
 
@@ -42528,6 +42717,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:06',
+    seoDescription: '一寸法師が姫さまと出会う場面です。豪華な着物に花の模様をあしらった姫さまは、長く流れる髪と立派な冠が特徴。一方、小さな一寸法師は帽子をかぶり、姫さまを見上げるほほえみの表情が印象的です。姫さまのドレスに散りばめられた花々や髪飾りの細かい装飾は、丁寧に塗り分ける楽しみがあります。二人の大きさの違いがストーリーの核となる場面で、色選びで二人の関係性を表現できる一枚です。',
     popular: false, featured: true,
   },
 
@@ -42582,6 +42772,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
+    seoDescription: '日本昔話の「花咲かじいさん」の場面です。左側のやさしい表情のおじいさんは、小さな犬を抱っこしてにっこり笑っています。一方、右側の怒ったような顔のおじいさんは腕を組んで不機嫌そう。両方のおじいさんのズボンには大きなつぎはぎがあり、古い着物姿も見えます。同じキャラクターなのに、表情とポーズで全く違う雰囲気に仕上がるので、肌色や洋服の色を工夫してみると物語の違いが引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -42600,6 +42791,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T11:36',
+    seoDescription: '花咲くじいさんの物語の一場面で、掘り当てた宝物に大喜びするじいさんとじゃあさん、そして「ここほれわんわん」と教えてくれた忠犬が一緒に描かれています。じいさんは両手を上げて驚き、じゃあさんはうれしそうに目を閉じ、犬も誇らしげにしっぽを立てる三者三様の表情が見どころです。地面に積み重ねられた大きな宝箱は、塗り分けるときに金色や銀色で輝きを表現できる場所です。草むらや衣装の柄など、細かい部分も多く、色選びで全体の雰囲気がぐっと変わる一枚です。',
     popular: false, featured: true,
   },
 
@@ -42654,6 +42846,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
+    seoDescription: 'おばあさんが優しい笑顔で、小さなすずめに食べ物をあげようとしている温かい場面です。すずめの開いた口や、おばあさんの手に乗ったちいさな体など、細かい部分を丁寧に塗り分けると生き生きとした表情が引き立ちます。手前の器や背景の花々、窓から見える庭の緑など、色を重ねる場所がたくさんあり、塗る順番を考えながら進める楽しさが味わえます。',
     popular: false, featured: true,
   },
 
@@ -42672,6 +42865,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:06',
+    seoDescription: 'いじわるおばあさんが大きなはさみを握りしめて怒った顔で走ってきて、舌切りすずめは目を大きく開いて泣きながら逃げています。おばあさんの髪の毛は結い上げられ、着物の帯もはっきり描かれていて、キャラクターの違いを色分けで表現したくなります。背景の怒りマークと涙のしぶきは、この場面の緊迫した雰囲気を盛り上げる工夫になっていて、どんな色を選ぶか考えながら塗り進めるのが面白い場面です。',
     popular: false, featured: true,
   },
 
@@ -42726,6 +42920,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
+    seoDescription: '雨の中、大きな木の根元で雨宿りをするおじいさんと、晴れた場所で笑顔のおじいさんが向かい合っています。左側のおじいさんは杖をついて少しうなだれた表情で、頭部に大きなこぶがあり、雨粒が降り注ぐ背景が印象的です。右側のおじいさんはほほえみながら腕を組み、同じこぶが目立つのに全く違う雰囲気を醸し出しています。二人の対比を楽しみながら、雨の表現には青系、晴れた側には黄色系など色分けして塗ると、物語の場面がぐっと引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -42744,6 +42939,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T12:38',
+    seoDescription: '鬼たちが宴会で大喜びで踊っている場面です。中央のテーブルには丸ごとの魚と器に盛られたごちそうが並び、左右に積み重ねられた鬼たちは角をぴんと立てて、大きく口を開けて笑顔で飛び跳ねています。手前には徳利や盃が置かれ、お祭りの楽しさが伝わってきます。塗るときには、肌の色、鬼の角や衣装の色、食べ物の色合いで、にぎやかさを表現できます。',
     popular: false, featured: true,
   },
 
@@ -42798,6 +42994,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
+    seoDescription: '優しい表情のおじいさんが、助けた鶴と一緒に雪の中で寄り添っています。鶴の羽には細かい羽根の模様が描かれていて、色の濃淡をつけるとより美しく見えそう。背景には裸木と小さな雪の粒がいっぱい散っていて、寒い季節の静かな情景が広がっています。おじいさんの優しく閉じた目と、鶴の見つめる瞳には、二人の心が通じ合っている瞬間が表現されています。',
     popular: false, featured: true,
   },
 
@@ -42816,6 +43013,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:09',
+    seoDescription: 'つるが訪ねてきた雪の日、家の戸口で親夫婦と再会する場面です。つるの羽衣には細かい花模様がびっしり描かれており、色鉛筆で丁寧に塗り分ける楽しさがあります。親たちの優しい笑顔と、屋根に積もった雪、そして舞う雪の粒をそれぞれ違う色で表現することで、冬の温かみが生まれます。つるの髪飾りの花と衣装の花をどう色分けするか、考えながら塗ってみましょう。',
     popular: false, featured: true,
   },
 
@@ -42870,6 +43068,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T13:42',
+    seoDescription: 'おむすびがころころと穴の中へ落ちていく場面です。上の地面では、おむすびを食べていたおばあさんが片手を上げて驚いた表情で見送り、かごには丸いおむすびがいくつも詰まっています。下の穴の中では、ねずみが両手を広げて喜んでいて、周りには野菜やとうもろこしなど、ねずみの食べ物が並んでいます。地面の上下で異なる世界が広がっていて、色を塗り分けることで、地上と地下の違いがもっとはっきり見えてくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -42942,6 +43141,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:12',
+    seoDescription: '雪の中でかさを売ろうとしたおじいさんが、売れずに悔しそうな表情を浮かべている上の場面から、おじいさんがかさを被ったお地蔵さんにかぶせてあげる優しい瞬間、そして最後におじいさんがたくさんのお餅を抱えてにっこり笑う場面へと物語が進みます。三つの場面では、ほぼ同じ大きさで塗り分けられているので、おじいさんの気持ちの変化に合わせて色選びを工夫する楽しさが生まれます。それぞれの背景に散らばる丸い雪の粒や、かぶり物の格子模様も丁寧に塗るとより一層物語が引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -43014,6 +43214,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T14:44',
+    seoDescription: 'カニとサルが向き合っているユーモラスなシーン。サルは両手いっぱいにバナナを抱えてニッコリ笑い、カニはその大きな目玉と大きく開いた口で喜びを表現しています。サルの耳の丸さ、バナナの房の細かい筋、カニのはさみの迫力ある形など、塗り分けるパーツが多いので、何色でどこを塗るか考えながら進める楽しさがあります。背景がシンプルだからこそ、二匹のキャラクターへ色鮮やかに仕上げたくなる構図です。',
     popular: false, featured: true,
   },
 
@@ -43086,6 +43287,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:15',
+    seoDescription: 'わらを拾ったことから始まる物語のしょっぱなを描いた一場面。転んだ勢いで片足を上げ、驚いた顔で何かを発見した子どもの躍動感あふれるポーズと、周囲に浮かぶ布、ロープ、魚、容器といった次々と交換されていく品々が、目まぐるしい展開をほのめかしています。わらから始まる交換の旅路を彩ることで、物語を自分の手で進めていく感覚が生まれます。',
     popular: false, featured: true,
   },
 
@@ -43158,6 +43360,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T15:44',
+    seoDescription: '七夕の夜、雲の上で織姫と彦星が出会う場面です。左側では彦星が牛に乗り、手綱を優しく握りながら微笑む表情を見せており、右側では織姫が機織り機の前に座ってこちらを見つめています。天の川を表す流れるような曲線が二人の間を優雅に描き、星と丸い点がちりばめられた空間が広がっています。雲のふかふかとした輪郭や、機織り機の細かい格子模様、牛のやさしい目など、色鉛筆で丁寧に塗り分けたくなる部分がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -43230,6 +43433,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T16:31',
+    seoDescription: '白いウサギが大きく跳ねて、三匹のワニの背中を渡っていく場面です。ウサギの元気いっぱいな表情と、飛び跳ねるポーズが躍動感を生み出しており、水面の波のしぶきもダイナミックに描かれています。向こう岸で待つ女の子はウサギを応援するように両手を広げ、足元の草も塗ることで物語の世界がぐっと広がります。ワニたちの目玉や歯、ウサギのふさふさした毛並みなど、細部の塗り分けで各キャラクターの個性が引き出せるでしょう。',
     popular: false, featured: true,
   },
 
@@ -43302,6 +43506,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:01',
+    seoDescription: '浜辺で漁師の少女が、大きな籠を手に持ちながら空を見上げています。彼女の頭上には、花や星の模様が散りばめられた優雅な羽衣がゆるやかに流れており、松の木に引っかかっています。足元には貝殻やヒトデが転がっていて、奥には小舟も静かに浮かんでいます。羽衣の流麗な曲線は、白から淡い色へのグラデーションで塗ると一段と美しくなりそうです。',
     popular: false, featured: true,
   },
 
@@ -43374,6 +43579,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T17:40',
+    seoDescription: '大きなうりを挟んで向き合う、おじいさんとおばあさん。二人の驚いた表情と、うりの表面に描かれたたくさんの点々が、この野菜がどれほど大きいのかを物語っています。足元には小石がころころと散らばり、かごや草も配置されていて、田舎の風景らしさが広がっています。うりの丸い形に濃い色を入れれば立体感が出ますし、衣装や背景の小物たちも色とりどりに塗ることで、この驚きの瞬間がより生き生きと蘇ります。',
     popular: false, featured: true,
   },
 
@@ -43446,6 +43652,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:12',
+    seoDescription: 'わなに引っかかって泣いているたぬき、助けに来た友だちたち、そして水車小屋で楽しそうに遊ぶたぬきの姿が四つのシーンで描き分けられています。困った表情と嬉しそうな表情の違い、ぐるぐる巻きの網と回転する水車の輪郭線、ふさふさの尾の毛並みなど、細かい部分を丁寧に塗ると場面の雰囲気がぐんと生きてきます。',
     popular: false, featured: true,
   },
 
@@ -43518,6 +43725,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T18:41',
+    seoDescription: '雪の夜、小屋の中で火を囲む男の子と、窓の外から雪を降らせながら現れた雪女。男の子の心配そうな表情と、ふわりと浮かぶようなしぐさの雪女の対比が印象的です。火の炎、ころころとした薪、そして窓の外に舞う雪の結晶は、冬の世界を色分けする大切なポイント。温かみのある室内と、冷たさが伝わる屋外の色選びで、二つの世界がどう違うのか表現できます。',
     popular: false, featured: true,
   },
 
@@ -43806,6 +44014,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
+    seoDescription: 'ふんわりとした生クリームに包まれたショートケーキが、今にも食べたくなるほど贅沢に描かれています。上には3つのいちごがたっぷりとのっていて、ツヤのある赤色を塗るのが楽しみ。中段のいちごは半分に切られた様子が見えるので、色の塗り分けを工夫できます。ケーキ全体に点々と施された細かいしぶきのような模様は、おいしそうなテクスチャーを出すのに欠かせない要素。クリームの波状の流れと、ふっくら立体的な土台の層を塗り分けると、本物らしく仕上がります。',
     popular: false, featured: true,
   },
 
@@ -43824,6 +44033,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T21:48',
+    seoDescription: '左手のまあるいショートケーキには、ふんわりした生クリームの上にいくつもの赤いいちごが乗っていて、右手には同じいちごでトッピングされたケーキがスライスされた様子が見えます。層状に重なったスポンジとクリームを塗り分けることで、ふんわりとした食感が表現できますし、細かいドットや筋で描かれたいちごの粒々に色えんぴつを寄せると、本物のいちごにぐっと近づきます。',
     popular: false, featured: true,
   },
 
@@ -43878,6 +44088,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
+    seoDescription: '中央の穴を囲むようにたっぷりした生地が広がるドーナツ。表面には小さな粒々がびっしり散りばめられ、下側には波状の装飾で、まるで本物のドーナツにコーティングされたしゅがりが見えます。粒を一つひとつ丁寧に塗っていくと、ドーナツがますます美味しそうに見えてくる仕掛けになっています。',
     popular: false, featured: true,
   },
 
@@ -43896,6 +44107,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:18',
+    seoDescription: '3つのドーナツが仲良く並んでいます。左はショートケーキのような短い線のトッピング、真ん中はチョコレートスプレッドのこまかい粒々、右は円いチョコチップと波のような模様で、それぞれ全く違う表情をしています。波打ったふちを塗るのは少しむずかしいですが、トッピングの部分では好きな色を思い思いに選んで塗り分けられるので、3つ並んだドーナツがさらにカラフルに変身します。',
     popular: false, featured: true,
   },
 
@@ -43950,6 +44162,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
+    seoDescription: 'つやつやのプリンが器にのった、まさにデザート屋さんのショーケースから出てきたような一皿です。プリンの表面には光が当たった様子を表す曲線があり、茶色で塗ると本物みたいに見えます。器の底には細かい筋が何本も走っていて、陰影をつけるのが楽しい場所。かかった布のようなカラメルソースはゆらゆらとした波線なので、黒や茶色で濃淡をつけてみるのも良いでしょう。',
     popular: false, featured: true,
   },
 
@@ -43968,6 +44181,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T22:48',
+    seoDescription: 'つるんとした表面に、中身がとろりと流れ落ちるプリンの断面図。スプーンは手前でじっと待機していて、今からすくい取る瞬間が目に浮かびます。プリンの上にはカラメルソースがかかっている様子が波線で表現されていて、茶色と白のコントラストで塗り分ける楽しさが詰まっています。',
     popular: false, featured: true,
   },
 
@@ -44022,6 +44236,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
+    seoDescription: 'ハート形をした焼きたてのクッキーが、ぷっくりとした波打ちエッジの皿の上に乗っています。クッキーの表面には小さなくぼみがたくさん並んでいて、バターの焦げ目やチョコチップを置きたくなり、外側の皿にも大きさの違う丸や線の模様が散らばっているので、デコレーションの色分けの工夫が見える塗り方ができます。',
     popular: false, featured: true,
   },
 
@@ -44040,6 +44255,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:19',
+    seoDescription: '星型、ハート型、花型、円型など、形も模様も全く異なる5つのクッキーが並んでいます。星のまわりには小さな粒々が散らばり、ハート型には波線の飾りが、花型には中心に円を持つ花びらが、円形には斜めの線が引かれ、もう一つのハート型には格子模様が詳しく描かれています。塗り始めるときに、どのクッキーからどんな色にしようか迷ってしまうほど、個性的な装飾ばかりが目に入ってきます。',
     popular: false, featured: true,
   },
 
@@ -44094,6 +44310,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
+    seoDescription: 'ふわふわのクリームが三段に積み重なったカップケーキ。先端のクリームにはきらめく月のようなカーブが描かれ、全体に散りばめられた5つの小さな星が、夜空のようなおとぎ話の世界を表現しています。ひだひだのカップ部分は規則正しい線で彩色の練習に丁度良く、クリームの層ごとに色を変えたり、星を輝く色で塗ったりする楽しさが詰まっています。',
     popular: false, featured: true,
   },
 
@@ -44112,6 +44329,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-24T23:51',
+    seoDescription: '3つのカップケーキが並んでいて、それぞれ異なる飾りが乗っています。左から順に、いちごとお星さまが飾られたもの、お菓子の家みたいなクッキーと星が輝くデコレーション、そしてリボンと大きな星が特徴のケーキです。クリーム部分の波模様や、ふりかけのような細かいドット、そして各段のフロスティングの厚みの描き分けが、どの色を選ぶかで大きく印象が変わります。カップ部分のひだひだを丁寧に塗れば、より立体的で本物らしいカップケーキに仕上がるでしょう。',
     popular: false, featured: true,
   },
 
@@ -44166,6 +44384,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
+    seoDescription: 'ふっくらと膨らんだ上下の層が特徴のマカロン。2枚の貝殻のような形をした生地に挟まれた真ん中のクリームの部分は、波打つ線でていねいに描かれています。全体のやさしい曲線と、生地の細かいギザギザの質感を塗り分けるのが楽しく、ピンク、黄色、紫など好きな色でこのお菓子を自分らしくデコレーションできます。',
     popular: false, featured: true,
   },
 
@@ -44184,6 +44403,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:23',
+    seoDescription: '6つのマカロンが並んだ様子を塗る絵です。つやつやした丸いクッキーの天板と、フリルのようにヒダヒダした周りの部分がはっきり描き分けられているので、違う色で塗り分けたくなります。ところどころ小さな丸や曲線が入っているのは、お菓子の光の反射を表現したディテール。ピンク、黄色、紫など好きな色で彩色すれば、本物そっくりの色合いのマカロンが完成します。',
     popular: false, featured: true,
   },
 
@@ -44238,6 +44458,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
+    seoDescription: '正方形のマス目にぎっしり詰まったワッフルの中央に、ぽっかり大きなマスが浮き上がっています。その周りを囲む小さなマスたちは波線でつながっていて、まるでワッフルが息をしているみたい。色鉛筆で一マスずつ丁寧に塗っていくと、この中央の大きな四角がどんどん目立ってくるでしょう。小さなマスを濃い色で埋めれば、ワッフルの焼き目がより立体的に見えます。',
     popular: false, featured: true,
   },
 
@@ -44256,6 +44477,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T00:55',
+    seoDescription: 'ふんわりと焼きあがったワッフルの上には、とろりと流れ落ちるシロップと、つやつやの大きなイチゴがトッピングされています。格子模様のくぼみがたくさんあるワッフルは、色を塗り分けると立体的に見えてきます。イチゴのつぶつぶや、葉っぱの細かい部分を丁寧に塗ることで、本当に食べたくなるようなおいしそうなワッフルに仕上がります。',
     popular: false, featured: true,
   },
 
@@ -44310,6 +44532,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
+    seoDescription: 'クレープの筒状の生地をしっかり握った手に包まれた、てっぺんからこんもりと盛り上がったクリームやフルーツがのぞいています。いちご、バナナ、キウイのような果物がいくつも積み重なり、どれから塗ろうかな？と目移りしてしまいそう。生地の部分の淡い色合いと、中身の果物のあざやかな色合いとで塗り分ける楽しさが味わえます。',
     popular: false, featured: true,
   },
 
@@ -44328,6 +44551,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:27',
+    seoDescription: '三つのクレープが並んでいて、左からレタスをたっぷり詰めたもの、マッシュルームとポテト、そしてエビフライが飛び出すようにのっているクレープです。くるくると巻かれた紙から中身がこぼれ落ちそうなくらいボリュームたっぷりで、それぞれ違う具材の形をていねいに塗り分けるのが楽しみになります。葉野菜のしゃきしゃきした質感や、まるい野菜の立体感、揚げ物のサクサク感を、色選びで表現できる工夫が詰まっています。',
     popular: false, featured: true,
   },
 
@@ -44382,6 +44606,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
+    seoDescription: 'グラスの中に層状に詰まったフルーツとクリーム、そして頂上にはいちご、バナナ、チェリーが華やかに盛られたパフェです。ストローが斜めに挿してあり、底から見える小さな粒々のグラノーラまで、色を塗る楽しみがたくさん詰まっています。白いクリームの波線模様やアイスの山型、様々な大きさのフルーツを塗り分けることで、本物のおいしそうなパフェに近づけます。',
     popular: false, featured: true,
   },
 
@@ -44400,6 +44625,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T01:58',
+    seoDescription: '三つのグラスに積み重なったアイスクリーム、フルーツ、アイス。左のパフェはストロー付きの苺とミント、中央はクッキーとチョコボール、右はさくらんぼとぶどうが顔を出しており、それぞれ違う組み合わせが詰まっています。グラスの中の層ごとに色を変えたり、トッピングのアイスクリームにはピンク、白、茶色など好きな色を選べるようになっており、同じパフェでも自分だけの配色を作る楽しみがあります。',
     popular: false, featured: true,
   },
 
@@ -44454,6 +44680,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
+    seoDescription: 'コーンの格子模様をていねいに塗ると、立体感が生まれるソフトクリーム。てっぺんのくるくるとした渦巻き状の生クリームは、薄い線で何重にも描かれているため、色を重ねたり濃淡をつけたりすることで、ふんわりとした質感を表現できます。コーン部分の網目模様と、その中の白い空間のコントラストを意識しながら塗っていくと、凸凹した焼き色が自然に浮かび上がってきます。',
     popular: false, featured: true,
   },
 
@@ -44472,6 +44699,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T02:29',
+    seoDescription: '三つのソフトクリームが並んでいる場面で、コーンの網目模様、ふんわり盛られた生クリーム、てっぺんのクルンとした毛先のような形が、それぞれ違う塗り方を誘います。同じアイスクリームでも、左から右へ色を変えてみたり、コーンには濃い茶色、生クリームは白と薄い色で立体感を出したり、思い思いの配色で三姉妹のように仕上げられます。',
     popular: false, featured: true,
   },
 
@@ -44526,6 +44754,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T03:40',
+    seoDescription: 'ハート型のチョコレートボックスと、クロワッサンやシナモンロールといった焼き菓子たちが、大きなグリッドの周りに並んでいます。お花と葉っぱの飾りが左右から顔を出していて、甘いデザートの世界を作り出しています。グリッドの16マスは色塗りの自由度が高く、チョコレート色で統一したり、マスごとに違う模様を描き足したりと、工夫の見せ場になります。',
     popular: false, featured: true,
   },
 
@@ -44580,6 +44809,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:13',
+    seoDescription: 'ふっくらと膨らんだ二枚の焼き皮に挟まれたどら焼き。上の皮には小さな穴がたくさん開いていて、焼き目の濃淡を表現するのが楽しみなポイント。中身の層には波のような模様が描かれていて、あんこのしっとりした感じを塗り分けることで、本物そっくりのどら焼きが完成します。',
     popular: false, featured: true,
   },
 
@@ -44670,6 +44900,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T10:49',
+    seoDescription: '棒の先端にくるくるとらせん状に巻きついた飴。外側の円形の枠から中心へ向かって渦巻く模様は、舐めるたびに色が変わっていく様子をイメージさせます。棒を握る手の部分はシンプルな二本線で、子どもが実際に持つ感覚を思い出しやすくなっています。飴の表面に描かれた小さな楕円は光の反射を表現していて、ここに色を重ねるとつやつやした飴らしさが引き出せるでしょう。',
     popular: false, featured: true,
   },
 
@@ -44742,6 +44973,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:21',
+    seoDescription: 'くりんとした目と、ころんとした体が特徴のグミベア。頭と手足の四つの丸い部分、そして真ん中の大きなお腹の部分と、ブロックのように組み立てられた形をしています。小さな口元には、ほんのり笑ったような表情が見えます。赤や黄色、オレンジなど、カラフルなグミの色を塗るとき、それぞれのパーツをどんな色に分けるか考えながら塗る楽しみがあります。',
     popular: false, featured: true,
   },
 
@@ -44814,6 +45046,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T11:50',
+    seoDescription: '大きく丸い体に細かい鱗がぎっしり並んだたい焼き。頭の上にはとげとげの背びれ、口のあたりには小さなひれがついていて、尾びれはぱたぱたと動きそうな形です。鱗の一つひとつは半円の模様で繰り返され、色を塗るたびに手が進む楽しさがあります。背中と腹、ひれの部分で色を分けると、ぐんと立体的に見えてきます。',
     popular: false, featured: true,
   },
 
@@ -44886,6 +45119,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T12:28',
+    seoDescription: 'もこもこした大福が、白くて丸いお皿の上にちょこんと乗っています。上には緑色の葉がぴょんと立ち上がり、表面には小さな粒つぶがいくつもあるので、赤やピンク色で丁寧に塗り分けるのも面白そう。お皿の広い白い部分は、影を付けたり模様を足したり、色遊びの工夫がしやすい空間になっています。',
     popular: false, featured: true,
   },
 
@@ -44958,6 +45192,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T13:00',
+    seoDescription: '串に刺さった三つのわらびもちが、ぷるぷるの揺れるような曲線で表現されています。各段に描かれた豆の粒々は、きな粉がまぶされた質感を感じさせ、色を塗り分けるときの目印になります。串の部分は細い直線なので、こげ茶色や濃い色でしっかり塗ると、ぷにぷにのもち部分との対比がはっきり出てくるでしょう。',
     popular: false, featured: true,
   },
 
@@ -45030,6 +45265,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T14:17',
+    seoDescription: '串に刺さった四つのだんごが、あんをたっぷりかけた様子をそのままに積み重なっています。上から順に垂れ流れるあんの形がそれぞれ異なるので、塗るときにどの部分を濃い茶色にするか、どこを白く残すかを考えながら進めることになります。持ち手の木製の串はシンプルな一本線で、だんごの丸みとの対比が気持ちよく見えます。',
     popular: false, featured: true,
   },
 
@@ -45084,6 +45320,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:21',
+    seoDescription: 'りんご飴の艶やかな表面には、小さな水玉模様がいくつも描かれており、光が当たっているようすが感じられます。上部には飴をコーティングしている透き通った部分があり、その下に見える赤いりんごの身を工夫して塗り分けると、立体感が生まれます。下から支える棒は長く伸びていて、まるで誰かが両手で握ろうとしているような仕上がりになる予感があり、秋祭りで見かけるあの懐かしい存在が目の前で色づいていくのを体験できます。',
     popular: false, featured: true,
   },
 
@@ -45156,6 +45393,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-25T18:49',
+    seoDescription: 'ふわふわに巻き上がったわたあめを両手でしっかり握る子どもの姿。くるくると螺旋状に積み重なった甘い見た目は、ピンク色やブルー、黄色など好きな色でグラデーションをつけると、より一層ふんわりとした食感が伝わってきます。下から上へ向かって広がる形は、塗るときに色の濃淡をつけるだけで、綿菓子特有のボリューム感が生まれる工夫になっています。',
     popular: false, featured: true,
   },
 
@@ -46398,6 +46636,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
+    seoDescription: 'にっこり笑顔で両頬に涙のしずくがこぼれている太陽さん。周りにはひまわりのような放射状の光線が十六本、規則正しく並んでいます。大きな黒い瞳と小さな口、そして両側の円い頬がとても優しい表情を作っていて、黄色く塗ったときにどんなに明るく輝いて見えるか想像が膨らみます。',
     popular: false, featured: true,
   },
 
@@ -46416,6 +46655,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:20',
+    seoDescription: 'にこにこと笑顔の太陽が、四方を囲む雲たちに見守られています。太陽の周りに放射状に広がる光の線と、ふっくらした雲のやさしい輪郭が、塗るたびに色が重なって空間が立体的に見えてくる構図です。雲ひとつひとつの表情も違うので、同じ白でも色の濃淡をつけたり、太陽と雲でコントラストをつけたりと、色選びのアイデアが自然と湧いてきます。',
     popular: false, featured: true,
   },
 
@@ -46470,6 +46710,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
+    seoDescription: 'ふっくらとした丸みのある雲が、空いっぱいに浮かんでいます。雲の縁には小さな凹みがいくつもあって、それぞれに細い線が描き込まれているので、ふわふわとした質感を表現できます。白く広い内側を好きな色で埋めていくと、自分だけの空が完成します。',
     popular: false, featured: true,
   },
 
@@ -46488,6 +46729,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T19:55',
+    seoDescription: '三つのふわふわした雲が、にっこり笑顔で空間に浮かんでいます。一番大きな雲は左に構えて、右奥には中くらいの雲、そして中央手前には一番小さな雲が位置しており、大きさの違いが奥行きを生み出しています。どの雲もまるまるとした輪郭で、つぶらな瞳と優しいカーブの口元が同じ表情をしているので、色を選ぶときに三つの個性を出す工夫が楽しめます。',
     popular: false, featured: true,
   },
 
@@ -46542,6 +46784,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
+    seoDescription: '5つのかわいいあめたちが画面いっぱいに散らばっています。大きさがそれぞれ違うあめは、どれもにっこり笑顔で、小さなほっぺに赤みを入れたくなります。いくつかのあめの側面には小さなしずくのような模様があり、ツヤツヤとした質感を表現できるポイント。大きなあめから小さなあめまで、色を統一するか変えるか、どう塗り分けるかで全く違う世界観になる作品です。',
     popular: false, featured: true,
   },
 
@@ -46560,6 +46803,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T20:28',
+    seoDescription: 'にっこり笑った雲さんが、空からたくさんの雨粒を降らせています。丸くてふっくらした雲の輪郭をなぞると、頬の丸い部分が塗りやすく、つぶらな瞳には黒をしっかり入れるタイミングが大切です。下に落ちてくる雨粒は大きさが違うので、濃淡をつけて立体感を出したり、水色と薄紫で塗り分けたりと、同じしずくでも表現を工夫する場面になります。',
     popular: false, featured: true,
   },
 
@@ -46614,6 +46858,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
+    seoDescription: '六角形を中心に、左右対称に広がる雪の結晶。上下左右斜めの6本の腕からは、さらに細かい枝がぎっしり生えていて、どこから塗り始めるか迷ってしまうほど。白い部分がたくさん残っているので、同じ色でグラデーションをつけたり、キラキラした色を重ねたりして、冬らしさを表現できます。',
     popular: false, featured: true,
   },
 
@@ -46632,6 +46877,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:03',
+    seoDescription: '冬の空を舞い降りる雪の世界。ふんわりとした雲のキャラクターたちと、幾何学的な美しさを持つ雪の結晶が並んでいます。雲たちはどれもにこにこ顔で、結晶はそれぞれ異なる枝分かれのパターンを見せています。青や水色で塗ると冬らしさが引き立ち、白や薄紫で塗るとやさしい雪景色になるなど、色選びの工夫が活躍する場面がたくさんあります。',
     popular: false, featured: true,
   },
 
@@ -46686,6 +46932,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
+    seoDescription: '# 解説文  ふわふわの雲たちに囲まれた、かわいらしいかみなりさん。中央の三角形の稲妻が堂々とした存在感を放ちながら、左右の大きなカーブした雲は、ボリュームのある形をしています。雲の柔らかさと稲妻の鋭さという、正反対の質感の組み合わせが面白く、どちらを先に塗るか迷ってしまうほど。背景の白さが広々としているので、好きな色で思い切り塗り広げる楽しさが味わえます。',
     popular: false, featured: true,
   },
 
@@ -46704,6 +46951,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T21:37',
+    seoDescription: 'にっこり笑顔の雲の下から、ギザギザの稲妻が勢いよく降りてくる場面です。丸い目と小さな口、そしてほのかに膨らむ頬が、このいたずら好きな雲のキャラクターをぐっと愛らしくしています。稲妻の複雑に折れ曲がった線は、黄色やオレンジで塗ると迫力が出そうですし、ふわふわの雲の白さとの対比も楽しめます。',
     popular: false, featured: true,
   },
 
@@ -46758,6 +47006,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
+    seoDescription: '真っ白な雪をかぶった山が、ふんわりと立っています。山頂の波打つ雪のふち、その下に広がる大きな斜面、そして裾野の緩やかな曲線と、塗る場所がはっきり分かれているので、色を変えてメリハリをつけたくなります。シンプルな形だからこそ、どの色を選ぶか、濃淡をどうつけるか、お子さんの色選びの個性が引き立ちます。',
     popular: false, featured: true,
   },
 
@@ -46776,6 +47025,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:13',
+    seoDescription: '雪をかぶった二つの山が並んでそびえています。大きな山の頂上には波打つような雪の縞模様があり、隣の小さな山にも同じ模様が入っていて、塗り方で山々の表情が変わります。山の輪郭はシンプルな三角形ですが、雪が積もった部分の曲線はふんわりやさしく、色を重ねたり変えたりするスペースがたくさん残っています。',
     popular: false, featured: true,
   },
 
@@ -46830,6 +47080,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
+    seoDescription: '波が左から右へ流れるように連なった海の景色。一本の線でうねうねと描かれた波のカーブは、どこから塗り始めるか迷ってしまうほど優雅に続いています。青や緑、水色など、好きな色をどんどん塗ってグラデーションを作ると、本物の海みたいに見えてきます。シンプルな構図だからこそ、色選びで海の表情がガラッと変わる楽しさが詰まっています。',
     popular: false, featured: true,
   },
 
@@ -46848,6 +47099,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T22:47',
+    seoDescription: 'にっこり笑顔の太陽が小さな雲を見守る海辺の風景。波のうねりは優雅な曲線で何重にも重なり、砂浜には星形や貝殻がちらばっています。色を塗るときは、太陽の黄色、空の青、海の濃い青といったように同じ色でも濃淡を工夫できる場所がたくさんあり、波の流れを色で表現する楽しさも感じられます。',
     popular: false, featured: true,
   },
 
@@ -46902,6 +47154,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
+    seoDescription: '流れる水の動きを表現した、やさしい波線がいくつも重なっています。太い外側の輪郭と細い内側の曲線で、水のふくらみやへこみがリアルに見えます。上から下へ流れていく様子を、色の濃淡で表現する絵なので、青や水色をグラデーションさせたり、白い部分を活かしたりと、色の工夫がしがいがあります。',
     popular: false, featured: true,
   },
 
@@ -46920,6 +47173,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:19',
+    seoDescription: '両脇の大きな木に見守られながら、蛇行した川が景色の中心を流れる風景です。川沿いには小さな石ころがゴロゴロと点在し、足元に何があるのか想像しながら塗り進められます。灌木や草むらも随所に配置されているので、緑や茶色の色選びで奥行きを表現できる場面になっています。',
     popular: false, featured: true,
   },
 
@@ -46974,6 +47228,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-26T23:52',
+    seoDescription: '迫力のある滝が上から下へ勢いよく流れ落ちる様子を、たくさんの縦線で表現した一枚です。滝の裾野はもくもくとした雲のような形で、水が池に落ちてしぶきが上がっている瞬間が捉えられています。青や紫、白などで塗り分けると、水の動きや奥行きが生まれて、本物の滝に近づきそうです。',
     popular: false, featured: true,
   },
 
@@ -47046,6 +47301,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T00:27',
+    seoDescription: 'ふんわりとした枝葉に包まれた木が、両足をそろえて立っている姿。冠のような丸い樹冠には、ひらひらと舞い落ちる葉っぱがいくつも散りばめられていて、秋の情景が静かに広がっています。太い幹にはみずみずしい質感が出せるよう筋が入り、樹冠の曲線は淡い色合いで優しく塗ると、ほっこりとした表情が生まれます。',
     popular: false, featured: true,
   },
 
@@ -47118,6 +47374,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:01',
+    seoDescription: 'もくもくとした大きな煙を噴き出す火山が、どっしりとした円錐形の山体で堂々と立っています。山の頂上からふわふわと流れ出す煙のカーブと、裾野の広がりを見ると、赤や黒、オレンジなどの色を重ねたくなります。山肌に入った細かい線は、火山の凸凹した質感を表現する絶好のポイントになるでしょう。',
     popular: false, featured: true,
   },
 
@@ -47190,6 +47447,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T01:34',
+    seoDescription: '二本の柱の上から、何本ものひもが大きく弧を描いて垂れ下がる様子が、まるで風になびくカーテンのよう。柱の脇にはくねくねとした曲線が流れており、塗り方次第でオーロラの光の動きがうかがえます。複数のひもが重なり合う中央の空間は白くぽっかり空いていて、虹色や淡い色合いを自由に組み合わせて塗る喜びが詰まっています。',
     popular: false, featured: true,
   },
 
@@ -47262,6 +47520,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:07',
+    seoDescription: 'にっこり笑顔の星が夜空を駆け抜ける瞬間を捉えた一枚。星の丸い目と小さな口、そしてほわっとした柔らかい輪郭が愛らしく、長く伸びた尾の曲線は色鉛筆やクレヨンでなめらかに塗るのが楽しい部分です。シンプルな線だからこそ、星本体をどんな色で塗るか、尾をどのようなグラデーションにするか、子どもの色選びが映える作品になります。',
     popular: false, featured: true,
   },
 
@@ -47334,6 +47593,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T02:40',
+    seoDescription: '水平線からちょうど顔を出した太陽が、にっこり笑顔で朝日か夕日かを迎えてくれます。放射線のような光の筋が太陽の周りをぐるりと囲んでいるので、黄色やオレンジ、ピンクの色選びが映える場面です。水面の波線はゆるやかなカーブで描かれ、水色や青の濃淡を工夫する楽しさがあり、太陽の温かみと水の冷たさを色で表現することができます。',
     popular: false, featured: true,
   },
 
@@ -47406,6 +47666,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:13',
+    seoDescription: '満月のような丸い顔に、優しく閉じた目と穏やかな笑顔が浮かぶ月のキャラクター。ほおの位置にある二つの丸は、照れたような表情をさらに柔らかく見せてくれます。シンプルな輪郭だからこそ、どの色を選ぶか、ほおの丸をどう塗り分けるかで、その子だけの月の表情が生まれます。',
     popular: false, featured: true,
   },
 
@@ -47478,6 +47739,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T03:56',
+    seoDescription: '三本の波打つ曲線が重なり合った、ゆらゆら揺れるきりの姿です。ふっくらとしたボディから左右に伸びた細長い首の先には、くるんと巻いた耳がついており、その愛らしいフォルムが印象的です。線がなめらかに上下に波打っているので、色を塗るときに同じ色でも濃淡をつけたり、虹色に塗ったりと、子どもが自由に表現する楽しさを感じられるでしょう。',
     popular: false, featured: true,
   },
 
@@ -47550,6 +47812,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T04:28',
+    seoDescription: '冬の空から落ちてきた、先端がシュッと尖ったつらら。上の部分には波打つような縁取りがあり、透き通った氷の質感を出すのにぴったりです。細長い本体には筋が入っているので、薄い青や水色を重ねて塗ると、光が透けて見える様子が表現できます。つららの先端に向かってだんだん細くなる形を追いながら、冷たい冬の世界を色で作ってみましょう。',
     popular: false, featured: true,
   },
 
@@ -47622,6 +47885,7 @@ const _materials5: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-27T05:01',
+    seoDescription: '雪をかぶった大きな山を背景に、静かな湖が広がる冬景色です。湖の周りには様々な木々が立ち並び、葉を落とした細い枝の木、ふっくらした常緑樹、そして雪が積もった針葉樹が、色のコントラストを作る配置になっています。岩や低い草むらが湖岸を囲み、深さのある奥行きが生まれており、水色で湖を塗るときに周りの樹々とのバランスを考えながら進める楽しさが出てきます。',
     popular: false, featured: true,
   },
 
@@ -48881,7 +49145,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -48899,7 +49163,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:15',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -48935,7 +49199,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -48953,7 +49217,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T18:54',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -48989,7 +49253,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49007,7 +49271,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T19:26',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49043,7 +49307,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49061,7 +49325,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T20:54',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49097,7 +49361,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49115,7 +49379,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T21:29',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49151,7 +49415,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49169,7 +49433,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:03',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49205,7 +49469,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49223,7 +49487,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T22:35',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49259,7 +49523,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49277,7 +49541,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-20T23:21',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49313,7 +49577,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49331,7 +49595,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:03',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49367,7 +49631,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49385,7 +49649,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T00:43',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49421,7 +49685,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T01:17',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49475,7 +49739,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T01:49',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49529,7 +49793,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T15:36',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49583,7 +49847,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T16:11',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49637,7 +49901,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T16:45',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49691,7 +49955,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T17:32',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49745,7 +50009,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T18:22',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49799,7 +50063,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T19:00',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49853,7 +50117,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T19:33',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {
@@ -49907,7 +50171,7 @@ const _materialsRecovered: Material[] = [
     imageStatus: 'pending_review',
     pdfUrl: '',
     createdAt: '2026-05-21T20:05',
-    popular: false, featured: true,
+    popular: false, 
   },
 
   {

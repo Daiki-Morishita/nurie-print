@@ -289,11 +289,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               )}
             </div>
 
-            {/* 解説テキスト — 冒頭は素材固有の説明文（description）でユニーク性を確保 */}
+            {/* 解説テキスト — 冒頭は素材固有の説明文（seoDescription 優先、無ければ description）でユニーク性を確保 */}
             <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
               <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
-              <p className="text-[15px] text-foreground font-medium leading-relaxed">
-                {material.description}
+              <p className="text-[15px] text-foreground font-medium leading-relaxed whitespace-pre-line">
+                {material.seoDescription || material.description}
               </p>
               <p className="text-muted-foreground">
                 {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
