@@ -255,7 +255,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             {/* タイトル */}
             <div className="font-rounded font-bold text-[12px] text-primary mb-1 tracking-[0.1em]">— Material —</div>
             <div className="mb-3">
-              <h1 className="font-rounded text-[26px] sm:text-[32px] font-black leading-[1.3]">{material.title}</h1>
+              <h1 className="text-material-title-lg leading-[1.3]">{material.title}</h1>
             </div>
             <p className="text-[14px] text-foreground/85 mb-4 leading-relaxed pl-4 border-l-[3px] border-primary">{material.description}</p>
 
@@ -263,9 +263,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
               <PrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
-              <p className="text-[11px] text-muted-foreground text-center pt-1">
-                A4横長・白黒印刷に最適化されています
-              </p>
+              <div className="text-center pt-1">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
             </div>
 
             {/* タグ — クリックで検索 */}
@@ -305,7 +307,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               </p>
               <p className="text-muted-foreground">
                 {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
-                A4横長・白黒印刷に最適化されており、家庭用プリンタでそのまま印刷してすぐご利用いただけます。
                 {material.tools.length > 0 && (
                   <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
                 )}
@@ -373,9 +374,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                 <PrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               </div>
-              <p className="text-xs text-muted-foreground mt-3 text-center">
-                A4横長・白黒印刷に最適化されています
-              </p>
+              <div className="text-center mt-3">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
             </div>
 
             {/* 教材情報 */}

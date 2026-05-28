@@ -107,7 +107,9 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
               No. {String(current.index + 1).padStart(3, '0')} / {idx + 1} of {items.length}
             </div>
             <h2 className="font-rounded text-[26px] md:text-[36px] font-black leading-[1.25] mb-4">
-              {current.title}
+              <Link href={`/materials/${current.id}`} className="hover:text-primary transition-colors">
+                {current.title}
+              </Link>
             </h2>
             <p className="text-[14px] text-foreground/80 leading-relaxed mb-5 pl-4 border-l-[3px] border-primary">
               {current.description}
@@ -137,10 +139,13 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-          <div className="order-1 md:order-2 aspect-[1.414/1] bg-white border border-border rounded-md overflow-hidden flex items-center justify-center shadow-sm">
+          <Link
+            href={`/materials/${current.id}`}
+            className="order-1 md:order-2 aspect-[1.414/1] bg-white border border-border rounded-md overflow-hidden flex items-center justify-center shadow-sm hover:border-primary transition-colors"
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={current.imageUrl} alt={current.title} className="w-full h-full object-contain" />
-          </div>
+          </Link>
         </div>
 
         {/* Arrows */}

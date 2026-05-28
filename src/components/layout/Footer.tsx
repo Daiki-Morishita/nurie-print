@@ -67,6 +67,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
               <li><Link href="/category/theme/insects" className="hover:text-primary transition-colors">虫のぬりえ</Link></li>
               <li><Link href="/category/theme/fruits" className="hover:text-primary transition-colors">食べ物のぬりえ</Link></li>
               <li><Link href="/maze" className="hover:text-primary transition-colors">めいろプリント</Link></li>
+              <li><Link href="/help/print-on-mobile" className="hover:text-primary transition-colors">スマホからの印刷方法</Link></li>
             </ul>
           </div>
 

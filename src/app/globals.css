@@ -148,6 +148,20 @@
     @apply w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 outline-none
            focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-colors;
   }
+
+  /* 素材タイトル統一クラス。サイズ違いで揺れが出ないよう一元管理 */
+  .text-material-title {
+    @apply font-rounded font-black leading-snug;
+  }
+  .text-material-title-sm {
+    @apply font-rounded font-black text-[13px] leading-snug;
+  }
+  .text-material-title-md {
+    @apply font-rounded font-black text-[14px] leading-snug;
+  }
+  .text-material-title-lg {
+    @apply font-rounded font-black text-[26px] sm:text-[32px] leading-[1.3];
+  }
 }
 
 /* 印刷最適化 */

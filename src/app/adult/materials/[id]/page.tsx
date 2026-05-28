@@ -172,9 +172,11 @@ export default async function AdultMaterialDetailPage({ params }: { params: Prom
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
               <PrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
-              <p className="text-[11px] text-muted-foreground text-center pt-1">
-                A4横長・モノクロ印刷に最適化されています
-              </p>
+              <div className="text-center pt-1">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
             </div>
 
             {/* タグ */}
@@ -222,9 +224,11 @@ export default async function AdultMaterialDetailPage({ params }: { params: Prom
                 <PrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               </div>
-              <p className="text-xs text-muted-foreground mt-3 text-center">
-                A4横長・モノクロ印刷に最適化されています
-              </p>
+              <div className="text-center mt-3">
+                <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
+                  スマホからも印刷できます ›
+                </Link>
+              </div>
               <dl className="mt-5 pt-4 border-t border-border space-y-2.5 text-[12px]">
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">テーマ</dt>

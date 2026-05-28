@@ -221,7 +221,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 01"
             title="むずかしさで探す"
             subtitle="お子さまの発達段階に合わせて選べる4段階"
             emoji="⭐"
@@ -260,7 +259,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 02"
             title="人気のぬりえ"
             count={`トップ ${popular.length}`}
             href="/materials?sort=popular"
@@ -282,7 +280,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 03"
             title="テーマで探す"
             count={`全${THEMES.length}カテゴリ`}
             subtitle="お子さま・園児が好きなテーマからお選びください"
@@ -345,7 +342,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
-            kicker="No. 04"
             title="読みもの"
             count="ぬりえ完全ガイド"
             href="/columns"
@@ -397,7 +393,6 @@ export default async function HomePage() {
       <section className="py-12 border-t border-border bg-background">
         <div className="max-w-[860px] mx-auto px-6">
           <SectionHead
-            kicker="No. 05"
             title="よくある質問"
             subtitle="お問い合わせの多い質問にお答えします"
             emoji="💬"
@@ -477,14 +472,12 @@ export default async function HomePage() {
 }
 
 function SectionHead({
-  kicker,
   title,
   count,
   href,
   subtitle,
   emoji,
 }: {
-  kicker?: string
   title: string
   count?: string
   href?: string
@@ -495,11 +488,6 @@ function SectionHead({
     <div className="mb-6 md:mb-8">
       <div className="flex items-end justify-between border-b-2 border-primary/15 pb-3">
         <div>
-          {kicker && (
-            <div className="font-rounded font-bold text-[11px] text-primary mb-1 tracking-[0.1em]">
-              {kicker}
-            </div>
-          )}
           <div className="flex items-baseline gap-2.5">
             {emoji && <span className="text-[22px] md:text-[26px] leading-none">{emoji}</span>}
             <h2 className="font-rounded text-[22px] md:text-[28px] font-black">{title}</h2>
@@ -601,7 +589,7 @@ function CompactCard({ material }: { material: ReturnType<typeof getPopularMater
         ) : null}
       </div>
       <div className="p-2.5">
-        <h3 className="font-rounded text-[13px] font-black mb-1 line-clamp-1">
+        <h3 className="text-material-title-sm mb-1 line-clamp-1">
           {material.title.split('（')[0]}
         </h3>
         <div className="text-[12px] text-muted-foreground flex gap-1.5 items-center">
