@@ -42,7 +42,15 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       title: material.title,
       description: seoDesc,
       type: 'article',
-      ...(material.imageUrl ? { images: [{ url: material.imageUrl, alt: material.title }] } : {}),
+      publishedTime: material.createdAt,
+      authors: ['ぬりえプリント編集部'],
+      ...(material.imageUrl ? { images: [{ url: material.imageUrl, width: 1200, height: 848, alt: material.title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: material.title,
+      description: seoDesc,
+      ...(material.imageUrl ? { images: [material.imageUrl] } : {}),
     },
   }
 }

@@ -59,6 +59,9 @@ export const metadata: Metadata = {
     title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別3,200点',
     description: 'おうちで楽しむ年齢別ぬりえ。登録なしですぐ印刷、雨の日のおうち遊びや旅先のひとときに。',
   },
+  verification: process.env.NEXT_PUBLIC_PINTEREST_VERIFY
+    ? { other: { 'p:domain_verify': process.env.NEXT_PUBLIC_PINTEREST_VERIFY } }
+    : undefined,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
