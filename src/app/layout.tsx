@@ -98,6 +98,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             })(window, document, "clarity", "script", "wuyjgxh5hx");
           `}
         </Script>
+        {/* Pinterest Tag — lazyOnload。env var セット時のみ実行 */}
+        {process.env.NEXT_PUBLIC_PINTEREST_TAG_ID && (
+          <Script id="pinterest-tag" strategy="lazyOnload">
+            {`
+              !function(e){if(!window.pintrk){window.pintrk=function(){
+              window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
+              var n=window.pintrk;n.queue=[],n.version="3.0";
+              var t=document.createElement("script");t.async=!0,t.src=e;
+              var r=document.getElementsByTagName("script")[0];
+              r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+              pintrk('load', '${process.env.NEXT_PUBLIC_PINTEREST_TAG_ID}');
+              pintrk('page');
+            `}
+          </Script>
+        )}
         <Providers>
           <Header
             kidsCount={getMaterialsForAudience('kids').length}
