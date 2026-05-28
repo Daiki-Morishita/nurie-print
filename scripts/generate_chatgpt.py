@@ -88,6 +88,10 @@ try:
     from themes_seikatsu import SEIKATSU_ITEMS
 except ImportError:
     SEIKATSU_ITEMS = {}
+try:
+    from themes_sea import SEA_ITEMS
+except ImportError:
+    SEA_ITEMS = {}
 
 # =============================================
 # 設定
@@ -3335,6 +3339,7 @@ THEMES = {
     "animals":    ANIMALS_ITEMS,
     "nature":     NATURE_ITEMS,
     "seikatsu":   SEIKATSU_ITEMS,
+    "sea":        SEA_ITEMS,
     "fairytale":  FAIRYTALE,
 }
 
@@ -3629,6 +3634,7 @@ def add_to_data_ts(item_id, theme_type, variant, vdata, supabase_urls):
         "animals": "どうぶつ",
         "nature":    "しぜん",
         "seikatsu":  "せいかつ",
+        "sea":       "うみのいきもの",
     }
     tag_label = tag_map.get(theme_type, theme_type)
     if is_adult:
@@ -4575,6 +4581,8 @@ def run_item(pw, state, item_id, theme_type, variant, client):
             cond_items = COMMON_COND_ITEMS
         elif theme_type == "seikatsu":
             cond_items = SWEETS_COND_ITEMS  # 人物に顔必須 + 食べ物に顔なし
+        elif theme_type == "sea":
+            cond_items = COMMON_COND_ITEMS
         elif theme_type == "insects":
             cond_items = INSECTS_COND_ITEMS
         elif theme_type == "sports":
