@@ -26,7 +26,7 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 pt-8 border-t border-border">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 pt-8 border-t border-border">
           {/* Brand */}
           <div className="col-span-2 md:col-span-2">
             {isAdult ? (
@@ -64,10 +64,9 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
               <li><Link href="/category/theme/dinosaurs" className="hover:text-primary transition-colors">恐竜のぬりえ</Link></li>
               <li><Link href="/category/theme/vehicles" className="hover:text-primary transition-colors">乗り物のぬりえ</Link></li>
               <li><Link href="/category/theme/sea" className="hover:text-primary transition-colors">海の生き物</Link></li>
-              <li><Link href="/category/theme/insects" className="hover:text-primary transition-colors">虫のぬりえ</Link></li>
-              <li><Link href="/category/theme/fruits" className="hover:text-primary transition-colors">食べ物のぬりえ</Link></li>
-              <li><Link href="/maze" className="hover:text-primary transition-colors">めいろプリント</Link></li>
-              <li><Link href="/help/print-on-mobile" className="hover:text-primary transition-colors">スマホからの印刷方法</Link></li>
+              <li><Link href="/category/theme/fairytale" className="hover:text-primary transition-colors">童話・昔話</Link></li>
+              <li><Link href="/category/theme/seasonal-events" className="hover:text-primary transition-colors">季節</Link></li>
+              <li><Link href="/category/theme/gotochi" className="hover:text-primary transition-colors">ご当地</Link></li>
             </ul>
           </div>
 
@@ -91,7 +90,16 @@ export function Footer({ materialCount = 555 }: { materialCount?: number }) {
               <li><Link href="/columns/benefits-of-coloring-for-kids" className="hover:text-primary transition-colors">ぬりえの発達効果</Link></li>
               <li><Link href="/columns/coloring-for-2-year-olds" className="hover:text-primary transition-colors">2歳からのぬりえ</Link></li>
               <li><Link href="/columns" className="hover:text-primary transition-colors">コラム一覧</Link></li>
-              <li className="pt-2"><Link href="/faq" className="hover:text-primary transition-colors">よくある質問</Link></li>
+            </ul>
+          </div>
+
+          {/* ご利用ガイド */}
+          <div>
+            <h3 className="font-rounded text-[13px] font-black mb-3 pb-2 border-b border-border">ご利用ガイド</h3>
+            <ul className="space-y-2 text-[12px] text-muted-foreground">
+              <li><Link href="/help/print-on-mobile" className="hover:text-primary transition-colors">スマホからの印刷</Link></li>
+              <li><Link href="/maze" className="hover:text-primary transition-colors">めいろプリント</Link></li>
+              <li><Link href="/faq" className="hover:text-primary transition-colors">よくある質問</Link></li>
               <li><Link href="/contact" className="hover:text-primary transition-colors">お問い合わせ</Link></li>
             </ul>
           </div>

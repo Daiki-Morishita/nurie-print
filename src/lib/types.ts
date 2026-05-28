@@ -157,7 +157,7 @@ export const THEME_LABELS: Record<Theme, string> = {
   park: '公園・遊具',
   sports: 'スポーツ',
   yokai: '妖怪',
-  'seasonal-events': '季節の行事',
+  'seasonal-events': '季節',
   spring: '春',
   summer: '夏',
   autumn: '秋',
@@ -223,13 +223,15 @@ export const EVENT_LABELS: Record<string, string> = {
  * approved       : レビュー済み・本番使用OK
  * needs_revision : 要修正（差し替え待ち）
  */
-export type ImageStatus = 'placeholder' | 'pending_review' | 'approved' | 'needs_revision'
+export type ImageStatus = 'placeholder' | 'pending_review' | 'approved' | 'needs_revision' | 'duplicate' | 'broken'
 
 export const IMAGE_STATUS_LABELS: Record<ImageStatus, string> = {
   placeholder:    'SVGのみ',
   pending_review: 'レビュー待ち',
   approved:       '承認済み',
   needs_revision: '要修正',
+  duplicate:      '重複（非表示）',
+  broken:         '画像なし',
 }
 
 export const IMAGE_STATUS_COLOR: Record<ImageStatus, string> = {
@@ -237,6 +239,8 @@ export const IMAGE_STATUS_COLOR: Record<ImageStatus, string> = {
   pending_review: 'bg-yellow-100 text-yellow-700',
   approved:       'bg-green-100 text-green-700',
   needs_revision: 'bg-red-100 text-red-700',
+  duplicate:      'bg-orange-100 text-orange-700',
+  broken:         'bg-red-200 text-red-900',
 }
 
 // ========== 教材 ==========
