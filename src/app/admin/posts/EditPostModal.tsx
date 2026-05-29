@@ -5,6 +5,7 @@ import { X, Trash2, Save, Calendar, Send, FileText, Sparkles, Undo2, Loader2 } f
 import type { PostDTO } from './PostsAdmin'
 import { MaterialSuggestInput } from './MaterialSuggestInput'
 import { ImageReorderStrip } from './ImageReorderStrip'
+import { ImageEditModal } from './ImageEditModal'
 import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
@@ -58,6 +59,7 @@ export function EditPostModal({
   const [error, setError] = useState<string | null>(null)
   const [refining, setRefining] = useState(false)
   const [bodyBeforeRefine, setBodyBeforeRefine] = useState<string | null>(null)
+  const [editingId, setEditingId] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
 
   async function refineBody() {
@@ -201,6 +203,34 @@ export function EditPostModal({
     }
   }
 
+  /** 編集モーダルで適用された画像を、該当 PostImage のファイルとして差し替え（id・順序維持） */
+  async function handleEditApply(file: File) {
+    if (!editingId) return
+    const targetId = editingId
+    setEditingId(null)
+    setSaving(true)
+    try {
+      const fd = new FormData()
+      fd.set('imageId', targetId)
+      fd.set('photo', file)
+      const res = await fetch(`/api/admin/posts/${post.id}/images`, { method: 'PUT', body: fd })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok || !data.image) {
+        setError(data.error ?? '画像の差し替えに失敗しました')
+        return
+      }
+      // キャッシュバスターで即時反映
+      const bust = `${data.image.url}${data.image.url.includes('?') ? '&' : '?'}t=${Date.now()}`
+      setImages(imgs => imgs.map(i => (i.id === targetId ? { ...i, url: bust } : i)))
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '差し替えに失敗しました')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const editingImage = images.find(i => i.id === editingId) ?? null
+
   return (
     <div className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center" onClick={onClose}>
       <div className="bg-white w-full sm:max-w-2xl sm:rounded-xl max-h-[95vh] flex flex-col rounded-t-2xl" onClick={e => e.stopPropagation()}>
@@ -228,6 +258,7 @@ export function EditPostModal({
               items={images.map(i => ({ key: i.id, src: i.url }))}
               onReorder={handleReorder}
               onRemove={handleDeletePhoto}
+              onEdit={setEditingId}
               addInputId={addPhotoInputId}
               onAddFiles={handleAddPhotos}
             />
@@ -342,6 +373,14 @@ export function EditPostModal({
           </button>
         </div>
       </div>
+
+      {editingImage && (
+        <ImageEditModal
+          src={editingImage.url}
+          onApply={(file) => handleEditApply(file)}
+          onClose={() => setEditingId(null)}
+        />
+      )}
     </div>
   )
 }
