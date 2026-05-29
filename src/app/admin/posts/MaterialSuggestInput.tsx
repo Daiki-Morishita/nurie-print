@@ -22,6 +22,7 @@ export function MaterialSuggestInput({
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [activeIdx, setActiveIdx] = useState(0)
+  const [lightbox, setLightbox] = useState<{ url: string; title: string } | null>(null)
   const boxRef = useRef<HTMLDivElement>(null)
 
   // value 文字列 → 選択済みID配列（URL・ID両対応、titleMap に存在するもののみ）
@@ -93,9 +94,14 @@ export function MaterialSuggestInput({
                 className="inline-flex items-center gap-2 pl-1 pr-1.5 py-1 bg-white text-foreground rounded-lg text-[12px] border border-green-300 shadow-sm"
               >
                 {thumb ? (
-                  <span className="relative w-10 h-10 rounded overflow-hidden bg-muted shrink-0">
+                  <button
+                    type="button"
+                    onClick={() => setLightbox({ url: thumb, title: titleMap.get(id) ?? '' })}
+                    className="relative w-10 h-10 rounded overflow-hidden bg-muted shrink-0 hover:ring-2 hover:ring-primary"
+                    aria-label={`${titleMap.get(id)} を拡大表示`}
+                  >
                     <Image src={thumb} alt={titleMap.get(id) ?? ''} fill className="object-cover" sizes="40px" unoptimized />
-                  </span>
+                  </button>
                 ) : (
                   <span className="w-10 h-10 rounded bg-muted shrink-0" />
                 )}
@@ -183,6 +189,31 @@ export function MaterialSuggestInput({
           </div>
         )}
       </div>
+
+      {/* サムネ拡大モーダル */}
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-[120] bg-black/70 flex items-center justify-center p-6"
+          onClick={() => setLightbox(null)}
+        >
+          <div className="relative max-w-lg w-full" onClick={e => e.stopPropagation()}>
+            <button
+              type="button"
+              onClick={() => setLightbox(null)}
+              className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-white text-foreground border border-border shadow flex items-center justify-center z-10"
+              aria-label="閉じる"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <div className="bg-white rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-[1.414/1] bg-muted">
+                <Image src={lightbox.url} alt={lightbox.title} fill className="object-contain" sizes="512px" unoptimized />
+              </div>
+              <div className="px-4 py-3 text-center text-sm font-bold">{lightbox.title}</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
