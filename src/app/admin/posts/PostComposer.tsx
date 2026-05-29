@@ -97,16 +97,75 @@ export function PostComposer({
     }
   }, [body])
 
-  function handleFilesAdded(e: React.ChangeEvent<HTMLInputElement>) {
+  async function handleFilesAdded(e: React.ChangeEvent<HTMLInputElement>) {
     const files = Array.from(e.target.files ?? [])
     if (files.length === 0) return
-    const newItems: ImageItem[] = files.map(f => ({
-      uid: uid(),
-      file: f,
-      previewUrl: URL.createObjectURL(f),
-    }))
-    setImages(imgs => [...imgs, ...newItems])
     e.target.value = ''
+    // クライアント側で JPEG 圧縮（HEIC対応・Vercel body 4.5MB 制限対策）
+    const newItems: ImageItem[] = []
+    for (const f of files) {
+      try {
+        const compressed = await compressToJpeg(f, 1600, 0.82)
+        newItems.push({
+          uid: uid(),
+          file: compressed,
+          previewUrl: URL.createObjectURL(compressed),
+        })
+      } catch {
+        // 圧縮失敗（HEICでもなく対応外）は元ファイルをそのまま使う
+        newItems.push({ uid: uid(), file: f, previewUrl: URL.createObjectURL(f) })
+      }
+    }
+    setImages(imgs => [...imgs, ...newItems])
+  }
+
+  /** 画像を 1600px JPEG q=0.82 に圧縮。HEIC は createImageBitmap で iOS Safari 17+ なら解釈可能 */
+  async function compressToJpeg(file: File, maxDim: number, quality: number): Promise<File> {
+    let bitmap: ImageBitmap
+    try {
+      bitmap = await createImageBitmap(file)
+    } catch {
+      // createImageBitmap が HEIC を拒否した場合 → Image element fallback
+      const img = new window.Image()
+      const url = URL.createObjectURL(file)
+      try {
+        await new Promise<void>((resolve, reject) => {
+          img.onload = () => resolve()
+          img.onerror = () => reject(new Error('image decode failed'))
+          img.src = url
+        })
+      } finally {
+        URL.revokeObjectURL(url)
+      }
+      // ImageBitmap 互換オブジェクトとして HTMLImageElement を使う
+      const canvas = document.createElement('canvas')
+      const scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight))
+      canvas.width = Math.round(img.naturalWidth * scale)
+      canvas.height = Math.round(img.naturalHeight * scale)
+      const ctx = canvas.getContext('2d')
+      if (!ctx) throw new Error('ctx unavailable')
+      ctx.fillStyle = '#FFFFFF'
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
+      const blob = await new Promise<Blob>((resolve, reject) =>
+        canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
+      )
+      return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
+    }
+    const canvas = document.createElement('canvas')
+    const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height))
+    canvas.width = Math.round(bitmap.width * scale)
+    canvas.height = Math.round(bitmap.height * scale)
+    const ctx = canvas.getContext('2d')
+    if (!ctx) throw new Error('ctx unavailable')
+    ctx.fillStyle = '#FFFFFF'
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height)
+    bitmap.close()
+    const blob = await new Promise<Blob>((resolve, reject) =>
+      canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
+    )
+    return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
   }
 
   function removeImage(uid: string) {
@@ -162,8 +221,22 @@ export function PostComposer({
 
     try {
       const res = await fetch('/api/admin/posts', { method: 'POST', body: fd })
-      const data = await res.json()
-      if (!res.ok) {
+      // 413 Request Entity Too Large 等で Vercel が HTML/text を返した場合、JSON.parse は失敗する
+      const text = await res.text()
+      let data: { ok?: boolean; error?: string; post?: { id: string; publishedAt: string | null; createdAt: string; updatedAt: string; title: string | null; body: string; materialIds: string[]; images: { id: string; url: string; order: number }[] } } = {}
+      try {
+        data = JSON.parse(text)
+      } catch {
+        // JSON でない = サーバーがエラーレスポンス（413 等）
+        if (res.status === 413 || /entity too large/i.test(text)) {
+          onError('画像のサイズが大きすぎます。枚数を減らすか、画像を別途圧縮してください')
+        } else {
+          onError(`サーバーエラー (${res.status})`)
+        }
+        setSubmitting(null)
+        return
+      }
+      if (!res.ok || !data.post) {
         onError(data.error ?? '投稿に失敗しました')
         setSubmitting(null)
         return
