@@ -1,10 +1,11 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Image from 'next/image'
-import { Plus, X, Send, FileText, Calendar, Loader2 } from 'lucide-react'
+import { Plus, Send, FileText, Calendar, Loader2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
 import { MaterialSuggestInput } from './MaterialSuggestInput'
+import { ImageReorderStrip } from './ImageReorderStrip'
+import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
 
@@ -66,9 +67,6 @@ export function PostComposer({
   const [showSchedulePicker, setShowSchedulePicker] = useState(false)
   const [submitting, setSubmitting] = useState<'draft' | 'publish' | 'schedule' | null>(null)
   const [processing, setProcessing] = useState(false)
-  const [dragUid, setDragUid] = useState<string | null>(null)
-  const [dropIndex, setDropIndex] = useState<number | null>(null)
-  const scrollerRef = useRef<HTMLDivElement>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
   const fileInputId = 'composer-photos'
 
@@ -127,127 +125,16 @@ export function PostComposer({
     setProcessing(false)
   }
 
-  /** HEIC を JPEG に変換（heic2any を dynamic import で必要時のみロード） */
-  async function convertHeicToJpeg(file: File): Promise<File> {
-    const looksHeic = /heic|heif/i.test(file.type) || /\.(heic|heif)$/i.test(file.name)
-    if (!looksHeic) return file
-    const mod = await import('heic2any')
-    const heic2any = mod.default
-    const out = await heic2any({ blob: file, toType: 'image/jpeg', quality: 0.92 })
-    const blob = Array.isArray(out) ? out[0] : out
-    return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
-  }
-
-  /** 画像を 1600px JPEG q=0.82 に圧縮。HEIC は heic2any 経由で JPEG 化してから処理。 */
-  async function compressToJpeg(file: File, maxDim: number, quality: number): Promise<File> {
-    // 先に HEIC → JPEG に変換しておく（Chrome/Firefox は HEIC をデコードできない）
-    const workFile = await convertHeicToJpeg(file)
-    let bitmap: ImageBitmap
-    try {
-      bitmap = await createImageBitmap(workFile)
-    } catch {
-      // createImageBitmap が失敗した場合 → Image element fallback
-      const img = new window.Image()
-      const url = URL.createObjectURL(workFile)
-      try {
-        await new Promise<void>((resolve, reject) => {
-          img.onload = () => resolve()
-          img.onerror = () => reject(new Error('image decode failed'))
-          img.src = url
-        })
-      } finally {
-        URL.revokeObjectURL(url)
-      }
-      const canvas = document.createElement('canvas')
-      const scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight))
-      canvas.width = Math.round(img.naturalWidth * scale)
-      canvas.height = Math.round(img.naturalHeight * scale)
-      const ctx = canvas.getContext('2d')
-      if (!ctx) throw new Error('ctx unavailable')
-      ctx.fillStyle = '#FFFFFF'
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
-      const blob = await new Promise<Blob>((resolve, reject) =>
-        canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
-      )
-      return new File([blob], workFile.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
-    }
-    const canvas = document.createElement('canvas')
-    const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height))
-    canvas.width = Math.round(bitmap.width * scale)
-    canvas.height = Math.round(bitmap.height * scale)
-    const ctx = canvas.getContext('2d')
-    if (!ctx) throw new Error('ctx unavailable')
-    ctx.fillStyle = '#FFFFFF'
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
-    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height)
-    bitmap.close()
-    const blob = await new Promise<Blob>((resolve, reject) =>
-      canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
-    )
-    return new File([blob], workFile.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
-  }
-
   function removeImage(uid: string) {
     setImages(imgs => imgs.filter(i => i.uid !== uid))
   }
 
-  function moveImage(uid: string, direction: -1 | 1) {
+  /** ImageReorderStrip から受け取った uid 順で images を並べ替え */
+  function reorderImages(orderedKeys: string[]) {
     setImages(imgs => {
-      const idx = imgs.findIndex(i => i.uid === uid)
-      if (idx === -1) return imgs
-      const newIdx = idx + direction
-      if (newIdx < 0 || newIdx >= imgs.length) return imgs
-      const next = [...imgs]
-      ;[next[idx], next[newIdx]] = [next[newIdx], next[idx]]
-      return next
+      const byUid = new Map(imgs.map(i => [i.uid, i]))
+      return orderedKeys.map(k => byUid.get(k)).filter((x): x is ImageItem => !!x)
     })
-  }
-
-  /** ドラッグ元 uid を挿入位置 index（0..length のギャップ）へ移動 */
-  function reorderToGap(fromUid: string, gapIndex: number) {
-    setImages(imgs => {
-      const from = imgs.findIndex(i => i.uid === fromUid)
-      if (from === -1) return imgs
-      const next = [...imgs]
-      const [moved] = next.splice(from, 1)
-      // 要素削除で from より後ろのギャップは左に1つズレる
-      const to = from < gapIndex ? gapIndex - 1 : gapIndex
-      next.splice(to, 0, moved)
-      return next
-    })
-  }
-
-  /** ポインタ X 座標から、カード間のどのギャップ(0..length)に落ちるか算出 */
-  function computeGapIndex(clientX: number): number {
-    const scroller = scrollerRef.current
-    if (!scroller) return 0
-    const cards = Array.from(scroller.querySelectorAll<HTMLElement>('[data-card]'))
-    let gap = 0
-    for (const card of cards) {
-      const rect = card.getBoundingClientRect()
-      if (clientX > rect.left + rect.width / 2) gap++
-      else break
-    }
-    return gap
-  }
-
-  function handlePointerDown(uid: string, e: React.PointerEvent) {
-    // ボタン（削除・矢印）上では発火させない
-    if ((e.target as HTMLElement).closest('button')) return
-    setDragUid(uid)
-    setDropIndex(images.findIndex(i => i.uid === uid))
-    try { (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId) } catch {}
-  }
-  function handlePointerMove(e: React.PointerEvent) {
-    if (!dragUid) return
-    e.preventDefault()
-    setDropIndex(computeGapIndex(e.clientX))
-  }
-  function handlePointerUp() {
-    if (dragUid && dropIndex !== null) reorderToGap(dragUid, dropIndex)
-    setDragUid(null)
-    setDropIndex(null)
   }
 
   function resetForm() {
@@ -329,59 +216,19 @@ export function PostComposer({
       <div className="mb-4">
         {images.length > 0 && (
           <>
-            <p className="text-[11px] text-muted-foreground mb-1.5">画像を長押し（またはドラッグ）して、入れたい位置へ移動できます</p>
-            <div
-              ref={scrollerRef}
-              className="flex items-stretch overflow-x-auto pb-2 mb-2 -mx-1 px-1"
-              onPointerMove={handlePointerMove}
-              onPointerUp={handlePointerUp}
-              onPointerCancel={handlePointerUp}
-            >
-              {images.map((img, idx) => (
-                <div key={img.uid} className="flex items-stretch">
-                  {/* 挿入インジケータ（このカードの左ギャップ = index idx） */}
-                  <div className={`w-0.5 self-stretch my-0.5 rounded-full mx-1 transition-colors ${
-                    dragUid && dropIndex === idx ? 'bg-primary' : 'bg-transparent'
-                  }`} />
-                  <div
-                    data-card
-                    onPointerDown={e => handlePointerDown(img.uid, e)}
-                    style={{ touchAction: 'none' }}
-                    className={`relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border bg-muted group cursor-grab active:cursor-grabbing select-none transition-opacity ${
-                      dragUid === img.uid ? 'opacity-30' : 'border-border'
-                    }`}
-                  >
-                    <Image src={img.previewUrl} alt="" fill className="object-cover pointer-events-none" unoptimized />
-                    <button
-                      type="button"
-                      onClick={() => removeImage(img.uid)}
-                      className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
-                      aria-label="削除"
-                    >
-                      <X className="w-3 h-3" />
-                    </button>
-                    {idx > 0 && (
-                      <button type="button" onClick={() => moveImage(img.uid, -1)} className="absolute bottom-1 left-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">←</button>
-                    )}
-                    {idx < images.length - 1 && (
-                      <button type="button" onClick={() => moveImage(img.uid, 1)} className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">→</button>
-                    )}
-                    <div className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-bold rounded px-1.5 py-0.5">{idx + 1}</div>
-                  </div>
-                  {/* 末尾ギャップ（最後のカードの右 = index length） */}
-                  {idx === images.length - 1 && (
-                    <div className={`w-0.5 self-stretch my-0.5 rounded-full mx-1 transition-colors ${
-                      dragUid && dropIndex === images.length ? 'bg-primary' : 'bg-transparent'
-                    }`} />
-                  )}
-                </div>
-              ))}
-            </div>
+            <p className="text-[11px] text-muted-foreground mb-1.5">
+              ドラッグで並べ替え（落ちる位置に縦線が出ます）・タップで拡大
+            </p>
+            <ImageReorderStrip
+              items={images.map(i => ({ key: i.uid, src: i.previewUrl }))}
+              onReorder={reorderImages}
+              onRemove={removeImage}
+            />
           </>
         )}
         <label
           htmlFor={fileInputId}
-          className={`flex items-center justify-center gap-2 border-2 border-dashed rounded-lg py-3 transition-colors text-sm ${
+          className={`mt-2 flex items-center justify-center gap-2 border-2 border-dashed rounded-lg py-3 transition-colors text-sm ${
             processing
               ? 'border-blue-300 bg-blue-50 text-blue-700 cursor-wait'
               : 'border-border cursor-pointer hover:border-primary hover:bg-muted/30'
@@ -395,7 +242,7 @@ export function PostComposer({
           ) : (
             <>
               <Plus className="w-4 h-4" />
-              <span>写真を追加（複数OK・並びは矢印で変更）</span>
+              <span>写真を追加（複数OK）</span>
             </>
           )}
         </label>

@@ -1,10 +1,11 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { X, Trash2, Save, Plus, Calendar, Send, FileText } from 'lucide-react'
+import { X, Trash2, Save, Calendar, Send, FileText } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
 import { MaterialSuggestInput } from './MaterialSuggestInput'
+import { ImageReorderStrip } from './ImageReorderStrip'
+import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
 
@@ -121,11 +122,18 @@ export function EditPostModal({
     e.target.value = ''
     setSaving(true)
     const fd = new FormData()
-    files.forEach(f => fd.append('photos', f))
+    // クライアント側で HEIC→JPEG + 圧縮（413・サムネ非表示対策）
+    for (const f of files) {
+      try {
+        fd.append('photos', await compressToJpeg(f))
+      } catch {
+        fd.append('photos', f)
+      }
+    }
     const res = await fetch(`/api/admin/posts/${post.id}/images`, { method: 'POST', body: fd })
     setSaving(false)
     if (!res.ok) {
-      const data = await res.json()
+      const data = await res.json().catch(() => ({}))
       setError(data.error ?? '画像追加に失敗しました')
       return
     }
@@ -144,6 +152,24 @@ export function EditPostModal({
     setImages(imgs => imgs.filter(i => i.id !== imageId))
   }
 
+  /** ドラッグ並べ替え → 即座にUI反映 + order を API に保存 */
+  async function handleReorder(orderedKeys: string[]) {
+    const byId = new Map(images.map(i => [i.id, i]))
+    const reordered = orderedKeys.map(k => byId.get(k)).filter((x): x is typeof images[number] => !!x)
+    setImages(reordered)
+    const orderMap: Record<string, number> = {}
+    reordered.forEach((img, i) => { orderMap[img.id] = i })
+    const res = await fetch(`/api/admin/posts/${post.id}/images`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ order: orderMap }),
+    })
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}))
+      setError(data.error ?? '並べ替えの保存に失敗しました')
+    }
+  }
+
   return (
     <div className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center" onClick={onClose}>
       <div className="bg-white w-full sm:max-w-2xl sm:rounded-xl max-h-[95vh] flex flex-col rounded-t-2xl" onClick={e => e.stopPropagation()}>
@@ -159,28 +185,21 @@ export function EditPostModal({
             <div className="p-2.5 bg-red-50 border border-red-300 text-red-800 rounded text-xs">{error}</div>
           )}
 
-          {/* 画像管理 */}
+          {/* 画像管理 — ドラッグ並べ替え + タップ拡大 */}
           <div>
-            <label className="text-xs font-bold text-muted-foreground block mb-2">画像（{images.length}枚）</label>
-            <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
-              {images.map(img => (
-                <div key={img.id} className="relative shrink-0 w-24 h-24 rounded-lg overflow-hidden border border-border bg-muted">
-                  <Image src={img.url} alt="" fill className="object-cover" unoptimized />
-                  <button
-                    type="button"
-                    onClick={() => handleDeletePhoto(img.id)}
-                    className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
-                    aria-label="削除"
-                  >
-                    <X className="w-3 h-3" />
-                  </button>
-                </div>
-              ))}
-              <label htmlFor={addPhotoInputId} className="shrink-0 w-24 h-24 rounded-lg border-2 border-dashed border-border bg-muted/50 flex items-center justify-center cursor-pointer hover:border-primary">
-                <Plus className="w-5 h-5 text-muted-foreground" />
-              </label>
-              <input id={addPhotoInputId} type="file" multiple accept="image/*" onChange={handleAddPhotos} className="hidden" />
-            </div>
+            <label className="text-xs font-bold text-muted-foreground block mb-1">画像（{images.length}枚）</label>
+            {images.length > 0 && (
+              <p className="text-[11px] text-muted-foreground mb-1.5">
+                ドラッグで並べ替え（落ちる位置に縦線）・タップで拡大
+              </p>
+            )}
+            <ImageReorderStrip
+              items={images.map(i => ({ key: i.id, src: i.url }))}
+              onReorder={handleReorder}
+              onRemove={handleDeletePhoto}
+              addInputId={addPhotoInputId}
+              onAddFiles={handleAddPhotos}
+            />
           </div>
 
           {/* タイトル */}
