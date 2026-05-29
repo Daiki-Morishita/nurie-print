@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react'
 import Image from 'next/image'
-import { X, Plus } from 'lucide-react'
+import { X, Plus, Pencil } from 'lucide-react'
 
 export type StripItem = { key: string; src: string }
 
@@ -16,6 +16,7 @@ export function ImageReorderStrip({
   items,
   onReorder,
   onRemove,
+  onEdit,
   addInputId,
   onAddFiles,
   addLabel,
@@ -23,6 +24,8 @@ export function ImageReorderStrip({
   items: StripItem[]
   onReorder: (orderedKeys: string[]) => void
   onRemove: (key: string) => void
+  /** 指定時、各カードに鉛筆ボタンを表示し編集を起動 */
+  onEdit?: (key: string) => void
   /** 追加用 file input の id（指定時のみ「+」追加ボタンを表示） */
   addInputId?: string
   onAddFiles?: (e: React.ChangeEvent<HTMLInputElement>) => void
@@ -118,6 +121,16 @@ export function ImageReorderStrip({
               >
                 <X className="w-3 h-3" />
               </button>
+              {onEdit && (
+                <button
+                  type="button"
+                  onClick={() => onEdit(item.key)}
+                  className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
+                  aria-label="編集"
+                >
+                  <Pencil className="w-3 h-3" />
+                </button>
+              )}
               <div className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-bold rounded px-1.5 py-0.5">{idx + 1}</div>
             </div>
             {/* 末尾ギャップ（最後のカードの右 = length） */}

@@ -5,6 +5,7 @@ import { Plus, Send, FileText, Calendar, Loader2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
 import { MaterialSuggestInput } from './MaterialSuggestInput'
 import { ImageReorderStrip } from './ImageReorderStrip'
+import { ImageEditModal } from './ImageEditModal'
 import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
@@ -67,6 +68,7 @@ export function PostComposer({
   const [showSchedulePicker, setShowSchedulePicker] = useState(false)
   const [submitting, setSubmitting] = useState<'draft' | 'publish' | 'schedule' | null>(null)
   const [processing, setProcessing] = useState(false)
+  const [editingUid, setEditingUid] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
   const fileInputId = 'composer-photos'
 
@@ -136,6 +138,18 @@ export function PostComposer({
       return orderedKeys.map(k => byUid.get(k)).filter((x): x is ImageItem => !!x)
     })
   }
+
+  /** 編集モーダルで適用された画像で差し替え（同じ uid を維持して順序保持） */
+  function applyEdit(uid: string, file: File, previewUrl: string) {
+    setImages(imgs => imgs.map(i => {
+      if (i.uid !== uid) return i
+      URL.revokeObjectURL(i.previewUrl)
+      return { ...i, file, previewUrl }
+    }))
+    setEditingUid(null)
+  }
+
+  const editingImage = images.find(i => i.uid === editingUid) ?? null
 
   function resetForm() {
     setImages([])
@@ -223,6 +237,7 @@ export function PostComposer({
               items={images.map(i => ({ key: i.uid, src: i.previewUrl }))}
               onReorder={reorderImages}
               onRemove={removeImage}
+              onEdit={setEditingUid}
             />
           </>
         )}
@@ -340,6 +355,14 @@ export function PostComposer({
           すぐ公開
         </button>
       </div>
+
+      {editingImage && (
+        <ImageEditModal
+          src={editingImage.previewUrl}
+          onApply={(file, previewUrl) => applyEdit(editingImage.uid, file, previewUrl)}
+          onClose={() => setEditingUid(null)}
+        />
+      )}
     </section>
   )
 }

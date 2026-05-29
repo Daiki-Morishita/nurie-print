@@ -42,11 +42,11 @@ export function PostCarousel({
         className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none rounded-xl"
         style={{ scrollbarWidth: 'none' }}
       >
-        {images.map(img => (
+        {images.map((img, i) => (
           <div key={img.id} className={`relative shrink-0 w-full ${aspectClass} snap-center bg-muted`}>
             <Image
               src={img.url}
-              alt={alt}
+              alt={images.length > 1 && alt ? `${alt}（${i + 1}枚目）` : alt}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 800px"
