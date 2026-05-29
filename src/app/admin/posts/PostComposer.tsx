@@ -62,6 +62,7 @@ export function PostComposer({
   const [scheduledAt, setScheduledAt] = useState('') // datetime-local 形式
   const [showSchedulePicker, setShowSchedulePicker] = useState(false)
   const [submitting, setSubmitting] = useState<'draft' | 'publish' | 'schedule' | null>(null)
+  const [processing, setProcessing] = useState(false)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
   const fileInputId = 'composer-photos'
 
@@ -101,6 +102,7 @@ export function PostComposer({
     const files = Array.from(e.target.files ?? [])
     if (files.length === 0) return
     e.target.value = ''
+    setProcessing(true)
     // クライアント側で JPEG 圧縮（HEIC対応・Vercel body 4.5MB 制限対策）
     const newItems: ImageItem[] = []
     for (const f of files) {
@@ -112,22 +114,35 @@ export function PostComposer({
           previewUrl: URL.createObjectURL(compressed),
         })
       } catch {
-        // 圧縮失敗（HEICでもなく対応外）は元ファイルをそのまま使う
         newItems.push({ uid: uid(), file: f, previewUrl: URL.createObjectURL(f) })
       }
     }
     setImages(imgs => [...imgs, ...newItems])
+    setProcessing(false)
   }
 
-  /** 画像を 1600px JPEG q=0.82 に圧縮。HEIC は createImageBitmap で iOS Safari 17+ なら解釈可能 */
+  /** HEIC を JPEG に変換（heic2any を dynamic import で必要時のみロード） */
+  async function convertHeicToJpeg(file: File): Promise<File> {
+    const looksHeic = /heic|heif/i.test(file.type) || /\.(heic|heif)$/i.test(file.name)
+    if (!looksHeic) return file
+    const mod = await import('heic2any')
+    const heic2any = mod.default
+    const out = await heic2any({ blob: file, toType: 'image/jpeg', quality: 0.92 })
+    const blob = Array.isArray(out) ? out[0] : out
+    return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
+  }
+
+  /** 画像を 1600px JPEG q=0.82 に圧縮。HEIC は heic2any 経由で JPEG 化してから処理。 */
   async function compressToJpeg(file: File, maxDim: number, quality: number): Promise<File> {
+    // 先に HEIC → JPEG に変換しておく（Chrome/Firefox は HEIC をデコードできない）
+    const workFile = await convertHeicToJpeg(file)
     let bitmap: ImageBitmap
     try {
-      bitmap = await createImageBitmap(file)
+      bitmap = await createImageBitmap(workFile)
     } catch {
-      // createImageBitmap が HEIC を拒否した場合 → Image element fallback
+      // createImageBitmap が失敗した場合 → Image element fallback
       const img = new window.Image()
-      const url = URL.createObjectURL(file)
+      const url = URL.createObjectURL(workFile)
       try {
         await new Promise<void>((resolve, reject) => {
           img.onload = () => resolve()
@@ -137,7 +152,6 @@ export function PostComposer({
       } finally {
         URL.revokeObjectURL(url)
       }
-      // ImageBitmap 互換オブジェクトとして HTMLImageElement を使う
       const canvas = document.createElement('canvas')
       const scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight))
       canvas.width = Math.round(img.naturalWidth * scale)
@@ -150,7 +164,7 @@ export function PostComposer({
       const blob = await new Promise<Blob>((resolve, reject) =>
         canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
       )
-      return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
+      return new File([blob], workFile.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
     }
     const canvas = document.createElement('canvas')
     const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height))
@@ -165,7 +179,7 @@ export function PostComposer({
     const blob = await new Promise<Blob>((resolve, reject) =>
       canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', quality),
     )
-    return new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
+    return new File([blob], workFile.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' })
   }
 
   function removeImage(uid: string) {
@@ -287,16 +301,30 @@ export function PostComposer({
         )}
         <label
           htmlFor={fileInputId}
-          className="flex items-center justify-center gap-2 border-2 border-dashed border-border rounded-lg py-3 cursor-pointer hover:border-primary hover:bg-muted/30 transition-colors text-sm"
+          className={`flex items-center justify-center gap-2 border-2 border-dashed rounded-lg py-3 transition-colors text-sm ${
+            processing
+              ? 'border-blue-300 bg-blue-50 text-blue-700 cursor-wait'
+              : 'border-border cursor-pointer hover:border-primary hover:bg-muted/30'
+          }`}
         >
-          <Plus className="w-4 h-4" />
-          <span>写真を追加（複数OK・並びは矢印で変更）</span>
+          {processing ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span>変換中… (HEICはJPEGに変換しています)</span>
+            </>
+          ) : (
+            <>
+              <Plus className="w-4 h-4" />
+              <span>写真を追加（複数OK・並びは矢印で変更）</span>
+            </>
+          )}
         </label>
         <input
           id={fileInputId}
           type="file"
-          accept="image/*"
+          accept="image/*,.heic,.heif"
           multiple
+          disabled={processing}
           onChange={handleFilesAdded}
           className="hidden"
         />
