@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useRef, useEffect } from 'react'
+import Image from 'next/image'
 import { X, Search } from 'lucide-react'
 import { normalizeQuery, normalizeText } from '@/lib/utils'
 
@@ -9,10 +10,12 @@ type Option = { id: string; title: string }
 /** value は space 区切りの素材ID文字列。onChange で同形式を返す（既存の submit ロジックと互換）。 */
 export function MaterialSuggestInput({
   titleMap,
+  imageMap,
   value,
   onChange,
 }: {
   titleMap: Map<string, string>
+  imageMap?: Map<string, string>
   value: string
   onChange: (v: string) => void
 }) {
@@ -79,25 +82,35 @@ export function MaterialSuggestInput({
 
   return (
     <div ref={boxRef} className="relative">
-      {/* 選択済みチップ */}
+      {/* 選択済みチップ（サムネ付き） */}
       {selectedIds.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 mb-2">
-          {selectedIds.map(id => (
-            <span
-              key={id}
-              className="inline-flex items-center gap-1 pl-2.5 pr-1 py-1 bg-green-50 text-green-800 rounded-full text-[12px] border border-green-200"
-            >
-              {titleMap.get(id)}
-              <button
-                type="button"
-                onClick={() => removeId(id)}
-                className="w-4 h-4 flex items-center justify-center rounded-full hover:bg-green-200"
-                aria-label={`${titleMap.get(id)} を削除`}
+        <div className="flex flex-wrap gap-2 mb-3">
+          {selectedIds.map(id => {
+            const thumb = imageMap?.get(id)
+            return (
+              <span
+                key={id}
+                className="inline-flex items-center gap-2 pl-1 pr-1.5 py-1 bg-white text-foreground rounded-lg text-[12px] border border-green-300 shadow-sm"
               >
-                <X className="w-3 h-3" />
-              </button>
-            </span>
-          ))}
+                {thumb ? (
+                  <span className="relative w-10 h-10 rounded overflow-hidden bg-muted shrink-0">
+                    <Image src={thumb} alt={titleMap.get(id) ?? ''} fill className="object-cover" sizes="40px" unoptimized />
+                  </span>
+                ) : (
+                  <span className="w-10 h-10 rounded bg-muted shrink-0" />
+                )}
+                <span className="max-w-[140px] truncate font-medium">{titleMap.get(id)}</span>
+                <button
+                  type="button"
+                  onClick={() => removeId(id)}
+                  className="w-5 h-5 flex items-center justify-center rounded-full text-muted-foreground hover:bg-red-50 hover:text-red-600 shrink-0"
+                  aria-label={`${titleMap.get(id)} を削除`}
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </span>
+            )
+          })}
         </div>
       )}
 
@@ -133,24 +146,34 @@ export function MaterialSuggestInput({
 
         {open && suggestions.length > 0 && (
           <ul className="absolute z-30 left-0 right-0 mt-1 bg-white border border-border rounded-lg shadow-lg max-h-64 overflow-y-auto">
-            {suggestions.map((o, i) => (
-              <li key={o.id}>
-                <button
-                  type="button"
-                  onMouseDown={e => {
-                    e.preventDefault()
-                    addId(o.id)
-                  }}
-                  onMouseEnter={() => setActiveIdx(i)}
-                  className={`w-full text-left px-3 py-2.5 flex items-center justify-between gap-2 ${
-                    i === activeIdx ? 'bg-primary/10' : 'hover:bg-muted'
-                  }`}
-                >
-                  <span className="text-sm truncate">{o.title}</span>
-                  <span className="text-[10px] text-muted-foreground font-mono truncate shrink-0">{o.id}</span>
-                </button>
-              </li>
-            ))}
+            {suggestions.map((o, i) => {
+              const thumb = imageMap?.get(o.id)
+              return (
+                <li key={o.id}>
+                  <button
+                    type="button"
+                    onMouseDown={e => {
+                      e.preventDefault()
+                      addId(o.id)
+                    }}
+                    onMouseEnter={() => setActiveIdx(i)}
+                    className={`w-full text-left px-2.5 py-2 flex items-center gap-2.5 ${
+                      i === activeIdx ? 'bg-primary/10' : 'hover:bg-muted'
+                    }`}
+                  >
+                    {thumb ? (
+                      <span className="relative w-9 h-9 rounded overflow-hidden bg-muted shrink-0">
+                        <Image src={thumb} alt="" fill className="object-cover" sizes="36px" unoptimized />
+                      </span>
+                    ) : (
+                      <span className="w-9 h-9 rounded bg-muted shrink-0" />
+                    )}
+                    <span className="text-sm truncate flex-1">{o.title}</span>
+                    <span className="text-[10px] text-muted-foreground font-mono truncate shrink-0 max-w-[120px]">{o.id}</span>
+                  </button>
+                </li>
+              )
+            })}
           </ul>
         )}
 

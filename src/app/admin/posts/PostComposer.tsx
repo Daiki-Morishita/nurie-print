@@ -48,11 +48,13 @@ function resolveMaterialIds(input: string, titleMap: Map<string, string>): { ids
 export function PostComposer({
   featuredOptions: _featuredOptions,
   titleMap,
+  imageMap,
   onCreated,
   onError,
 }: {
   featuredOptions: Option[]
   titleMap: Map<string, string>
+  imageMap?: Map<string, string>
   onCreated: (post: PostDTO) => void
   onError: (msg: string) => void
 }) {
@@ -64,6 +66,8 @@ export function PostComposer({
   const [showSchedulePicker, setShowSchedulePicker] = useState(false)
   const [submitting, setSubmitting] = useState<'draft' | 'publish' | 'schedule' | null>(null)
   const [processing, setProcessing] = useState(false)
+  const [dragUid, setDragUid] = useState<string | null>(null)
+  const [dragOverUid, setDragOverUid] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
   const fileInputId = 'composer-photos'
 
@@ -199,6 +203,20 @@ export function PostComposer({
     })
   }
 
+  /** ドラッグ元 uid をドロップ先 uid の位置へ移動 */
+  function reorderByDrag(fromUid: string, toUid: string) {
+    if (fromUid === toUid) return
+    setImages(imgs => {
+      const from = imgs.findIndex(i => i.uid === fromUid)
+      const to = imgs.findIndex(i => i.uid === toUid)
+      if (from === -1 || to === -1) return imgs
+      const next = [...imgs]
+      const [moved] = next.splice(from, 1)
+      next.splice(to, 0, moved)
+      return next
+    })
+  }
+
   function resetForm() {
     setImages([])
     setTitle('')
@@ -277,28 +295,46 @@ export function PostComposer({
       {/* 画像 */}
       <div className="mb-4">
         {images.length > 0 && (
-          <div className="flex gap-2 overflow-x-auto pb-2 mb-2 -mx-1 px-1">
-            {images.map((img, idx) => (
-              <div key={img.uid} className="relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border border-border bg-muted group">
-                <Image src={img.previewUrl} alt="" fill className="object-cover" unoptimized />
-                <button
-                  type="button"
-                  onClick={() => removeImage(img.uid)}
-                  className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
-                  aria-label="削除"
+          <>
+            <p className="text-[11px] text-muted-foreground mb-1.5">ドラッグで並べ替え（スマホは矢印ボタン）</p>
+            <div className="flex gap-2 overflow-x-auto pb-2 mb-2 -mx-1 px-1">
+              {images.map((img, idx) => (
+                <div
+                  key={img.uid}
+                  draggable
+                  onDragStart={() => setDragUid(img.uid)}
+                  onDragEnd={() => { setDragUid(null); setDragOverUid(null) }}
+                  onDragOver={e => { e.preventDefault(); if (dragOverUid !== img.uid) setDragOverUid(img.uid) }}
+                  onDrop={e => {
+                    e.preventDefault()
+                    if (dragUid) reorderByDrag(dragUid, img.uid)
+                    setDragUid(null)
+                    setDragOverUid(null)
+                  }}
+                  className={`relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border bg-muted group cursor-grab active:cursor-grabbing transition-all ${
+                    dragUid === img.uid ? 'opacity-40' : ''
+                  } ${dragOverUid === img.uid && dragUid !== img.uid ? 'border-primary border-2 ring-2 ring-primary/30' : 'border-border'}`}
                 >
-                  <X className="w-3 h-3" />
-                </button>
-                {idx > 0 && (
-                  <button type="button" onClick={() => moveImage(img.uid, -1)} className="absolute bottom-1 left-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">←</button>
-                )}
-                {idx < images.length - 1 && (
-                  <button type="button" onClick={() => moveImage(img.uid, 1)} className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">→</button>
-                )}
-                <div className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-bold rounded px-1.5 py-0.5">{idx + 1}</div>
-              </div>
-            ))}
-          </div>
+                  <Image src={img.previewUrl} alt="" fill className="object-cover pointer-events-none" unoptimized />
+                  <button
+                    type="button"
+                    onClick={() => removeImage(img.uid)}
+                    className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
+                    aria-label="削除"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
+                  {idx > 0 && (
+                    <button type="button" onClick={() => moveImage(img.uid, -1)} className="absolute bottom-1 left-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">←</button>
+                  )}
+                  {idx < images.length - 1 && (
+                    <button type="button" onClick={() => moveImage(img.uid, 1)} className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">→</button>
+                  )}
+                  <div className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-bold rounded px-1.5 py-0.5">{idx + 1}</div>
+                </div>
+              ))}
+            </div>
+          </>
         )}
         <label
           htmlFor={fileInputId}
@@ -355,7 +391,7 @@ export function PostComposer({
         <label className="text-xs font-bold text-muted-foreground block mb-1">
           関連する塗り絵（任意・タイトルで検索して追加）
         </label>
-        <MaterialSuggestInput titleMap={titleMap} value={materialUrls} onChange={setMaterialUrls} />
+        <MaterialSuggestInput titleMap={titleMap} imageMap={imageMap} value={materialUrls} onChange={setMaterialUrls} />
       </div>
 
       {/* 予約日時 */}

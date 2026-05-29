@@ -35,6 +35,7 @@ export function EditPostModal({
   post,
   featuredOptions: _featuredOptions,
   titleMap,
+  imageMap,
   onClose,
   onUpdate,
   onDelete,
@@ -42,6 +43,7 @@ export function EditPostModal({
   post: PostDTO
   featuredOptions: Option[]
   titleMap: Map<string, string>
+  imageMap?: Map<string, string>
   onClose: () => void
   onUpdate: (p: PostDTO) => void
   onDelete: (id: string) => void
@@ -210,7 +212,7 @@ export function EditPostModal({
             <label className="text-xs font-bold text-muted-foreground block mb-1">
               関連する塗り絵（タイトルで検索して追加）
             </label>
-            <MaterialSuggestInput titleMap={titleMap} value={materialUrls} onChange={setMaterialUrls} />
+            <MaterialSuggestInput titleMap={titleMap} imageMap={imageMap} value={materialUrls} onChange={setMaterialUrls} />
           </div>
 
           {/* 公開日時 */}

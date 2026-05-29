@@ -20,6 +20,10 @@ export default async function PostsAdminPage() {
     .filter(m => m.featured)
     .map(m => ({ id: m.id, title: m.title }))
   const allMaterialTitles = new Map(materials.map(m => [m.id, m.title]))
+  // サジェストのサムネ表示用: id → imageUrl
+  const allMaterialImages = materials
+    .filter(m => m.imageUrl)
+    .map(m => [m.id, m.imageUrl] as [string, string])
 
   const posts = await listAllPostsForAdmin(200)
 
@@ -27,6 +31,7 @@ export default async function PostsAdminPage() {
     <PostsAdmin
       featuredOptions={featuredOptions}
       allMaterialTitles={Array.from(allMaterialTitles.entries())}
+      allMaterialImages={allMaterialImages}
       initialPosts={posts.map(p => ({
         ...p,
         publishedAt: p.publishedAt?.toISOString() ?? null,
