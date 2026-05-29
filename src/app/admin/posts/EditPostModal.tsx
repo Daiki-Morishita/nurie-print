@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { X, Trash2, Save, Calendar, Send, FileText } from 'lucide-react'
+import { X, Trash2, Save, Calendar, Send, FileText, Sparkles, Undo2, Loader2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
 import { MaterialSuggestInput } from './MaterialSuggestInput'
 import { ImageReorderStrip } from './ImageReorderStrip'
@@ -56,7 +56,38 @@ export function EditPostModal({
   const [images, setImages] = useState(post.images)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [refining, setRefining] = useState(false)
+  const [bodyBeforeRefine, setBodyBeforeRefine] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
+
+  async function refineBody() {
+    if (!body.trim() || refining) return
+    setRefining(true)
+    setError(null)
+    try {
+      const res = await fetch('/api/admin/posts/refine-body', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ body, title }),
+      })
+      const data = await res.json()
+      if (!res.ok || !data.refined) {
+        setError(data.error ?? '整形に失敗しました')
+        return
+      }
+      setBodyBeforeRefine(body)
+      setBody(data.refined)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '整形に失敗しました')
+    } finally {
+      setRefining(false)
+    }
+  }
+  function undoRefine() {
+    if (bodyBeforeRefine === null) return
+    setBody(bodyBeforeRefine)
+    setBodyBeforeRefine(null)
+  }
   const addPhotoInputId = `add-photo-${post.id}`
 
   useEffect(() => {
@@ -215,16 +246,38 @@ export function EditPostModal({
           </label>
 
           {/* 本文 */}
-          <label className="block">
-            <span className="text-xs font-bold text-muted-foreground">本文</span>
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs font-bold text-muted-foreground">本文</span>
+              <div className="flex items-center gap-2">
+                {bodyBeforeRefine !== null && (
+                  <button
+                    type="button"
+                    onClick={undoRefine}
+                    className="inline-flex items-center gap-1 text-[12px] text-muted-foreground hover:text-foreground"
+                  >
+                    <Undo2 className="w-3.5 h-3.5" /> 元に戻す
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={refineBody}
+                  disabled={!body.trim() || refining}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-bold border border-primary text-primary hover:bg-primary hover:text-white disabled:opacity-40 transition-colors"
+                >
+                  {refining ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5" />}
+                  {refining ? '整形中…' : 'AIで文章を整える'}
+                </button>
+              </div>
+            </div>
             <textarea
               ref={bodyRef}
               value={body}
               onChange={e => setBody(e.target.value)}
               rows={5}
-              className="mt-1 w-full px-3 py-3 border border-border rounded-lg text-base resize-none"
+              className="w-full px-3 py-3 border border-border rounded-lg text-base resize-none"
             />
-          </label>
+          </div>
 
           {/* 関連塗り絵 — タイトル検索サジェスト */}
           <div>
