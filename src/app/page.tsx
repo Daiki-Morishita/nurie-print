@@ -136,8 +136,7 @@ export default async function HomePage() {
   const popular = getPopularMaterials(12, 'kids', overrides)
   const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
-  const todaysPosts = await getPublishedPosts(1)
-  const todaysPost = todaysPosts[0] ?? null
+  const todaysPosts = await getPublishedPosts(6)
   const postsTitleMap = new Map(materials.map(m => [m.id, m.title]))
 
   return (
@@ -274,7 +273,7 @@ export default async function HomePage() {
       </section>
 
       {/* ===== TODAY'S PIECE (今日のいちまい) — 投稿0件なら自動非表示 ===== */}
-      <TodaysPost post={todaysPost} titleMap={postsTitleMap} />
+      <TodaysPost posts={todaysPosts} titleMap={postsTitleMap} />
 
       {/* ===== THEMES ===== */}
       <section className="py-12 border-t border-border bg-background">

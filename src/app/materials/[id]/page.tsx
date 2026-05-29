@@ -8,6 +8,7 @@ import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_
 import { THEME_INSIGHT, DIFFICULTY_TIPS } from '@/lib/theme-insights'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { PrintButton } from '@/components/materials/PrintButton'
+import { LightPrintButton } from '@/components/materials/LightPrintButton'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
@@ -151,6 +152,12 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             outline: 0 !important;
             box-shadow: none !important;
           }
+          /* うす色印刷モード: 線画を薄くして、上からなぞれるように */
+          body.print-light .print-area img {
+            opacity: 0.28 !important;
+            filter: grayscale(100%) !important;
+            -webkit-filter: grayscale(100%) !important;
+          }
         }
       `}</style>
       <div className="hidden print:block print-area" style={{ position: 'relative', width: '297mm', height: '210mm', boxSizing: 'border-box', overflow: 'hidden', background: 'white' }}>
@@ -262,6 +269,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             {/* モバイル専用: 画像直下に印刷・保存ボタン */}
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
               <PrintButton materialTitle={material.title} materialId={material.id} />
+              <LightPrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               <div className="text-center pt-1">
                 <Link href="/help/print-on-mobile" className="text-[11px] text-muted-foreground hover:text-primary underline-offset-2 hover:underline">
@@ -372,6 +380,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               </h2>
               <div className="space-y-2.5">
                 <PrintButton materialTitle={material.title} materialId={material.id} />
+                <LightPrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
               </div>
               <div className="text-center mt-3">

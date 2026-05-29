@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight, BookOpen } from 'lucide-react'
 import { PostCarousel } from '@/components/posts/PostCarousel'
+import { PostsRail } from '@/components/home/PostsRail'
 import type { PostWithImages } from '@/lib/posts'
 import { deriveTitle } from '@/lib/posts'
 
@@ -12,13 +13,14 @@ function makeExcerpt(body: string, maxLen = 180): string {
 }
 
 export function TodaysPost({
-  post,
+  posts,
   titleMap,
 }: {
-  post: PostWithImages | null
+  posts: PostWithImages[]
   titleMap: Map<string, string>
 }) {
-  if (!post) return null
+  if (posts.length === 0) return null
+  const [post, ...rest] = posts
 
   const title = deriveTitle({ title: post.title, body: post.body })
   const excerpt = makeExcerpt(post.body)
@@ -92,6 +94,19 @@ export function TodaysPost({
             )}
           </div>
         </article>
+
+        {/* ちょっと前のいちまい（記事2件以上のときのみ） */}
+        {rest.length > 0 && (
+          <div className="mt-10">
+            <div className="flex items-baseline justify-between mb-4">
+              <h3 className="font-rounded text-[15px] md:text-[17px] font-black">ちょっと前のいちまい</h3>
+              <Link href="/posts" className="text-[12px] text-primary hover:underline inline-flex items-center gap-1">
+                ぜんぶ見る <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+            <PostsRail posts={rest} />
+          </div>
+        )}
       </div>
     </section>
   )
