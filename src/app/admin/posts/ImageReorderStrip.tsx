@@ -1,8 +1,8 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
-import { X, Plus, Pencil } from 'lucide-react'
+import { X, Plus, Pencil, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export type StripItem = { key: string; src: string }
 
@@ -34,10 +34,22 @@ export function ImageReorderStrip({
   const scrollerRef = useRef<HTMLDivElement>(null)
   const [dragKey, setDragKey] = useState<string | null>(null)
   const [dropIndex, setDropIndex] = useState<number | null>(null)
-  const [lightbox, setLightbox] = useState<string | null>(null)
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null)
   const downPos = useRef<{ x: number; y: number } | null>(null)
   const movedRef = useRef(false)
   const lbDownRef = useRef(false)
+
+  // lightbox 中はキーボード ← → / Esc で操作
+  useEffect(() => {
+    if (lightboxIdx === null) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setLightboxIdx(null)
+      else if (e.key === 'ArrowRight') setLightboxIdx(i => (i === null ? i : Math.min(i + 1, items.length - 1)))
+      else if (e.key === 'ArrowLeft') setLightboxIdx(i => (i === null ? i : Math.max(i - 1, 0)))
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [lightboxIdx, items.length])
 
   function computeGapIndex(clientX: number): number {
     const sc = scrollerRef.current
@@ -81,8 +93,8 @@ export function ImageReorderStrip({
   function onPointerUp() {
     if (dragKey) {
       if (!movedRef.current) {
-        const item = items.find(i => i.key === dragKey)
-        if (item) setLightbox(item.src)
+        const idx = items.findIndex(i => i.key === dragKey)
+        if (idx !== -1) setLightboxIdx(idx)
       } else if (dropIndex !== null) {
         reorderToGap(dragKey, dropIndex)
       }
@@ -155,25 +167,51 @@ export function ImageReorderStrip({
         )}
       </div>
 
-      {/* タップで拡大 */}
-      {lightbox && (
+      {/* タップで拡大（左右で前後の写真へ移動） */}
+      {lightboxIdx !== null && items[lightboxIdx] && (
         <div
           className="fixed inset-0 z-[130] bg-black/70 flex items-center justify-center p-6"
           onMouseDown={e => { lbDownRef.current = e.target === e.currentTarget }}
-          onClick={e => { if (e.target === e.currentTarget && lbDownRef.current) setLightbox(null) }}
+          onClick={e => { if (e.target === e.currentTarget && lbDownRef.current) setLightboxIdx(null) }}
         >
           <div className="relative max-w-2xl w-full" onClick={e => e.stopPropagation()}>
             <button
               type="button"
-              onClick={() => setLightbox(null)}
+              onClick={() => setLightboxIdx(null)}
               className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-white text-foreground border border-border shadow flex items-center justify-center z-10"
               aria-label="閉じる"
             >
               <X className="w-5 h-5" />
             </button>
             <div className="relative w-full aspect-[1.414/1] bg-white rounded-xl overflow-hidden">
-              <Image src={lightbox} alt="" fill className="object-contain" sizes="768px" unoptimized />
+              <Image src={items[lightboxIdx].src} alt="" fill className="object-contain" sizes="768px" unoptimized />
             </div>
+            {/* 枚数表示 */}
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black/60 text-white text-[12px] font-bold px-2.5 py-0.5 rounded-full">
+              {lightboxIdx + 1} / {items.length}
+            </div>
+            {/* 前へ */}
+            {lightboxIdx > 0 && (
+              <button
+                type="button"
+                onClick={() => setLightboxIdx(i => (i === null ? i : i - 1))}
+                className="absolute left-2 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-foreground shadow flex items-center justify-center hover:bg-white"
+                aria-label="前の写真"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+            )}
+            {/* 次へ */}
+            {lightboxIdx < items.length - 1 && (
+              <button
+                type="button"
+                onClick={() => setLightboxIdx(i => (i === null ? i : i + 1))}
+                className="absolute right-2 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-foreground shadow flex items-center justify-center hover:bg-white"
+                aria-label="次の写真"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            )}
           </div>
         </div>
       )}
