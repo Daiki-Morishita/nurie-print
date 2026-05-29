@@ -30,6 +30,7 @@ export function ImageEditModal({
   const [contrast, setContrast] = useState(100) // %
   const [saving, setSaving] = useState(false)
   const imgRef = useRef<HTMLImageElement>(null)
+  const backdropDownRef = useRef(false)
 
   const filterStr = `brightness(${brightness}%) contrast(${contrast}%)`
 
@@ -115,7 +116,12 @@ export function ImageEditModal({
   }, [completedCrop, filterStr, onApply])
 
   return (
-    <div className="fixed inset-0 z-[140] bg-black/70 flex items-center justify-center p-4" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-[140] bg-black/70 flex items-center justify-center p-4"
+      // 背景で mousedown→mouseup が完結したときだけ閉じる（crop/スライダーのドラッグで誤閉じしない）
+      onMouseDown={e => { backdropDownRef.current = e.target === e.currentTarget }}
+      onClick={e => { if (e.target === e.currentTarget && backdropDownRef.current) onClose() }}
+    >
       <div
         className="bg-white w-full max-w-lg rounded-xl flex flex-col max-h-[92vh]"
         onClick={e => e.stopPropagation()}

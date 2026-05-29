@@ -37,6 +37,7 @@ export function ImageReorderStrip({
   const [lightbox, setLightbox] = useState<string | null>(null)
   const downPos = useRef<{ x: number; y: number } | null>(null)
   const movedRef = useRef(false)
+  const lbDownRef = useRef(false)
 
   function computeGapIndex(clientX: number): number {
     const sc = scrollerRef.current
@@ -158,7 +159,8 @@ export function ImageReorderStrip({
       {lightbox && (
         <div
           className="fixed inset-0 z-[130] bg-black/70 flex items-center justify-center p-6"
-          onClick={() => setLightbox(null)}
+          onMouseDown={e => { lbDownRef.current = e.target === e.currentTarget }}
+          onClick={e => { if (e.target === e.currentTarget && lbDownRef.current) setLightbox(null) }}
         >
           <div className="relative max-w-2xl w-full" onClick={e => e.stopPropagation()}>
             <button

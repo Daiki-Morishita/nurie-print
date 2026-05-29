@@ -61,6 +61,7 @@ export function EditPostModal({
   const [bodyBeforeRefine, setBodyBeforeRefine] = useState<string | null>(null)
   const [editingId, setEditingId] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
+  const backdropDownRef = useRef(false)
 
   async function refineBody() {
     if (!body.trim() || refining) return
@@ -232,7 +233,13 @@ export function EditPostModal({
   const editingImage = images.find(i => i.id === editingId) ?? null
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center"
+      // 背景で mousedown→mouseup が完結したときだけ閉じる。
+      // テキスト選択のドラッグが外側で離れても閉じない。
+      onMouseDown={e => { backdropDownRef.current = e.target === e.currentTarget }}
+      onClick={e => { if (e.target === e.currentTarget && backdropDownRef.current) onClose() }}
+    >
       <div className="bg-white w-full sm:max-w-2xl sm:rounded-xl max-h-[95vh] flex flex-col rounded-t-2xl" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between p-3 border-b border-border">
           <div className="font-bold text-sm">投稿を編集</div>

@@ -24,6 +24,7 @@ export function MaterialSuggestInput({
   const [activeIdx, setActiveIdx] = useState(0)
   const [lightbox, setLightbox] = useState<{ url: string; title: string } | null>(null)
   const boxRef = useRef<HTMLDivElement>(null)
+  const lbDownRef = useRef(false)
 
   // value 文字列 → 選択済みID配列（URL・ID両対応、titleMap に存在するもののみ）
   const selectedIds = useMemo(
@@ -194,7 +195,8 @@ export function MaterialSuggestInput({
       {lightbox && (
         <div
           className="fixed inset-0 z-[120] bg-black/70 flex items-center justify-center p-6"
-          onClick={() => setLightbox(null)}
+          onMouseDown={e => { lbDownRef.current = e.target === e.currentTarget }}
+          onClick={e => { if (e.target === e.currentTarget && lbDownRef.current) setLightbox(null) }}
         >
           <div className="relative max-w-lg w-full" onClick={e => e.stopPropagation()}>
             <button
