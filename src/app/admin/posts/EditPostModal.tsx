@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { X, Trash2, Save, Plus, Calendar, Send, FileText } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
+import { MaterialSuggestInput } from './MaterialSuggestInput'
 
 type Option = { id: string; title: string }
 
@@ -204,26 +205,12 @@ export function EditPostModal({
             />
           </label>
 
-          {/* 関連塗り絵 */}
+          {/* 関連塗り絵 — タイトル検索サジェスト */}
           <div>
             <label className="text-xs font-bold text-muted-foreground block mb-1">
-              関連する塗り絵（ID or URL）
+              関連する塗り絵（タイトルで検索して追加）
             </label>
-            <textarea
-              value={materialUrls}
-              onChange={e => setMaterialUrls(e.target.value)}
-              rows={2}
-              className="w-full px-3 py-2 border border-border rounded-lg text-sm font-mono"
-            />
-            {resolved.ids.length > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {resolved.ids.map(id => (
-                  <span key={id} className="inline-flex items-center gap-1 px-2 py-0.5 bg-green-50 text-green-800 rounded text-[11px] border border-green-200">
-                    ✓ {titleMap.get(id)}
-                  </span>
-                ))}
-              </div>
-            )}
+            <MaterialSuggestInput titleMap={titleMap} value={materialUrls} onChange={setMaterialUrls} />
           </div>
 
           {/* 公開日時 */}

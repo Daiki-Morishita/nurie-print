@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { Plus, X, Send, FileText, Calendar, Loader2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
+import { MaterialSuggestInput } from './MaterialSuggestInput'
 
 type Option = { id: string; title: string }
 
@@ -349,30 +350,12 @@ export function PostComposer({
         className="w-full px-3 py-3 mb-3 border border-border rounded-lg text-base resize-none"
       />
 
-      {/* 関連塗り絵 */}
+      {/* 関連塗り絵 — タイトル検索サジェスト */}
       <div className="mb-4">
         <label className="text-xs font-bold text-muted-foreground block mb-1">
-          関連する塗り絵（任意・スペース or 改行区切りで複数OK）
+          関連する塗り絵（任意・タイトルで検索して追加）
         </label>
-        <textarea
-          value={materialUrls}
-          onChange={e => setMaterialUrls(e.target.value)}
-          placeholder="bear-simple-1&#10;https://nurie-print.com/materials/cat-easy"
-          rows={2}
-          className="w-full px-3 py-2 border border-border rounded-lg text-sm font-mono"
-        />
-        {resolved.ids.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-2">
-            {resolved.ids.map(id => (
-              <span key={id} className="inline-flex items-center gap-1 px-2 py-0.5 bg-green-50 text-green-800 rounded text-[11px] border border-green-200">
-                ✓ {titleMap.get(id)}
-              </span>
-            ))}
-          </div>
-        )}
-        {resolved.invalid.length > 0 && (
-          <div className="text-[11px] text-amber-700 mt-1">⚠ 該当なし: {resolved.invalid.join(', ')}</div>
-        )}
+        <MaterialSuggestInput titleMap={titleMap} value={materialUrls} onChange={setMaterialUrls} />
       </div>
 
       {/* 予約日時 */}
