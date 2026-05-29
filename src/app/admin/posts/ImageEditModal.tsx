@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import ReactCrop, { type Crop, type PixelCrop } from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
 import { X, RotateCw, Crop as CropIcon, Sun, Check, RefreshCw } from 'lucide-react'
@@ -8,6 +8,10 @@ import { X, RotateCw, Crop as CropIcon, Sun, Check, RefreshCw } from 'lucide-rea
 /**
  * アップロード待ち画像の編集モーダル。
  * トリミング・回転(90°)・明るさ/コントラスト調整 → JPEG で書き出して差し替え。
+ *
+ * 回転はプレビューとcrop座標を一致させるため「画像に焼き込んだ派生画像(workSrc)」を
+ * ReactCrop に渡す方式。明るさ/コントラストは軽量なので CSS filter で即時プレビューし、
+ * 書き出し時に canvas filter で反映する。
  */
 export function ImageEditModal({
   src,
@@ -18,15 +22,48 @@ export function ImageEditModal({
   onApply: (file: File, previewUrl: string) => void
   onClose: () => void
 }) {
+  const [workSrc, setWorkSrc] = useState(src)
   const [crop, setCrop] = useState<Crop>()
   const [completedCrop, setCompletedCrop] = useState<PixelCrop | null>(null)
-  const [rotation, setRotation] = useState(0) // 0/90/180/270
+  const [rotation, setRotation] = useState(0) // 0/90/180/270（焼き込み済みの累積角）
   const [brightness, setBrightness] = useState(100) // %
   const [contrast, setContrast] = useState(100) // %
   const [saving, setSaving] = useState(false)
   const imgRef = useRef<HTMLImageElement>(null)
 
   const filterStr = `brightness(${brightness}%) contrast(${contrast}%)`
+
+  /** 元画像に rot 度を焼き込んだ dataURL を生成して workSrc にする */
+  const bakeRotation = useCallback(async (rot: number) => {
+    if (rot === 0) {
+      setWorkSrc(src)
+      return
+    }
+    const img = new window.Image()
+    img.crossOrigin = 'anonymous'
+    await new Promise<void>((resolve, reject) => {
+      img.onload = () => resolve()
+      img.onerror = () => reject(new Error('load failed'))
+      img.src = src
+    })
+    const rotated = rot === 90 || rot === 270
+    const canvas = document.createElement('canvas')
+    canvas.width = rotated ? img.naturalHeight : img.naturalWidth
+    canvas.height = rotated ? img.naturalWidth : img.naturalHeight
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+    ctx.translate(canvas.width / 2, canvas.height / 2)
+    ctx.rotate((rot * Math.PI) / 180)
+    ctx.drawImage(img, -img.naturalWidth / 2, -img.naturalHeight / 2)
+    setWorkSrc(canvas.toDataURL('image/jpeg', 0.92))
+  }, [src])
+
+  // rotation 変更時に焼き込み（crop はリセット）
+  useEffect(() => {
+    setCrop(undefined)
+    setCompletedCrop(null)
+    bakeRotation(rotation)
+  }, [rotation, bakeRotation])
 
   function reset() {
     setCrop(undefined)
@@ -41,67 +78,41 @@ export function ImageEditModal({
     if (!img) return
     setSaving(true)
     try {
-      // 自然サイズ基準のスケール
       const scaleX = img.naturalWidth / img.width
       const scaleY = img.naturalHeight / img.height
 
-      // クロップ範囲（未指定なら全体）
       const cropX = completedCrop ? completedCrop.x * scaleX : 0
       const cropY = completedCrop ? completedCrop.y * scaleY : 0
       const cropW = completedCrop ? completedCrop.width * scaleX : img.naturalWidth
       const cropH = completedCrop ? completedCrop.height * scaleY : img.naturalHeight
 
-      // 回転後のキャンバスサイズ
-      const rotated = rotation === 90 || rotation === 270
+      // 1600px に収める
+      const maxDim = 1600
+      const scale = Math.min(1, maxDim / Math.max(cropW, cropH))
       const canvas = document.createElement('canvas')
-      canvas.width = rotated ? cropH : cropW
-      canvas.height = rotated ? cropW : cropH
+      canvas.width = Math.round(cropW * scale)
+      canvas.height = Math.round(cropH * scale)
       const ctx = canvas.getContext('2d')
       if (!ctx) throw new Error('ctx unavailable')
 
       ctx.fillStyle = '#FFFFFF'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
       ctx.filter = filterStr
-      ctx.save()
-      // 回転の中心をキャンバス中央に
-      ctx.translate(canvas.width / 2, canvas.height / 2)
-      ctx.rotate((rotation * Math.PI) / 180)
-      // クロップ領域を中央に描画
-      ctx.drawImage(
-        img,
-        cropX, cropY, cropW, cropH,
-        -cropW / 2, -cropH / 2, cropW, cropH,
-      )
-      ctx.restore()
-
-      // 1600px に収める
-      const maxDim = 1600
-      const scale = Math.min(1, maxDim / Math.max(canvas.width, canvas.height))
-      let out = canvas
-      if (scale < 1) {
-        const c2 = document.createElement('canvas')
-        c2.width = Math.round(canvas.width * scale)
-        c2.height = Math.round(canvas.height * scale)
-        const ctx2 = c2.getContext('2d')
-        if (!ctx2) throw new Error('ctx2 unavailable')
-        ctx2.fillStyle = '#FFFFFF'
-        ctx2.fillRect(0, 0, c2.width, c2.height)
-        ctx2.drawImage(canvas, 0, 0, c2.width, c2.height)
-        out = c2
-      }
+      // workSrc は回転済みなので、ここでは crop + 縮小のみ
+      ctx.drawImage(img, cropX, cropY, cropW, cropH, 0, 0, canvas.width, canvas.height)
 
       const blob = await new Promise<Blob>((resolve, reject) =>
-        out.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', 0.85),
+        canvas.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob failed'))), 'image/jpeg', 0.85),
       )
       const file = new File([blob], `edited-${Date.now()}.jpg`, { type: 'image/jpeg' })
       const previewUrl = URL.createObjectURL(blob)
       onApply(file, previewUrl)
     } catch {
-      // 失敗時は何もせず閉じない
+      // 失敗時は閉じない
     } finally {
       setSaving(false)
     }
-  }, [completedCrop, rotation, filterStr, onApply])
+  }, [completedCrop, filterStr, onApply])
 
   return (
     <div className="fixed inset-0 z-[140] bg-black/70 flex items-center justify-center p-4" onClick={onClose}>
@@ -126,20 +137,14 @@ export function ImageEditModal({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 ref={imgRef}
-                src={src}
+                src={workSrc}
                 alt="編集中"
                 crossOrigin="anonymous"
-                style={{
-                  transform: `rotate(${rotation}deg)`,
-                  filter: filterStr,
-                  maxHeight: '50vh',
-                  maxWidth: '100%',
-                }}
+                style={{ filter: filterStr, maxHeight: '50vh', maxWidth: '100%', display: 'block' }}
               />
             </ReactCrop>
           </div>
 
-          {/* 操作 */}
           <div className="space-y-3">
             <div className="flex gap-2">
               <button
