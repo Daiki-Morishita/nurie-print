@@ -154,7 +154,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
           }
           /* うす色印刷モード: 線画を薄くして、上からなぞれるように */
           body.print-light .print-area img {
-            opacity: 0.28 !important;
+            opacity: 0.15 !important;
             filter: grayscale(100%) !important;
             -webkit-filter: grayscale(100%) !important;
           }
