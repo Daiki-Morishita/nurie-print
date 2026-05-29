@@ -52,20 +52,22 @@ export function TodaysPost({
               <PostCarousel images={post.images} alt={title} aspectClass="aspect-[4/3] md:aspect-[16/9]" />
               {/* この記事の塗り絵 — 画像右下にオーバーレイ（余白節約） */}
               {relatedChips.length > 0 && (
-                <div className="absolute bottom-2 right-2 z-[5] flex flex-col items-end gap-1 max-w-[70%]">
-                  <span className="text-[10px] text-white/90 font-bold drop-shadow tracking-wide">この記事の塗り絵</span>
-                  <div className="flex flex-wrap justify-end gap-1">
+                <div className="absolute bottom-3 right-3 z-[5] flex flex-col items-end gap-1.5 max-w-[80%]">
+                  <span className="inline-flex items-center text-[11px] text-white font-bold tracking-wide bg-black/55 backdrop-blur px-2.5 py-1 rounded-full">
+                    🖍️ この記事の塗り絵
+                  </span>
+                  <div className="flex flex-wrap justify-end gap-1.5">
                     {relatedChips.map(c => (
                       <Link
                         key={c.id}
                         href={`/materials/${c.id}`}
-                        className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/95 backdrop-blur text-foreground hover:bg-primary hover:text-white rounded-full text-[11px] font-bold shadow transition-colors"
+                        className="inline-flex items-center gap-1 px-4 py-2 bg-primary text-white hover:bg-[#d05a23] rounded-full text-[13px] font-rounded font-black shadow-md transition-colors"
                       >
                         {c.title}
                       </Link>
                     ))}
                     {extraCount > 0 && (
-                      <span className="inline-flex items-center px-2 py-1 bg-black/55 text-white rounded-full text-[11px] font-bold">
+                      <span className="inline-flex items-center px-3 py-2 bg-white/95 text-primary rounded-full text-[13px] font-rounded font-black shadow-md">
                         +{extraCount}
                       </span>
                     )}
