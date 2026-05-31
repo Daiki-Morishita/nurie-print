@@ -23,7 +23,21 @@ const ADULT_NAV: NavItem[] = [
 
 const KIDS_AGES: number[] = [2, 3, 4, 5, 6]
 
-type ThemeEntry = { value: string; label: string; count: number }
+// 子どもが好きそうな順（左上ほど人気）。ここに無いテーマは末尾に件数順で続く
+const THEME_PRIORITY: string[] = [
+  'animals', 'dinosaurs', 'vehicles', 'densha', 'shinkansen', 'sea',
+  'insects', 'fruits', 'sweets', 'fairytale', 'yokai', 'park',
+  'vegetables', 'flowers', 'sports', 'nature', 'seasonal-events', 'gotochi',
+]
+// テーマごとの絵文字（ドロップダウンのリッチ化用）
+const THEME_EMOJI: Record<string, string> = {
+  animals: '🐾', dinosaurs: '🦕', vehicles: '🚒', densha: '🚃', shinkansen: '🚄',
+  sea: '🐟', insects: '🐛', fruits: '🍎', sweets: '🍰', fairytale: '📖',
+  yokai: '👹', park: '🌳', vegetables: '🥕', flowers: '🌸', sports: '⚽',
+  nature: '🌈', 'seasonal-events': '🎏', gotochi: '🗾',
+}
+
+type ThemeEntry = { value: string; label: string; count: number; emoji: string }
 
 export function Header({
   kidsCount = 555,
@@ -48,8 +62,21 @@ export function Header({
 
   const themeEntries: ThemeEntry[] = Object.entries(kidsThemeCounts)
     .filter(([, count]) => count > 0)
-    .map(([value, count]) => ({ value, label: THEME_LABELS[value as Theme] ?? value, count }))
-    .sort((a, b) => b.count - a.count)
+    .map(([value, count]) => ({
+      value,
+      label: THEME_LABELS[value as Theme] ?? value,
+      count,
+      emoji: THEME_EMOJI[value] ?? '🎨',
+    }))
+    .sort((a, b) => {
+      // 子ども人気順を優先。両方リストにあれば順位、無いものは件数で末尾へ
+      const pa = THEME_PRIORITY.indexOf(a.value)
+      const pb = THEME_PRIORITY.indexOf(b.value)
+      if (pa !== -1 && pb !== -1) return pa - pb
+      if (pa !== -1) return -1
+      if (pb !== -1) return 1
+      return b.count - a.count
+    })
 
   const ageEntries = KIDS_AGES.map(age => ({
     age,
@@ -245,8 +272,8 @@ export function Header({
                 ))
               ) : (
                 <>
-                  <AgeDropdown ageEntries={ageEntries} />
                   <ThemeDropdown themeEntries={themeEntries} />
+                  <AgeDropdown ageEntries={ageEntries} />
                   <Link href="/posts" className="text-foreground/80 hover:text-primary transition-colors whitespace-nowrap font-medium flex items-center gap-1.5">
                     今日のいちまい
                     <span className="bg-primary text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold tracking-wide">NEW</span>
@@ -364,18 +391,21 @@ export function Header({
   )
 }
 
+const AGE_EMOJI: Record<number, string> = { 2: '🐣', 3: '🧒', 4: '🎨', 5: '✏️', 6: '🎒' }
+
 function AgeDropdown({ ageEntries }: { ageEntries: { age: number; count: number }[] }) {
   return (
     <Dropdown label="年齢で探す">
-      <div className="p-2 grid grid-cols-3 gap-1 min-w-[280px]">
+      <div className="p-3 grid grid-cols-3 gap-2 min-w-[340px]">
         {ageEntries.map(({ age, count }) => (
           <Link
             key={age}
             href={`/category/age/${age}`}
-            className="flex items-center justify-between px-3 py-2 rounded hover:bg-muted text-sm text-foreground"
+            className="group flex flex-col items-center gap-1 px-3 py-3 rounded-xl border border-transparent hover:border-primary/40 hover:bg-primary/5 transition-all"
           >
-            <span>{age}歳</span>
-            <span className="text-[11px] text-muted-foreground">{count}</span>
+            <span className="text-[22px] leading-none group-hover:scale-110 transition-transform">{AGE_EMOJI[age] ?? '🎨'}</span>
+            <span className="font-rounded font-black text-[14px] text-foreground">{age}歳</span>
+            <span className="text-[11px] text-muted-foreground">{count}点</span>
           </Link>
         ))}
       </div>
@@ -386,15 +416,20 @@ function AgeDropdown({ ageEntries }: { ageEntries: { age: number; count: number 
 function ThemeDropdown({ themeEntries }: { themeEntries: ThemeEntry[] }) {
   return (
     <Dropdown label="テーマで探す">
-      <div className="p-2 grid grid-cols-3 gap-1 min-w-[520px] max-w-[640px] max-h-[60vh] overflow-y-auto">
+      <div className="p-3 grid grid-cols-3 gap-1.5 min-w-[540px] max-w-[640px] max-h-[64vh] overflow-y-auto">
         {themeEntries.map(t => (
           <Link
             key={t.value}
             href={`/category/theme/${t.value}`}
-            className="flex items-center justify-between px-3 py-2 rounded hover:bg-muted text-sm text-foreground"
+            className="group flex items-center gap-2.5 px-2.5 py-2 rounded-xl border border-transparent hover:border-primary/40 hover:bg-primary/5 transition-all"
           >
-            <span className="truncate">{t.label}</span>
-            <span className="text-[11px] text-muted-foreground ml-2">{t.count}</span>
+            <span className="w-9 h-9 shrink-0 rounded-full bg-muted group-hover:bg-white flex items-center justify-center text-[18px] leading-none transition-colors">
+              {t.emoji}
+            </span>
+            <span className="flex-1 min-w-0">
+              <span className="block font-rounded font-bold text-[13px] text-foreground truncate">{t.label}</span>
+              <span className="block text-[10px] text-muted-foreground">{t.count}点</span>
+            </span>
           </Link>
         ))}
       </div>

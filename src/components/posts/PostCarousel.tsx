@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export function PostCarousel({
   images,
@@ -42,11 +43,11 @@ export function PostCarousel({
         className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none rounded-xl"
         style={{ scrollbarWidth: 'none' }}
       >
-        {images.map(img => (
+        {images.map((img, i) => (
           <div key={img.id} className={`relative shrink-0 w-full ${aspectClass} snap-center bg-muted`}>
             <Image
               src={img.url}
-              alt={alt}
+              alt={images.length > 1 && alt ? `${alt}（${i + 1}枚目）` : alt}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 800px"
@@ -58,6 +59,28 @@ export function PostCarousel({
 
       {images.length > 1 && (
         <>
+          {/* 前へ */}
+          {activeIndex > 0 && (
+            <button
+              type="button"
+              onClick={() => scrollTo(activeIndex - 1)}
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/85 text-foreground shadow flex items-center justify-center hover:bg-white z-10"
+              aria-label="前の画像"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+          )}
+          {/* 次へ */}
+          {activeIndex < images.length - 1 && (
+            <button
+              type="button"
+              onClick={() => scrollTo(activeIndex + 1)}
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/85 text-foreground shadow flex items-center justify-center hover:bg-white z-10"
+              aria-label="次の画像"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          )}
           {/* ドット */}
           <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
             {images.map((_, i) => (

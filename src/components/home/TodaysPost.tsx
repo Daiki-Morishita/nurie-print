@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight, BookOpen } from 'lucide-react'
 import { PostCarousel } from '@/components/posts/PostCarousel'
+import { PostsRail } from '@/components/home/PostsRail'
 import type { PostWithImages } from '@/lib/posts'
 import { deriveTitle } from '@/lib/posts'
 
@@ -12,17 +13,25 @@ function makeExcerpt(body: string, maxLen = 180): string {
 }
 
 export function TodaysPost({
-  post,
+  posts,
   titleMap,
 }: {
-  post: PostWithImages | null
+  posts: PostWithImages[]
   titleMap: Map<string, string>
 }) {
-  if (!post) return null
+  if (posts.length === 0) return null
+  const [post, ...rest] = posts
 
   const title = deriveTitle({ title: post.title, body: post.body })
   const excerpt = makeExcerpt(post.body)
   const hasMoreText = post.body.length > excerpt.length
+
+  // 関連塗り絵チップ（画像右下オーバーレイ用）。最大3件 + 残数
+  const validMaterials = post.materialIds
+    .map(id => ({ id, title: titleMap.get(id) }))
+    .filter((m): m is { id: string; title: string } => !!m.title)
+  const relatedChips = validMaterials.slice(0, 3)
+  const extraCount = validMaterials.length - relatedChips.length
 
   return (
     <section className="py-12 md:py-16 bg-gradient-to-b from-[#FFF8EC]/80 to-background border-t border-border">
@@ -39,7 +48,33 @@ export function TodaysPost({
 
         <article className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm">
           {post.images.length > 0 && (
-            <PostCarousel images={post.images} alt={title} aspectClass="aspect-[4/3] md:aspect-[16/9]" />
+            <div className="relative">
+              <PostCarousel images={post.images} alt={title} aspectClass="aspect-[4/3] md:aspect-[16/9]" />
+              {/* この記事の塗り絵 — 画像右下にオーバーレイ（余白節約） */}
+              {relatedChips.length > 0 && (
+                <div className="absolute bottom-3 right-3 z-[5] flex flex-col items-end gap-1.5 max-w-[80%]">
+                  <span className="inline-flex items-center text-[11px] text-white font-bold tracking-wide bg-black/55 backdrop-blur px-2.5 py-1 rounded-full">
+                    🖍️ この記事の塗り絵
+                  </span>
+                  <div className="flex flex-wrap justify-end gap-1.5">
+                    {relatedChips.map(c => (
+                      <Link
+                        key={c.id}
+                        href={`/materials/${c.id}`}
+                        className="inline-flex items-center gap-1 px-4 py-2 bg-primary text-white hover:bg-[#d05a23] rounded-full text-[13px] font-rounded font-black shadow-md transition-colors"
+                      >
+                        {c.title}
+                      </Link>
+                    ))}
+                    {extraCount > 0 && (
+                      <span className="inline-flex items-center px-3 py-2 bg-white/95 text-primary rounded-full text-[13px] font-rounded font-black shadow-md">
+                        +{extraCount}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
           )}
 
           <div className="p-5 md:p-8">
@@ -67,31 +102,21 @@ export function TodaysPost({
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-
-            {post.materialIds.length > 0 && (
-              <div className="mt-8 pt-6 border-t border-border">
-                <div className="font-rounded text-[11px] text-muted-foreground tracking-[0.1em] mb-3 font-bold">
-                  この記事の塗り絵
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {post.materialIds.slice(0, 6).map(id => {
-                    const t = titleMap.get(id)
-                    if (!t) return null
-                    return (
-                      <Link
-                        key={id}
-                        href={`/materials/${id}`}
-                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-muted hover:bg-primary hover:text-white rounded-full text-[12px] transition-colors"
-                      >
-                        {t}
-                      </Link>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
           </div>
         </article>
+
+        {/* ちょっと前のいちまい（記事2件以上のときのみ） */}
+        {rest.length > 0 && (
+          <div className="mt-10">
+            <div className="flex items-baseline justify-between mb-4">
+              <h3 className="font-rounded text-[15px] md:text-[17px] font-black">ちょっと前のいちまい</h3>
+              <Link href="/posts" className="text-[12px] text-primary hover:underline inline-flex items-center gap-1">
+                ぜんぶ見る <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+            <PostsRail posts={rest} />
+          </div>
+        )}
       </div>
     </section>
   )

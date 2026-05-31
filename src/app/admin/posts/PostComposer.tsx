@@ -1,9 +1,12 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Image from 'next/image'
-import { Plus, X, Send, FileText, Calendar, Loader2 } from 'lucide-react'
+import { Plus, Send, FileText, Calendar, Loader2, Sparkles, Undo2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
+import { MaterialSuggestInput } from './MaterialSuggestInput'
+import { ImageReorderStrip } from './ImageReorderStrip'
+import { ImageEditModal } from './ImageEditModal'
+import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
 
@@ -47,11 +50,13 @@ function resolveMaterialIds(input: string, titleMap: Map<string, string>): { ids
 export function PostComposer({
   featuredOptions: _featuredOptions,
   titleMap,
+  imageMap,
   onCreated,
   onError,
 }: {
   featuredOptions: Option[]
   titleMap: Map<string, string>
+  imageMap?: Map<string, string>
   onCreated: (post: PostDTO) => void
   onError: (msg: string) => void
 }) {
@@ -62,6 +67,10 @@ export function PostComposer({
   const [scheduledAt, setScheduledAt] = useState('') // datetime-local 形式
   const [showSchedulePicker, setShowSchedulePicker] = useState(false)
   const [submitting, setSubmitting] = useState<'draft' | 'publish' | 'schedule' | null>(null)
+  const [processing, setProcessing] = useState(false)
+  const [editingUid, setEditingUid] = useState<string | null>(null)
+  const [refining, setRefining] = useState(false)
+  const [bodyBeforeRefine, setBodyBeforeRefine] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
   const fileInputId = 'composer-photos'
 
@@ -97,32 +106,81 @@ export function PostComposer({
     }
   }, [body])
 
-  function handleFilesAdded(e: React.ChangeEvent<HTMLInputElement>) {
+  async function handleFilesAdded(e: React.ChangeEvent<HTMLInputElement>) {
     const files = Array.from(e.target.files ?? [])
     if (files.length === 0) return
-    const newItems: ImageItem[] = files.map(f => ({
-      uid: uid(),
-      file: f,
-      previewUrl: URL.createObjectURL(f),
-    }))
-    setImages(imgs => [...imgs, ...newItems])
     e.target.value = ''
+    setProcessing(true)
+    // クライアント側で JPEG 圧縮（HEIC対応・Vercel body 4.5MB 制限対策）
+    const newItems: ImageItem[] = []
+    for (const f of files) {
+      try {
+        const compressed = await compressToJpeg(f, 1600, 0.82)
+        newItems.push({
+          uid: uid(),
+          file: compressed,
+          previewUrl: URL.createObjectURL(compressed),
+        })
+      } catch {
+        newItems.push({ uid: uid(), file: f, previewUrl: URL.createObjectURL(f) })
+      }
+    }
+    setImages(imgs => [...imgs, ...newItems])
+    setProcessing(false)
   }
 
   function removeImage(uid: string) {
     setImages(imgs => imgs.filter(i => i.uid !== uid))
   }
 
-  function moveImage(uid: string, direction: -1 | 1) {
+  /** ImageReorderStrip から受け取った uid 順で images を並べ替え */
+  function reorderImages(orderedKeys: string[]) {
     setImages(imgs => {
-      const idx = imgs.findIndex(i => i.uid === uid)
-      if (idx === -1) return imgs
-      const newIdx = idx + direction
-      if (newIdx < 0 || newIdx >= imgs.length) return imgs
-      const next = [...imgs]
-      ;[next[idx], next[newIdx]] = [next[newIdx], next[idx]]
-      return next
+      const byUid = new Map(imgs.map(i => [i.uid, i]))
+      return orderedKeys.map(k => byUid.get(k)).filter((x): x is ImageItem => !!x)
     })
+  }
+
+  /** 編集モーダルで適用された画像で差し替え（同じ uid を維持して順序保持） */
+  function applyEdit(uid: string, file: File, previewUrl: string) {
+    setImages(imgs => imgs.map(i => {
+      if (i.uid !== uid) return i
+      URL.revokeObjectURL(i.previewUrl)
+      return { ...i, file, previewUrl }
+    }))
+    setEditingUid(null)
+  }
+
+  const editingImage = images.find(i => i.uid === editingUid) ?? null
+
+  /** 本文を Claude で整形（元に戻せるよう直前の本文を保持） */
+  async function refineBody() {
+    if (!body.trim() || refining) return
+    setRefining(true)
+    onError('')
+    try {
+      const res = await fetch('/api/admin/posts/refine-body', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ body, title }),
+      })
+      const data = await res.json()
+      if (!res.ok || !data.refined) {
+        onError(data.error ?? '整形に失敗しました')
+        return
+      }
+      setBodyBeforeRefine(body)
+      setBody(data.refined)
+    } catch (e) {
+      onError(e instanceof Error ? e.message : '整形に失敗しました')
+    } finally {
+      setRefining(false)
+    }
+  }
+  function undoRefine() {
+    if (bodyBeforeRefine === null) return
+    setBody(bodyBeforeRefine)
+    setBodyBeforeRefine(null)
   }
 
   function resetForm() {
@@ -162,8 +220,22 @@ export function PostComposer({
 
     try {
       const res = await fetch('/api/admin/posts', { method: 'POST', body: fd })
-      const data = await res.json()
-      if (!res.ok) {
+      // 413 Request Entity Too Large 等で Vercel が HTML/text を返した場合、JSON.parse は失敗する
+      const text = await res.text()
+      let data: { ok?: boolean; error?: string; post?: { id: string; publishedAt: string | null; createdAt: string; updatedAt: string; title: string | null; body: string; materialIds: string[]; images: { id: string; url: string; order: number }[] } } = {}
+      try {
+        data = JSON.parse(text)
+      } catch {
+        // JSON でない = サーバーがエラーレスポンス（413 等）
+        if (res.status === 413 || /entity too large/i.test(text)) {
+          onError('画像のサイズが大きすぎます。枚数を減らすか、画像を別途圧縮してください')
+        } else {
+          onError(`サーバーエラー (${res.status})`)
+        }
+        setSubmitting(null)
+        return
+      }
+      if (!res.ok || !data.post) {
         onError(data.error ?? '投稿に失敗しました')
         setSubmitting(null)
         return
@@ -189,41 +261,44 @@ export function PostComposer({
       {/* 画像 */}
       <div className="mb-4">
         {images.length > 0 && (
-          <div className="flex gap-2 overflow-x-auto pb-2 mb-2 -mx-1 px-1">
-            {images.map((img, idx) => (
-              <div key={img.uid} className="relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border border-border bg-muted group">
-                <Image src={img.previewUrl} alt="" fill className="object-cover" unoptimized />
-                <button
-                  type="button"
-                  onClick={() => removeImage(img.uid)}
-                  className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
-                  aria-label="削除"
-                >
-                  <X className="w-3 h-3" />
-                </button>
-                {idx > 0 && (
-                  <button type="button" onClick={() => moveImage(img.uid, -1)} className="absolute bottom-1 left-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">←</button>
-                )}
-                {idx < images.length - 1 && (
-                  <button type="button" onClick={() => moveImage(img.uid, 1)} className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 text-white text-xs">→</button>
-                )}
-                <div className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-bold rounded px-1.5 py-0.5">{idx + 1}</div>
-              </div>
-            ))}
-          </div>
+          <>
+            <p className="text-[11px] text-muted-foreground mb-1.5">
+              ドラッグで並べ替え（落ちる位置に縦線が出ます）・タップで拡大
+            </p>
+            <ImageReorderStrip
+              items={images.map(i => ({ key: i.uid, src: i.previewUrl }))}
+              onReorder={reorderImages}
+              onRemove={removeImage}
+              onEdit={setEditingUid}
+            />
+          </>
         )}
         <label
           htmlFor={fileInputId}
-          className="flex items-center justify-center gap-2 border-2 border-dashed border-border rounded-lg py-3 cursor-pointer hover:border-primary hover:bg-muted/30 transition-colors text-sm"
+          className={`mt-2 flex items-center justify-center gap-2 border-2 border-dashed rounded-lg py-3 transition-colors text-sm ${
+            processing
+              ? 'border-blue-300 bg-blue-50 text-blue-700 cursor-wait'
+              : 'border-border cursor-pointer hover:border-primary hover:bg-muted/30'
+          }`}
         >
-          <Plus className="w-4 h-4" />
-          <span>写真を追加（複数OK・並びは矢印で変更）</span>
+          {processing ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span>変換中… (HEICはJPEGに変換しています)</span>
+            </>
+          ) : (
+            <>
+              <Plus className="w-4 h-4" />
+              <span>写真を追加（複数OK）</span>
+            </>
+          )}
         </label>
         <input
           id={fileInputId}
           type="file"
-          accept="image/*"
+          accept="image/*,.heic,.heif"
           multiple
+          disabled={processing}
           onChange={handleFilesAdded}
           className="hidden"
         />
@@ -239,6 +314,26 @@ export function PostComposer({
       />
 
       {/* 本文 */}
+      <div className="flex items-center justify-end gap-2 mb-1">
+        {bodyBeforeRefine !== null && (
+          <button
+            type="button"
+            onClick={undoRefine}
+            className="inline-flex items-center gap-1 text-[12px] text-muted-foreground hover:text-foreground"
+          >
+            <Undo2 className="w-3.5 h-3.5" /> 元に戻す
+          </button>
+        )}
+        <button
+          type="button"
+          onClick={refineBody}
+          disabled={!body.trim() || refining}
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-bold border border-primary text-primary hover:bg-primary hover:text-white disabled:opacity-40 transition-colors"
+        >
+          {refining ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5" />}
+          {refining ? '整形中…' : 'AIで文章を整える'}
+        </button>
+      </div>
       <textarea
         ref={bodyRef}
         value={body}
@@ -248,30 +343,12 @@ export function PostComposer({
         className="w-full px-3 py-3 mb-3 border border-border rounded-lg text-base resize-none"
       />
 
-      {/* 関連塗り絵 */}
+      {/* 関連塗り絵 — タイトル検索サジェスト */}
       <div className="mb-4">
         <label className="text-xs font-bold text-muted-foreground block mb-1">
-          関連する塗り絵（任意・スペース or 改行区切りで複数OK）
+          関連する塗り絵（任意・タイトルで検索して追加）
         </label>
-        <textarea
-          value={materialUrls}
-          onChange={e => setMaterialUrls(e.target.value)}
-          placeholder="bear-simple-1&#10;https://nurie-print.com/materials/cat-easy"
-          rows={2}
-          className="w-full px-3 py-2 border border-border rounded-lg text-sm font-mono"
-        />
-        {resolved.ids.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-2">
-            {resolved.ids.map(id => (
-              <span key={id} className="inline-flex items-center gap-1 px-2 py-0.5 bg-green-50 text-green-800 rounded text-[11px] border border-green-200">
-                ✓ {titleMap.get(id)}
-              </span>
-            ))}
-          </div>
-        )}
-        {resolved.invalid.length > 0 && (
-          <div className="text-[11px] text-amber-700 mt-1">⚠ 該当なし: {resolved.invalid.join(', ')}</div>
-        )}
+        <MaterialSuggestInput titleMap={titleMap} imageMap={imageMap} value={materialUrls} onChange={setMaterialUrls} />
       </div>
 
       {/* 予約日時 */}
@@ -330,6 +407,14 @@ export function PostComposer({
           すぐ公開
         </button>
       </div>
+
+      {editingImage && (
+        <ImageEditModal
+          src={editingImage.previewUrl}
+          onApply={(file, previewUrl) => applyEdit(editingImage.uid, file, previewUrl)}
+          onClose={() => setEditingUid(null)}
+        />
+      )}
     </section>
   )
 }

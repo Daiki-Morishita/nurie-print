@@ -78,7 +78,7 @@ function parseId(id: string): { theme: string; diff: number; variant: number } {
   return { theme: id, diff: 99, variant: 0 }
 }
 
-const STATUS_OPTIONS: ImageStatus[] = ['placeholder', 'pending_review', 'approved', 'needs_revision']
+const STATUS_OPTIONS: ImageStatus[] = ['placeholder', 'pending_review', 'approved', 'needs_revision', 'duplicate', 'broken']
 
 const TILE_SIZES: Record<TileSize, { cols: string; w: number; h: number }> = {
   sm: { cols: 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8', w: 120, h: 90 },

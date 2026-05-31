@@ -1,9 +1,12 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { X, Trash2, Save, Plus, Calendar, Send, FileText } from 'lucide-react'
+import { X, Trash2, Save, Calendar, Send, FileText, Sparkles, Undo2, Loader2 } from 'lucide-react'
 import type { PostDTO } from './PostsAdmin'
+import { MaterialSuggestInput } from './MaterialSuggestInput'
+import { ImageReorderStrip } from './ImageReorderStrip'
+import { ImageEditModal } from './ImageEditModal'
+import { compressToJpeg } from './image-compress'
 
 type Option = { id: string; title: string }
 
@@ -34,6 +37,7 @@ export function EditPostModal({
   post,
   featuredOptions: _featuredOptions,
   titleMap,
+  imageMap,
   onClose,
   onUpdate,
   onDelete,
@@ -41,6 +45,7 @@ export function EditPostModal({
   post: PostDTO
   featuredOptions: Option[]
   titleMap: Map<string, string>
+  imageMap?: Map<string, string>
   onClose: () => void
   onUpdate: (p: PostDTO) => void
   onDelete: (id: string) => void
@@ -52,7 +57,40 @@ export function EditPostModal({
   const [images, setImages] = useState(post.images)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [refining, setRefining] = useState(false)
+  const [bodyBeforeRefine, setBodyBeforeRefine] = useState<string | null>(null)
+  const [editingId, setEditingId] = useState<string | null>(null)
   const bodyRef = useRef<HTMLTextAreaElement>(null)
+  const backdropDownRef = useRef(false)
+
+  async function refineBody() {
+    if (!body.trim() || refining) return
+    setRefining(true)
+    setError(null)
+    try {
+      const res = await fetch('/api/admin/posts/refine-body', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ body, title }),
+      })
+      const data = await res.json()
+      if (!res.ok || !data.refined) {
+        setError(data.error ?? '整形に失敗しました')
+        return
+      }
+      setBodyBeforeRefine(body)
+      setBody(data.refined)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '整形に失敗しました')
+    } finally {
+      setRefining(false)
+    }
+  }
+  function undoRefine() {
+    if (bodyBeforeRefine === null) return
+    setBody(bodyBeforeRefine)
+    setBodyBeforeRefine(null)
+  }
   const addPhotoInputId = `add-photo-${post.id}`
 
   useEffect(() => {
@@ -118,11 +156,18 @@ export function EditPostModal({
     e.target.value = ''
     setSaving(true)
     const fd = new FormData()
-    files.forEach(f => fd.append('photos', f))
+    // クライアント側で HEIC→JPEG + 圧縮（413・サムネ非表示対策）
+    for (const f of files) {
+      try {
+        fd.append('photos', await compressToJpeg(f))
+      } catch {
+        fd.append('photos', f)
+      }
+    }
     const res = await fetch(`/api/admin/posts/${post.id}/images`, { method: 'POST', body: fd })
     setSaving(false)
     if (!res.ok) {
-      const data = await res.json()
+      const data = await res.json().catch(() => ({}))
       setError(data.error ?? '画像追加に失敗しました')
       return
     }
@@ -141,8 +186,60 @@ export function EditPostModal({
     setImages(imgs => imgs.filter(i => i.id !== imageId))
   }
 
+  /** ドラッグ並べ替え → 即座にUI反映 + order を API に保存 */
+  async function handleReorder(orderedKeys: string[]) {
+    const byId = new Map(images.map(i => [i.id, i]))
+    const reordered = orderedKeys.map(k => byId.get(k)).filter((x): x is typeof images[number] => !!x)
+    setImages(reordered)
+    const orderMap: Record<string, number> = {}
+    reordered.forEach((img, i) => { orderMap[img.id] = i })
+    const res = await fetch(`/api/admin/posts/${post.id}/images`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ order: orderMap }),
+    })
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}))
+      setError(data.error ?? '並べ替えの保存に失敗しました')
+    }
+  }
+
+  /** 編集モーダルで適用された画像を、該当 PostImage のファイルとして差し替え（id・順序維持） */
+  async function handleEditApply(file: File) {
+    if (!editingId) return
+    const targetId = editingId
+    setEditingId(null)
+    setSaving(true)
+    try {
+      const fd = new FormData()
+      fd.set('imageId', targetId)
+      fd.set('photo', file)
+      const res = await fetch(`/api/admin/posts/${post.id}/images`, { method: 'PUT', body: fd })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok || !data.image) {
+        setError(data.error ?? '画像の差し替えに失敗しました')
+        return
+      }
+      // キャッシュバスターで即時反映
+      const bust = `${data.image.url}${data.image.url.includes('?') ? '&' : '?'}t=${Date.now()}`
+      setImages(imgs => imgs.map(i => (i.id === targetId ? { ...i, url: bust } : i)))
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '差し替えに失敗しました')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const editingImage = images.find(i => i.id === editingId) ?? null
+
   return (
-    <div className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-[100] bg-black/60 flex items-end sm:items-center justify-center"
+      // 背景で mousedown→mouseup が完結したときだけ閉じる。
+      // テキスト選択のドラッグが外側で離れても閉じない。
+      onMouseDown={e => { backdropDownRef.current = e.target === e.currentTarget }}
+      onClick={e => { if (e.target === e.currentTarget && backdropDownRef.current) onClose() }}
+    >
       <div className="bg-white w-full sm:max-w-2xl sm:rounded-xl max-h-[95vh] flex flex-col rounded-t-2xl" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between p-3 border-b border-border">
           <div className="font-bold text-sm">投稿を編集</div>
@@ -156,28 +253,22 @@ export function EditPostModal({
             <div className="p-2.5 bg-red-50 border border-red-300 text-red-800 rounded text-xs">{error}</div>
           )}
 
-          {/* 画像管理 */}
+          {/* 画像管理 — ドラッグ並べ替え + タップ拡大 */}
           <div>
-            <label className="text-xs font-bold text-muted-foreground block mb-2">画像（{images.length}枚）</label>
-            <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
-              {images.map(img => (
-                <div key={img.id} className="relative shrink-0 w-24 h-24 rounded-lg overflow-hidden border border-border bg-muted">
-                  <Image src={img.url} alt="" fill className="object-cover" unoptimized />
-                  <button
-                    type="button"
-                    onClick={() => handleDeletePhoto(img.id)}
-                    className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"
-                    aria-label="削除"
-                  >
-                    <X className="w-3 h-3" />
-                  </button>
-                </div>
-              ))}
-              <label htmlFor={addPhotoInputId} className="shrink-0 w-24 h-24 rounded-lg border-2 border-dashed border-border bg-muted/50 flex items-center justify-center cursor-pointer hover:border-primary">
-                <Plus className="w-5 h-5 text-muted-foreground" />
-              </label>
-              <input id={addPhotoInputId} type="file" multiple accept="image/*" onChange={handleAddPhotos} className="hidden" />
-            </div>
+            <label className="text-xs font-bold text-muted-foreground block mb-1">画像（{images.length}枚）</label>
+            {images.length > 0 && (
+              <p className="text-[11px] text-muted-foreground mb-1.5">
+                ドラッグで並べ替え（落ちる位置に縦線）・タップで拡大
+              </p>
+            )}
+            <ImageReorderStrip
+              items={images.map(i => ({ key: i.id, src: i.url }))}
+              onReorder={handleReorder}
+              onRemove={handleDeletePhoto}
+              onEdit={setEditingId}
+              addInputId={addPhotoInputId}
+              onAddFiles={handleAddPhotos}
+            />
           </div>
 
           {/* タイトル */}
@@ -193,37 +284,45 @@ export function EditPostModal({
           </label>
 
           {/* 本文 */}
-          <label className="block">
-            <span className="text-xs font-bold text-muted-foreground">本文</span>
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs font-bold text-muted-foreground">本文</span>
+              <div className="flex items-center gap-2">
+                {bodyBeforeRefine !== null && (
+                  <button
+                    type="button"
+                    onClick={undoRefine}
+                    className="inline-flex items-center gap-1 text-[12px] text-muted-foreground hover:text-foreground"
+                  >
+                    <Undo2 className="w-3.5 h-3.5" /> 元に戻す
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={refineBody}
+                  disabled={!body.trim() || refining}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-bold border border-primary text-primary hover:bg-primary hover:text-white disabled:opacity-40 transition-colors"
+                >
+                  {refining ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5" />}
+                  {refining ? '整形中…' : 'AIで文章を整える'}
+                </button>
+              </div>
+            </div>
             <textarea
               ref={bodyRef}
               value={body}
               onChange={e => setBody(e.target.value)}
               rows={5}
-              className="mt-1 w-full px-3 py-3 border border-border rounded-lg text-base resize-none"
+              className="w-full px-3 py-3 border border-border rounded-lg text-base resize-none"
             />
-          </label>
+          </div>
 
-          {/* 関連塗り絵 */}
+          {/* 関連塗り絵 — タイトル検索サジェスト */}
           <div>
             <label className="text-xs font-bold text-muted-foreground block mb-1">
-              関連する塗り絵（ID or URL）
+              関連する塗り絵（タイトルで検索して追加）
             </label>
-            <textarea
-              value={materialUrls}
-              onChange={e => setMaterialUrls(e.target.value)}
-              rows={2}
-              className="w-full px-3 py-2 border border-border rounded-lg text-sm font-mono"
-            />
-            {resolved.ids.length > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {resolved.ids.map(id => (
-                  <span key={id} className="inline-flex items-center gap-1 px-2 py-0.5 bg-green-50 text-green-800 rounded text-[11px] border border-green-200">
-                    ✓ {titleMap.get(id)}
-                  </span>
-                ))}
-              </div>
-            )}
+            <MaterialSuggestInput titleMap={titleMap} imageMap={imageMap} value={materialUrls} onChange={setMaterialUrls} />
           </div>
 
           {/* 公開日時 */}
@@ -281,6 +380,14 @@ export function EditPostModal({
           </button>
         </div>
       </div>
+
+      {editingImage && (
+        <ImageEditModal
+          src={editingImage.url}
+          onApply={(file) => handleEditApply(file)}
+          onClose={() => setEditingId(null)}
+        />
+      )}
     </div>
   )
 }

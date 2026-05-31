@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Printer, ArrowRight } from 'lucide-react'
 import { PostCarousel } from '@/components/posts/PostCarousel'
 import { getPublishedPostById, getAllPublishedPostIds, deriveTitle } from '@/lib/posts'
 import { materials, getMaterialById } from '@/lib/data'
@@ -114,6 +114,36 @@ export default async function PostDetailPage({ params }: { params: Promise<{ id:
                 <MaterialCard key={m.id} material={m} />
               ))}
             </div>
+
+            {/* 締めの明確なCTA */}
+            <div className="mt-8 bg-gradient-to-br from-[#FFF3E0] to-[#FFF8EC] border border-[#E8B838]/40 rounded-2xl p-6 text-center">
+              <p className="font-rounded font-black text-[16px] md:text-[18px] mb-1">おうちでも、やってみませんか？</p>
+              <p className="text-[13px] text-muted-foreground mb-4">
+                この記事で使った{linkedMaterials.length === 1 ? 'ぬりえ' : `${linkedMaterials.length}枚のぬりえ`}は、登録なしで無料で印刷できます。
+              </p>
+              <Link
+                href={`/materials/${linkedMaterials[0].id}`}
+                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-[14px] font-rounded font-black hover:opacity-90 transition-opacity shadow-md"
+              >
+                <Printer className="w-4 h-4" />
+                {linkedMaterials.length === 1 ? 'このぬりえを印刷する' : '使ったぬりえを印刷する'}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </section>
+        )}
+
+        {/* 関連素材が無い記事でも、全体への導線を確保 */}
+        {linkedMaterials.length === 0 && (
+          <section className="mt-10 pt-8 border-t border-border text-center">
+            <Link
+              href="/materials"
+              className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-[14px] font-rounded font-black hover:opacity-90 transition-opacity shadow-md"
+            >
+              <Printer className="w-4 h-4" />
+              無料のぬりえを探す
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </section>
         )}
 

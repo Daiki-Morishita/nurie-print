@@ -1,6 +1,7 @@
 /**
  * /api/admin/posts/[id]/images
  *  POST   - 既存投稿に画像を追加（multipart photos: File[]）
+ *  PUT    - 既存画像のファイル差し替え（multipart imageId + photo。id・順序は維持）
  *  DELETE - クエリ ?imageId=xxx で特定画像を削除
  *  PATCH  - 画像順序の入れ替え（body.order: { imageId: order }）
  */
@@ -9,6 +10,35 @@ import { prisma } from '@/lib/db'
 import { requireAdmin } from '@/lib/admin-auth'
 import { uploadPostImage, deletePostImage } from '@/lib/post-storage'
 import { revalidatePath } from 'next/cache'
+
+export async function PUT(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> },
+) {
+  const denied = await requireAdmin()
+  if (denied) return denied
+
+  const { id } = await params
+  const form = await request.formData()
+  const imageId = form.get('imageId') as string | null
+  const photo = form.get('photo')
+  if (!imageId || !(photo instanceof File)) {
+    return NextResponse.json({ error: 'imageId と photo が必要' }, { status: 400 })
+  }
+
+  const existing = await prisma.postImage.findFirst({ where: { id: imageId, postId: id } })
+  if (!existing) return NextResponse.json({ error: '画像が見つかりません' }, { status: 404 })
+
+  const buf = Buffer.from(await photo.arrayBuffer())
+  const newUrl = await uploadPostImage(buf)
+  const updated = await prisma.postImage.update({ where: { id: imageId }, data: { url: newUrl } })
+  // 旧ファイルを削除（順序・idは維持）
+  await deletePostImage(existing.url)
+
+  revalidatePath('/')
+  revalidatePath(`/posts/${id}`)
+  return NextResponse.json({ ok: true, image: { id: updated.id, url: updated.url, order: updated.order } })
+}
 
 export async function POST(
   request: Request,

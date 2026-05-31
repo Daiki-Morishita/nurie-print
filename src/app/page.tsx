@@ -136,8 +136,7 @@ export default async function HomePage() {
   const popular = getPopularMaterials(12, 'kids', overrides)
   const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
-  const todaysPosts = await getPublishedPosts(1)
-  const todaysPost = todaysPosts[0] ?? null
+  const todaysPosts = await getPublishedPosts(6)
   const postsTitleMap = new Map(materials.map(m => [m.id, m.title]))
 
   return (
@@ -217,8 +216,49 @@ export default async function HomePage() {
       {/* ===== FEATURED PICK (random fade) ===== */}
       <FeaturedPick items={featuredPool} intervalMs={7000} />
 
-      {/* ===== DIFFICULTY (moved up — quick filter) ===== */}
+      {/* ===== THEMES（テーマで探す・難易度より上に） ===== */}
       <section className="py-12 border-t border-border bg-background">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <SectionHead
+            title="テーマで探す"
+            count={`全${THEMES.length}カテゴリ`}
+            subtitle="お子さまが好きなテーマからお選びください"
+            emoji="🎨"
+          />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+            {THEMES.map(theme => {
+              const sample = getThemeSample(theme.key, theme.sample)
+              const count = filterMaterials({ theme: theme.key as Parameters<typeof filterMaterials>[0]['theme'], audience: 'kids' }).length
+              return (
+                <Link
+                  key={theme.key}
+                  href={theme.href}
+                  className="group bg-white border-2 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all relative shadow-sm hover:shadow-md"
+                  style={{ borderColor: theme.color }}
+                >
+                  {/* Emoji corner badge */}
+                  <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full flex items-center justify-center text-[20px] shadow-sm border-2 border-white" style={{ background: theme.color }}>
+                    {theme.emoji}
+                  </div>
+                  <div className="aspect-[1.414/1] bg-background flex items-center justify-center overflow-hidden">
+                    {sample?.imageUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={sample.imageUrl} alt={`${theme.label}のぬりえ`} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform" />
+                    ) : null}
+                  </div>
+                  <div className="p-3 text-center">
+                    <div className="font-rounded text-[16px] font-black mb-0.5" style={{ color: theme.color }}>{theme.label}</div>
+                    <div className="text-[12px] text-muted-foreground font-medium">{count}点</div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== DIFFICULTY (quick filter) ===== */}
+      <section className="py-12 border-t border-border">
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionHead
             title="むずかしさで探す"
@@ -274,48 +314,7 @@ export default async function HomePage() {
       </section>
 
       {/* ===== TODAY'S PIECE (今日のいちまい) — 投稿0件なら自動非表示 ===== */}
-      <TodaysPost post={todaysPost} titleMap={postsTitleMap} />
-
-      {/* ===== THEMES ===== */}
-      <section className="py-12 border-t border-border bg-background">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <SectionHead
-            title="テーマで探す"
-            count={`全${THEMES.length}カテゴリ`}
-            subtitle="お子さま・園児が好きなテーマからお選びください"
-            emoji="🎨"
-          />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
-            {THEMES.map(theme => {
-              const sample = getThemeSample(theme.key, theme.sample)
-              const count = filterMaterials({ theme: theme.key as Parameters<typeof filterMaterials>[0]['theme'], audience: 'kids' }).length
-              return (
-                <Link
-                  key={theme.key}
-                  href={theme.href}
-                  className="group bg-white border-2 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all relative shadow-sm hover:shadow-md"
-                  style={{ borderColor: theme.color }}
-                >
-                  {/* Emoji corner badge */}
-                  <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full flex items-center justify-center text-[20px] shadow-sm border-2 border-white" style={{ background: theme.color }}>
-                    {theme.emoji}
-                  </div>
-                  <div className="aspect-[1.414/1] bg-background flex items-center justify-center overflow-hidden">
-                    {sample?.imageUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={sample.imageUrl} alt={`${theme.label}のぬりえ`} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform" />
-                    ) : null}
-                  </div>
-                  <div className="p-3 text-center">
-                    <div className="font-rounded text-[16px] font-black mb-0.5" style={{ color: theme.color }}>{theme.label}</div>
-                    <div className="text-[12px] text-muted-foreground font-medium">{count}点</div>
-                  </div>
-                </Link>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <TodaysPost posts={todaysPosts} titleMap={postsTitleMap} />
 
       {/* ===== EDITORIAL QUOTE ===== */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-white to-[#FFF3E0]/40 border-y border-border">

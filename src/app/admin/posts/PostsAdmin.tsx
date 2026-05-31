@@ -23,10 +23,12 @@ type Option = { id: string; title: string }
 export function PostsAdmin({
   featuredOptions,
   allMaterialTitles,
+  allMaterialImages,
   initialPosts,
 }: {
   featuredOptions: Option[]
   allMaterialTitles: [string, string][]
+  allMaterialImages: [string, string][]
   initialPosts: PostDTO[]
 }) {
   const [posts, setPosts] = useState<PostDTO[]>(initialPosts)
@@ -35,6 +37,7 @@ export function PostsAdmin({
   const [editing, setEditing] = useState<PostDTO | null>(null)
 
   const titleMap = useMemo(() => new Map(allMaterialTitles), [allMaterialTitles])
+  const imageMap = useMemo(() => new Map(allMaterialImages), [allMaterialImages])
 
   function handleCreated(post: PostDTO) {
     setPosts(ps => [post, ...ps])
@@ -77,6 +80,7 @@ export function PostsAdmin({
       <PostComposer
         featuredOptions={featuredOptions}
         titleMap={titleMap}
+        imageMap={imageMap}
         onCreated={handleCreated}
         onError={setError}
       />
@@ -92,6 +96,7 @@ export function PostsAdmin({
           post={editing}
           featuredOptions={featuredOptions}
           titleMap={titleMap}
+          imageMap={imageMap}
           onClose={() => setEditing(null)}
           onUpdate={handleUpdated}
           onDelete={handleDeleted}
