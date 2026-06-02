@@ -47,3 +47,5 @@ scripts/.upload_md5.json
 public/preview/
 scripts/.last_send_time
 public/uploads/
+__pycache__/
+scripts/test_password.mjs
