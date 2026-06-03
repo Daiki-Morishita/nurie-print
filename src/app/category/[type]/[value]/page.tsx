@@ -40,32 +40,32 @@ function getPageInfo(type: string, value: string): { title: string; description:
       const label = CATEGORY_LABELS[value as Category] ?? value
       return {
         title: `${label}プリント｜無料印刷`,
-        description: `保育園・幼稚園・ご家庭で使える${label}の無料プリント一覧。年齢・難易度別に探せて、すぐに印刷できます。`,
+        description: `おうちで使える${label}の無料プリント一覧。年齢・難易度別に探せて、すぐに印刷できます。`,
       }
     }
     case 'season': {
       const label = SEASON_LABELS[value as Season] ?? value
       return {
         title: `${label}の教材プリント｜無料印刷`,
-        description: `${label}の季節にぴったりな無料プリント教材一覧。ぬりえ・工作・製作など、保育現場やご家庭で使えます。`,
+        description: `${label}の季節にぴったりな無料プリント教材一覧。ぬりえ・工作・製作など、おうちで使えます。`,
       }
     }
     case 'event': {
       const label = EVENT_LABELS[value] ?? value
       return {
         title: `${label}の教材プリント｜無料印刷`,
-        description: `${label}で使える無料プリント教材一覧。保育園・幼稚園の行事に合わせて選べるぬりえ・工作素材が揃っています。`,
+        description: `${label}で使える無料プリント教材一覧。おうちの行事に合わせて選べるぬりえ・工作素材が揃っています。`,
       }
     }
     case 'theme': {
       const label = THEME_LABELS[value as Theme] ?? value
       return {
         title: `${label}のぬりえプリント｜無料印刷`,
-        description: `${label}をテーマにした無料ぬりえプリント一覧。保育園・幼稚園・ご家庭でA4印刷してすぐ使えます。難易度別・年齢別に選べます。`,
+        description: `${label}をテーマにした無料ぬりえプリント一覧。おうちでA4印刷してすぐ使えます。難易度別・年齢別に選べます。`,
       }
     }
     default:
-      return { title: '教材一覧', description: '保育園・幼稚園向け無料プリント教材を探せます。' }
+      return { title: '教材一覧', description: 'おうち向け無料プリント教材を探せます。' }
   }
 }
 

@@ -30,14 +30,14 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   if (params.search) {
     return {
       title: `「${params.search}」の検索結果｜無料ぬりえプリント`,
-      description: `「${params.search}」に関する無料ぬりえプリントを検索。保育園・幼稚園で使えるA4印刷対応のぬりえを年齢・難易度別に探せます。`,
+      description: `「${params.search}」に関する無料ぬりえプリントを検索。おうちで使えるA4印刷対応のぬりえを年齢・難易度別に探せます。`,
       alternates: { canonical: 'https://nurie-print.com/materials' },
       robots: { index: false, follow: true },
     }
   }
   return {
     title: '教材を探す｜無料ぬりえプリント一覧',
-    description: '保育園・幼稚園で使える無料ぬりえプリント一覧。動物・恐竜・乗り物など豊富なテーマを年齢・難易度・季節で絞り込んでA4印刷できます。',
+    description: 'おうちで使える無料ぬりえプリント一覧。動物・恐竜・乗り物など豊富なテーマを年齢・難易度・季節で絞り込んでA4印刷できます。',
     alternates: { canonical: 'https://nurie-print.com/materials' },
     // AdSense審査中: 一覧ページは薄いコンテンツ判定回避のため一時noindex
     robots: { index: false, follow: true },

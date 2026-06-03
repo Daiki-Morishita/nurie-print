@@ -4,8 +4,8 @@ import { ChevronRight, Clock, BookOpen } from 'lucide-react'
 import { columns } from '@/lib/columns'
 
 export const metadata = {
-  title: 'コラム｜保育・幼児教育の知識とアイデア',
-  description: 'ぬりえの発達効果・年齢別ぬりえ選び・季節の保育活動・外遊びの効果など、保育士・保護者に役立つ幼児教育コラム36本を掲載。',
+  title: 'コラム｜おやこの知育・ぬりえの知識とアイデア',
+  description: 'ぬりえの発達効果・年齢別ぬりえ選び・季節のおうち遊び・外遊びの効果など、子育て中のご家庭に役立つ知育コラム36本を掲載。',
   alternates: { canonical: 'https://nurie-print.com/columns' },
 }
 
@@ -24,7 +24,7 @@ function buildItemListJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: '保育・幼児教育コラム一覧',
+    name: 'おやこの知育コラム一覧',
     url: `${BASE_URL}/columns`,
     numberOfItems: columns.length,
     itemListElement: columns.map((col, i) => ({
@@ -54,7 +54,7 @@ export default function ColumnsPage() {
           読みもの
         </h1>
         <p className="text-muted-foreground text-[14px] leading-relaxed">
-          ぬりえの効果・発達段階別の教材選び・運筆・工作など、保育・幼児教育の現場で役立つ知識を編集部が解説します。
+          ぬりえの効果・発達段階別の教材選び・運筆・工作など、おうちの子育てに役立つ知識を編集部が解説します。
         </p>
       </div>
 
