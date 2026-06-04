@@ -49,3 +49,4 @@ scripts/.last_send_time
 public/uploads/
 __pycache__/
 scripts/test_password.mjs
+scripts/pin_shots/

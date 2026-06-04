@@ -327,3 +327,64 @@ scripts/refs/
 | `jitter_sleep(max, rate_limited, success_count)` | 慣らし運転対応バックオフ |
 | `cleanup_tmp_materials(days=90)` | 起動時に古いtmpファイルを自動削除 |
 | `human_pause / human_move_and_click / human_type` | 人間らしい操作ヘルパー |
+
+---
+
+# Pinterest 自動投稿（`scripts/post_pinterest.py`）
+
+ChatGPT生成と同じ Playwright CDP 方式。公式APIは Trial が非公開ピン・Standard が審査必須のため不採用。
+
+## CDP Chrome 起動（毎回・ポートは生成用と別の9223）
+
+```bash
+open -na "Google Chrome" --args \
+  --remote-debugging-port=9223 \
+  --user-data-dir="$HOME/.pinterest-chrome-profile" \
+  "https://www.pinterest.com/"
+```
+
+- 初回のみ Pinterest にログイン（アカウント: contact@nurie-print.com）
+- ChatGPT生成用（9222）と同時起動可能（プロファイル別）
+
+## 実行
+
+```bash
+# テスト（公開せず入力まで＋各ステップscripts/pin_shots/にスクショ）
+python3 scripts/post_pinterest.py --once --dry-run --shot
+
+# 本番1枚
+python3 scripts/post_pinterest.py --once
+
+# キューを間隔をあけて投稿（今回最大N枚）
+python3 scripts/post_pinterest.py --max 3
+```
+
+## 投稿キュー `scripts/pin_queue.json`
+
+各エントリ: `image`(scripts/からの相対) / `board`(Pinterestのボード名と完全一致) / `title` / `description` / `link` / `posted_at`(投稿後に自動記録、nullが未投稿)。
+
+## レート・BAN対策
+
+- 新規アカウントは **1日2〜5枚**・各 **25分間隔**（`SEND_INTERVAL=1500`）
+- 最初の2枚は間隔1.4倍（`WARMUP_POSTS` / `WARMUP_MULT`）
+- human操作ヘルパーでbot検知回避
+- ドラフト破棄ダイアログは自動承認
+
+## UI変更時の調査
+
+Pinterestのpin-builder DOMが変わってフィールド未入力になったら:
+
+```bash
+python3 scripts/inspect_pin_dom.py   # textarea/contenteditableのid・placeholderを列挙
+```
+
+→ 出力を見て `post_pinterest.py` の `TITLE_SEL` / `DESC_SEL` / `LINK_SEL` / `SAVE_SEL` を更新。
+
+## ピン画像の作り方
+
+`scripts/pin_assets/*.jpg`（1000x1500・2:3）。3パターン:
+- 単体記録ピン（写真＋下帯タイトル）
+- Before/After（白紙→完成のコラージュ）= 保存率最強
+- 悩み解決ストーリー（情緒コピー＋完成写真）
+
+HTMLで組んでPlaywrightで1000x1500スクショ→sipsでJPG化。
