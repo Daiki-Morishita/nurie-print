@@ -80,3 +80,44 @@ export const DIFFICULTY_TIPS: Record<Difficulty, string> = {
   3: '色を選ぶ意図を持って塗れるようになります。「葉っぱは緑、でも秋なら黄色」など、季節や場面を考えながら塗ると深い学びになります。',
   4: '配色のバランス、グラデーション、影の表現など、絵画的な技法に挑戦できる段階。色鉛筆で重ね塗りすると、より豊かな表現が可能です。',
 }
+
+/** 素材IDから決定的な整数を作る（バリエーション分散用） */
+function hashId(id: string): number {
+  let h = 0
+  for (let i = 0; i < id.length; i++) h = (Math.imul(h, 31) + id.charCodeAt(i)) >>> 0
+  return h
+}
+
+/**
+ * 「育てる力」の締めの一文（テーマ非依存・4種）。
+ * テーマ共通の THEME_INSIGHT に素材IDで分散した一文を足し、28〜30件が全同一になるのを防ぐ。
+ */
+const STRENGTH_CLOSERS = [
+  '塗ったあとに「どこが気に入った？」と聞いてみると、子ども自身の気づきや感じ方を言葉にする練習にもつながります。',
+  '一枚を仕上げた達成感は次の「やってみたい」につながるので、できた喜びをたっぷり認めてあげましょう。',
+  '同じ題材を時間をおいて塗り直すと、色づかいや手の動かし方の成長が見えやすくなります。',
+  '正解の色を決めつけず、子どもが選んだ色を尊重することが、自由な発想を伸ばすいちばんの近道です。',
+]
+
+/** テーマの「育てる力」本文（素材ごとに締め文を分散）。テーマ未設定や未定義テーマでは null。 */
+export function themeStrength(theme: Theme | undefined, id: string): string | null {
+  if (!theme) return null
+  const base = THEME_INSIGHT[theme]
+  if (!base) return null
+  return `${base} ${STRENGTH_CLOSERS[hashId(id + 's') % STRENGTH_CLOSERS.length]}`
+}
+
+/**
+ * 「塗り方ガイド」本文（素材ごとに可変）。
+ * 難易度別の共通コツに、素材名を差し込んだ締め文（3種を分散）を足してverbatim重複を避ける。
+ */
+const GUIDE_CLOSERS = [
+  (title: string) => `「${title}」も、この進め方を意識すると取り組みやすくなります。`,
+  (title: string) => `「${title}」を塗りながら、お子さんのペースを大切にしてあげましょう。`,
+  (title: string) => `「${title}」が仕上がったら、がんばりをたっぷり褒めてあげてください。`,
+]
+
+export function coloringGuide(title: string, difficulty: Difficulty, id: string): string {
+  const closer = GUIDE_CLOSERS[hashId(id + 'g') % GUIDE_CLOSERS.length](title)
+  return `${DIFFICULTY_TIPS[difficulty]} ${closer}`
+}

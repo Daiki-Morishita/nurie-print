@@ -5,7 +5,7 @@ import { ArrowLeft, Clock, Users, Lightbulb, Printer, ChevronRight, ChevronLeft 
 import { getMaterialById, getRelatedMaterials, materials } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
-import { THEME_INSIGHT, DIFFICULTY_TIPS, ENJOY_AT_HOME, ENJOY_AT_HOME_DEFAULT } from '@/lib/theme-insights'
+import { THEME_INSIGHT, ENJOY_AT_HOME, ENJOY_AT_HOME_DEFAULT, themeStrength, coloringGuide } from '@/lib/theme-insights'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { PrintButton } from '@/components/materials/PrintButton'
 import { LightPrintButton } from '@/components/materials/LightPrintButton'
@@ -340,11 +340,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               {material.theme && THEME_INSIGHT[material.theme] && (
                 <>
                   <h3 className="font-rounded text-[14px] font-bold pt-2">「{THEME_LABELS[material.theme]}」テーマで育てる力</h3>
-                  <p>{THEME_INSIGHT[material.theme]}</p>
+                  <p>{themeStrength(material.theme, material.id)}</p>
                 </>
               )}
               <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
-              <p>{DIFFICULTY_TIPS[material.difficulty]}</p>
+              <p>{coloringGuide(material.title, material.difficulty, material.id)}</p>
               <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
               <p>{(material.theme && ENJOY_AT_HOME[material.theme]) || ENJOY_AT_HOME_DEFAULT}</p>
             </div>

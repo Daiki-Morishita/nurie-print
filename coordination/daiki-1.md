@@ -9,8 +9,8 @@
 
 - **著作権IP削除**: anpanman-train×4・thomas-train×4 を data.ts と Supabase Storage から完全削除。`scripts/scan_ip_risk.py` で全素材走査しIP残0件を確認。
 - **F-1（最優先・審査ブロッカー）**: `layout.tsx` の AdSenseスクリプトが env gate で本番未配信だった。gate を外し常時 `<head>` 配信に変更＋`verification.other` に `google-adsense-account` 追加。本番curlで存在確認済み。
-- **H-1**: 「おうちでの楽しみ方」が全ページ同一文字列→テーマ別に可変化（`theme-insights.ts` の `ENJOY_AT_HOME`）。
-- **M-1**: `columns.ts` の経験者風一人称7箇所を参照型に書き換え。
+- **H-1**: 共通テンプレ3ブロックの重複対策。「おうちでの楽しみ方」テーマ別可変化（`ENJOY_AT_HOME`）に加え、「育てる力」を素材IDで4パターンに分散（`themeStrength`）、「塗り方ガイド」に素材名差し込み＋3パターン分散（`coloringGuide`）。全て `theme-insights.ts`。
+- **M-1**: `columns.ts` の経験者風一人称＋虚偽の実務経歴表現を全て参照型/出典ベースに書き換え（「長年」「現場で」「見てきた」grep=0確認済み）。
 - **M-2**: privacy にパーソナライズ広告オプトアウトリンク追加。
 - **L-1**: operator 住所を `大阪府大阪市西区江戸堀3-6-2` に補完。
 
