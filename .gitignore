@@ -51,3 +51,5 @@ __pycache__/
 scripts/test_password.mjs
 scripts/pin_shots/
 scripts/cron_pinterest.log
+scripts/pin_templates/*.jpg
+scripts/pin_templates/*.png

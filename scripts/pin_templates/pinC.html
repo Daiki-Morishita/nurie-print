@@ -1,0 +1,30 @@
+<!--
+  パターン③: 悩み解決ストーリー（情緒エピソードがあるPost向け）
+  使い方:
+    1) コピーして編集  2) photo.jpg(完成写真) を同フォルダに置く  3) ★を差し替え
+    4) node scripts/pin_templates/shoot.mjs mypin.html mypin.png
+    5) sips -Z 1500 -s format jpeg -s formatOptions 88 mypin.png --out ../pin_assets/mypin.jpg
+-->
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1000px;height:1500px;font-family:'Hiragino Maru Gothic ProN','YuGothic',sans-serif}
+.pin{width:1000px;height:1500px;background:#FFF8EC;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.hd{background:#C25A6E;color:#fff;padding:52px 64px 46px;text-align:center}
+.hd .q{font-size:34px;font-weight:700;opacity:.92}
+.hd .big{font-size:64px;font-weight:900;line-height:1.25;margin-top:12px}
+.photo{flex:1;margin:40px 56px 24px;border-radius:34px;overflow:hidden;border:8px solid #fff;box-shadow:0 16px 44px rgba(0,0,0,.16)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.bottom{padding:8px 64px 56px;text-align:center}
+.title{font-weight:900;font-size:48px;line-height:1.35;color:#332C24}
+.title b{color:#C25A6E}
+.url{margin-top:26px;font-size:30px;font-weight:900;color:#E66A2C}
+.d{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle;margin-right:6px}
+</style></head><body>
+<div class="pin">
+  <div class="hd"><div class="q">○○な日。</div><div class="big">塗り絵なら、<br>へっちゃらだった 🎨</div></div> <!-- ★悩み→解決 -->
+  <div class="photo"><img src="photo.jpg"></div> <!-- ★完成写真 -->
+  <div class="bottom">
+    <div class="title">こわいものも<b>「自分の色」</b>にできる。<br>○○の無料ぬりえ</div> <!-- ★タイトル -->
+    <div class="url"><span class="d" style="background:#E66A2C"></span><span class="d" style="background:#4FA7B8"></span><span class="d" style="background:#E8B838;margin-right:14px"></span>nurie-print.com ・ 2〜6歳</div>
+  </div>
+</div></body></html>
