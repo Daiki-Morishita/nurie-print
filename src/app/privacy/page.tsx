@@ -63,6 +63,13 @@ export default function PrivacyPage() {
             </a>
             をご確認ください。
           </p>
+          <p className="mt-2">
+            広告のパーソナライズは、
+            <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline mx-1">
+              Google 広告設定
+            </a>
+            からいつでも無効にできます。
+          </p>
         </div>
 
         <div>

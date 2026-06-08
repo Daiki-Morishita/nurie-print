@@ -17,6 +17,7 @@ const orgJsonLd = {
   foundingDate: '2020',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '江戸堀3-6-2',
     addressLocality: '大阪市西区',
     addressRegion: '大阪府',
     addressCountry: 'JP',
@@ -60,7 +61,7 @@ export default function OperatorPage() {
           <dd>森下 大喜</dd>
 
           <dt className="text-muted-foreground">所在地</dt>
-          <dd>大阪市西区3-6-2</dd>
+          <dd>大阪府大阪市西区江戸堀3-6-2</dd>
 
           <dt className="text-muted-foreground">開業</dt>
           <dd>2020年</dd>

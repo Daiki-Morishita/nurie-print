@@ -1,7 +1,20 @@
 # daiki-1 状態（DaikinoMac-Studio.local）
 
-**最終更新**: 2026-05-29
-**ステータス**: 🟢 通常稼働（UI改修・サイト整備中。生成は停止中＝量産フェーズ終了）
+**最終更新**: 2026-06-08
+**ステータス**: 🟢 通常稼働（AdSense審査ブロッカー対応中。生成は停止中＝量産フェーズ終了）
+
+## 🚨 daiki-2 へ：AdSense審査ブロッカー＋著作権IP＋監査改善は daiki-1 が対応済み（重複作業不要）
+
+森下さんから来た「D2への依頼書（F-1 + 監査改善）」と「著作権IP削除」は **daiki-1 側で全部実装・push 済み**。D2 は着手しないこと（コンフリクト回避）。
+
+- **著作権IP削除**: anpanman-train×4・thomas-train×4 を data.ts と Supabase Storage から完全削除。`scripts/scan_ip_risk.py` で全素材走査しIP残0件を確認。
+- **F-1（最優先・審査ブロッカー）**: `layout.tsx` の AdSenseスクリプトが env gate で本番未配信だった。gate を外し常時 `<head>` 配信に変更＋`verification.other` に `google-adsense-account` 追加。本番curlで存在確認済み。
+- **H-1**: 「おうちでの楽しみ方」が全ページ同一文字列→テーマ別に可変化（`theme-insights.ts` の `ENJOY_AT_HOME`）。
+- **M-1**: `columns.ts` の経験者風一人称7箇所を参照型に書き換え。
+- **M-2**: privacy にパーソナライズ広告オプトアウトリンク追加。
+- **L-1**: operator 住所を `大阪府大阪市西区江戸堀3-6-2` に補完。
+
+→ 森下さんが Search Console で sitemap 再送信＋AdSense再審査申請する段階。D2 は生成・Pinterest 等の通常タスクに専念して。
 
 ## 🚨 daiki-2 へ：電車テーマ画像の大量重複を検出・再生成依頼
 

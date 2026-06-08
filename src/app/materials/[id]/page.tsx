@@ -5,7 +5,7 @@ import { ArrowLeft, Clock, Users, Lightbulb, Printer, ChevronRight, ChevronLeft 
 import { getMaterialById, getRelatedMaterials, materials } from '@/lib/data'
 import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
-import { THEME_INSIGHT, DIFFICULTY_TIPS } from '@/lib/theme-insights'
+import { THEME_INSIGHT, DIFFICULTY_TIPS, ENJOY_AT_HOME, ENJOY_AT_HOME_DEFAULT } from '@/lib/theme-insights'
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { PrintButton } from '@/components/materials/PrintButton'
 import { LightPrintButton } from '@/components/materials/LightPrintButton'
@@ -346,11 +346,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
               <p>{DIFFICULTY_TIPS[material.difficulty]}</p>
               <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
-              <p>
-                完成したぬりえは、お部屋に飾ったり、季節のカード作りに活用したり、
-                お子さまの成長記録としてアルバムに残すのもおすすめです。
-                同じ題材でも年齢や難易度を変えて繰り返し楽しめるので、お気に入りの一枚を見つけてみてください。
-              </p>
+              <p>{(material.theme && ENJOY_AT_HOME[material.theme]) || ENJOY_AT_HOME_DEFAULT}</p>
             </div>
 
             {/* 活動提案 */}

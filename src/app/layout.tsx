@@ -59,9 +59,14 @@ export const metadata: Metadata = {
     title: 'ぬりえプリント | おやこの無料ぬりえ・年齢別3,200点',
     description: 'おうちで楽しむ年齢別ぬりえ。登録なしですぐ印刷、雨の日のおうち遊びや旅先のひとときに。',
   },
-  verification: process.env.NEXT_PUBLIC_PINTEREST_VERIFY
-    ? { other: { 'p:domain_verify': process.env.NEXT_PUBLIC_PINTEREST_VERIFY } }
-    : undefined,
+  verification: {
+    other: {
+      'google-adsense-account': 'ca-pub-4355731853778451',
+      ...(process.env.NEXT_PUBLIC_PINTEREST_VERIFY
+        ? { 'p:domain_verify': process.env.NEXT_PUBLIC_PINTEREST_VERIFY }
+        : {}),
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -78,16 +83,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GA_ID}');
           `}
         </Script>
-        {/* Google AdSense — 広告ユニットスロットが設定されているときだけロード（中間状態を避ける）。
-            審査通過 + ad unit作成 → NEXT_PUBLIC_ADSENSE_ENABLED=1 をVercel env varsに設定 */}
-        {process.env.NEXT_PUBLIC_ADSENSE_ENABLED === '1' && (
-          <Script
-            id="adsense"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451"
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-          />
-        )}
+        {/* Google AdSense 審査コード — 審査前から常時 <head> に配信する。
+            コードが本番に存在しないと審査が保留されるため env gate は外した。
+            広告ユニット(AdBanner)は slot未設定時に null を返すので空の広告枠は出ない。 */}
+        <Script
+          id="adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4355731853778451"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         {/* Microsoft Clarity — lazyOnload で INP負荷を抑える */}
         <Script id="ms-clarity" strategy="lazyOnload">
           {`
