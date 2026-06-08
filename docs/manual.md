@@ -388,3 +388,19 @@ python3 scripts/inspect_pin_dom.py   # textarea/contenteditableのid・placehold
 - 悩み解決ストーリー（情緒コピー＋完成写真）
 
 HTMLで組んでPlaywrightで1000x1500スクショ→sipsでJPG化。
+
+## 毎日自動投稿（cron）
+
+`scripts/run_pinterest_daily.sh` を cron が **毎朝10時** に実行:
+
+```
+0 10 * * * /Users/daikimorishita/dev/hoiku-print/scripts/run_pinterest_daily.sh >> /tmp/pinterest-cron.log 2>&1
+```
+
+- CDP Chrome(9223)が無ければ自動起動してから投稿
+- 未投稿ピン（`pin_queue.json` の `posted_at=null`）を **最大2枚/日**
+- キューが空なら何もしない → 新ピンを追記すれば翌朝から自動で順次公開
+- ログ: `scripts/cron_pinterest.log`
+- 時刻変更: `crontab -e` で `0 10` を編集
+- 手動テスト（公開なし）: `scripts/run_pinterest_daily.sh dry`
+- **注意**: Macがスリープ中はcronがスキップされる。常時起動 or `caffeinate` 推奨

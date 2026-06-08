@@ -50,3 +50,4 @@ public/uploads/
 __pycache__/
 scripts/test_password.mjs
 scripts/pin_shots/
+scripts/cron_pinterest.log
