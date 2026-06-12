@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
+import { relForMaterialLink } from '@/lib/index-ready'
 
 export interface FeaturedItem {
   id: string
@@ -107,7 +108,7 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
               No. {String(current.index + 1).padStart(3, '0')} / {idx + 1} of {items.length}
             </div>
             <h2 className="font-rounded text-[26px] md:text-[36px] font-black leading-[1.25] mb-4">
-              <Link href={`/materials/${current.id}`} className="hover:text-primary transition-colors">
+              <Link href={`/materials/${current.id}`} rel={relForMaterialLink(current.id)} className="hover:text-primary transition-colors">
                 {current.title}
               </Link>
             </h2>
@@ -133,6 +134,7 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
             </div>
             <Link
               href={`/materials/${current.id}`}
+              rel={relForMaterialLink(current.id)}
               className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-[14px] font-rounded font-black hover:-translate-y-0.5 transition-all shadow-md"
             >
               <span>🖍️</span>つかってみる
@@ -141,6 +143,7 @@ export function FeaturedPick({ items, intervalMs = 7000 }: Props) {
           </div>
           <Link
             href={`/materials/${current.id}`}
+            rel={relForMaterialLink(current.id)}
             className="order-1 md:order-2 aspect-[1.414/1] bg-white border border-border rounded-md overflow-hidden flex items-center justify-center shadow-sm hover:border-primary transition-colors"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}

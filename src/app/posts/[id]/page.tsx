@@ -6,6 +6,7 @@ import { PostCarousel } from '@/components/posts/PostCarousel'
 import { getPublishedPostById, getAllPublishedPostIds, deriveTitle } from '@/lib/posts'
 import { materials, getMaterialById } from '@/lib/data'
 import { MaterialCard } from '@/components/materials/MaterialCard'
+import { relForMaterialLink } from '@/lib/index-ready'
 
 export const dynamic = 'force-static'
 export const revalidate = 60
@@ -123,6 +124,7 @@ export default async function PostDetailPage({ params }: { params: Promise<{ id:
               </p>
               <Link
                 href={`/materials/${linkedMaterials[0].id}`}
+                rel={relForMaterialLink(linkedMaterials[0].id)}
                 className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-[14px] font-rounded font-black hover:opacity-90 transition-opacity shadow-md"
               >
                 <Printer className="w-4 h-4" />

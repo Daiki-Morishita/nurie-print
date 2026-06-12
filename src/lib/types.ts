@@ -282,6 +282,12 @@ export type Material = {
 
   /** Featured 素材: noindex 戦略の whitelist。true の素材だけインデックス対象、sitemapにも掲載 */
   featured?: boolean
+  /**
+   * index 解禁フラグ。featured(=量産テンプレ whitelist)とは別物。
+   * 人手で画像固有テキストに固有化し、再申請の品質基準(P4監査)を満たした素材だけ true。
+   * この true の素材だけが index 対象・sitemap 掲載・crawlable 内部リンクの対象。
+   */
+  indexReady?: boolean
   /** Featured 素材専用の独自解説文（200字以上推奨）。素材ページに表示 */
   seoDescription?: string
 
@@ -289,14 +295,24 @@ export type Material = {
   about?: MaterialAbout
 }
 
-/** 素材ごとに個別の解説3要素を持つための構造。値が無いブロックは UI で非表示。 */
+/**
+ * 素材ごとに個別の解説要素を持つための構造。値が無いブロックは UI で非表示。
+ *
+ * indexReady ページは「リード(seoDescription)／この絵の特徴／色のアイデア／塗り方・印刷の実用情報」
+ * の4ブロック構成で固有化する。テーマ共通定数(themeStrength 等)は indexReady ページでは描画しない。
+ * 各フィールドには「その絵を実際に見ないと書けない具体描写」を最低1つ含めること。
+ */
 export type MaterialAbout = {
-  /** 「この絵の特徴」80字程度（絵柄を踏まえた個別解説） */
+  /** 「この絵の特徴」絵柄を踏まえた個別解説（画像固有の事実を含む） */
   featureDescription?: string
-  /** 「色のアイデア」具体的な色名と部位 */
+  /** 「色のアイデア」具体的な色名と部位（画像の部位に紐づける） */
   colorIdeas?: string
-  /** 「塗り方ワンポイント」実用Tips */
+  /** 「塗り方ワンポイント」実用Tips（線の太さ・余白など画像固有の観察を含む） */
   coloringTips?: string
+  /** 「年齢別のねらい」この難易度・構図でどんな力が育つか（画像構成に紐づく固有説明） */
+  ageAim?: string
+  /** 「印刷・おうちでの楽しみ方」推奨用紙・うす色なぞり・余白と対象年齢・印刷後の遊び方（画像で代替できない独自価値） */
+  printTips?: string
 }
 
 export const DIFFICULTY_LABELS: Record<Difficulty, string> = {

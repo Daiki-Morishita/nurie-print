@@ -4,6 +4,7 @@ import { PostCarousel } from '@/components/posts/PostCarousel'
 import { PostsRail } from '@/components/home/PostsRail'
 import type { PostWithImages } from '@/lib/posts'
 import { deriveTitle } from '@/lib/posts'
+import { relForMaterialLink } from '@/lib/index-ready'
 
 /** 本文を「半分くらいで途切れさせる」抜粋ロジック */
 function makeExcerpt(body: string, maxLen = 180): string {
@@ -61,6 +62,7 @@ export function TodaysPost({
                       <Link
                         key={c.id}
                         href={`/materials/${c.id}`}
+                        rel={relForMaterialLink(c.id)}
                         className="inline-flex items-center gap-1 px-4 py-2 bg-primary text-white hover:bg-[#d05a23] rounded-full text-[13px] font-rounded font-black shadow-md transition-colors"
                       >
                         {c.title}

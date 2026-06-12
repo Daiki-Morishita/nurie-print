@@ -6,11 +6,12 @@ import { listPublishedPosts } from '@/lib/posts'
 const BASE_URL = 'https://nurie-print.com'
 
 // AdSense審査・scaled content 対策として、インデックス対象を絞ったホワイトリスト方式。
-// 掲載対象: home + columns + 静的ページ + featured 素材（人気上位50件・独自解説200字+） + 公開済み Post
-// 残り 3,200+ の素材ページは個別ページの厚みが揃うまで noindex 維持
+// 掲載対象: home + columns + 静的ページ + indexReady 素材（人手で固有化済み・厳選） + 公開済み Post
+// indexReady は featured(量産テンプレ whitelist)とは別物。固有化と品質監査を通った素材だけが対象。
+// 残り 3,200+ の素材ページは固有化が済むまで noindex 維持（sitemap 非掲載）
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const featuredMaterials = materials
-    .filter(m => m.featured)
+  const indexReadyMaterialUrls = materials
+    .filter(m => m.indexReady)
     .map(m => ({
       url: `${BASE_URL}/materials/${m.id}`,
       lastModified: new Date(m.createdAt || Date.now()),
@@ -45,7 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/contact`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
-    ...featuredMaterials,
+    ...indexReadyMaterialUrls,
     ...postUrls,
   ]
 }

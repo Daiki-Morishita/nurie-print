@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, Clock, Users, Lightbulb, Printer, ChevronRight, ChevronLeft } from 'lucide-react'
 import { getMaterialById, getRelatedMaterials, materials } from '@/lib/data'
+import { relForMaterialLink } from '@/lib/index-ready'
 import { loadOverrides } from '@/lib/data-overrides'
 import { CATEGORY_LABELS, DIFFICULTY_LABELS, SEASON_LABELS, EVENT_LABELS, THEME_LABELS } from '@/lib/types'
 import { THEME_INSIGHT, ENJOY_AT_HOME, ENJOY_AT_HOME_DEFAULT, themeStrength, coloringGuide } from '@/lib/theme-insights'
@@ -34,9 +35,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: `${material.title}｜${ageLabel}向け無料プリント`,
     description: seoDesc,
     alternates: { canonical: `https://nurie-print.com/materials/${id}` },
-    // featured 素材のみインデックス対象（200字以上の独自解説文を備えた人気上位50件）
-    // それ以外は AdSense審査・scaled content 対策で一時noindex
-    robots: material.featured
+    // indexReady 素材のみインデックス対象（人手で画像固有テキストに固有化し品質監査を通過した厳選）
+    // それ以外は AdSense審査・scaled content 対策で noindex（follow は維持＝孤立させない）
+    robots: material.indexReady
       ? { index: true, follow: true }
       : { index: false, follow: true },
     openGraph: {
@@ -214,6 +215,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               {prevMaterial && (
                 <Link
                   href={`/materials/${prevMaterial.id}`}
+                  rel={relForMaterialLink(prevMaterial.id)}
                   className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 hover:bg-white border border-border rounded-full shadow-md flex items-center justify-center text-foreground hover:text-primary transition-all"
                   title={`前: ${prevMaterial.title}`}
                   aria-label="前の教材"
@@ -224,6 +226,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
               {nextMaterial && (
                 <Link
                   href={`/materials/${nextMaterial.id}`}
+                  rel={relForMaterialLink(nextMaterial.id)}
                   className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 hover:bg-white border border-border rounded-full shadow-md flex items-center justify-center text-foreground hover:text-primary transition-all"
                   title={`次: ${nextMaterial.title}`}
                   aria-label="次の教材"
@@ -308,46 +311,69 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
             </div>
 
             {/* 解説テキスト — 冒頭は素材固有の説明文（seoDescription 優先、無ければ description）でユニーク性を確保 */}
-            <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
-              <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
-              <p className="text-[15px] text-foreground font-medium leading-relaxed whitespace-pre-line">
-                {material.seoDescription || material.description}
-              </p>
-              <p className="text-muted-foreground">
-                {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
-                {material.tools.length > 0 && (
-                  <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
+            {material.indexReady ? (
+              /* index 解禁ページ: 画像固有テキストのみで構成。テーマ共通定数は一切描画しない（scaled content 回避）。 */
+              <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
+                <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
+                <p className="text-[15px] text-foreground font-medium leading-relaxed whitespace-pre-line">
+                  {material.seoDescription || material.description}
+                </p>
+                {material.about?.featureDescription && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">この絵の特徴</h3>
+                    <p>{material.about.featureDescription}</p>
+                  </>
                 )}
-              </p>
-              {material.about?.featureDescription && (
-                <>
-                  <h3 className="font-rounded text-[14px] font-bold pt-2">この絵の特徴</h3>
-                  <p>{material.about.featureDescription}</p>
-                </>
-              )}
-              {material.about?.colorIdeas && (
-                <>
-                  <h3 className="font-rounded text-[14px] font-bold pt-2">色のアイデア</h3>
-                  <p>{material.about.colorIdeas}</p>
-                </>
-              )}
-              {material.about?.coloringTips && (
-                <>
-                  <h3 className="font-rounded text-[14px] font-bold pt-2">塗り方のワンポイント</h3>
-                  <p>{material.about.coloringTips}</p>
-                </>
-              )}
-              {material.theme && THEME_INSIGHT[material.theme] && (
-                <>
-                  <h3 className="font-rounded text-[14px] font-bold pt-2">「{THEME_LABELS[material.theme]}」テーマで育てる力</h3>
-                  <p>{themeStrength(material.theme, material.id)}</p>
-                </>
-              )}
-              <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
-              <p>{coloringGuide(material.title, material.difficulty, material.id)}</p>
-              <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
-              <p>{(material.theme && ENJOY_AT_HOME[material.theme]) || ENJOY_AT_HOME_DEFAULT}</p>
-            </div>
+                {material.about?.colorIdeas && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">色のアイデア</h3>
+                    <p>{material.about.colorIdeas}</p>
+                  </>
+                )}
+                {material.about?.ageAim && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">{ageLabel}のお子さまへのねらい</h3>
+                    <p>{material.about.ageAim}</p>
+                  </>
+                )}
+                {material.about?.coloringTips && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">塗り方のワンポイント</h3>
+                    <p>{material.about.coloringTips}</p>
+                  </>
+                )}
+                {material.about?.printTips && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">印刷・おうちでの楽しみ方</h3>
+                    <p className="whitespace-pre-line">{material.about.printTips}</p>
+                  </>
+                )}
+              </div>
+            ) : (
+              /* noindex の量産ページ: 従来どおりテンプレ補助テキストで最低限の文脈を保つ。 */
+              <div className="bg-white border border-border rounded-lg p-5 mb-4 leading-relaxed text-[14px] space-y-3">
+                <h2 className="font-rounded text-[18px] font-bold mb-1 pb-2 border-b border-border">この教材について</h2>
+                <p className="text-[15px] text-foreground font-medium leading-relaxed whitespace-pre-line">
+                  {material.seoDescription || material.description}
+                </p>
+                <p className="text-muted-foreground">
+                  {ageLabel}のお子さま向け、{DIFFICULTY_LABELS[material.difficulty]}難易度・所要時間の目安は約{material.duration}分。
+                  {material.tools.length > 0 && (
+                    <>使用する道具は{material.tools.join('、')}など、身近なもので取り組めます。</>
+                  )}
+                </p>
+                {material.theme && THEME_INSIGHT[material.theme] && (
+                  <>
+                    <h3 className="font-rounded text-[14px] font-bold pt-2">「{THEME_LABELS[material.theme]}」テーマで育てる力</h3>
+                    <p>{themeStrength(material.theme, material.id)}</p>
+                  </>
+                )}
+                <h3 className="font-rounded text-[14px] font-bold pt-2">{DIFFICULTY_LABELS[material.difficulty]}（{ageLabel}）の塗り方ガイド</h3>
+                <p>{coloringGuide(material.title, material.difficulty, material.id)}</p>
+                <h3 className="font-rounded text-[14px] font-bold pt-2">おうちでの楽しみ方</h3>
+                <p>{(material.theme && ENJOY_AT_HOME[material.theme]) || ENJOY_AT_HOME_DEFAULT}</p>
+              </div>
+            )}
 
             {/* 活動提案 */}
             <div className="bg-white border border-border rounded-lg p-4">

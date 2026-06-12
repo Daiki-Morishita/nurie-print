@@ -4,7 +4,8 @@ import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCa
 import { FeaturedPick, type FeaturedItem } from '@/components/home/FeaturedPick'
 import { TodaysPost } from '@/components/home/TodaysPost'
 import type { Difficulty } from '@/lib/types'
-import { materials, getPopularMaterials, getMaterialById, filterMaterials, getMaterialsForAudience } from '@/lib/data'
+import { materials, getPopularMaterials, getMaterialById, filterMaterials, getMaterialsForAudience, indexReadyMaterials } from '@/lib/data'
+import { relForMaterialLink } from '@/lib/index-ready'
 import { loadOverrides } from '@/lib/data-overrides'
 import { columns } from '@/lib/columns'
 import { getPublishedPosts } from '@/lib/posts'
@@ -133,7 +134,14 @@ const FAQS = [
 
 export default async function HomePage() {
   const overrides = await loadOverrides()
-  const popular = getPopularMaterials(12, 'kids', overrides)
+  // 指標ページ(home, index対象)から crawlable に出すのは index 解禁済みを優先。
+  // 不足分は人気で埋めるが、その分は CompactCard 側で nofollow になる。
+  const popularRaw = getPopularMaterials(12, 'kids', overrides)
+  const indexReadyKids = indexReadyMaterials.filter(m => kidsMaterials.includes(m))
+  const popular = [
+    ...indexReadyKids,
+    ...popularRaw.filter(m => !m.indexReady),
+  ].slice(0, 12)
   const featuredPool = getFeaturedPool(overrides)
   const featuredColumn = columns[0]
   const todaysPosts = await getPublishedPosts(6)
@@ -579,6 +587,7 @@ function CompactCard({ material }: { material: ReturnType<typeof getPopularMater
   return (
     <Link
       href={`/materials/${material.id}`}
+      rel={relForMaterialLink(material.id)}
       className="group bg-white border border-border rounded-lg overflow-hidden hover:border-primary transition-all hover:-translate-y-0.5"
     >
       <div className="aspect-[1.414/1] bg-background flex items-center justify-center overflow-hidden">

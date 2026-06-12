@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Clock, Users, Star } from 'lucide-react'
 import type { Material, Difficulty } from '@/lib/types'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
+import { relForMaterialLink } from '@/lib/index-ready'
 
 // 難易度ごとの色・ラベル（再利用可）
 const DIFFICULTY_COLOR: Record<Difficulty, { border: string; text: string; bg: string }> = {
@@ -38,6 +39,7 @@ export function MaterialCard({ material }: MaterialCardProps) {
   return (
     <Link
       href={`/materials/${material.id}`}
+      rel={relForMaterialLink(material.id)}
       className="group bg-white border border-border rounded-lg overflow-hidden hover:border-primary hover:-translate-y-0.5 transition-all duration-200 flex flex-col"
     >
       {/* Preview area */}

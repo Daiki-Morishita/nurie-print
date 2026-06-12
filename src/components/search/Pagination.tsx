@@ -60,7 +60,7 @@ export function Pagination({ currentPage, totalPages, basePath, searchParams, to
         {currentPage > 1 ? (
           <Link
             href={buildHref(currentPage - 1)}
-            rel="prev"
+            rel="prev nofollow"
             className="flex items-center gap-1 px-3 py-2 text-[13px] border border-border rounded hover:bg-muted transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />前へ
@@ -87,6 +87,7 @@ export function Pagination({ currentPage, totalPages, basePath, searchParams, to
             <Link
               key={p}
               href={buildHref(p)}
+              rel="nofollow"
               className="min-w-[36px] text-center px-3 py-2 text-[13px] border border-border rounded hover:bg-muted transition-colors"
             >
               {p}
@@ -98,7 +99,7 @@ export function Pagination({ currentPage, totalPages, basePath, searchParams, to
         {currentPage < totalPages ? (
           <Link
             href={buildHref(currentPage + 1)}
-            rel="next"
+            rel="next nofollow"
             className="flex items-center gap-1 px-3 py-2 text-[13px] border border-border rounded hover:bg-muted transition-colors"
           >
             次へ<ChevronRight className="w-4 h-4" />
