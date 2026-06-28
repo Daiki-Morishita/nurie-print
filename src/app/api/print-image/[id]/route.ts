@@ -1,13 +1,20 @@
 import { NextResponse } from 'next/server'
-import sharp from 'sharp'
 import { getMaterialById } from '@/lib/data'
+import hiresIds from '@/lib/print-hires-ids.json'
 
 export const runtime = 'nodejs'
 
+const HIRES_IDS = new Set(hiresIds as string[])
+const HIRES_BASE =
+  'https://hdhogsjmdowevijxooiq.supabase.co/storage/v1/object/public/print-hires'
+
 /**
- * 印刷用の高解像度画像を配信する。
- * 元画像（約1536px）を長辺3500px（A4横で約300DPI）に lanczos でアップスケール。
- * 線画なので拡大しても破綻しにくい。immutable キャッシュで CDN に常駐させる。
+ * 印刷用画像の配信。
+ * 事前生成済み(featured∪indexReady)は print-hires バケットの3500px版へ、
+ * それ以外は元画像へリダイレクトするだけにする。
+ * sharp の都度生成を廃止し、画像バイトは Supabase 側で配信することで
+ * Vercel の Origin Transfer / 関数実行をほぼゼロにする。
+ * 事前生成は scripts/pregenerate_print_images.py が print-hires-ids.json を更新する。
  */
 export async function GET(
   _request: Request,
@@ -20,34 +27,17 @@ export async function GET(
     return new NextResponse('Not found', { status: 404 })
   }
 
-  // SVG は解像度非依存なのでそのままリダイレクト
-  if (material.imageUrl.endsWith('.svg')) {
-    return NextResponse.redirect(material.imageUrl, {
-      headers: { 'Cache-Control': 'public, max-age=86400' },
+  // 事前生成済み 3500px 版（恒久・immutable）
+  if (HIRES_IDS.has(id) && !material.imageUrl.endsWith('.svg')) {
+    return NextResponse.redirect(`${HIRES_BASE}/${id}-print.png`, {
+      status: 308,
+      headers: { 'Cache-Control': 'public, max-age=31536000, immutable' },
     })
   }
 
-  try {
-    const res = await fetch(material.imageUrl)
-    if (!res.ok) throw new Error(`fetch ${res.status}`)
-    const input = Buffer.from(await res.arrayBuffer())
-
-    const out = await sharp(input)
-      .resize({ width: 3500, height: 3500, fit: 'inside', withoutEnlargement: false, kernel: 'lanczos3' })
-      .flatten({ background: '#FFFFFF' })
-      .png({ compressionLevel: 9 })
-      .toBuffer()
-
-    return new NextResponse(new Uint8Array(out), {
-      headers: {
-        'Content-Type': 'image/png',
-        'Cache-Control': 'public, max-age=31536000, immutable',
-      },
-    })
-  } catch {
-    // アップスケール失敗時は元画像へフォールバック
-    return NextResponse.redirect(material.imageUrl, {
-      headers: { 'Cache-Control': 'public, max-age=86400' },
-    })
-  }
+  // 未生成・SVG は元画像へフォールバック（元画像でも印刷は可能）
+  return NextResponse.redirect(material.imageUrl, {
+    status: 307,
+    headers: { 'Cache-Control': 'public, max-age=86400' },
+  })
 }
