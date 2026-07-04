@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { getMazesByShape } from '@/lib/maze/loader'
-import { buildMazeSvg } from '@/lib/maze/svg'
-import { MAZE_SHAPE_ORDER, MAZE_SHAPE_LABELS, MAZE_DIFFICULTY_LABELS } from '@/lib/maze/types'
+import { MAZE_SHAPE_ORDER, MAZE_SHAPE_LABELS } from '@/lib/maze/types'
+import { MazeGrid, type MazeGridItem } from './MazeGrid'
 import styles from './maze.module.css'
+
+// 一覧のサムネはビルド時に scripts/pregenerate_maze_thumbs.py が生成した静止画（PNG化した buildMazeSvg 出力）を参照する。
+// 一覧でSVGを都度インライン展開すると320枚分がHTMLに直接載り、ページが2MB近くまで肥大化するため（index対象ページの品質異常）。
 
 export const metadata: Metadata = {
   title: 'めいろプリント 無料｜2〜6歳 / かんたん〜とてもむずかしい｜ぬりえプリント',
@@ -29,6 +31,13 @@ export default function MazeIndexPage() {
         {MAZE_SHAPE_ORDER.map(shape => {
           const items = getMazesByShape(shape)
           if (items.length === 0) return null
+          const gridItems: MazeGridItem[] = items.map(m => ({
+            slug: m.slug,
+            no: m.no,
+            difficulty: m.difficulty,
+            age_label: m.age_label,
+            turns: m.turns,
+          }))
           return (
             <section key={shape} className={styles['difficulty-section']}>
               <h2 className={styles['difficulty-heading']}>
@@ -37,20 +46,7 @@ export default function MazeIndexPage() {
                   {items.length}枚
                 </span>
               </h2>
-              <div className={styles['maze-grid']}>
-                {items.map(m => {
-                  const { svg } = buildMazeSvg(m)
-                  return (
-                    <Link key={m.slug} href={`/maze/${m.slug}`} className={styles['maze-card']}>
-                      <div className={styles['maze-card-thumb']} dangerouslySetInnerHTML={{ __html: svg }} />
-                      <div className={styles['maze-card-title']}>
-                        {MAZE_DIFFICULTY_LABELS[m.difficulty]} No.{String(m.no).padStart(3, '0')}
-                      </div>
-                      <div className={styles['maze-card-meta']}>{m.age_label}・ターン{m.turns}回</div>
-                    </Link>
-                  )
-                })}
-              </div>
+              <MazeGrid items={gridItems} />
             </section>
           )
         })}
