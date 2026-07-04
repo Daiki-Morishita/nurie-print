@@ -39,7 +39,13 @@ export const INDEX_READY_IDS: ReadonlySet<string> = new Set<string>([
   'cake-simple-1',
   'donut-simple-1',
   'rainbow-simple-1',
-  'sun-simple-1'
+  'sun-simple-1',
+  'police-car-easy-1',
+  'shinkansen-normal-1',
+  'himawari-shin-rich-1',
+  'oni-simple-1',
+  'shark-normal-1',
+  'childrensday-easy-1'
 ])
 
 export function isIndexReadyId(id: string): boolean {
