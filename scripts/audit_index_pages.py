@@ -14,9 +14,16 @@ indexReady ページの本文は materials/[id]/page.tsx の indexReady 分岐�
   + about.ageAim + about.coloringTips + about.printTips
 （テーマ共通定数 themeStrength / coloringGuide / ENJOY_AT_HOME は描画されない）
 
+上記5項目に加え、以下の補助レポートを出す（現状は情報提供のみ・exit codeには影響しない。
+本番/ネットワーク・ビルド成果物の有無に依存し、ブランチ作業中は古い状態を見ることがあるため）:
+  6. indexReady素材のうち、公開Postからリンクされ RelatedPosts が表示される件数
+  7. /maze のビルド後HTMLサイズ（.next/server/app/maze.html、>500KBでwarn）
+  8. 本番 sitemap.xml に載る全URLのHTTP到達性チェック
+
 使い方:
   python3 scripts/audit_index_pages.py            # 監査して結果表示
   python3 scripts/audit_index_pages.py --json      # 機械可読出力
+  python3 scripts/audit_index_pages.py --skip-network  # 6/8の外部通信チェックを飛ばす
 """
 
 from __future__ import annotations
@@ -31,11 +38,15 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_TS = ROOT / "src" / "lib" / "data.ts"
 INDEX_READY_TS = ROOT / "src" / "lib" / "index-ready.ts"
 THEME_INSIGHTS_TS = ROOT / "src" / "lib" / "theme-insights.ts"
+MAZE_BUILD_HTML = ROOT / ".next" / "server" / "app" / "maze.html"
+ENV_LOCAL = ROOT / ".env.local"
 
 MIN_CHARS = 450
 MIN_FACTS = 3
 MAX_SIMILARITY = 0.40
 TEMPLATE_MIN_LEN = 18  # これ以上の長さのテンプレ文を「混入」判定に使う
+MAZE_WARN_BYTES = 500_000
+PROD_BASE_URL = "https://nurie-print.com"
 
 ABOUT_FIELDS = ["featureDescription", "colorIdeas", "ageAim", "coloringTips", "printTips"]
 BODY_FIELDS = ["seoDescription"] + ABOUT_FIELDS
@@ -201,8 +212,83 @@ def audit() -> dict:
     }
 
 
+def _load_database_url() -> str:
+    url = __import__("os").environ.get("DATABASE_URL", "")
+    if not url and ENV_LOCAL.exists():
+        for line in ENV_LOCAL.read_text(encoding="utf-8").splitlines():
+            if line.startswith("DATABASE_URL="):
+                url = line.split("=", 1)[1].strip().strip('"')
+                break
+    # pgbouncer=true は Prisma 専用ヒントで psycopg2 の DSN パーサーが解釈できないため除去
+    return url.replace("?pgbouncer=true", "").replace("&pgbouncer=true", "")
+
+
+def audit_related_posts(materials: list[dict]) -> dict:
+    """indexReady素材のうち、公開PostのmaterialIdsからリンクされている（=RelatedPostsが表示される）件数。"""
+    ids = {m["id"] for m in materials}
+    dsn = _load_database_url()
+    if not dsn:
+        return {"available": False, "reason": "DATABASE_URL未設定"}
+    try:
+        import psycopg2
+        conn = psycopg2.connect(dsn, connect_timeout=10)
+        cur = conn.cursor()
+        cur.execute('SELECT "materialIds" FROM "Post" WHERE "publishedAt" IS NOT NULL AND "publishedAt" <= now()')
+        linked: set[str] = set()
+        for (mids,) in cur.fetchall():
+            for mid in mids or []:
+                if mid in ids:
+                    linked.add(mid)
+        cur.close()
+        conn.close()
+    except Exception as e:
+        return {"available": False, "reason": str(e)}
+    return {"available": True, "linked_ids": sorted(linked), "count": len(linked), "total": len(ids)}
+
+
+def audit_maze_size() -> dict:
+    """/maze のビルド後HTMLサイズ。.next/server/app/maze.html が無ければ未計測（npm run build 前）。"""
+    if not MAZE_BUILD_HTML.exists():
+        return {"available": False, "reason": "ビルド成果物なし（npm run build を先に実行）"}
+    size = MAZE_BUILD_HTML.stat().st_size
+    return {"available": True, "bytes": size, "warn": size > MAZE_WARN_BYTES}
+
+
+def audit_sitemap_urls(base_url: str = PROD_BASE_URL, timeout: float = 10.0) -> dict:
+    """本番 sitemap.xml に載る全URLのHTTP到達性チェック。ネットワーク不通時は available=False（非致命）。"""
+    try:
+        import requests
+        resp = requests.get(f"{base_url}/sitemap.xml", timeout=timeout)
+        resp.raise_for_status()
+        xml = resp.text
+    except Exception as e:
+        return {"available": False, "reason": str(e)}
+
+    urls = re.findall(r"<loc>([^<]+)</loc>", xml)
+    failures: list[dict] = []
+    for u in urls:
+        try:
+            r = requests.head(u, timeout=timeout, allow_redirects=True)
+            if r.status_code == 405:  # HEAD未対応のルートはGETで再確認
+                r = requests.get(u, timeout=timeout, allow_redirects=True)
+            if r.status_code != 200:
+                failures.append({"url": u, "status": r.status_code})
+        except Exception as e:
+            failures.append({"url": u, "status": str(e)})
+    return {"available": True, "total": len(urls), "failures": failures}
+
+
 def main():
     rep = audit()
+    skip_network = "--skip-network" in sys.argv
+
+    related = audit_related_posts([{"id": r["id"]} for r in rep["results"]])
+    maze = audit_maze_size()
+    sitemap = audit_sitemap_urls() if not skip_network else {"available": False, "reason": "--skip-network指定"}
+    rep["related_posts"] = related
+    rep["maze_size"] = maze
+    rep["sitemap"] = sitemap
+
     if "--json" in sys.argv:
         print(json.dumps(rep, ensure_ascii=False, indent=2))
         sys.exit(0 if rep["all_ok"] else 1)
@@ -222,6 +308,31 @@ def main():
         print(f"{mark} {r['id']:28} [{r['theme']:10}] 字数{r['chars']:4} 固有事実{r['facts']} 一致率{r['similarity']:.0%}")
         if not r["ok"]:
             print("     →", " / ".join(r["fails"]))
+
+    print("\n== 補助レポート（exit codeには影響しません） ==")
+    if related["available"]:
+        print(f"  RelatedPosts接続: {related['count']}/{related['total']} 件（公開Postからリンクあり）")
+        if related["linked_ids"]:
+            print("    →", ", ".join(related["linked_ids"]))
+    else:
+        print(f"  RelatedPosts接続: 計測不可（{related['reason']}）")
+
+    if maze["available"]:
+        size_kb = maze["bytes"] / 1024
+        mark = "⚠️ " if maze["warn"] else "✅"
+        print(f"  {mark}/maze ビルド後サイズ: {size_kb:.1f}KB" + ("（500KB超）" if maze["warn"] else ""))
+    else:
+        print(f"  /maze サイズ: 計測不可（{maze['reason']}）")
+
+    if sitemap["available"]:
+        if sitemap["failures"]:
+            print(f"  ❌ sitemap到達性: {len(sitemap['failures'])}/{sitemap['total']} 件が200以外")
+            for f in sitemap["failures"][:20]:
+                print(f"     → {f['url']} : {f['status']}")
+        else:
+            print(f"  ✅ sitemap到達性: {sitemap['total']}/{sitemap['total']} 件が200")
+    else:
+        print(f"  sitemap到達性: 計測不可（{sitemap['reason']}）")
 
     if rep["all_ok"] and rep["count"] > 0:
         print("\n結果: PASS — 全 indexReady ページが基準を満たす。再申請可。")
