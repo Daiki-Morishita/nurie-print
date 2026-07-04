@@ -169,7 +169,10 @@ export default async function ColumnPage({ params }: { params: Promise<{ slug: s
     description: col.description,
     datePublished: col.publishedAt,
     dateModified: col.updatedAt,
-    author: { '@type': 'Organization', name: 'ぬりえプリント編集部', url: 'https://nurie-print.com/about' },
+    author: [
+      { '@type': 'Organization', name: 'ぬりえプリント編集部', url: 'https://nurie-print.com/operator' },
+      { '@type': 'Person', name: '森下 大喜', url: 'https://nurie-print.com/operator' },
+    ],
     publisher: {
       '@type': 'Organization',
       name: 'ぬりえプリント',
@@ -220,10 +223,10 @@ export default async function ColumnPage({ params }: { params: Promise<{ slug: s
 
           {/* 著者・日付情報（E-E-A-T 用に可視化） */}
           <div className="mt-4 pt-4 border-t border-border flex items-center gap-3 flex-wrap text-xs text-muted-foreground">
-            <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <Link href="/operator" className="flex items-center gap-2 hover:text-primary transition-colors">
               <span className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px]">編</span>
               <span>
-                <span className="block font-medium text-foreground">ぬりえプリント編集部</span>
+                <span className="block font-medium text-foreground">ぬりえプリント編集部（運営: Special Move・森下大喜）</span>
                 <span className="text-[10px]">保育・幼児教育の専門資料を元に編集</span>
               </span>
             </Link>
