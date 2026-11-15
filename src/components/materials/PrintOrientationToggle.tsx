@@ -21,6 +21,8 @@ export function PrintOrientationToggle() {
   const [orient, setOrient] = useState<Orient>('landscape')
 
   useEffect(() => {
+    // スマホは印刷ダイアログ側で向きを選ぶので、保存値を持ち込まない
+    if (!window.matchMedia('(min-width: 1024px)').matches) return
     let saved: Orient = 'landscape'
     try {
       if (localStorage.getItem(KEY) === 'portrait') saved = 'portrait'

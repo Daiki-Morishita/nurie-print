@@ -135,8 +135,11 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
       <style id="print-page-size">{`@page { size: A4 landscape; margin: 8mm; }`}</style>
       <style>{`
         @media print {
-          html[data-print-orient="portrait"] .print-area img {
-            max-height: 255mm !important;
+          /* iOSは画面幅で組んだページを紙幅へ拡大して印刷するので、mm指定の高さは効かない。
+             高さは幅に対する比率(padding-bottom%)で決め、拡大率に関係なく1ページに収める。
+             62% = 横A4の印刷域(約281x194mm, 比69%)に余裕を持たせた値 */
+          html[data-print-orient="portrait"] .print-box {
+            padding-bottom: 135% !important;
           }
           html, body {
             margin: 0 !important;
@@ -166,26 +169,30 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
           }
         }
       `}</style>
-      <div className="hidden print:block print-area" style={{ width: '100%', boxSizing: 'border-box', background: 'white', textAlign: 'center', breakInside: 'avoid', pageBreakInside: 'avoid' }}>
-        {printImageUrl && (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
-            src={printImageUrl}
-            alt={material.title}
-            style={{ display: 'inline-block', maxWidth: '100%', maxHeight: '180mm', width: 'auto', height: 'auto' }}
-          />
-        )}
-        {/* ブランディング — 画像の下に小さく */}
-        <div style={{
-          marginTop: '2mm',
-          fontSize: '8pt',
-          color: '#999',
-          letterSpacing: '0.05em',
-          textAlign: 'right',
-        }}>
-          <span>{material.title}</span>
-          <span style={{ color: '#ccc' }}>　｜　</span>
-          <span>ぬりえプリント</span>
+      <div className="hidden print:block print-area" style={{ width: '100%', background: 'white', breakInside: 'avoid', pageBreakInside: 'avoid' }}>
+        <div className="print-box" style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '62%', overflow: 'hidden' }}>
+          {printImageUrl && (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={printImageUrl}
+              alt={material.title}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '94%', objectFit: 'contain', display: 'block' }}
+            />
+          )}
+          <div style={{
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
+            fontSize: '8pt',
+            lineHeight: 1,
+            color: '#999',
+            letterSpacing: '0.05em',
+            whiteSpace: 'nowrap',
+          }}>
+            <span>{material.title}</span>
+            <span style={{ color: '#ccc' }}>　｜　</span>
+            <span>ぬりえプリント</span>
+          </div>
         </div>
       </div>
 
@@ -270,7 +277,6 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
 
             {/* モバイル専用: 画像直下に印刷・保存ボタン */}
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
-              <PrintOrientationToggle />
               <PrintButton materialTitle={material.title} materialId={material.id} />
               <LightPrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
@@ -401,7 +407,9 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                 印刷・保存
               </h2>
               <div className="space-y-2.5">
-                <PrintOrientationToggle />
+                <div className="hidden lg:block">
+                  <PrintOrientationToggle />
+                </div>
                 <PrintButton materialTitle={material.title} materialId={material.id} />
                 <LightPrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
