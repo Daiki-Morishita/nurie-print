@@ -10,6 +10,7 @@ import { THEME_INSIGHT, ENJOY_AT_HOME, ENJOY_AT_HOME_DEFAULT, themeStrength, col
 import { MaterialCard, DifficultyBadge } from '@/components/materials/MaterialCard'
 import { PrintButton } from '@/components/materials/PrintButton'
 import { LightPrintButton } from '@/components/materials/LightPrintButton'
+import { PrintOrientationToggle } from '@/components/materials/PrintOrientationToggle'
 import { SaveButton } from '@/components/materials/SaveButton'
 import { FavoriteButton } from '@/components/favorites/FavoriteButton'
 import { AdBanner } from '@/components/ads/AdBanner'
@@ -130,9 +131,13 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* ===== 印刷専用エリア（画面では非表示・横A4・画像のみ・モノクロ） ===== */}
+      {/* 用紙の向き: 既定はよこ。PrintOrientationToggle がこの中身を書き換える */}
+      <style id="print-page-size">{`@page { size: A4 landscape; margin: 8mm; }`}</style>
       <style>{`
-        @page { margin: 8mm; }
         @media print {
+          html[data-print-orient="portrait"] .print-area img {
+            max-height: 255mm !important;
+          }
           html, body {
             margin: 0 !important;
             padding: 0 !important;
@@ -265,6 +270,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
 
             {/* モバイル専用: 画像直下に印刷・保存ボタン */}
             <div className="lg:hidden mb-6 bg-white border border-border rounded-lg p-4 space-y-2.5">
+              <PrintOrientationToggle />
               <PrintButton materialTitle={material.title} materialId={material.id} />
               <LightPrintButton materialTitle={material.title} materialId={material.id} />
               <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
@@ -395,6 +401,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
                 印刷・保存
               </h2>
               <div className="space-y-2.5">
+                <PrintOrientationToggle />
                 <PrintButton materialTitle={material.title} materialId={material.id} />
                 <LightPrintButton materialTitle={material.title} materialId={material.id} />
                 <SaveButton materialTitle={material.title} imageUrl={material.imageUrl} materialId={material.id} />
