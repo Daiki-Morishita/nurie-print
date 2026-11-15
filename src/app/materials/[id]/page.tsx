@@ -131,7 +131,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* ===== 印刷専用エリア（画面では非表示・横A4・画像のみ・モノクロ） ===== */}
       <style>{`
-        @page { size: A4 landscape; margin: 8mm; }
+        @page { margin: 8mm; }
         @media print {
           html, body {
             margin: 0 !important;
@@ -161,31 +161,25 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
           }
         }
       `}</style>
-      <div className="hidden print:block print-area" style={{ position: 'relative', width: '281mm', height: '194mm', boxSizing: 'border-box', overflow: 'hidden', background: 'white', pageBreakInside: 'avoid', breakInside: 'avoid' }}>
+      <div className="hidden print:block print-area" style={{ width: '100%', boxSizing: 'border-box', background: 'white', textAlign: 'center', breakInside: 'avoid', pageBreakInside: 'avoid' }}>
         {printImageUrl && (
-          <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={printImageUrl}
-              alt={material.title}
-              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }}
-            />
-          </div>
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={printImageUrl}
+            alt={material.title}
+            style={{ display: 'inline-block', maxWidth: '100%', maxHeight: '180mm', width: 'auto', height: 'auto' }}
+          />
         )}
-        {/* 右下ブランディング — 背景なし・小さく */}
+        {/* ブランディング — 画像の下に小さく */}
         <div style={{
-          position: 'absolute',
-          right: '6mm',
-          bottom: '4mm',
+          marginTop: '2mm',
           fontSize: '8pt',
           color: '#999',
           letterSpacing: '0.05em',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.4em',
+          textAlign: 'right',
         }}>
           <span>{material.title}</span>
-          <span style={{ color: '#ccc' }}>｜</span>
+          <span style={{ color: '#ccc' }}>　｜　</span>
           <span>ぬりえプリント</span>
         </div>
       </div>
