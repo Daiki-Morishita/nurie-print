@@ -131,7 +131,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* ===== 印刷専用エリア（画面では非表示・横A4・画像のみ・モノクロ） ===== */}
       <style>{`
-        @page { size: A4 landscape; margin: 0; }
+        @page { size: A4 landscape; margin: 8mm; }
         @media print {
           html, body {
             margin: 0 !important;
@@ -161,7 +161,7 @@ export default async function MaterialDetailPage({ params }: { params: Promise<{
           }
         }
       `}</style>
-      <div className="hidden print:block print-area" style={{ position: 'relative', width: '297mm', height: '210mm', boxSizing: 'border-box', overflow: 'hidden', background: 'white' }}>
+      <div className="hidden print:block print-area" style={{ position: 'relative', width: '281mm', height: '194mm', boxSizing: 'border-box', overflow: 'hidden', background: 'white', pageBreakInside: 'avoid', breakInside: 'avoid' }}>
         {printImageUrl && (
           <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
